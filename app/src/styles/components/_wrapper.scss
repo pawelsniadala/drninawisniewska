@@ -1,0 +1,23 @@
+html, body, #root, .app {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+// body {
+    // background-color: #F2F3F5;
+    // background-color: #f8f9fa;
+    // background-color: #e8e7da;
+    // background-color: #ca7a25;
+    // font-family: Roboto, Helvetica, Arial, sans-serif;
+// }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+main {
+    flex: 1 1;
+    // margin-top: 50px;
+    // border-bottom: 1px solid #dee2e6;
+}
