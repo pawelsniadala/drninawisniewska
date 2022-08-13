@@ -4,6 +4,9 @@ import { useEffect } from "react";
 // import CreatorSection from "../sections/CreatorSection";
 // import SummarySection from "../sections/SummarySection";
 // import PhotoSection from "../sections/PhotoSection";
+import HeroSection from "../sections/HeroSection";
+import ServicesSection from "../sections/ServicesSection";
+import ReviewsSection from "../sections/ReviewsSection";
 
 const HomeView = () => {
     useEffect(() => {
@@ -12,7 +15,12 @@ const HomeView = () => {
 
     return (
         <div className="home-view">
-            <p>home-view</p>
+            {/* <p>home-view</p> */}
+            <HeroSection />
+            <ServicesSection />
+            <ReviewsSection />
+            
+            
             {/* <PosterSection />
             <CastSection />
             <CreatorSection />

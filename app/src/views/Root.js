@@ -39,10 +39,13 @@ import HomeView from "./HomeView";
 // import Modal from "../components/Modal";
 // import Toast from "../components/Toast";
 
+import NavSection from "../sections/NavSection";
+import ContactView from "./ContactView";
+
 const Root = () => (
     <MainTemplate>
         <Router>
-            {/* <NavSection /> */}
+            <NavSection />
             <main>
                 <Routes>
                     <Route exact path="/" element={<HomeView />} />
@@ -72,6 +75,7 @@ const Root = () => (
                         <Route path="/cast/other" element={<CastOtherPartial />} />
                     </Route>
                     <Route path="/contact" element={<ContactView />} /> */}
+                    <Route path="/contact" element={<ContactView />} />
                 </Routes>
             </main>
             {/* <Modal /> */}
