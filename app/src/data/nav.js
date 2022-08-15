@@ -22,12 +22,17 @@ export const nav = {
         {
             id: "982bb88c-d367-4fa2-a06a-57a71c32cd03",
             title: "Cennik",
-            path: "/price-list"
+            path: "/prices"
         },
         {
             id: "e2e74079-e6e6-4016-9b4f-fd33fd2f544c",
             title: "Aktualności",
             path: "/news"
+        },
+        {
+            id: "ca385125-35d1-469e-b5a7-b800e26ed0d1",
+            title: "Zespół",
+            path: "/team"
         },
         {
             id: "2a385c29-263e-49b8-a18a-c4f7f025c808",

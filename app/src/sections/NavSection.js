@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { nav } from '../data/nav';
 import { useTheme } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
@@ -17,6 +17,7 @@ import MenuItem from '@mui/material/MenuItem';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 // import AdbIcon from '@mui/icons-material/Adb';
 import BinanceLogoSvg from '../assets/svg/BinanceLogoSvg';
+import FacebookSvg from '../assets/svg/FacebookSvg'
 
 
 
@@ -32,9 +33,6 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
-    };
-    const handleOpenUserMenu = (event) => {
-        setAnchorElUser(event.currentTarget);
     };
 
     const handleCloseNavMenu = () => {
@@ -55,6 +53,10 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
     const linkColor = location.pathname !== '/'
         ? 'text.primary' : (location.pathname === '/' && scrollTrigger) ? 'text.primary'
         : 'common.white';
+
+    const iconColor = location.pathname !== '/'
+        ? '#505050' : (location.pathname === '/' && scrollTrigger) ? '#505050'
+        : '#ffffff';
 
     return (
         <Box bgcolor={bgcolor} position={'relative'}>
@@ -213,33 +215,25 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                             ))}
                         </Box>
                         <Box sx={{ flexGrow: 0 }}>
-                            <Tooltip title="Open settings">
-                                <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                                    <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                                </IconButton>
-                            </Tooltip>
-                            <Menu
-                                sx={{ mt: '45px' }}
-                                id="menu-appbar"
-                                anchorEl={anchorElUser}
-                                anchorOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'right',
-                                }}
-                                keepMounted
-                                transformOrigin={{
-                                    vertical: 'top',
-                                    horizontal: 'right',
-                                }}
-                                open={Boolean(anchorElUser)}
-                                onClose={handleCloseUserMenu}
+                            <Tooltip title="Facebook">
+                                {/* <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}> */}
+                                    {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
+                                    {/* <Link
+                                        to="https://www.facebook.com/profile.php?id=100063736802328"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        <FacebookSvg />
+                                    </Link> */}
+                                {/* </IconButton> */}
+                                <a key="" href="https://www.facebook.com/profile.php?id=100063736802328"
+                                    className="nav-link"
+                                    target="_blank"
+                                    rel="noreferrer"
                                 >
-                                {settings.map((setting) => (
-                                    <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                                    <Typography textAlign="center">{setting}</Typography>
-                                    </MenuItem>
-                            ))}
-                            </Menu>
+                                    <FacebookSvg color={iconColor} />
+                                </a>
+                            </Tooltip>
                         </Box>
                     </Toolbar>
                 </Container>
@@ -247,4 +241,5 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
         </Box>
     );
 };
+
 export default NavSection;
