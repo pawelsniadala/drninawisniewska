@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import HeroSection from "../sections/HeroSection";
 import ServicesSection from "../sections/ServicesSection";
 import ReviewsSection from "../sections/ReviewsSection";
+import TeamSection from "../sections/TeamSection";
 
 const HomeView = () => {
     useEffect(() => {
@@ -19,7 +20,7 @@ const HomeView = () => {
             <HeroSection />
             <ServicesSection />
             <ReviewsSection />
-            
+            <TeamSection />
             
             {/* <PosterSection />
             <CastSection />

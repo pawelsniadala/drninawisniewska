@@ -40,7 +40,13 @@ import HomeView from "./HomeView";
 // import Toast from "../components/Toast";
 
 import NavSection from "../sections/NavSection";
+import ServicesView from "./ServicesView";
+import TeamView from "./TeamView";
+import PricesView from "./PricesView";
 import ContactView from "./ContactView";
+
+// import PricesDermatologyPartials from "./partials/prices/PricesDermatologyPartials";
+// import PricesHematologyPartials from "./partials/prices/PricesHematologyPartials"
 
 const Root = () => (
     <MainTemplate>
@@ -75,6 +81,9 @@ const Root = () => (
                         <Route path="/cast/other" element={<CastOtherPartial />} />
                     </Route>
                     <Route path="/contact" element={<ContactView />} /> */}
+                    <Route path="/team" element={<TeamView />} />
+                    <Route path="/services" element={<ServicesView />} />
+                    <Route path="/prices" element={<PricesView />} />
                     <Route path="/contact" element={<ContactView />} />
                 </Routes>
             </main>
