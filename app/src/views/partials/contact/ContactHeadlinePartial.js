@@ -1,13 +1,10 @@
 import React from 'react';
-import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 
 
 const ContactHeadlinePartial = () => {
-    // const theme = useTheme();
-
     return (
         <Box
             sx={{
@@ -19,7 +16,7 @@ const ContactHeadlinePartial = () => {
         >
             <Container>
                 <Box>
-                    <Typography
+                    {/* <Typography
                         sx={{
                             textTransform: 'uppercase',
                             fontWeight: 'medium',
@@ -29,18 +26,25 @@ const ContactHeadlinePartial = () => {
                         align={'center'}
                     >
                         Kontakt
-                    </Typography>
-                    <Typography variant="h2" align={'center'} fontWeight={700} gutterBottom>
+                    </Typography> */}
+                    <Typography
+                        variant="h2"
+                        align={'center'}
+                        fontWeight={700}
+                        gutterBottom
+                    >
                         Kontakt
                     </Typography>
-                    <Typography variant="h6" align={'center'} color={'textSecondary'}>
+                    <Typography
+                        variant="h6"
+                        align={'center'}
+                        color={'textSecondary'}
+                    >
                         Jesteśmy do Twojej dyspozycji.
                     </Typography>
                 </Box>
             </Container>
         </Box>
-
-
     );
 };
 

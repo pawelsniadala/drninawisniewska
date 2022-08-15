@@ -35,7 +35,7 @@ const ContactMapPartials = () => {
           marginHeight={0}
           marginWidth={0}
           scrolling="no"
-          src="https://maps.google.com/maps?width=100%&height=100%&hl=en&q=Milan&ie=UTF8&t=&z=14&iwloc=B&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9694.856415856955!2d21.453784!3d52.592862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ee5a5adb9d581%3A0x2835d4bb585fbf47!2sFryderyka%20Chopina%2013%2C%2007-200%20Wyszk%C3%B3w!5e0!3m2!1spl!2spl!4v1660443766192!5m2!1spl!2spl"
           style={{
             minHeight: 300,
             borderRadius: 8,
@@ -53,9 +53,14 @@ const ContactMapPartials = () => {
             gutterBottom
             sx={{ fontWeight: 'medium' }}
           >
-            Call us:
+            Zadzwoń do nas:
           </Typography>
-          <Typography variant={'subtitle1'}>+39 34 111 222</Typography>
+          <Typography variant={'subtitle1'}>
+            +48 450 001 550
+          </Typography>
+          <Typography variant={'subtitle1'}>
+            +48 539 968 541
+          </Typography>
         </Grid>
         <Grid item xs={12} sm={6}>
           <Typography
@@ -63,9 +68,11 @@ const ContactMapPartials = () => {
             gutterBottom
             sx={{ fontWeight: 'medium' }}
           >
-            Email us:
+            Wyślij wiadomość:
           </Typography>
-          <Typography variant={'subtitle1'}>hi@maccarianagency.com</Typography>
+          <Typography variant={'subtitle1'}>
+            info@drninawisniewska.pl
+          </Typography>
         </Grid>
         <Grid item xs={12}>
           <Typography
@@ -73,10 +80,10 @@ const ContactMapPartials = () => {
             gutterBottom
             sx={{ fontWeight: 'medium' }}
           >
-            Address:
+            Adres:
           </Typography>
           <Typography variant={'subtitle1'}>
-            Via E. Gola 4, Milan MI, Italy
+            ul. Fryderyka Chopina 13/U2, Wyszków
           </Typography>
         </Grid>
       </Grid>
