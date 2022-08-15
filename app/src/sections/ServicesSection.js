@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Slider from 'react-slick';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -84,6 +85,7 @@ const ServicesSection = () => {
           marginTop={2}
         >
           <Button
+            // href="/services"
             variant="contained"
             color="primary"
             size="large"
@@ -92,7 +94,7 @@ const ServicesSection = () => {
               <Box
                 component={'svg'}
                 xmlns="http://www.w3.org/2000/svg"
-                fill="none"
+                fill="#fff"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
                 width={24}
@@ -107,7 +109,7 @@ const ServicesSection = () => {
               </Box>
             }
           >
-            Zobacz wszystkie
+            Zobacz wszystkie usługi
           </Button>
           {/* <Box
             component={Button}
@@ -235,9 +237,9 @@ const ServicesSection = () => {
                     >
                       {item.title}
                     </Typography>
-                    <Typography align={'left'} color={'text.secondary'}>
+                    {/* <Typography align={'left'} color={'text.secondary'}>
                       {item.description}
-                    </Typography>
+                    </Typography> */}
                     {/* <Box display={'flex'} alignItems={'center'} marginY={2}>
                       <Box
                         component={'svg'}
@@ -290,9 +292,9 @@ const ServicesSection = () => {
                     </Box> */}
                   </CardContent>
                   <Box flexGrow={1} />
-                  <CardActions sx={{ justifyContent: 'flex-end' }}>
+                  {/* <CardActions sx={{ justifyContent: 'flex-end' }}>
                     <Button>Learn more</Button>
-                  </CardActions>
+                  </CardActions> */}
                 </Box>
               </Box>
             </Box>
