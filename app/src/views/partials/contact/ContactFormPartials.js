@@ -58,11 +58,16 @@ const ContactFormPartials = () => {
     return (
         <Box>
             <Box
-                padding={{ xs: 3, sm: 6 }}
+                // padding={{ xs: 3, sm: 6 }}
+                padding={4}
                 width={1}
                 component={Card}
                 boxShadow={1}
                 marginBottom={4}
+                sx={{
+                    boxShadow: '0 3px 6px 0 rgb(140 152 164 / 25%)',
+                    borderRadius: '8px'
+                }}
             >
                 <form noValidate autoComplete="off" onSubmit={formik.handleSubmit}>
                     <Grid container spacing={4}>
@@ -128,7 +133,13 @@ const ContactFormPartials = () => {
                                 helperText={formik.touched.message && formik.errors.message}
                             />
                         </Grid>
-                        <Grid item container justifyContent={'center'} xs={12}>
+                        <Grid
+                            item
+                            container
+                            justifyContent={'center'}
+                            xs={12}
+                            className="button-contained-submit"
+                        >
                             <Button
                                 sx={{ height: 54, minWidth: 150 }}
                                 variant="contained"
@@ -146,16 +157,17 @@ const ContactFormPartials = () => {
                         <Grid item container justifyContent={'center'} xs={12}>
                             <Box>
                                 <Typography component="p" variant="body2" align="left">
-                                    Wysyłając wiadomość zgadzasz się z nasza{' '}
+                                    Wysyłając wiadomość zgadzasz się z naszym{' '}
                                     <Box
                                         component="a"
                                         href=""
                                         color={theme.palette.text.primary}
                                         fontWeight={'700'}
                                     >
-                                        Polityką prywatności
+                                        Regulaminem organizacyjnym
                                     </Box>
-                                    ,{' '}
+                                    .
+                                    {/* ,{' '}
                                     <Box
                                         component="a"
                                         href=""
@@ -173,7 +185,7 @@ const ContactFormPartials = () => {
                                     >
                                         Polityką plików cookie
                                     </Box>
-                                    .
+                                    . */}
                                 </Typography>
                             </Box>
                         </Grid>
@@ -182,11 +194,11 @@ const ContactFormPartials = () => {
             </Box>
             <Box>
                 <Typography color="text.secondary" align={'center'}>
-                    Odezwiemy się w ciągu 1-2 dni roboczych..
+                    Odezwiemy się w ciągu 1-2 dni roboczych.
                 </Typography>
             </Box>
         </Box>
     );
-};
+}
 
 export default ContactFormPartials;

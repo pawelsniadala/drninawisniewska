@@ -8,8 +8,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
 import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
+import PricesAestheticMedicinePartials from './partials/prices/PricesAestheticMedicinePartials';
 import PricesHematologyPartials from './partials/prices/PricesHematologyPartials';
 import PricesCosmetologyPartials from './partials/prices/PricesCosmetologyPartials';
 
@@ -17,11 +17,11 @@ import { prices } from '../data/prices';
 
 const PricesView = () => {
     const theme = useTheme();
-    const [expanded, setExpanded] = React.useState(false);
+    // const [expanded, setExpanded] = React.useState(false);
 
-    const handleChange = (panel) => (event, isExpanded) => {
-        setExpanded(isExpanded ? panel : false);
-    };
+    // const handleChange = (panel) => (event, isExpanded) => {
+    //     setExpanded(isExpanded ? panel : false);
+    // };
 
     const renderAccordionDetails = (expanded) => {
         switch(expanded) {
@@ -31,7 +31,7 @@ const PricesView = () => {
                 );
             case "aesthetic-medicine":
                 return (
-                    <PricesDermatologyPartials />
+                    <PricesAestheticMedicinePartials />
                 );
             case "hematology":
                 return (
@@ -52,18 +52,27 @@ const PricesView = () => {
     return (
         <Box>
             <PricesHeadlinePartial />
-            <Box sx={{ paddingTop: "64px", paddingBottom: "64px" }}>
-                <Container maxWidth="md">
+            <Box
+                sx={{
+                    paddingTop: "64px",
+                    paddingBottom: "64px"
+                }}>
+                <Container maxWidth="lg">
                     {prices.map((item, i) => (
                         <Box
                             component={Accordion}
-                            expanded={expanded === item.expanded}
-                            onChange={handleChange(item.expanded)}
+                            // expanded={expanded === item.expanded}
+                            // onChange={handleChange(item.expanded)}
                             key={i}
                             padding={1}
                             marginBottom={i === item.length - 1 ? 0 : 2}
                             borderRadius={`${theme.spacing(1)} !important`}
                             sx={{
+                                // backgroundColor: '#f7faff',
+                                backgroundColor: '#f2f7ff',
+                                // backgroundColor: '#E7EBF0',
+                                // backgroundImage: `linear-gradient(120deg, #fff 0%, #f7faff 100%)`,
+                                boxShadow: '0 3px 6px 0 rgb(140 152 164 / 25%)',
                                 '&::before': {
                                     display: 'none',
                                 }
@@ -75,20 +84,19 @@ const PricesView = () => {
                                 aria-controls="panel1a-content"
                                 id={`panel1a-header--${i}`}
                             >
-                            <Typography fontWeight={600}>
-                                {item.title}
-                            </Typography>
+                                <Typography fontWeight={600}>
+                                    {item.title}
+                                </Typography>
                             </Box>
                             <AccordionDetails>
                                 {renderAccordionDetails(item.expanded)}
                             </AccordionDetails>
                         </Box>
                     ))}
-
                 </Container>
             </Box>
         </Box>
     );
-};
+}
 
 export default PricesView;

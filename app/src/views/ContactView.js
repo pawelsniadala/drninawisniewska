@@ -23,7 +23,11 @@ const ContactView = () => {
             <ContactHeadlinePartial />
             <Box sx={{ paddingTop: "64px", paddingBottom: "64px" }}>
                 <Container maxWidth="xl">
-                    <Grid container spacing={isMd ? 8 : 4}>
+                    <Grid
+                        container
+                        // spacing={isMd ? 8 : 4}
+                        spacing={4}
+                    >
                         <Grid item xs={12} md={6}>
                             <ContactMapPartials />
                         </Grid>

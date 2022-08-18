@@ -33,7 +33,7 @@ const ServicesSection = () => {
     const sliderOpts = {
         dots: true,
         arrows: false,
-        infinite: true,
+        infinite: false,
         slidesToShow: isXl ? 4 : isLg ? 3 : isMd ? 2 : isSm ? 2 : 1,
         slidesToScroll: 1,
         autoplay: true,
@@ -47,9 +47,8 @@ const ServicesSection = () => {
         <Typography
           sx={{
             textTransform: 'uppercase',
-            fontWeight: 'medium',
-            color: '#f9b934',
-            // fontFamily: '"Inter",sans-serif'
+            color: '#f8b01b',
+            fontWeight: 600,
             lineHeight: 1.5
           }}
           gutterBottom
@@ -84,13 +83,21 @@ const ServicesSection = () => {
           justifyContent={'center'}
           marginTop={2}
         >
-          <Button
-            // href="/services"
-            variant="contained"
-            color="primary"
-            size="large"
-            fullWidth={isMd ? false : true}
-            endIcon={
+         
+
+          <Box
+              className="link-contained-more"
+              marginTop={{ xs: 2, sm: 0 }}
+              width={{ xs: '100%', md: 'auto' }}
+          >
+              <Button
+                  component={Link}
+                  to={`/services`}
+                  variant="contained"
+                  color="primary"
+                  size="large"
+                  fullWidth={isMd ? false : true}
+                  endIcon={
               <Box
                 component={'svg'}
                 xmlns="http://www.w3.org/2000/svg"
@@ -100,6 +107,7 @@ const ServicesSection = () => {
                 width={24}
                 height={24}
               >
+
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -108,20 +116,15 @@ const ServicesSection = () => {
                 />
               </Box>
             }
-          >
-            Zobacz wszystkie usługi
-          </Button>
-          {/* <Box
-            component={Button}
-            variant="outlined"
-            color="primary"
-            size="large"
-            marginTop={{ xs: 2, sm: 0 }}
-            marginLeft={{ sm: 2 }}
-            fullWidth={isMd ? false : true}
-          >
-            Explore more
-          </Box> */}
+              >
+                  Zobacz wszystkie usługi
+              </Button>
+          </Box>
+
+
+
+
+
         </Box>
       </Box>
       <Box
@@ -130,7 +133,7 @@ const ServicesSection = () => {
         margin={'0 auto'}
         >
         <Slider {...sliderOpts}>
-          {services.map((item, i) => (
+          {services.slice(1, 7).map((item, i) => (
             <Box key={i} padding={{ xs: 1, md: 2, lg: 2 }}>
               <Box
                 display={'block'}
@@ -150,7 +153,12 @@ const ServicesSection = () => {
                   height={1}
                   display={'flex'}
                   flexDirection={'column'}
-                  sx={{ backgroundImage: 'none' }}
+                  sx={{
+                    backgroundImage: 'none',
+                    boxShadow: '0 3px 6px 0 rgb(140 152 164 / 25%)',
+                    borderRadius: '8px'
+                  }}
+
                 >
                   <CardMedia
                     title={item.title}
@@ -292,7 +300,7 @@ const ServicesSection = () => {
                     </Box> */}
                   </CardContent>
                   <Box flexGrow={1} />
-                  {/* <CardActions sx={{ justifyContent: 'flex-end' }}>
+                  {/* <CardActions sx={{ justifyContent: 'flex-start' }}>
                     <Button>Learn more</Button>
                   </CardActions> */}
                 </Box>

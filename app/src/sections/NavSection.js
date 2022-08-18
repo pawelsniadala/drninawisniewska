@@ -10,8 +10,8 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
+// import Avatar from '@mui/material/Avatar';
+// import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
@@ -19,17 +19,17 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import BinanceLogoSvg from '../assets/svg/BinanceLogoSvg';
 import FacebookSvg from '../assets/svg/FacebookSvg'
 
-
+// import logo from '../assets/nav/logo.png'
 
 const pages = ['Zespół', 'Dermatologia', 'Medycyna estetyczna', 'Kosmetologia', 'Cennik', 'Vectus', 'Icoone'];
 
 
 
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+// const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const NavSection = ({ bgcolor = 'transparent' }) => {
     const [anchorElNav, setAnchorElNav] = React.useState(null);
-    const [anchorElUser, setAnchorElUser] = React.useState(null);
+    // const [anchorElUser, setAnchorElUser] = React.useState(null);
 
     const handleOpenNavMenu = (event) => {
         setAnchorElNav(event.currentTarget);
@@ -39,9 +39,9 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
         setAnchorElNav(null);
     };
 
-    const handleCloseUserMenu = () => {
-        setAnchorElUser(null);
-    };
+    // const handleCloseUserMenu = () => {
+    //     setAnchorElUser(null);
+    // };
 
     const theme = useTheme();
     const location = useLocation();
@@ -64,6 +64,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                 sx={{
                     top: 0,
                     backgroundColor: scrollTrigger ? theme.palette.background.paper : bgcolor,
+                    // backgroundColor: scrollTrigger ? '#B2A99E' : bgcolor,
                     boxShadow:  scrollTrigger ? 'rgb(140 152 164 / 25%) 0px 3px 6px 0px' : 'none'
                 }}
             >
@@ -76,7 +77,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                             display: { xs: 'none', md: 'flex' },
                         }}>
                             {nav.navLogo.map((item) => (
-                                <Box key={item.id}>
+                                <Box key={item.id} sx={{ paddingTop: 1.5, paddingBottom: 1.5 }}>
                                     <NavLink
                                         className="nav-link"
                                         activeclassname="active"
@@ -84,12 +85,26 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                         onClick={handleCloseNavMenu}
                                         to={item.path}
                                     >
-                                        <BinanceLogoSvg />
+                                        {/* <BinanceLogoSvg /> */}
+                                        {/* Logo */}
+                                        {/* {logo} */}
+                                        {/* <img alt="logo" height="70" src={require('../assets/nav/logo.png')} /> */}
+                                        <Typography
+                                            sx={{
+                                                textTransform: 'uppercase',
+                                                fontSize: 22,
+                                                fontWeight: 600,
+                                                // color: '#DAA520',
+                                                // color: '#f9b934'
+                                                color: '#f8b01b'
+                                            }}
+                                        >
+                                            Dr Nina Wiśniewska
+                                        </Typography>
                                     </NavLink>
                                 </Box>
                             ))}
                         </Box>
-
                         {/* <Typography
                             variant="h6"
                             noWrap
@@ -181,7 +196,19 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                         onClick={handleCloseNavMenu}
                                         to={item.path}
                                     >
-                                        <BinanceLogoSvg />
+                                        {/* <BinanceLogoSvg /> */}
+                                        <Typography
+                                            sx={{
+                                                textTransform: 'uppercase',
+                                                fontSize: 22,
+                                                fontWeight: 600,
+                                                // color: '#DAA520',
+                                                // color: '#f9b934'
+                                                color: '#f8b01b'
+                                            }}
+                                        >
+                                            Dr Nina Wiśniewska
+                                        </Typography>
                                     </NavLink>
                                 </Box>
                             ))}
@@ -207,6 +234,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                         <Typography
                                             // fontWeight={openedPopoverId === id || hasActiveLink() ? 700 : 400}
                                             color={linkColor}
+                                            // color={"#fff"}
                                         >
                                             {item.title}
                                         </Typography>

@@ -32,6 +32,7 @@ const TeamGridPartial = () => {
                                 boxShadow: 0,
                                 background: 'transparent',
                                 backgroundImage: 'none',
+                                borderRadius: '8px'
                             }}
                         >
                             <Box
@@ -47,7 +48,13 @@ const TeamGridPartial = () => {
                                 bgcolor={'transparent'}
                                 marginTop={-5}
                             >
-                                <Box component={Card}>
+                                <Box
+                                    component={Card}
+                                    sx={{
+                                        boxShadow: '0 3px 6px 0 rgb(140 152 164 / 25%)',
+                                        borderRadius: '8px'
+                                    }}
+                                >
                                     <CardContent>
                                         <ListItemText
                                             primary={item.name}

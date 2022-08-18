@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
@@ -25,9 +26,8 @@ const TeamSection = () => {
                     <Typography
                         sx={{
                             textTransform: 'uppercase',
-                            fontWeight: 'medium',
-                            color: '#f9b934',
-                            // fontFamily: '"Inter",sans-serif'
+                            color: '#f8b01b',
+                            fontWeight: 600,
                             lineHeight: 1.5
                         }}
                         gutterBottom
@@ -59,7 +59,7 @@ const TeamSection = () => {
                         justifyContent={'center'}
                         marginTop={2}
                     >
-                    <Button
+                    {/* <Button
                         variant="contained"
                         color="primary"
                         size="large"
@@ -84,10 +84,46 @@ const TeamSection = () => {
                         }
                     >
                         Zobacz cały zespół
-                    </Button>
+                    </Button> */}
+
+                        <Box
+                            className="link-contained-more"
+                            marginTop={{ xs: 2, sm: 0 }}
+                            width={{ xs: '100%', md: 'auto' }}
+                        >
+                            <Button
+                                component={Link}
+                                to={`/team`}
+                                variant="contained"
+                                color="primary"
+                                size="large"
+                                fullWidth={isMd ? false : true}
+                                endIcon={
+                                    <Box
+                                        component={'svg'}
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        fill="#fff"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                        width={24}
+                                        height={24}
+                                    >
+
+                                        <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                        />
+                                    </Box>
+                                }
+                            >
+                                Zobacz cały zespół
+                            </Button>
+                        </Box>
                     </Box>
                 </Box>
-                <Grid container spacing={2}>
+                <Grid container spacing={4}>
                     {team.slice(0, 4).map((item, i) => (
                     <Grid
                         item
@@ -101,11 +137,11 @@ const TeamSection = () => {
                         data-aos-duration={600}
                     >
                         <Card
-                        sx={{
-                            boxShadow: 0,
-                            background: 'transparent',
-                            backgroundImage: 'none',
-                        }}
+                            sx={{
+                                boxShadow: 0,
+                                background: 'transparent',
+                                backgroundImage: 'none',
+                            }}
                         >
                         <Box
                             component={CardMedia}
@@ -120,7 +156,13 @@ const TeamSection = () => {
                             bgcolor={'transparent'}
                             marginTop={-5}
                         >
-                            <Box component={Card}>
+                            <Box
+                                component={Card}
+                                sx={{
+                                    boxShadow: '0 3px 6px 0 rgb(140 152 164 / 25%)',
+                                    borderRadius: '8px'
+                                }}
+                            >
                             <CardContent>
                                 <ListItemText primary={item.name} secondary={item.title} />
                             </CardContent>

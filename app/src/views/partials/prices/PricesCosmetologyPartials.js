@@ -1,53 +1,576 @@
 import React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
-import TableCell from '@mui/material/TableCell';
+import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import TableContainer from '@mui/material/TableContainer';
+import Paper from '@mui/material/Paper';
 
-function createData(no, name, price) {
-    return { no, name, price };
+const StyledTableCell = styled(TableCell)(({ theme }) => ({
+    [`&.${tableCellClasses.head}`]: {
+        fontWeight: "800",
+        '&.featured': {
+            color: '#f8b01b'
+        }
+    },
+    [`&.${tableCellClasses.body}`]: {
+        fontSize: 14,
+    }
+}));
+
+const StyledTableRow = styled(TableRow)(({ theme }) => ({
+    '&:nth-of-type(odd)': {
+        backgroundColor: theme.palette.action.hover,
+    },
+    '&:last-child td, &:last-child th': {
+        border: 0,
+    }
+}));
+
+const Table1 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('Konsultacja kosmetologiczna', 100)
+    ];
+
+    return (
+        <TableContainer component={Paper}>
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell>
+                        Nazwa
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
 }
 
-const rows = [
-    createData(1, 'Konsultacja dr Mirosław Majewski', 250)
-];
+const Table2 = () => {
+    function createData(name, price, fat) {
+        return { name, price, fat, };
+    }
+
+    const rows = [
+        createData('Twarz', 400, 1600),
+        createData('Termolifting powiek dolnych', 300, 1200),
+        createData('Twarz, szyja', 600, 2400),
+        createData('Twarz, szyja, dekolt', 1000, 4000),
+        createData('Szyja', 400, 1600),
+        createData('Dekolt', 400, 1600),
+        createData('Podbródek = dolna część twarzy', 400, 1600),
+        createData('Ramiona', 400, 1600),
+        createData('Kolana', 400, 1600),
+        createData('Dłonie', 400, 1600),
+        createData('Dekolt plus piersi', 600, 2400),
+        createData('Pośladki', 400, 1600),
+        createData('Brzuch', 400, 1600),
+        createData('Wewnętrzna strona ud', 400, 1600)
+    ];
+
+    return (
+        <TableContainer component={Paper}>
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        Accent Ultra V termolifting z ultradźwiękami (ujędrnienie plus redukcja tkanki tłuszczowej)
+                    </StyledTableCell>
+                    <StyledTableCell colSpan={2} align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                    <TableRow>
+                    <StyledTableCell>
+                        Okolica
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        1 zabieg
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        5 zabiegów
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.fat}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
+const Table3 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('Zabieg na twarz', 350),
+        createData('Cena w pakiecie 3 zabiegów', 900)
+    ];
+
+    return (
+        <TableContainer component={Paper} >
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        PQ AGE – Peeling Liftingujący
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
+const Table4 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('Zabieg na twarz', 350),
+        createData('Cena w pakiecie 3 zabiegów', 900)
+    ];
+
+    return (
+        <TableContainer component={Paper} >
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        PRX-T 33 – Biorewitalizacja bez igieł
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
+const Table5 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('Zabieg na twarz', 350),
+        createData('Cena w pakiecie 3 zabiegów', 900),
+        createData('Twarz, szyja, dekolt', 600),
+        createData('Seria w pakiecie 3 zabiegów', 1600)
+    ];
+
+    return (
+        <TableContainer component={Paper} >
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        Terapia Anty-Aging – Retises CT
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
+const Table6 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('Oczy', 250)
+    ];
+
+    return (
+        <TableContainer component={Paper} >
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        Retix C Eye - zabieg z retinolem i witaminą C
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
+const Table7 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('Kwas salicylowy', 200),
+        createData('Kwas migdałowy', 200),
+        createData('Kwas mlekowy', 200),
+        createData('Melanostop', 180),
+        createData('Modified Jessner', 180),
+        createData('Azelan', 180),
+        createData('TCA soft 15%', 220),
+        createData('TCA 35%', 220)
+    ];
+
+    return (
+        <TableContainer component={Paper} >
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        Peelingi Mesopeel Mesoestetic
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
+const Table8 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('Peeling węglowy', 350),
+        createData('Architect Peel Mision', 250),
+        createData('Kwas ferulowy', 200),
+        createData('Kwas laktobionowy', 200),
+        createData('Kwas traneksamowy (przebarwienia)', 300),
+        createData('Namelau Cafeico', 350),
+        createData('A.C. Solution', 250),
+        createData('C.R. Complexy', 250)
+    ];
+
+    return (
+        <TableContainer component={Paper} >
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        Pielęgnacja skóry z niedoskonałościami
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
+const Table9 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('Szyja', 600),
+        createData('Oczy', 400),
+        createData('Policzki', 500)
+    ];
+
+    return (
+        <TableContainer component={Paper} >
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        Laser Alma Harmony – nieablacyjne odmłodzenie skóry
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
+const Table10 = () => {
+    function createData(name, price, fat) {
+        return { name, price, fat, };
+    }
+
+    const rows = [
+        createData('Szyja', 190),
+        createData('Broda', 190),
+        createData('Szyja, policzki', 250),
+        createData('Okolica między brwiami', 50),
+        createData('Pachy', 250),
+        createData('Kark', 'Od 250'),
+        createData('Tors/Klatka piersiowa', 400),
+        createData('Plecy', 400),
+        createData('Plecy męskie', 'Od 400'),
+        createData('Brzuch', 200),
+        createData('Ramiona', 200),
+        createData('Przedramiona', 200),
+        createData('Pośladki', 250),
+        createData('Łydki', 350),
+        createData('Uda', 400),
+        createData('Całe nogi', 600),
+        createData('Bikini podstawowe', 300),
+        createData('Bikini pełne', 400)
+    ];
+
+    return (
+        <TableContainer component={Paper}>
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        VECTUS – epilacja laserowa
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                    <TableRow>
+                    <StyledTableCell>
+                        Okolica
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        1 zabieg
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
+const Table11 = () => {
+    function createData(name, price, price2, price3) {
+        return { name, price, price2, price3};
+    }
+
+    const rows = [
+        createData('Twarz', 250, 950, 1800),
+        createData('Ciało (30min) 1 Focus – 1 Okolica', 300, 1400, 2600),
+        createData('Ciało (40min) 2 Focusy – 2 Okolice', 350, 1600, 2800),
+        createData('Ciało (50min) 3 Focusy – 3 Okolice', 400, 1850, 3000),
+        createData('Ciało (60min) 4 Focusy – 4 Okolice', 450, 2150, 3300)
+    ];
+
+    return (
+        <TableContainer component={Paper}>
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        ICOONE LASER MED 2
+                    </StyledTableCell>
+                    <StyledTableCell align="right" colSpan={3}>
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                    <TableRow>
+                    <StyledTableCell>
+                        Okolica
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        1 zabieg
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        5 zabiegów
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        10 zabiegów
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price2}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price3}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
 
 const PricesCosmetologyPartials = () => {
     return (
-        <Table aria-label="table">
-            <TableHead>
-                <TableRow>
-                    <TableCell>
-                        Lp.
-                    </TableCell>
-                    <TableCell align="left">
-                        Nazwa
-                    </TableCell>
-                    <TableCell align="right">
-                        Cena (zł)
-                    </TableCell>
-                </TableRow>
-            </TableHead>
-            <TableBody>
-                {rows.map((row) => (
-                    <TableRow
-                        key={row.name}
-                        sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
-                    >
-                        <TableCell component="th" scope="row">
-                            {row.no}
-                        </TableCell>
-                        <TableCell align="left">
-                            {row.name}
-                        </TableCell>
-                        <TableCell align="right">
-                            {row.price}
-                        </TableCell>
-                    </TableRow>
-                ))}
-            </TableBody>
-        </Table>
+        <Box display="grid" gap={3}>
+            <Table1 />
+            <Table2 />
+            <Table3 />
+            <Table4 />
+            <Table5 />
+            <Table6 />
+            <Table7 />
+            <Table8 />
+            <Table9 />
+            <Table10 />
+            <Table11 />
+        </Box>
     );
 };
 

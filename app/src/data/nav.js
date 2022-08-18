@@ -11,8 +11,8 @@ export const nav = {
     navItem: [
         {
             id: "09a7d739-42f1-4147-a2ed-79bc2ac7b2d6",
-            title: "O nas",
-            path: "/about-us"
+            title: "O mnie",
+            path: "/about"
         },
         {
             id: "0417e32b-d424-460f-af97-dadc8efa5bde",
@@ -24,11 +24,11 @@ export const nav = {
             title: "Cennik",
             path: "/prices"
         },
-        {
-            id: "e2e74079-e6e6-4016-9b4f-fd33fd2f544c",
-            title: "Aktualności",
-            path: "/news"
-        },
+        // {
+        //     id: "e2e74079-e6e6-4016-9b4f-fd33fd2f544c",
+        //     title: "Aktualności",
+        //     path: "/news"
+        // },
         {
             id: "ca385125-35d1-469e-b5a7-b800e26ed0d1",
             title: "Zespół",

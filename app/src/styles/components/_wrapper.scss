@@ -4,13 +4,11 @@ html, body, #root, .app {
     flex-direction: column;
 }
 
-// body {
-    // background-color: #F2F3F5;
-    // background-color: #f8f9fa;
-    // background-color: #e8e7da;
-    // background-color: #ca7a25;
-    // font-family: Roboto, Helvetica, Arial, sans-serif;
-// }
+body {
+    // background-color: #EBF5FB;
+    // background-color: darken(#f7faff, 2%);
+    background-color: #f7faff;
+}
 
 body::-webkit-scrollbar {
     display: none;

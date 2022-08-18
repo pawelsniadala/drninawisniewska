@@ -6,7 +6,7 @@ import { useEffect } from "react";
 // import PhotoSection from "../sections/PhotoSection";
 import HeroSection from "../sections/HeroSection";
 import ServicesSection from "../sections/ServicesSection";
-import ReviewsSection from "../sections/ReviewsSection";
+// import ReviewsSection from "../sections/ReviewsSection";
 import TeamSection from "../sections/TeamSection";
 
 const HomeView = () => {
@@ -19,9 +19,8 @@ const HomeView = () => {
             {/* <p>home-view</p> */}
             <HeroSection />
             <ServicesSection />
-            <ReviewsSection />
+            {/* <ReviewsSection /> */}
             <TeamSection />
-            
             {/* <PosterSection />
             <CastSection />
             <CreatorSection />

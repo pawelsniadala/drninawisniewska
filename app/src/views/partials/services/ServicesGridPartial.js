@@ -15,7 +15,7 @@ const ServicesGridPartial = () => {
     return (
         <Box>
             <Grid container spacing={4}>
-                {services.map((item, i) => (
+                {services.slice(0, 4).map((item, i) => (
                     <Grid item xs={12} sm={6} md={4} xl={3} key={i}>
                         <Box
                             component={'a'}
@@ -37,7 +37,11 @@ const ServicesGridPartial = () => {
                                 height={1}
                                 display={'flex'}
                                 flexDirection={'column'}
-                                sx={{ backgroundImage: 'none' }}
+                                sx={{
+                                    backgroundImage: 'none',
+                                    boxShadow: '0 3px 6px 0 rgb(140 152 164 / 25%)',
+                                    borderRadius: '8px'
+                                }}
                             >
                                 <CardMedia
                                     title={item.title}

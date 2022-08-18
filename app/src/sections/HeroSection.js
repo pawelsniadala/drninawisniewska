@@ -1,14 +1,22 @@
 import React, { useEffect } from 'react';
+import { Link } from "react-router-dom";
 import { alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
-// import HeroJpg from '../assets/hero.jpg'
+import Button from '@mui/material/Button';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import { useTheme } from '@mui/material/styles';
+import HeroJpg from '../assets/hero.jpg'
 // import Container from '../components/Container';
 
 {/* <a href='https://pl.freepik.com/zdjecia/kobieta-twarz'>Kobieta twarz zdjęcie utworzone przez cookie_studio - pl.freepik.com</a> */}
 
 const HeroSection = () => {
+    const theme = useTheme();
+    const isMd = useMediaQuery(theme.breakpoints.up('md'), {
+      defaultMatches: true,
+    });
     useEffect(() => {
         const jarallaxInit = async () => {
         const jarallaxElems = document.querySelectorAll('.jarallax');
@@ -30,10 +38,12 @@ const HeroSection = () => {
             data-speed="0.2"
             position={'relative'}
             minHeight={{ xs: 400, sm: 500, md: 800 }}
+            // sx={{ height: 'calc(100vh)' }}
             display={'flex'}
-            alignItems={'center'}
-            marginTop={-13}
+            alignItems={'end'}
+            // marginTop={-13}
             paddingTop={13}
+            paddingBottom={5}
             id="agency__portfolio-item--js-scroll"
         >
             <Box
@@ -50,9 +60,9 @@ const HeroSection = () => {
                     zIndex: -1,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center center',
-                    backgroundImage: 'url(https://assets.maccarianagency.com/backgrounds/img52.jpg)'
-                    // backgroundImage: `url(${HeroJpg})`
+                    backgroundPosition: 'bottom center',
+                    // backgroundImage: 'url(https://assets.maccarianagency.com/backgrounds/img52.jpg)'
+                    backgroundImage: `url(${HeroJpg})`
                 }}
             />
             <Box
@@ -65,6 +75,7 @@ const HeroSection = () => {
                     width: 1,
                     height: 1,
                     background: alpha('#161c2d', 0.4),
+                    // background: alpha('#161c2d', 0.25),
                     zIndex: 1,
                 }}
             />
@@ -74,33 +85,86 @@ const HeroSection = () => {
                     zIndex: 2
                 }}
             >
-                <Box>
+                <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
                     <Typography
-                        variant="h2"
+                        variant="h3"
                         gutterBottom
                         sx={{
                             fontWeight: 900,
                             color: 'common.white',
-                            textTransform: 'uppercase',
+                            lineHeight: 1
                         }}
                     >
-                        Dermatologia
-                    </Typography>
-                    <Typography
+                        <Typography
+                            sx={{
+                                textTransform: 'uppercase',
+                                fontWeight: 'medium',
+                                lineHeight: 1.5
+                            }}
+                            gutterBottom
+                        >
+                            {/* Dr Nina Wiśniewska */}
+                            </Typography>
+                                Zainwestuj w swoją skórę.<br/>
+                                Będzie reprezentować cię<br/>
+                                przez bardzo długi czas.
+                            </Typography>
+                    {/* <Typography
                         variant="h6"
                         component="p"
-                        color="text.primary"
                         sx={{
-                            color: 'common.white',
+                            fontWeight: 400,
+                            color: 'common.white'
                         }}
                     >
-                        We are founded by a leading academic and researcher in the field of
-                        Industrial Systems Engineering.
-                    </Typography>
+                        theFront will make your product look modern and professional while
+                        saving you precious time.
+                    </Typography> */}
+                    <Box
+                        className="link-contained"
+                        display="flex"
+                        flexDirection={{ xs: 'column', sm: 'row' }}
+                        alignItems={{ xs: 'stretched', sm: 'flex-start' }}
+                        marginTop={4}
+                    >
+                        <Box
+                            className="link-contained"
+                            marginTop={{ xs: 2, sm: 0 }}
+                            width={{ xs: '100%', md: 'auto' }}
+                        >
+                            <Button
+                                component={Link}
+                                to={`/services`}
+                                variant="contained"
+                                color="primary"
+                                size="large"
+                                fullWidth={isMd ? false : true}
+                            >
+                                Zobacz usługi
+                            </Button>
+                        </Box>
+                        <Box
+                            className="link-outlined"
+                            marginTop={{ xs: 2, sm: 0 }}
+                            marginLeft={{ sm: 2 }}
+                            width={{ xs: '100%', md: 'auto' }}
+                        >
+                            <Button
+                                component={Link}
+                                to={`/contact`}
+                                variant="outlined"
+                                color="primary"
+                                size="large"
+                                fullWidth={isMd ? false : true}
+                            >
+                                Napisz wiadomość
+                            </Button>
+                        </Box>
+                    </Box>
                 </Box>
             </Container>
         </Box>
     );
-};
+}
 
 export default HeroSection;
