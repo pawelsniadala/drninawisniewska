@@ -5,7 +5,7 @@ export const nav = {
         {
             id: "a07d89ac-b7ef-49c3-aa3e-020c73809e7f",
             title: "Logo",
-            path: "/"
+            path: "/drninawisniewska/"
         }
     ],
     navItem: [

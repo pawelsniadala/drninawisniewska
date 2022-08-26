@@ -11,10 +11,52 @@ import CardActions from '@mui/material/CardActions';
 // import AvatarGroup from '@mui/material/AvatarGroup';
 // import Avatar from '@mui/material/Avatar';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import Container from '@mui/material/Container';
+// import Container from '@mui/material/Container';
+import Container from '../components/Container'
+
 import { useTheme } from '@mui/material/styles';
 // import { colors } from '@mui/material';
 import { services } from '../data/services';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    // <div
+    //   className={className}
+    //   style={{ ...style, display: "block", background: "red" }}
+    //   onClick={onClick}
+    // />
+   <div className="sample-next-arrow" onClick={onClick} style={{  }}>
+      <KeyboardArrowRightIcon />
+    </div>
+  );
+}
+
+ 
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    // <div
+    //   className={className}
+    //   style={{ ...style, display: "block", background: "green" }}
+    //   onClick={onClick}
+    // />
+    <div className="sample-prev-arrow" onClick={onClick} style={{  }}>
+       <KeyboardArrowLeftIcon />
+     </div>
+  );
+}
+
+    {/* <div className="sample-prev-arrow" onClick={onClick} style={{  }}>
+      <KeyboardArrowRightIcon />
+    </div> */}
 
 const ServicesSection = () => {
     const theme = useTheme();
@@ -32,27 +74,45 @@ const ServicesSection = () => {
     });
     const sliderOpts = {
         dots: true,
+        // arrows: isXl ? true : isLg ? false : isMd ? false : isSm ? false : false,
         arrows: false,
         infinite: false,
-        slidesToShow: isXl ? 4 : isLg ? 3 : isMd ? 2 : isSm ? 2 : 1,
+        slidesToShow: isXl ? 3 : isLg ? 3 : isMd ? 2 : isSm ? 2 : 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
+        nextArrow: <SampleNextArrow />,
+        prevArrow: <SamplePrevArrow />
     };
 
   return (
-    <Box sx={{ paddingTop: "64px", paddingBottom: "64px" }}>
-    <Container maxWidth="xl">
+    <Box sx={{
+      // paddingTop: "64px",
+      // paddingBottom: "64px",
+      backgroundColor: '#f2f7ff',
+      backgroundImage: `linear-gradient(#fff, #f7faff)`,
+      // boxShadow: 'rgb(0 0 0 / 5%) 0px 0px 0px 1px;',
+    }}>
+    <Container>
       <Box marginBottom={4}>
         <Typography
           sx={{
             textTransform: 'uppercase',
-            color: '#f8b01b',
-            fontWeight: 600,
-            lineHeight: 1.5
+            // color: '#f8b01b',
+            color: '#DBAF62',
+            // fontWeight: 600,
+            lineHeight: 1.5,
+            letterSpacing: '0.045em;',
+            // fontFamily: '"Lato", sans-serif',
+
+            fontFamily: '"Roboto", sans-serif',
+            fontSize: '18px',
+            fontWeight: '400',
+
           }}
+          // className={"tests"}
           gutterBottom
-          color={'secondary'}
+          // color={'secondary'}
           align={'center'}
         >
           Usługi
@@ -60,21 +120,37 @@ const ServicesSection = () => {
         <Typography
           variant="h4"
           align={'center'}
-          data-aos={'fade-up'}
+          data-aos={'fade-right'}
           gutterBottom
           sx={{
-            fontWeight: 700,
+            // fontWeight: 400,
+            // textTransform: 'uppercase',
+            // letterSpacing: '0.045em;',
+            // fontFamily: '"Lato", sans-serif',
+            fontFamily: 'Lato,sans-serif',
+            fontSize: '30px',
+            lineHeight: '1.208em',
+            letterSpacing: '.045em',
+            textTransform: 'uppercase',
+            // color: '#212529',
+            color: '#444'
           }}
         >
-            Usługi dostępne w naszej klinice.
+            Usługi dostępne w naszej klinice
         </Typography>
         <Typography
           variant="h6"
           align={'center'}
           color={'text.secondary'}
-          data-aos={'fade-up'}
+          data-aos={'fade-right'}
+          sx={{
+            // fontFamily: '"Roboto", sans-serif',
+            fontSize: '18px',
+            fontWeight: '400',
+            // color: '#838383'
+          }}
         >
-          Zapoznaj się z treścią naszych usług.
+          Zapoznaj się z treścią naszych usług
         </Typography>
         <Box
           display="flex"
@@ -98,23 +174,25 @@ const ServicesSection = () => {
                   size="large"
                   fullWidth={isMd ? false : true}
                   endIcon={
-              <Box
-                component={'svg'}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="#fff"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                width={24}
-                height={24}
-              >
+              // <Box
+              //   component={'svg'}
+              //   xmlns="http://www.w3.org/2000/svg"
+              //   fill="#fff"
+              //   viewBox="0 0 24 24"
+              //   stroke="currentColor"
+              //   width={24}
+              //   height={24}
+              // >
 
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </Box>
+              //   <path
+              //     strokeLinecap="round"
+              //     strokeLinejoin="round"
+              //     strokeWidth={2}
+              //     d="M17 8l4 4m0 0l-4 4m4-4H3"
+              //   />
+              // </Box>
+              // <ChevronRightIcon />
+              <ArrowForwardIcon />
             }
               >
                   Zobacz wszystkie usługi
@@ -134,17 +212,22 @@ const ServicesSection = () => {
         >
         <Slider {...sliderOpts}>
           {services.slice(1, 7).map((item, i) => (
-            <Box key={i} padding={{ xs: 1, md: 2, lg: 2 }}>
+            <Box key={i}
+              padding={{ xs: 1, md: 1, lg: 1 }}
+              >
               <Box
-                display={'block'}
+                // display={'block'}
                 width={1}
                 height={1}
                 sx={{
                   textDecoration: 'none',
                   transition: 'all .2s ease-in-out',
-                  '&:hover': {
-                    transform: `translateY(-${theme.spacing(1 / 2)})`,
-                  },
+                  // '&:hover': {
+                  //   transform: `translateY(-${theme.spacing(1 / 2)})`,
+                  // },
+
+                  // display: 'grid !important',
+                  // gap: '18px'
                 }}
               >
                 <Box
@@ -155,9 +238,17 @@ const ServicesSection = () => {
                   flexDirection={'column'}
                   sx={{
                     backgroundImage: 'none',
-                    boxShadow: '0 3px 6px 0 rgb(140 152 164 / 25%)',
-                    borderRadius: '8px'
+                    // boxShadow: '0 3px 6px 0 rgb(140 152 164 / 25%)',
+                    // boxShadow: 'rgb(0 0 0 / 5%) 0px 0px 0px 1px;',
+
+                    // boxShadow: 'rgba(0, 0, 0, 0.1) 0px 4px 12px',
+
+                    boxShadow: 'none',
+                    borderRadius: '8px',
+                    // border: '1px solid rgba(0,0,0,.125)',
+                    // boxShadow: '0 1px 2px rgb(0 0 0 / 20%)'
                   }}
+                  marginBottom={3}
 
                 >
                   <CardMedia
@@ -165,7 +256,7 @@ const ServicesSection = () => {
                     image={item.media}
                     sx={{
                       position: 'relative',
-                      height: { xs: 240, sm: 340, md: 280 },
+                      height: { xs: 240, sm: 340, md: 280, lg: 340 },
                       overflow: 'hidden',
                     }}
                   >
@@ -190,7 +281,7 @@ const ServicesSection = () => {
                         points="0,273 1921,273 1921,0 "
                       />
                     </Box>
-                    <Box
+                    {/* <Box
                       display={'flex'}
                       justifyContent={'space-between'}
                       position={'absolute'}
@@ -199,17 +290,17 @@ const ServicesSection = () => {
                       width={1}
                       zIndex={2}
                     >
-                      {/* <Box
+                      <Box
                         padding={1}
                         bgcolor={'background.paper'}
                         boxShadow={1}
                         borderRadius={2}
                       >
                         <Typography sx={{ fontWeight: 600 }}>
-                          {item.price}
+                          od 100zł
                         </Typography>
-                      </Box> */}
-                      {/* <Button
+                      </Box>
+                      <Button
                         variant={'contained'}
                         color="primary"
                         size="large"
@@ -233,21 +324,28 @@ const ServicesSection = () => {
                         }
                       >
                         Save
-                      </Button> */}
-                    </Box>
+                      </Button>
+                    </Box> */}
                   </CardMedia>
                   <CardContent>
                     <Typography
                       variant={'h6'}
                       gutterBottom
-                      align={'left'}
-                      sx={{ fontWeight: 700 }}
+                      align={'center'}
+                      sx={{
+                        // fontWeight: 500,
+                        fontFamily: '"Roboto", sans-serif',
+                        textTransform: 'uppercase',
+                        letterSpacing: '0.045em;',
+                        color: '#444'
+                      }}
                     >
                       {item.title}
                     </Typography>
-                    {/* <Typography align={'left'} color={'text.secondary'}>
-                      {item.description}
-                    </Typography> */}
+                    <Typography align={'center'} color={'text.secondary'} sx={{ fontSize: "14px" }}>
+                      {/* {item.description} */}
+                      Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.
+                    </Typography>
                     {/* <Box display={'flex'} alignItems={'center'} marginY={2}>
                       <Box
                         component={'svg'}
@@ -300,9 +398,30 @@ const ServicesSection = () => {
                     </Box> */}
                   </CardContent>
                   <Box flexGrow={1} />
-                  {/* <CardActions sx={{ justifyContent: 'flex-start' }}>
-                    <Button>Learn more</Button>
-                  </CardActions> */}
+                  <CardActions sx={{ justifyContent: 'center', paddingTop: 0 }}>
+                    {/* <Button>Dowiedz się więcej</Button> */}
+
+                    <Box
+              className="link-outlined-card"
+              marginTop={{ xs: 2, sm: 0 }}
+              width={{ xs: '100%', md: 'auto' }}
+          >
+              <Button
+                  component={Link}
+                  to={`/services`}
+                  variant="outline"
+                  size="small"
+                  fullWidth={isMd ? false : true}
+                  endIcon={
+<ChevronRightIcon />
+                    
+                  }
+              >
+                  Dowiedz się więcej
+              </Button>
+          </Box>
+
+                  </CardActions>
                 </Box>
               </Box>
             </Box>

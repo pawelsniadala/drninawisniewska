@@ -1,0 +1,40 @@
+.scrollup {
+    button.MuiButton-root {
+        z-index: 1000;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        right: 1.5rem;
+        bottom: 1.5rem;
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        min-height: 50px;
+        padding: 0;
+        // background-color: #171717;
+        // background-color: #D29A3E;
+        background-image: linear-gradient(45deg, #D29A3E 0%, #DBAF62  51%, #DDBD83  100%);
+        // opacity: 0.4;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+
+        // &:focus {
+        //     outline: none;
+        //     box-shadow: none;
+        // }
+
+        // i {
+        //     font-size: 22px;
+        // }
+    }
+}
+
+body.modal-open {
+    .scrollup {
+        button.btn {
+            display: none;
+        }
+    }
+}

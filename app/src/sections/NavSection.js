@@ -13,13 +13,15 @@ import Container from '@mui/material/Container';
 // import Avatar from '@mui/material/Avatar';
 // import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
+import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 // import AdbIcon from '@mui/icons-material/Adb';
-import BinanceLogoSvg from '../assets/svg/BinanceLogoSvg';
+// import BinanceLogoSvg from '../assets/svg/BinanceLogoSvg';
 import FacebookSvg from '../assets/svg/FacebookSvg'
+import InstagramSvg from '../assets/svg/InstagramSvg';
 
-// import logo from '../assets/nav/logo.png'
+import logo from '../assets/nav/logo.png'
 
 const pages = ['Zespół', 'Dermatologia', 'Medycyna estetyczna', 'Kosmetologia', 'Cennik', 'Vectus', 'Icoone'];
 
@@ -50,12 +52,12 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
         threshold: 38,
     });
 
-    const linkColor = location.pathname !== '/'
-        ? 'text.primary' : (location.pathname === '/' && scrollTrigger) ? 'text.primary'
+    const linkColor = location.pathname !== '/drninawisniewska/'
+        ? 'text.primary' : (location.pathname === '/drninawisniewska/' && scrollTrigger) ? 'text.primary'
         : 'common.white';
 
-    const iconColor = location.pathname !== '/'
-        ? '#505050' : (location.pathname === '/' && scrollTrigger) ? '#505050'
+    const iconColor = location.pathname !== '/drninawisniewska/'
+        ? '#505050' : (location.pathname === '/drninawisniewska/' && scrollTrigger) ? '#505050'
         : '#ffffff';
 
     return (
@@ -65,7 +67,9 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                     top: 0,
                     backgroundColor: scrollTrigger ? theme.palette.background.paper : bgcolor,
                     // backgroundColor: scrollTrigger ? '#B2A99E' : bgcolor,
-                    boxShadow:  scrollTrigger ? 'rgb(140 152 164 / 25%) 0px 3px 6px 0px' : 'none'
+                    boxShadow:  scrollTrigger ? 'rgb(140 152 164 / 25%) 0px 3px 6px 0px' : 'none',
+                    display: 'flex',
+                    alignItems: 'center'
                 }}
             >
                 <Container maxWidth="xl">
@@ -77,7 +81,9 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                             display: { xs: 'none', md: 'flex' },
                         }}>
                             {nav.navLogo.map((item) => (
-                                <Box key={item.id} sx={{ paddingTop: 1.5, paddingBottom: 1.5 }}>
+                                <Box key={item.id}
+                                sx={{ paddingTop: 1.5, paddingBottom: 1.5 }}
+                                >
                                     <NavLink
                                         className="nav-link"
                                         activeclassname="active"
@@ -88,19 +94,36 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                         {/* <BinanceLogoSvg /> */}
                                         {/* Logo */}
                                         {/* {logo} */}
-                                        {/* <img alt="logo" height="70" src={require('../assets/nav/logo.png')} /> */}
+                                        {/* {linkColor === 'common.white' ? (
+                                            <img alt="logo" height="70" src={require('../assets/nav/logo.png')} />
+
+                                        ) : (
+                                            <img alt="logo" height="70" src={require('../assets/nav/logo_dark.png')} />
+                                        )} */}
+                                        <Box sx={{ display: 'flex', gap: 2, alignItems: 'center'}}>
+                                        {/* <img alt="logo" height="65" src={require('../assets/nav/logo1.png')} /> */}
                                         <Typography
                                             sx={{
-                                                textTransform: 'uppercase',
-                                                fontSize: 22,
-                                                fontWeight: 600,
+                                                // textTransform: 'uppercase',
+                                                // fontSize: 22,
+                                                // fontWeight: 600,
                                                 // color: '#DAA520',
                                                 // color: '#f9b934'
-                                                color: '#f8b01b'
+                                                // color: '#f8b01b',
+                                                fontFamily: '"IBM Plex Serif", serif',
+                                                // color: '#000',
+                                                // fontSize: '1.7em',
+                                                fontSize: '1.9em',
+                                                letterSpacing: '3px',
+                                                fontWeight: 400,
+                                                whiteSpace: 'nowrap',
+                                                color: linkColor,
+                                                // color: '#d99507',
                                             }}
                                         >
                                             Dr Nina Wiśniewska
                                         </Typography>
+                                        </Box>
                                     </NavLink>
                                 </Box>
                             ))}
@@ -235,6 +258,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                             // fontWeight={openedPopoverId === id || hasActiveLink() ? 700 : 400}
                                             color={linkColor}
                                             // color={"#fff"}
+                                            // sx={{fontSize: 18}}
                                         >
                                             {item.title}
                                         </Typography>
@@ -242,7 +266,25 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                 </li>
                             ))}
                         </Box>
-                        <Box sx={{ flexGrow: 0 }}>
+                        {/* <Box sx={{ gap: 2, display: 'flex' }}> */}
+                        <Box sx={{ gap: 2, display: { xs: 'none', md: 'flex' } }}>
+                            <Tooltip title="Zadzwoń">
+                                <Box
+                                    className="link-outlined-contact"
+                                    marginTop={{ xs: 2, sm: 0 }}
+                                    width={{ xs: '100%', md: 'auto' }}
+                                >
+                                    <Button
+                                        className={linkColor === "common.white" ? "light" : "dark"}
+                                        component={Link}
+                                        to={`/services`}
+                                        variant="outlined"
+                                        size="small"
+                                    >
+                                        +48 450 001 550
+                                    </Button>
+                                </Box>
+                            </Tooltip>
                             <Tooltip title="Facebook">
                                 {/* <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}> */}
                                     {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
@@ -260,6 +302,15 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                     rel="noreferrer"
                                 >
                                     <FacebookSvg color={iconColor} />
+                                </a>
+                            </Tooltip>
+                            <Tooltip title="Instagram">
+                                <a key="" href="https://www.facebook.com/profile.php?id=100063736802328"
+                                    className="nav-link"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <InstagramSvg color={iconColor} />
                                 </a>
                             </Tooltip>
                         </Box>

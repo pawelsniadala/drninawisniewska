@@ -1,0 +1,62 @@
+.sample-next-arrow {
+    // font-size: 0;
+    // line-height: 0;
+    position: absolute;
+    top: 50%;
+    // display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    // color: transparent;
+    border: none;
+    outline: none;
+    // background: transparent;
+    background: #fff;
+    right: -35px;
+
+    // box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 4px 8px 0 rgb(0 0 0 / 20%);
+    box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px;
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    border-radius: 999rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sample-prev-arrow {
+        // font-size: 0;
+    // line-height: 0;
+    position: absolute;
+    top: 50%;
+    // display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    // color: transparent;
+    border: none;
+    outline: none;
+    // background: transparent;
+    background: #fff;
+    left: -35px;
+
+    // box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 4px 8px 0 rgb(0 0 0 / 20%);
+    box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px;
+    cursor: pointer;
+    height: 36px;
+    width: 36px;
+    border-radius: 999rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+

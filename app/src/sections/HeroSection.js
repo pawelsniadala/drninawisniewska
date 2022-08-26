@@ -37,7 +37,7 @@ const HeroSection = () => {
             data-jarallax
             data-speed="0.2"
             position={'relative'}
-            minHeight={{ xs: 400, sm: 500, md: 800 }}
+            minHeight={{ xs: 400, sm: 500, md: 600 }}
             // sx={{ height: 'calc(100vh)' }}
             display={'flex'}
             alignItems={'end'}
@@ -74,9 +74,10 @@ const HeroSection = () => {
                     bottom: 0,
                     width: 1,
                     height: 1,
-                    background: alpha('#161c2d', 0.4),
+                    // background: alpha('#161c2d', 0.3),
                     // background: alpha('#161c2d', 0.25),
                     zIndex: 1,
+                    backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.15))'
                 }}
             />
             <Container maxWidth="xl"
@@ -91,43 +92,49 @@ const HeroSection = () => {
                         gutterBottom
                         sx={{
                             fontWeight: 900,
-                            color: 'common.white',
-                            lineHeight: 1
+                            // color: 'common.white',
+                            lineHeight: 1,
+                            color: 'rgba(255, 255, 255, 0.95)',
                         }}
                     >
-                        <Typography
+                        {/* <Typography
                             sx={{
                                 textTransform: 'uppercase',
-                                fontWeight: 'medium',
-                                lineHeight: 1.5
+                                color: '#d99507',
+                                fontWeight: 600,
+                                lineHeight: 2
                             }}
                             gutterBottom
                         >
-                            {/* Dr Nina Wiśniewska */}
-                            </Typography>
-                                Zainwestuj w swoją skórę.<br/>
-                                Będzie reprezentować cię<br/>
-                                przez bardzo długi czas.
-                            </Typography>
+                            Dr nauk medycznych
+                        </Typography> */}
+                        {/* Specjalista w zakresie<br/>
+                        Dermatologii i Wenerologii<br/>
+                        Lekarz medycyny estetycznej */}
+                    </Typography>
+
                     {/* <Typography
                         variant="h6"
                         component="p"
                         sx={{
                             fontWeight: 400,
-                            color: 'common.white'
+                            // color: 'common.white',
+                            color: 'rgba(255, 255, 255, 0.85)',
                         }}
                     >
-                        theFront will make your product look modern and professional while
-                        saving you precious time.
+                        W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia chorób skóry.<br/>
+                        Dodatkowo oferujemy usługi takich specjalistów jak: kardiolog, ortopeda, hematolog, fizjoterapeuta<br/>
+                        chirurg naczyniowy, dietetyk kliczniczny oraz ginekolog-endokrynolog.
                     </Typography> */}
+
                     <Box
-                        className="link-contained"
+                        // className="link-contained"
                         display="flex"
                         flexDirection={{ xs: 'column', sm: 'row' }}
                         alignItems={{ xs: 'stretched', sm: 'flex-start' }}
                         marginTop={4}
                     >
-                        <Box
+                        {/* <Box
                             className="link-contained"
                             marginTop={{ xs: 2, sm: 0 }}
                             width={{ xs: '100%', md: 'auto' }}
@@ -139,11 +146,30 @@ const HeroSection = () => {
                                 color="primary"
                                 size="large"
                                 fullWidth={isMd ? false : true}
+                                endIcon={
+              <Box
+                component={'svg'}
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#fff"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                width={24}
+                height={24}
+              >
+
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </Box>
+            }
                             >
-                                Zobacz usługi
+                                Zapoznaj się z ofertą
                             </Button>
-                        </Box>
-                        <Box
+                        </Box> */}
+                        {/* <Box
                             className="link-outlined"
                             marginTop={{ xs: 2, sm: 0 }}
                             marginLeft={{ sm: 2 }}
@@ -159,7 +185,7 @@ const HeroSection = () => {
                             >
                                 Napisz wiadomość
                             </Button>
-                        </Box>
+                        </Box> */}
                     </Box>
                 </Box>
             </Container>

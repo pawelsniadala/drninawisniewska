@@ -24,5 +24,25 @@ export const team = [
         title: 'SEO at Comoti',
         avatar: 'https://assets.maccarianagency.com/avatars/img6.jpg',
     },
+    {
+        name: 'Chary Smith',
+        title: 'SEO at Comoti',
+        avatar: 'https://assets.maccarianagency.com/avatars/img3.jpg',
+    },
+    {
+        name: 'Clara Bertoletti',
+        title: 'Junior Designer',
+        avatar: 'https://assets.maccarianagency.com/avatars/img4.jpg',
+    },
+    {
+        name: 'Jhon Anderson',
+        title: 'Senior Frontend Developer',
+        avatar: 'https://assets.maccarianagency.com/avatars/img5.jpg',
+    },
+    {
+        name: 'Chary Smith',
+        title: 'SEO at Comoti',
+        avatar: 'https://assets.maccarianagency.com/avatars/img6.jpg',
+    },
 ];
 

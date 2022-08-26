@@ -6,7 +6,7 @@ import {
 import MainTemplate from "../templates/MainTemplate";
 // import FooterSection from "../sections/FooterSection";
 
-// import ScrollArrow from "../components/ScrollArrow";
+import ScrollArrow from "../components/ScrollArrow";
 // import Modal from "../components/Modal";
 // import Toast from "../components/Toast";
 
@@ -43,8 +43,8 @@ const Root = () => (
             </main>
             {/* <Modal /> */}
             {/* <Toast />
-            <FooterSection />
-            <ScrollArrow /> */}
+            <FooterSection /> */}
+            <ScrollArrow />
         </Router>
     </MainTemplate>
 );

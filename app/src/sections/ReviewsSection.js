@@ -16,7 +16,7 @@ const ReviewsSection = () => {
     return (
         <Box
             sx={{
-                backgroundColor: '#f7faff',
+                backgroundColor: '#fff',
                 paddingTop: "64px",
                 paddingBottom: "64px"
             }}>
