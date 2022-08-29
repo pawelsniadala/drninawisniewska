@@ -6,9 +6,11 @@ import { useEffect } from "react";
 // import PhotoSection from "../sections/PhotoSection";
 import AboutSection from "../sections/AboutSection";
 import HeroSection from "../sections/HeroSection";
+import HeroSection2 from "../sections/HeroSection2";
 import ServicesSection from "../sections/ServicesSection";
 import PriceSection from '../sections/PriceSection';
 import ReviewsSection from "../sections/ReviewsSection";
+import ReviewsSection2 from "../sections/ReviewsSection2";
 import TeamSection from "../sections/TeamSection";
 import ContactSection from "../sections/ContactSection";
 
@@ -20,14 +22,16 @@ const HomeView = () => {
     return (
         <div className="home-view">
             {/* <p>home-view</p> */}
-            <HeroSection />
+            {/* <HeroSection /> */}
+            <HeroSection2 />
             <AboutSection />
             <ServicesSection />
-            {/* <PriceSection /> */}
+            <PriceSection />
 
             {/* <ReviewsSection /> */}
+            {/* <ReviewsSection2 /> */}
             <TeamSection />
-            <ContactSection />
+            {/* <ContactSection /> */}
             {/* <PosterSection />
             <CastSection />
             <CreatorSection />

@@ -7,7 +7,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-import HeroJpg from '../assets/hero.jpg'
+import HeroJpg from '../assets/hero4.jpg'
 // import Container from '../components/Container';
 
 {/* <a href='https://pl.freepik.com/zdjecia/kobieta-twarz'>Kobieta twarz zdjęcie utworzone przez cookie_studio - pl.freepik.com</a> */}
@@ -37,12 +37,12 @@ const HeroSection = () => {
             data-jarallax
             data-speed="0.2"
             position={'relative'}
-            minHeight={{ xs: 400, sm: 500, md: 600 }}
+            minHeight={{ xs: 400, sm: 500, md: 750 }}
             // sx={{ height: 'calc(100vh)' }}
             display={'flex'}
             alignItems={'end'}
             // marginTop={-13}
-            paddingTop={13}
+            // paddingTop={13}
             paddingBottom={5}
             id="agency__portfolio-item--js-scroll"
         >
@@ -60,7 +60,7 @@ const HeroSection = () => {
                     zIndex: -1,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
-                    backgroundPosition: 'bottom center',
+                    backgroundPosition: 'center center',
                     // backgroundImage: 'url(https://assets.maccarianagency.com/backgrounds/img52.jpg)'
                     backgroundImage: `url(${HeroJpg})`
                 }}
@@ -77,7 +77,7 @@ const HeroSection = () => {
                     // background: alpha('#161c2d', 0.3),
                     // background: alpha('#161c2d', 0.25),
                     zIndex: 1,
-                    backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.15))'
+                    backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.15), rgba(0,0,0,0.1))'
                 }}
             />
             <Container maxWidth="xl"

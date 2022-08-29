@@ -130,8 +130,9 @@ const AboutSection = () => {
         // paddingTop: 13,
         // paddingTop: "64px", paddingBottom: "64px",
 
-        backgroundColor: '#f2f7ff',
-        backgroundImage: `linear-gradient(#fff, #f7faff)`,
+        // backgroundColor: '#f2f7ff',
+        // backgroundImage: `linear-gradient(#fff, #f7faff)`,
+        backgroundColor: '#fff',
       }}
     >
       <Container>
@@ -141,17 +142,12 @@ const AboutSection = () => {
         <Typography
           sx={{
             textTransform: 'uppercase',
-            // color: '#f8b01b',
             color: '#DBAF62',
-            // fontWeight: 600,
             lineHeight: 1.5,
             letterSpacing: '0.045em;',
-            // fontFamily: '"Lato", sans-serif',
-
-            fontFamily: '"Roboto", sans-serif',
-            fontSize: '18px',
+            fontFamily: 'Raleway, sans-serif',
+            fontSize: '17px',
             fontWeight: '400',
-
           }}
           // className={"tests"}
           gutterBottom
@@ -166,17 +162,14 @@ const AboutSection = () => {
           data-aos={'fade-right'}
           gutterBottom
           sx={{
-            // fontWeight: 400,
-            // textTransform: 'uppercase',
-            // letterSpacing: '0.045em;',
-            // fontFamily: '"Lato", sans-serif',
+            // fontFamily: 'Raleway, sans-serif',
             fontFamily: 'Lato,sans-serif',
             fontSize: '30px',
             lineHeight: '1.208em',
             letterSpacing: '.045em',
             textTransform: 'uppercase',
-            // color: '#212529',
-            color: '#444'
+            fontWeight: '400',
+            color: 'rgba(0, 0, 0, 0.6)'
           }}
         >
             Kilka słów o naszej klinice
@@ -187,10 +180,9 @@ const AboutSection = () => {
           color={'text.secondary'}
           data-aos={'fade-right'}
           sx={{
-            // fontFamily: '"Roboto", sans-serif',
+            fontFamily: 'Raleway, sans-serif',
             fontSize: '18px',
             fontWeight: '400',
-            // color: '#838383'
           }}
         >
           Dowiedz się więcej o naszej klinice
@@ -211,7 +203,8 @@ const AboutSection = () => {
           >
               <Button
                   component={Link}
-                  to={`/services`}
+                  // to={`/about`}
+                  to={`/drninawisniewska/`}
                   variant="contained"
                   color="primary"
                   size="large"
@@ -290,6 +283,9 @@ const AboutSection = () => {
           cols={3}
           rowHeight={isMd ? 300 : 200}
           gap={isMd ? 16 : 4}
+          sx={{
+            overflowY: 'hidden',
+          }}
         >
           {about.map((item, i) => (
             <ImageListItem key={i} cols={item.cols} rows={item.rows}>
@@ -307,6 +303,12 @@ const AboutSection = () => {
                   cursor: 'poiner',
                   borderRadius: 8,
                 }}
+                // sx={{
+                //       transition: 'opacity, transform ease 0.3s !important',
+                //       '&:hover': {
+                //         transform: 'scale(1.2)',
+                //       },
+                //     }}
               />
             </ImageListItem>
           ))}
@@ -359,12 +361,15 @@ const AboutSection = () => {
                                   display: 'flex',
                                   justifyContent:'center',
 
-                                  fontFamily: 'Lato,sans-serif',
-                                  // fontSize: '30px',
+                                  // fontFamily: 'Lato,sans-serif',
+                                  // fontFamily: 'Raleway, sans-serif',
+                                  font: '400 14px/20px Google Sans Text,Arial,Helvetica,sans-serif',
+                                  fontSize: '45px',
                                   // lineHeight: '1.208em',
                                   letterSpacing: '.045em',
                                   // textTransform: 'uppercase',
-                                  color: '#444',
+                                  // color: '#444',
+                                  color: 'rgba(0, 0, 0, 0.6)'
                                 }}>
                                     <CountUp
                                         duration={2}
@@ -385,10 +390,20 @@ const AboutSection = () => {
           color={'text.secondary'}
           // data-aos={'fade-left'}
           sx={{
-            // fontFamily: '"Roboto", sans-serif',
-            fontSize: '18px',
-            fontWeight: '400',
+            // fontFamily: '"Lato", sans-serif',
+            // fontSize: '18px',
+            // fontWeight: '400',
             // color: '#838383'
+
+            // fontFamily: 'Raleway, sans-serif',
+            // font: '400 14px/20px Google Sans Text,Arial,Helvetica,sans-serif',
+                            // fontSize: '18px',
+                            // fontWeight: '400',
+                            // color: 'rgba(0, 0, 0, 0.6)'
+
+                            fontFamily: 'Raleway, sans-serif',
+                            fontSize: '18px',
+                            fontWeight: '400',
           }}
         >
           {item.subtitle}

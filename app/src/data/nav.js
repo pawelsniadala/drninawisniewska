@@ -11,13 +11,15 @@ export const nav = {
     navItem: [
         {
             id: "09a7d739-42f1-4147-a2ed-79bc2ac7b2d6",
-            title: "O mnie",
-            path: "/about"
+            title: "Klinika",
+            // path: "/about"
+            path: "/drninawisniewska/"
         },
         {
             id: "0417e32b-d424-460f-af97-dadc8efa5bde",
             title: "Usługi",
-            path: "/services"
+            // path: "/services"
+            path: "/drninawisniewska/"
         },
         {
             id: "982bb88c-d367-4fa2-a06a-57a71c32cd03",
@@ -32,12 +34,20 @@ export const nav = {
         {
             id: "ca385125-35d1-469e-b5a7-b800e26ed0d1",
             title: "Zespół",
-            path: "/team"
+            // path: "/team"
+            path: "/drninawisniewska/"
+        },
+        {
+            id: "ca385125-35d1-469e-b5a7-b800e26ed0d0",
+            title: "Sprzęt",
+            // path: "/team"
+            path: "/drninawisniewska/"
         },
         {
             id: "2a385c29-263e-49b8-a18a-c4f7f025c808",
             title: "Kontakt",
-            path: "/contact"
+            // path: "/contact"
+            path: "/drninawisniewska/"
         },
     ]
 };

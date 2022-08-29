@@ -4,8 +4,8 @@
     position: absolute;
     top: 50%;
     // display: block;
-    width: 20px;
-    height: 20px;
+    // width: 20px;
+    // height: 20px;
     padding: 0;
     transform: translate(0, -50%);
     cursor: pointer;
@@ -14,18 +14,27 @@
     outline: none;
     // background: transparent;
     background: #fff;
-    right: -35px;
+    right: -45px;
 
     // box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 4px 8px 0 rgb(0 0 0 / 20%);
-    box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px;
+    // box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px;
+    box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
     cursor: pointer;
-    height: 36px;
-    width: 36px;
+    height: 38px;
+    width: 38px;
     border-radius: 999rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    svg {
+        filter: invert(48%) sepia(6%) saturate(407%) hue-rotate(169deg) brightness(93%) contrast(85%);
+
+        &:hover {
+            filter: invert(24%) sepia(0%) saturate(453%) hue-rotate(182deg) brightness(89%) contrast(81%);
+        }
+    }
 }
 
 .sample-prev-arrow {
@@ -34,20 +43,21 @@
     position: absolute;
     top: 50%;
     // display: block;
-    width: 20px;
-    height: 20px;
+    // width: 20px;
+    // height: 20px;
     padding: 0;
-    transform: translate(0, -50%);
-    cursor: pointer;
+    // transform: translate(0, -50%);
+    // cursor: pointer;
     // color: transparent;
     border: none;
     outline: none;
     // background: transparent;
     background: #fff;
-    left: -35px;
+    left: -45px;
 
     // box-shadow: 0 0 0 1px rgb(0 0 0 / 4%), 0 4px 8px 0 rgb(0 0 0 / 20%);
-    box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px;
+    // box-shadow: rgb(0 0 0 / 5%) 0px 0px 0px 1px;
+    box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
     cursor: pointer;
     height: 36px;
     width: 36px;
@@ -57,6 +67,14 @@
     align-items: center;
     justify-content: center;
     z-index: 999;
+
+    svg {
+        filter: invert(48%) sepia(6%) saturate(407%) hue-rotate(169deg) brightness(93%) contrast(85%);
+
+        &:hover {
+            filter: invert(24%) sepia(0%) saturate(453%) hue-rotate(182deg) brightness(89%) contrast(81%);
+        }
+    }
 }
 
 

@@ -4,13 +4,14 @@ import {
     Route
 } from "react-router-dom";
 import MainTemplate from "../templates/MainTemplate";
-// import FooterSection from "../sections/FooterSection";
+import FooterSection from "../sections/FooterSection";
 
 import ScrollArrow from "../components/ScrollArrow";
 // import Modal from "../components/Modal";
 // import Toast from "../components/Toast";
 
 import NavSection from "../sections/NavSection";
+import NavSection2 from "../sections/NavSection2";
 import HomeView from "./HomeView";
 import AboutView from "./AboutView";
 import ServicesView from "./ServicesView";
@@ -42,8 +43,8 @@ const Root = () => (
                 </Routes>
             </main>
             {/* <Modal /> */}
-            {/* <Toast />
-            <FooterSection /> */}
+            {/* <Toast /> */}
+            {/* <FooterSection /> */}
             <ScrollArrow />
         </Router>
     </MainTemplate>

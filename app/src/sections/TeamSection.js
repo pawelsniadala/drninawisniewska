@@ -14,6 +14,9 @@ import Container from '../components/Container'
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useTheme } from '@mui/material/styles';
 import { team } from '../data/team';
+import CardActions from '@mui/material/CardActions';
+
+
 
 const TeamSection = () => {
     const theme = useTheme();
@@ -25,8 +28,7 @@ const TeamSection = () => {
         <Box sx={{
             // paddingTop: "64px",
             // paddingBottom: "64px",
-            backgroundColor: '#f2f7ff',
-            backgroundImage: `linear-gradient(#fff, #f7faff)`,
+            backgroundColor: '#fbfbfd',
             // boxShadow: 'rgb(0 0 0 / 5%) 0px 0px 0px 1px;',
         }}>
             <Container>
@@ -40,17 +42,12 @@ const TeamSection = () => {
         <Typography
           sx={{
             textTransform: 'uppercase',
-            // color: '#f8b01b',
             color: '#DBAF62',
-            // fontWeight: 600,
             lineHeight: 1.5,
             letterSpacing: '0.045em;',
-            // fontFamily: '"Lato", sans-serif',
-
-            fontFamily: '"Roboto", sans-serif',
-            fontSize: '18px',
+            fontFamily: 'Raleway, sans-serif',
+            fontSize: '17px',
             fontWeight: '400',
-
           }}
           // className={"tests"}
           gutterBottom
@@ -65,17 +62,14 @@ const TeamSection = () => {
           data-aos={'fade-right'}
           gutterBottom
           sx={{
-            // fontWeight: 400,
-            // textTransform: 'uppercase',
-            // letterSpacing: '0.045em;',
-            // fontFamily: '"Lato", sans-serif',
+            // fontFamily: 'Raleway, sans-serif',
             fontFamily: 'Lato,sans-serif',
             fontSize: '30px',
             lineHeight: '1.208em',
             letterSpacing: '.045em',
             textTransform: 'uppercase',
-            // color: '#212529',
-            color: '#444'
+            fontWeight: '400',
+            color: 'rgba(0, 0, 0, 0.6)'
           }}
         >
             Zaufaj profesjonalistom
@@ -86,10 +80,9 @@ const TeamSection = () => {
           color={'text.secondary'}
           data-aos={'fade-right'}
           sx={{
-            // fontFamily: '"Roboto", sans-serif',
+            fontFamily: 'Raleway, sans-serif',
             fontSize: '18px',
             fontWeight: '400',
-            // color: '#838383'
           }}
         >
           Nasz zespół składa się ze specjalistów o bardzo szerokim spektrum kompetencji
@@ -110,7 +103,8 @@ const TeamSection = () => {
           >
               <Button
                   component={Link}
-                  to={`/team`}
+                    //to={`/team`} // TODO
+                  to={`/drninawisniewska/`}
                   variant="contained"
                   color="primary"
                   size="large"
@@ -154,13 +148,13 @@ const TeamSection = () => {
 
 
 
-                <Grid container spacing={4}>
-                    {team.slice(0, 4).map((item, i) => (
+                <Grid container spacing={2}>
+                    {team.slice(0, 3).map((item, i) => (
                     <Grid
                         item
                         xs={12}
                         sm={6}
-                        md={3}
+                        md={4}
                         key={i}
                         data-aos={'fade-up'}
                         data-aos-delay={i * 100}
@@ -172,6 +166,7 @@ const TeamSection = () => {
                                 boxShadow: 0,
                                 background: 'transparent',
                                 backgroundImage: 'none',
+                                borderRadius: '12px'
                             }}
                         >
                         <Box
@@ -179,8 +174,12 @@ const TeamSection = () => {
                             borderRadius={2}
                             width={1}
                             height={1}
-                            minHeight={320}
+                            minHeight={450}
                             image={item.avatar}
+                            sx={{
+                              backgroundPosition: 'top center',
+                            }}
+                            
                         />
                         <Box
                             component={CardContent}
@@ -190,16 +189,60 @@ const TeamSection = () => {
                             <Box
                                 component={Card}
                                 sx={{
-                                    boxShadow: '0 3px 6px 0 rgb(140 152 164 / 25%)',
-                                    borderRadius: '8px'
+                                    // boxShadow: '0 3px 6px 0 rgb(140 152 164 / 25%)',
+                                    boxShadow: '1px 2px 6px rgb(0 0 0 / 4%)',
+                                    // boxShadow: 'none',
+                                    borderRadius: '12px'
                                 }}
                             >
                             <CardContent>
-                                <ListItemText primary={item.name} secondary={item.title} />
+                                {/* <ListItemText primary={item.name} secondary={item.title} /> */}
+
+                                <Typography
+                    align={'center'}
+                    // color={'text.secondary'}
+                    sx={{
+                        fontSize: "13px",
+                        // color: '#DBAF62',
+                    }}
+                >
+                    {item.title}
+                </Typography>
+                <Typography
+                    variant={'h6'}
+                    gutterBottom
+                    align={'center'}
+                    sx={{
+                        // fontFamily: '"Roboto", sans-serif',
+                        // textTransform: 'uppercase',
+                        // letterSpacing: '0.045em;',
+                        // color: '#444',
+                        // fontWeight: 400,
+                        // fontSize: '0.95rem',
+
+                        fontFamily: 'Lato,sans-serif',
+                        letterSpacing: '.045em',
+                        textTransform: 'uppercase',
+                        fontWeight: '400',
+                        // color: 'rgba(0, 0, 0, 0.7)', 
+                        fontSize: '1rem',
+                    }}
+                >
+                    {item.name}
+                </Typography>
+                <Typography
+                    align={'center'}
+                    color={'text.secondary'}
+                    sx={{ fontSize: "14px" }}
+                >
+                    {item.speciality}
+                </Typography>
+
                             </CardContent>
                             </Box>
                         </Box>
                         </Card>
+
                     </Grid>
                     ))}
                 </Grid>

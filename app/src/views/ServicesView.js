@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 // import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
 // import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
+import Container from '../components/Container';
 import ServicesHeadlinePartial from './partials/services/ServicesHeadlinePartial';
 import ServicesGridPartial from './partials/services/ServicesGridPartial';
 
@@ -20,8 +20,16 @@ const ServicesView = () => {
     return (
         <Box>
             <ServicesHeadlinePartial />
-            <Box sx={{ paddingTop: "64px", paddingBottom: "64px" }}>
-                <Container maxWidth="xl">
+            <Box
+                sx={{
+                    // backgroundColor: '#FAFCFF',
+                    // backgroundColor: '#F5F9FF',
+                    backgroundColor: '#fbfbfd',
+                    // backgroundColor: '#f5f5f7',
+                    // boxShadow: 'rgb(0 0 0 / 5%) 0px 0px 0px 1px;',
+                }}
+            >
+                <Container>
                     <ServicesGridPartial />
                 </Container>
             </Box>

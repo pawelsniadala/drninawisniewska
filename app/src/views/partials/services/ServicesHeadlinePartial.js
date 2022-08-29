@@ -9,7 +9,8 @@ const ContactHeadlinePartial = () => {
         <Box
             sx={{
                 // backgroundColor: '#f7faff',
-                backgroundColor: '#f2f7ff',
+                // backgroundColor: '#f2f7ff',
+                backgroundColor: '#f5f5f7',
                 // backgroundImage: `linear-gradient(120deg, #fff 0%, #f7faff 100%)`,
                 paddingTop: 14,
                 paddingBottom: 14

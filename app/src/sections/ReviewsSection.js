@@ -7,8 +7,9 @@ import Grid from '@mui/material/Grid';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
-import Container from '@mui/material/Container';
+// import Container from '@mui/material/Container';
 import { reviews } from '../data/reviews';
+import Container from '../components/Container';
 
 const ReviewsSection = () => {
     const theme = useTheme();
@@ -17,10 +18,10 @@ const ReviewsSection = () => {
         <Box
             sx={{
                 backgroundColor: '#fff',
-                paddingTop: "64px",
-                paddingBottom: "64px"
+                // paddingTop: "64px",
+                // paddingBottom: "64px"
             }}>
-            <Container maxWidth="xl">
+            <Container>
                 <Box marginBottom={4}>
                     <Box
                         display={'flex'}

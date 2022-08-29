@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
+import Container from '../components/Container';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 // import HeroJpg from '../assets/hero.jpg'
-import princesJpg from '../assets/princes/princes.jpg'
+import princesJpg from '../assets/princes/prices6.jpg'
 // import Container from '../components/Container';
-
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 {/* <a href='https://pl.freepik.com/zdjecia/kobieta-twarz'>Kobieta twarz zdjęcie utworzone przez cookie_studio - pl.freepik.com</a> */}
 
 const PriceSection = () => {
@@ -38,13 +38,13 @@ const PriceSection = () => {
             data-jarallax
             data-speed="0.2"
             position={'relative'}
-            minHeight={{ xs: 400, sm: 500, md: 600 }}
+            minHeight={{ xs: 400, sm: 500, md: 650 }}
             // sx={{ height: 'calc(100vh)' }}
             display={'flex'}
-            alignItems={'end'}
+            alignItems={'center'}
             // marginTop={-13}
-            paddingTop={13}
-            paddingBottom={5}
+            // paddingTop={13}
+            // paddingBottom={5}
             id="agency__portfolio-item--js-scroll"
         >
             <Box
@@ -63,7 +63,11 @@ const PriceSection = () => {
                     backgroundSize: 'cover',
                     backgroundPosition: 'top center',
                     // backgroundImage: 'url(https://assets.maccarianagency.com/backgrounds/img52.jpg)'
-                    backgroundImage: `url(${princesJpg})`
+                    backgroundImage: `url(${princesJpg})`,
+
+                    // display: 'flex',
+                    // alignItems: 'center',
+                    // justifyContent: 'center',
                 }}
             />
             <Box
@@ -76,117 +80,104 @@ const PriceSection = () => {
                     width: 1,
                     height: 1,
                     // background: alpha('#161c2d', 0.3),
-                    // background: alpha('#161c2d', 0.25),
+                    background: alpha('#161c2d', 0.25),
                     zIndex: 1,
                     // backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.15))'
                 }}
             />
-            <Container maxWidth="xl"
+            <Container
                 sx={{
                     position: "relative",
-                    zIndex: 2
+                    zIndex: 2,
+                    // display: 'flex',
+                    // justifyContent: 'center',
+                    // alignItems: 'center',
+                    padding: 0,
                 }}
             >
-                <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
+                <Box
+                // marginBottom={4}
+                sx={{
+                    // display: 'flex',
+                    // justifyContent: 'center',
+                    // alignItems: 'center',
+                }}
+                
+                >
+                    {/* <Typography
+                        sx={{
+                            textTransform: 'uppercase',
+                            color: '#DBAF62',
+                            lineHeight: 1.5,
+                            letterSpacing: '0.045em;',
+                            fontFamily: '"Roboto", sans-serif',
+                            fontSize: '18px',
+                            fontWeight: '400',
+                        }}
+                        gutterBottom
+                        align={'center'}
+                    >
+                        Usługi
+                    </Typography> */}
                     <Typography
-                        variant="h3"
+                        variant="h4"
+                        align={'center'}
+                        data-aos={'fade-right'}
                         gutterBottom
                         sx={{
-                            fontWeight: 900,
-                            // color: 'common.white',
-                            lineHeight: 1,
-                            color: 'rgba(255, 255, 255, 0.95)',
+                            // fontFamily: 'Raleway, sans-serif',
+                            fontFamily: 'Lato,sans-serif',
+                            fontSize: '30px',
+                            lineHeight: '1.208em',
+                            letterSpacing: '.045em',
+                            textTransform: 'uppercase',
+                            fontWeight: '400',
+                            color: '#fff'
                         }}
                     >
-                        {/* <Typography
-                            sx={{
-                                textTransform: 'uppercase',
-                                color: '#d99507',
-                                fontWeight: 600,
-                                lineHeight: 2
-                            }}
-                            gutterBottom
-                        >
-                            Dr nauk medycznych
-                        </Typography> */}
-                        Specjalista w zakresie<br/>
-                        Dermatologii i Wenerologii<br/>
-                        Lekarz medycyny estetycznej
+                        Aktualne ceny naszych usług
                     </Typography>
-
                     <Typography
                         variant="h6"
-                        component="p"
+                        align={'center'}
+                        // color={'text.secondary'}
+                        // data-aos={'fade-right'}
                         sx={{
-                            fontWeight: 400,
-                            // color: 'common.white',
-                            color: 'rgba(255, 255, 255, 0.85)',
+                            fontSize: '18px',
+                            fontWeight: '400',
+                            color: '#fff',
+                            fontFamily: 'Raleway, sans-serif',
                         }}
                     >
-                        W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia chorób skóry.<br/>
-                        Dodatkowo oferujemy usługi takich specjalistów jak: kardiolog, ortopeda, hematolog, fizjoterapeuta<br/>
-                        chirurg naczyniowy, dietetyk kliczniczny oraz ginekolog-endokrynolog.
+                        Zapoznaj się z cennikiem naszych usług
                     </Typography>
-
                     <Box
-                        // className="link-contained"
                         display="flex"
                         flexDirection={{ xs: 'column', sm: 'row' }}
                         alignItems={{ xs: 'stretched', sm: 'flex-start' }}
-                        marginTop={4}
+                        justifyContent={'center'}
+                        marginTop={2}
                     >
                         <Box
-                            className="link-contained"
+                            className="link-contained-more"
                             marginTop={{ xs: 2, sm: 0 }}
                             width={{ xs: '100%', md: 'auto' }}
                         >
                             <Button
                                 component={Link}
-                                to={`/services`}
+                                // to={`/services`} ::TODO
+                                to={`/drninawisniewska/`}
                                 variant="contained"
                                 color="primary"
                                 size="large"
                                 fullWidth={isMd ? false : true}
                                 endIcon={
-              <Box
-                component={'svg'}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="#fff"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                width={24}
-                height={24}
-              >
-
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </Box>
-            }
+                                    <ArrowForwardIcon />
+                                }
                             >
-                                Zapoznaj się z ofertą
+                                Zobacz cennik usług
                             </Button>
                         </Box>
-                        {/* <Box
-                            className="link-outlined"
-                            marginTop={{ xs: 2, sm: 0 }}
-                            marginLeft={{ sm: 2 }}
-                            width={{ xs: '100%', md: 'auto' }}
-                        >
-                            <Button
-                                component={Link}
-                                to={`/contact`}
-                                variant="outlined"
-                                color="primary"
-                                size="large"
-                                fullWidth={isMd ? false : true}
-                            >
-                                Napisz wiadomość
-                            </Button>
-                        </Box> */}
                     </Box>
                 </Box>
             </Container>
