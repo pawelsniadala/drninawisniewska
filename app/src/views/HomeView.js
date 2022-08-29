@@ -5,14 +5,14 @@ import { useEffect } from "react";
 // import SummarySection from "../sections/SummarySection";
 // import PhotoSection from "../sections/PhotoSection";
 import AboutSection from "../sections/AboutSection";
-import HeroSection from "../sections/HeroSection";
+// import HeroSection from "../sections/HeroSection";
 import HeroSection2 from "../sections/HeroSection2";
 import ServicesSection from "../sections/ServicesSection";
 import PriceSection from '../sections/PriceSection';
-import ReviewsSection from "../sections/ReviewsSection";
-import ReviewsSection2 from "../sections/ReviewsSection2";
+// import ReviewsSection from "../sections/ReviewsSection";
+// import ReviewsSection2 from "../sections/ReviewsSection2";
 import TeamSection from "../sections/TeamSection";
-import ContactSection from "../sections/ContactSection";
+// import ContactSection from "../sections/ContactSection";
 
 const HomeView = () => {
     useEffect(() => {

@@ -7,7 +7,7 @@ import Container from '../components/Container';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-import HeroJpg from '../assets/hero.jpg'
+// import HeroJpg from '../assets/hero.jpg'
 // import Container from '../components/Container';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
@@ -52,7 +52,7 @@ const HeroSection = () => {
                         }}
                     />
                     {/* <div class="carousel-caption d-none d-md-block"> */}
-                    <div class="carousel-caption">
+                    <div className="carousel-caption">
                     <Container>
                         <Box>
                             <Typography
@@ -143,7 +143,7 @@ const HeroSection = () => {
                             backgroundPosition: 'center center',
                         }}
                     />
-                    <div class="carousel-caption d-none d-md-block">
+                    <div className="carousel-caption d-none d-md-block">
                     <Container>
                         <Box>
                             <Typography

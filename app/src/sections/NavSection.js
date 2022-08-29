@@ -429,7 +429,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                                 color: '#f8b01b'
                                             }}
                                         >
-                                            Dr Nina Wiśniewska
+                                            {/* Dr Nina Wiśniewska LOGO PHONE */}
                                         </Typography>
                                     </NavLink>
                                 </Box>
