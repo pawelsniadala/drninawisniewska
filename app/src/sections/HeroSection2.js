@@ -58,13 +58,8 @@ const HeroSection = () => {
                             <Typography
                                 variant="h4"
                                 align={'left'}
-                                // data-aos={'fade-right'}
-                                // data-aos={'zoom-in'}
-
-                                // data-aos={'zoom-in'}
-                                // data-aos-delay={100}
-                                // data-aos-offset={100}
-                                // data-aos-duration={1200}
+                                // data-aos={'fade-in'}
+                                // data-aos-delay={'200'}
 
                                 gutterBottom
                                 sx={{
@@ -86,6 +81,8 @@ const HeroSection = () => {
                                 align={'left'}
                                 // color={'text.secondary'}
                                 // data-aos={'fade-right'}
+                                // data-aos={'fade-in'}
+                                // data-aos-delay={'200'}
                                 sx={{
                                     fontSize: '18px',
                                     fontWeight: '400',
@@ -101,6 +98,8 @@ const HeroSection = () => {
                                 alignItems={{ xs: 'stretched', sm: 'flex-start' }}
                                 justifyContent={'left'}
                                 marginTop={2}
+                                data-aos={'fade-in'}
+                                data-aos-delay={'200'}
                             >
                                 <Box
                                     className="link-contained-more"
@@ -133,7 +132,7 @@ const HeroSection = () => {
                     <LazyLoadImage
                         height={'100%'}
                         width={'100%'}
-                        src={require('../assets/hero/hero1.jpg')}
+                        src={require('../assets/hero/hero3.jpg')}
                         alt="..."
                         effect="blur"
                         style={{

@@ -1,0 +1,95 @@
+.card-services-proposed {
+    .card-content {
+      display: grid;
+    //   flex-direction: column;
+
+    //   align-content: space-between;
+      align-content: space-around;
+      justify-content: start;
+
+
+    //   align-content:space-between;
+
+        padding: 0 0 0 10px;
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        .card-title {
+            margin: 0;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            // font-family: "Roboto","Arial",sans-serif;
+            font-weight: 400;
+            font-size: 1.05rem;
+            line-height: 1.5;
+            letter-spacing: 0.00938em;
+            color: #444;
+            // font-weight: 500;
+            line-height: 1;
+            // margin-bottom: 10px;
+            // text-transform: uppercase;
+
+            font-family: Roboto, Helvetica, Arial, sans-serif;
+            font-weight: 500;
+            font-size: 1.05rem;
+            color: rgba(0, 0, 0, 0.7);
+            // margin-bottom: 0.35em;
+            line-height: 1;
+        }
+    
+        .card-description {
+            font-size: .875em;
+            font-size: .855em;
+            // font-size: 1.2rem;
+            line-height: 1.43;
+            letter-spacing: 0.01071em;
+            color: rgba(0, 0, 0, 0.6);
+            color: #606060;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            // text-align: left;
+            // font: 400 14px/20px Google Sans Text,Arial,Helvetica,sans-serif;
+            font-family: Roboto,Helvetica,Arial,sans-serif;
+            font-weight: 300;
+        }
+
+        .card-link {
+            // justify-self: end
+            padding: 0;
+            line-height: 1;
+            justify-content: flex-start;
+
+            background-color: transparent;
+            // color: #DBAF62;
+            color: #d6a44d;
+            border-color: none;
+            // font-family: 'Lato', sans-serif;
+            // font-weight: 400;
+    
+            // font-family: "Roboto", sans-serif;
+            // font: 400 14px/20px Google Sans Text, Arial, Helvetica, sans-serif;
+            // font-family: 'Raleway', sans-serif;
+            // font-family: 'Raleway', sans-serif;
+            font-size: 11px;
+            font-weight: 400;
+            // text-transform: inherit;
+
+            span {
+                margin-left: 0;
+
+                svg {
+                    width: .8em
+                    em
+                    ;
+                        height: .8em;
+                }
+            }
+        }
+    }
+
+
+}

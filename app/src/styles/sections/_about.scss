@@ -1,0 +1,9 @@
+.about-section {
+    .lazy-load-image {
+        transition: filter ease 0.5s !important;
+
+        &:hover {
+            filter: brightness(0.9) !important;
+        }
+    }
+}

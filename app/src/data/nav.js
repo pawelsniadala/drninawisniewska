@@ -18,13 +18,14 @@ export const nav = {
         {
             id: "0417e32b-d424-460f-af97-dadc8efa5bde",
             title: "Usługi",
-            // path: "/services"
-            path: "/drninawisniewska/"
+            path: "/services"
+            // path: "/drninawisniewska/"
         },
         {
             id: "982bb88c-d367-4fa2-a06a-57a71c32cd03",
             title: "Cennik",
-            path: "/prices"
+            // path: "/prices"
+            path: "/drninawisniewska/"
         },
         // {
         //     id: "e2e74079-e6e6-4016-9b4f-fd33fd2f544c",
@@ -40,7 +41,7 @@ export const nav = {
         {
             id: "ca385125-35d1-469e-b5a7-b800e26ed0d0",
             title: "Sprzęt",
-            // path: "/team"
+            // path: "/equipment"
             path: "/drninawisniewska/"
         },
         {

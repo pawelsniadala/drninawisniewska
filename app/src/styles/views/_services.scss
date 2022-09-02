@@ -1,0 +1,80 @@
+.view-wrapper {
+    .view-header {
+        &.services {
+            background: url('../../assets/services/services1.jpg') 100% 20% no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        &.dermatology {
+            background: url('../../assets/services/services2.jpg') 100% 20% no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        .header-wrapper {
+            display: grid;
+            align-content: space-between;
+            height: 400px;
+
+            .nav-wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            // padding-bottom: 1rem;
+            // padding-bottom: 0;
+
+
+
+            // display: flex;
+        }
+    }
+
+    .view-body {
+
+        .body-wrapper {
+            padding-top: 2rem;
+
+            &.services {
+                display: grid;
+                gap: 1.5rem;
+                grid-template-columns: repeat(3, 1fr);
+
+                .service-description {
+                    grid-column: span 2;
+
+                    .header {
+                        font-family: Roboto, Helvetica, Arial, sans-serif;
+                        font-weight: 500;
+                        font-size: 25px;
+                        color: rgba(0, 0, 0, 0.7);
+                        margin-bottom: 0.35em;
+                        line-height: 1.334;
+                    }
+
+                    .paragraph {
+                        font-family: Roboto, Helvetica, Arial, sans-serif;
+                        font-weight: 300;
+                    }
+
+                    .list-item-text {
+                        span {
+                            font-family: Roboto, Helvetica, Arial, sans-serif;
+                            font-weight: 300;
+                            font-size: 16px;
+                        }
+                    }
+                }
+
+                .proposed-services {
+                    grid-column: span 1;
+                }
+            }
+        }
+    }
+}

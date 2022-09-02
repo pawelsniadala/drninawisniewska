@@ -191,7 +191,7 @@ const ServicesSection = () => {
                                     >
                                         <CardMedia
                                             title={item.title}
-                                            image={item.media}
+                                            image={item.image}
                                             sx={{
                                                 position: 'relative',
                                                 height: { xs: 240, sm: 340, md: 280, lg: 340 },

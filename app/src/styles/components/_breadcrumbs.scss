@@ -1,0 +1,38 @@
+.css-63vwl1-MuiTypography-root-MuiBreadcrumbs-root {
+    display: flex;
+    justify-content: start;
+    padding-bottom: 7rem;
+
+    .MuiBreadcrumbs-li {
+        a {
+            color: rgba(0, 0, 0, 0.65);
+            text-decoration: none;
+            font-family: "Raleway", sans-serif;
+            // font-family: 'Noto Sans', sans-serif;
+            // font-size: 14px;
+            font-size: 0.9rem;
+
+
+            &:hover {
+                color: rgba(0, 0, 0, 0.9);
+                // color: transparent;
+                // background-image: linear-gradient(90deg, #d09636 0%, #d9ab5a 51%, #dbb97b 100%);
+                // background-clip: text;
+            }
+        }
+    }
+
+    .css-1gqyz35-MuiTypography-root {
+        color: rgba(0, 0, 0, 0.9);
+        font-family: "Raleway", sans-serif;
+        // font-family: 'Noto Sans', sans-serif;
+        // font-size: 14px;
+        font-size: 0.9rem;
+
+    }
+}
+
+.css-1wuw8dw-MuiBreadcrumbs-separator {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+}

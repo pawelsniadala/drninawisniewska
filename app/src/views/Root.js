@@ -14,7 +14,10 @@ import NavSection from "../sections/NavSection";
 import NavSection2 from "../sections/NavSection2";
 import HomeView from "./HomeView";
 import AboutView from "./AboutView";
+
 import ServicesView from "./ServicesView";
+import ServicesDermatologyPartial from "./partials/services/ServicesDermatologyPartial";
+
 import TeamView from "./TeamView";
 import PricesView from "./PricesView";
 import ContactView from "./ContactView";
@@ -36,7 +39,11 @@ const Root = () => (
                         <Route path="/cast/other" element={<CastOtherPartial />} />
                     </Route> */}
                     <Route path="/about" element={<AboutView />} />
-                    <Route path="/services" element={<ServicesView />} />
+                    <Route exact path="/services" element={<ServicesView />}>
+                        
+                    </Route>
+                    <Route path="/services/dermatology" element={<ServicesDermatologyPartial />} />
+
                     <Route path="/prices" element={<PricesView />} />
                     <Route path="/team" element={<TeamView />} />
                     <Route path="/contact" element={<ContactView />} />

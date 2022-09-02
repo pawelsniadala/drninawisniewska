@@ -140,8 +140,7 @@ const PriceSection = () => {
                     <Typography
                         variant="h6"
                         align={'center'}
-                        // color={'text.secondary'}
-                        // data-aos={'fade-right'}
+                        data-aos={'fade-right'}
                         sx={{
                             fontSize: '18px',
                             fontWeight: '400',

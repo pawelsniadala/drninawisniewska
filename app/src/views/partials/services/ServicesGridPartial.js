@@ -24,9 +24,9 @@ const ServicesGridPartial = () => {
     });
     return (
         <Box>
-            <Grid container spacing={2}>
+            <Grid container spacing={3}>
                 {services.map((item, i) => (
-                    <Grid item xs={12} sm={6} md={4} xl={4} key={i}>
+                    <Grid item xs={12} sm={6} md={4} xl={3} key={i}>
                         <Box
                             component={'a'}
                             href={''}
@@ -66,7 +66,7 @@ const ServicesGridPartial = () => {
                                     image={item.media}
                                     sx={{
                                         position: 'relative',
-                                        height: { xs: 240, sm: 340, md: 280, lg: 340 },
+                                        height: { xs: 240, sm: 340, md: 280, lg: 220 },
                                         overflow: 'hidden',
                                     }}
                                 >
