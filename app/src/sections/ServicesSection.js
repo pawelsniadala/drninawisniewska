@@ -146,8 +146,7 @@ const ServicesSection = () => {
                         >
                             <Button
                                 component={Link}
-                                // to={`/services`} // TODO
-                                to={`/drninawisniewska/`}
+                                to={'/services'}
                                 variant="contained"
                                 color="primary"
                                 size="large"

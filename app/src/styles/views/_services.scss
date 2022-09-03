@@ -1,13 +1,19 @@
 .view-wrapper {
     .view-header {
-        &.services {
+        &.services-all {
             background: url('../../assets/services/services1.jpg') 100% 20% no-repeat;
             background-size: cover;
             position: relative;
         }
 
-        &.dermatology {
+        &.services-dermatology {
             background: url('../../assets/services/services2.jpg') 100% 20% no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        &.services-aesthetic-medicine {
+            background: url('../../assets/services/services3.jpg') 100% 20% no-repeat;
             background-size: cover;
             position: relative;
         }
@@ -16,27 +22,13 @@
             display: grid;
             align-content: space-between;
             height: 400px;
-
-            .nav-wrapper {
-                display: flex;
-                justify-content: space-between;
-            }
-
-
-
             padding-top: 1rem;
             padding-bottom: 2rem;
-            // padding-bottom: 1rem;
-            // padding-bottom: 0;
 
-
-
-            // display: flex;
         }
     }
 
     .view-body {
-
         .body-wrapper {
             padding-top: 2rem;
 

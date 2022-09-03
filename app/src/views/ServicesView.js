@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 // import Grid from '@mui/material/Grid';
 import Container from '../components/Container';
-import ServicesGridPartial from './partials/services/ServicesGridPartial';
+// import ServicesGridPartial from './partials/services/ServicesGridPartial';
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import { services } from '../data/services';
@@ -26,7 +26,7 @@ const ServicesView = () => {
     return (
         <Box className="contact-view">
             <Box className="view-wrapper">
-                <Box className="view-header services">
+                <Box className="view-header services-all">
                     <Container className="header-wrapper">
                         <Breadcrumbs
                             separator={<NavigateNextIcon fontSize="smform" />}
@@ -42,22 +42,8 @@ const ServicesView = () => {
                                 Usługi
                             </Typography>
                         </Breadcrumbs>
-                        <Box sx={{ paddingBottom: '10rem' }}>
-                            <Typography
-                                variant="h4"
-                                align={'center'}
-                                // data-aos={'fade-in'}
-                                gutterBottom
-                                sx={{
-                                    fontFamily: 'Lato, sans-serif',
-                                    fontSize: '40px',
-                                    lineHeight: '1.208em',
-                                    letterSpacing: '.045em',
-                                    textTransform: 'uppercase',
-                                    fontWeight: '400',
-                                    color: 'rgba(0, 0, 0, 0.6)',
-                                }}
-                            >
+                        <Box>
+                            <Typography variant='h4' className='heading-view'>
                                 Usługi
                             </Typography>
                         </Box>

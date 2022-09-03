@@ -1,87 +1,70 @@
 import React, { useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import Typography from '@mui/material/Typography';
-// import { useTheme } from '@mui/material/styles';
-// import useMediaQuery from '@mui/material/useMediaQuery';
-import Box from '@mui/material/Box';
-// import Grid from '@mui/material/Grid';
-import Container from '../../../components/Container';
-// import ServicesGridPartial from './partials/services/ServicesGridPartial';
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
-// import { services } from '../data/services';
-import CardServicesProposed from '../../../components/CardServicesProposed';
-import { services } from '../../../data/services';
+
+import Breadcrumbs from '@mui/material/Breadcrumbs';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
-// import CardServices from '../components/CardServices';
+import Container from '../../../components/Container';
+import CardServicesProposed from '../../../components/CardServicesProposed';
+
+import { services } from '../../../data/services';
 
 const ServicesDermatologyPartial = () => {
-    // const theme = useTheme();
-    // const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    //   defaultMatches: true,
-    // });
-
     useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
 
     return (
-        <Box className="contact-view">
-            <Box className="view-wrapper">
-                <Box className="view-header dermatology">
-                    <Container className="header-wrapper">
-                        <Box>
-                            <Breadcrumbs
-                                separator={<NavigateNextIcon fontSize="smform" />}
-                                aria-label="breadcrumb"
+        <Box className='contact-view'>
+            <Box className='view-wrapper'>
+                <Box className='view-header services-dermatology'>
+                    <Container className='header-wrapper'>
+                        <Breadcrumbs
+                            separator={<NavigateNextIcon fontSize='smform' />}
+                            aria-label='breadcrumb'
+                        >
+                            <Link
+                                to='/'
+                                aria-current='page'
                             >
-                                <Link
-                                    to="/"
-                                    aria-current="page"
-                                >
-                                    Home
-                                </Link>
-                                <Link
-                                    to="/services"
-                                    aria-current="page"
-                                >
-                                    Usługi
-                                </Link>
-                                <Typography color="text.primary">
-                                    Dermatologia
-                                </Typography>
-                            </Breadcrumbs>
-                        </Box>
-                        <Box>
-                            <Typography className="heading-view">
+                                Home
+                            </Link>
+                            <Link
+                                to='/services'
+                                aria-current='page'
+                            >
+                                Usługi
+                            </Link>
+                            <Typography color='text.primary'>
                                 Dermatologia
                             </Typography>
-                        </Box>
+                        </Breadcrumbs>
+                        <Typography variant='h4' className='heading-view'>
+                            Dermatologia
+                        </Typography>
                     </Container>
                 </Box>
-                <Box className="view-body">
-                    <Container className="body-wrapper services">
-                        <Box className="service-description">
+                <Box className='view-body'>
+                    <Container className='body-wrapper services'>
+                        <Box className='service-description'>
                             <Typography className='paragraph'>
                                 Etiam ac tristique nisl. Praesent eu elit sit amet eros rhoncus convallis. Aliquam eu tristique massa, nec cursus libero. Fusce at nunc sollicitudin, euismod orci vitae, luctus ipsum. Integer tellus est, aliquam in lobortis et, tempor sit amet mi. Nulla a commodo purus. Mauris facilisis libero id purus rhoncus, nec sollicitudin eros bibendum. Curabitur mattis nisl vel odio consequat varius. Nunc maximus, metus sit amet placerat dignissim, leo diam sodales tortor, sit amet eleifend nisl elit non metus. Ut eget lorem euismod, pellentesque lectus ac, malesuada felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi commodo arcu sem, non varius sem vestibulum a. Sed eget tempus mi. Integer faucibus ac erat non pellentesque. Sed hendrerit tortor magna, eu hendrerit enim blandit eget. Pellentesque tincidunt in enim nec sodales.
                             </Typography>
-                            <Box
-                                // width={1}
-                                // height={1}
-                                marginY={4}
-                            >
+                            <Box marginY={4}>
                                 <LazyLoadImage
                                     height={'100%'}
                                     width={'100%'}
                                     src={services[0].image}
-                                    alt="Remote working"
-                                    effect="blur"
+                                    alt='Remote working'
+                                    effect='blur'
                                     style={{
                                         objectFit: 'cover',
                                         borderRadius: 8,
@@ -135,14 +118,14 @@ const ServicesDermatologyPartial = () => {
                                                     <svg
                                                         width={12}
                                                         height={12}
-                                                        xmlns="http://www.w3.org/2000/svg"
-                                                        viewBox="0 0 20 20"
-                                                        fill="currentColor"
+                                                        xmlns='http://www.w3.org/2000/svg'
+                                                        viewBox='0 0 20 20'
+                                                        fill='currentColor'
                                                     >
                                                         <path
-                                                            fillRule="evenodd"
-                                                            d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                                                            clipRule="evenodd"
+                                                            fillRule='evenodd'
+                                                            d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
+                                                            clipRule='evenodd'
                                                         />
                                                     </svg>
                                                 </Box>
@@ -162,8 +145,8 @@ const ServicesDermatologyPartial = () => {
                                 </Typography>
                             </Box>
                         </Box>
-                        <Box className="proposed-services">
-                            <Box className="card-wrapper services-proposed">
+                        <Box className='proposed-services'>
+                            <Box className='card-wrapper services-proposed'>
                                 {services.length ? services.filter(item => item.title !== 'Dermatologia').map((item, index) => (
                                     <CardServicesProposed
                                         key={index}
@@ -173,7 +156,7 @@ const ServicesDermatologyPartial = () => {
                                         cardPath={item.path}
                                     />
                                 )) : (
-                                    {/* <Skeleton variant="rectangular" width={210} height={118} /> */}
+                                    <Box>Brak danych</Box>
                                 )}
                             </Box>
                         </Box>

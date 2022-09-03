@@ -8,6 +8,8 @@ import servicesAllergology from "../assets/services/servicesAllergology.jpg";
 import servicesUsg from "../assets/services/servicesUsg.jpg";
 import servicesEndocrinology from "../assets/services/servicesEndocrinology.jpg";
 import servicesGynecology from "../assets/services/servicesGynecology.jpg";
+import servicesOrthopedics from "../assets/services/servicesOrthopedics.jpg";
+import servicesVasularSurgery from "../assets/services/servicesVasularSurgery.jpg";
 
 export const services = [
     {
@@ -79,5 +81,19 @@ export const services = [
         description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
         link: `<a href='https://pl.freepik.com/zdjecia/tarczyca'>Tarczyca zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
         path: '/services/gynecology'
+    },
+    {
+        image: servicesOrthopedics,
+        title: 'Ortopedia',
+        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        link: `<a href="https://pl.freepik.com/darmowe-zdjecie/fizjoterapeuta-kregow-trzymajacy-sztuczny-kregoslup_13376886.htm#query=orthopedics&position=23&from_view=search">Obraz autorstwa senivpetro</a> na Freepik`,
+        path: '/services/orthopedics'
+    },
+    {
+        image: servicesVasularSurgery,
+        title: 'Chirurgia naczyniowa',
+        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        link: `<a href="https://pl.freepik.com/darmowe-zdjecie/chirurdzy-noszacy-chirurgiczne-lupy-podczas-wykonywania-operacji_8402445.htm#query=surgery&position=37&from_view=search">Obraz autorstwa wavebreakmedia_micro</a> na Freepik`,
+        path: '/services/vascular-surgery'
     },
 ];

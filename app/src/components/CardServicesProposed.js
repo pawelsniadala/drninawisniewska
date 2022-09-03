@@ -80,7 +80,7 @@ const CardServicesProposed = ({
                         to={cardPath}
                         variant="outline"
                         size="small"
-                        endIcon={<ChevronRightIcon />}
+                        // endIcon={<ChevronRightIcon />}
                     >
                         Dowiedz się więcej
                     </Button>

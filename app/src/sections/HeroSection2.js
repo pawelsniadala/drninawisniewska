@@ -108,8 +108,7 @@ const HeroSection = () => {
                                 >
                                     <Button
                                         component={Link}
-                                        // to={`/services`}
-                                        to={`/drninawisniewska/`}
+                                        to={`/services`}
                                         variant="contained"
                                         color="primary"
                                         size="large"
@@ -125,7 +124,6 @@ const HeroSection = () => {
                         </Box>
                         </Container>
                     </div>
-                    
                 </div>
                 <div className="carousel-item" data-bs-interval="5000" style={{ height: '670px' }}>
                     {/* <img src={require('../assets/hero/hero2.jpg')} className="d-block carousel-img" alt="..."  /> */}
