@@ -2,15 +2,15 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import { useTheme } from '@mui/material/styles';
+// import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 // import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import useMediaQuery from '@mui/material/useMediaQuery';
+// import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+// import useMediaQuery from '@mui/material/useMediaQuery';
 
 const CardServicesProposed = ({
     cardImage,
@@ -34,39 +34,39 @@ const CardServicesProposed = ({
                 // },
             }}
         >
-                                        <Box
-              component={Card}
-              width={1}
-              height={1}
-              boxShadow={0}
-              borderRadius={0}
-              display={'flex'}
-              flexDirection={{ xs: 'column', md: 'row' }}
-              sx={{ backgroundImage: 'none', bgcolor: 'transparent' }}
+            <Box
+                component={Card}
+                width={1}
+                height={1}
+                boxShadow={0}
+                borderRadius={0}
+                display={'flex'}
+                flexDirection={{ xs: 'column', md: 'row' }}
+                sx={{ backgroundImage: 'none', bgcolor: 'transparent' }}
             >
-              <Box
-                sx={{
-                    minWidth: { xs: 1, md: '50%' },
-                    '& .lazy-load-image-loaded': {
-                        height: 1,
-                        display: 'flex !important',
-                    },
-                }}
-              >
                 <Box
-                    component={LazyLoadImage}
-                    height={1}
-                    width={1}
-                    src={cardImage}
-                    alt={cardTitle}
-                    effect="blur"
                     sx={{
-                        objectFit: 'cover',
-                        maxHeight: 120,
-                        borderRadius: '8px'
+                        minWidth: { xs: 1, md: '50%' },
+                        '& .lazy-load-image-loaded': {
+                            height: 1,
+                            display: 'flex !important',
+                        },
                     }}
-                />
-              </Box>
+                >
+                    <Box
+                        component={LazyLoadImage}
+                        height={1}
+                        width={1}
+                        src={cardImage}
+                        alt={cardTitle}
+                        effect="blur"
+                        sx={{
+                            objectFit: 'cover',
+                            maxHeight: 120,
+                            borderRadius: '8px'
+                        }}
+                    />
+                </Box>
                 <CardContent className='card-content'>
                     <Typography className='card-title'>
                         {cardTitle}
@@ -87,7 +87,7 @@ const CardServicesProposed = ({
                 </CardContent>
             </Box>
         </Box>
-    )
-};
+    );
+}
 
 export default CardServicesProposed;
