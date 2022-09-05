@@ -38,7 +38,8 @@ const CardServices = ({
             sx={{
                 textDecoration: 'none',
                 transition: 'all .2s ease-in-out',
-                borderRadius: '12px',
+                // borderRadius: '12px',
+                borderRadius: '8px',
                 '&:hover': {
                     // transform: `translateY(-${theme.spacing(1 / 2)})`,
                     boxShadow: '2px 4px 12px rgb(0 0 0 / 8%)'
@@ -54,7 +55,8 @@ const CardServices = ({
                 sx={{
                     backgroundImage: 'none',
                     boxShadow: '1px 2px 6px rgb(0 0 0 / 4%)',
-                    borderRadius: '12px',
+                    // borderRadius: '12px',
+                    borderRadius: '8px',
                 }}
                 marginBottom={1}
             >
@@ -140,16 +142,16 @@ const CardServices = ({
                             Zobacz więcej
                         </Button>
 
-                        {/* <Button
+                        <Button
                             className='card-link'
                             component={Link}
                             // to={cardPath}
-                            to={'/prices'}
+                            to={'/prices/usg'}
                             variant="outline"
                             size="small"
                         >
                             Cennik
-                        </Button> */}
+                        </Button>
 
                     {/* </Box> */}
                 </CardActions>

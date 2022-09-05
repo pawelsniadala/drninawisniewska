@@ -11,20 +11,18 @@ import Paper from '@mui/material/Paper';
 
 const StyledTableCell = styled(TableCell)(() => ({
     [`&.${tableCellClasses.head}`]: {
-        fontWeight: "800",
-        '&.featured': {
-            color: '#f8b01b'
-        },
+        borderBottom: '1px solid rgba(224, 224, 224, 0.7)',
+        padding: '12px',
+        lineHeight: 1
     },
     [`&.${tableCellClasses.body}`]: {
-        fontSize: 14,
-    },
+        borderBottom: '1px solid rgba(224, 224, 224, 0.7)',
+        padding: '12px',
+        lineHeight: 1
+    }
 }));
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
-    '&:nth-of-type(odd)': {
-        backgroundColor: theme.palette.action.hover,
-    },
+const StyledTableRow = styled(TableRow)(() => ({
     '&:last-child td, &:last-child th': {
         border: 0,
     }
@@ -36,11 +34,11 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja dr Mirosław Majewski', 250)
+        createData('Konsultacja - dr Mirosław Majewski', 250)
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>

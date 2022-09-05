@@ -8,27 +8,91 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TableContainer from '@mui/material/TableContainer';
 import Paper from '@mui/material/Paper';
+import InfoIcon from '@mui/icons-material/Info';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 
 const StyledTableCell = styled(TableCell)(() => ({
     [`&.${tableCellClasses.head}`]: {
-        fontWeight: "800",
-        '&.featured': {
-            color: '#f8b01b'
-        }
+        borderBottom: '1px solid rgba(224, 224, 224, 0.7)',
+        padding: '12px',
+        lineHeight: 1,
     },
     [`&.${tableCellClasses.body}`]: {
-        fontSize: 14,
+        borderBottom: '1px solid rgba(224, 224, 224, 0.7)',
+        padding: '12px',
+        lineHeight: 1
     }
 }));
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
-    '&:nth-of-type(odd)': {
-        backgroundColor: theme.palette.action.hover,
-    },
+const StyledTableRow = styled(TableRow)(() => ({
     '&:last-child td, &:last-child th': {
         border: 0,
     }
 }));
+
+const badge = (title) => (
+    <span class="badge">
+        {title}
+    </span>
+);
+
+const tooltip = (title) => (
+    <Tooltip title={title}>
+    <IconButton
+        sx={{
+            height: '12px',
+            width: '12px',
+            marginLeft: '8px',
+            color: '#008AC9',
+        }}
+    >
+      <InfoIcon fontSize='small' />
+    </IconButton>
+  </Tooltip>
+);
+
+const Table15 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('Jedna okolica', 600),
+        createData('Dwie okolice', 1000),
+        createData('Trzy okolice', 1200),
+    ];
+
+    return (
+        <TableContainer className='table-container' component={Paper}>
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell>
+                        Płynna toksyna ABO Liquid
+                        {badge("Nowe")}
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+};
 
 const Table1 = () => {
     function createData(name, price) {
@@ -40,7 +104,7 @@ const Table1 = () => {
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper}>
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>
@@ -70,38 +134,34 @@ const Table1 = () => {
 };
 
 const Table2 = () => {
-    function createData(name, price) {
-        return { name, price };
+    function createData(name, tooltip, price) {
+        return { name, tooltip, price };
     }
 
     const rows = [
-        createData('Jedna okolica', 500),
-        createData('Dwie okolice', 900),
-        createData('Trzy okolice', 1100),
-        createData('Okolica kurzych łapek - 30 j. toksyny botulinowej *', 500),
-        createData('Okolica kurzych łapek - 60 j. toksyny botulinowej *', 800),
-        createData('Broda', 300),
-        createData('Bruksizm', 900),
-        createData('Uśmiech dziąsłowy', 500),
-        createData('Korekta opadającego nosa', 300),
-        createData('Szyja', 900),
-        createData('Dekolt', 900),
-        createData('Leczenie nadpotliwości pach', 1500),
-        createData('Leczenie nadpotliwości dłoni', 1500),
+        createData('Jedna okolica',false, 500),
+        createData('Dwie okolice', false, 900),
+        createData('Trzy okolice', false, 1100),
+        createData('Okolica kurzych łapek - 30 j. toksyny botulinowej', 'Okolica to zmarszczki poprzeczne czoła, zmarszczka między brwiami i zmarszczki wokół oczu. Jeśli na wizycie wykonywana jest toksyna botulinowa na 2 okolice, tj. kurze łapki + czoło/lwia zmarszczka, wówczas do zapłaty jest 900 zł.', 500),
+        createData('Okolica kurzych łapek - 60 j. toksyny botulinowej', 'Okolica to zmarszczki poprzeczne czoła, zmarszczka między brwiami i zmarszczki wokół oczu. Jeśli na wizycie wykonywana jest toksyna botulinowa na 2 okolice, tj. kurze łapki + czoło/lwia zmarszczka, wówczas do zapłaty jest 900 zł.', 800),
+        createData('Broda',false, 300),
+        createData('Bruksizm', false, 900),
+        createData('Uśmiech dziąsłowy', false, 500),
+        createData('Korekta opadającego nosa', false, 300),
+        createData('Szyja', false, 900),
+        createData('Dekolt', false, 900),
+        createData('Leczenie nadpotliwości pach', false, 1500),
+        createData('Leczenie nadpotliwości dłoni', false, 1500),
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper}>
             <Table size="small" aria-label="customized table">
-                <caption style={{ fontSize: 13 }}>
-                    Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych – cena podstawowa + 20% dopłaty<br/>
-                    * "Okolica" to: zmarszczki poprzeczne czoła, zmarszczka między brwiami i zmarszczki wokół oczu.<br/>
-                    * Jeśli na wizycie wykonywana jest toksyna botulinowa na 2 okolice, tj. kurze łapki + czoło/lwia zmarszczka, wówczas do zapłaty jest 900 zł
-                </caption>
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
                         Korekcja zmarszczek mimicznych (Botox, Azzalure)
+                        {tooltip('Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych – cena podstawowa + 20% dopłaty.')}
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -113,6 +173,7 @@ const Table2 = () => {
                         <StyledTableRow key={row.name}>
                             <StyledTableCell component="th" scope="row">
                                 {row.name}
+                                {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
                             <StyledTableCell align="right">
                                 {row.price}
@@ -123,7 +184,7 @@ const Table2 = () => {
             </Table>
         </TableContainer>
     );
-};
+}
 
 const Table3 = () => {
     function createData(name, price) {
@@ -144,15 +205,13 @@ const Table3 = () => {
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
-                <caption style={{ fontSize: 13 }}>
-                    Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych – cena podstawowa + 20% dopłaty
-                </caption>
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
                         Wypełniacze na bazie kwasu hialuronowego
+                        {tooltip('Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych – cena podstawowa + 20% dopłaty.')}
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -190,7 +249,7 @@ const Table4 = () => {
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>
@@ -235,7 +294,7 @@ const Table5 = () => {
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>
@@ -275,7 +334,7 @@ const Table6 = () => {
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>
@@ -315,7 +374,7 @@ const Table7 = () => {
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>
@@ -356,7 +415,7 @@ const Table8 = () => {
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>
@@ -396,7 +455,7 @@ const Table9 = () => {
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>
@@ -435,7 +494,7 @@ const Table10 = () => {
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>
@@ -478,7 +537,7 @@ const Table11 = () => {
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>
@@ -531,7 +590,7 @@ const Table12 = () => {
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>
@@ -561,26 +620,23 @@ const Table12 = () => {
 };
 
 const Table13 = () => {
-    function createData(name, price) {
-        return { name, price };
+    function createData(name, price, tooltip) {
+        return { name, price, tooltip };
     }
 
     const rows = [
-        createData('Laser frakcyjny cała twarz', 'od 800'),
-        createData('Redukcja przebarwień cała twarz', '150 (pojedyncze przebarwienie) do 800 (cała twarz)'),
-        createData('Likwidacja rumienia na twarzy', 'od 600 (policzki) do 800 (cała twarz)'),
-        createData('Zamykanie naczynek – nos', 'od 200 *'),
-        createData('Zamykanie naczyń na kończynach dolnych', 'od 200 *'),
-        createData('Blizny potrądzikowe', 'od 200 *'),
-        createData('Rozstępy, blizny', 'od 200 *'),
+        createData('Laser frakcyjny cała twarz', 'od 800', false),
+        createData('Redukcja przebarwień cała twarz', '150 (pojedyncze przebarwienie) do 800 (cała twarz)', false),
+        createData('Likwidacja rumienia na twarzy', 'od 600 (policzki) do 800 (cała twarz)', false),
+        createData('Zamykanie naczynek – nos', 'od 200', 'Dokładną cenę ustala lekarz.'),
+        createData('Zamykanie naczyń na kończynach dolnych', 'od 200', 'Dokładną cenę ustala lekarz.'),
+        createData('Blizny potrądzikowe', 'od 200', 'Dokładną cenę ustala lekarz.'),
+        createData('Rozstępy, blizny', 'od 200', 'Dokładną cenę ustala lekarz.'),
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
-                <caption style={{ fontSize: 13 }}>
-                    * Dokładną cenę ustala lekarz
-                </caption>
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
@@ -599,6 +655,7 @@ const Table13 = () => {
                             </StyledTableCell>
                             <StyledTableCell align="right">
                                 {row.price}
+                                {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
                         </StyledTableRow>
                     ))}
@@ -609,30 +666,27 @@ const Table13 = () => {
 };
 
 const Table14 = () => {
-    function createData(name, price) {
-        return { name, price };
+    function createData(name, price, tooltip) {
+        return { name, price, tooltip};
     }
 
     const rows = [
-        createData('Oczy', 600),
-        createData('Policzki', 600),
-        createData('Cała twarz', 1000),
-        createData('Cała twarz + oczy', 1200),
-        createData('Cała twarz + szyja', 1500),
-        createData('Cała twarz + szyja + dekolt', 1800),
-        createData('Dekolt', 800),
+        createData('Oczy', 600, false),
+        createData('Policzki', 600, false),
+        createData('Cała twarz', 1000, false),
+        createData('Cała twarz + oczy', 1200, false),
+        createData('Cała twarz + szyja', 1500, false),
+        createData('Cała twarz + szyja + dekolt', 1800, false),
+        createData('Dekolt', 800, false),
         createData('Szyja + dekolt', 1400),
-        createData('Blizny potrądzikowe', 'od 300 *'),
-        createData('Rozstępy', 'od 1000 *'),
-        createData('Usuwanie znamion', 'od 300 *')
+        createData('Blizny potrądzikowe', 'od 300', 'Dokładną cenę ustala lekarz.'),
+        createData('Rozstępy', 'od 1000', 'Dokładną cenę ustala lekarz.'),
+        createData('Usuwanie znamion', 'od 300', 'Dokładną cenę ustala lekarz.')
     ];
 
     return (
-        <TableContainer component={Paper} >
+        <TableContainer className='table-container' component={Paper} >
             <Table size="small" aria-label="customized table">
-                <caption style={{ fontSize: 13 }}>
-                    * Dokładną cenę ustala lekarz
-                </caption>
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
@@ -651,6 +705,7 @@ const Table14 = () => {
                             </StyledTableCell>
                             <StyledTableCell align="right">
                                 {row.price}
+                                {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
                         </StyledTableRow>
                     ))}
@@ -663,6 +718,7 @@ const Table14 = () => {
 const PricesAestheticMedicinePartials = () => {
     return (
         <Box display="grid" gap={3}>
+            <Table15 />
             <Table1 />
             <Table2 />
             <Table3 />

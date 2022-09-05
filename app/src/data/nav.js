@@ -24,8 +24,8 @@ export const nav = {
         {
             id: "982bb88c-d367-4fa2-a06a-57a71c32cd03",
             title: "Cennik",
-            // path: "/prices"
-            path: "/drninawisniewska/"
+            path: "/prices"
+            // path: "/drninawisniewska/"
         },
         // {
         //     id: "e2e74079-e6e6-4016-9b4f-fd33fd2f544c",

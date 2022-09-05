@@ -167,10 +167,10 @@ const AboutSection = () => {
                                                 objectFit: 'cover',
                                                 filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
                                                 cursor: 'pointer',
-                                                borderTopLeftRadius: item.order === 1 ? '12px' : 'none',
-                                                borderTopRightRadius: item.order === 2 ? '12px' : 'none',
-                                                borderBottomLeftRadius: item.order === 3 ? '12px' : 'none',
-                                                borderBottomRightRadius: item.order === 4 ? '12px' : 'none',
+                                                borderTopLeftRadius: item.order === 1 ? '8px' : 'none',
+                                                borderTopRightRadius: item.order === 2 ? '8px' : 'none',
+                                                borderBottomLeftRadius: item.order === 3 ? '8px' : 'none',
+                                                borderBottomRightRadius: item.order === 4 ? '8px' : 'none',
                                                 transition: 'opacity, transform ease 0.3s !important',
                                             }}
                                         />

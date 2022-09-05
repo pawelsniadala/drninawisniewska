@@ -10,6 +10,7 @@ import servicesEndocrinology from "../assets/services/servicesEndocrinology.jpg"
 import servicesGynecology from "../assets/services/servicesGynecology.jpg";
 import servicesOrthopedics from "../assets/services/servicesOrthopedics.jpg";
 import servicesVasularSurgery from "../assets/services/servicesVasularSurgery.jpg";
+import servicesClinicalDietitian from "../assets/services/servicesClinicalDietitian.jpg";
 
 export const services = [
     {
@@ -96,4 +97,11 @@ export const services = [
         link: `<a href="https://pl.freepik.com/darmowe-zdjecie/chirurdzy-noszacy-chirurgiczne-lupy-podczas-wykonywania-operacji_8402445.htm#query=surgery&position=37&from_view=search">Obraz autorstwa wavebreakmedia_micro</a> na Freepik`,
         path: '/services/vascular-surgery'
     },
+    {
+        image: servicesClinicalDietitian,
+        title: 'Dietetyka Kliniczna',
+        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        link: `<a href="https://pl.freepik.com/darmowe-zdjecie/lekarz-w-swoim-gabinecie-mowi-dziewczynie-jak-jesc-i-trzymac-sie-diety_18133353.htm#query=dietitian&position=8&from_view=search">Obraz autorstwa artursafronovvvv</a> na Freepik`,
+        path: '/services/clinical-dietitian'
+    }
 ];

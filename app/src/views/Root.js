@@ -28,9 +28,20 @@ import ServicesEndocrinologyPartial from './partials/services/ServicesEndocrinol
 import ServicesGynecologyPartial from './partials/services/ServicesGynecologyPartial';
 import ServicesOrthopedicsPartial from './partials/services/ServicesOrthopedicsPartial';
 import ServicesVascularSurgeryPartial from './partials/services/ServicesVascularSurgeryPartial';
+import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
+
+
+import PricesView from './PricesView';
+import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
+import PricesAestheticMedicinePartials from './partials/prices/PricesAestheticMedicinePartials';
+import PricesHematologyPartials from './partials/prices/PricesHematologyPartials';
+import PricesCosmetologyPartials from './partials/prices/PricesCosmetologyPartials';
+import PricesPhysioterapyPartials from './partials/prices/PricesPhysioterapyPartials';
+import PricesCosmeticSurgeryPartials from './partials/prices/PricesCosmeticSurgeryPartials';
+import PricesAllergologyPartials from './partials/prices/PricesAllergologyPartials';
+import PricesUsgPartials from './partials/prices/PricesUsgPartials';
 
 import TeamView from './TeamView';
-import PricesView from './PricesView';
 import ContactView from './ContactView';
 
 // import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
@@ -64,8 +75,20 @@ const Root = () => (
                     <Route path='/services/gynecology' element={<ServicesGynecologyPartial />} />
                     <Route path='/services/orthopedics' element={<ServicesOrthopedicsPartial />} />
                     <Route path='/services/vascular-surgery' element={<ServicesVascularSurgeryPartial />} />
+                    <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial />} />
 
-                    <Route path='/prices' element={<PricesView />} />
+                    <Route path='/prices' element={<PricesView />}>
+                        <Route path='/prices/dermatology' element={<PricesDermatologyPartials />} />
+                        <Route path='/prices/aesthetic-medicine' element={<PricesAestheticMedicinePartials />} />
+                        <Route path='/prices/hematology' element={<PricesHematologyPartials />} />
+                        <Route path='/prices/cosmetology' element={<PricesCosmetologyPartials />} />
+                        <Route path='/prices/physioterapy' element={<PricesPhysioterapyPartials />} />
+                        <Route path='/prices/cosmetic-surgery' element={<PricesCosmeticSurgeryPartials />} />
+                        <Route path='/prices/allergology' element={<PricesAllergologyPartials />} />
+                        <Route path='/prices/usg' element={<PricesUsgPartials />} />
+
+
+                    </Route>
                     <Route path='/team' element={<TeamView />} />
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>
