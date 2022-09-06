@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
@@ -149,7 +149,7 @@ const Table3 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        PQ AGE – Peeling Liftingujący
+                        PQ AGE - Peeling Liftingujący
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -189,7 +189,7 @@ const Table4 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        PRX-T 33 – Biorewitalizacja bez igieł
+                        PRX-T 33 - Biorewitalizacja bez igieł
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -231,7 +231,7 @@ const Table5 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        Terapia Anty-Aging – Retises CT
+                        Terapia Anty-Aging - Retises CT
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -403,7 +403,7 @@ const Table9 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        Laser Alma Harmony – nieablacyjne odmłodzenie skóry
+                        Laser Alma Harmony - nieablacyjne odmłodzenie skóry
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -459,7 +459,7 @@ const Table10 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        VECTUS – epilacja laserowa
+                        VECTUS - epilacja laserowa
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -498,10 +498,10 @@ const Table11 = () => {
 
     const rows = [
         createData('Twarz', 250, 950, 1800),
-        createData('Ciało (30min) 1 Focus – 1 Okolica', 300, 1400, 2600),
-        createData('Ciało (40min) 2 Focusy – 2 Okolice', 350, 1600, 2800),
-        createData('Ciało (50min) 3 Focusy – 3 Okolice', 400, 1850, 3000),
-        createData('Ciało (60min) 4 Focusy – 4 Okolice', 450, 2150, 3300)
+        createData('Ciało (30min) 1 Focus - 1 Okolica', 300, 1400, 2600),
+        createData('Ciało (40min) 2 Focusy - 2 Okolice', 350, 1600, 2800),
+        createData('Ciało (50min) 3 Focusy - 3 Okolice', 400, 1850, 3000),
+        createData('Ciało (60min) 4 Focusy - 4 Okolice', 450, 2150, 3300)
     ];
 
     return (
@@ -555,6 +555,10 @@ const Table11 = () => {
 }
 
 const PricesCosmetologyPartials = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }, []);
+
     return (
         <Box display="grid" gap={3}>
             <Table1 />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
@@ -161,7 +161,7 @@ const Table2 = () => {
                     <TableRow>
                     <StyledTableCell className="featured">
                         Korekcja zmarszczek mimicznych (Botox, Azzalure)
-                        {tooltip('Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych – cena podstawowa + 20% dopłaty.')}
+                        {tooltip('Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych - cena podstawowa + 20% dopłaty.')}
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -195,7 +195,7 @@ const Table3 = () => {
         createData('Bruzdy nosowo-wargowe', 'od 1100'),
         createData('Zmarszczki między brwiami (lwia zmarszczka)', 'od 1100'),
         createData('Okolica dolnej powieki (dolina łez)', 'od 1100'),
-        createData('Usta – korekta konturu, korekta kształtu, powiększenie', 'od 1100'),
+        createData('Usta - korekta konturu, korekta kształtu, powiększenie', 'od 1100'),
         createData('Okolica jarzmowa (kości policzkowe)', 'od 1100'),
         createData('Okolica skroniowa', 'od 1100'),
         createData('Korekta nosa', 'od 1100'),
@@ -211,7 +211,7 @@ const Table3 = () => {
                     <TableRow>
                     <StyledTableCell className="featured">
                         Wypełniacze na bazie kwasu hialuronowego
-                        {tooltip('Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych – cena podstawowa + 20% dopłaty.')}
+                        {tooltip('Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych - cena podstawowa + 20% dopłaty.')}
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -379,7 +379,7 @@ const Table7 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        Dr. Cyj Hair Filler – Terapia Włosów i Łysienia
+                        Dr. Cyj Hair Filler - Terapia Włosów i Łysienia
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -595,7 +595,7 @@ const Table12 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        SonoQueen – lifting bez skalpela
+                        SonoQueen - lifting bez skalpela
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -628,7 +628,7 @@ const Table13 = () => {
         createData('Laser frakcyjny cała twarz', 'od 800', false),
         createData('Redukcja przebarwień cała twarz', '150 (pojedyncze przebarwienie) do 800 (cała twarz)', false),
         createData('Likwidacja rumienia na twarzy', 'od 600 (policzki) do 800 (cała twarz)', false),
-        createData('Zamykanie naczynek – nos', 'od 200', 'Dokładną cenę ustala lekarz.'),
+        createData('Zamykanie naczynek - nos', 'od 200', 'Dokładną cenę ustala lekarz.'),
         createData('Zamykanie naczyń na kończynach dolnych', 'od 200', 'Dokładną cenę ustala lekarz.'),
         createData('Blizny potrądzikowe', 'od 200', 'Dokładną cenę ustala lekarz.'),
         createData('Rozstępy, blizny', 'od 200', 'Dokładną cenę ustala lekarz.'),
@@ -640,7 +640,7 @@ const Table13 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        Alma Laser Harmony XL PRO – nr 1 na świecie
+                        Alma Laser Harmony XL PRO - nr 1 na świecie
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -716,6 +716,10 @@ const Table14 = () => {
 };
 
 const PricesAestheticMedicinePartials = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }, []);
+
     return (
         <Box display="grid" gap={3}>
             <Table15 />

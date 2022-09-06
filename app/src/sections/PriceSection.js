@@ -8,7 +8,7 @@ import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 // import HeroJpg from '../assets/hero.jpg'
-import princesJpg from '../assets/princes/prices6.jpg'
+import princesJpg from '../assets/princes/prices1.jpg';
 // import Container from '../components/Container';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 {/* <a href='https://pl.freepik.com/zdjecia/kobieta-twarz'>Kobieta twarz zdjęcie utworzone przez cookie_studio - pl.freepik.com</a> */}
@@ -164,8 +164,7 @@ const PriceSection = () => {
                         >
                             <Button
                                 component={Link}
-                                // to={`/services`} ::TODO
-                                to={`/drninawisniewska/`}
+                                to={`/prices`}
                                 variant="contained"
                                 color="primary"
                                 size="large"

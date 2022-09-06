@@ -16,92 +16,105 @@ export const services = [
     {
         image: servicesDermatology,
         title: 'Dermatologia',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href='https://pl.freepik.com/zdjecia/dermatolog'>Dermatolog zdjęcie utworzone przez wavebreakmedia_micro - pl.freepik.com</a>`,
-        path: '/services/dermatology'
+        path: '/services/dermatology',
+        prices: '/prices/dermatology'
     },
     {
         image: servicesAestheticMedicine,
         title: 'Medycyna estetyczna',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href='https://pl.freepik.com/zdjecia/mezoterapia'>Mezoterapia zdjęcie utworzone przez nensuria - pl.freepik.com</a>`,
-        path: '/services/aesthetic-medicine'
+        path: '/services/aesthetic-medicine',
+        prices: '/prices/aesthetic-medicine'
     },
     {
         image: servicesHematology,
         title: 'Hematologia',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href='https://pl.freepik.com/zdjecia/badania-krwi'>Badania krwi zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
-        path: '/services/hematology'
+        path: '/services/hematology',
+        prices: '/prices/hematology'
     },
     {
         image: servicesCosmetology,
         title: 'Kosmetologia',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href='https://pl.freepik.com/zdjecia/mezoterapia'>Mezoterapia zdjęcie utworzone przez lookstudio - pl.freepik.com</a>`,
-        path: '/services/cosmetology'
+        path: '/services/cosmetology',
+        prices: '/prices/cosmetology'
     },
     {
         image: servicesPhysioterapy,
         title: 'Fizjoterapia',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href='https://pl.freepik.com/zdjecia/fizjoterapia'>Fizjoterapia zdjęcie utworzone przez javi_indy - pl.freepik.com</a>`,
-        path: '/services/physioterapy'
+        path: '/services/physioterapy',
+        prices: '/prices/physioterapy'
     },
     {
         image: servicesCosmeticSurgery,
         title: 'Chirurgia plastyczna',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href='https://pl.freepik.com/zdjecia/kobieta'>Kobieta zdjęcie utworzone przez wayhomestudio - pl.freepik.com</a>`,
-        path: '/services/cosmetic-surgery'
+        path: '/services/cosmetic-surgery',
+        prices: '/prices/cosmetic-surgery'
     },
     {
         image: servicesAllergology,
         title: 'Alergologia',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href='https://pl.freepik.com/zdjecia/alergia'>Alergia zdjęcie utworzone przez freepik - pl.freepik.com</a>`,
-        path: '/services/allergology'
+        path: '/services/allergology',
+        prices: '/prices/allergology'
     },
     {
         image: servicesUsg,
         title: 'USG',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href='https://pl.freepik.com/zdjecia/sprzet-medyczny'>Sprzęt medyczny zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
-        path: '/services/usg'
+        path: '/services/usg',
+        prices: '/prices/usg',
     },
     {
         image: servicesEndocrinology,
         title: 'Endykrologia',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href='https://pl.freepik.com/zdjecia/tarczyca'>Tarczyca zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
-        path: '/services/endocrinology'
+        path: '/services/endocrinology',
+        prices: '/prices/endocrinology',
     },
     {
         image: servicesGynecology,
         title: 'Ginekologia',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href='https://pl.freepik.com/zdjecia/tarczyca'>Tarczyca zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
-        path: '/services/gynecology'
+        path: '/services/gynecology',
+        prices: '/prices/gynecology',
     },
     {
         image: servicesOrthopedics,
         title: 'Ortopedia',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href="https://pl.freepik.com/darmowe-zdjecie/fizjoterapeuta-kregow-trzymajacy-sztuczny-kregoslup_13376886.htm#query=orthopedics&position=23&from_view=search">Obraz autorstwa senivpetro</a> na Freepik`,
-        path: '/services/orthopedics'
+        path: '/services/orthopedics',
+        prices: '/prices/orthopedics',
     },
     {
         image: servicesVasularSurgery,
         title: 'Chirurgia naczyniowa',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href="https://pl.freepik.com/darmowe-zdjecie/chirurdzy-noszacy-chirurgiczne-lupy-podczas-wykonywania-operacji_8402445.htm#query=surgery&position=37&from_view=search">Obraz autorstwa wavebreakmedia_micro</a> na Freepik`,
-        path: '/services/vascular-surgery'
+        path: '/services/vascular-surgery',
+        prices: '/prices/vascular-surgery',
     },
     {
         image: servicesClinicalDietitian,
         title: 'Dietetyka Kliniczna',
-        description: 'Integer eleifend eget purus ut tincidunt. Vivamus venenatis risus orci, non ullamcorper nisi faucibus nec. Donec non elit in enim volutpat finibus.',
+        description: 'Phasellus malesuada malesuada nulla quis pharetra. Curabitur elit ex, dictum vitae pretium sollicitudin, varius non lectus. Donec rhoncus quam sit amet erat efficitur, sit amet dapibus arcu tincidunt. Vivamus lobortis hendrerit placerat. Fusce libero mauris, vehicula maximus nulla lacinia, vestibulum ullamcorper nisl. Sed at maximus nisi. Praesent ullamcorper, eros ut lobortis posuere, ante sem aliquet eros, a varius quam felis interdum lacus. Sed blandit at ligula quis cursus. Duis molestie, nunc nec varius egestas, mi libero vehicula est, id sagittis nisl elit a velit. Pellentesque vitae purus aliquam, tincidunt ligula nec, cursus tortor.',
         link: `<a href="https://pl.freepik.com/darmowe-zdjecie/lekarz-w-swoim-gabinecie-mowi-dziewczynie-jak-jesc-i-trzymac-sie-diety_18133353.htm#query=dietitian&position=8&from_view=search">Obraz autorstwa artursafronovvvv</a> na Freepik`,
-        path: '/services/clinical-dietitian'
+        path: '/services/clinical-dietitian',
+        prices: '/prices/clinical-dietitian',
     }
 ];

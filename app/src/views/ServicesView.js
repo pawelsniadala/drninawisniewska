@@ -55,10 +55,12 @@ const ServicesView = () => {
                             {services.length ? services.map((item, index) => (
                                 <CardServices
                                     key={item.index}
+                                    cardName={'card-services-view'}
                                     cardTitle={item.title}
                                     cardDescription={item.description}
                                     cardImage={item.image}
-                                    cardPath={item.path}
+                                    cardMorePath={item.path}
+                                    cardPricePath={item.prices}
                                 />
                             )) : (
                                 {/* <Skeleton variant="rectangular" width={210} height={118} /> */}

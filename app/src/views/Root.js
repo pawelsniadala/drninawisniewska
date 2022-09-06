@@ -40,6 +40,11 @@ import PricesPhysioterapyPartials from './partials/prices/PricesPhysioterapyPart
 import PricesCosmeticSurgeryPartials from './partials/prices/PricesCosmeticSurgeryPartials';
 import PricesAllergologyPartials from './partials/prices/PricesAllergologyPartials';
 import PricesUsgPartials from './partials/prices/PricesUsgPartials';
+import PricesEndocrinologyPartials from './partials/prices/PricesEndocrinologyPartials';
+import PricesGynecologyPartials from './partials/prices/PricesGynecologyPartials';
+import PricesOrthopedicsPartials from './partials/prices/PricesOrthopedicsPartials';
+import PricesVascularSurgeryPartials from './partials/prices/PricesVascularSurgeryPartials';
+import PricesClinicalDietitianPartials from './partials/prices/PricesClinicalDietitianPartials';
 
 import TeamView from './TeamView';
 import ContactView from './ContactView';
@@ -86,6 +91,11 @@ const Root = () => (
                         <Route path='/prices/cosmetic-surgery' element={<PricesCosmeticSurgeryPartials />} />
                         <Route path='/prices/allergology' element={<PricesAllergologyPartials />} />
                         <Route path='/prices/usg' element={<PricesUsgPartials />} />
+                        <Route path='/prices/endocrinology' element={<PricesEndocrinologyPartials />} />
+                        <Route path='/prices/gynecology' element={<PricesGynecologyPartials />} />
+                        <Route path='/prices/orthopedics' element={<PricesOrthopedicsPartials />} />
+                        <Route path='/prices/vascular-surgery' element={<PricesVascularSurgeryPartials />} />
+                        <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartials />} />
 
 
                     </Route>

@@ -58,9 +58,8 @@ const HeroSection = () => {
                             <Typography
                                 variant="h4"
                                 align={'left'}
-                                // data-aos={'fade-in'}
-                                // data-aos-delay={'200'}
-
+                                data-aos={'fade-in'}
+                                data-aos-delay={'100'}
                                 gutterBottom
                                 sx={{
                                     // fontFamily: 'Lato,sans-serif',
@@ -81,8 +80,8 @@ const HeroSection = () => {
                                 align={'left'}
                                 // color={'text.secondary'}
                                 // data-aos={'fade-right'}
-                                // data-aos={'fade-in'}
-                                // data-aos-delay={'200'}
+                                data-aos={'fade-in'}
+                                data-aos-delay={'100'}
                                 sx={{
                                     fontSize: '18px',
                                     fontWeight: '400',
@@ -99,7 +98,7 @@ const HeroSection = () => {
                                 justifyContent={'left'}
                                 marginTop={2}
                                 data-aos={'fade-in'}
-                                data-aos-delay={'200'}
+                                data-aos-delay={'100'}
                             >
                                 <Box
                                     className="link-contained-more"
@@ -130,7 +129,7 @@ const HeroSection = () => {
                     <LazyLoadImage
                         height={'100%'}
                         width={'100%'}
-                        src={require('../assets/hero/hero3.jpg')}
+                        src={require('../assets/hero/hero1.jpg')}
                         alt="..."
                         effect="blur"
                         style={{

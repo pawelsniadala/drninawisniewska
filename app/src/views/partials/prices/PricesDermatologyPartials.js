@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
@@ -52,23 +52,23 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja dermatologiczna – dr n. med. Nina Wiśniewska', false, 200),
-        createData('Konsultacja dermatologiczna – lek. med. Katarzyna Zbrońska', false, 180),
-        createData('Konsultacja dermatologiczna – lek. med. Aldona Maciąg', false, 180),
-        createData('Konsultacja dermatologiczna – lek. med. Anna Kułakowska', false, 180),
-        createData('Konsultacja dermatologiczna – lek. med. Paulina Tatara', false, 150),
-        createData('Konsultacja dermatologiczna – lek. med. Justyna Kłoniecka', false, 150),
-        createData('Konsultacja dermatologiczna – lek. med. Katarzyna Myśliwiec-Czajka', false, 150),
-        createData('Konsultacja dermatologiczna – lek. med. Katarzyna Rychlik', false, 150),
-        createData('Konsultacja medycyny estetycznej – dr Olga Lenartowicz-Warakomska', false, 150),
-        createData('Konsultacja medycyny estetycznej – dr Klaudia Malottki', false, 150),
+        createData('Konsultacja dermatologiczna - dr n. med. Nina Wiśniewska', false, 200),
+        createData('Konsultacja dermatologiczna - lek. med. Katarzyna Zbrońska', false, 180),
+        createData('Konsultacja dermatologiczna - lek. med. Aldona Maciąg', false, 180),
+        createData('Konsultacja dermatologiczna - lek. med. Anna Kułakowska', false, 180),
+        createData('Konsultacja dermatologiczna - lek. med. Paulina Tatara', false, 150),
+        createData('Konsultacja dermatologiczna - lek. med. Justyna Kłoniecka', false, 150),
+        createData('Konsultacja dermatologiczna - lek. med. Katarzyna Myśliwiec-Czajka', false, 150),
+        createData('Konsultacja dermatologiczna - lek. med. Katarzyna Rychlik', false, 150),
+        createData('Konsultacja medycyny estetycznej - dr Olga Lenartowicz-Warakomska', false, 150),
+        createData('Konsultacja medycyny estetycznej - dr Klaudia Malottki', false, 150),
         createData('Badanie dermatoskopowe zmian skórnych (całe ciało) ', false, 250),
         createData('Wideodermatoskopia', false, 300),
         createData('Założenie płatkowych testów kontaktowych, zdjęcie, odczyt i lista alergenów (36 Alergenów)', false, 350),
-        createData('Fototerapia lampa UVB 311 nm – 16 zabiegów ', false, 350),
-        createData('Fototerapia PUVA (dłonie) – 6 zabiegów', false, 200),
-        createData('Fototerapia PUVA (stopy) – 6 zabiegów', false, 200),
-        createData('Fototerapia PUVA (dłonie + stopy) – 12 zabiegów', false, 400),
+        createData('Fototerapia lampa UVB 311 nm - 16 zabiegów ', false, 350),
+        createData('Fototerapia PUVA (dłonie) - 6 zabiegów', false, 200),
+        createData('Fototerapia PUVA (stopy) - 6 zabiegów', false, 200),
+        createData('Fototerapia PUVA (dłonie + stopy) - 12 zabiegów', false, 400),
         createData('Wycięcie zmiany barwnikowej + badanie histopatologiczne ', false, 450),
         createData('Biopsja skóry + badanie histopatologiczne ', false, 300),
         createData('Usunięcie zmian skórnych elektrochirurgicznie ', false, 100),
@@ -81,7 +81,7 @@ const Table1 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        Laser Alma Harmony – nieablacyjne odmłodzenie skóry
+                        Laser Alma Harmony - nieablacyjne odmłodzenie skóry
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -107,6 +107,10 @@ const Table1 = () => {
 }
 
 const PricesDermatologyPartials = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    }, []);
+
     return (
         <Box display="grid" gap={3}>
             <Table1 />

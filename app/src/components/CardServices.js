@@ -16,10 +16,12 @@ import CardMedia from '@mui/material/CardMedia';
 // import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 
 const CardServices = ({
+    cardName,
     cardImage,
     cardTitle,
     cardDescription,
-    cardPath
+    cardMorePath,
+    cardPricePath
 }) => {
     // const theme = useTheme();
 
@@ -29,9 +31,9 @@ const CardServices = ({
 
     return (
         <Box
-            className='card-services'
+            className={cardName}
             component={Link}
-            to={cardPath}
+            to={cardMorePath}
             display={'block'}
             width={1}
             height={1}
@@ -61,11 +63,12 @@ const CardServices = ({
                 marginBottom={1}
             >
                 <CardMedia
+                    className='card-media'
                     title={cardTitle}
                     image={cardImage}
                     sx={{
                         position: 'relative',
-                        height: { xs: 240, sm: 340, md: 280, lg: 180 },
+                        // height: { xs: 240, sm: 340, md: 280, lg: 180 },
                         overflow: 'hidden',
                     }}
                 >
@@ -135,7 +138,7 @@ const CardServices = ({
                         <Button
                             className='card-link'
                             component={Link}
-                            to={cardPath}
+                            to={cardMorePath}
                             variant="outline"
                             size="small"
                         >
@@ -145,8 +148,7 @@ const CardServices = ({
                         <Button
                             className='card-link'
                             component={Link}
-                            // to={cardPath}
-                            to={'/prices/usg'}
+                            to={cardPricePath}
                             variant="outline"
                             size="small"
                         >

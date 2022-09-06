@@ -28,7 +28,8 @@ const TeamSection = () => {
         <Box sx={{
             // paddingTop: "64px",
             // paddingBottom: "64px",
-            backgroundColor: '#fbfbfd',
+            // backgroundColor: '#fbfbfd',
+            backgroundColor: '#f5f5f5'
             // boxShadow: 'rgb(0 0 0 / 5%) 0px 0px 0px 1px;',
         }}>
             <Container>
@@ -166,7 +167,7 @@ const TeamSection = () => {
                                 boxShadow: 0,
                                 background: 'transparent',
                                 backgroundImage: 'none',
-                                borderRadius: '12px'
+                                borderRadius: '8px'
                             }}
                         >
                         <Box
@@ -192,7 +193,7 @@ const TeamSection = () => {
                                     // boxShadow: '0 3px 6px 0 rgb(140 152 164 / 25%)',
                                     boxShadow: '1px 2px 6px rgb(0 0 0 / 4%)',
                                     // boxShadow: 'none',
-                                    borderRadius: '12px'
+                                    borderRadius: '8px'
                                 }}
                             >
                             <CardContent>
@@ -202,8 +203,10 @@ const TeamSection = () => {
                     align={'center'}
                     // color={'text.secondary'}
                     sx={{
-                        fontSize: "13px",
-                        // color: '#DBAF62',
+                        fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
+                        fontSize: "14px",
+                        color: 'rgba(0, 0, 0, 0.7)',
+                        fontWeight: '300',
                     }}
                 >
                     {item.title}
@@ -213,27 +216,32 @@ const TeamSection = () => {
                     gutterBottom
                     align={'center'}
                     sx={{
-                        // fontFamily: '"Roboto", sans-serif',
+                        fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
                         // textTransform: 'uppercase',
                         // letterSpacing: '0.045em;',
                         // color: '#444',
                         // fontWeight: 400,
                         // fontSize: '0.95rem',
 
-                        fontFamily: 'Lato,sans-serif',
+                        // fontFamily: 'Lato,sans-serif',
                         letterSpacing: '.045em',
-                        textTransform: 'uppercase',
+                        // textTransform: 'uppercase',
                         fontWeight: '400',
-                        // color: 'rgba(0, 0, 0, 0.7)', 
-                        fontSize: '1rem',
+                        color: 'rgba(0, 0, 0, 0.7)',
+                        fontSize: '1.2rem',
                     }}
                 >
                     {item.name}
                 </Typography>
                 <Typography
                     align={'center'}
-                    color={'text.secondary'}
-                    sx={{ fontSize: "14px" }}
+                    // color={'text.secondary'}
+                    sx={{
+                        fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
+                        fontSize: "14px",
+                        color: 'rgba(0, 0, 0, 0.7)',
+                        fontWeight: '300',
+                    }}
                 >
                     {item.speciality}
                 </Typography>

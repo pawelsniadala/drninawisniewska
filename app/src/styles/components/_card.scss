@@ -1,15 +1,15 @@
-.card-services {
+.card-services-section {
+    .card-media {
+        height: 250px;
+    }
+
     .card-content {
-        
         .card-title {
-            // margin: 0;
             margin: 0px 0px 0.35em;
             letter-spacing: 0.00938em;
-            // line-height: 1.1;
             font-family: Roboto, Helvetica, Arial, sans-serif;
             font-weight: 400;
-            // font-size: 1.05rem;
-            font-size: 1.25rem;
+            font-size: 1.35rem;
             color: rgba(0, 0, 0, 0.7);
             display: -webkit-box;
             -webkit-line-clamp: 1;
@@ -19,34 +19,27 @@
         }
 
         .card-description {
-            font-size: .855em;
+            // font-size: .955em;
+            font-size: 0.975rem;
             line-height: 1.43;
-            letter-spacing: 0.01071em;
-            color: #606060;
+            letter-spacing: 0.00071em;
+            // color: #656565;
+            color: rgba(0, 0, 0, 0.7);
             font-family: Roboto, Helvetica, Arial, sans-serif;
             font-weight: 300;
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 4;
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
-
-            // margin: 0px;
-            // font-family: Roboto, Helvetica, Arial, sans-serif;
-            // font-weight: 400;
-            // font-size: 0.875rem;
-            // line-height: 1.43;
-            // letter-spacing: 0.01071em;
-            // color: rgba(0, 0, 0, 0.6);
         }
-
     }
 
     .card-actions {
         display: flex;
         justify-content: flex-start;
         gap: 16px;
-        padding: 0 16px 8px 16px;
+        padding: 0px 16px 18px 16px;
 
         .card-link {
             padding: 0;
@@ -55,14 +48,76 @@
             background-color: transparent;
             color: #d6a44d;
             border-color: none;
-            // font-size: 11px;
-            font-size: 0.8125rem;
+            font-size: 0.8525rem;
+            letter-spacing: 0.01857em;
             font-weight: 400;
             width: fit-content;
 
             span span {
                 background-color: transparent !important;
             }
+        }
+    }
+}
+
+.card-services-view {
+    @extend .card-services-section;
+
+    .card-media {
+        height: 180px;
+    }
+
+    .card-content {
+        .card-title {
+    //         margin: 0px 0px 0.35em;
+    //         letter-spacing: 0.00938em;
+    //         font-family: Roboto, Helvetica, Arial, sans-serif;
+    //         font-weight: 400;
+                font-size: 1.25rem;
+    //         color: rgba(0, 0, 0, 0.7);
+    //         display: -webkit-box;
+    //         -webkit-line-clamp: 1;
+    //         -webkit-box-orient: vertical;
+    //         overflow: hidden;
+    //         text-overflow: ellipsis;
+        }
+
+        .card-description {
+            font-size: 0.855rem;
+    //         line-height: 1.43;
+            letter-spacing: 0.01071em;
+    //         color: #606060;
+    //         font-family: Roboto, Helvetica, Arial, sans-serif;
+    //         font-weight: 300;
+    //         display: -webkit-box;
+    //         -webkit-line-clamp: 4;
+    //         -webkit-box-orient: vertical;
+    //         overflow: hidden;
+    //         text-overflow: ellipsis;
+        }
+    }
+
+    .card-actions {
+    //     display: flex;
+    //     justify-content: flex-start;
+    //     gap: 16px;
+        padding: 0 16px 8px 16px;
+
+        .card-link {
+    //         padding: 0;
+    //         line-height: 1;
+    //         justify-content: flex-start;
+    //         background-color: transparent;
+    //         color: #DBAF62;
+    //         border-color: none;
+            font-size: 0.8025rem;
+    //         letter-spacing: 0.01857em;
+    //         font-weight: 400;
+    //         width: fit-content;
+
+    //         span span {
+    //             background-color: transparent !important;
+    //         }
         }
     }
 }

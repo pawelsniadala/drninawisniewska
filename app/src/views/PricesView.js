@@ -35,6 +35,11 @@ import PricesPhysioterapyPartials from "./partials/prices/PricesPhysioterapyPart
 import PricesCosmeticSurgeryPartials from "./partials/prices/PricesCosmeticSurgeryPartials";
 import PricesAllergologyPartials from "./partials/prices/PricesAllergologyPartials";
 import PricesUsgPartials from "./partials/prices/PricesUsgPartials";
+import PricesEndocrinologyPartials from "./partials/prices/PricesEndocrinologyPartials";
+import PricesGynecologyPartials from "./partials/prices/PricesGynecologyPartials";
+import PricesOrthopedicsPartials from "./partials/prices/PricesOrthopedicsPartials";
+import PricesVascularSurgeryPartials from "./partials/prices/PricesVascularSurgeryPartials";
+import PricesClinicalDietitianPartials from "./partials/prices/PricesClinicalDietitianPartials";
 
 const PricesView = () => {
     const [ pricesTab, setTab ] = useState(() => {
@@ -78,6 +83,26 @@ const PricesView = () => {
                     return (
                         "prices-usg"
                     );
+                case "/prices/endocrinology":
+                    return (
+                        "prices-endocrinology"
+                    );
+                case "/prices/gynecology":
+                    return (
+                        "prices-gynecology"
+                    );
+                case "/prices/orthopedics":
+                    return (
+                        "prices-orthopedics"
+                    );
+                case "/prices/vascular-surgery":
+                    return (
+                        "prices-vascular-surgery"
+                    );
+                case "/prices/clinical-dietitian":
+                    return (
+                        "prices-clinical-dietitian"
+                    );
                 default:
             }
         }
@@ -119,6 +144,26 @@ const PricesView = () => {
                 return (
                     <PricesUsgPartials />
                 );
+            case "prices-endocrinology":
+                return (
+                    <PricesEndocrinologyPartials />
+                );
+            case "prices-gynecology":
+                return (
+                    <PricesGynecologyPartials />
+                );
+            case "prices-orthopedics":
+                return (
+                    <PricesOrthopedicsPartials />
+                );
+            case "prices-vascular-surgery":
+                return (
+                    <PricesVascularSurgeryPartials />
+                );
+            case "prices-clinical-dietitian":
+                return (
+                    <PricesClinicalDietitianPartials />
+                );
             default:
         }
     }
@@ -146,11 +191,14 @@ const PricesView = () => {
                                 Cennik
                             </Typography>
                         </Breadcrumbs>
-                        <Box>
+                        <Typography variant='h4' className='heading-view'>
+                            Cennik
+                        </Typography>
+                        {/* <Box>
                             <Typography variant='h4' className='heading-view'>
                                 Cennik
                             </Typography>
-                        </Box>
+                        </Box> */}
                     </Container>
                 </Box>
                 <Box className="view-body">
@@ -318,7 +366,7 @@ const PricesView = () => {
                                     <ListItem className='list-item' disablePadding>
                                         <ListItemButton
                                             component={Link}
-                                            to="/prices/usg"  
+                                            to="/prices/endocrinology"
                                             className='list-item-button'
                                             aria-current="page"
                                             selected={pricesTab === "prices-endocrinology"}
@@ -334,7 +382,7 @@ const PricesView = () => {
                                     <ListItem className='list-item' disablePadding>
                                         <ListItemButton
                                             component={Link}
-                                            to="/prices/usg"  
+                                            to="/prices/gynecology"
                                             className='list-item-button'
                                             aria-current="page"
                                             selected={pricesTab === "prices-gynecology"}
@@ -350,7 +398,7 @@ const PricesView = () => {
                                     <ListItem className='list-item' disablePadding>
                                         <ListItemButton
                                             component={Link}
-                                            to="/prices/usg"  
+                                            to="/prices/orthopedics"
                                             className='list-item-button'
                                             aria-current="page"
                                             selected={pricesTab === "prices-orthopedics"}
@@ -366,7 +414,7 @@ const PricesView = () => {
                                     <ListItem className='list-item' disablePadding>
                                         <ListItemButton
                                             component={Link}
-                                            to="/prices/usg"  
+                                            to="/prices/vascular-surgery"
                                             className='list-item-button'
                                             aria-current="page"
                                             selected={pricesTab === "prices-vascular-surgery"}
@@ -382,7 +430,7 @@ const PricesView = () => {
                                     <ListItem className='list-item' disablePadding>
                                         <ListItemButton
                                             component={Link}
-                                            to="/prices/usg"  
+                                            to="/prices/clinical-dietitian"
                                             className='list-item-button'
                                             aria-current="page"
                                             selected={pricesTab === "prices-clinical-dietitian"}

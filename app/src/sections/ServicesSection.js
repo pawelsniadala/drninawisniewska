@@ -21,6 +21,8 @@ import Container from '../components/Container';
 
 import { services } from '../data/services';
 
+import CardServices from "../components/CardServices";
+
 const SampleNextArrow = ({ onClick }) => {
     return (
         <div
@@ -78,7 +80,8 @@ const ServicesSection = () => {
     return (
         <Box
             sx={{
-                backgroundColor: '#fbfbfd',
+                // backgroundColor: '#fbfbfd',
+                backgroundColor: '#f5f5f5'
                 // backgroundColor: '#f5f5f7',
                 // backgroundImage: `linear-gradient(#fff, #f7faff)`,
             }}
@@ -175,114 +178,16 @@ const ServicesSection = () => {
                                         transition: 'all .2s ease-in-out',
                                     }}
                                 >
-                                    <Box
-                                        component={Card}
-                                        width={1}
-                                        height={1}
-                                        display={'flex'}
-                                        flexDirection={'column'}
-                                        sx={{
-                                            backgroundImage: 'none',
-                                            boxShadow: '1px 2px 6px rgb(0 0 0 / 4%)',
-                                            borderRadius: '12px',
-                                        }}
-                                        marginBottom={3}
-                                    >
-                                        <CardMedia
-                                            title={item.title}
-                                            image={item.image}
-                                            sx={{
-                                                position: 'relative',
-                                                height: { xs: 240, sm: 340, md: 280, lg: 340 },
-                                                overflow: 'hidden',
-                                            }}
-                                        >
-                                            <Box
-                                                component={'svg'}
-                                                preserveAspectRatio="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                                x="0px"
-                                                y="0px"
-                                                viewBox="0 0 1921 273"
-                                                sx={{
-                                                    position: 'absolute',
-                                                    width: '100%',
-                                                    left: 0,
-                                                    bottom: 0,
-                                                    right: 0,
-                                                    zIndex: 1,
-                                                }}
-                                            >
-                                                <polygon
-                                                    fill={theme.palette.background.paper}
-                                                    points="0,273 1921,273 1921,0 "
-                                                />
-                                            </Box>
-                                        </CardMedia>
-                                        <CardContent>
-                                            <Typography
-                                                variant={'h6'}
-                                                gutterBottom
-                                                align={'center'}
-                                                sx={{
-                                                    // fontFamily: '"Roboto", sans-serif',
-                                                    // fontFamily: 'Raleway, sans-serif',
-                                                    // textTransform: 'uppercase',
-                                                    // letterSpacing: '0.045em;',
-                                                    // color: '#444',
-                                                    // fontWeight: 500,
-                                                    // color: 'rgba(0, 0, 0, 0.75)'
 
-                                                                // fontFamily: 'Raleway, sans-serif',
-                                                    fontFamily: 'Lato,sans-serif',
-                                                    letterSpacing: '.045em',
-                                                    textTransform: 'uppercase',
-                                                    fontWeight: '400',
-                                                    color: 'rgba(0, 0, 0, 0.7)'
-                                                }}
-                                            >
-                                                {item.title}
-                                            </Typography>
-                                            <Typography
-                                                align={'center'}
-                                                // color={'text.secondary'}
-                                                sx={{
-                                                    fontSize: "14px",
-                                                    // fontFamily: 'Raleway, sans-serif', 
-                                                    // font: '400 14px/20px Google Sans Text,Arial,Helvetica,sans-serif',
-                                                    color: 'rgba(0, 0, 0, 0.6)',
-                                                    fontWeight: 400,
-                                                }}
-                                            >
-                                                {item.description}
-                                            </Typography>
-                                        </CardContent>
-                                        <Box flexGrow={1} />
-                                        <CardActions
-                                            sx={{
-                                                justifyContent: 'center',
-                                                paddingTop: 0
-                                            }}
-                                        >
-                                            <Box
-                                                className="link-outlined-card"
-                                                marginTop={{ xs: 2, sm: 0 }}
-                                                width={{ xs: '100%', md: 'auto' }}
-                                            >
-                                                <Button
-                                                    component={Link}
-                                                    // to={`/services`} // TODO
-                                                    to={`/drninawisniewska/`}
-                                                    variant="outline"
-                                                    size="small"
-                                                    fullWidth={isMd ? false : true}
-                                                    endIcon={<ChevronRightIcon />}
-                                                >
-                                                    Dowiedz się więcej
-                                                </Button>
-                                            </Box>
-                                        </CardActions>
-                                    </Box>
+                                    <CardServices
+                                        key={item.index}
+                                        cardName={'card-services-section'}
+                                        cardTitle={item.title}
+                                        cardDescription={item.description}
+                                        cardImage={item.image}
+                                        cardMorePath={item.path}
+                                        cardPricePath={item.prices}
+                                    />
                                 </Box>
                             </Box>
                         ))}
