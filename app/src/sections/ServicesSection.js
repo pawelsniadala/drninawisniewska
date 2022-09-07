@@ -72,7 +72,8 @@ const ServicesSection = () => {
         slidesToShow: isXl ? 3 : isLg ? 3 : isMd ? 2 : isSm ? 2 : 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
+        // autoplay: false,
+        autoplaySpeed: 4000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
     };
@@ -165,10 +166,11 @@ const ServicesSection = () => {
                 </Box>
                 <Box margin={'0 auto'}>
                     <Slider {...sliderOpts}>
-                        {services.slice(1, 7).map((item, i) => (
+                        {services.slice(1, 5).map((item, i) => (
                             <Box
                                 key={i}
-                                padding={{ xs: 1, md: 1, lg: 1 }}
+                                padding={{ xs: 1, md: 1, lg: '0.75rem' }}
+                                sx={{paddingTop: '0 !important'}}
                             >
                                 <Box
                                     width={1}
