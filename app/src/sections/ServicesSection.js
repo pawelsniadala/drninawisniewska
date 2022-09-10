@@ -166,7 +166,7 @@ const ServicesSection = () => {
                 </Box>
                 <Box margin={'0 auto'}>
                     <Slider {...sliderOpts}>
-                        {services.slice(1, 5).map((item, i) => (
+                        {services.slice(0, 4).map((item, i) => (
                             <Box
                                 key={i}
                                 padding={{ xs: 1, md: 1, lg: '0.75rem' }}

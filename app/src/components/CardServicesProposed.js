@@ -1,16 +1,12 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-// import { useTheme } from '@mui/material/styles';
+
 import Box from '@mui/material/Box';
-// import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
-// import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-// import useMediaQuery from '@mui/material/useMediaQuery';
 
 const CardServicesProposed = ({
     cardImage,
@@ -29,9 +25,6 @@ const CardServicesProposed = ({
             sx={{
                 textDecoration: 'none',
                 transition: 'all .2s ease-in-out',
-                // '&:hover': {
-                //     transform: `translateY(-${theme.spacing(1 / 2)})`,
-                // },
             }}
         >
             <Box
@@ -80,9 +73,8 @@ const CardServicesProposed = ({
                         to={cardPath}
                         variant="outline"
                         size="small"
-                        // endIcon={<ChevronRightIcon />}
                     >
-                        Dowiedz się więcej
+                        Zobacz więcej
                     </Button>
                 </CardContent>
             </Box>
