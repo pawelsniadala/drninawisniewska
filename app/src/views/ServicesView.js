@@ -61,14 +61,12 @@ const ServicesView = () => {
                                     cardImage={item.image}
                                     cardMorePath={item.path}
                                     cardPricePath={item.prices}
+                                    cardSpecialist={item.specialists}
                                 />
                             )) : (
                                 {/* <Skeleton variant="rectangular" width={210} height={118} /> */}
                             )}
                         </Box>
-
-                        {/* <div>WIDOK</div> */}
-                        {/* <ServicesGridPartial /> */}
                     </Container>
                 </Box>
             </Box>

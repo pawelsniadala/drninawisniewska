@@ -1,47 +1,40 @@
-// import React from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
-
 import Slider from 'react-slick';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import Card from '@mui/material/Card';
-import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useTheme } from '@mui/material/styles';
 
 import Container from '../components/Container';
+import CardServices from "../components/CardServices";
 
 import { services } from '../data/services';
 
-import CardServices from "../components/CardServices";
-
 const SampleNextArrow = ({ onClick }) => {
     return (
-        <div
+        <Box
             className="sample-next-arrow"
             onClick={onClick}
         >
             <KeyboardArrowRightIcon />
-        </div>
+        </Box>
     );
 }
 
 function SamplePrevArrow({ onClick }) {
     return (
-        <div
+        <Box
             className="sample-prev-arrow"
             onClick={onClick}
         >
             <KeyboardArrowLeftIcon />
-        </div>
+        </Box>
     );
 }
 
@@ -169,7 +162,7 @@ const ServicesSection = () => {
                         {services.slice(0, 4).map((item, i) => (
                             <Box
                                 key={i}
-                                padding={{ xs: 1, md: 1, lg: '0.75rem' }}
+                                padding={{ xs: 1, md: 1, lg: '0.5rem' }}
                                 sx={{paddingTop: '0 !important'}}
                             >
                                 <Box
@@ -180,7 +173,6 @@ const ServicesSection = () => {
                                         transition: 'all .2s ease-in-out',
                                     }}
                                 >
-
                                     <CardServices
                                         key={item.index}
                                         cardName={'card-services-section'}
@@ -189,6 +181,7 @@ const ServicesSection = () => {
                                         cardImage={item.image}
                                         cardMorePath={item.path}
                                         cardPricePath={item.prices}
+                                        cardSpecialist={item.specialists}
                                     />
                                 </Box>
                             </Box>

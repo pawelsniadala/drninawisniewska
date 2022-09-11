@@ -12,6 +12,26 @@ import servicesOrthopedics from "../assets/services/servicesOrthopedics.jpg";
 import servicesVasularSurgery from "../assets/services/servicesVasularSurgery.jpg";
 import servicesClinicalDietitian from "../assets/services/servicesClinicalDietitian.jpg";
 
+import ninaWisniewskaImage from '../assets/team/ninaWisniewska/ninaWisniewskaImage.jpg';
+import justynaFilipekImage from '../assets/team/justynaFilipek/justynaFilipekImage.jpg';
+import paulinaBudnaImage from '../assets/team/paulinaBudna/paulinaBudnaImage.jpg';
+import konradKochanImage from '../assets/team/konradKochan/konradKochanImage.jpg';
+import wojciechKaszewskiImage from '../assets/team/wojciechKaszewski/wojciechKaszewskiImage.jpg';
+import justynaKlonieckaImage from '../assets/team/justynaKloniecka/justynaKlonieckaImage.jpg';
+import katarzynaMysliwiecCzajkaImage from '../assets/team/katarzynaMysliwiecCzajka/katarzynaMysliwiecCzajkaImage.jpg';
+import klaudiaMalottkiImage from '../assets/team/klaudiaMalottki/klaudiaMalottkiImage.jpg';
+import aldonaMaciagImage from '../assets/team/aldonaMaciag/aldonaMaciagImage.jpg';
+import milenaJuzwiakImage from '../assets/team/milenaJuzwiak/milenaJuzwiakImage.jpg';
+import katarzynaZbronskaImage from '../assets/team/katarzynaZbronska/katarzynaZbronskaImage.jpg';
+import tomaszMatuszewskiImage from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImage.jpg';
+import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowskiImage.jpg';
+import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
+import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
+import joannaOjrzenskaImage from '../assets/team/joannaOjrzenska/joannaOjrzenskaImage.jpg';
+import aleksandraGorczynskaImage from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImage.jpg';
+import annaKulakowskaImage from  '../assets/team/annaKulakowska/annaKulakowskaImage.jpg';
+import miroslawMajewskiImage from  '../assets/team/miroslawMajewski/miroslawMajewskiImage.jpg';
+
 export const services = [
     {
         image: servicesDermatology,
@@ -19,7 +39,16 @@ export const services = [
         description: 'Przeprowadzone ewaluacje działań związków i form informacyjno-edukacyjnych na rzecz poprawy lokalnego środowiska przyrodniczego podejmowanych przez jednostki samorządu terytorialnego pozwoliły wybrać związki gmin do dalszych etapów badań jakościowych 16 wywiadów indywidualnych.',
         link: `<a href='https://pl.freepik.com/zdjecia/dermatolog'>Dermatolog zdjęcie utworzone przez wavebreakmedia_micro - pl.freepik.com</a>`,
         path: '/services/dermatology',
-        prices: '/prices/dermatology'
+        prices: '/prices/dermatology',
+        specialists: [
+            ninaWisniewskaImage,
+            katarzynaMysliwiecCzajkaImage,
+            justynaKlonieckaImage,
+            aldonaMaciagImage,
+            paulinaTataraImage,
+            katarzynaZbronskaImage,
+            annaKulakowskaImage
+        ]
     },
     {
         image: servicesAestheticMedicine,
@@ -27,15 +56,14 @@ export const services = [
         description: 'Dogłębna analiza statutów badanych związków gmin zawierająca listy zadań dotyczących działań prośrodowiskowych na rzecz zrównoważonego rozwoju pozwoliła wyłonić związki do dalszych etapów badań. Wyniki tych analiz wykorzystano także podczas wywiadów pogłębionych i określono zaangażowanie społeczności lokalnych w zadania wpisane w statutach.',
         link: `<a href='https://pl.freepik.com/zdjecia/mezoterapia'>Mezoterapia zdjęcie utworzone przez nensuria - pl.freepik.com</a>`,
         path: '/services/aesthetic-medicine',
-        prices: '/prices/aesthetic-medicine'
-    },
-    {
-        image: servicesHematology,
-        title: 'Hematologia',
-        description: 'W pierwszej postawionej hipotezie badań założono, że związki gmin realizują liczne zadania środowiskowe finansowane ze środków krajowych i zagranicznych, które wpływają na lokalny rozwój gospodarczy i społeczny.',
-        link: `<a href='https://pl.freepik.com/zdjecia/badania-krwi'>Badania krwi zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
-        path: '/services/hematology',
-        prices: '/prices/hematology'
+        prices: '/prices/aesthetic-medicine',
+        specialists: [
+            ninaWisniewskaImage,
+            konradKochanImage,
+            klaudiaMalottkiImage,
+            paulinaTataraImage,
+            olgaLenartowiczWarakomskaImage
+        ]
     },
     {
         image: servicesCosmetology,
@@ -43,7 +71,11 @@ export const services = [
         description: 'Przeprowadzone w innej części niniejszej pracy wywiady pogłębione z przedstawicielami związków gmin wykazały, że dostępność środków zewnętrznych na realizację projektów dotyczących wymienianych obszarów działań oraz brak infrastruktury i doświadczenia sprawiły, że gminy chętniej wstępowały do związku gmin.',
         link: `<a href='https://pl.freepik.com/zdjecia/mezoterapia'>Mezoterapia zdjęcie utworzone przez lookstudio - pl.freepik.com</a>`,
         path: '/services/cosmetology',
-        prices: '/prices/cosmetology'
+        prices: '/prices/cosmetology',
+        specialists: [
+            paulinaBudnaImage,
+            aleksandraGorczynskaImage
+        ]
     },
     {
         image: servicesPhysioterapy,
@@ -51,7 +83,10 @@ export const services = [
         description: 'W drugiej hipotezie pracy założono, że gminy zrzeszone w związki gmin wykazują zaangażowanie w działaniach na rzecz poprawy stanu lokalnego środowiska przyrodniczego zgodne z zasadami zrównoważonego rozwoju.',
         link: `<a href='https://pl.freepik.com/zdjecia/fizjoterapia'>Fizjoterapia zdjęcie utworzone przez javi_indy - pl.freepik.com</a>`,
         path: '/services/physioterapy',
-        prices: '/prices/physioterapy'
+        prices: '/prices/physioterapy',
+        specialists: [
+            milenaJuzwiakImage
+        ]
     },
     {
         image: servicesCosmeticSurgery,
@@ -59,7 +94,10 @@ export const services = [
         description: 'Zmiany ustrojowe w Polsce i zmiany niektórych ustaw sprawiły, że na gminach spoczywa obowiązek organizacji działań na rzecz zrównoważonego środowiska poprzez uregulowanie stanu gospodarki ściekowej, gospodarki odpadów komunalnych, stawianie na odnawialne źródła energii czy też inwestycje w programy gospodarki niskoemisyjnej gmin.',
         link: `<a href='https://pl.freepik.com/zdjecia/kobieta'>Kobieta zdjęcie utworzone przez wayhomestudio - pl.freepik.com</a>`,
         path: '/services/cosmetic-surgery',
-        prices: '/prices/cosmetic-surgery'
+        prices: '/prices/cosmetic-surgery',
+        specialists: [
+            konradKochanImage
+        ]
     },
     {
         image: servicesAllergology,
@@ -67,7 +105,10 @@ export const services = [
         description: 'Współpraca ze społecznością lokalną, odpowiednia promocja realizowanych działań ze szczególnym wyjaśnieniem korzyści płynących ze skorzystania z możliwości jakie dają nowe technologie bywają zachętą dla niezdecydowanych do przyłączenia się w realizowane działania.',
         link: `<a href='https://pl.freepik.com/zdjecia/alergia'>Alergia zdjęcie utworzone przez freepik - pl.freepik.com</a>`,
         path: '/services/allergology',
-        prices: '/prices/allergology'
+        prices: '/prices/allergology',
+        specialists: [
+            tomaszMatuszewskiImage
+        ]
     },
     {
         image: servicesUsg,
@@ -76,6 +117,9 @@ export const services = [
         link: `<a href='https://pl.freepik.com/zdjecia/sprzet-medyczny'>Sprzęt medyczny zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
         path: '/services/usg',
         prices: '/prices/usg',
+        specialists: [
+            justynaFilipekImage
+        ]
     },
     {
         image: servicesEndocrinology,
@@ -84,6 +128,9 @@ export const services = [
         link: `<a href='https://pl.freepik.com/zdjecia/tarczyca'>Tarczyca zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
         path: '/services/endocrinology',
         prices: '/prices/endocrinology',
+        specialists: [
+            justynaFilipekImage
+        ]
     },
     {
         image: servicesGynecology,
@@ -92,6 +139,9 @@ export const services = [
         link: `<a href='https://pl.freepik.com/zdjecia/tarczyca'>Tarczyca zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
         path: '/services/gynecology',
         prices: '/prices/gynecology',
+        specialists: [
+            justynaFilipekImage
+        ]
     },
     {
         image: servicesOrthopedics,
@@ -100,6 +150,9 @@ export const services = [
         link: `<a href="https://pl.freepik.com/darmowe-zdjecie/fizjoterapeuta-kregow-trzymajacy-sztuczny-kregoslup_13376886.htm#query=orthopedics&position=23&from_view=search">Obraz autorstwa senivpetro</a> na Freepik`,
         path: '/services/orthopedics',
         prices: '/prices/orthopedics',
+        specialists: [
+            wojciechKaszewskiImage
+        ]
     },
     {
         image: servicesVasularSurgery,
@@ -108,6 +161,9 @@ export const services = [
         link: `<a href="https://pl.freepik.com/darmowe-zdjecie/chirurdzy-noszacy-chirurgiczne-lupy-podczas-wykonywania-operacji_8402445.htm#query=surgery&position=37&from_view=search">Obraz autorstwa wavebreakmedia_micro</a> na Freepik`,
         path: '/services/vascular-surgery',
         prices: '/prices/vascular-surgery',
+        specialists: [
+            kamilStepkowskiImage
+        ]
     },
     {
         image: servicesClinicalDietitian,
@@ -116,5 +172,19 @@ export const services = [
         link: `<a href="https://pl.freepik.com/darmowe-zdjecie/lekarz-w-swoim-gabinecie-mowi-dziewczynie-jak-jesc-i-trzymac-sie-diety_18133353.htm#query=dietitian&position=8&from_view=search">Obraz autorstwa artursafronovvvv</a> na Freepik`,
         path: '/services/clinical-dietitian',
         prices: '/prices/clinical-dietitian',
-    }
+        specialists: [
+            joannaOjrzenskaImage
+        ]
+    },
+    {
+        image: servicesHematology,
+        title: 'Hematologia',
+        description: 'W pierwszej postawionej hipotezie badań założono, że związki gmin realizują liczne zadania środowiskowe finansowane ze środków krajowych i zagranicznych, które wpływają na lokalny rozwój gospodarczy i społeczny.',
+        link: `<a href='https://pl.freepik.com/zdjecia/badania-krwi'>Badania krwi zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
+        path: '/services/hematology',
+        prices: '/prices/hematology',
+        specialists: [
+            miroslawMajewskiImage
+        ]
+    },
 ];

@@ -9,12 +9,23 @@ import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import CardMedia from '@mui/material/CardMedia';
+import AvatarGroup from '@mui/material/AvatarGroup';
+import Avatar from '@mui/material/Avatar';
+
+const users = [
+    'https://assets.maccarianagency.com/avatars/img1.jpg',
+    // 'https://assets.maccarianagency.com/avatars/img2.jpg',
+    // 'https://assets.maccarianagency.com/avatars/img3.jpg',
+    // 'https://assets.maccarianagency.com/avatars/img4.jpg',
+    // 'https://assets.maccarianagency.com/avatars/img5.jpg',
+  ];
 
 const CardServices = ({
     cardName,
     cardImage,
     cardTitle,
     cardDescription,
+    cardSpecialist,
     cardMorePath,
     cardPricePath
 }) => {
@@ -73,6 +84,13 @@ const CardServices = ({
                     <Typography className='card-description'>
                         {cardDescription}
                     </Typography>
+                    {cardSpecialist && (
+                        <AvatarGroup className='card-avatar-group' max={4}>
+                            {cardSpecialist.map((item, index) => (
+                                <Avatar key={index} src={item} />
+                            ))}
+                        </AvatarGroup>
+                    )}
                 </CardContent>
                 <CardActions className='card-actions'>
                     <Button
@@ -84,7 +102,6 @@ const CardServices = ({
                     >
                         Zobacz więcej
                     </Button>
-
                     <Button
                         className='card-link'
                         component={Link}

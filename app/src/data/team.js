@@ -1,92 +1,176 @@
-import team1 from "../assets/team/team1.jpg";
-import team2 from "../assets/team/team2.jpg";
-import team3 from "../assets/team/team3.jpg";
-import team4 from "../assets/team/team4.jpg";
-import team5 from "../assets/team/team5.jpg";
-import team6 from "../assets/team/team6.jpg";
-import team7 from "../assets/team/team7.jpg";
-import team8 from "../assets/team/team8.jpg";
-import team9 from "../assets/team/team9.jpg";
-import team10 from "../assets/team/team10.jpg";
-import team11 from "../assets/team/team11.jpg";
-import team12 from "../assets/team/team12.jpg";
-import team13 from "../assets/team/team13.jpg";
-import team14 from "../assets/team/team14.jpg";
-import team15 from "../assets/team/team15.jpg";
-import team16 from "../assets/team/team16.jpg";
+import ninaWisniewskaImage from '../assets/team/ninaWisniewska/ninaWisniewskaImage.jpg';
+import justynaFilipekImage from '../assets/team/justynaFilipek/justynaFilipekImage.jpg';
+import paulinaBudnaImage from '../assets/team/paulinaBudna/paulinaBudnaImage.jpg';
+import konradKochanImage from '../assets/team/konradKochan/konradKochanImage.jpg';
+import wojciechKaszewskiImage from '../assets/team/wojciechKaszewski/wojciechKaszewskiImage.jpg';
+import justynaKlonieckaImage from '../assets/team/justynaKloniecka/justynaKlonieckaImage.jpg';
+import katarzynaMysliwiecCzajkaImage from '../assets/team/katarzynaMysliwiecCzajka/katarzynaMysliwiecCzajkaImage.jpg';
+import klaudiaMalottkiImage from '../assets/team/klaudiaMalottki/klaudiaMalottkiImage.jpg';
+import aldonaMaciagImage from '../assets/team/aldonaMaciag/aldonaMaciagImage.jpg';
+import milenaJuzwiakImage from '../assets/team/milenaJuzwiak/milenaJuzwiakImage.jpg';
+import katarzynaZbronskaImage from '../assets/team/katarzynaZbronska/katarzynaZbronskaImage.jpg';
+import tomaszMatuszewskiImage from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImage.jpg';
+import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowskiImage.jpg';
+import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
+import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
+import joannaOjrzenskaImage from '../assets/team/joannaOjrzenska/joannaOjrzenskaImage.jpg';
+import aleksandraGorczynskaImage from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImage.jpg';
+import annaKulakowskaImage from  '../assets/team/annaKulakowska/annaKulakowskaImage.jpg';
+import miroslawMajewskiImage from  '../assets/team/miroslawMajewski/miroslawMajewskiImage.jpg';
 
 export const team = [
     {
-        title: 'lek. med.',
-        name: 'Justyna Filipek',
-        speciality: 'Ginekolog, endokrynolog',
-        avatar: team12,
+        title: 'dr n. med.',
+        name: 'dr n. med. Nina Wiśniewska',
+        speciality: 'Specjalista w zakresie Dermatologii i Wenerologii, lekarz medycyny estetycznej',
+        image: ninaWisniewskaImage,
+        background: false,
+        path: '/team/nina-wisniewska',
     },
     {
-        title: 'dr n. med.',
-        name: 'Nina Wiśniewska',
-        speciality: 'Specjalista w zakresie Dermatologii i Wenerologii, lekarz medycyny estetycznej',
-        avatar: team1,
+        title: 'lek. med.',
+        name: 'lek. med. Justyna Filipek',
+        speciality: 'Ginekolog, endokrynolog',
+        image: justynaFilipekImage,
+        background: false,
+        path: '/team/justyna-filipek',
     },
     {
         title: 'mgr',
-        name: 'Paulina Budna',
+        name: 'mgr Paulina Budna',
         speciality: 'Kosmetolog',
-        avatar: team13,
+        image: paulinaBudnaImage,
+        background: false,
+        path: '/team/paulina-budna',
+    },
+    {
+        title: 'lek. med.',
+        name: 'Konrad Kochan',
+        speciality: 'Specjalista chirurgii plastycznej, certyfikowany lekarz medycyny estetycznej',
+        image: konradKochanImage,
+        background: false,
+        path: '/team/konrad-kochan',
+    },
+    {
+        title: 'dr n. med.',
+        name: 'dr n. med. Wojciech Kaszewski',
+        speciality: 'Ortopeda',
+        image: wojciechKaszewskiImage,
+        background: false,
+        path: '/team/wojciech-kaszewski',
     },
     {
         title: 'lek. dent.',
-        name: 'Olga Lenartowicz-Warakomska',
+        name: 'lek. dent. Klaudia Malottki',
         speciality: 'Dyplomowany lekarz medycyny estetycznej',
-        avatar: team12,
+        image: klaudiaMalottkiImage,
+        background: false,
+        path: '/team/klaudia-malottki',
     },
     {
         title: 'lek. dent.',
-        name: 'Olga Lenartowicz-Warakomska',
-        speciality: 'Dyplomowany lekarz medycyny estetycznej',
-        avatar: team2,
+        name: 'lek. med. Katarzyna Myśliwiec - Czajka',
+        speciality: 'Dermatolog',
+        image: katarzynaMysliwiecCzajkaImage,
+        background: false,
+        path: '/team/katarzyna-mysliwiec-czajka',
+    },
+    {
+        title: 'mgr',
+        name: 'lek. med. Justyna Kłoniecka',
+        speciality: 'Dermatolog',
+        image: justynaKlonieckaImage,
+        background: false,
+        path: '/team/justyna-kloniecka',
     },
     {
         title: 'lek. dent.',
-        name: 'Klaudia Malottki',
-        speciality: 'Dyplomowany lekarz medycyny estetycznej',
-        avatar: team3,
+        name: 'lek. med. Aldona Maciąg',
+        speciality: 'Dermatolog',
+        image: aldonaMaciagImage,
+        background: false,
+        path: '/team/aldona-maciag',
     },
     {
-        title: 'lek. med.',
-        name: 'Konrad Kochan',
-        speciality: 'Specjalista chirurgii plastycznej, certyfikowany lekarz medycyny estetycznej',
-        avatar: team4,
+        title: 'mgr',
+        name: 'mgr Milena Juźwiak',
+        speciality: 'Fizjoterapeuta',
+        image: milenaJuzwiakImage,
+        background: false,
+        path: '/team/milena-juzwiak',
     },
-    {
-        title: 'lek. med.',
-        name: 'Konrad Kochan',
-        speciality: 'Specjalista chirurgii plastycznej, certyfikowany lekarz medycyny estetycznej',
-        avatar: team5,
-    },
-    {
-        title: 'lek. med.',
-        name: 'Konrad Kochan',
-        speciality: 'Specjalista chirurgii plastycznej, certyfikowany lekarz medycyny estetycznej',
-        avatar: team6,
-    },
-    {
-        title: 'lek. med.',
-        name: 'Konrad Kochan',
-        speciality: 'Specjalista chirurgii plastycznej, certyfikowany lekarz medycyny estetycznej',
-        avatar: team7,
-    },
-    {
-        title: 'lek. med.',
-        name: 'Konrad Kochan',
-        speciality: 'Specjalista chirurgii plastycznej, certyfikowany lekarz medycyny estetycznej',
-        avatar: team8,
-    },
-    {
-        title: 'lek. med.',
-        name: 'Konrad Kochan',
-        speciality: 'Specjalista chirurgii plastycznej, certyfikowany lekarz medycyny estetycznej',
-        avatar: team9,
-    },
-];
 
+    {
+        title: 'lek. med.',
+        name: 'lek. med. Paulina Tatara',
+        speciality: 'Dermatolog, Lekarz medycyny estetycznej',
+        image: paulinaTataraImage,
+        background: false,
+        path: '/team/paulina-tatara',
+    },
+    {
+        title: 'dr n. med.',
+        name: 'dr n. med. Tomasz Matuszewski',
+        speciality: 'Alergolog, pediatra',
+        image: tomaszMatuszewskiImage,
+        background: false,
+        path: '/team/tomasz-matuszewski',
+    },
+    {
+        title: 'lek. med.',
+        name: 'lek. med. Kamil Stępkowski',
+        speciality: 'Chirurg naczyniowy',
+        image: kamilStepkowskiImage,
+        background: false,
+        path: '/team/kamil-stepkowski',
+    },
+    {
+        title: 'lek. dent.',
+        name: 'lek. dent. Olga Lenartowicz - Warakomska',
+        speciality: 'Specjalista medycyny estetycznej',
+        image: olgaLenartowiczWarakomskaImage,
+        background: false,
+        path: '/team/olga-lenartowicz-warakomska',
+    },
+    {
+        title: 'lek. med.',
+        name: 'lek. med. Katarzyna Zbrońska',
+        speciality: 'Dermatolog, trycholog',
+        image: katarzynaZbronskaImage,
+        background: false,
+        path: '/team/katarzyna-zbronska',
+    },
+
+    {
+        title: 'mgr',
+        name: 'mgr Joanna Ojrzeńska',
+        speciality: 'Dietetyk kliniczny',
+        image: joannaOjrzenskaImage,
+        background: false,
+        path: '/team/joanna-ojrzenska',
+    },
+    {
+        title: 'mgr',
+        name: 'mgr Aleksandra Górczyńska',
+        speciality: 'Kosmetolog',
+        image: aleksandraGorczynskaImage,
+        background: false,
+        path: '/team/aleksandra-gorczynska',
+    },
+    {
+        title: 'lek. med.',
+        name: 'lek. med. Anna Kułakowska',
+        speciality: 'Dermatolog, trycholog',
+        image: annaKulakowskaImage,
+        background: false,
+        path: '/team/anna-kulakowska',
+    },
+    {
+        title: 'dr',
+        name: 'dr Mirosław Majewski',
+        speciality: 'Hematolog',
+        image: miroslawMajewskiImage,
+        background: false,
+        path: '/team/miroslaw-majewski',
+    }
+];

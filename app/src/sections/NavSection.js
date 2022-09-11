@@ -23,7 +23,7 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import PhoneSvg from '../assets/svg/PhoneSvg';
 import EmailSvg from '../assets/svg/EmailSvg';
 
-import FacebookSvg from '../assets/svg/FacebookSvg2';
+import FacebookSvg from '../assets/svg/FacebookSvg';
 import TwitterSvg from '../assets/svg/TwitterSvg';
 import InstagramSvg from '../assets/svg/InstagramSvg';
 
@@ -190,7 +190,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <FacebookSvg color="#fff" />
+                                <FacebookSvg width="14px" height="14px" color="#fff" />
                             </a>
                         </Tooltip>
                         <Tooltip title="Twitter">
@@ -199,7 +199,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <TwitterSvg color="#fff" />
+                                <TwitterSvg width="14px" height="14px" color="#fff" />
                             </a>
                         </Tooltip>
                         <Tooltip title="Instagram">
@@ -208,7 +208,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <InstagramSvg color="#fff" />
+                                <InstagramSvg width="14px" height="14px" color="#fff" />
                             </a>
                         </Tooltip>
                     </Box>
@@ -228,8 +228,8 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                     // backgroundColor: scrollTrigger ? "transparent" : "transparent",
                     // backgroundColor: scrollTrigger ? '#B2A99E' : bgcolor,
                     // boxShadow:  scrollTrigger ? 'rgb(140 152 164 / 25%) 0px 3px 6px 0px' : 'none',
-                    // boxShadow: '1px 2px 6px rgb(0 0 0 / 4%)',
-                    boxShadow: 'none',
+                    boxShadow: '1px 2px 6px rgb(0 0 0 / 4%)',
+                    // boxShadow: 'none',
                     display: 'flex',
                     alignItems: 'center',
                     position: 'relative',

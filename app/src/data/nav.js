@@ -35,8 +35,7 @@ export const nav = {
         {
             id: "ca385125-35d1-469e-b5a7-b800e26ed0d1",
             title: "Zespół",
-            // path: "/team"
-            path: "/drninawisniewska/"
+            path: "/team"
         },
         {
             id: "ca385125-35d1-469e-b5a7-b800e26ed0d0",
