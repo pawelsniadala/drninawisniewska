@@ -1,4 +1,5 @@
 import ninaWisniewskaImage from '../assets/team/ninaWisniewska/ninaWisniewskaImage.jpg';
+import ninaWisniewskaBackground from '../assets/team/ninaWisniewska/ninaWisniewskaBackground.jpg';
 import justynaFilipekImage from '../assets/team/justynaFilipek/justynaFilipekImage.jpg';
 import paulinaBudnaImage from '../assets/team/paulinaBudna/paulinaBudnaImage.jpg';
 import konradKochanImage from '../assets/team/konradKochan/konradKochanImage.jpg';
@@ -10,6 +11,7 @@ import aldonaMaciagImage from '../assets/team/aldonaMaciag/aldonaMaciagImage.jpg
 import milenaJuzwiakImage from '../assets/team/milenaJuzwiak/milenaJuzwiakImage.jpg';
 import katarzynaZbronskaImage from '../assets/team/katarzynaZbronska/katarzynaZbronskaImage.jpg';
 import tomaszMatuszewskiImage from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImage.jpg';
+import wojciechTrojanowskiImage from '../assets/team/wojciechTrojanowski/wojciechTrojanowskiImage.jpg';
 import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowskiImage.jpg';
 import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
 import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
@@ -20,15 +22,13 @@ import miroslawMajewskiImage from  '../assets/team/miroslawMajewski/miroslawMaje
 
 export const team = [
     {
-        title: 'dr n. med.',
         name: 'dr n. med. Nina Wiśniewska',
         speciality: 'Specjalista w zakresie Dermatologii i Wenerologii, lekarz medycyny estetycznej',
         image: ninaWisniewskaImage,
-        background: false,
+        background: ninaWisniewskaBackground,
         path: '/team/nina-wisniewska',
     },
     {
-        title: 'lek. med.',
         name: 'lek. med. Justyna Filipek',
         speciality: 'Ginekolog, endokrynolog',
         image: justynaFilipekImage,
@@ -36,7 +36,6 @@ export const team = [
         path: '/team/justyna-filipek',
     },
     {
-        title: 'mgr',
         name: 'mgr Paulina Budna',
         speciality: 'Kosmetolog',
         image: paulinaBudnaImage,
@@ -44,7 +43,6 @@ export const team = [
         path: '/team/paulina-budna',
     },
     {
-        title: 'lek. med.',
         name: 'Konrad Kochan',
         speciality: 'Specjalista chirurgii plastycznej, certyfikowany lekarz medycyny estetycznej',
         image: konradKochanImage,
@@ -52,7 +50,6 @@ export const team = [
         path: '/team/konrad-kochan',
     },
     {
-        title: 'dr n. med.',
         name: 'dr n. med. Wojciech Kaszewski',
         speciality: 'Ortopeda',
         image: wojciechKaszewskiImage,
@@ -60,7 +57,6 @@ export const team = [
         path: '/team/wojciech-kaszewski',
     },
     {
-        title: 'lek. dent.',
         name: 'lek. dent. Klaudia Malottki',
         speciality: 'Dyplomowany lekarz medycyny estetycznej',
         image: klaudiaMalottkiImage,
@@ -68,7 +64,6 @@ export const team = [
         path: '/team/klaudia-malottki',
     },
     {
-        title: 'lek. dent.',
         name: 'lek. med. Katarzyna Myśliwiec - Czajka',
         speciality: 'Dermatolog',
         image: katarzynaMysliwiecCzajkaImage,
@@ -76,7 +71,6 @@ export const team = [
         path: '/team/katarzyna-mysliwiec-czajka',
     },
     {
-        title: 'mgr',
         name: 'lek. med. Justyna Kłoniecka',
         speciality: 'Dermatolog',
         image: justynaKlonieckaImage,
@@ -84,7 +78,6 @@ export const team = [
         path: '/team/justyna-kloniecka',
     },
     {
-        title: 'lek. dent.',
         name: 'lek. med. Aldona Maciąg',
         speciality: 'Dermatolog',
         image: aldonaMaciagImage,
@@ -92,7 +85,6 @@ export const team = [
         path: '/team/aldona-maciag',
     },
     {
-        title: 'mgr',
         name: 'mgr Milena Juźwiak',
         speciality: 'Fizjoterapeuta',
         image: milenaJuzwiakImage,
@@ -101,7 +93,6 @@ export const team = [
     },
 
     {
-        title: 'lek. med.',
         name: 'lek. med. Paulina Tatara',
         speciality: 'Dermatolog, Lekarz medycyny estetycznej',
         image: paulinaTataraImage,
@@ -109,7 +100,6 @@ export const team = [
         path: '/team/paulina-tatara',
     },
     {
-        title: 'dr n. med.',
         name: 'dr n. med. Tomasz Matuszewski',
         speciality: 'Alergolog, pediatra',
         image: tomaszMatuszewskiImage,
@@ -117,15 +107,13 @@ export const team = [
         path: '/team/tomasz-matuszewski',
     },
     {
-        title: 'lek. med.',
-        name: 'lek. med. Kamil Stępkowski',
-        speciality: 'Chirurg naczyniowy',
-        image: kamilStepkowskiImage,
+        name: 'lek. med. Wojciech Trojanowski',
+        speciality: 'Radiolog',
+        image: wojciechTrojanowskiImage,
         background: false,
         path: '/team/kamil-stepkowski',
     },
     {
-        title: 'lek. dent.',
         name: 'lek. dent. Olga Lenartowicz - Warakomska',
         speciality: 'Specjalista medycyny estetycznej',
         image: olgaLenartowiczWarakomskaImage,
@@ -133,16 +121,13 @@ export const team = [
         path: '/team/olga-lenartowicz-warakomska',
     },
     {
-        title: 'lek. med.',
         name: 'lek. med. Katarzyna Zbrońska',
         speciality: 'Dermatolog, trycholog',
         image: katarzynaZbronskaImage,
         background: false,
         path: '/team/katarzyna-zbronska',
     },
-
     {
-        title: 'mgr',
         name: 'mgr Joanna Ojrzeńska',
         speciality: 'Dietetyk kliniczny',
         image: joannaOjrzenskaImage,
@@ -150,7 +135,6 @@ export const team = [
         path: '/team/joanna-ojrzenska',
     },
     {
-        title: 'mgr',
         name: 'mgr Aleksandra Górczyńska',
         speciality: 'Kosmetolog',
         image: aleksandraGorczynskaImage,
@@ -158,7 +142,6 @@ export const team = [
         path: '/team/aleksandra-gorczynska',
     },
     {
-        title: 'lek. med.',
         name: 'lek. med. Anna Kułakowska',
         speciality: 'Dermatolog, trycholog',
         image: annaKulakowskaImage,
@@ -166,11 +149,17 @@ export const team = [
         path: '/team/anna-kulakowska',
     },
     {
-        title: 'dr',
         name: 'dr Mirosław Majewski',
         speciality: 'Hematolog',
         image: miroslawMajewskiImage,
         background: false,
         path: '/team/miroslaw-majewski',
-    }
+    },
+    {
+        name: 'lek. med. Kamil Stępkowski',
+        speciality: 'Chirurg naczyniowy',
+        image: kamilStepkowskiImage,
+        background: false,
+        path: '/team/kamil-stepkowski',
+    },
 ];

@@ -47,6 +47,8 @@ import PricesVascularSurgeryPartials from './partials/prices/PricesVascularSurge
 import PricesClinicalDietitianPartials from './partials/prices/PricesClinicalDietitianPartials';
 
 import TeamView from './TeamView';
+import TeamNinaWisniewskaPartial from './partials/team/TeamNinaWisniewskaPartial';
+
 import ContactView from './ContactView';
 
 // import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
@@ -100,6 +102,8 @@ const Root = () => (
 
                     </Route>
                     <Route path='/team' element={<TeamView />} />
+                    <Route path='/team/nina-wisniewska' element={<TeamNinaWisniewskaPartial />} />
+
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>
             </main>

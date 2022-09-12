@@ -11,6 +11,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
 import Container from '../../../components/Container';
 import CardServicesProposed from '../../../components/CardServicesProposed';
@@ -27,29 +28,36 @@ const ServicesAllergologyPartial = () => {
             <Box className='view-wrapper'>
                 <Box className='view-header services-dermatology'>
                     <Container className='header-wrapper'>
-                        <Breadcrumbs
-                            separator={<NavigateNextIcon fontSize='smform' />}
-                            aria-label='breadcrumb'
-                        >
-                            <Link
-                                to='/'
-                                aria-current='page'
+                        <Box className='nav-wrapper'>
+                            <Breadcrumbs
+                                separator={<NavigateNextIcon fontSize='smform' />}
+                                aria-label='breadcrumb'
                             >
-                                Home
-                            </Link>
-                            <Link
-                                to='/services'
-                                aria-current='page'
+                                <Link to='/services' aria-current='page'>
+                                    <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize='smform' />
+                                    <Box>Cofnij</Box>
+                                </Link>
+                            </Breadcrumbs>
+                            <Breadcrumbs
+                                separator={<NavigateNextIcon fontSize='smform' />}
+                                aria-label='breadcrumb'
                             >
-                                Usługi
-                            </Link>
-                            <Typography color='text.primary'>
+                                <Link to='/' aria-current='page'>
+                                    Home
+                                </Link>
+                                <Link to='/services' aria-current='page'>
+                                    Usługi
+                                </Link>
+                                <Typography color='text.primary'>
+                                    Alergologia
+                                </Typography>
+                            </Breadcrumbs>
+                        </Box>
+                        <Box className='heading-wrapper'>
+                            <Typography variant='h4' className='heading-view'>
                                 Alergologia
                             </Typography>
-                        </Breadcrumbs>
-                        <Typography variant='h4' className='heading-view'>
-                            Alergologia
-                        </Typography>
+                        </Box>
                     </Container>
                 </Box>
                 <Box className='view-body'>

@@ -5,19 +5,19 @@ import {
 } from "react";
 import {
     Link,
-    useLocation
+    // useLocation
 } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Box from '@mui/material/Box';
 import Container from '../components/Container';
-import Card from '@mui/material/Card';
-import CardHeader from '@mui/material/CardHeader';
+// import Card from '@mui/material/Card';
+// import CardHeader from '@mui/material/CardHeader';
 // import CardMedia from '@mui/material/CardMedia';
-import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
+// import CardContent from '@mui/material/CardContent';
+// import CardActions from '@mui/material/CardActions';
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
@@ -26,6 +26,7 @@ import ListItemText from "@mui/material/ListItemText";
 import Divider from '@mui/material/Divider';
 
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
 import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
 import PricesAestheticMedicinePartials from "./partials/prices/PricesAestheticMedicinePartials";
@@ -177,28 +178,39 @@ const PricesView = () => {
             <Box className="view-wrapper">
                 <Box className="view-header prices">
                     <Container className="header-wrapper">
-                        <Breadcrumbs
-                            separator={<NavigateNextIcon fontSize="smform" />}
-                            aria-label="breadcrumb"
-                        >
-                            <Link
-                                to="/"
-                                aria-current="page"
+                        <Box className='nav-wrapper'>
+                            <Breadcrumbs
+                                separator={<NavigateNextIcon fontSize="smform" />}
+                                aria-label="breadcrumb"
                             >
-                                Home
-                            </Link>
-                            <Typography color="text.primary">
-                                Cennik
-                            </Typography>
-                        </Breadcrumbs>
-                        <Typography variant='h4' className='heading-view'>
-                            Cennik
-                        </Typography>
-                        {/* <Box>
+                                <Link
+                                    to="/"
+                                    aria-current="page"
+                                >
+                                    <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize="smform" />
+                                    <Box>Cofnij</Box>
+                                </Link>
+                            </Breadcrumbs>
+                            <Breadcrumbs
+                                separator={<NavigateNextIcon fontSize="smform" />}
+                                aria-label="breadcrumb"
+                            >
+                                <Link
+                                    to="/"
+                                    aria-current="page"
+                                >
+                                    Home
+                                </Link>
+                                <Typography color="text.primary">
+                                    Cennik
+                                </Typography>
+                            </Breadcrumbs>
+                        </Box>
+                        <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
                                 Cennik
                             </Typography>
-                        </Box> */}
+                        </Box>
                     </Container>
                 </Box>
                 <Box className="view-body">

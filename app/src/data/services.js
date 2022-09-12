@@ -24,6 +24,7 @@ import aldonaMaciagImage from '../assets/team/aldonaMaciag/aldonaMaciagImage.jpg
 import milenaJuzwiakImage from '../assets/team/milenaJuzwiak/milenaJuzwiakImage.jpg';
 import katarzynaZbronskaImage from '../assets/team/katarzynaZbronska/katarzynaZbronskaImage.jpg';
 import tomaszMatuszewskiImage from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImage.jpg';
+import wojciechTrojanowskiImage from '../assets/team/wojciechTrojanowski/wojciechTrojanowskiImage.jpg';
 import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowskiImage.jpg';
 import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
 import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
@@ -118,7 +119,8 @@ export const services = [
         path: '/services/usg',
         prices: '/prices/usg',
         specialists: [
-            justynaFilipekImage
+            justynaFilipekImage,
+            wojciechTrojanowskiImage
         ]
     },
     {
@@ -186,5 +188,5 @@ export const services = [
         specialists: [
             miroslawMajewskiImage
         ]
-    },
+    }
 ];

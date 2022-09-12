@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+// import { useHistory } from "react-router-dom";
+
 import { Link } from "react-router-dom";
 import Typography from '@mui/material/Typography';
 // import { useTheme } from '@mui/material/styles';
@@ -13,6 +15,12 @@ import { services } from '../data/services';
 
 import CardServices from '../components/CardServices';
 
+
+import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+
+
 const ServicesView = () => {
     // const theme = useTheme();
     // const isMd = useMediaQuery(theme.breakpoints.up('md'), {
@@ -26,23 +34,37 @@ const ServicesView = () => {
     return (
         <Box className="contact-view">
             <Box className="view-wrapper">
-                <Box className="view-header services-all">
+                <Box className="view-header services">
                     <Container className="header-wrapper">
-                        <Breadcrumbs
-                            separator={<NavigateNextIcon fontSize="smform" />}
-                            aria-label="breadcrumb"
-                        >
-                            <Link
-                                to="/"
-                                aria-current="page"
+                        <Box className='nav-wrapper'>
+                            <Breadcrumbs
+                                separator={<NavigateNextIcon fontSize="smform" />}
+                                aria-label="breadcrumb"
                             >
-                                Home
-                            </Link>
-                            <Typography color="text.primary">
-                                Usługi
-                            </Typography>
-                        </Breadcrumbs>
-                        <Box>
+                                <Link
+                                    to="/"
+                                    aria-current="page"
+                                >
+                                    <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize="smform" />
+                                    <Box>Cofnij</Box>
+                                </Link>
+                            </Breadcrumbs>
+                            <Breadcrumbs
+                                separator={<NavigateNextIcon fontSize="smform" />}
+                                aria-label="breadcrumb"
+                            >
+                                <Link
+                                    to="/"
+                                    aria-current="page"
+                                >
+                                    Home
+                                </Link>
+                                <Typography color="text.primary">
+                                    Usługi
+                                </Typography>
+                            </Breadcrumbs>
+                        </Box>
+                        <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
                                 Usługi
                             </Typography>
@@ -54,7 +76,7 @@ const ServicesView = () => {
                         <Box className="card-wrapper services">
                             {services.length ? services.map((item, index) => (
                                 <CardServices
-                                    key={item.index}
+                                    key={index}
                                     cardName={'card-services-view'}
                                     cardTitle={item.title}
                                     cardDescription={item.description}

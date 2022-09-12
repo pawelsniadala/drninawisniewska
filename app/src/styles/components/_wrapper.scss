@@ -27,6 +27,22 @@ main {
     // border-bottom: 1px solid #dee2e6;
 }
 
+.view-wrapper {
+    .view-header {
+        .header-wrapper {
+            display: grid;
+            align-content: space-between;
+            padding-top: 1rem;
+            padding-bottom: 0rem;
+
+            .nav-wrapper {
+                display: flex;
+                justify-content: space-between
+            }
+        }
+    }
+}
+
 .section-wrapper {
     // padding-top: 2.5rem;
     // padding-bottom: 2.5rem;

@@ -9,6 +9,7 @@ import Container from '../components/Container';
 // import ServicesGridPartial from './partials/services/ServicesGridPartial';
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 import { team } from '../data/team';
 
 import CardTeam from '../components/CardTeam';
@@ -26,23 +27,37 @@ const TeamView = () => {
     return (
         <Box className="contact-view">
             <Box className="view-wrapper">
-                <Box className="view-header services-all">
+                <Box className="view-header team">
                     <Container className="header-wrapper">
-                        <Breadcrumbs
-                            separator={<NavigateNextIcon fontSize="smform" />}
-                            aria-label="breadcrumb"
-                        >
-                            <Link
-                                to="/"
-                                aria-current="page"
+                        <Box className='nav-wrapper'>
+                            <Breadcrumbs
+                                separator={<NavigateNextIcon fontSize="smform" />}
+                                aria-label="breadcrumb"
                             >
-                                Home
-                            </Link>
-                            <Typography color="text.primary">
-                                Zespół
-                            </Typography>
-                        </Breadcrumbs>
-                        <Box>
+                                <Link
+                                    to="/"
+                                    aria-current="page"
+                                >
+                                    <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize="smform" />
+                                    <Box>Cofnij</Box>
+                                </Link>
+                            </Breadcrumbs>
+                            <Breadcrumbs
+                                separator={<NavigateNextIcon fontSize="smform" />}
+                                aria-label="breadcrumb"
+                            >
+                                <Link
+                                    to="/"
+                                    aria-current="page"
+                                >
+                                    Home
+                                </Link>
+                                <Typography color="text.primary">
+                                    Zespół
+                                </Typography>
+                            </Breadcrumbs>
+                        </Box>
+                        <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
                                 Zespół
                             </Typography>
