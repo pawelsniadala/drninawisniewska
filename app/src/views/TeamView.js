@@ -27,7 +27,7 @@ const TeamView = () => {
     return (
         <Box className="contact-view">
             <Box className="view-wrapper">
-                <Box className="view-header team">
+                <Box className="view-header">
                     <Container className="header-wrapper">
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
@@ -39,7 +39,7 @@ const TeamView = () => {
                                     aria-current="page"
                                 >
                                     <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize="smform" />
-                                    <Box>Cofnij</Box>
+                                    <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs

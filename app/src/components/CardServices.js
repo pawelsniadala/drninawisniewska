@@ -85,9 +85,13 @@ const CardServices = ({
                         {cardDescription}
                     </Typography>
                     {cardSpecialist && (
-                        <AvatarGroup className='card-avatar-group' max={4}>
+                        <AvatarGroup className='card-image-group' max={4}>
                             {cardSpecialist.map((item, index) => (
-                                <Avatar key={index} src={item} />
+                                <Avatar
+                                    className='card-image'
+                                    key={index}
+                                    src={item}
+                                />
                             ))}
                         </AvatarGroup>
                     )}

@@ -11,7 +11,6 @@ import ScrollArrow from '../components/ScrollArrow';
 // import Toast from '../components/Toast';
 
 import NavSection from '../sections/NavSection';
-// import NavSection2 from '../sections/NavSection2';
 import HomeView from './HomeView';
 import AboutView from './AboutView';
 
@@ -30,7 +29,6 @@ import ServicesOrthopedicsPartial from './partials/services/ServicesOrthopedicsP
 import ServicesVascularSurgeryPartial from './partials/services/ServicesVascularSurgeryPartial';
 import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
 
-
 import PricesView from './PricesView';
 import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
 import PricesAestheticMedicinePartials from './partials/prices/PricesAestheticMedicinePartials';
@@ -48,11 +46,27 @@ import PricesClinicalDietitianPartials from './partials/prices/PricesClinicalDie
 
 import TeamView from './TeamView';
 import TeamNinaWisniewskaPartial from './partials/team/TeamNinaWisniewskaPartial';
+import TeamJustynaFilipekPartial from './partials/team/TeamJustynaFilipekPartial';
+import TeamPaulinaBudnaPartial from './partials/team/TeamPaulinaBudnaPartial';
+import TeamKonradKochanPartial from './partials/team/TeamKonradKochanPartial';
+import TeamWojciechKaszewskiPartial from './partials/team/TeamWojciechKaszewskiPartial';
+import TeamKlaudiaMalottkiPartial from './partials/team/TeamKlaudiaMalottkiPartial';
+import TeamKatarzynaMysliwiecCzajkaPartial from './partials/team/TeamKatarzynaMysliwiecCzajkaPartial';
+import TeamJustynaKlonieckaPartial from './partials/team/TeamJustynaKlonieckaPartial';
+import TeamAldonaMaciagPartial from './partials/team/TeamAldonaMaciagPartial';
+import TeamMilenaJuzwiakPartial from './partials/team/TeamMilenaJuzwiakPartial';
+import TeamPaulinaTataraPartial from './partials/team/TeamPaulinaTataraPartial';
+import TeamTomaszMatuszewskiPartial from './partials/team/TeamTomaszMatuszewskiPartial';
+import TeamWojciechTrojanowskiPartial from './partials/team/TeamWojciechTrojanowskiPartial';
+import TeamOlgaLenartowiczWarakomskaPartial from './partials/team/TeamOlgaLenartowiczWarakomskaPartial';
+import TeamKatarzynaZbronskaPartial from './partials/team/TeamKatarzynaZbronskaPartial';
+import TeamJoannaOjrzenskaPartial from './partials/team/TeamJoannaOjrzenskaPartial';
+import TeamAleksandraGorczynskaPartial from './partials/team/TeamAleksandraGorczynskaPartial';
+import TeamAnnaKulakowskaPartial from './partials/team/TeamAnnaKulakowskaPartial';
+import TeamMiroslawMajewskiPartial from './partials/team/TeamMiroslawMajewskiPartial';
+import TeamKamilStepkowskiPartial from './partials/team/TeamKamilStepkowskiPartial';
 
 import ContactView from './ContactView';
-
-// import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
-// import PricesHematologyPartials from './partials/prices/PricesHematologyPartials'
 
 const Root = () => (
     <MainTemplate>
@@ -68,7 +82,6 @@ const Root = () => (
                         <Route path='/cast/other' element={<CastOtherPartial />} />
                     </Route> */}
                     <Route path='/about' element={<AboutView />} />
-
                     <Route exact path='/services' element={<ServicesView />} />
                     <Route path='/services/dermatology' element={<ServicesDermatologyPartial />} />
                     <Route path='/services/aesthetic-medicine' element={<ServicesAestheticMedicinePartial />} />
@@ -83,7 +96,6 @@ const Root = () => (
                     <Route path='/services/orthopedics' element={<ServicesOrthopedicsPartial />} />
                     <Route path='/services/vascular-surgery' element={<ServicesVascularSurgeryPartial />} />
                     <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial />} />
-
                     <Route path='/prices' element={<PricesView />}>
                         <Route path='/prices/dermatology' element={<PricesDermatologyPartials />} />
                         <Route path='/prices/aesthetic-medicine' element={<PricesAestheticMedicinePartials />} />
@@ -98,11 +110,28 @@ const Root = () => (
                         <Route path='/prices/orthopedics' element={<PricesOrthopedicsPartials />} />
                         <Route path='/prices/vascular-surgery' element={<PricesVascularSurgeryPartials />} />
                         <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartials />} />
-
-
                     </Route>
                     <Route path='/team' element={<TeamView />} />
                     <Route path='/team/nina-wisniewska' element={<TeamNinaWisniewskaPartial />} />
+                    <Route path='/team/justyna-filipek' element={<TeamJustynaFilipekPartial />} />
+                    <Route path='/team/paulina-budna' element={<TeamPaulinaBudnaPartial />} />
+                    <Route path='/team/konrad-kochan' element={<TeamKonradKochanPartial />} />
+                    <Route path='/team/wojciech-kaszewski' element={<TeamWojciechKaszewskiPartial />} />
+                    <Route path='/team/klaudia-malottki' element={<TeamKlaudiaMalottkiPartial />} />
+                    <Route path='/team/katarzyna-mysliwiec-czajka' element={<TeamKatarzynaMysliwiecCzajkaPartial />} />
+                    <Route path='/team/justyna-kloniecka' element={<TeamJustynaKlonieckaPartial />} />
+                    <Route path='/team/aldona-maciag' element={<TeamAldonaMaciagPartial />} />
+                    <Route path='/team/milena-juzwiak' element={<TeamMilenaJuzwiakPartial />} />
+                    <Route path='/team/paulina-tatara' element={<TeamPaulinaTataraPartial />} />
+                    <Route path='/team/tomasz-matuszewski' element={<TeamTomaszMatuszewskiPartial />} />
+                    <Route path='/team/wojciech-trojanowski' element={<TeamWojciechTrojanowskiPartial />} />
+                    <Route path='/team/olga-lenartowicz-warakomska' element={<TeamOlgaLenartowiczWarakomskaPartial />} />
+                    <Route path='/team/katarzyna-zbronska' element={<TeamKatarzynaZbronskaPartial />} />
+                    <Route path='/team/joanna-ojrzenska' element={<TeamJoannaOjrzenskaPartial />} />
+                    <Route path='/team/aleksandra-gorczynska' element={<TeamAleksandraGorczynskaPartial />} />
+                    <Route path='/team/anna-kulakowska' element={<TeamAnnaKulakowskaPartial />} />
+                    <Route path='/team/miroslaw-majewski' element={<TeamMiroslawMajewskiPartial />} />
+                    <Route path='/team/kamil-stepkowski' element={<TeamKamilStepkowskiPartial />} />
 
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>

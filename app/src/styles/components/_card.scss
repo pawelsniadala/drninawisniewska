@@ -36,9 +36,15 @@
             text-overflow: ellipsis;
         }
 
-        .card-avatar-group {
+        .card-image-group {
             margin-top: 10px;
             justify-content: flex-end;
+
+            .card-image {
+                img {
+                    background-color: darken(#f5f5f5, 4%);
+                }
+            }
         }
     }
 

@@ -28,6 +28,12 @@ main {
 }
 
 .view-wrapper {
+    .view-body {
+        .body-wrapper {
+            padding-top: 1rem;
+        }
+    }
+
     .view-header {
         .header-wrapper {
             display: grid;

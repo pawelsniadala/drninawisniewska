@@ -13,9 +13,9 @@ import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrow
 
 import Container from '../../../components/Container';
 
-import { team, ninaWisniewska } from '../../../data/team';
+import { team, milenaJuzwiak } from '../../../data/team';
 
-const TeamNinaWisniewskaPartial = () => {
+const TeamMilenaJuzwiakPartial = () => {
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -24,7 +24,7 @@ const TeamNinaWisniewskaPartial = () => {
     }
 
     const teamCopy = [ ...team ];
-    const ninaWisniewskaCopy = [{ ...ninaWisniewska }];
+    const milenaJuzwiakCopy = [{ ...milenaJuzwiak }];
 
     shuffleArray(teamCopy);
 
@@ -44,7 +44,7 @@ const TeamNinaWisniewskaPartial = () => {
                             >
                                 <Link to='/team' aria-current='page'>
                                     <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize='smform' />
-                                    <Box>Zespół</Box>
+                                    <Box>Zaspół</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -58,13 +58,13 @@ const TeamNinaWisniewskaPartial = () => {
                                     Zespół
                                 </Link>
                                 <Typography color='text.primary'>
-                                    {ninaWisniewska.name}
+                                    {milenaJuzwiak.name}
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {ninaWisniewska.name}
+                                {milenaJuzwiak.name}
                             </Typography>
                         </Box>
                     </Container>
@@ -72,7 +72,7 @@ const TeamNinaWisniewskaPartial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper team'>
                         <Box className='team-details'>
-                            {ninaWisniewskaCopy.map((item, index) => (
+                            {milenaJuzwiakCopy.map((item, index) => (
                                 <Box key={index}>
                                     <Card className='card-introduction'>
                                         {item.background ? (
@@ -150,7 +150,7 @@ const TeamNinaWisniewskaPartial = () => {
                             ))}
                         </Box>
                         <Box className='team-proposed'>
-                            {teamCopy.filter(item => item.designation !== 'ninaWisniewska').slice(0, 8).map((item, index) => (
+                            {teamCopy.filter(item => item.designation !== 'milenaJuzwiak').slice(0, 8).map((item, index) => (
                                 <Box className='card-proposed' component={Link} to={item.path} key={index}>
                                     <Card className='card'>
                                         <CardContent className='card-content'>
@@ -180,4 +180,4 @@ const TeamNinaWisniewskaPartial = () => {
     );
 }
 
-export default TeamNinaWisniewskaPartial;
+export default TeamMilenaJuzwiakPartial;
