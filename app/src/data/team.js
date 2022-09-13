@@ -1,8 +1,23 @@
 import ninaWisniewskaImage from '../assets/team/ninaWisniewska/ninaWisniewskaImage.jpg';
-import ninaWisniewskaBackground from '../assets/team/ninaWisniewska/ninaWisniewskaBackground.jpg';
+import ninaWisniewskaBackgroundSmall from '../assets/team/ninaWisniewska/ninaWisniewskaBackgroundSmall.jpg';
+import ninaWisniewskaBackgroundMedium from '../assets/team/ninaWisniewska/ninaWisniewskaBackgroundMedium.jpg';
+import ninaWisniewskaBackgroundLarge from '../assets/team/ninaWisniewska/ninaWisniewskaBackgroundLarge.jpg';
+
 import justynaFilipekImage from '../assets/team/justynaFilipek/justynaFilipekImage.jpg';
+import paulinaBudnaBackgroundSmall from '../assets/team/paulinaBudna/paulinaBudnaBackgroundSmall.jpg';
+import paulinaBudnaBackgroundMedium from '../assets/team/paulinaBudna/paulinaBudnaBackgroundMedium.jpg';
+import paulinaBudnaBackgroundLarge from '../assets/team/paulinaBudna/paulinaBudnaBackgroundLarge.jpg';
+
 import paulinaBudnaImage from '../assets/team/paulinaBudna/paulinaBudnaImage.jpg';
+import justynaFilipekBackgroundSmall from '../assets/team/justynaFilipek/justynaFilipekBackgroundSmall.jpg';
+import justynaFilipekBackgroundMedium from '../assets/team/justynaFilipek/justynaFilipekBackgroundMedium.jpg';
+import justynaFilipekBackgroundLarge from '../assets/team/justynaFilipek/justynaFilipekBackgroundLarge.jpg';
+
 import konradKochanImage from '../assets/team/konradKochan/konradKochanImage.jpg';
+import konradKochanBackgroundSmall from '../assets/team/konradKochan/konradKochanBackgroundSmall.jpg';
+import konradKochanBackgroundMedium from '../assets/team/konradKochan/konradKochanBackgroundMedium.jpg';
+import konradKochanBackgroundLarge from '../assets/team/konradKochan/konradKochanBackgroundLarge.jpg';
+
 import wojciechKaszewskiImage from '../assets/team/wojciechKaszewski/wojciechKaszewskiImage.jpg';
 import justynaKlonieckaImage from '../assets/team/justynaKloniecka/justynaKlonieckaImage.jpg';
 import katarzynaMysliwiecCzajkaImage from '../assets/team/katarzynaMysliwiecCzajka/katarzynaMysliwiecCzajkaImage.jpg';
@@ -29,7 +44,10 @@ export const ninaWisniewska = {
     experience: 'Nagrodzona przez Ministra Zdrowia w 2015 roku za uzyskanie najlepszego wyniku w Polsce z egzaminu PES w zakresie dermatologii i wenerologii. Na co dzień pełni funkcję Starszego Asystenta w Klinice Dermatologicznej Wojskowego Instytutu Medycznego Ministerstwa Obrony Narodowej w Warszawie. Członkini  Polskiego Towarzystwa Dermatologicznego i Farmaekonomicznego. Członkini Polskiego Towarzystwa Medycyny Estetycznej i Anti - Anging.',
     interested: false,
     image: ninaWisniewskaImage,
-    background: ninaWisniewskaBackground,
+    backgroundSmall: ninaWisniewskaBackgroundSmall,
+    backgroundMedium: ninaWisniewskaBackgroundMedium,
+    backgroundLarge: ninaWisniewskaBackgroundLarge,
+    backgroundLink: '<a href="https://pl.freepik.com/darmowe-zdjecie/wysoki-kat-strzalu-pieknego-lasu-z-duza-iloscia-zielonych-drzew-we-mgle-w-nowej-zelandii_10835665.htm#query=forest&position=1&from_view=search">Obraz autorstwa wirestock</a> na Freepik',
     path: '/team/nina-wisniewska'
 };
 
@@ -42,7 +60,10 @@ export const justynaFilipek = {
     experience: 'Dr Filipek zajmuje się diagnostyką i leczeniem pacjentek z niepłodnością, zaburzeniami hormonalnymi. Diagnostyką i leczeniem chorób tarczycy, przysadki mózgowej, nadnerczy oraz insulinoopornością.',
     interested: false,
     image: justynaFilipekImage,
-    background: false,
+    backgroundSmall: justynaFilipekBackgroundSmall,
+    backgroundMedium: justynaFilipekBackgroundMedium,
+    backgroundLarge: justynaFilipekBackgroundLarge,
+    backgroundLink: '<a href="https://pl.freepik.com/darmowe-zdjecie/widok-z-gory-na-spotkanie-wody-morskiej-z-piaskiem_9819012.htm#query=sea&position=5&from_view=search">Obraz autorstwa ArthurHidden</a> na Freepik',
     path: '/team/justyna-filipek',
 };
 
@@ -55,7 +76,10 @@ export const paulinaBudna = {
     experience: 'Specjalizuje się w wykonywaniu zabiegów pielęgnacyjno - leczniczych, w szczególności dla skór wymagających, tj. skóra trądzikowa, z przebarwieniami, bliznami potrądzikowymi, itp. Ponadto wykonuje zabiegi z zakresu ujędrniania i modelowania sylwetki, a także zabiegi epilacji laserowej. Chętnie uczy się nowych rzeczy. Swoją wiedzę pogłębia uczestnicząc w specjalistycznych szkoleniach i kongresach. Bardzo ceni sobie wzajemną współpracę z lekarzami z dziedziny dermatologii i medycyny estetycznej. Z Kliniką dr Niny Wiśniewskiej związana jest od początku jej istnienia.',
     interested: false,
     image: paulinaBudnaImage,
-    background: false,
+    backgroundSmall: paulinaBudnaBackgroundSmall,
+    backgroundMedium: paulinaBudnaBackgroundMedium,
+    backgroundLarge: paulinaBudnaBackgroundLarge,
+    backgroundLink: '<a href="https://pl.freepik.com/darmowe-zdjecie/panoramiczny-widok-na-rzeke-li-i-gore-mashan-w-hrabstwie-yangshuo-guilin-pod-zachmurzonym-niebem_17245161.htm#query=mountains&position=43&from_view=search">Obraz autorstwa wirestock</a> na Freepik',
     path: '/team/paulina-budna',
 };
 
@@ -68,7 +92,9 @@ export const konradKochan = {
     experience: 'Jest absolwentem Podyplomowej Szkoły Medycyny Estetycznej Polskiego Towarzystwa Lekarskiego w Warszawie oraz lekarzem American Academy of Aesthetic Medicine. Od 2012 zajmuje się medycyną estetyczną oraz chirurgią plastyczną. Był uczestnikiem wielu kursów i kongresów z zakresu chirurgii plastycznej oraz medycyny estetycznej organizowanych zarówno w kraju jak i za granicą. Był wykładowcą oraz doktorantem I Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego (WUM). Swoje doświadczenie uzupełniał w ramach licznych praktyk, również zagranicznych: w Klinice chirurgii University of Palermo P.Giaccone Hospital, Italy oraz w Paryżu. Jest autorem publikacji i doniesień zjazdowych z zakresu chirurgii plastycznej. Jest członkiem Polskiego Towarzystwa Chirurgii Plastycznej, Rekonstrukcyjnej i Estetycznej oraz Polskiego Towarzystwa Leczenia Oparzeń. Specjalizuje się w zabiegach z zakresu medycyny estetycznej twarzy, chirurgii plastycznej piersi, plastyki brzucha oraz liposukcji i modelowania ciała. Łączy w sobie umiejętności z zakresu medycyny estetycznej i chirurgii plastycznej.',
     interested: false,
     image: konradKochanImage,
-    background: false,
+    backgroundSmall: konradKochanBackgroundSmall,
+    backgroundMedium: konradKochanBackgroundMedium,
+    backgroundLarge: konradKochanBackgroundLarge,
     path: '/team/konrad-kochan',
 };
 

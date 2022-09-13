@@ -107,7 +107,8 @@ const HeroSection = () => {
                                 >
                                     <Button
                                         component={Link}
-                                        to={`/services`}
+                                        // to={`/services`}
+                                        to={'/drninawisniewska/'}
                                         variant="contained"
                                         color="primary"
                                         size="large"

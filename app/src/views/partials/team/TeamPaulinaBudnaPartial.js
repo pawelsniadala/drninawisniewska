@@ -75,15 +75,15 @@ const TeamPaulinaBudnaPartial = () => {
                             {paulinaBudnaCopy.map((item, index) => (
                                 <Box key={index}>
                                     <Card className='card-introduction'>
-                                        {item.background ? (
+                                        {item.backgroundMedium ? (
                                             <Box
                                                 className='card-background'
                                                 component={LazyLoadImage}
                                                 height={1}
                                                 width={1}
-                                                src={item.background}
+                                                src={item.backgroundLarge}
                                                 alt={item.title}
-                                                // effect="blur"
+                                                effect="blur"
                                             />
                                         ) : (
                                             <Box className='card-background-color' />

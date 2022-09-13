@@ -46,7 +46,7 @@ const ServicesView = () => {
                                     aria-current="page"
                                 >
                                     <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize="smform" />
-                                    <Box>Cofnij</Box>
+                                    <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs

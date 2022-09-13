@@ -143,7 +143,8 @@ const ServicesSection = () => {
                         >
                             <Button
                                 component={Link}
-                                to={'/services'}
+                                // to={'/services'}
+                                to={'/drninawisniewska/'}
                                 variant="contained"
                                 color="primary"
                                 size="large"
@@ -179,7 +180,8 @@ const ServicesSection = () => {
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardImage={item.image}
-                                        cardMorePath={item.path}
+                                        // cardMorePath={item.path}
+                                        cardMorePath={"/drninawisniewska/"}
                                         cardPricePath={item.prices}
                                         cardSpecialist={item.specialists}
                                     />

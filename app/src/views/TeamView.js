@@ -72,7 +72,7 @@ const TeamView = () => {
                                     key={index}
                                     cardType={'card-team-view'}
                                     cardImage={item.image}
-                                    cardBackground={item.background}
+                                    cardBackground={item.backgroundSmall}
                                     cardTitle={item.title}
                                     cardName={item.name}
                                     cardSpeciality={item.speciality}

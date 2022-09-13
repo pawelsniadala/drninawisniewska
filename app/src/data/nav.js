@@ -18,8 +18,8 @@ export const nav = {
         {
             id: "0417e32b-d424-460f-af97-dadc8efa5bde",
             title: "Usługi",
-            path: "/services"
-            // path: "/drninawisniewska/"
+            // path: "/services"
+            path: "/drninawisniewska/"
         },
         {
             id: "982bb88c-d367-4fa2-a06a-57a71c32cd03",

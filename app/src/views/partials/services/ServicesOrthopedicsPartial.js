@@ -36,7 +36,7 @@ const ServicesOrthopedicsPartial = () => {
                             >
                                 <Link to='/services' aria-current='page'>
                                     <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize='smform' />
-                                    <Box>Cofnij</Box>
+                                    <Box>Usługi</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs

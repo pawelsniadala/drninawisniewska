@@ -93,6 +93,9 @@ const TeamSection = () => {
                                 color="primary"
                                 size="large"
                                 fullWidth={isMd ? false : true}
+                                endIcon={
+                                    <ArrowForwardIcon />
+                                }
                             >
                                 Zobacz cały zespół
                             </Button>
@@ -107,7 +110,7 @@ const TeamSection = () => {
                                     key={index}
                                     cardType={'card-team-section'}
                                     cardImage={item.image}
-                                    cardBackground={item.background}
+                                    cardBackground={item.backgroundSmall}
                                     cardTitle={item.title}
                                     cardName={item.name}
                                     cardSpeciality={item.speciality}
