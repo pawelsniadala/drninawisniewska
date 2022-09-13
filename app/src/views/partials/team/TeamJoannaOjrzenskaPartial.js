@@ -44,7 +44,7 @@ const TeamJoannaOjrzenskaPartial = () => {
                             >
                                 <Link to='/team' aria-current='page'>
                                     <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize='smform' />
-                                    <Box>Zaspół</Box>
+                                    <Box>Zespół</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
