@@ -4,7 +4,7 @@ import {
     Route
 } from 'react-router-dom';
 import MainTemplate from '../templates/MainTemplate';
-// import FooterSection from '../sections/FooterSection';
+import FooterSection from '../sections/FooterSection';
 
 import ScrollArrow from '../components/ScrollArrow';
 // import Modal from '../components/Modal';
@@ -138,7 +138,7 @@ const Root = () => (
             </main>
             {/* <Modal /> */}
             {/* <Toast /> */}
-            {/* <FooterSection /> */}
+            <FooterSection />
             <ScrollArrow />
         </Router>
     </MainTemplate>

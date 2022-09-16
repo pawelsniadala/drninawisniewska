@@ -77,7 +77,7 @@ const PricesVascularSurgeryPartials = () => {
     }, []);
 
     return (
-        <Box display="grid" gap={3}>
+        <Box display="grid" gap={'1rem'}>
             <Table1 />
         </Box>
     );

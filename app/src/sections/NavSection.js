@@ -316,9 +316,9 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                                     color: 'transparent',
                                                 }}
                                             >
-                                                Klinika Dermatologii<br/>
-                                                i Medycyny estetycznej<br/>
-                                                Dr Nina Wiśniewska
+                                                Dermatologia<br/>
+                                                i Medycyna estetyczna<br/>
+                                                dr Nina Wiśniewska
                                             </Typography>
                                         </Box>
                                     </NavLink>

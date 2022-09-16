@@ -3,7 +3,7 @@
         .body-wrapper {
             &.prices {
                 display: grid;
-                gap: 1.5rem;
+                gap: 1rem;
                 grid-template-columns: repeat(3, 1fr);
 
                 .prices-navigation {
@@ -44,7 +44,16 @@
                                         }
                                     }
 
-                                    .list-item-text {
+                                    .list-item-text span {
+                                        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                                        font-weight: 400;
+                                        font-size: 1rem;
+                                        letter-spacing: 0.00938em;
+                                        display: -webkit-box;
+                                        -webkit-line-clamp: 1;
+                                        -webkit-box-orient: vertical;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
 
                                     }
 
