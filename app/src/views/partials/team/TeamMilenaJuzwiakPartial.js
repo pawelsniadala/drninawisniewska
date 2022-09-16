@@ -83,7 +83,7 @@ const TeamMilenaJuzwiakPartial = () => {
                                                 width={1}
                                                 src={item.background}
                                                 alt={item.title}
-                                                // effect="blur"
+                                                effect='blur'
                                             />
                                         ) : (
                                             <Box className='card-background-color' />
@@ -93,7 +93,7 @@ const TeamMilenaJuzwiakPartial = () => {
                                             component={LazyLoadImage}
                                             src={item.image}
                                             alt={item.title}
-                                            // effect="blur"
+                                            effect='blur'
                                         />
                                         <CardContent className='card-content'>
                                             <Typography className='card-name'>
@@ -107,7 +107,6 @@ const TeamMilenaJuzwiakPartial = () => {
                                                     {item.summary}
                                                 </Typography>
                                             )}
-
                                         </CardContent>
                                     </Card>
                                     {item.education && (

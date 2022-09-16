@@ -21,14 +21,31 @@
         }
 
         .card-description {
-            // font-size: .955em;
-            font-size: 0.9rem;
-            line-height: 1.43;
-            letter-spacing: 0.01071em;
-            color: #656565;
-            // color: rgba(0, 0, 0, 0.7);
-            font-family: Roboto, Helvetica, Arial, sans-serif;
+            // // font-size: .955em;
+            // font-size: 0.9rem;
+            // line-height: 1.43;
+            // letter-spacing: 0.01071em;
+            // color: #656565;
+            // // color: rgba(0, 0, 0, 0.7);
+            // font-family: Roboto, Helvetica, Arial, sans-serif;
+            // font-weight: 300;
+            // display: -webkit-box;
+            // -webkit-line-clamp: 3;
+            // -webkit-box-orient: vertical;
+            // overflow: hidden;
+            // text-overflow: ellipsis;                     
+
+
+
+            margin: 0;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            line-height: 1.5;
+            letter-spacing: 0.00938em;
+            text-align: left;
+            font-size: 14.5px;
             font-weight: 300;
+            color: #606060;
+
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;

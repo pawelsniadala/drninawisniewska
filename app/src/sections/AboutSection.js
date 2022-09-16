@@ -146,7 +146,7 @@ const AboutSection = () => {
                                 cols={3}
                                 rowHeight={isMd ? 300 : 200}
                                 // gap={isMd ? 16 : 4}
-                                gap={6}
+                                gap={4}
                                 sx={{ overflowY: 'hidden' }}
                             >
                                 {about.pictures.map((item, i) => (

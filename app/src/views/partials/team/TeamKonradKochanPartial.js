@@ -75,15 +75,15 @@ const TeamKonradKochanPartial = () => {
                             {konradKochanCopy.map((item, index) => (
                                 <Box key={index}>
                                     <Card className='card-introduction'>
-                                        {item.backgroundMedium ? (
+                                        {item.background ? (
                                             <Box
                                                 className='card-background'
                                                 component={LazyLoadImage}
                                                 height={1}
                                                 width={1}
-                                                src={item.backgroundMedium}
+                                                src={item.background}
                                                 alt={item.title}
-                                                effect="blur"
+                                                effect='blur'
                                             />
                                         ) : (
                                             <Box className='card-background-color' />
@@ -93,7 +93,7 @@ const TeamKonradKochanPartial = () => {
                                             component={LazyLoadImage}
                                             src={item.image}
                                             alt={item.title}
-                                            // effect="blur"
+                                            effect='blur'
                                         />
                                         <CardContent className='card-content'>
                                             <Typography className='card-name'>
@@ -107,7 +107,6 @@ const TeamKonradKochanPartial = () => {
                                                     {item.summary}
                                                 </Typography>
                                             )}
-
                                         </CardContent>
                                     </Card>
                                     {item.education && (

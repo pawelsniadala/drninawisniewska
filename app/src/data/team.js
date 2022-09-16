@@ -1,23 +1,7 @@
 import ninaWisniewskaImage from '../assets/team/ninaWisniewska/ninaWisniewskaImage.jpg';
-import ninaWisniewskaBackgroundSmall from '../assets/team/ninaWisniewska/ninaWisniewskaBackgroundSmall.jpg';
-import ninaWisniewskaBackgroundMedium from '../assets/team/ninaWisniewska/ninaWisniewskaBackgroundMedium.jpg';
-import ninaWisniewskaBackgroundLarge from '../assets/team/ninaWisniewska/ninaWisniewskaBackgroundLarge.jpg';
-
 import justynaFilipekImage from '../assets/team/justynaFilipek/justynaFilipekImage.jpg';
-import paulinaBudnaBackgroundSmall from '../assets/team/paulinaBudna/paulinaBudnaBackgroundSmall.jpg';
-import paulinaBudnaBackgroundMedium from '../assets/team/paulinaBudna/paulinaBudnaBackgroundMedium.jpg';
-import paulinaBudnaBackgroundLarge from '../assets/team/paulinaBudna/paulinaBudnaBackgroundLarge.jpg';
-
 import paulinaBudnaImage from '../assets/team/paulinaBudna/paulinaBudnaImage.jpg';
-import justynaFilipekBackgroundSmall from '../assets/team/justynaFilipek/justynaFilipekBackgroundSmall.jpg';
-import justynaFilipekBackgroundMedium from '../assets/team/justynaFilipek/justynaFilipekBackgroundMedium.jpg';
-import justynaFilipekBackgroundLarge from '../assets/team/justynaFilipek/justynaFilipekBackgroundLarge.jpg';
-
 import konradKochanImage from '../assets/team/konradKochan/konradKochanImage.jpg';
-import konradKochanBackgroundSmall from '../assets/team/konradKochan/konradKochanBackgroundSmall.jpg';
-import konradKochanBackgroundMedium from '../assets/team/konradKochan/konradKochanBackgroundMedium.jpg';
-import konradKochanBackgroundLarge from '../assets/team/konradKochan/konradKochanBackgroundLarge.jpg';
-
 import wojciechKaszewskiImage from '../assets/team/wojciechKaszewski/wojciechKaszewskiImage.jpg';
 import justynaKlonieckaImage from '../assets/team/justynaKloniecka/justynaKlonieckaImage.jpg';
 import katarzynaMysliwiecCzajkaImage from '../assets/team/katarzynaMysliwiecCzajka/katarzynaMysliwiecCzajkaImage.jpg';
@@ -44,10 +28,7 @@ export const ninaWisniewska = {
     experience: 'Nagrodzona przez Ministra Zdrowia w 2015 roku za uzyskanie najlepszego wyniku w Polsce z egzaminu PES w zakresie dermatologii i wenerologii. Na co dzień pełni funkcję Starszego Asystenta w Klinice Dermatologicznej Wojskowego Instytutu Medycznego Ministerstwa Obrony Narodowej w Warszawie. Członkini  Polskiego Towarzystwa Dermatologicznego i Farmaekonomicznego. Członkini Polskiego Towarzystwa Medycyny Estetycznej i Anti - Anging.',
     interested: false,
     image: ninaWisniewskaImage,
-    backgroundSmall: ninaWisniewskaBackgroundSmall,
-    backgroundMedium: ninaWisniewskaBackgroundMedium,
-    backgroundLarge: ninaWisniewskaBackgroundLarge,
-    backgroundLink: '<a href="https://pl.freepik.com/darmowe-zdjecie/wysoki-kat-strzalu-pieknego-lasu-z-duza-iloscia-zielonych-drzew-we-mgle-w-nowej-zelandii_10835665.htm#query=forest&position=1&from_view=search">Obraz autorstwa wirestock</a> na Freepik',
+    background: false,
     path: '/team/nina-wisniewska'
 };
 
@@ -60,11 +41,8 @@ export const justynaFilipek = {
     experience: 'Dr Filipek zajmuje się diagnostyką i leczeniem pacjentek z niepłodnością, zaburzeniami hormonalnymi. Diagnostyką i leczeniem chorób tarczycy, przysadki mózgowej, nadnerczy oraz insulinoopornością.',
     interested: false,
     image: justynaFilipekImage,
-    backgroundSmall: justynaFilipekBackgroundSmall,
-    backgroundMedium: justynaFilipekBackgroundMedium,
-    backgroundLarge: justynaFilipekBackgroundLarge,
-    backgroundLink: '<a href="https://pl.freepik.com/darmowe-zdjecie/widok-z-gory-na-spotkanie-wody-morskiej-z-piaskiem_9819012.htm#query=sea&position=5&from_view=search">Obraz autorstwa ArthurHidden</a> na Freepik',
-    path: '/team/justyna-filipek',
+    background: false,
+    path: '/team/justyna-filipek'
 };
 
 export const paulinaBudna = {
@@ -76,11 +54,8 @@ export const paulinaBudna = {
     experience: 'Specjalizuje się w wykonywaniu zabiegów pielęgnacyjno - leczniczych, w szczególności dla skór wymagających, tj. skóra trądzikowa, z przebarwieniami, bliznami potrądzikowymi, itp. Ponadto wykonuje zabiegi z zakresu ujędrniania i modelowania sylwetki, a także zabiegi epilacji laserowej. Chętnie uczy się nowych rzeczy. Swoją wiedzę pogłębia uczestnicząc w specjalistycznych szkoleniach i kongresach. Bardzo ceni sobie wzajemną współpracę z lekarzami z dziedziny dermatologii i medycyny estetycznej. Z Kliniką dr Niny Wiśniewskiej związana jest od początku jej istnienia.',
     interested: false,
     image: paulinaBudnaImage,
-    backgroundSmall: paulinaBudnaBackgroundSmall,
-    backgroundMedium: paulinaBudnaBackgroundMedium,
-    backgroundLarge: paulinaBudnaBackgroundLarge,
-    backgroundLink: '<a href="https://pl.freepik.com/darmowe-zdjecie/panoramiczny-widok-na-rzeke-li-i-gore-mashan-w-hrabstwie-yangshuo-guilin-pod-zachmurzonym-niebem_17245161.htm#query=mountains&position=43&from_view=search">Obraz autorstwa wirestock</a> na Freepik',
-    path: '/team/paulina-budna',
+    background: false,
+    path: '/team/paulina-budna'
 };
 
 export const konradKochan = {
@@ -92,10 +67,8 @@ export const konradKochan = {
     experience: 'Jest absolwentem Podyplomowej Szkoły Medycyny Estetycznej Polskiego Towarzystwa Lekarskiego w Warszawie oraz lekarzem American Academy of Aesthetic Medicine. Od 2012 zajmuje się medycyną estetyczną oraz chirurgią plastyczną. Był uczestnikiem wielu kursów i kongresów z zakresu chirurgii plastycznej oraz medycyny estetycznej organizowanych zarówno w kraju jak i za granicą. Był wykładowcą oraz doktorantem I Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego (WUM). Swoje doświadczenie uzupełniał w ramach licznych praktyk, również zagranicznych: w Klinice chirurgii University of Palermo P.Giaccone Hospital, Italy oraz w Paryżu. Jest autorem publikacji i doniesień zjazdowych z zakresu chirurgii plastycznej. Jest członkiem Polskiego Towarzystwa Chirurgii Plastycznej, Rekonstrukcyjnej i Estetycznej oraz Polskiego Towarzystwa Leczenia Oparzeń. Specjalizuje się w zabiegach z zakresu medycyny estetycznej twarzy, chirurgii plastycznej piersi, plastyki brzucha oraz liposukcji i modelowania ciała. Łączy w sobie umiejętności z zakresu medycyny estetycznej i chirurgii plastycznej.',
     interested: false,
     image: konradKochanImage,
-    backgroundSmall: konradKochanBackgroundSmall,
-    backgroundMedium: konradKochanBackgroundMedium,
-    backgroundLarge: konradKochanBackgroundLarge,
-    path: '/team/konrad-kochan',
+    background: false,
+    path: '/team/konrad-kochan'
 };
 
 export const wojciechKaszewski = {
@@ -108,7 +81,7 @@ export const wojciechKaszewski = {
     interested: false,
     image: wojciechKaszewskiImage,
     background: false,
-    path: '/team/wojciech-kaszewski',
+    path: '/team/wojciech-kaszewski'
 };
 
 export const klaudiaMalottki = {
@@ -121,7 +94,7 @@ export const klaudiaMalottki = {
     interested: false,
     image: klaudiaMalottkiImage,
     background: false,
-    path: '/team/klaudia-malottki',
+    path: '/team/klaudia-malottki'
 };
 
 export const katarzynaMysliwiecCzajka = {
@@ -134,7 +107,7 @@ export const katarzynaMysliwiecCzajka = {
     interested: false,
     image: katarzynaMysliwiecCzajkaImage,
     background: false,
-    path: '/team/katarzyna-mysliwiec-czajka',
+    path: '/team/katarzyna-mysliwiec-czajka'
 };
 
 export const justynaKloniecka = {
@@ -147,7 +120,7 @@ export const justynaKloniecka = {
     interested: false,
     image: justynaKlonieckaImage,
     background: false,
-    path: '/team/justyna-kloniecka',
+    path: '/team/justyna-kloniecka'
 };
 
 export const aldonaMaciag = {
@@ -160,7 +133,7 @@ export const aldonaMaciag = {
     interested: false,
     image: aldonaMaciagImage,
     background: false,
-    path: '/team/aldona-maciag',
+    path: '/team/aldona-maciag'
 };
 
 export const milenaJuzwiak = {
@@ -173,7 +146,7 @@ export const milenaJuzwiak = {
     interested: false,
     image: milenaJuzwiakImage,
     background: false,
-    path: '/team/milena-juzwiak',
+    path: '/team/milena-juzwiak'
 };
 
 export const paulinaTatara = {
@@ -186,7 +159,7 @@ export const paulinaTatara = {
     interested: 'Jestem miłośniczką kryminałów i wyzwań, przede wszystkim sportowych. Sport uczy mnie konsekwencji w dążeniu do celu. Na swoim koncie mam ukończenie zawodów triathlonowych na dystansie pełnego Ironmana.',
     image: paulinaTataraImage,
     background: false,
-    path: '/team/paulina-tatara',
+    path: '/team/paulina-tatara'
 };
 
 export const tomaszMatuszewski = {
@@ -196,10 +169,10 @@ export const tomaszMatuszewski = {
     summary: false,
     education: 'Absolwent Wydziału Lekarskiego Wojskowej Akademii Medycznej w Łodzi. Na co dzień pracuje w Poradni Alergologii i Immunologii przy Klinice Chorób Wewnętrznych, Pneumonologii, Alergologii i Immunologii Klinicznej Wojskowego Instytutu Medycznego w Warszawie.',
     experience: 'Przewodniczący Sekcji Obrzęku Wrodzonego przy Polskim Towarzystwie Alergologicznym. Posiada kwalifikacje w diagnostyce i leczeniu chorób alergologicznych u dzieci i dorosłych. Wykonuje testy skórne, prowadzi immunoterapię, zajmuje się między innymi leczeniem pokrzywek, astmy oskrzelowej, atopowego zapalenia skóry. Świadczy porady z zakresu chorób zakaźnych tj, borelioza, choroby pasożytnicze, choroby zakaźne skóry, HCV oraz z zakresu medycyny podróży. Zainteresowania swoje poszerza również w zakresie medycyny estetycznej gdzie zdobywa doświadczenie pod okiem najlepszych specjalistów. Autor i współautor licznych publikacji z dziedziny alergologii czy pediatrii w recenzowanych czasopismach. Aktywny uczestnik kongresów alergologicznych, medycyny podróży.',
-    interested: 'Interesuję się kulinariami, enoturystyką',
+    interested: 'Interesuję się kulinariami, enoturystyką.',
     image: tomaszMatuszewskiImage,
     background: false,
-    path: '/team/tomasz-matuszewski',
+    path: '/team/tomasz-matuszewski'
 };
 
 export const wojciechTrojanowski = {
@@ -208,11 +181,11 @@ export const wojciechTrojanowski = {
     speciality: 'Radiolog',
     summary: false,
     education: 'Absolwent Wydziału Lekarskiego  Akademii Medycznej w Łodzi, gdzie ukończył dwie specjalizacje: z chirurgii ogólnej oraz radiodiagnostyki.',
-    experience: 'Posiada wieloletnie doświadczenie zawodowe, zdobyte w placówkach medycznych na terenie województwa łódzkiego i mazowieckiego',
+    experience: 'Posiada wieloletnie doświadczenie zawodowe, zdobyte w placówkach medycznych na terenie województwa łódzkiego i mazowieckiego.',
     interested: false,
     image: wojciechTrojanowskiImage,
     background: false,
-    path: '/team/wojciech-trojanowski',
+    path: '/team/wojciech-trojanowski'
 };
 
 export const olgaLenartowiczWarakomska = {
@@ -225,7 +198,7 @@ export const olgaLenartowiczWarakomska = {
     interested: 'W wolnej chwili jeżdżę na rowerze, na snowboardzie, żegluję, podróżuję i czytam książki.',
     image: olgaLenartowiczWarakomskaImage,
     background: false,
-    path: '/team/olga-lenartowicz-warakomska',
+    path: '/team/olga-lenartowicz-warakomska'
 };
 
 export const katarzynaZbronska = {
@@ -234,11 +207,11 @@ export const katarzynaZbronska = {
     speciality: 'Dermatolog, trycholog',
     summary: false,
     education: 'Absolwentka I Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego. Obecnie pracuje w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie. Jest członkiem Sekcji Dermatologii Onkologicznej Polskiego Towarzystwa Dermatologicznego oraz International Trichoscopy Society.',
-    experience: 'Do jej głównych zainteresowań zawodowych należą choroby skóry owłosionej, diagnostyka trichoskopowa i leczenie różnych typów łysienia przy użyciu odpowiednio dobranych technik medycyny regeneracyjnej. Doświadczenie w zakresie medycyny estetycznej zdobywała pod okiem najlepszych specjalistów, a swoje kwalifikacje stale poszerza biorąc udział w licznych kursach, szkoleniach i kongresach. Podczas planowania leczenia stawia na subtelność i naturalne podkreślenie indywidualnych atutów. Poza zabiegami z użyciem toksyny botulinowej, kwasu hialuronowego i laseroterapii, zajmuje się usuwaniem znamion metodą dermatochirurgiczną. Specjalizuje się również w wykonywaniu zabiegów z użyciem osocza bogatopłytkowego oraz technologii HIFU - SonoQueen',
+    experience: 'Do jej głównych zainteresowań zawodowych należą choroby skóry owłosionej, diagnostyka trichoskopowa i leczenie różnych typów łysienia przy użyciu odpowiednio dobranych technik medycyny regeneracyjnej. Doświadczenie w zakresie medycyny estetycznej zdobywała pod okiem najlepszych specjalistów, a swoje kwalifikacje stale poszerza biorąc udział w licznych kursach, szkoleniach i kongresach. Podczas planowania leczenia stawia na subtelność i naturalne podkreślenie indywidualnych atutów. Poza zabiegami z użyciem toksyny botulinowej, kwasu hialuronowego i laseroterapii, zajmuje się usuwaniem znamion metodą dermatochirurgiczną. Specjalizuje się również w wykonywaniu zabiegów z użyciem osocza bogatopłytkowego oraz technologii HIFU - SonoQueen.',
     interested: false,
     image: katarzynaZbronskaImage,
     background: false,
-    path: '/team/katarzyna-zbronska',
+    path: '/team/katarzyna-zbronska'
 };
 
 export const joannaOjrzenska = {
@@ -251,7 +224,7 @@ export const joannaOjrzenska = {
     interested: false,
     image: joannaOjrzenskaImage,
     background: false,
-    path: '/team/joanna-ojrzenska',
+    path: '/team/joanna-ojrzenska'
 };
 
 export const aleksandraGorczynska = {
@@ -264,7 +237,7 @@ export const aleksandraGorczynska = {
     interested: 'interesuję się kulturą oraz kuchnią azjatycką.',
     image: aleksandraGorczynskaImage,
     background: false,
-    path: '/team/aleksandra-gorczynska',
+    path: '/team/aleksandra-gorczynska'
 };
 
 export const annaKulakowska = {
@@ -277,7 +250,7 @@ export const annaKulakowska = {
     interested: false,
     image: annaKulakowskaImage,
     background: false,
-    path: '/team/anna-kulakowska',
+    path: '/team/anna-kulakowska'
 };
 
 export const miroslawMajewski = {
@@ -290,7 +263,7 @@ export const miroslawMajewski = {
     interested: false,
     image: miroslawMajewskiImage,
     background: false,
-    path: '/team/miroslaw-majewski',
+    path: '/team/miroslaw-majewski'
 };
 
 export const kamilStepkowski = {
@@ -303,7 +276,7 @@ export const kamilStepkowski = {
     interested: false,
     image: kamilStepkowskiImage,
     background: false,
-    path: '/team/kamil-stepkowski',
+    path: '/team/kamil-stepkowski'
 };
 
 export const team = [
