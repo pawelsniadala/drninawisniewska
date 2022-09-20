@@ -66,6 +66,9 @@ import TeamAnnaKulakowskaPartial from './partials/team/TeamAnnaKulakowskaPartial
 import TeamMiroslawMajewskiPartial from './partials/team/TeamMiroslawMajewskiPartial';
 import TeamKamilStepkowskiPartial from './partials/team/TeamKamilStepkowskiPartial';
 
+import EquipmentView from './EquipmentView';
+import EquipmentVectusPartial from './partials/equipment/EquipmentVectusPartial';
+
 import ContactView from './ContactView';
 
 const Root = () => (
@@ -132,6 +135,9 @@ const Root = () => (
                     <Route path='/team/anna-kulakowska' element={<TeamAnnaKulakowskaPartial />} />
                     <Route path='/team/miroslaw-majewski' element={<TeamMiroslawMajewskiPartial />} />
                     <Route path='/team/kamil-stepkowski' element={<TeamKamilStepkowskiPartial />} />
+
+                    <Route path='/equipment' element={<EquipmentView />} />
+                    <Route path='/equipment/vectus' element={<EquipmentVectusPartial />} />
 
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>

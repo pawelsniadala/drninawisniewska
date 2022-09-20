@@ -62,7 +62,7 @@ const CardTeam = ({
                         {cardSpeciality}
                     </Typography>
                 </CardContent>
-                <CardActions className='card-actions'>
+                {/* <CardActions className='card-actions'>
                     <Tooltip title="Facebook">
                         <a key="" href="https://www.facebook.com/profile.php?id=100063736802328"
                             className="nav-link"
@@ -90,7 +90,7 @@ const CardTeam = ({
                             <InstagramSvg width="18px" height="18px" color="#d6a44d" />
                         </a>
                     </Tooltip>
-                </CardActions>
+                </CardActions> */}
             </Card>
         </Box>
     );

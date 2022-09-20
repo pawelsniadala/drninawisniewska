@@ -143,8 +143,7 @@ const ServicesSection = () => {
                         >
                             <Button
                                 component={Link}
-                                // to={'/services'}
-                                to={'/drninawisniewska/'}
+                                to={'/services'}
                                 variant="contained"
                                 color="primary"
                                 size="large"
@@ -160,11 +159,11 @@ const ServicesSection = () => {
                 </Box>
                 <Box margin={'0 auto'}>
                     <Slider {...sliderOpts}>
-                        {services.slice(0, 4).map((item, i) => (
+                        {services.slice(0, 4).map((item, index) => (
                             <Box
-                                key={i}
-                                padding={{ xs: 1, md: 1, lg: '0.5rem' }}
-                                sx={{paddingTop: '0 !important'}}
+                                key={index}
+                                padding={{ xs: 1, md: 1, lg: '10px' }}
+                                sx={{ paddingTop: '0 !important' }}
                             >
                                 <Box
                                     width={1}
@@ -175,14 +174,12 @@ const ServicesSection = () => {
                                     }}
                                 >
                                     <CardServices
-                                        key={item.index}
-                                        cardName={'card-services-section'}
+                                        key={index}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardImage={item.image}
-                                        // cardMorePath={item.path}
-                                        cardMorePath={"/drninawisniewska/"}
-                                        cardPricePath={item.prices}
+                                        cardPath={item.path}
+                                        cardPrice={item.prices}
                                         cardSpecialist={item.specialists}
                                     />
                                 </Box>

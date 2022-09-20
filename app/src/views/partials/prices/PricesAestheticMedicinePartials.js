@@ -721,7 +721,7 @@ const PricesAestheticMedicinePartials = () => {
     }, []);
 
     return (
-        <Box display="grid" gap={'1rem'}>
+        <Box display="grid" gap={'15px'}>
             <Table15 />
             <Table1 />
             <Table2 />

@@ -150,7 +150,7 @@ const TeamNinaWisniewskaPartial = () => {
                         </Box>
                         <Box className='team-proposed'>
                             {teamCopy.filter(item => item.designation !== 'ninaWisniewska').slice(0, 8).map((item, index) => (
-                                <Box className='card-proposed' component={Link} to={item.path} key={index}>
+                                <Box className='card-team-proposed' component={Link} to={item.path} key={index}>
                                     <Card className='card'>
                                         <CardContent className='card-content'>
                                             <Avatar

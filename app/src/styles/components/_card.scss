@@ -21,22 +21,6 @@
         }
 
         .card-description {
-            // // font-size: .955em;
-            // font-size: 0.9rem;
-            // line-height: 1.43;
-            // letter-spacing: 0.01071em;
-            // color: #656565;
-            // // color: rgba(0, 0, 0, 0.7);
-            // font-family: Roboto, Helvetica, Arial, sans-serif;
-            // font-weight: 300;
-            // display: -webkit-box;
-            // -webkit-line-clamp: 3;
-            // -webkit-box-orient: vertical;
-            // overflow: hidden;
-            // text-overflow: ellipsis;                     
-
-
-
             margin: 0;
             font-family: "Roboto", "Helvetica", "Arial", sans-serif;
             line-height: 1.5;
@@ -45,7 +29,6 @@
             font-size: 14.5px;
             font-weight: 300;
             color: #606060;
-
             display: -webkit-box;
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
@@ -155,63 +138,103 @@
     }
 }
 
-.card-services-proposed {
-    .card-content {
-        display: grid;
-        align-content: space-around;
-        justify-content: start;
-        padding: 0 0 0 10px;
+// LOHOIHIOHIHIOHIOHOIHOIHIOHIOHIOUHOIUHIOUHIOHOIUHOIHOIHOIHUIHIOUHOIHOI
+.card-services {
+    text-decoration: none;
 
-        &:last-child {
-            padding-bottom: 0;
+    .card {
+        height: 100%;
+        width: 100%;
+        border: none;
+        background-color: #fff;
+        box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
+        border-radius: 8px;
+
+        &:hover {
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s ease-in-out;
         }
 
-        .card-title {
-            margin: 0;
-            letter-spacing: 0.00938em;
-            line-height: 1.1;
-            font-family: Roboto, Helvetica, Arial, sans-serif;
-            font-weight: 500;
-            font-size: 1.05rem;
-            color: rgba(0, 0, 0, 0.7);
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        .card-media {
+            // height: 244px;
         }
 
-        .card-description {
-            font-size: .855em;
-            line-height: 1.43;
-            letter-spacing: 0.01071em;
-            color: #606060;
-            font-family: Roboto, Helvetica, Arial, sans-serif;
-            font-weight: 300;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
+        .card-content {
+            padding: 15px 20px;
+
+            .card-title {
+                margin: 0;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.7);
+                font-size: 1.25rem;
+                line-height: 1.5;
+                letter-spacing: 0.00938em;
+                text-align: left;
+                margin-bottom: 0.35em;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .card-description {
+                margin: 0;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                line-height: 1.5;
+                text-align: left;
+                font-size: 0.855rem;
+                letter-spacing: 0.01071em;
+                font-weight: 300;
+                color: #606060;
+                margin-bottom: 15px;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .card-avatar-group {
+                margin-top: 10px;
+                justify-content: flex-end;
+
+                .card-avatar {
+                    img {
+                        background-color: darken(#f5f5f5, 4%);
+                    }
+                }
+            }
         }
 
-        .card-link {
-            padding: 0;
-            line-height: 1;
+        .card-actions {
+            display: flex;
             justify-content: flex-start;
-            background-color: transparent;
-            color: #d6a44d;
-            border-color: none;
-            font-size: 11px;
-            font-weight: 400;
-            width: fit-content;
+            gap: 15px;
+            padding: 0 20px 15px 20px;
 
-            span span {
-                background-color: transparent !important;
+            .card-link {
+                padding: 0;
+                line-height: 1;
+                justify-content: flex-start;
+                background-color: transparent;
+                color: #d6a44d;
+                border-color: none;
+                font-size: 0.8025rem;
+                font-weight: 400;
+                width: fit-content;
+
+                span span {
+                    background-color: transparent !important;
+                }
             }
         }
     }
 }
+
+
+
 .card-team-view,
 .card-team-section {
     text-decoration: none;
@@ -333,6 +356,196 @@
             padding-top: 0;
             padding-bottom: 22px;
             gap: 10px
+        }
+    }
+}
+
+.card-equipment-section {
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: block;
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        // gap: 20px;
+        height: 100%;
+        width: 100%;
+        
+        border: none;
+        box-shadow: none;
+        // margin-bottom: 1.5rem;
+        background-color: #fff;
+        // background-color: #f5f5f5;
+        box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
+        border-radius: 8px;
+
+        &:hover {
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card-content {
+            padding: 15px 20px;
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+
+            .card-name {
+                margin: 0;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.7);
+                font-size: 1.25rem;
+                line-height: 1.5;
+                letter-spacing: 0.00938em;
+                text-align: left;
+                margin-bottom: 0.35em;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .card-description {
+                margin: 0;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                line-height: 1.5;
+                // letter-spacing: 0.00938em;
+                text-align: left;
+                // font-size: 14.5px;
+                font-size: 0.855rem;
+                letter-spacing: 0.01071em;
+                font-weight: 300;
+                color: #606060;
+                margin-bottom: 15px;
+                display: -webkit-box;
+                -webkit-line-clamp: 8;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .card-link {
+                padding: 0;
+                line-height: 1;
+                justify-content: flex-start;
+                background-color: transparent;
+                color: #d6a44d;
+                border-color: none;
+                font-size: 0.8025rem;
+                font-weight: 400;
+                width: fit-content;
+
+                span span {
+                    background-color: transparent !important;
+                }
+            }
+
+        }
+
+        
+       
+        .card-media {
+            height: 260px;
+            // height: 100%;
+            // width: 289px;
+            object-fit: cover;
+            object-position: center;
+
+            background-color: #e6e6e6;
+        }
+        
+
+    }
+}
+
+
+// PROPONOWANY SPRZĘT
+// PROPON
+
+.card-proposed {
+    .card {
+        display: grid;
+        grid-template-columns: 120px 1fr;
+        height: 100%;
+        width: 100%;
+        border: none;
+        background-color: #fff;
+        box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
+        border-radius: 8px;
+
+        &:hover {
+            box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .card-media {
+            .card-image {
+                object-fit: cover;
+                height: 120px;
+                width: 120px;
+                aspect-ratio: auto 120 / 120;
+                border-top-left-radius: 8px;
+                border-top-right-radius: 0;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 0;
+            }
+        }
+
+        .card-content {
+            height: 120px;
+            padding: 10px;
+            display: grid;
+            row-gap: 5px;
+
+            .card-title {
+                margin: 0;
+                letter-spacing: 0.00938em;
+                line-height: 1.1;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                font-size: 1rem;
+                color: rgba(0, 0, 0, 0.7);
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .card-description {
+                margin: 0;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                letter-spacing: 0.00938em;
+                text-align: left;
+                font-size: 12.5px;
+                font-weight: 300;
+                color: #606060;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .card-link {
+                padding: 0;
+                font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                line-height: 1;
+                justify-content: flex-start;
+                background-color: transparent;
+                color: #d6a44d;
+                border-color: none;
+                font-size: 10.5px;
+                font-weight: 400;
+                width: fit-content;
+
+                span span {
+                    background-color: transparent !important;
+                }
+            }
         }
     }
 }

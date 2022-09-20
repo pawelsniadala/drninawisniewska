@@ -135,13 +135,15 @@ const FooterSection = () => {
                             variant='span'
                             className='footer-text'
                         >
-                            Vectus&trade;
+                            {/* Vectus&trade; */}
+                            Vectus
                         </Typography>
                         <Typography
                             variant='span'
                             className='footer-text'
                         >
-                            Icoone<sup>&reg;</sup> Laser Med 2
+                            {/* Icoone<sup>&reg;</sup> Laser Med 2 */}
+                            Icoone Laser Med 2
                         </Typography>
                         <Typography
                             variant='span'

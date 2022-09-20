@@ -14,7 +14,7 @@ import Box from '@mui/material/Box';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
 import Container from '../../../components/Container';
-import CardServicesProposed from '../../../components/CardServicesProposed';
+import CardProposed from '../../../components/CardProposed';
 
 import { services } from '../../../data/services';
 import servicesOrthopedics from '../../../assets/services/servicesOrthopedics.jpg';
@@ -157,7 +157,7 @@ const ServicesOrthopedicsPartial = () => {
                         <Box className='proposed-services'>
                             <Box className='card-wrapper services-proposed'>
                                 {services.length ? services.filter(item => item.title !== 'Ortopedia').map((item, index) => (
-                                    <CardServicesProposed
+                                    <CardProposed
                                         key={index}
                                         cardTitle={item.title}
                                         cardDescription={item.description}

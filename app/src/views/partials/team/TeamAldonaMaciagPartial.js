@@ -12,6 +12,7 @@ import Box from '@mui/material/Box';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
 import Container from '../../../components/Container';
+import CardProposed from '../../../components/CardProposed';
 
 import { team, aldonaMaciag } from '../../../data/team';
 
@@ -150,7 +151,7 @@ const TeamAldonaMaciagPartial = () => {
                         </Box>
                         <Box className='team-proposed'>
                             {teamCopy.filter(item => item.designation !== 'aldonaMaciag').slice(0, 8).map((item, index) => (
-                                <Box className='card-proposed' component={Link} to={item.path} key={index}>
+                                <Box className='card-team-proposed' component={Link} to={item.path} key={index}>
                                     <Card className='card'>
                                         <CardContent className='card-content'>
                                             <Avatar

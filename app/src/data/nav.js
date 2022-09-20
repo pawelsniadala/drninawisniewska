@@ -40,8 +40,8 @@ export const nav = {
         {
             id: "ca385125-35d1-469e-b5a7-b800e26ed0d0",
             title: "Sprzęt",
-            // path: "/equipment"
-            path: "/drninawisniewska/"
+            path: "/equipment"
+            // path: "/drninawisniewska/"
         },
         {
             id: "2a385c29-263e-49b8-a18a-c4f7f025c808",

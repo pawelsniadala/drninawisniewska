@@ -83,7 +83,7 @@ const PricesUsgPartials = () => {
     }, []);
 
     return (
-        <Box display="grid" gap={'1rem'}>
+        <Box display="grid" gap={'15px'}>
             <Table1 />
         </Box>
     );

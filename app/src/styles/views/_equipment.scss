@@ -1,0 +1,57 @@
+.view-wrapper {
+    .view-body {
+        .body-wrapper {
+            &.equipment {
+                display: grid;
+                gap: 1.5rem;
+                grid-template-columns: repeat(3, 1fr);
+
+                .service-description {
+                    grid-column: span 2;
+
+                    .header {
+                        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                        font-weight: 400;
+                        color: rgba(0, 0, 0, 0.7);
+                        font-size: 1.25rem;
+                        line-height: 1.5;
+                        letter-spacing: 0.00938em;
+                        text-align: left;
+                        margin-bottom: 0.35em;
+
+                    }
+
+                    .paragraph {
+                        font-size: 15.5px;
+                        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                        color: #606060;
+                        color: #535353;
+                        font-weight: 300;
+                        margin-bottom: 10px;
+                        letter-spacing: 0.00538em;
+                    }
+
+                    .list-item-avatar {
+                        svg {
+                            width: 14px;
+                            height: 14px;
+                        }
+                    }
+
+                    .list-item-text {
+                        span {
+                            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+                            font-weight: 300;
+                            font-size: 15.5px;
+                            letter-spacing: 0.00538em;
+                        }
+                    }
+                }
+
+                .proposed-equipment {
+                    grid-column: span 1;
+                }
+            }
+        }
+    }
+}

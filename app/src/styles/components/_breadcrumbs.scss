@@ -5,44 +5,25 @@
 
     .MuiBreadcrumbs-li {
         a {
-            // color: rgba(0, 0, 0, 0.65) !important;
             text-decoration: none !important;
-            font-family: "Raleway", sans-serif !important;
-            // font-family: 'Noto Sans', sans-serif;
-            // font-size: 14px;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
             font-size: 0.9rem !important;
-
-            // font-weight: 400 !important;
-            // font-size: 0.8125rem;
-            // font-family: 'Roboto', Helvetica, Arial, sans-serif;
+            font-weight: 300 !important;
             color: rgba(0, 0, 0, 0.7) !important;
-            
-            // transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-
             display: flex;
             align-items: center;
 
             &:hover {
                 color: rgba(0, 0, 0, 0.9) !important;
-                // color: transparent;
-                // background-image: linear-gradient(90deg, #d09636 0%, #d9ab5a 51%, #dbb97b 100%);
-                // background-clip: text;
             }
-
-            // &.prev {
-                // padding: 5px 16px;
-                // border-radius: 155px;
-                // background-color: rgba(245, 245, 245, .5);
-            // }
         }
     }
 
     .MuiTypography-root {
         color: rgba(0, 0, 0, 0.9) !important;
-        font-family: "Raleway", sans-serif !important;
-        // font-family: 'Noto Sans', sans-serif;
-        // font-size: 14px;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
         font-size: 0.9rem !important;
+        font-weight: 300 !important;
 
     }
 }

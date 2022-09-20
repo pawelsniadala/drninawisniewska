@@ -12,6 +12,7 @@ import PriceSection from '../sections/PriceSection';
 // import ReviewsSection from "../sections/ReviewsSection";
 // import ReviewsSection2 from "../sections/ReviewsSection2";
 import TeamSection from "../sections/TeamSection";
+import EquipmentSection from "../sections/EquipmentSection";
 // import ContactSection from "../sections/ContactSection";
 
 const HomeView = () => {
@@ -26,11 +27,18 @@ const HomeView = () => {
             <HeroSection2 />
             <AboutSection />
             <ServicesSection />
+          
+           
             <PriceSection />
-
-            {/* <ReviewsSection /> */}
-            {/* <ReviewsSection2 /> */}
             <TeamSection />
+            <EquipmentSection />
+
+        
+          
+            
+              {/* <ReviewsSection2 /> */}
+                  {/* <ReviewsSection /> */}
+            
             {/* <ContactSection /> */}
             {/* <PosterSection />
             <CastSection />
