@@ -15,9 +15,8 @@ import TwitterSvg from '../assets/svg/TwitterSvg';
 import InstagramSvg from '../assets/svg/InstagramSvg';
 
 
-const CardEquipment = ({
+const CardTechnology = ({
     cardPath,
-    cardType,
     cardImage,
     cardName,
     cardDescription,
@@ -25,7 +24,7 @@ const CardEquipment = ({
 }) => {
     return (
         <Box
-            className={cardType}
+            className='card-technology'
             component={Link}
             to={cardPath}
         >
@@ -72,4 +71,4 @@ const CardEquipment = ({
     );
 }
 
-export default CardEquipment;
+export default CardTechnology;

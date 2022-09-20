@@ -14,27 +14,27 @@ import Box from '@mui/material/Box';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
 import Container from '../../../components/Container';
-import CardServicesProposed from '../../../components/CardServicesProposed';
+// import CardServicesProposed from '../../../components/CardServicesProposed';
 
-import { CardMedia } from '@mui/material';
+// import { CardMedia } from '@mui/material';
 
 
-import ReportProblemIcon from '@mui/icons-material/ReportProblem';
+// import ReportProblemIcon from '@mui/icons-material/ReportProblem';
 
 // import { Link } from "react-router-dom";
 // import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 // import Box from '@mui/material/Box';
 // import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
+// import Card from '@mui/material/Card';
+// import CardContent from '@mui/material/CardContent';
+// import Button from '@mui/material/Button';
 
 import CardProposed from '../../../components/CardProposed';
 
-import { equipment } from '../../../data/equipment';
+import { technology } from '../../../data/technology';
 
-const EquipmentVectusPartial = () => {
+const TechnologyVectusPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -42,16 +42,16 @@ const EquipmentVectusPartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
-                <Box className='view-header equipment-dermatology'>
+                <Box className='view-header technology'>
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/equipment' aria-current='page'>
+                                <Link to='/technology' aria-current='page'>
                                     <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize='smform' />
-                                    <Box>Sprzęt</Box>
+                                    <Box>Technologia</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -61,8 +61,8 @@ const EquipmentVectusPartial = () => {
                                 <Link to='/' aria-current='page'>
                                     Home
                                 </Link>
-                                <Link to='/equipment' aria-current='page'>
-                                    Sprzęt
+                                <Link to='/technology' aria-current='page'>
+                                Technologia
                                 </Link>
                                 <Typography color='text.primary'>
                                     Vectus
@@ -77,7 +77,7 @@ const EquipmentVectusPartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper equipment'>
+                    <Container className='body-wrapper technology'>
                         <Box className='service-description'>
                             <Typography className='paragraph'>
                                 Vectus™ to produkt amerykańskiej firmy Palomar, która stworzyła pierwszą na świecie technologię laserowego usuwania owłosienia, do dziś chronioną patentem. Vectus™ jest owocem trwających kilkanaście lat doświadczeń i badań nad udoskonaleniem systemu lasera diodowego. Wykorzystano w nim wiele nowatorskich rozwiązań decydujących o wyjątkowej skuteczności, bezpieczeństwie i komforcie pacjenta.
@@ -90,7 +90,7 @@ const EquipmentVectusPartial = () => {
                                 <LazyLoadImage
                                     height={'100%'}
                                     width={'100%'}
-                                    src={equipment[0].image}
+                                    src={technology[0].image}
                                     alt='Remote working'
                                     effect='blur'
                                     style={{
@@ -390,12 +390,11 @@ const EquipmentVectusPartial = () => {
                                 </Grid>
                             </Box>
                         </Box>
-                        <Box className='proposed-equipment'>
-                            <Box className='card-wrapper equipment-proposed'>
-                                {equipment.length ? equipment.filter(item => item.designation !== 'vectus').map((item, index) => (
+                        <Box className='proposed-technology'>
+                            <Box className='card-wrapper technology-proposed'>
+                                {technology.length ? technology.filter(item => item.designation !== 'vectus').map((item, index) => (
                                     <CardProposed
                                         key={index}
-                                        cardName={'card-equipment-proposed'}
                                         cardTitle={item.name}
                                         cardDescription={item.description}
                                         cardImage={item.image}
@@ -413,47 +412,4 @@ const EquipmentVectusPartial = () => {
     );
 }
 
-export default EquipmentVectusPartial;
-      {/* <Box
-                                        className='card-equipment-proposed'
-                                        component={Link}
-                                        to={item.path}
-                                        display={'block'}
-                                        width={1}
-                                        height={1}
-                                        sx={{
-                                            textDecoration: 'none',
-                                            transition: 'all .2s ease-in-out',
-                                        }}
-                                    >
-                                        <Card className='card'>
-                                            <CardMedia className='card-media'>
-                                                <Box
-                                                    className='card-image'
-                                                    component={LazyLoadImage}
-                                                    height={1}
-                                                    width={1}
-                                                    src={item.image}
-                                                    alt={item.name}
-                                                    effect="blur"
-                                                />
-                                            </CardMedia>
-                                            <CardContent className='card-content'>
-                                                <Typography className='card-title'>
-                                                    {item.name}
-                                                </Typography>
-                                                <Typography className='card-description'>
-                                                    {item.description}
-                                                </Typography>
-                                                <Button
-                                                    className='card-link'
-                                                    component={Link}
-                                                    to={item.path}
-                                                    variant="outline"
-                                                    size="small"
-                                                >
-                                                    Zobacz więcej
-                                                </Button>
-                                            </CardContent>
-                                        </Card>
-                                    </Box> */}
+export default TechnologyVectusPartial;

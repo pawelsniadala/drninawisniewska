@@ -8,11 +8,11 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
-import CardEquipment from '../components/CardEquipment';
+import CardTechnology from '../components/CardTechnology';
 
-import { equipment } from '../data/equipment';
+import { technology } from '../data/technology';
 
-const EquipmentView = () => {
+const TechnologyView = () => {
     const evenNumbers = (item) => {
         return (item + 1) % 2 === 0 ? false : true;
     }
@@ -50,30 +50,29 @@ const EquipmentView = () => {
                                     Home
                                 </Link>
                                 <Typography color='text.primary'>
-                                    Sprzęt
+                                    Technologia
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Sprzęt
+                            Technologia
                             </Typography>
                         </Box>
                     </Container>
                 </Box>
                 <Box className='view-body'>
                     <Container className='body-wrapper'>
-                        <Box className='card-wrapper equipment'>
-                        {equipment.map((item, index) => (
-                            <CardEquipment
-                                cardEvenNumbers={evenNumbers(index)}
-                                cardType={'card-equipment-section'}
-                                cardImage={item.image}
-                                cardName={item.name}
-                                cardDescription={item.description}
-                                cardPath={item.path}
-                            />
-                        ))}
+                        <Box className='card-wrapper technology'>
+                            {technology.map((item, index) => (
+                                <CardTechnology
+                                    cardEvenNumbers={evenNumbers(index)}
+                                    cardImage={item.image}
+                                    cardName={item.name}
+                                    cardDescription={item.description}
+                                    cardPath={item.path}
+                                />
+                            ))}
                         </Box>
                     </Container>
                 </Box>
@@ -82,4 +81,4 @@ const EquipmentView = () => {
     );
 }
 
-export default EquipmentView;
+export default TechnologyView;

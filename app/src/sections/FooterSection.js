@@ -126,11 +126,11 @@ const FooterSection = () => {
                         </Typography>
                     </Box>
                 </Box>
-                <Box className='equipment'>
+                <Box className='technology'>
                     <Typography variant='h6' className='footer-heading'>
-                        Sprzęt
+                        Technologia
                     </Typography>
-                    <Box className='equipment-wrapper'>
+                    <Box className='technology-wrapper'>
                         <Typography
                             variant='span'
                             className='footer-text'

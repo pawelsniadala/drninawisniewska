@@ -10,7 +10,7 @@ import ContactHeadlinePartial from './partials/contact/ContactHeadlinePartial';
 import ContactMapPartials from './partials/contact/ContactMapPartials';
 import ContactFormPartials from './partials/contact/ContactFormPartials';
 
-const AboutView = () => {
+const ClinicView = () => {
     const theme = useTheme();
     const isMd = useMediaQuery(theme.breakpoints.up('md'), {
         defaultMatches: true,
@@ -82,4 +82,4 @@ const AboutView = () => {
     );
 };
 
-export default AboutView;
+export default ClinicView;

@@ -1,7 +1,7 @@
 .view-wrapper {
     .view-body {
         .body-wrapper {
-            &.equipment {
+            &.technology {
                 display: grid;
                 gap: 1.5rem;
                 grid-template-columns: repeat(3, 1fr);
@@ -48,7 +48,7 @@
                     }
                 }
 
-                .proposed-equipment {
+                .proposed-technology {
                     grid-column: span 1;
                 }
             }

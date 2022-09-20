@@ -105,7 +105,6 @@ const TeamSection = () => {
                             >
                                 <CardTeam
                                     key={index}
-                                    cardType={'card-team-section'}
                                     cardImage={item.image}
                                     cardBackground={item.background}
                                     cardTitle={item.title}

@@ -9,11 +9,11 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useTheme } from '@mui/material/styles';
 
 import Container from '../components/Container';
-import CardEquipment from '../components/CardEquipment';
+import CardTechnology from '../components/CardTechnology';
 
-import { equipment } from '../data/equipment';
+import { technology } from '../data/technology';
 
-const EquipmentSection = () => {
+const TechnologySection = () => {
     const theme = useTheme();
 
     const isMd = useMediaQuery(theme.breakpoints.up('md'), {
@@ -41,7 +41,7 @@ const EquipmentSection = () => {
                         gutterBottom
                         align={'center'}
                     >
-                        Sprzęt
+                        Technologia
                     </Typography>
                     <Typography
                         variant='h4'
@@ -71,7 +71,7 @@ const EquipmentSection = () => {
                             fontWeight: '400',
                         }}
                     >
-                        Używamy najnowszych technologii
+                        Dla twojej wygody korzystamy z najnowszych technologii
                     </Typography>
                     <Box
                         display='flex'
@@ -87,31 +87,31 @@ const EquipmentSection = () => {
                         >
                             <Button
                                 component={Link}
-                                to='/equipment'
+                                to='/technology'
                                 variant='contained'
                                 color='primary'
                                 size='large'
                                 fullWidth={isMd ? false : true}
                                 endIcon={<ArrowForwardIcon />}
                             >
-                                Zobacz nasz sprzęt
+                                Zobacz technologie
                             </Button>
                         </Box>
                     </Box>
                 </Box>
                 <Box className='section-body'>
-                    <Box className='card-wrapper equipment'>
-                        {equipment.slice(0, 4).map((item, index) => (
+                    <Box className='card-wrapper technology'>
+                        {technology.slice(0, 4).map((item, index) => (
                             <Box
                                 data-aos-delay={index * 150}
                                 data-aos-offset={100}
                                 data-aos-duration={600}
                                 data-aos={evenNumbers(index) ? 'fade-right' : 'fade-left'}
                             >
-                                <CardEquipment
+                                <CardTechnology
                                     key={index}
                                     cardEvenNumbers={evenNumbers(index)}
-                                    cardType={'card-equipment-section'}
+                                    // cardType={'card-technology-section'}
                                     cardImage={item.image}
                                     cardName={item.name}
                                     cardDescription={item.description}
@@ -126,4 +126,4 @@ const EquipmentSection = () => {
     );
 }
 
-export default EquipmentSection;
+export default TechnologySection;

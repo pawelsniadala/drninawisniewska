@@ -1,144 +1,3 @@
-.card-services-section {
-    .card-media {
-        height: 244px;
-    }
-
-    .card-content {
-        padding: 16px 20px 20px 20px;
-
-        .card-title {
-            margin: 0px 0px 0.35em;
-            letter-spacing: 0.00938em;
-            font-family: Roboto, Helvetica, Arial, sans-serif;
-            font-weight: 400;
-            font-size: 1.35rem;
-            color: rgba(0, 0, 0, 0.7);
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .card-description {
-            margin: 0;
-            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-            line-height: 1.5;
-            letter-spacing: 0.00938em;
-            text-align: left;
-            font-size: 14.5px;
-            font-weight: 300;
-            color: #606060;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .card-image-group {
-            margin-top: 10px;
-            justify-content: flex-end;
-
-            .card-image {
-                img {
-                    background-color: darken(#f5f5f5, 4%);
-                }
-            }
-        }
-    }
-
-    .card-actions {
-        display: flex;
-        justify-content: flex-start;
-        gap: 16px;
-        padding: 0px 20px 18px 20px;
-
-        .card-link {
-            font-family: Roboto, Helvetica, Arial, sans-serif;
-            padding: 0;
-            line-height: 1;
-            justify-content: flex-start;
-            background-color: transparent;
-            color: #D29A3E;
-            border-color: none;
-            font-size: 0.8525rem;
-            letter-spacing: 0.01857em;
-            // letter-spacing: 0.02857em;
-            font-weight: 400;
-            width: fit-content;
-
-            span span {
-                background-color: transparent !important;
-            }
-        }
-    }
-}
-
-.card-services-view {
-    @extend .card-services-section;
-
-    .card-media {
-        height: auto;
-    }
-
-    .card-content {
-        padding: 16px;
-        .card-title {
-    //         margin: 0px 0px 0.35em;
-    //         letter-spacing: 0.00938em;
-    //         font-family: Roboto, Helvetica, Arial, sans-serif;
-    //         font-weight: 400;
-                font-size: 1.25rem;
-    //         color: rgba(0, 0, 0, 0.7);
-    //         display: -webkit-box;
-    //         -webkit-line-clamp: 1;
-    //         -webkit-box-orient: vertical;
-    //         overflow: hidden;
-    //         text-overflow: ellipsis;
-        }
-
-        .card-description {
-            font-size: 0.855rem;
-    //         line-height: 1.43;
-            letter-spacing: 0.01071em;
-    //         color: #606060;
-    //         font-family: Roboto, Helvetica, Arial, sans-serif;
-    //         font-weight: 300;
-    //         display: -webkit-box;
-            // -webkit-line-clamp: 4;
-    //         -webkit-box-orient: vertical;
-    //         overflow: hidden;
-    //         text-overflow: ellipsis;
-        }
-    }
-
-    .card-actions {
-    //     display: flex;
-    //     justify-content: flex-start;
-    //     gap: 16px;
-        padding: 0 16px 8px 16px;
-
-        .card-link {
-    //         padding: 0;
-    //         line-height: 1;
-    //         justify-content: flex-start;
-    //         background-color: transparent;
-    //         color: #DBAF62;
-    //         border-color: none;
-            font-size: 0.8025rem;
-    //         letter-spacing: 0.01857em;
-    //         font-weight: 400;
-    //         width: fit-content;
-
-    //         span span {
-    //             background-color: transparent !important;
-    //         }
-        }
-    }
-}
-
-// LOHOIHIOHIHIOHIOHOIHOIHIOHIOHIOUHOIUHIOUHIOHOIUHOIHOIHOIHUIHIOUHOIHOI
 .card-services {
     text-decoration: none;
 
@@ -235,8 +94,7 @@
 
 
 
-.card-team-view,
-.card-team-section {
+.card-team {
     text-decoration: none;
     height: 100%;
     width: 100%;
@@ -360,7 +218,7 @@
     }
 }
 
-.card-equipment-section {
+.card-technology {
     text-decoration: none;
     height: 100%;
     width: 100%;
@@ -463,8 +321,7 @@
 }
 
 
-// PROPONOWANY SPRZĘT
-// PROPON
+
 
 .card-proposed {
     .card {

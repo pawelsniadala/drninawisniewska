@@ -12,7 +12,7 @@ import ScrollArrow from '../components/ScrollArrow';
 
 import NavSection from '../sections/NavSection';
 import HomeView from './HomeView';
-import AboutView from './AboutView';
+import ClinicView from './ClinicView';
 
 import ServicesView from './ServicesView';
 import ServicesDermatologyPartial from './partials/services/ServicesDermatologyPartial';
@@ -66,8 +66,8 @@ import TeamAnnaKulakowskaPartial from './partials/team/TeamAnnaKulakowskaPartial
 import TeamMiroslawMajewskiPartial from './partials/team/TeamMiroslawMajewskiPartial';
 import TeamKamilStepkowskiPartial from './partials/team/TeamKamilStepkowskiPartial';
 
-import EquipmentView from './EquipmentView';
-import EquipmentVectusPartial from './partials/equipment/EquipmentVectusPartial';
+import TechnologyView from './TechnologyView';
+import TechnologyVectusPartial from './partials/technology/TechnologyVectusPartial';
 
 import ContactView from './ContactView';
 
@@ -79,12 +79,7 @@ const Root = () => (
                 <Routes>
                     <Route exact path='/' element={<HomeView />} />
                     <Route exact path='/drninawisniewska/' element={<HomeView />} />
-                    {/* <Route path='/cast' element={<CastView />}>
-                        <Route path='/cast/all' element={<CastAllPartial />} />
-                        <Route path='/cast/main' element={<CastMainPartial />} />
-                        <Route path='/cast/other' element={<CastOtherPartial />} />
-                    </Route> */}
-                    <Route path='/about' element={<AboutView />} />
+                    <Route path='/clinic' element={<ClinicView />} />
                     <Route exact path='/services' element={<ServicesView />} />
                     <Route path='/services/dermatology' element={<ServicesDermatologyPartial />} />
                     <Route path='/services/aesthetic-medicine' element={<ServicesAestheticMedicinePartial />} />
@@ -136,8 +131,8 @@ const Root = () => (
                     <Route path='/team/miroslaw-majewski' element={<TeamMiroslawMajewskiPartial />} />
                     <Route path='/team/kamil-stepkowski' element={<TeamKamilStepkowskiPartial />} />
 
-                    <Route path='/equipment' element={<EquipmentView />} />
-                    <Route path='/equipment/vectus' element={<EquipmentVectusPartial />} />
+                    <Route path='/technology' element={<TechnologyView />} />
+                    <Route path='/technology/vectus' element={<TechnologyVectusPartial />} />
 
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>

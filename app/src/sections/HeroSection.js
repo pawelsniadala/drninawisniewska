@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import { alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
+import Container from '../components/Container';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-import HeroJpg from '../assets/hero4.jpg'
+// import HeroJpg from '../assets/hero.jpg'
 // import Container from '../components/Container';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 {/* <a href='https://pl.freepik.com/zdjecia/kobieta-twarz'>Kobieta twarz zdjęcie utworzone przez cookie_studio - pl.freepik.com</a> */}
 
@@ -32,165 +34,203 @@ const HeroSection = () => {
     });
 
     return (
-        <Box
-            className={'jarallax'}
-            data-jarallax
-            data-speed="0.2"
-            position={'relative'}
-            minHeight={{ xs: 400, sm: 500, md: 750 }}
-            // sx={{ height: 'calc(100vh)' }}
-            display={'flex'}
-            alignItems={'end'}
-            // marginTop={-13}
-            // paddingTop={13}
-            paddingBottom={5}
-            id="agency__portfolio-item--js-scroll"
-        >
-            <Box
-                className={'jarallax-img'}
-                sx={{
-                    position: 'absolute',
-                    objectFit: 'cover',
-                    /* support for plugin https://github.com/bfred-it/object-fit-images */
-                    fontFamily: 'object-fit: cover;',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    zIndex: -1,
-                    backgroundRepeat: 'no-repeat',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center center',
-                    // backgroundImage: 'url(https://assets.maccarianagency.com/backgrounds/img52.jpg)'
-                    backgroundImage: `url(${HeroJpg})`
-                }}
-            />
-            <Box
-                sx={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    width: 1,
-                    height: 1,
-                    // background: alpha('#161c2d', 0.3),
-                    // background: alpha('#161c2d', 0.25),
-                    zIndex: 1,
-                    backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.15), rgba(0,0,0,0.1))'
-                }}
-            />
-            <Container maxWidth="xl"
-                sx={{
-                    position: "relative",
-                    zIndex: 2
-                }}
-            >
-                <Box data-aos={isMd ? 'fade-right' : 'fade-up'}>
-                    <Typography
-                        variant="h3"
-                        gutterBottom
-                        sx={{
-                            fontWeight: 900,
-                            // color: 'common.white',
-                            lineHeight: 1,
-                            color: 'rgba(255, 255, 255, 0.95)',
+        <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div className="carousel-inner">
+                <div className="carousel-item active" data-bs-interval="5000" style={{ height: '670px' }}>
+                    {/* <img src={require('../assets/hero/hero1.jpg')} className="d-block carousel-img" alt="..."  /> */}
+                    <LazyLoadImage
+                        height={'100%'}
+                        width={'100%'}
+                        src={require('../assets/hero/hero1.jpg')}
+                        alt="..."
+                        effect="blur"
+                        style={{
+                            objectFit: 'cover',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center center',
                         }}
-                    >
-                        {/* <Typography
-                            sx={{
-                                textTransform: 'uppercase',
-                                color: '#d99507',
-                                fontWeight: 600,
-                                lineHeight: 2
-                            }}
-                            gutterBottom
-                        >
-                            Dr nauk medycznych
-                        </Typography> */}
-                        {/* Specjalista w zakresie<br/>
-                        Dermatologii i Wenerologii<br/>
-                        Lekarz medycyny estetycznej */}
-                    </Typography>
-
-                    {/* <Typography
-                        variant="h6"
-                        component="p"
-                        sx={{
-                            fontWeight: 400,
-                            // color: 'common.white',
-                            color: 'rgba(255, 255, 255, 0.85)',
+                    />
+                    {/* <div class="carousel-caption d-none d-md-block"> */}
+                    <div className="carousel-caption">
+                    <Container>
+                        <Box>
+                            <Typography
+                                variant="h4"
+                                align={'left'}
+                                data-aos={'fade-in'}
+                                data-aos-delay={'100'}
+                                gutterBottom
+                                sx={{
+                                    // fontFamily: 'Lato,sans-serif',
+                                    // fontFamily: 'Raleway, sans-serif',
+                                    fontFamily: 'Lato,sans-serif',
+                                    fontSize: '40px',
+                                    lineHeight: '1.208em',
+                                    letterSpacing: '.045em',
+                                    textTransform: 'uppercase',
+                                    fontWeight: '500',
+                                    color: '#fff'
+                                }}
+                            >
+                                Zadbaj o zdrową skórę
+                            </Typography>
+                            <Typography
+                                variant="h6"
+                                align={'left'}
+                                // color={'text.secondary'}
+                                // data-aos={'fade-right'}
+                                data-aos={'fade-in'}
+                                data-aos-delay={'100'}
+                                sx={{
+                                    fontSize: '18px',
+                                    fontWeight: '400',
+                                    color: '#fff',
+                                    fontFamily: 'Raleway, sans-serif',
+                                }}
+                            >
+                                Zapoznaj się z treścią naszych usług
+                            </Typography>
+                            <Box
+                                display="flex"
+                                flexDirection={{ xs: 'column', sm: 'row' }}
+                                alignItems={{ xs: 'stretched', sm: 'flex-start' }}
+                                justifyContent={'left'}
+                                marginTop={2}
+                                data-aos={'fade-in'}
+                                data-aos-delay={'100'}
+                            >
+                                <Box
+                                    className="link-contained-more"
+                                    marginTop={{ xs: 2, sm: 0 }}
+                                    width={{ xs: '100%', md: 'auto' }}
+                                >
+                                    <Button
+                                        component={Link}
+                                        // to={`/services`}
+                                        to={'/drninawisniewska/'}
+                                        variant="contained"
+                                        color="primary"
+                                        size="large"
+                                        fullWidth={isMd ? false : true}
+                                        endIcon={
+                                            <ArrowForwardIcon />
+                                        }
+                                    >
+                                        Zobacz nasze usługi
+                                    </Button>
+                                </Box>
+                            </Box>
+                        </Box>
+                        </Container>
+                    </div>
+                </div>
+                <div className="carousel-item" data-bs-interval="5000" style={{ height: '670px' }}>
+                    {/* <img src={require('../assets/hero/hero2.jpg')} className="d-block carousel-img" alt="..."  /> */}
+                    <LazyLoadImage
+                        height={'100%'}
+                        width={'100%'}
+                        src={require('../assets/hero/hero1.jpg')}
+                        alt="..."
+                        effect="blur"
+                        style={{
+                            objectFit: 'cover',
+                            backgroundRepeat: 'no-repeat',
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center center',
                         }}
-                    >
-                        W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia chorób skóry.<br/>
-                        Dodatkowo oferujemy usługi takich specjalistów jak: kardiolog, ortopeda, hematolog, fizjoterapeuta<br/>
-                        chirurg naczyniowy, dietetyk kliczniczny oraz ginekolog-endokrynolog.
-                    </Typography> */}
+                    />
+                    <div className="carousel-caption d-none d-md-block">
+                    <Container>
+                        <Box>
+                            <Typography
+                                variant="h4"
+                                align={'left'}
+                                // data-aos={'fade-right'}
+                                // data-aos={'zoom-in'}
 
-                    <Box
-                        // className="link-contained"
-                        display="flex"
-                        flexDirection={{ xs: 'column', sm: 'row' }}
-                        alignItems={{ xs: 'stretched', sm: 'flex-start' }}
-                        marginTop={4}
-                    >
-                        {/* <Box
-                            className="link-contained"
-                            marginTop={{ xs: 2, sm: 0 }}
-                            width={{ xs: '100%', md: 'auto' }}
-                        >
-                            <Button
-                                component={Link}
-                                to={`/services`}
-                                variant="contained"
-                                color="primary"
-                                size="large"
-                                fullWidth={isMd ? false : true}
-                                endIcon={
-              <Box
-                component={'svg'}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="#fff"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                width={24}
-                height={24}
-              >
+                                // data-aos={'zoom-in'}
+                                // data-aos-delay={100}
+                                // data-aos-offset={100}
+                                // data-aos-duration={1200}
 
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M17 8l4 4m0 0l-4 4m4-4H3"
-                />
-              </Box>
-            }
+                                gutterBottom
+                                sx={{
+                                    // fontFamily: 'Lato,sans-serif',
+                                    // fontFamily: 'Raleway, sans-serif',
+                                    fontFamily: 'Lato,sans-serif',
+                                    fontSize: '40px',
+                                    lineHeight: '1.208em',
+                                    letterSpacing: '.045em',
+                                    textTransform: 'uppercase',
+                                    fontWeight: '500',
+                                    color: '#fff'
+                                }}
                             >
-                                Zapoznaj się z ofertą
-                            </Button>
-                        </Box> */}
-                        {/* <Box
-                            className="link-outlined"
-                            marginTop={{ xs: 2, sm: 0 }}
-                            marginLeft={{ sm: 2 }}
-                            width={{ xs: '100%', md: 'auto' }}
-                        >
-                            <Button
-                                component={Link}
-                                to={`/contact`}
-                                variant="outlined"
-                                color="primary"
-                                size="large"
-                                fullWidth={isMd ? false : true}
+                                Zadbaj o zdrową skórę
+                            </Typography>
+                            <Typography
+                                variant="h6"
+                                align={'left'}
+                                // color={'text.secondary'}
+                                // data-aos={'fade-right'}
+                                sx={{
+                                    fontSize: '18px',
+                                    fontWeight: '400',
+                                    color: '#fff',
+                                    fontFamily: 'Raleway, sans-serif',
+                                }}
                             >
-                                Napisz wiadomość
-                            </Button>
-                        </Box> */}
-                    </Box>
-                </Box>
-            </Container>
-        </Box>
+                                Zapoznaj się z treścią naszych usług
+                            </Typography>
+                            <Box
+                                display="flex"
+                                flexDirection={{ xs: 'column', sm: 'row' }}
+                                alignItems={{ xs: 'stretched', sm: 'flex-start' }}
+                                justifyContent={'left'}
+                                marginTop={2}
+                            >
+                                <Box
+                                    className="link-contained-more"
+                                    marginTop={{ xs: 2, sm: 0 }}
+                                    width={{ xs: '100%', md: 'auto' }}
+                                >
+                                    <Button
+                                        component={Link}
+                                        // to={`/services`}
+                                        to={`/drninawisniewska/`}
+                                        variant="contained"
+                                        color="primary"
+                                        size="large"
+                                        fullWidth={isMd ? false : true}
+                                        endIcon={
+                                            <ArrowForwardIcon />
+                                        }
+                                    >
+                                        Zobacz nasze usługi
+                                    </Button>
+                                </Box>
+                            </Box>
+                        </Box>
+                        </Container>
+                    </div>
+                </div>
+                {/* <div className="carousel-item">
+                <img src={require('../assets/hero/hero1.jpg')} className="d-block w-100" alt="..."  />
+                </div> */}
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                <span className="visually-hidden">Next</span>
+            </button>
+        </div>
+
     );
 }
 
 export default HeroSection;
+// style={{ height: 'calc(100vh - 122px)' }}

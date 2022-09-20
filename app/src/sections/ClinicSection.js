@@ -1,22 +1,25 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
+import VisibilitySensor from 'react-visibility-sensor';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CountUp from 'react-countup';
+
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Container from '../components/Container'
-import VisibilitySensor from 'react-visibility-sensor';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Lightbox from 'react-image-lightbox';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import { about } from '../data/about';
 
-const AboutSection = () => {
+import Container from '../components/Container'
+
+import { clinic } from '../data/clinic';
+
+const ClinicSection = () => {
     const theme = useTheme();
 
     const isMd = useMediaQuery(theme.breakpoints.up('md'), {
@@ -48,7 +51,7 @@ const AboutSection = () => {
 
     return (
         <Box
-            className='about-section'
+            className='clinic-section'
             sx={{
                 // position: 'relative',
                 // backgroundColor: '#f7faff',
@@ -124,8 +127,8 @@ const AboutSection = () => {
                             >
                                 <Button
                                     component={Link}
-                                    // to={`/about`}
-                                    to={`/drninawisniewska/`}
+                                    to={`/clinic`}
+                                    // to={`/drninawisniewska/`}
                                     variant="contained"
                                     color="primary"
                                     size="large"
@@ -149,7 +152,7 @@ const AboutSection = () => {
                                 gap={4}
                                 sx={{ overflowY: 'hidden' }}
                             >
-                                {about.pictures.map((item, i) => (
+                                {clinic.pictures.map((item, i) => (
                                     <ImageListItem
                                         key={i}
                                         cols={item.cols}
@@ -180,12 +183,12 @@ const AboutSection = () => {
                         </Box>
                         {viewerIsOpen && (
                             <Lightbox
-                                mainSrc={about.pictures[currentImage].src}
-                                nextSrc={about.pictures[(currentImage + 1) % about.pictures.length].src}
-                                prevSrc={about.pictures[(currentImage + about.pictures.length - 1) % about.pictures.length].src}
+                                mainSrc={clinic.pictures[currentImage].src}
+                                nextSrc={clinic.pictures[(currentImage + 1) % clinic.pictures.length].src}
+                                prevSrc={clinic.pictures[(currentImage + clinic.pictures.length - 1) % clinic.pictures.length].src}
                                 onCloseRequest={() => closeLightbox()}
-                                onMovePrevRequest={() => setCurrentImage((currentImage + about.pictures.length - 1) % about.pictures.length)}
-                                onMoveNextRequest={() => setCurrentImage((currentImage + 1) % about.pictures.length)}
+                                onMovePrevRequest={() => setCurrentImage((currentImage + clinic.pictures.length - 1) % clinic.pictures.length)}
+                                onMoveNextRequest={() => setCurrentImage((currentImage + 1) % clinic.pictures.length)}
                                 reactModalStyle={{ overlay: { zIndex: 1500 } }}
                             />
                         )}
@@ -193,7 +196,7 @@ const AboutSection = () => {
                 </Box>
                 <Box sx={{ paddingTop: "44px" }}>
                     <Grid container spacing={2}>
-                        {about.statistics.map((item, i) => (
+                        {clinic.statistics.map((item, i) => (
                             <Grid key={i} item xs={12} md={4} >
                                 <Typography variant="h3" gutterBottom>
                                     <Box>
@@ -242,4 +245,4 @@ const AboutSection = () => {
     );
 }
 
-export default AboutSection;
+export default ClinicSection;

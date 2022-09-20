@@ -12,8 +12,8 @@ export const nav = {
         {
             id: "09a7d739-42f1-4147-a2ed-79bc2ac7b2d6",
             title: "Klinika",
-            // path: "/about"
-            path: "/drninawisniewska/"
+            path: "/clinic"
+            // path: "/drninawisniewska/"
         },
         {
             id: "0417e32b-d424-460f-af97-dadc8efa5bde",
@@ -39,15 +39,15 @@ export const nav = {
         },
         {
             id: "ca385125-35d1-469e-b5a7-b800e26ed0d0",
-            title: "Sprzęt",
-            path: "/equipment"
+            title: "Technologia",
+            path: "/technology"
             // path: "/drninawisniewska/"
         },
         {
             id: "2a385c29-263e-49b8-a18a-c4f7f025c808",
             title: "Kontakt",
-            // path: "/contact"
-            path: "/drninawisniewska/"
+            path: "/contact"
+            // path: "/drninawisniewska/"
         },
     ]
 };

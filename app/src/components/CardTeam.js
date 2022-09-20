@@ -16,7 +16,6 @@ import InstagramSvg from '../assets/svg/InstagramSvg';
 
 const CardTeam = ({
     cardPath,
-    cardType,
     cardImage,
     cardBackground,
     cardTitle,
@@ -25,7 +24,7 @@ const CardTeam = ({
 }) => {
     return (
         <Box
-            className={cardType}
+            className='card-team'
             component={Link}
             to={cardPath}
         >

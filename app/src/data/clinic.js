@@ -1,41 +1,41 @@
-import about1 from "../assets/about/about1.jpg";
-import about2 from "../assets/about/about2.jpg";
-import about3 from "../assets/about/about3.jpg";
-import about4 from "../assets/about/about4.jpg";
+import clinic1 from "../assets/clinic/clinic1.jpg";
+import clinic2 from "../assets/clinic/clinic2.jpg";
+import clinic3 from "../assets/clinic/clinic3.jpg";
+import clinic4 from "../assets/clinic/clinic4.jpg";
 
-export const about = {
+export const clinic = {
     pictures: [
         {
-            src: about1,
-            source: about1,
+            src: clinic1,
+            source: clinic1,
             rows: 1,
             cols: 2,
             order: 1
         },
         {
-            src: about2,
-            source: about2,
+            src: clinic2,
+            source: clinic2,
             rows: 1,
             cols: 1,
             order: 2,
             link: `<a href="https://pl.freepik.com/darmowe-zdjecie/mloda-kobieta-lezy-z-zamknietymi-oczami-procedura-kosmetologa_7168639.htm#query=cosmetology&position=45&from_view=search">Image by ArthurHidden</a> on Freepik`
         },
         {
-            src: about3,
-            source: about3,
+            src: clinic3,
+            source: clinic3,
             rows: 1,
             cols: 1,
             order: 3,
             link: `<a href="https://pl.freepik.com/darmowe-zdjecie/kobieta-na-kosmetologa-dokonywanie-zabiegow-kosmetycznych_12178066.htm#query=cosmetology&position=48&from_view=search#position=48&query=cosmetology">Image by senivpetro</a> on Freepik`
         },
         {
-            src: about4,
-            source: about4,
+            src: clinic4,
+            source: clinic4,
             rows: 1,
             cols: 2,
             order: 4,
             link: `<a href="https://pl.freepik.com/darmowe-zdjecie/uroda-i-spa_10788319.htm#page=9&query=cosmetology&position=1&from_view=search">Image by Racool_studio</a> on Freepik`
-        },
+        }
     ],
     statistics: [
         {
@@ -52,6 +52,6 @@ export const about = {
             title: 99,
             subtitle: '99% zadowolonych klientów',
             suffix: '%',
-        },
+        }
     ]
 };

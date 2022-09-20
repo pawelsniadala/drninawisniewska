@@ -4,15 +4,15 @@ import { useEffect } from "react";
 // import CreatorSection from "../sections/CreatorSection";
 // import SummarySection from "../sections/SummarySection";
 // import PhotoSection from "../sections/PhotoSection";
-import AboutSection from "../sections/AboutSection";
+import ClinicSection from "../sections/ClinicSection";
 // import HeroSection from "../sections/HeroSection";
-import HeroSection2 from "../sections/HeroSection2";
+import HeroSection from "../sections/HeroSection";
 import ServicesSection from "../sections/ServicesSection";
 import PriceSection from '../sections/PriceSection';
 // import ReviewsSection from "../sections/ReviewsSection";
 // import ReviewsSection2 from "../sections/ReviewsSection2";
 import TeamSection from "../sections/TeamSection";
-import EquipmentSection from "../sections/EquipmentSection";
+import TechnologySection from "../sections/TechnologySection";
 // import ContactSection from "../sections/ContactSection";
 
 const HomeView = () => {
@@ -24,14 +24,14 @@ const HomeView = () => {
         <div className="home-view">
             {/* <p>home-view</p> */}
             {/* <HeroSection /> */}
-            <HeroSection2 />
-            <AboutSection />
+            <HeroSection />
+            <ClinicSection />
             <ServicesSection />
           
            
             <PriceSection />
             <TeamSection />
-            <EquipmentSection />
+            <TechnologySection />
 
         
           
