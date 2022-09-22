@@ -10,6 +10,7 @@ import { useTheme } from '@mui/material/styles';
 
 import Container from '../components/Container';
 import CardTechnology from '../components/CardTechnology';
+import CardTechnology2 from '../components/CardTechnology2';
 
 import { technology } from '../data/technology';
 
@@ -25,7 +26,11 @@ const TechnologySection = () => {
     }
 
     return (
-        <Box sx={{ backgroundColor: '#fbfbfd'}}>
+        <Box
+            component='section'
+            className='technology-section'
+            sx={{ backgroundColor: '#fff'}}
+        >
             <Container>
                 <Box marginBottom={4}>
                     <Typography
@@ -71,7 +76,8 @@ const TechnologySection = () => {
                             fontWeight: '400',
                         }}
                     >
-                        Dla twojej wygody korzystamy z najnowszych technologii
+                        {/* Dla twojej wygody korzystamy z najnowszej technologii medycznej */}
+                        Dla Twojego komfortu korzystamy z najnowszych technologii medycznych
                     </Typography>
                     <Box
                         display='flex'
@@ -94,21 +100,20 @@ const TechnologySection = () => {
                                 fullWidth={isMd ? false : true}
                                 endIcon={<ArrowForwardIcon />}
                             >
-                                Zobacz technologie
+                                Zobacz nasz sprzęt
                             </Button>
                         </Box>
                     </Box>
                 </Box>
                 <Box className='section-body'>
-                    <Box className='card-wrapper technology'>
+                    <Box className='card-wrapper technology section'>
                         {technology.slice(0, 4).map((item, index) => (
-                            <Box data-aos={evenNumbers(index) ? 'fade-right' : 'fade-left'}>
-                                <CardTechnology
+                            <Box>
+                                <CardTechnology2
                                     key={index}
-                                    cardEvenNumbers={evenNumbers(index)}
-                                    cardImage={item.image}
-                                    cardName={item.name}
-                                    cardDescription={item.description}
+                                    cardMode="section"
+                                    cardImage={item.imageMedium}
+                                    cardTitle={item.title}
                                     cardPath={item.path}
                                 />
                             </Box>

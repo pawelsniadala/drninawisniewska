@@ -4,16 +4,11 @@ import {
     Route
 } from 'react-router-dom';
 import MainTemplate from '../templates/MainTemplate';
-import FooterSection from '../sections/FooterSection';
-
 import ScrollArrow from '../components/ScrollArrow';
-// import Modal from '../components/Modal';
-// import Toast from '../components/Toast';
-
 import NavSection from '../sections/NavSection';
+import FooterSection from '../sections/FooterSection';
 import HomeView from './HomeView';
 import ClinicView from './ClinicView';
-
 import ServicesView from './ServicesView';
 import ServicesDermatologyPartial from './partials/services/ServicesDermatologyPartial';
 import ServicesAestheticMedicinePartial from './partials/services/ServicesAestheticMedicinePartial';
@@ -28,7 +23,6 @@ import ServicesGynecologyPartial from './partials/services/ServicesGynecologyPar
 import ServicesOrthopedicsPartial from './partials/services/ServicesOrthopedicsPartial';
 import ServicesVascularSurgeryPartial from './partials/services/ServicesVascularSurgeryPartial';
 import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
-
 import PricesView from './PricesView';
 import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
 import PricesAestheticMedicinePartials from './partials/prices/PricesAestheticMedicinePartials';
@@ -43,7 +37,6 @@ import PricesGynecologyPartials from './partials/prices/PricesGynecologyPartials
 import PricesOrthopedicsPartials from './partials/prices/PricesOrthopedicsPartials';
 import PricesVascularSurgeryPartials from './partials/prices/PricesVascularSurgeryPartials';
 import PricesClinicalDietitianPartials from './partials/prices/PricesClinicalDietitianPartials';
-
 import TeamView from './TeamView';
 import TeamNinaWisniewskaPartial from './partials/team/TeamNinaWisniewskaPartial';
 import TeamJustynaFilipekPartial from './partials/team/TeamJustynaFilipekPartial';
@@ -65,9 +58,10 @@ import TeamAleksandraGorczynskaPartial from './partials/team/TeamAleksandraGorcz
 import TeamAnnaKulakowskaPartial from './partials/team/TeamAnnaKulakowskaPartial';
 import TeamMiroslawMajewskiPartial from './partials/team/TeamMiroslawMajewskiPartial';
 import TeamKamilStepkowskiPartial from './partials/team/TeamKamilStepkowskiPartial';
-
 import TechnologyView from './TechnologyView';
 import TechnologyVectusPartial from './partials/technology/TechnologyVectusPartial';
+import TechnologyIcooneLaserMed2Partial from './partials/technology/TechnologyIcooneLaserMed2Partial';
+import TechnologyFonsSvrFractionLaserCo2Partial from './partials/technology/TechnologyFonsSvrFractionLaserCo2Partial';
 
 import ContactView from './ContactView';
 
@@ -133,12 +127,12 @@ const Root = () => (
 
                     <Route path='/technology' element={<TechnologyView />} />
                     <Route path='/technology/vectus' element={<TechnologyVectusPartial />} />
+                    <Route path='/technology/icoone-laser-med2' element={<TechnologyIcooneLaserMed2Partial />} />
+                    <Route path='/technology/fons-svr-fraction-laser-co2' element={<TechnologyFonsSvrFractionLaserCo2Partial />} />
 
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>
             </main>
-            {/* <Modal /> */}
-            {/* <Toast /> */}
             <FooterSection />
             <ScrollArrow />
         </Router>

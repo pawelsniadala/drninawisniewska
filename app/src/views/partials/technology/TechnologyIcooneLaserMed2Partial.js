@@ -14,9 +14,9 @@ import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
 import { technology } from '../../../data/technology';
-import { vectus } from '../../../data/technology';
+import { icooneLaserMed2 } from '../../../data/technology';
 
-const TechnologyVectusPartial = () => {
+const TechnologyIcooneLaserMed2Partial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -47,13 +47,13 @@ const TechnologyVectusPartial = () => {
                                 Technologia
                                 </Link>
                                 <Typography color='text.primary'>
-                                    Vectus
+                                    {icooneLaserMed2.title}
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Vectus™
+                                {icooneLaserMed2.title}
                             </Typography>
                         </Box>
                     </Container>
@@ -63,17 +63,14 @@ const TechnologyVectusPartial = () => {
                         <Box className='technology-description'>
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
-                                    Vectus™ to produkt amerykańskiej firmy Palomar, która stworzyła pierwszą na świecie technologię laserowego usuwania owłosienia, do dziś chronioną patentem. Vectus™ jest owocem trwających kilkanaście lat doświadczeń i badań nad udoskonaleniem systemu lasera diodowego. Wykorzystano w nim wiele nowatorskich rozwiązań decydujących o wyjątkowej skuteczności, bezpieczeństwie i komforcie pacjenta.
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    Vectus™ jest najnowszym, najszybszym i zarazem najmocniejszym systemem do depilacji laserowej na świecie. Laser diodowy Palomar Vectus™ posiada certyfikat bezpieczeństwa i skuteczności wydany przez Amerykański Urząd ds. Żywności i Leków FDA, honorowany na całym  świecie, dopuszczający je na rynek jako urządzenia do trwałego usuwania włosów oraz przebarwień.
+                                    Projekt Icoone® jest inspirowany intuicją profesora Jean-Claude'a Guimberteau, specjalisty w dziedzinie chirurgii rekonstrukcyjnej, który poświęcił wiele lat na obserwację skóry w zakresie struktury tkanki łącznej: Guimberteau wykazał, że skóra musi być pojmowana jako żywa, ciągła materia, a tkanka podskórna składa się z sieci mikrowakuoli, które tworzą funkcjonalną jednostkę struktury tkanki. Ta nowa wizja całkowicie zastępuje tradycyjną koncepcję tkanki warstwowej, a tym samym narzuca potrzebę nowego sposobu leczenia skóry.
                                 </Typography>
                             </Box>
                             <Box marginBottom={3}>
                                 <LazyLoadImage
                                     height={'100%'}
                                     width={'100%'}
-                                    src={vectus.imageLarge}
+                                    src={icooneLaserMed2.imageLarge}
                                     alt='Remote working'
                                     effect='blur'
                                     style={{
@@ -82,52 +79,38 @@ const TechnologyVectusPartial = () => {
                                         width: '100%',
                                         height: '100%',
                                         maxHeight: '400px',
-                                        objectPosition: '50% 67%',
+                                        objectPosition: '50% 80%',
+                                        backgroundColor: '#e6e6e6'
                                     }}
                                 />
                             </Box>
                             <Box marginBottom={3}>
-                                <Typography className='paragraph'>
-                                    Urządzenie Vectus™, jako jedyne na świecie, wyposażone jest w inteligentny czytnik poziomu melaniny w skórze - Skintel™. W praktyce oznacza to, że przed zabiegiem czytnik przykładany jest do skóry pacjenta w tym miejscu, z którego usuwane będzie owłosienie. Skintel™ określa poziom melaniny i na podstawie tego odczytu ustawia w urządzeniu indywidualnie dobrane parametry zabiegu. Korzyści wynikających z tego jest kilka.
-                                </Typography>
-                                <Grid container spacing={1} sx={{ marginTop: 1 }}>
-                                    {[
-                                        'Zabieg jest bardziej efektywny.',
-                                        'Możemy zastosować wyższe parametry, jednak ciągle bezpieczne dla pacjenta. Zabieg jest bardziej efektywny.',
-                                        'Wyklucza ryzyko poparzenia.'
-                                    ].map((item, index) => (
-                                        <ListBulleted
-                                            ListBulletedItem={item}
-                                            ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundColor: '#28a745' }}
-                                        />
-                                    ))}
-                                </Grid>
-                            </Box>
-                            <Box marginBottom={3}>
-                                <Typography className='paragraph'>
-                                    Na skuteczność zabiegu wpływa również opatentowana technologia Photon Recycling , która polega na ponownym wykorzystaniu światła, w naturalny sposób odbijającego się od skóry. Światło, dzięki wbudowanym w głowicy lustrom, powraca , co powoduje, że impuls światła wykorzystywany jest w stu procentach radykalnie zwiększając efektywność procedury.
+                                <Typography variant={'h5'} className='header'>
+                                    Zaskakujące rezultaty
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Komfort pacjenta zapewnia nie tylko bardzo szybkie tempo pracy lasera (dla przykładu redukcję owłosienia na plecach można wykonać w zaledwie 3 minuty), ale również zastosowana w głowicy technologia Advanced Contact Cooling. Oznacza to, że skóra jest chłodzona przed, w trakcie i po emisji światła.
+                                    Dzięki ekskluzywnemu, rozszerzonemu na skalę międzynarodową patentowi Roboderm®, Icoone® oferuje w pełni konfigurowalny zabieg odmładzania skóry i modelowania sylwetki. Roboderm® jest unikalną technologią na świecie zdolną do generowania Multi Mikropęcherzykowej Stymulacji (M.M.S.A.) za pomocą zestawu mikrootworów obecnych na powierzchni mikrostymulatorów znajdujących się w głowicach zabiegowych Icoone®. Mikrostymulatory obracają się tam i z powrotem, precyzyjnie i skutecznie stymulując skórę na całej powierzchni, docierając do najmniejszych jej części i generując do 21 600 mikrostymulacji na minutę.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Kontaktowe chłodzenie powoduje, że wyczuwalność ciepła w trakcie zabiegu jest minimalna. Pozwala to zastosować wyższą energię w trakcie zabiegu, a tym samym w znaczący sposób zwiększyć jego skuteczność.
+                                    Działanie stymulujące odbywa się na 3 powierzchniach jednocześnie: 2 niezależne, zmotoryzowane mikrostymulatory, które poruszają się jednocześnie na tym samym obszarze, uzupełniając swoje działanie i generując gimnastykę tkankową z efektem ujędrniającym oraz 1 centralna komora umieszczona pomiędzy mikrostymulatorami, która oddziałuje dogłębniej na tkankę tłuszczową. Dlatego też technologia Roboderm® umożliwia potrojenie powierzchni stymulacji, uzyskując głębszą i bardziej efektywną stymulację skóry.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Potrójna powierzchnia ssąca pozwala również na lepsze przemieszczanie głowic, dzięki czemu operator nie musi wywierać nacisku. W ten sposób obie ręce mogą być używane jednocześnie, co zapewnia klientowi bardziej naturalną i delikatną stymulację, bez zmęczenia operatora.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Icoone® jest w rzeczywistości technologią, która umożliwia dwuręczny symetryczny zabieg, pracując jednocześnie po obu stronach ciała. Rezultatem jest niezwykle dokładny, wielowymiarowy masaż leczonej powierzchni przy zachowaniu ogromnego szacunku dla skóry. Icoone® to nowa metoda leczenia skóry i przylegających do niej tkanek, która pozwala na precyzyjną pracę na tkance łącznej, likwiduje cellulit, zlokalizowany tłuszcz, luźną skórę, obrzęki limfatyczne, blizny, zaparcia, sztywność mięśni, zapalenia ścięgien oraz wszelkie objawy starzenia się skóry.
                                 </Typography>
                             </Box>
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header'>
-                                    Jak się przygotować do zabiegu depilacji laserowej
+                                    Wpływ na tkanki
                                 </Typography>
                                 <Grid container spacing={1} sx={{ marginTop: 1 }}>
                                     {[
-                                        'Przed zabiegiem należy dokładnie ogolić maszynką obszar, na którym będzie przeprowadzany zabieg. Do 4 tygodni przed zabiegiem zabronione jest usuwanie włosków pęsetą, woskiem, depilatorem.',
-                                        'Obszar skóry, który ma być poddany depilacji laserowej, nie może być podrażniony ani przesuszony.',
-                                        '3 tygodnie przed zabiegiem epilacji Vectus należy pamiętać o odstawieniu wszelkich leków i ziół.',
-                                        'Po kuracji antybiotykami należy odczekać ok. 2 tyg. od momentu odstawienia leków.',
-                                        '4 tygodnie przed zabiegiem nie należy opalać skóry.',
-                                        'Przed i w trakcie serii zabiegów epilacji laserowej nie wolno korzystać z solarium lub samoopalaczy.',
-                                        'Tydzień przed wykonywanym zabiegiem nie należy wykonywać zabiegów uszczających.'
+                                        'W naturalny sposób rozkłada komórki tłuszczowe do glicerolu i wolnych kwasów tłuszczowych.',
+                                        'Redukuje cellulit poprzez zmniejszenie objętości adipocytów.',
+                                        'Przyśpiesza metabolizm komórkowy.',
+                                        'Przyśpiesza metabolizm.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             ListBulletedItem={item}
@@ -139,19 +122,14 @@ const TechnologyVectusPartial = () => {
                             </Box>
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header'>
-                                    Zalecenia pozabiegowe
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    Bezpośrednio po zabiegu skóra może być delikatnie zaczerwieniona. Do ustąpienia zaczerwienienia zaleca się unikanie poniższych czynności:
+                                    Zalety Icoone® Laser Med 2
                                 </Typography>
                                 <Grid container spacing={1} sx={{ marginTop: 1 }}>
                                     {[
-                                        'Nakładania kosmetyków na obszar zabiegu.',
-                                        'Pływania, zwłaszcza w basenach sztucznych zawierających substancje chemiczne.',
-                                        'Gorących kąpieli w wannie, wizyty w jacuzzi czy saunie.',
-                                        'Czynności, które nasilają pocenie się lub podnoszą temperaturę ciała.',
-                                        'Wystawiania na słońce lub opalanie skóry po zabiegu. Należy nałożyć na skórę kosmetyk z filtrem SPF 45 lub wyższym, aby zapobiec zmianie kolorytu skóry.',
-                                        'Intensywnego szorowania oraz używania kosmetyków uszczających na obszarze zabiegu.'
+                                        'Nie niszczy błony komórek tłuszczowych, a jedynie redukuje w sposób znaczny i kontrolowany ich zawartość i objętość.',
+                                        'Mocne działanie na głęboko zlokalizowany tłuszcz.',
+                                        'Nie uszkadza sąsiednich tkanek i naczyń krwionośnych.',
+                                        'Zabieg jest bezbolesny.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             ListBulletedItem={item}
@@ -163,15 +141,17 @@ const TechnologyVectusPartial = () => {
                             </Box>
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header'>
-                                    Vectus™ gwarantuje
+                                    Icoone® zapewnia 3-stopniową stymulację
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Dzięki takiemu mechanizmowi działania pobudzamy skórę na poziomie naskórka, skóry właściwej i tkanki podskórnej oraz dużo efektywniej oddziałujemy na komórki tłuszczowe i tkankę mięśniową. Zapewnia to znakomite efekty zarówno w działaniu modelującym sylwetkę i ujędrniającym skórę, jak i w leczeniu problemów mięśniowych lub zastojów limfatycznych.
                                 </Typography>
                                 <Grid container spacing={1} sx={{ marginTop: 1 }}>
-                                {[
-                                    'Skuteczne zabiegi',
-                                    'Krótki czas zabiegów',
-                                    'Bezpieczeństwo i komfort',
-                                    '100% satysfakcji pacjenta'
-                                ].map((item, index) => (
+                                    {[
+                                        'Podciśnienie na rolkach wywołuje efekt drenażowy.',
+                                        'Zassanie do komory głowicy stymuluję skórę i system włókien MCDS.',
+                                        'Działanie pulsacyjne ICOONE® pobudza układ neurowegetatywny.'
+                                    ].map((item, index) => (
                                         <ListBulleted
                                             ListBulletedItem={item}
                                             ListBulletedKey={index}
@@ -182,29 +162,28 @@ const TechnologyVectusPartial = () => {
                             </Box>
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header'>
-                                    Przeciwwskazania
+                                    Idealne rozwiązanie dla osób:
                                 </Typography>
                                 <Grid container spacing={1} sx={{ marginTop: 1 }}>
-                                {[
-                                    'Świeża opalenizna',
-                                    'Ciąża',
-                                    'Laktacja',
-                                    'Przerwana ciągłość naskórka',
-                                    'Epilepsja',
-                                    'Przyjmowanie leków, w tym ziół fotouczulających',
-                                    'Terapia retinoidami (witamina A)',
-                                    'Przyjmowanie leków obniżających krzepliwość krwi',
-                                    'Bielactwo',
-                                    'Cukrzyca',
-                                    'Bliznowce',
-                                    'Aktywne infekcje skórne',
-                                    'Rozrusznik serca',
-                                    'Niedawno przebyte zabiegi chirurgiczne',
-                                ].map((item, index) => (
+                                    {[
+                                        'Z problemami naczyniowymi i obrzękami',
+                                        'Pragnących nadać swojej twarzy młody i zdrowy wygląd bez ingerencji chirurga',
+                                        'Bezskutecznie walczących z głęboko zlokalizowanym tłuszczem, trudnym do likwidacji za pomocą diety i ćwiczeń fizycznych',
+                                        'Przed i po zabiegach chirurgicznych',
+                                        'Mających bóle mięśni, bóle pleców i karku spowodowane nieprawidłową postawą ciała',
+                                        'Cierpiących na zaparcia',
+                                        'Kobiet po porodach',
+                                        'Uprawiających wyczynowo lub amatorsko sport',
+                                        'Które żyją intensywnie i oczekują masażu, który zregeneruje ich ciało i umysł',
+                                        'Mających problem z luźną skórą',
+                                        'Walczących z nadwagą i cellulitem',
+                                        'Po liposukcji',
+                                        'Mających blizny pooperacyjne i pooparzeniowe'
+                                    ].map((item, index) => (
                                         <ListBulleted
                                             ListBulletedItem={item}
                                             ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundColor: '#dc3545' }}
+                                            ListBulletedStyle={{ backgroundColor: '#28a745' }}
                                         />
                                     ))}
                                 </Grid>
@@ -212,7 +191,7 @@ const TechnologyVectusPartial = () => {
                         </Box>
                         <Box className='proposed-technology'>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.length ? technology.filter(item => item.designation !== 'vectus').map((item, index) => (
+                                {technology.length ? technology.filter(item => item.designation !== 'fonsSvrLaserFrakcyjnyCo2').map((item, index) => (
                                     <CardProposed
                                         key={index}
                                         cardTitle={item.title}
@@ -232,4 +211,4 @@ const TechnologyVectusPartial = () => {
     );
 }
 
-export default TechnologyVectusPartial;
+export default TechnologyIcooneLaserMed2Partial;

@@ -51,6 +51,7 @@ const ClinicSection = () => {
 
     return (
         <Box
+            component='section'
             className='clinic-section'
             sx={{
                 // position: 'relative',

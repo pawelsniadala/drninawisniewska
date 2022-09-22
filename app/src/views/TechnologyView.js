@@ -8,7 +8,8 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
-import CardTechnology from '../components/CardTechnology';
+// import CardTechnology from '../components/CardTechnology';
+import CardTechnology2 from '../components/CardTechnology2';
 
 import { technology } from '../data/technology';
 
@@ -63,13 +64,14 @@ const TechnologyView = () => {
                 </Box>
                 <Box className='view-body'>
                     <Container className='body-wrapper'>
-                        <Box className='card-wrapper technology'>
+                        <Box className='card-wrapper technology section'>
                             {technology.map((item, index) => (
-                                <CardTechnology
-                                    cardEvenNumbers={evenNumbers(index)}
-                                    cardImage={item.image}
-                                    cardName={item.name}
-                                    cardDescription={item.description}
+                          
+                                   <CardTechnology2
+                                    key={index}
+                                    cardMode="view"
+                                    cardImage={item.imageMedium}
+                                    cardTitle={item.title}
                                     cardPath={item.path}
                                 />
                             ))}
@@ -82,3 +84,10 @@ const TechnologyView = () => {
 }
 
 export default TechnologyView;
+{/* <CardTechnology
+cardEvenNumbers={evenNumbers(index)}
+cardImage={item.imageSmall}
+cardName={item.name}
+cardDescription={item.description}
+cardPath={item.path}
+/> */}

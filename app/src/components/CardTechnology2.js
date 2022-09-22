@@ -12,7 +12,8 @@ import CardMedia from '@mui/material/CardMedia';
 import AvatarGroup from '@mui/material/AvatarGroup';
 import Avatar from '@mui/material/Avatar';
 
-const CardTechnologyy2 = ({
+const CardTechnology2 = ({
+    cardMode,
     cardImage,
     cardTitle,
     cardPath,
@@ -23,9 +24,10 @@ const CardTechnologyy2 = ({
             component={Link}
             to={cardPath}
         >
-            <Card className='card'>
+            <Card className={`card ${cardMode}`}>
                 <CardMedia className='card-media'>
                     <Box
+                        className='card-image'
                         component={LazyLoadImage}
                         height={1}
                         width={1}
@@ -47,4 +49,4 @@ const CardTechnologyy2 = ({
     );
 }
 
-export default CardTechnologyy2;
+export default CardTechnology2;

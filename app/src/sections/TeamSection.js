@@ -20,7 +20,11 @@ const TeamSection = () => {
     });
 
     return (
-        <Box sx={{ backgroundColor: '#f5f5f5'}}>
+        <Box
+            component='section'
+            className='team-section'
+            sx={{ backgroundColor: '#f5f5f5'}}
+        >
             <Container>
                 <Box marginBottom={4}>
                     <Typography

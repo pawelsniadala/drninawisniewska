@@ -73,12 +73,9 @@ const ServicesSection = () => {
 
     return (
         <Box
-            sx={{
-                // backgroundColor: '#fbfbfd',
-                backgroundColor: '#f5f5f5'
-                // backgroundColor: '#f5f5f7',
-                // backgroundImage: `linear-gradient(#fff, #f7faff)`,
-            }}
+            component='section'
+            className='service-section'
+            sx={{ backgroundColor: '#f5f5f5'}}
         >
             <Container>
                 <Box marginBottom={4}>
