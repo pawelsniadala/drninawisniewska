@@ -104,21 +104,23 @@ const PriceSection = () => {
                 }}
                 
                 >
-                    {/* <Typography
+                    <Typography
                         sx={{
                             textTransform: 'uppercase',
-                            color: '#DBAF62',
+                            // color: '#DBAF62',
+                            color: '#fff',
                             lineHeight: 1.5,
                             letterSpacing: '0.045em;',
-                            fontFamily: '"Roboto", sans-serif',
-                            fontSize: '18px',
+                            // fontFamily: '"Roboto", sans-serif',
+                            fontFamily: 'Raleway, sans-serif',
+                            fontSize: '17px',
                             fontWeight: '400',
                         }}
                         gutterBottom
                         align={'center'}
                     >
-                        Usługi
-                    </Typography> */}
+                        Cennik
+                    </Typography>
                     <Typography
                         variant="h4"
                         align={'center'}

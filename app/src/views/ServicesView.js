@@ -65,10 +65,11 @@ const ServicesView = () => {
                                     key={index}
                                     cardTitle={item.title}
                                     cardDescription={item.description}
-                                    cardImage={item.image}
                                     cardPath={item.path}
                                     cardPrice={item.prices}
                                     cardSpecialist={item.specialists}
+                                    cardImage={item.image}
+                                    cardImageVisible={false}
                                 />
                             )) : (
                                 {/* <Skeleton variant='rectangular' width={210} height={118} /> */}

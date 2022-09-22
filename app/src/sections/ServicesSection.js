@@ -59,14 +59,14 @@ const ServicesSection = () => {
 
     const sliderOpts = {
         dots: true,
-        arrows: isXl ? true : isLg ? false : isMd ? false : isSm ? false : false,
-        // arrows: false,
-        infinite: true,
+        // arrows: isXl ? true : isLg ? false : isMd ? false : isSm ? false : false,
+        arrows: false,
+        // infinite: true,
         slidesToShow: isXl ? 3 : isLg ? 3 : isMd ? 2 : isSm ? 2 : 1,
         slidesToScroll: 1,
         autoplay: true,
         // autoplay: false,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 2000,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />
     };
@@ -177,10 +177,11 @@ const ServicesSection = () => {
                                         key={index}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
-                                        cardImage={item.image}
                                         cardPath={item.path}
                                         cardPrice={item.prices}
                                         cardSpecialist={item.specialists}
+                                        cardImage={item.image}
+                                        cardImageVisible={true}
                                     />
                                 </Box>
                             </Box>

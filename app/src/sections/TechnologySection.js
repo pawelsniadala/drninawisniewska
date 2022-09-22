@@ -102,16 +102,10 @@ const TechnologySection = () => {
                 <Box className='section-body'>
                     <Box className='card-wrapper technology'>
                         {technology.slice(0, 4).map((item, index) => (
-                            <Box
-                                data-aos-delay={index * 150}
-                                data-aos-offset={100}
-                                data-aos-duration={600}
-                                data-aos={evenNumbers(index) ? 'fade-right' : 'fade-left'}
-                            >
+                            <Box data-aos={evenNumbers(index) ? 'fade-right' : 'fade-left'}>
                                 <CardTechnology
                                     key={index}
                                     cardEvenNumbers={evenNumbers(index)}
-                                    // cardType={'card-technology-section'}
                                     cardImage={item.image}
                                     cardName={item.name}
                                     cardDescription={item.description}

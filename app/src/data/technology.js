@@ -8,10 +8,7 @@ import icooneLaserMed2ImageSmall from '../assets/technology/icooneLaserMed2/icoo
 import laserAlmaHarmonySmall from '../assets/technology/laserAlmaHarmony/laserAlmaHarmonySmall2.jpg';
 
 import accentUltraSmall from '../assets/technology/accentUltra/accentUltraSmall3.jpg';
-
-
 import fonsSvrLaserFrakcyjnyCo2ImageSmall from '../assets/technology/fonsSvrLaserFrakcyjnyCo2/fonsSvrLaserFrakcyjnyCo2ImageSmall.png';
-
 
 export const vectus = {
     designation: 'vectus',

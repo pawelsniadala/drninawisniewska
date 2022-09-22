@@ -165,6 +165,7 @@ const ClinicSection = () => {
                                             src={item.src}
                                             alt="..."
                                             effect="blur"
+                                            visibleByDefault={true}
                                             onClick={() => openLightbox(i)}
                                             style={{
                                                 objectFit: 'cover',

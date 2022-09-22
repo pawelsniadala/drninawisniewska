@@ -108,7 +108,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                         alignItems: 'center',
                                     }}
                                 >
-                                    <PhoneSvg color="#fff" />
+                                    <PhoneSvg width='14px' height='14px' color='#fff'/>
                                     <Typography
                                         sx={{
                                             color: "#fff",
@@ -135,7 +135,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                         alignItems: 'center',
                                     }}
                                 >
-                                    <PhoneSvg color="#fff" />
+                                    <PhoneSvg width='14px' height='14px' color='#fff'/>
                                     <Typography
                                         sx={{
                                             color: "#fff",
@@ -162,7 +162,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                         alignItems: 'center',
                                     }}
                                 >
-                                    <EmailSvg color="#fff" />
+                                    <EmailSvg width='14px' height='14px' color='#fff' />
                                     <Typography
                                         sx={{
                                             color: "#fff",

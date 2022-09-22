@@ -63,7 +63,7 @@ const TechnologyVectusPartial = () => {
                 </Box>
                 <Box className='view-body'>
                     <Container className='body-wrapper technology'>
-                        <Box className='service-description'>
+                        <Box className='technology-description'>
                             <Typography className='paragraph'>
                                 Vectus™ to produkt amerykańskiej firmy Palomar, która stworzyła pierwszą na świecie technologię laserowego usuwania owłosienia, do dziś chronioną patentem. Vectus™ jest owocem trwających kilkanaście lat doświadczeń i badań nad udoskonaleniem systemu lasera diodowego. Wykorzystano w nim wiele nowatorskich rozwiązań decydujących o wyjątkowej skuteczności, bezpieczeństwie i komforcie pacjenta.
                             </Typography>

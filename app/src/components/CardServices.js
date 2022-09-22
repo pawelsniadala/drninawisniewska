@@ -14,6 +14,7 @@ import Avatar from '@mui/material/Avatar';
 
 const CardServices = ({
     cardImage,
+    cardImageVisible,
     cardTitle,
     cardDescription,
     cardSpecialist,
@@ -35,6 +36,7 @@ const CardServices = ({
                         src={cardImage}
                         alt={cardTitle}
                         effect='blur'
+                        visibleByDefault={cardImageVisible}
                     />
                 </CardMedia>
                 <CardContent className='card-content'>

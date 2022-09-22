@@ -1,4 +1,8 @@
-const PhoneSvg = ({ color }) => (
+const PhoneSvg = ({
+    width,
+    height,
+    color
+}) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xlink="http://www.w3.org/1999/xlink"
@@ -6,11 +10,12 @@ const PhoneSvg = ({ color }) => (
         id="Layer_1"
         x="0px"
         y="0px"
-        // style="enable-background:new 0 0 122.88 122.27"
         space="preserve"
         viewBox="0 0 122.86 122.26"
-        width="14px"
-        height="14px"
+        // width="14px"
+        // height="14px"
+        width={width}
+        height={height}
         fill={color}
     >
         <g>
