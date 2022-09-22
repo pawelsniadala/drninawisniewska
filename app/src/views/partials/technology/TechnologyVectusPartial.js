@@ -14,25 +14,10 @@ import Box from '@mui/material/Box';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
 import Container from '../../../components/Container';
-// import CardServicesProposed from '../../../components/CardServicesProposed';
-
-// import { CardMedia } from '@mui/material';
-
-
-// import ReportProblemIcon from '@mui/icons-material/ReportProblem';
-
-// import { Link } from "react-router-dom";
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
-
-// import Box from '@mui/material/Box';
-// import Typography from '@mui/material/Typography';
-// import Card from '@mui/material/Card';
-// import CardContent from '@mui/material/CardContent';
-// import Button from '@mui/material/Button';
-
 import CardProposed from '../../../components/CardProposed';
 
 import { technology } from '../../../data/technology';
+import { vectus } from '../../../data/technology';
 
 const TechnologyVectusPartial = () => {
     useEffect(() => {
@@ -90,7 +75,7 @@ const TechnologyVectusPartial = () => {
                                 <LazyLoadImage
                                     height={'100%'}
                                     width={'100%'}
-                                    src={technology[0].image}
+                                    src={vectus.image}
                                     alt='Remote working'
                                     effect='blur'
                                     style={{
