@@ -341,8 +341,8 @@ const HeroSection = () => {
                         <LazyLoadImage
                             height={'100%'}
                             width={'100%'}
-                            // src={require('../assets/hero/hero12.jpg')}
-                            src={require('../assets/hero/hero15.jpg')}
+                            src={require('../assets/hero/hero12.jpg')}
+                            // src={require('../assets/hero/hero15.jpg')}
                             // src={require('../assets/hero/hero14.jpg')}
                             // src={require('../assets/hero/hero7.jpg')}
                             // src={require('../assets/hero/hero8.jpg')}
