@@ -47,7 +47,7 @@ const HeroSection = () => {
                 <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
             </ol>
                 <Box className="carousel-inner">
-                    <Box className="carousel-item active" data-bs-interval="5000" style={{ height: 'calc(100vh - 118px)' }}>
+                    <Box className="carousel-item active" data-bs-interval="5000" style={{ height: '670px' }}>
                         {/* <img src={require('../assets/hero/hero1.jpg')} className="d-block carousel-img" alt="..."  /> */}
                         <LazyLoadImage
                             height={'100%'}
@@ -59,13 +59,16 @@ const HeroSection = () => {
                                 objectFit: 'cover',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover',
-                                backgroundPosition: 'center center',
-                                background: 'rgba(22, 28, 45, 0.25)',
+                                // backgroundPosition: 'center center',
+                                // background: 'rgba(22, 28, 45, 0.25)',
+                                height: '670px',
+                                objectPosition: '50% 45%',
+                                // filter: 'brightness(0.85)',
                                 filter: 'brightness(0.95)',
                             }}
                         />
                         {/* <Box class="carousel-caption d-none d-md-block"> */}
-                        <Box className="carousel-caption d-none d-md-block" sx={{ bottom: '4rem' }}>
+                        <Box className="carousel-caption d-none d-md-block" sx={{ bottom: '2rem' }}>
                         <Container>
                             <Box>
                                 <Typography
@@ -78,7 +81,7 @@ const HeroSection = () => {
                                         // fontFamily: 'Lato,sans-serif',
                                         // fontFamily: 'Raleway, sans-serif',
                                         fontFamily: 'Lato,sans-serif',
-                                        fontSize: '40px',
+                                        fontSize: '30px',
                                         lineHeight: '1.208em',
                                         letterSpacing: '.045em',
                                         textTransform: 'uppercase',
@@ -97,7 +100,7 @@ const HeroSection = () => {
                                     data-aos-delay={'100'}
                                     sx={{
                                         // fontSize: '18px',
-                                        fontSize: '22px',
+                                        fontSize: '18px',
                                         fontWeight: '400',
                                         color: '#fff',
                                         fontFamily: 'Raleway, sans-serif',
@@ -140,7 +143,7 @@ const HeroSection = () => {
                     </Box>
 
 
-                    <Box className="carousel-item" data-bs-interval="5000" style={{ height: 'calc(100vh - 118px)' }}>
+                    <Box className="carousel-item" data-bs-interval="5000" style={{ height: '670px' }}>
                         {/* <img src={require('../assets/hero/hero2.jpg')} className="d-block carousel-img" alt="..."  /> */}
                         <LazyLoadImage
                             height={'100%'}
@@ -154,12 +157,12 @@ const HeroSection = () => {
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover',
                                 // backgroundPosition: 'center center',
-                                maxHeight: 'calc(100vh - 118px)',
+                                height: '670px',
                                 objectPosition: '50% 77%',
                                 filter: 'brightness(0.85)',
                             }}
                         />
-                        <Box className="carousel-caption d-none d-md-block" sx={{ bottom: '4rem' }}>
+                        <Box className="carousel-caption d-none d-md-block" sx={{ bottom: '2rem' }}>
                         <Container>
                             <Box>
                                 <Typography
@@ -178,7 +181,7 @@ const HeroSection = () => {
                                         // fontFamily: 'Lato,sans-serif',
                                         // fontFamily: 'Raleway, sans-serif',
                                         fontFamily: 'Lato,sans-serif',
-                                        fontSize: '40px',
+                                        fontSize: '30px',
                                         lineHeight: '1.208em',
                                         letterSpacing: '.045em',
                                         textTransform: 'uppercase',
@@ -196,7 +199,7 @@ const HeroSection = () => {
                                     // data-aos={'fade-right'}
                                     sx={{
                                         // fontSize: '18px',
-                                        fontSize: '22px',
+                                        fontSize: '18px',
                                         fontWeight: '400',
                                         // color: 'rgba(0, 0, 0, 0.6)',
                                         color: '#fff',
@@ -239,7 +242,7 @@ const HeroSection = () => {
                     </Box>
 
 
-                    <Box className="carousel-item" data-bs-interval="5000" style={{ height: 'calc(100vh - 118px)' }}>
+                    <Box className="carousel-item" data-bs-interval="5000" style={{ height: '670px' }}>
                         {/* <img src={require('../assets/hero/hero2.jpg')} className="d-block carousel-img" alt="..."  /> */}
                         <LazyLoadImage
                             height={'100%'}
@@ -252,12 +255,12 @@ const HeroSection = () => {
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover',
                                 // backgroundPosition: 'center center',
-                                maxHeight: 'calc(100vh - 118px)',
+                                height: '670px',
                                 objectPosition: '50% 60%',
                                 filter: 'brightness(0.85)',
                             }}
                         />
-                        <Box className="carousel-caption d-none d-md-block" sx={{ top: '4rem' }}>
+                        <Box className="carousel-caption d-none d-md-block" sx={{ top: '2rem' }}>
                         <Container>
                             <Box>
                                 <Typography
@@ -276,7 +279,7 @@ const HeroSection = () => {
                                         // fontFamily: 'Lato,sans-serif',
                                         // fontFamily: 'Raleway, sans-serif',
                                         fontFamily: 'Lato,sans-serif',
-                                        fontSize: '40px',
+                                        fontSize: '30px',
                                         lineHeight: '1.208em',
                                         letterSpacing: '.045em',
                                         textTransform: 'uppercase',
@@ -294,7 +297,7 @@ const HeroSection = () => {
                                     // data-aos={'fade-right'}
                                     sx={{
                                         // fontSize: '18px',
-                                        fontSize: '22px',
+                                        fontSize: '18px',
                                         fontWeight: '400',
                                         // color: 'rgba(0, 0, 0, 0.6)',
                                         color: '#fff',
@@ -336,7 +339,7 @@ const HeroSection = () => {
                         </Box>
                     </Box>
 
-                    <Box className="carousel-item" data-bs-interval="5000" style={{ height: 'calc(100vh - 118px)' }}>
+                    <Box className="carousel-item" data-bs-interval="5000" style={{ height: '670px' }}>
                         {/* <img src={require('../assets/hero/hero2.jpg')} className="d-block carousel-img" alt="..."  /> */}
                         <LazyLoadImage
                             height={'100%'}
@@ -353,13 +356,13 @@ const HeroSection = () => {
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover',
                                 // backgroundPosition: 'center center',
-                                maxHeight: 'calc(100vh - 118px)',
-                                objectPosition: '50% 90%',
+                                height: '670px',
+                                objectPosition: '50% 45%',
                                 filter: 'brightness(0.85)',
                             }}
                         />
 
-                        <Box className="carousel-caption d-none d-md-block" sx={{ top: '4rem' }}>
+                        <Box className="carousel-caption d-none d-md-block" sx={{ top: '2rem' }}>
                         <Container>
                             <Box>
                                 <Typography
@@ -378,7 +381,7 @@ const HeroSection = () => {
                                         // fontFamily: 'Lato,sans-serif',
                                         // fontFamily: 'Raleway, sans-serif',
                                         fontFamily: 'Lato,sans-serif',
-                                        fontSize: '40px',
+                                        fontSize: '30px',
                                         lineHeight: '1.208em',
                                         letterSpacing: '.045em',
                                         textTransform: 'uppercase',
@@ -396,7 +399,7 @@ const HeroSection = () => {
                                     // data-aos={'fade-right'}
                                     sx={{
                                         // fontSize: '18px',
-                                        fontSize: '22px',
+                                        fontSize: '18px',
                                         fontWeight: '400',
                                         // color: 'rgba(0, 0, 0, 0.6)',
                                         color: '#fff',
