@@ -115,7 +115,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                         <ListBulleted
                                             ListBulletedItem={item}
                                             ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundColor: '#28a745' }}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
                                 </Grid>
@@ -134,7 +134,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                         <ListBulleted
                                             ListBulletedItem={item}
                                             ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundColor: '#28a745' }}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
                                 </Grid>
@@ -155,7 +155,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                         <ListBulleted
                                             ListBulletedItem={item}
                                             ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundColor: '#28a745' }}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
                                 </Grid>
@@ -183,7 +183,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                         <ListBulleted
                                             ListBulletedItem={item}
                                             ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundColor: '#28a745' }}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
                                 </Grid>
@@ -191,7 +191,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                         </Box>
                         <Box className='proposed-technology'>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.length ? technology.filter(item => item.designation !== 'fonsSvrLaserFrakcyjnyCo2').map((item, index) => (
+                                {technology.length ? technology.filter(item => item.designation !== 'icooneLaserMed2').map((item, index) => (
                                     <CardProposed
                                         key={index}
                                         cardTitle={item.title}

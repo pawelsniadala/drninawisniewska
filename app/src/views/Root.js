@@ -60,8 +60,11 @@ import TeamMiroslawMajewskiPartial from './partials/team/TeamMiroslawMajewskiPar
 import TeamKamilStepkowskiPartial from './partials/team/TeamKamilStepkowskiPartial';
 import TechnologyView from './TechnologyView';
 import TechnologyVectusPartial from './partials/technology/TechnologyVectusPartial';
+import TechnologyAlmaHarmonyXlProPartial from './partials/technology/TechnologyAlmaHarmonyXlProPartial';
 import TechnologyIcooneLaserMed2Partial from './partials/technology/TechnologyIcooneLaserMed2Partial';
 import TechnologyFonsSvrFractionLaserCo2Partial from './partials/technology/TechnologyFonsSvrFractionLaserCo2Partial';
+import TechnologyAlmaAccentPrimePartial from './partials/technology/TechnologyAlmaAccentPrimePartial';
+import TechnologySonoQueenPartial from './partials/technology/TechnologySonoQueenPartial';
 
 import ContactView from './ContactView';
 
@@ -127,8 +130,11 @@ const Root = () => (
 
                     <Route path='/technology' element={<TechnologyView />} />
                     <Route path='/technology/vectus' element={<TechnologyVectusPartial />} />
+                    <Route path='/technology/alma-harmony-xl-pro' element={<TechnologyAlmaHarmonyXlProPartial />} />
                     <Route path='/technology/icoone-laser-med2' element={<TechnologyIcooneLaserMed2Partial />} />
                     <Route path='/technology/fons-svr-fraction-laser-co2' element={<TechnologyFonsSvrFractionLaserCo2Partial />} />
+                    <Route path='/technology/alma-accent-prime' element={<TechnologyAlmaAccentPrimePartial />} />
+                    <Route path='/technology/sono-queen' element={<TechnologySonoQueenPartial />} />
 
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>

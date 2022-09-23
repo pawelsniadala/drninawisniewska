@@ -72,33 +72,45 @@ const validationSchema = yup.object({
 
 const mock = [
     {
-      label: 'Telefon',
-      value: '+48 450 001 550',
-      icon: (
-        <PhoneSvg width='20px' height='20px' color='#fff'/>
-      ),
+        label: 'Telefon',
+        value: '450 001 550',
+        href: 'tel:+48450001550',
+        icon: (
+            <PhoneSvg width='20px' height='20px' color='#fff'/>
+        ),
     },
     {
-      label: 'E-mail',
-      value: 'info@drninawisniewska.pl',
-      icon: (
-        <EmailSvg width='20px' height='20px' color='#fff' />
-      ),
+        label: 'Telefon',
+        value: '539 968 541',
+        href: 'tel:+48539968541',
+        icon: (
+            <PhoneSvg width='20px' height='20px' color='#fff'/>
+        ),
     },
     {
-      label: 'Adres',
-      value: 'ul. Fryderyka Chopina 13/U2, 07-200 Wyszków',
-      icon: (
-        <FmdGoodIcon />
-      ),
+        label: 'E-mail',
+        value: 'info@drninawisniewska.pl',
+        href: 'mailto:info@drninawisniewska.pl',
+        icon: (
+            <EmailSvg width='20px' height='20px' color='#fff' />
+        ),
+    },
+    {
+        label: 'Adres',
+        value: 'ul. Fryderyka Chopina 13/U2, 07-200 Wyszków',
+        href: 'https://goo.gl/maps/1a3qFdxNqTNJdahY9',
+        icon: (
+            <FmdGoodIcon />
+        ),
     },
     // {
     //     label: 'Facebook',
-    //     value: 'ul. Fryderyka Chopina 13/U2, 07-200 Wyszków',
+    //     value: 'Facebook',
+    //     href: 'https://www.facebook.com/profile.php?id=100063736802328',
     //     icon: (
-    //       <FacebookSvg width='20px' height='20px' color='#fff' />
+    //         <FacebookSvg width='20px' height='20px' color='#fff' />
     //     ),
-    //   },
+    // },
     // {
     //     label: 'Godziny',
     //     value: 'poniedziałek - piątek: 10:00 - 18:00',
@@ -139,35 +151,41 @@ const ContactView = () => {
                     <Typography className='paragraph'>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare dictum ultricies. In hac habitasse platea dictumst. Integer eget ultricies erat. Duis vestibulum convallis orci, sed sodales diam placerat vel. Nunc blandit massa sapien, sit amet porttitor nisi condimentum.
                     </Typography>
+                    <Typography className='paragraph'>
+                    Duis aliquet nec quam quis mollis. Fusce elit velit, ullamcorper nec fringilla eget, egestas fringilla sem. Proin accumsan consectetur ex vel scelerisque. Aenean vulputate massa et est semper, varius laoreet nibh porttitor.
+                    </Typography>
                 </Box>
                 <Box
                     display={'flex'}
                     flexDirection={'column'}
                     justifyContent={'space-between'}
+                    marginBottom={2}
                 >
                     {mock.map((item, i) => (
-                        <Box
-                            key={i}
-                            component={ListItem}
-                            disableGutters
-                            width={'auto'}
-                            padding={0}
-                        >
-                        <Box
-                            component={ListItemAvatar}
-                            minWidth={'auto !important'}
-                            marginRight={2}
-                        >
+                        <Box component='a' href={item.href} className='link'>
                             <Box
-                                component={Avatar}
-                                width={40}
-                                height={40}
-                                sx={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                key={i}
+                                component={ListItem}
+                                disableGutters
+                                width={'auto'}
+                                padding={0}
                             >
-                                {item.icon}
+                            <Box
+                                component={ListItemAvatar}
+                                minWidth={'auto !important'}
+                                marginRight={2}
+                            >
+                                <Box
+                                    component={Avatar}
+                                    width={40}
+                                    height={40}
+                                    sx={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                >
+                                    {item.icon}
+                                </Box>
                             </Box>
-                        </Box>
-                            <ListItemText primary={item.label} secondary={item.value} />
+                                <ListItemText primary={item.label} secondary={item.value} />
+                            </Box>
                         </Box>
                     ))}
                 </Box>

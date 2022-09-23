@@ -4,11 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
-import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
@@ -18,9 +14,9 @@ import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
 import { technology } from '../../../data/technology';
-import { fonsSvrFractionLaserCo2 } from '../../../data/technology';
+import { almaHarmonyXlPro } from '../../../data/technology';
 
-const TechnologyFonsSvrFractionLaserCo2Partial = () => {
+const TechnologyAlmaHarmonyXlProPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -48,16 +44,16 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                     Home
                                 </Link>
                                 <Link to='/technology' aria-current='page'>
-                                Technologia
+                                    Technologia
                                 </Link>
                                 <Typography color='text.primary'>
-                                    Fons SVR Laser Frakcyjny CO<sub>2</sub>
+                                Alma Harmony XL Pro
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Fons SVR™ Laser Frakcyjny CO<sub>2</sub>
+                                {almaHarmonyXlPro.title}
                             </Typography>
                         </Box>
                     </Container>
@@ -65,21 +61,19 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper technology'>
                         <Box className='technology-description'>
-
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
-                                    Laser Frakcyjny Fons SVR™ jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci likwidacji blizn potrądzikowych, poprawy jakości skóry i wytworzenia nowych struktur kolagenu. W porównaniu z tradycyjnymi laserami CO<sub>2</sub>, frakcjonowanie ablacyjne laserami Fons pozwala osiągnąć dużą głębokość penetracji w skórze, dając efektywne procedury zabiegowe. Dzięki wysokiej mocy i wszechstronności może być wykorzystywany w wielu wskazaniach. Wygodę i precyzję działania zapewnia siedmioprzegubowe ramię.
+                                    Harmony XL Pro to platforma laserowa najnowszej generacji, produkt izraelskiej firmy Alma. Jest to rozwiązanie oferowane osobom poszukującym urządzenia, które będzie wykorzystywało technologię przeznaczoną na większość problemów estetycznych i dermatologicznych. Obsługuje różne typy zaawansowanych technologii laserowych i innych źródeł światła takich jak: laser Er: YAG 2940 nm, Er: Glass 1540 nm, Q-Switch 1064nm i 532 nm, Nd:YAG 1064 nm, światło podczerwone NIR, IPL, UV, LED, ultradźwięki Impact i Dye-Vl.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Ogromną zaletą jest bezkontaktowa praca lasera gwarantująca całkowitą czystość pola operacyjnego. Bardzo ważna jest także istotna redukcja krwawienia oraz natychmiastowa koagulacja. W trakcie wykonywania zabiegu uzyskujemy tysiące mikroskopijnych uszkodzeń tkanki, natomiast pozostałe obszary pozostają nienaruszone i to właśnie one przyspieszają odnowę zniszczonych stref skóry. Dzięki temu okres rekonwalescencji jest zredukowany do minimum przy jedoczesnym zachowaniu wysokiej efektywności terapii.
+                                    To wszechstronne narzędzie, które umożliwia łączenie różnych typów laserów i technologii podczas jednej procedury zabiegowej. Techniki łączone zdecydowanie zwiększają skuteczność zabiegów. To użytkownik komponuje urządzenie dostosowane do potrzeb swoich pacjentów i charakteru swojej działalności, wybierając spośród ponad 30 głowic. Harmony XL PRO poprzez możliwość rozbudowy rozwija się wraz z naszą działalnością. Dzięki temu urządzenie się nie starzeje, a nasza oferta jest zawsze aktualna. To szczególnie ważne na szybko rozwijającym się rynku medycyny estetycznej.
                                 </Typography>
                             </Box>
-
-                            <Box marginBottom={3}>
+                            {/* <Box marginBottom={3}>
                                 <LazyLoadImage
                                     height={'100%'}
                                     width={'100%'}
-                                    src={fonsSvrFractionLaserCo2.imageLarge}
+                                    src={almaHarmonyXlPro.imageMedium}
                                     alt='Remote working'
                                     effect='blur'
                                     style={{
@@ -88,29 +82,28 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                         width: '100%',
                                         height: '100%',
                                         maxHeight: '400px',
-                                        objectPosition: '50% 85%',
+                                        objectPosition: '50% 11%',
                                         backgroundColor: '#e6e6e6'
                                     }}
                                 />
+                            </Box> */}
+                            <Box marginBottom={3}>
+                                <Typography className='paragraph'>
+                                    Wprowadzenie kolejnej technologii na Harmony XL PRO jest korzystniejsze finansowo, aniżeli zakup wolnostojącego odpowiednika. W naszej ofercie znajdziesz wiele propozycji głowic na większość problemów estetycznych.
+                                </Typography>
                             </Box>
-
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header'>
-                                    Możliwości zabiegowe
+                                    Zalety Harmony XL Pro
                                 </Typography>
                                 <Grid container spacing={1} sx={{ marginTop: 1 }}>
                                     {[
-                                        'Resurfacing skóry',
-                                        'Lifting i ujędrnianie skóry',
-                                        'Usuwanie blizn (potrądzikowych, pourazowych, oparzeniowych)',
-                                        'Likwidacja rozstępów',
-                                        'Redukcja trądziku',
-                                        'Usuwanie przebarwień',
-                                        'Usuwanie zmarszczek',
-                                        'Poprawa jakości skóry',
-                                        'Skuteczne efekty w niwelowaniu fotostarzenia się skóry',
-                                        'Zabiegi chirurgiczne z wykorzystaniem punktowej głowicy lasera CO\u2082',
-                                        'Ginekologia estetyczna',
+                                        'System multiaplikacyjny',
+                                        'Ponad 65 wskazań potwierdzonych certyfikatem FDA',
+                                        'Możliwość rozbudowy urządzenia w czasie',
+                                        'Kompleksowe podejście do pacjenta',
+                                        'Możliwość łączenia technologii dla maksymalizacji efektów',
+                                        'Skuteczność potwierdzona licznymi badaniami klinicznymi',
                                     ].map((item, index) => (
                                         <ListBulleted
                                             ListBulletedItem={item}
@@ -120,37 +113,10 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                     ))}
                                 </Grid>
                             </Box>
-
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header'>
-                                    Zalety Lasera Fons SVR™
-                                </Typography>
-                                <Grid container spacing={1} sx={{ marginTop: 1 }}>
-                                    {[
-                                        'Szybki czas rekonwalescencji (od 3 do 6 dni)',
-                                        'Wszechstronność - podwójny moduł w jednym aparacie (zabiegi frakcyjne oraz standardowe procedury chirurgiczne)',
-                                        'Łatwość obsługi aparatu przez użytkownika',
-
-                                        'Bardzo prosty panel sterowania',
-                                        'Czytelny i intuicyjny interfejs',
-                                        'Nowoczesny wygląd urządzenia',
-                                        'Możliwość doboru pola zabiegowego podczas skanowania powierzchni zabiegowej',
-                                        'Precyzja wykonanego zabiegu'
-                                    ].map((item, index) => (
-                                        <ListBulleted
-                                            ListBulletedItem={item}
-                                            ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
-                                        />
-                                    ))}
-                                </Grid>
-                            </Box>
-
-
                         </Box>
                         <Box className='proposed-technology'>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.length ? technology.filter(item => item.designation !== 'fonsSvrLaserFrakcyjnyCo2').map((item, index) => (
+                                {technology.length ? technology.filter(item => item.designation !== 'almaHarmonyXlPro').map((item, index) => (
                                     <CardProposed
                                         key={index}
                                         cardTitle={item.title}
@@ -170,4 +136,4 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
     );
 }
 
-export default TechnologyFonsSvrFractionLaserCo2Partial;
+export default TechnologyAlmaHarmonyXlProPartial;

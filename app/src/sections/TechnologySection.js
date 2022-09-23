@@ -10,7 +10,6 @@ import { useTheme } from '@mui/material/styles';
 
 import Container from '../components/Container';
 import CardTechnology from '../components/CardTechnology';
-import CardTechnology2 from '../components/CardTechnology2';
 
 import { technology } from '../data/technology';
 
@@ -20,10 +19,6 @@ const TechnologySection = () => {
     const isMd = useMediaQuery(theme.breakpoints.up('md'), {
         defaultMatches: true,
     });
-
-    const evenNumbers = (item) => {
-        return (item + 1) % 2 === 0 ? false : true;
-    }
 
     return (
         <Box
@@ -108,13 +103,20 @@ const TechnologySection = () => {
                 <Box className='section-body'>
                     <Box className='card-wrapper technology section'>
                         {technology.slice(0, 4).map((item, index) => (
-                            <Box>
-                                <CardTechnology2
+                            <Box
+                                key={index}
+                                data-aos={'fade-up'}
+                                data-aos-delay={index * 100}
+                                data-aos-offset={100}
+                                data-aos-duration={600}
+                            >
+                                <CardTechnology
                                     key={index}
                                     cardMode="section"
                                     cardImage={item.imageMedium}
                                     cardTitle={item.title}
                                     cardPath={item.path}
+                                    cardBadge={item.badge}
                                 />
                             </Box>
                         ))}

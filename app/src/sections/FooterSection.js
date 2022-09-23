@@ -27,16 +27,14 @@ const FooterSection = () => {
                         >
                             Dermatologia i Medycyna estetyczna<br/>dr Nina Wiśniewska
                         </Typography>
-                        <Tooltip title='Google Maps'>
-                            <Typography component='a'
-                                href='https://goo.gl/maps/1a3qFdxNqTNJdahY9'
-                                target='_blank'
-                                rel='noreferrer'
-                                className='footer-text link'
-                            >
-                                ul. Fryderyka Chopina 13/U2,<br />07-200 Wyszków
-                            </Typography>
-                        </Tooltip>
+                        <Typography component='a'
+                            href='https://goo.gl/maps/1a3qFdxNqTNJdahY9'
+                            target='_blank'
+                            rel='noreferrer'
+                            className='footer-text link'
+                        >
+                            ul. Fryderyka Chopina 13/U2,<br />07-200 Wyszków
+                        </Typography>
                     </Box>
                 </Box>
                 <Box className='services'>
@@ -132,49 +130,53 @@ const FooterSection = () => {
                     </Typography>
                     <Box className='technology-wrapper'>
                         <Typography
-                            variant='span'
-                            className='footer-text'
+                            component='a'
+                            href='/technology/vectus'
+                            className='footer-text link'
                         >
-                            {/* Vectus&trade; */}
                             Vectus
                         </Typography>
                         <Typography
-                            variant='span'
-                            className='footer-text'
+                            component='a'
+                            href='/technology/icoone-laser-med2'
+                            className='footer-text link'
                         >
-                            {/* Icoone<sup>&reg;</sup> Laser Med 2 */}
                             Icoone Laser Med 2
                         </Typography>
                         <Typography
-                            variant='span'
-                            className='footer-text'
+                            component='a'
+                            href='/technology/alma-accent-prime'
+                            className='footer-text link'
                         >
-                            Accent
+                            Alma Accent Prime
                         </Typography>
                         <Typography
-                            variant='span'
-                            className='footer-text'
+                            component='a'
+                            href='/technology/sono-queen'
+                            className='footer-text link'
                         >
                             SonoQueen
                         </Typography>
                         <Typography
-                            variant='span'
-                            className='footer-text'
+                            component='a'
+                            href='/technology/alma-harmony-xl-pro'
+                            className='footer-text link'
                         >
-                            Laser Alma Harmony
+                            Alma Harmony XL Pro
                         </Typography>
                         <Typography
-                            variant='span'
-                            className='footer-text'
+                            component='a'
+                            href='/technology/fons-svr-fraction-laser-co2'
+                            className='footer-text link'
                         >
-                            Laser CO2
+                            Fons SVR Laser Frakcyjny CO<sub>2</sub>
                         </Typography>
-                        <Typography
+                        {/* <Typography
                             variant='span'
                             className='footer-text'
                         >
                             Lampa  UVB
-                        </Typography>
+                        </Typography> */}
                     </Box>
                 </Box>
                 <Box className='contact'>
@@ -185,67 +187,55 @@ const FooterSection = () => {
                         Kontakt
                     </Typography>
                     <Box className='contact-wrapper'>
-                        <Tooltip title='Zadzwoń' placement='right'>
-                            <Typography
-                                component='a'
-                                href='tel:+48450001550'
-                                className='footer-text link'
-                            >
-                                +48 450 001 550
-                            </Typography>
-                        </Tooltip>
-                        <Tooltip title='Zadzwoń' placement='right'>
-                            <Typography
-                                component='a'
-                                href='tel:+48539968541'
-                                className='footer-text link'
-                            >
-                                +48 539 968 541
-                            </Typography>
-                        </Tooltip>
-                        <Tooltip title='Napisz wiadomość' placement='right'>
-                            <Typography
-                                component='a'
-                                href='mailto:info@drninawisniewska.pl'
-                                className='footer-text link'
-                            >
-                                info@drninawisniewska.pl
-                            </Typography>
-                        </Tooltip>
+                        <Typography
+                            component='a'
+                            href='tel:+48450001550'
+                            className='footer-text link'
+                        >
+                            450 001 550
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='tel:+48539968541'
+                            className='footer-text link'
+                        >
+                            539 968 541
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='mailto:info@drninawisniewska.pl'
+                            className='footer-text link'
+                        >
+                            info@drninawisniewska.pl
+                        </Typography>
                         <Box className='media-wrapper'>
-                            <Tooltip title='Facebook'>
-                                <Typography
-                                    component='a'
-                                    href='https://www.facebook.com/profile.php?id=100063736802328'
-                                    className='link'
-                                    target='_blank'
-                                    rel='noreferrer'
-                                >
-                                    <FacebookSvg width='16px' height='16px' />
-                                </Typography>
-                            </Tooltip>
-                            <Tooltip title='Twitter'>
-                                <Typography
-                                    component='a'
-                                    href='https://www.facebook.com/profile.php?id=100063736802328'
-                                    className='link'
-                                    target='_blank'
-                                    rel='noreferrer'
-                                >
-                                    <TwitterSvg width='16px' height='16px' />
-                                </Typography>
-                            </Tooltip>
-                            <Tooltip title='Instagram'>
-                                <Typography
-                                    component='a'
-                                    href='https://www.facebook.com/profile.php?id=100063736802328'
-                                    className='link'
-                                    target='_blank'
-                                    rel='noreferrer'
-                                >
-                                    <InstagramSvg width='16px' height='16px' />
-                                </Typography>
-                            </Tooltip>
+                            <Typography
+                                component='a'
+                                href='https://www.facebook.com/profile.php?id=100063736802328'
+                                className='link'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <FacebookSvg width='16px' height='16px' />
+                            </Typography>
+                            {/* <Typography
+                                component='a'
+                                href='https://www.facebook.com/profile.php?id=100063736802328'
+                                className='link'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <TwitterSvg width='16px' height='16px' />
+                            </Typography> */}
+                            <Typography
+                                component='a'
+                                href='https://www.instagram.com/klinikawyszkow/'
+                                className='link'
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                <InstagramSvg width='16px' height='16px' />
+                            </Typography>
                         </Box>
                     </Box>
                 </Box>

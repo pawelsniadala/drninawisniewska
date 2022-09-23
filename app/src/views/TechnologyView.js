@@ -8,15 +8,11 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
-// import CardTechnology from '../components/CardTechnology';
-import CardTechnology2 from '../components/CardTechnology2';
+import CardTechnology from '../components/CardTechnology';
 
 import { technology } from '../data/technology';
 
 const TechnologyView = () => {
-    const evenNumbers = (item) => {
-        return (item + 1) % 2 === 0 ? false : true;
-    }
 
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
@@ -66,14 +62,14 @@ const TechnologyView = () => {
                     <Container className='body-wrapper'>
                         <Box className='card-wrapper technology section'>
                             {technology.map((item, index) => (
-                          
-                                   <CardTechnology2
-                                    key={index}
-                                    cardMode="view"
-                                    cardImage={item.imageMedium}
-                                    cardTitle={item.title}
-                                    cardPath={item.path}
-                                />
+                                <Box key={index}>
+                                   <CardTechnology
+                                        cardImage={item.imageMedium}
+                                        cardTitle={item.title}
+                                        cardPath={item.path}
+                                        cardBadge={item.badge}
+                                    />
+                                </Box>
                             ))}
                         </Box>
                     </Container>
@@ -84,10 +80,3 @@ const TechnologyView = () => {
 }
 
 export default TechnologyView;
-{/* <CardTechnology
-cardEvenNumbers={evenNumbers(index)}
-cardImage={item.imageSmall}
-cardName={item.name}
-cardDescription={item.description}
-cardPath={item.path}
-/> */}

@@ -96,7 +96,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                         }}
                     >
                         <Tooltip title="Zadzwoń">
-                            <a key="" href="https://www.facebook.com/profile.php?id=100063736802328"
+                            <a key="" href="tel:+48450001550"
                                 className="nav-link"
                                 target="_blank"
                                 rel="noreferrer"
@@ -123,7 +123,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                             </a>
                         </Tooltip>
                         <Tooltip title="Zadzwoń">
-                            <a key="" href="https://www.facebook.com/profile.php?id=100063736802328"
+                            <a key="" href="tel:+48539968541"
                                 className="nav-link"
                                 target="_blank"
                                 rel="noreferrer"
@@ -150,7 +150,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                             </a>
                         </Tooltip>
                         <Tooltip title="Napisz Wiadomość">
-                            <a key="" href="https://www.facebook.com/profile.php?id=100063736802328"
+                            <a key="" href="mailto:info@drninawisniewska.pl"
                                 className="nav-link"
                                 target="_blank"
                                 rel="noreferrer"
@@ -193,7 +193,7 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                                 <FacebookSvg width="14px" height="14px" color="#fff" />
                             </a>
                         </Tooltip>
-                        <Tooltip title="Twitter">
+                        {/* <Tooltip title="Twitter">
                             <a key="" href="https://www.facebook.com/profile.php?id=100063736802328"
                                 className="nav-link"
                                 target="_blank"
@@ -201,9 +201,9 @@ const NavSection = ({ bgcolor = 'transparent' }) => {
                             >
                                 <TwitterSvg width="14px" height="14px" color="#fff" />
                             </a>
-                        </Tooltip>
+                        </Tooltip> */}
                         <Tooltip title="Instagram">
-                            <a key="" href="https://www.facebook.com/profile.php?id=100063736802328"
+                            <a key="" href="https://www.instagram.com/klinikawyszkow/"
                                 className="nav-link"
                                 target="_blank"
                                 rel="noreferrer"

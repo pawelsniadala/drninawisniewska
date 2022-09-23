@@ -32,7 +32,7 @@ const StyledTableRow = styled(TableRow)(() => ({
 }));
 
 const badge = (title) => (
-    <span class="badge">
+    <span class="badge margin">
         {title}
     </span>
 );
@@ -70,7 +70,7 @@ const Table15 = () => {
                     <TableRow>
                     <StyledTableCell>
                         Płynna toksyna ABO Liquid
-                        {badge("Nowe")}
+                        {badge("Nowość")}
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena

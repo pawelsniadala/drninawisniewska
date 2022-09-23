@@ -7,8 +7,8 @@
                 gap: 20px;
 
                 .contact-details-wrapper {
-                    display: flex;
-                    align-items: center;
+                    // display: flex;
+                    // align-items: center;
                     padding-right: 20px;
                 }
 
@@ -41,6 +41,11 @@
                     font-weight: 300;
                     margin-bottom: 10px;
                     letter-spacing: 0.00538em;
+                }
+
+                .link {
+                    text-decoration: none;
+                    color: inherit;
                 }
 
                 .list-item-avatar {

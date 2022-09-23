@@ -99,7 +99,7 @@ const TechnologyVectusPartial = () => {
                                         <ListBulleted
                                             ListBulletedItem={item}
                                             ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundColor: '#28a745' }}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
                                 </Grid>
@@ -132,7 +132,7 @@ const TechnologyVectusPartial = () => {
                                         <ListBulleted
                                             ListBulletedItem={item}
                                             ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundColor: '#28a745' }}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
                                 </Grid>
@@ -156,7 +156,7 @@ const TechnologyVectusPartial = () => {
                                         <ListBulleted
                                             ListBulletedItem={item}
                                             ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundColor: '#28a745' }}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
                                 </Grid>
@@ -175,7 +175,7 @@ const TechnologyVectusPartial = () => {
                                         <ListBulleted
                                             ListBulletedItem={item}
                                             ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundColor: '#28a745' }}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
                                 </Grid>
@@ -204,7 +204,7 @@ const TechnologyVectusPartial = () => {
                                         <ListBulleted
                                             ListBulletedItem={item}
                                             ListBulletedKey={index}
-                                            ListBulletedStyle={{ backgroundColor: '#dc3545' }}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
                                 </Grid>
