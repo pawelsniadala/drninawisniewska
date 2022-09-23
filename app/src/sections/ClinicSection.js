@@ -54,14 +54,6 @@ const ClinicSection = () => {
             component='section'
             className='clinic-section'
             sx={{
-                // position: 'relative',
-                // backgroundColor: '#f7faff',
-                // backgroundImage: `linear-gradient(120deg, #fff 0%, #f7faff 100%)`,
-                // marginTop: -13,
-                // paddingTop: 13,
-                // paddingTop: "64px", paddingBottom: "64px",
-                // backgroundColor: '#f2f7ff',
-                // backgroundImage: `linear-gradient(#fff, #f7faff)`,
                 backgroundColor: '#fff',
             }}
         >
@@ -69,6 +61,9 @@ const ClinicSection = () => {
                 <Box>
                     <Box marginBottom={4}>
                         <Typography
+                            gutterBottom
+                            align={'center'}
+                            data-aos={'fade-right'}
                             sx={{
                                 textTransform: 'uppercase',
                                 color: '#DBAF62',
@@ -78,8 +73,6 @@ const ClinicSection = () => {
                                 fontSize: '17px',
                                 fontWeight: '400',
                             }}
-                            gutterBottom
-                            align={'center'}
                         >
                             Klinika
                         </Typography>
@@ -125,6 +118,7 @@ const ClinicSection = () => {
                                 className="link-contained-more"
                                 marginTop={{ xs: 2, sm: 0 }}
                                 width={{ xs: '100%', md: 'auto' }}
+                                data-aos={'fade-in'}
                             >
                                 <Button
                                     component={Link}

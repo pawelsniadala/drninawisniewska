@@ -109,19 +109,18 @@ const PriceSection = () => {
                     
                     >
                         <Typography
+                            data-aos={'fade-right'}
+                            align={'center'}
+                            gutterBottom
                             sx={{
                                 textTransform: 'uppercase',
-                                // color: '#DBAF62',
                                 color: '#fff',
                                 lineHeight: 1.5,
                                 letterSpacing: '0.045em;',
-                                // fontFamily: '"Roboto", sans-serif',
                                 fontFamily: 'Raleway, sans-serif',
                                 fontSize: '17px',
                                 fontWeight: '400',
                             }}
-                            gutterBottom
-                            align={'center'}
                         >
                             Cennik
                         </Typography>
@@ -167,6 +166,7 @@ const PriceSection = () => {
                                 className="link-contained-more"
                                 marginTop={{ xs: 2, sm: 0 }}
                                 width={{ xs: '100%', md: 'auto' }}
+                                data-aos={'fade-in'}
                             >
                                 <Button
                                     component={Link}

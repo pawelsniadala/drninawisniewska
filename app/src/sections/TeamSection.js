@@ -28,6 +28,9 @@ const TeamSection = () => {
             <Container>
                 <Box marginBottom={4}>
                     <Typography
+                        gutterBottom
+                        align={'center'}
+                        data-aos={'fade-right'}
                         sx={{
                             textTransform: 'uppercase',
                             color: '#DBAF62',
@@ -37,8 +40,6 @@ const TeamSection = () => {
                             fontSize: '17px',
                             fontWeight: '400',
                         }}
-                        gutterBottom
-                        align={'center'}
                     >
                         Zespół
                     </Typography>
@@ -83,6 +84,7 @@ const TeamSection = () => {
                             className='link-contained-more'
                             marginTop={{ xs: 2, sm: 0 }}
                             width={{ xs: '100%', md: 'auto' }}
+                            data-aos={'fade-in'}
                         >
                             <Button
                                 component={Link}

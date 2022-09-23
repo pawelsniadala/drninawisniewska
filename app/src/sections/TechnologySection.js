@@ -29,6 +29,9 @@ const TechnologySection = () => {
             <Container>
                 <Box marginBottom={4}>
                     <Typography
+                        gutterBottom
+                        align={'center'}
+                        data-aos={'fade-right'}
                         sx={{
                             textTransform: 'uppercase',
                             color: '#DBAF62',
@@ -38,8 +41,6 @@ const TechnologySection = () => {
                             fontSize: '17px',
                             fontWeight: '400',
                         }}
-                        gutterBottom
-                        align={'center'}
                     >
                         Technologia
                     </Typography>
@@ -71,7 +72,6 @@ const TechnologySection = () => {
                             fontWeight: '400',
                         }}
                     >
-                        {/* Dla twojej wygody korzystamy z najnowszej technologii medycznej */}
                         Dla Twojego komfortu korzystamy z najnowszych technologii medycznych
                     </Typography>
                     <Box
@@ -85,6 +85,7 @@ const TechnologySection = () => {
                             className='link-contained-more'
                             marginTop={{ xs: 2, sm: 0 }}
                             width={{ xs: '100%', md: 'auto' }}
+                            data-aos={'fade-in'}
                         >
                             <Button
                                 component={Link}

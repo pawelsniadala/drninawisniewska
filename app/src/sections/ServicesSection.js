@@ -80,18 +80,18 @@ const ServicesSection = () => {
             <Container>
                 <Box marginBottom={4}>
                     <Typography
+                        gutterBottom
+                        align={'center'}
+                        data-aos={'fade-right'}
                         sx={{
                             textTransform: 'uppercase',
                             color: '#DBAF62',
                             lineHeight: 1.5,
                             letterSpacing: '0.045em;',
-                            // fontFamily: '"Roboto", sans-serif',
                             fontFamily: 'Raleway, sans-serif',
                             fontSize: '17px',
                             fontWeight: '400',
                         }}
-                        gutterBottom
-                        align={'center'}
                     >
                         Usługi
                     </Typography>
@@ -137,6 +137,7 @@ const ServicesSection = () => {
                             className="link-contained-more"
                             marginTop={{ xs: 2, sm: 0 }}
                             width={{ xs: '100%', md: 'auto' }}
+                            data-aos={'fade-in'}
                         >
                             <Button
                                 component={Link}
