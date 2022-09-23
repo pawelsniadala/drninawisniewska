@@ -321,7 +321,8 @@
         height: 100%;
         width: 100%;
         border: none;
-        background-color: #fff;
+        // background-color: #fff;
+        background-color: transparent;
         box-shadow: none;
         border-radius: 8px;
         display: flex;
@@ -329,10 +330,11 @@
 
         &.view {
             box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
+            box-shadow: none;
 
             &:hover {
-                box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
-                transition: all 0.3s ease-in-out;
+                // box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+                // transition: all 0.3s ease-in-out;
             }
         }
 

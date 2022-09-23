@@ -1,20 +1,23 @@
 import vectusImageSmall from '../assets/technology/vectus/vectusImageSmall.jpg';
-import vectusImageMedium from '../assets/technology/vectus/vectusImageMedium.jpg';
+import vectusImageMedium from '../assets/technology/vectus/vectusImageMedium.png';
 import vectusImageLarge from '../assets/technology/vectus/vectusImageLarge.jpg';
 
 import laserAlmaHarmonyImageSmall from '../assets/technology/laserAlmaHarmony/laserAlmaHarmonyImageSmall.jpg';
 import laserAlmaHarmonyImageMedium from '../assets/technology/laserAlmaHarmony/laserAlmaHarmonyImageMedium.png';
 
 import icooneLaserMed2ImageSmall from '../assets/technology/icooneLaserMed2/icooneLaserMed2ImageSmall.jpg';
-import icooneLaserMed2ImageMedium from '../assets/technology/icooneLaserMed2/icooneLaserMed2ImageMedium.jpg';
+import icooneLaserMed2ImageMedium from '../assets/technology/icooneLaserMed2/icooneLaserMed2ImageMedium.png';
 import icooneLaserMed2ImageLarge from '../assets/technology/icooneLaserMed2/icooneLaserMed2ImageLarge.jpg';
 
 import fonsSvrFractionLaserCo2ImageSmall from '../assets/technology/fonsSvrFractionLaserCo2/fonsSvrFractionLaserCo2ImageSmall.png';
-import fonsSvrFractionLaserCo2ImageMedium from '../assets/technology/fonsSvrFractionLaserCo2/fonsSvrFractionLaserCo2ImageMedium.jpg';
+import fonsSvrFractionLaserCo2ImageMedium from '../assets/technology/fonsSvrFractionLaserCo2/fonsSvrFractionLaserCo2ImageMedium.png';
 import fonsSvrFractionLaserCo2ImageLarge from '../assets/technology/fonsSvrFractionLaserCo2/fonsSvrFractionLaserCo2ImageLarge.png';
 
 import accentUltraImageSmall from '../assets/technology/accentUltra/accentUltraImageSmall.jpg';
-import accentUltraImageMedium from '../assets/technology/accentUltra/accentUltraImageMedium.jpg';
+import accentUltraImageMedium from '../assets/technology/accentUltra/accentUltraImageMedium.png';
+
+import sonoQueenImageSmall from '../assets/technology/sonoQueen/sonoQueenImageSmall.png';
+import sonoQueenImageMedium from '../assets/technology/sonoQueen/sonoQueenImageMedium.png';
 
 export const vectus = {
     designation: 'vectus',
@@ -62,10 +65,24 @@ export const fonsSvrFractionLaserCo2 = {
     path: '/technology/fons-svr-fraction-laser-co2'
 };
 
+export const sonoQueen = {
+    designation: 'fonsSvrLaserFrakcyjnyCo2',
+    title: 'Fons SVR™ Laser Frakcyjny CO\u2082',
+    description: 'Laser Frakcyjny Fons SVR™ jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci likwidacji blizn potrądzikowych, poprawy jakości skóry i wytworzenia nowych struktur kolagenu.',
+    imageSmall: sonoQueenImageSmall,
+    imageMedium: sonoQueenImageMedium,
+    imageLarge: sonoQueenImageMedium,
+    path: '/technology/fons-svr-fraction-laser-co2'
+};
+
 export const technology = [
     { ...vectus },
     { ...laserAlmaHarmony },
     { ...icooneLaserMed2 },
+    
     { ...fonsSvrFractionLaserCo2 },
+   
     { ...accentUltraV },
+    { ...sonoQueen },
+   
 ];
