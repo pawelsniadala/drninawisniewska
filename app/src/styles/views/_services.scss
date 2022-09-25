@@ -9,6 +9,10 @@
                 .service-description {
                     grid-column: span 2;
 
+                    @media (max-width: 991.98px) {
+                        grid-column: span 3;
+                    }
+
                     .header {
                         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
                         font-weight: 400;
@@ -48,6 +52,10 @@
 
                 .proposed-services {
                     grid-column: span 1;
+
+                    @media (max-width: 991.98px) {
+                        display: none;
+                    }
                 }
             }
         }

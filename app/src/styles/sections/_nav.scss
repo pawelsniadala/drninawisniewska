@@ -1,3 +1,158 @@
+.top-nav {
+    background-color: #202124;
+
+    .nav-wrapper {
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .contact-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+
+                .link {
+                    text-decoration: none;
+
+                    .link-wrapper {
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+
+                        .link-text {
+                            font-size: 11px;
+                            font-weight: 400;
+                            font-family: Google Sans Text, Arial, Helvetica, sans-serif;
+                            letter-spacing: 0.00938em;
+                            line-height: 1.5;
+                            color: #fff;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            .media-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 991.98px) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.MuiDrawer-paper {
+    background-color: #fff !important;
+
+    .logo {
+        padding-top: 12px;
+        padding-bottom: 12px;
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            padding-left: 16px;
+
+            // .brand-logo {
+            //     height: 51px;
+            // }
+
+            .brand-text {
+                color: transparent;
+                font: 400 14px/20px Google Sans Text,Arial,Helvetica,sans-serif;
+                font-size: 8.925px;
+                letter-spacing: .3px;
+                font-weight: 500;
+                white-space: nowrap;
+                text-transform: uppercase;
+                line-height: 1.4;
+                background-image: linear-gradient(90deg, #d09636 0%, #d9ab5a 51%, #dbb97b 100%);
+                background-clip: text;
+            }
+        }
+    }
+
+    .menu {
+        background-color: #f5f5f5;
+    }
+
+    .media {
+        background-color: #fff;
+    }
+
+    svg {
+        filter: invert(0%) sepia(100%) saturate(7500%) hue-rotate(327deg) brightness(114%) contrast(114%);
+        opacity: 0.75;
+        user-select: none;
+
+        // &:hover {
+        //     opacity: 0.7;
+        //     cursor: pointer;
+        // }
+    }
+
+    a {
+        flex: 1 1 auto;
+        min-width: 0px;
+        padding: 0;
+        font-family: Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+        letter-spacing: 0.00938em;
+        display: block;
+        color: rgba(0,0,0,.75);
+        text-decoration: none;
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.87);
+        }
+    }
+
+    .css-9mgopn-MuiDivider-root {
+        border-color: rgba(224, 224, 224, 0.7);
+        opacity: 1;
+    }
+}
+
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+    background-color: #fff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .nav-item {
     list-style: none;
     // margin: 0 20px;
@@ -21,104 +176,144 @@
 
 
 
-// nav.navbar {
-//     // background-color: #ffffff;
-//     // border-bottom: 1px solid rgba(0, 0, 0, .1);
+nav.navbar {
+    background-color: #fff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    // border-bottom: 1px solid rgba(0, 0, 0, .1);
 
-//     // @media (min-width: 991.98px) {
-//     //     position: fixed;
-//     //     top: 0;
-//     //     right: 0;
-//     //     left: 0;
-//     //     z-index: 1030;
-//     // }
+    // @media (min-width: 991.98px) {
+    //     position: fixed;
+    //     top: 0;
+    //     right: 0;
+    //     left: 0;
+    //     z-index: 1030;
+    // }
 
-//     // background-image: url("../../assets/old-wooden-floorboard-textured-background\ —\ kopia.jpg");
+    // background-image: url("../../assets/old-wooden-floorboard-textured-background\ —\ kopia.jpg");
 
-//     .container {
-//         &.container-fluid {
-//             padding-top: 0;
-//             padding-bottom: 0;
+    .container {
+        padding-top: 0px;
+        padding-bottom: 0px;
 
-//             .navbar-brand {
-//                 font-weight: 500;
-//                 letter-spacing: 1px;
-//                 color: rgba(255,255,255,.55);
-//                 margin-right: 1.2rem;
-//                 // margin-left: 1.2rem;
+        &.container-fluid {
 
-//                 &:hover {
-//                     color: rgba(255,255,255,.75);
-//                 }
 
-//                 &.active {
-//                     color: #fff;
-//                     color: rgba(255,255,255,.95);
-//                 }
-//             }
+            .navbar-brand {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+                padding: 0;
 
-//             .nav-item {
-//                 font-family: 'Lato', sans-serif;
-//                 text-transform: uppercase;
-//                 font-weight: 300;
-//                 font-size: 14px;
-//             }
+                // .brand-logo {
+                //     height: 60px;
+                // }
 
-//             .navbar-toggler {
-//                 border: none;
-//                 padding: 0.25rem 0;
+                .brand-text {
+                    color: transparent;
+                    font: 400 14px/20px Google Sans Text,Arial,Helvetica,sans-serif;
+                    font-size: 10.5px;
+                    letter-spacing: .3px;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    text-transform: uppercase;
+                    line-height: 1.4;
+                    background-image: linear-gradient(90deg, #d09636 0%, #d9ab5a 51%, #dbb97b 100%);
+                    background-clip: text;
 
-//                 .navbar-toggler-icon {
-//                     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-//                 }
+                    @media (max-width: 991.98px) {
+                        font-size: 8.925px;
+                    }
+                }
 
-//                 &:focus {
-//                     box-shadow: none;
-//                 }
-//             }
-//         }
+                // @media (max-width: 991.98px) {
+                //     .brand-logo {
+                //         height: 51px;
+                //     }
 
-//         .offcanvas {
-//             .offcanvas-body {
-//                 .navbar-nav {
-//                     align-items: center;
+                //     .brand-text {
+                //         font-size: 8.925px;
+                //     }
+                // }
 
-//                     .nav-link {
-//                         svg {
-//                             filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
-//                             opacity: .55;
+                // font-weight: 500;
+                // letter-spacing: 1px;
+                // color: rgba(255,255,255,.55);
 
-//                             &:hover {
-//                                 opacity: .75;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
+                // &:hover {
+                //     color: rgba(255,255,255,.75);
+                // }
 
-//             &.show {
-//                 .offcanvas-body {
-//                     .nav-link {
-//                         color: rgba(0,0,0,.55);
+                // &.active {
+                //     color: #fff;
+                //     color: rgba(255,255,255,.95);
+                // }
+            }
 
-//                         &.active {
-//                             color: rgba(0,0,0,.9);
-//                         }
-//                     }
-//                 }
-//             }
+            .navbar-toggler {
+                border: none;
+                padding: 0.25rem 0;
 
-//             .offcanvas-header {
-//                 text-transform: uppercase;
-//                 // color: #fff;
-//             }
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+                }
 
-//             .offcanvas-body {
-//                 .nav-link {
-//                     // text-transform: uppercase;
-//                 }
-//             }
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+        }
 
-//         }
-//     }
-// }
+        .offcanvas {
+            .offcanvas-body {
+                .navbar-nav {
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    flex-grow: 1;
+                    gap: 1rem;
+
+                    .nav-item {
+                        .nav-link {
+                            line-height: 1.5;
+                            letter-spacing: 0.00938em;
+                            color: rgba(0, 0, 0, 0.87);
+                            font-size: 0.8rem;
+                            font-family: "Raleway", sans-serif;
+                            text-transform: uppercase;
+                            font-weight: 400;
+                            padding-left: 0;
+                            padding-right: 0;
+                        }
+                    }
+
+                }
+            }
+
+            &.show {
+                .offcanvas-body {
+                    .nav-link {
+                        color: rgba(0,0,0,.55);
+
+                        &.active {
+                            color: rgba(0,0,0,.9);
+                        }
+                    }
+                }
+            }
+
+            .offcanvas-header {
+                text-transform: uppercase;
+                // color: #fff;
+            }
+
+            .offcanvas-body {
+                .nav-link {
+                    // text-transform: uppercase;
+                }
+            }
+
+        }
+    }
+}
+

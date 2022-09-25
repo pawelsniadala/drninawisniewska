@@ -6,6 +6,7 @@ import {
 import MainTemplate from '../templates/MainTemplate';
 import ScrollArrow from '../components/ScrollArrow';
 import NavSection from '../sections/NavSection';
+import NavSection2 from '../sections/NavSection2';
 import FooterSection from '../sections/FooterSection';
 import HomeView from './HomeView';
 import ClinicView from './ClinicView';
@@ -71,7 +72,8 @@ import ContactView from './ContactView';
 const Root = () => (
     <MainTemplate>
         <Router>
-            <NavSection />
+            {/* <NavSection /> */}
+            <NavSection2 />
             <main>
                 <Routes>
                     <Route exact path='/' element={<HomeView />} />

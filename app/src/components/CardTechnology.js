@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 
 const badge = (title) => (
-    <span class="badge">
+    <span className="badge">
         {title}
     </span>
 );

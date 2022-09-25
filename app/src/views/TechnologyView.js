@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Typography from '@mui/material/Typography';
@@ -9,6 +9,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
 import CardTechnology from '../components/CardTechnology';
+import CardProposed from '../components/CardProposed';
 
 import { technology } from '../data/technology';
 
@@ -17,6 +18,28 @@ const TechnologyView = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
+
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
 
     return (
         <Box className='contact-view'>
@@ -61,16 +84,27 @@ const TechnologyView = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper'>
                         <Box className='card-wrapper technology section'>
-                            {technology.map((item, index) => (
-                                <Box key={index}>
-                                   <CardTechnology
+                            {width >= 991.98 ? (
+                                technology.map((item, index) => (
+                                    <CardTechnology
+                                        key={index}
                                         cardImage={item.imageMedium}
                                         cardTitle={item.title}
                                         cardPath={item.path}
                                         cardBadge={item.badge}
                                     />
-                                </Box>
-                            ))}
+                                ))
+                            ) : (
+                                technology.map((item, index) => (
+                                    <CardProposed
+                                        key={index}
+                                        cardTitle={item.title}
+                                        cardDescription={item.description}
+                                        cardImage={item.imageSmall}
+                                        cardPath={item.path}
+                                    />
+                                ))
+                            )}
                         </Box>
                     </Container>
                 </Box>

@@ -28,8 +28,6 @@ const ListBulleted = ({
                 >
                     <Box
                         component={Avatar}
-                        // sx={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
-                        // sx={{ backgroundColor: '#28a745' }}
                         sx={ListBulletedStyle}
                         width={20}
                         height={20}

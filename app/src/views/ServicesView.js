@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Typography from '@mui/material/Typography';
@@ -9,6 +9,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
 import CardServices from '../components/CardServices';
+import CardProposed from '../components/CardProposed';
 
 import { services } from '../data/services';
 
@@ -16,6 +17,28 @@ const ServicesView = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
+
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
 
     return (
         <Box className='contact-view'>
@@ -60,19 +83,29 @@ const ServicesView = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper'>
                         <Box className='card-wrapper services'>
-                            {services.length ? services.map((item, index) => (
-                                <CardServices
-                                    key={index}
-                                    cardTitle={item.title}
-                                    cardDescription={item.description}
-                                    cardPath={item.path}
-                                    cardPrice={item.prices}
-                                    cardSpecialist={item.specialists}
-                                    cardImage={item.image}
-                                    cardImageVisible={false}
-                                />
-                            )) : (
-                                {/* <Skeleton variant='rectangular' width={210} height={118} /> */}
+                            {width >= 991.98 ? (
+                                services.map((item, index) => (
+                                    <CardServices
+                                        key={index}
+                                        cardTitle={item.title}
+                                        cardDescription={item.description}
+                                        cardPath={item.path}
+                                        cardPrice={item.prices}
+                                        cardSpecialist={item.specialists}
+                                        cardImage={item.image}
+                                        cardImageVisible={false}
+                                    />
+                                ))
+                            ) : (
+                                services.map((item, index) => (
+                                    <CardProposed
+                                        key={index}
+                                        cardTitle={item.title}
+                                        cardDescription={item.description}
+                                        cardImage={item.image}
+                                        cardPath={item.path}
+                                    />
+                                ))
                             )}
                         </Box>
                     </Container>

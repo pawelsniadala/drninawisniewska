@@ -60,7 +60,7 @@ const HeroSection = () => {
                                 filter: 'brightness(0.95)',
                             }}
                         />
-                        <Box className="carousel-caption d-none d-md-block" sx={{ bottom: '2rem' }}>
+                        <Box className="carousel-caption d-none d-md-block" sx={{ bottom: '1.25rem' }}>
                             <Container>
                                 <Typography
                                     variant="h4"
@@ -142,7 +142,7 @@ const HeroSection = () => {
                                 filter: 'brightness(0.85)',
                             }}
                         />
-                        <Box className="carousel-caption d-none d-md-block" sx={{ bottom: '2rem' }}>
+                        <Box className="carousel-caption d-none d-md-block" sx={{ bottom: '1.25rem' }}>
                             <Container>
                                 <Typography
                                     variant="h4"
@@ -218,7 +218,7 @@ const HeroSection = () => {
                                 filter: 'brightness(0.85)',
                             }}
                         />
-                        <Box className="carousel-caption d-none d-md-block" sx={{ top: '2rem' }}>
+                        <Box className="carousel-caption d-none d-md-block" sx={{ top: '1.25rem' }}>
                             <Container>
                                 <Typography
                                     variant="h4"
@@ -295,7 +295,7 @@ const HeroSection = () => {
                                 filter: 'brightness(0.85)',
                             }}
                         />
-                        <Box className="carousel-caption d-none d-md-block" sx={{ top: '2rem' }}>
+                        <Box className="carousel-caption d-none d-md-block" sx={{ top: '1.25rem' }}>
                             <Container>
                                 <Typography
                                     variant="h4"

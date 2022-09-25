@@ -104,13 +104,13 @@ const TeamSection = () => {
                     <Box className='card-wrapper team'>
                         {team.slice(0, 4).map((item, index) => (
                             <Box
+                                key={index}
                                 data-aos={'fade-up'}
                                 data-aos-delay={index * 100}
                                 data-aos-offset={100}
                                 data-aos-duration={600}
                             >
                                 <CardTeam
-                                    key={index}
                                     cardImage={item.image}
                                     cardBackground={item.background}
                                     cardTitle={item.title}
