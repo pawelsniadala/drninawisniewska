@@ -4,11 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
-import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
@@ -32,6 +28,7 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
+                                className='breadcrumb back'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
@@ -41,6 +38,7 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
+                                className='breadcrumb nav'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
@@ -48,7 +46,7 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                     Home
                                 </Link>
                                 <Link to='/technology' aria-current='page'>
-                                Technologia
+                                    Technologia
                                 </Link>
                                 <Typography color='text.primary'>
                                     Fons SVR Laser Frakcyjny CO<sub>2</sub>

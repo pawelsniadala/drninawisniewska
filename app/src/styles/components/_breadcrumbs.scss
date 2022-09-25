@@ -31,3 +31,11 @@
     margin-left: 5px !important;
     margin-right: 5px !important;
 }
+
+.breadcrumb {
+    &.nav {
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+    }
+}

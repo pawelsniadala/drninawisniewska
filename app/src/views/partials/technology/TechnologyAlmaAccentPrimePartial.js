@@ -28,6 +28,7 @@ const TechnologyAlmaAccentPrimePartial = () => {
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
+                                className='breadcrumb back'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
@@ -37,6 +38,7 @@ const TechnologyAlmaAccentPrimePartial = () => {
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
+                                className='breadcrumb nav'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
@@ -47,7 +49,7 @@ const TechnologyAlmaAccentPrimePartial = () => {
                                     Technologia
                                 </Link>
                                 <Typography color='text.primary'>
-                                    {almaAccentPrime.title}
+                                    Alma Accent Prime
                                 </Typography>
                             </Breadcrumbs>
                         </Box>

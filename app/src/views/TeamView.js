@@ -1,25 +1,18 @@
 import React, { useEffect } from 'react';
 import { Link } from "react-router-dom";
+
 import Typography from '@mui/material/Typography';
-// import { useTheme } from '@mui/material/styles';
-// import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
-// import Grid from '@mui/material/Grid';
-import Container from '../components/Container';
-// import ServicesGridPartial from './partials/services/ServicesGridPartial';
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
-import { team } from '../data/team';
 
+import Container from '../components/Container';
 import CardTeam from '../components/CardTeam';
 
-const TeamView = () => {
-    // const theme = useTheme();
-    // const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    //     defaultMatches: true,
-    // });
+import { team } from '../data/team';
 
+const TeamView = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }, []);
@@ -31,6 +24,7 @@ const TeamView = () => {
                     <Container className="header-wrapper">
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
+                                className='breadcrumb back'
                                 separator={<NavigateNextIcon fontSize="smform" />}
                                 aria-label="breadcrumb"
                             >
@@ -43,6 +37,7 @@ const TeamView = () => {
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
+                                className='breadcrumb nav'
                                 separator={<NavigateNextIcon fontSize="smform" />}
                                 aria-label="breadcrumb"
                             >
@@ -67,7 +62,7 @@ const TeamView = () => {
                 <Box className="view-body">
                     <Container className="body-wrapper">
                         <Box className="card-wrapper team">
-                            {team.length ? team.map((item, index) => (
+                            {team.map((item, index) => (
                                 <CardTeam
                                     key={index}
                                     cardImage={item.image}
@@ -77,9 +72,7 @@ const TeamView = () => {
                                     cardSpeciality={item.speciality}
                                     cardPath={item.path}
                                 />
-                            )) : (
-                                {/* <Skeleton variant="rectangular" width={210} height={118} /> */}
-                            )}
+                            ))}
                         </Box>
                     </Container>
                 </Box>

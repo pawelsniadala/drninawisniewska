@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Container from '../components/Container';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
 
+import Container from '../components/Container';
 import CardTechnology from '../components/CardTechnology';
 import CardProposed from '../components/CardProposed';
 
@@ -48,6 +48,7 @@ const TechnologyView = () => {
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
+                                className='breadcrumb back'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
@@ -60,6 +61,7 @@ const TechnologyView = () => {
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
+                                className='breadcrumb nav'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
@@ -83,7 +85,7 @@ const TechnologyView = () => {
                 </Box>
                 <Box className='view-body'>
                     <Container className='body-wrapper'>
-                        <Box className='card-wrapper technology section'>
+                        <Box className='card-wrapper technology view'>
                             {width >= 991.98 ? (
                                 technology.map((item, index) => (
                                     <CardTechnology

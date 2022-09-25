@@ -28,6 +28,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
+                                className='breadcrumb back'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
@@ -37,6 +38,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
+                                className='breadcrumb nav'
                                 separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
@@ -44,10 +46,10 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                     Home
                                 </Link>
                                 <Link to='/technology' aria-current='page'>
-                                Technologia
+                                    Technologia
                                 </Link>
                                 <Typography color='text.primary'>
-                                    {icooneLaserMed2.title}
+                                    Icoone Laser Med 2
                                 </Typography>
                             </Breadcrumbs>
                         </Box>

@@ -1,7 +1,7 @@
 .heading-view {
     margin: 0 !important;
     text-align: left !important;
-    color: rgba(0, 0, 0, 0.6) !important;
+    color: rgba(0, 0, 0, 0.7) !important;
     // font-family: Lato, sans-serif !important;
     font-size: 30px !important;
     line-height: 1.208em !important;
@@ -12,5 +12,9 @@
     sub {
         font-size: 19px;
         line-height: 1.208em;
+    }
+
+    @media (max-width: 991.98px) {
+        font-size: 24px !important;
     }
 }
