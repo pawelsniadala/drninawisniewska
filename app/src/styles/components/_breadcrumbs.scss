@@ -6,30 +6,32 @@
     .MuiBreadcrumbs-li {
         a {
             text-decoration: none !important;
-            font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
-            font-size: 0.9rem !important;
+            // font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+            font-family: "Source Sans Pro", sans-serif !important;
+            font-size: 0.85rem !important;
             font-weight: 300 !important;
-            color: rgba(0, 0, 0, 0.7) !important;
+            color: rgba(0, 0, 0, 0.55) !important;
             display: flex;
             align-items: center;
 
             &:hover {
-                color: rgba(0, 0, 0, 0.9) !important;
+                color: rgba(0, 0, 0, 0.75) !important;
             }
         }
     }
 
     .MuiTypography-root {
-        color: rgba(0, 0, 0, 0.9) !important;
-        font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
-        font-size: 0.9rem !important;
+        color: rgba(0, 0, 0, 0.75) !important;
+        // font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
+        font-family: "Source Sans Pro", sans-serif !important;
+        font-size: 0.85rem !important;
         font-weight: 300 !important;
     }
 }
 
 .MuiBreadcrumbs-separator {
-    margin-left: 5px !important;
-    margin-right: 5px !important;
+    margin-left: 3px !important;
+    margin-right: 3px !important;
 }
 
 .breadcrumb {

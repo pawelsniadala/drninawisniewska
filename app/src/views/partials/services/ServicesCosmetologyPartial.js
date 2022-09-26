@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 import ListItem from '@mui/material/ListItem';
@@ -11,7 +10,8 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
@@ -32,11 +32,10 @@ const ServicesCosmetologyPartial = () => {
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb back'
-                                separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/services' aria-current='page'>
-                                    <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize='smform' />
+                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
                                     <Box>Usługi</Box>
                                 </Link>
                             </Breadcrumbs>

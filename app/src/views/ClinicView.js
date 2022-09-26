@@ -12,7 +12,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../components/Container';
 import ListBulleted from '../components/ListBulleted';
@@ -58,7 +58,7 @@ const TechnologyView = () => {
                                     to='/'
                                     aria-current='page'
                                 >
-                                    <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize='smform' />
+                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>

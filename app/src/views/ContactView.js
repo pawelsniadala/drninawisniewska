@@ -16,7 +16,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Avatar from '@mui/material/Avatar';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import EmailIcon from '@mui/icons-material/Email';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
@@ -245,14 +245,13 @@ const ContactView = () => {
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb back'
-                                separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
                                 <Link
                                     to='/'
                                     aria-current='page'
                                 >
-                                    <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize='smform' />
+                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>

@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
@@ -29,11 +29,10 @@ const TechnologyAlmaAccentPrimePartial = () => {
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb back'
-                                separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/technology' aria-current='page'>
-                                    <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize='smform' />
+                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
                                     <Box>Technologia</Box>
                                 </Link>
                             </Breadcrumbs>

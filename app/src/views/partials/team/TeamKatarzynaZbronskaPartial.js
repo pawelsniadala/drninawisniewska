@@ -5,11 +5,11 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../../../components/Container';
 
@@ -40,11 +40,10 @@ const TeamKatarzynaZbronskaPartial = () => {
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb back'
-                                separator={<NavigateNextIcon fontSize='smform' />}
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/team' aria-current='page'>
-                                    <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize='smform' />
+                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
                                     <Box>Zespół</Box>
                                 </Link>
                             </Breadcrumbs>

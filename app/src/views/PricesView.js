@@ -3,30 +3,21 @@ import {
     useState,
     useEffect
 } from "react";
-import {
-    Link,
-    // useLocation
-} from "react-router-dom";
-// import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
-import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import Box from '@mui/material/Box';
 import Container from '../components/Container';
-// import Card from '@mui/material/Card';
-// import CardHeader from '@mui/material/CardHeader';
-// import CardMedia from '@mui/material/CardMedia';
-// import CardContent from '@mui/material/CardContent';
-// import CardActions from '@mui/material/CardActions';
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import Divider from '@mui/material/Divider';
-
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import KeyboardDoubleArrowLeftIcon from '@mui/icons-material/KeyboardDoubleArrowLeft';
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
 import PricesAestheticMedicinePartials from "./partials/prices/PricesAestheticMedicinePartials";
@@ -181,14 +172,13 @@ const PricesView = () => {
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb back'
-                                separator={<NavigateNextIcon fontSize="smform" />}
                                 aria-label="breadcrumb"
                             >
                                 <Link
                                     to="/"
                                     aria-current="page"
                                 >
-                                    <KeyboardDoubleArrowLeftIcon sx={{ mr: 0.5 }} fontSize="smform" />
+                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize="smform" />
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>
