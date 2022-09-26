@@ -2,11 +2,10 @@ import React from 'react';
 
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
-import Tooltip from '@mui/material/Tooltip';
 
 import FacebookSvg from '../assets/svg/FacebookSvg';
-import TwitterSvg from '../assets/svg/TwitterSvg';
 import InstagramSvg from '../assets/svg/InstagramSvg';
+
 import Container from '../components/Container';
 
 const FooterSection = () => {
@@ -86,6 +85,13 @@ const FooterSection = () => {
                             className='footer-text link'
                         >
                             Alergologia
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='/services/usg'
+                            className='footer-text link'
+                        >
+                            USG
                         </Typography>
                         <Typography
                             component='a'
@@ -218,15 +224,6 @@ const FooterSection = () => {
                             >
                                 <FacebookSvg width='16px' height='16px' />
                             </Typography>
-                            {/* <Typography
-                                component='a'
-                                href='https://www.facebook.com/profile.php?id=100063736802328'
-                                className='link'
-                                target='_blank'
-                                rel='noreferrer'
-                            >
-                                <TwitterSvg width='16px' height='16px' />
-                            </Typography> */}
                             <Typography
                                 component='a'
                                 href='https://www.instagram.com/klinikawyszkow/'
@@ -240,12 +237,12 @@ const FooterSection = () => {
                     </Box>
                 </Box>
             </Container>
-            <div className='section-wrapper info'>
-                <div className='copyright'>
-                    <div>Copyright © 2022 Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska. All rights reserved.</div>
-                    <div>Design by <a href='https://www.linkedin.com/in/pawelsniadala/' className='design' target='_blank' rel='noreferrer'>Paweł Śniadała</a>.</div>
-                </div>
-            </div>
+            <Box className='section-wrapper info'>
+                <Box className='copyright'>
+                    <Box>Copyright © 2022 Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska.</Box>
+                    <Box>All rights reserved. Design by <a href='https://www.linkedin.com/in/pawelsniadala/' className='design' target='_blank' rel='noreferrer'>Paweł Śniadała</a>.</Box>
+                </Box>
+            </Box>
         </footer>
     );
 }

@@ -99,8 +99,8 @@ const TechnologyVectusPartial = () => {
                                         'Wyklucza ryzyko poparzenia.'
                                     ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
@@ -132,8 +132,8 @@ const TechnologyVectusPartial = () => {
                                         'Tydzień przed wykonywanym zabiegiem nie należy wykonywać zabiegów uszczających.'
                                     ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
@@ -156,8 +156,8 @@ const TechnologyVectusPartial = () => {
                                         'Intensywnego szorowania oraz używania kosmetyków uszczających na obszarze zabiegu.'
                                     ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
@@ -175,8 +175,8 @@ const TechnologyVectusPartial = () => {
                                     '100% satysfakcji pacjenta'
                                 ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
@@ -204,8 +204,8 @@ const TechnologyVectusPartial = () => {
                                     'Niedawno przebyte zabiegi chirurgiczne',
                                 ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
@@ -214,7 +214,7 @@ const TechnologyVectusPartial = () => {
                         </Box>
                         <Box className='proposed-technology'>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.length ? technology.filter(item => item.designation !== 'vectus').map((item, index) => (
+                                {technology.filter(item => item.designation !== 'vectus').map((item, index) => (
                                     <CardProposed
                                         key={index}
                                         cardTitle={item.title}
@@ -222,9 +222,7 @@ const TechnologyVectusPartial = () => {
                                         cardImage={item.imageSmall}
                                         cardPath={item.path}
                                     />
-                                )) : (
-                                    <Box>Brak danych</Box>
-                                )}
+                                ))}
                             </Box>
                         </Box>
                     </Container>

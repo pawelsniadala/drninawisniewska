@@ -100,8 +100,8 @@ const TechnologyAlmaAccentPrimePartial = () => {
                                         'Szybki zabieg głowicą ultraspeedtm - 20 minut na dużym obszarze ciała'
                                     ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
@@ -110,7 +110,7 @@ const TechnologyAlmaAccentPrimePartial = () => {
                         </Box>
                         <Box className='proposed-technology'>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.length ? technology.filter(item => item.designation !== 'almaAccentPrime').map((item, index) => (
+                                {technology.filter(item => item.designation !== 'almaAccentPrime').map((item, index) => (
                                     <CardProposed
                                         key={index}
                                         cardTitle={item.title}
@@ -118,9 +118,7 @@ const TechnologyAlmaAccentPrimePartial = () => {
                                         cardImage={item.imageSmall}
                                         cardPath={item.path}
                                     />
-                                )) : (
-                                    <Box>Brak danych</Box>
-                                )}
+                                ))}
                             </Box>
                         </Box>
                     </Container>

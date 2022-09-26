@@ -103,8 +103,8 @@ const TechnologySonoQueenPartial = () => {
                                         'Spowolnienie procesu starzenia skóry'
                                     ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
@@ -113,7 +113,7 @@ const TechnologySonoQueenPartial = () => {
                         </Box>
                         <Box className='proposed-technology'>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.length ? technology.filter(item => item.designation !== 'sonoQueen').map((item, index) => (
+                                {technology.filter(item => item.designation !== 'sonoQueen').map((item, index) => (
                                     <CardProposed
                                         key={index}
                                         cardTitle={item.title}
@@ -121,9 +121,7 @@ const TechnologySonoQueenPartial = () => {
                                         cardImage={item.imageSmall}
                                         cardPath={item.path}
                                     />
-                                )) : (
-                                    <Box>Brak danych</Box>
-                                )}
+                                ))}
                             </Box>
                         </Box>
                     </Container>

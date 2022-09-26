@@ -115,8 +115,8 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                         'Przyśpiesza metabolizm.'
                                     ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
@@ -134,8 +134,8 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                         'Zabieg jest bezbolesny.'
                                     ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
@@ -155,8 +155,8 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                         'Działanie pulsacyjne ICOONE® pobudza układ neurowegetatywny.'
                                     ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
@@ -183,8 +183,8 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                         'Mających blizny pooperacyjne i pooparzeniowe'
                                     ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
@@ -193,7 +193,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                         </Box>
                         <Box className='proposed-technology'>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.length ? technology.filter(item => item.designation !== 'icooneLaserMed2').map((item, index) => (
+                                {technology.filter(item => item.designation !== 'icooneLaserMed2').map((item, index) => (
                                     <CardProposed
                                         key={index}
                                         cardTitle={item.title}
@@ -201,9 +201,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                         cardImage={item.imageSmall}
                                         cardPath={item.path}
                                     />
-                                )) : (
-                                    <Box>Brak danych</Box>
-                                )}
+                                ))}
                             </Box>
                         </Box>
                     </Container>

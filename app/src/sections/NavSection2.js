@@ -88,6 +88,7 @@ const NavSection2 = () => {
                     </NavLink>
                 </ListItem>
             </List>
+            <Divider />
             <List className="menu">
                 <ListItem disablePadding>
                     <NavLink
@@ -97,7 +98,7 @@ const NavSection2 = () => {
                         to="/clinic"
                     >
                         <ListItemButton>
-                            <ListItemText primary="Klinika" />
+                            <ListItemText className='list-item-text' primary="Klinika" />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
@@ -110,7 +111,7 @@ const NavSection2 = () => {
                         to="/services"
                     >
                         <ListItemButton>
-                            <ListItemText primary="Usługi" />
+                            <ListItemText className='list-item-text' primary="Usługi" />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
@@ -123,7 +124,7 @@ const NavSection2 = () => {
                         to="/prices"
                     >
                         <ListItemButton>
-                            <ListItemText primary="Cennik" />
+                            <ListItemText className='list-item-text' primary="Cennik" />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
@@ -136,7 +137,7 @@ const NavSection2 = () => {
                         to="/team"
                     >
                         <ListItemButton>
-                            <ListItemText primary="Zespół" />
+                            <ListItemText className='list-item-text' primary="Zespół" />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
@@ -149,7 +150,7 @@ const NavSection2 = () => {
                         to="/technology"
                     >
                         <ListItemButton>
-                            <ListItemText primary="Technologia" />
+                            <ListItemText className='list-item-text' primary="Technologia" />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
@@ -162,12 +163,12 @@ const NavSection2 = () => {
                         to="/contact"
                     >
                         <ListItemButton>
-                            <ListItemText primary="Kontakt" />
+                            <ListItemText className='list-item-text' primary="Kontakt" />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
             </List>
-            {/* <Divider /> */}
+            <Divider />
             {/* <List className="media">
                 <ListItem disablePadding>
                     <a href="https://www.facebook.com/Radiostory-104327058985831/"

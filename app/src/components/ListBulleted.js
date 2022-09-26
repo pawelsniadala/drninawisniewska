@@ -9,11 +9,10 @@ import Avatar from '@mui/material/Avatar';
 
 const ListBulleted = ({
     ListBulletedItem,
-    ListBulletedKey,
     ListBulletedStyle
 }) => {
     return (
-        <Grid item xs={12} key={ListBulletedKey}>
+        <Grid item xs={12}>
             <Box
                 component={ListItem}
                 disableGutters

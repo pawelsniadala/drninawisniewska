@@ -6,6 +6,11 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr;
                     gap: 20px;
+
+                    @media (max-width: 991.98px) {
+                        grid-template-columns: 1fr;
+                        gap: 0;
+                    }
                 }
 
                 .clinic-gallery-wrapper {
@@ -16,8 +21,13 @@
                 .clinic-services-wrapper {
                     .services-item-wrapper {
                         display: grid;
-                        grid-template-columns: 1fr 1fr 1fr;
+                        grid-template-columns: 1fr 1fr;
                         gap: 20px;
+
+                        @media (max-width: 991.98px) {
+                            gap: 0;
+                            grid-template-columns: 1fr;
+                        }
                     }
                 }
 

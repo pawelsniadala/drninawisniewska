@@ -63,7 +63,6 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper technology'>
                         <Box className='technology-description'>
-
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
                                     Laser Frakcyjny Fons SVR™ jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci likwidacji blizn potrądzikowych, poprawy jakości skóry i wytworzenia nowych struktur kolagenu. W porównaniu z tradycyjnymi laserami CO<sub>2</sub>, frakcjonowanie ablacyjne laserami Fons pozwala osiągnąć dużą głębokość penetracji w skórze, dając efektywne procedury zabiegowe. Dzięki wysokiej mocy i wszechstronności może być wykorzystywany w wielu wskazaniach. Wygodę i precyzję działania zapewnia siedmioprzegubowe ramię.
@@ -72,7 +71,6 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                     Ogromną zaletą jest bezkontaktowa praca lasera gwarantująca całkowitą czystość pola operacyjnego. Bardzo ważna jest także istotna redukcja krwawienia oraz natychmiastowa koagulacja. W trakcie wykonywania zabiegu uzyskujemy tysiące mikroskopijnych uszkodzeń tkanki, natomiast pozostałe obszary pozostają nienaruszone i to właśnie one przyspieszają odnowę zniszczonych stref skóry. Dzięki temu okres rekonwalescencji jest zredukowany do minimum przy jedoczesnym zachowaniu wysokiej efektywności terapii.
                                 </Typography>
                             </Box>
-
                             <Box marginBottom={3}>
                                 <LazyLoadImage
                                     height={'100%'}
@@ -91,7 +89,6 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                     }}
                                 />
                             </Box>
-
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header'>
                                     Możliwości zabiegowe
@@ -111,14 +108,13 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                         'Ginekologia estetyczna',
                                     ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
                                 </Grid>
                             </Box>
-
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header'>
                                     Zalety Lasera Fons SVR™
@@ -136,19 +132,17 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                         'Precyzja wykonanego zabiegu'
                                     ].map((item, index) => (
                                         <ListBulleted
+                                            key={index}
                                             ListBulletedItem={item}
-                                            ListBulletedKey={index}
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
                                 </Grid>
                             </Box>
-
-
                         </Box>
                         <Box className='proposed-technology'>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.length ? technology.filter(item => item.designation !== 'fonsSvrLaserFrakcyjnyCo2').map((item, index) => (
+                                {technology.filter(item => item.designation !== 'fonsSvrLaserFrakcyjnyCo2').map((item, index) => (
                                     <CardProposed
                                         key={index}
                                         cardTitle={item.title}
@@ -156,9 +150,7 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                         cardImage={item.imageSmall}
                                         cardPath={item.path}
                                     />
-                                )) : (
-                                    <Box>Brak danych</Box>
-                                )}
+                                ))}
                             </Box>
                         </Box>
                     </Container>
