@@ -94,7 +94,7 @@ const Root = () => (
                     <Route path='/services/vascular-surgery' element={<ServicesVascularSurgeryPartial />} />
                     <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial />} />
                     <Route path='/prices' element={<PricesView />}>
-                        <Route path='/prices/dermatology' element={<PricesDermatologyPartials />} />
+                        <Route path='/prices' element={<PricesDermatologyPartials />} />
                         <Route path='/prices/aesthetic-medicine' element={<PricesAestheticMedicinePartials />} />
                         <Route path='/prices/hematology' element={<PricesHematologyPartials />} />
                         <Route path='/prices/cosmetology' element={<PricesCosmetologyPartials />} />

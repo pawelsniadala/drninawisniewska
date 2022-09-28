@@ -14,14 +14,14 @@ import Tooltip from '@mui/material/Tooltip';
 
 const StyledTableCell = styled(TableCell)(() => ({
     [`&.${tableCellClasses.head}`]: {
-        borderBottom: '1px solid rgba(224, 224, 224, 0.7)',
-        padding: '12px',
-        lineHeight: 1
+        borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
+        padding: '12px 16px',
+        lineHeight: 1.25
     },
     [`&.${tableCellClasses.body}`]: {
-        borderBottom: '1px solid rgba(224, 224, 224, 0.7)',
-        padding: '12px',
-        lineHeight: 1
+        borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
+        padding: '12px 16px',
+        lineHeight: 1.25
     }
 }));
 
@@ -47,21 +47,57 @@ const tooltip = (title) => (
 );
 
 const Table1 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('dr n. med. Nina Wiśniewska', 250),
+        createData('lek. med. Katarzyna Zbrońska', 200),
+        createData('lek. med. Aldona Maciąg', 200),
+        createData('lek. med. Anna Kułakowska', 180),
+        createData('lek. med. Paulina Tatara', 180),
+        createData('lek. med. Justyna Kłoniecka', 180),
+        createData('lek. med. Katarzyna Myśliwiec-Czajka', 180),
+        createData('lek. med. Katarzyna Rychlik', 180),
+    ];
+
+    return (
+        <TableContainer className='table-container' component={Paper} >
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        Konsultacja dermatologiczna
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
+const Table2 = () => {
     function createData(name, tooltip, price) {
         return { name, tooltip, price };
     }
 
     const rows = [
-        createData('Konsultacja dermatologiczna - dr n. med. Nina Wiśniewska', false, 200),
-        createData('Konsultacja dermatologiczna - lek. med. Katarzyna Zbrońska', false, 180),
-        createData('Konsultacja dermatologiczna - lek. med. Aldona Maciąg', false, 180),
-        createData('Konsultacja dermatologiczna - lek. med. Anna Kułakowska', false, 180),
-        createData('Konsultacja dermatologiczna - lek. med. Paulina Tatara', false, 150),
-        createData('Konsultacja dermatologiczna - lek. med. Justyna Kłoniecka', false, 150),
-        createData('Konsultacja dermatologiczna - lek. med. Katarzyna Myśliwiec-Czajka', false, 150),
-        createData('Konsultacja dermatologiczna - lek. med. Katarzyna Rychlik', false, 150),
-        createData('Konsultacja medycyny estetycznej - dr Olga Lenartowicz-Warakomska', false, 150),
-        createData('Konsultacja medycyny estetycznej - dr Klaudia Malottki', false, 150),
         createData('Badanie dermatoskopowe zmian skórnych (całe ciało) ', false, 250),
         createData('Wideodermatoskopia', false, 300),
         createData('Założenie płatkowych testów kontaktowych, zdjęcie, odczyt i lista alergenów (36 Alergenów)', false, 350),
@@ -76,12 +112,12 @@ const Table1 = () => {
     ];
 
     return (
-        <TableContainer className='table-container' component={Paper} >
+        <TableContainer className='table-container' component={Paper} sx={{ width: '100%', overflow: 'auto' }}>
             <Table size="small" aria-label="customized table">
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        Laser Alma Harmony - nieablacyjne odmłodzenie skóry
+                        Nazwa
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -114,6 +150,7 @@ const PricesDermatologyPartials = () => {
     return (
         <Box display="grid" gap={'15px'}>
             <Table1 />
+            <Table2 />
         </Box>
     );
 }

@@ -40,7 +40,7 @@ export const services = [
         description: 'Przeprowadzone ewaluacje działań związków i form informacyjno-edukacyjnych na rzecz poprawy lokalnego środowiska przyrodniczego podejmowanych przez jednostki samorządu terytorialnego pozwoliły wybrać związki gmin do dalszych etapów badań jakościowych 16 wywiadów indywidualnych.',
         link: `<a href='https://pl.freepik.com/zdjecia/dermatolog'>Dermatolog zdjęcie utworzone przez wavebreakmedia_micro - pl.freepik.com</a>`,
         path: '/services/dermatology',
-        prices: '/prices/dermatology',
+        prices: '/prices',
         specialists: [
             ninaWisniewskaImage,
             katarzynaMysliwiecCzajkaImage,

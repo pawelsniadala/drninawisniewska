@@ -3,7 +3,7 @@ import {
     useState,
     useEffect
 } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import Typography from "@mui/material/Typography";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
@@ -32,18 +32,18 @@ import PricesGynecologyPartials from "./partials/prices/PricesGynecologyPartials
 import PricesOrthopedicsPartials from "./partials/prices/PricesOrthopedicsPartials";
 import PricesVascularSurgeryPartials from "./partials/prices/PricesVascularSurgeryPartials";
 import PricesClinicalDietitianPartials from "./partials/prices/PricesClinicalDietitianPartials";
+import Tabs, { tabsClasses } from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
 
 const PricesView = () => {
+    const location = useLocation();
+
     const [ pricesTab, setTab ] = useState(() => {
         const pathname = window.location.pathname;
 
         const selectTab = (pathname) => {
             switch(pathname) {
                 case "/prices":
-                    return (
-                        "prices-dermatology"
-                    );
-                case "/prices/dermatology":
                     return (
                         "prices-dermatology"
                     );
@@ -160,6 +160,28 @@ const PricesView = () => {
         }
     }
 
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
+
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }, []);
@@ -209,40 +231,12 @@ const PricesView = () => {
                     <Container className="body-wrapper prices">
                         <Box className='prices-navigation'>
                             <Box className='navigation-wrapper'>
-                                {/* <Box
-                                    class="nav flex-column nav-pills me-3"
-                                    id="v-pills-tab"
-                                    role="tablist"
-                                    aria-orientation="vertical"
-                                >
-                                    <li className="nav-item">
-                                        <Link
-                                            to="/prices/dermatology"
-                                            className={(`nav-link ${pricesTab === "prices-dermatology" ? "active" : ""}`).trim()}
-                                            aria-current="page"
-                                            onClick={() => setTab("prices-dermatology")}
-                                        >
-                                            Dermatologia
-                                        </Link>
-                                    </li>
-                                    <li className="nav-item">
-                                        <Link
-                                            to="/prices/aesthetic-medicine"
-                                            className={(`nav-link ${pricesTab === "prices-aesthetic-medicine" ? "active" : ""}`).trim()}
-                                            aria-current="page"
-                                            onClick={() => setTab("prices-aesthetic-medicine")}
-                                        >
-                                            Medycyna estetyczna
-                                        </Link>
-                                    </li>
-                                </Box> */}
-
-                        
+                                {width >= 991.98 ? (
                                 <List className='list'>
                                     <ListItem className='list-item' disablePadding>
                                         <ListItemButton
                                             component={Link}
-                                            to="/prices/dermatology"
+                                            to="/prices"
                                             className='list-item-button'
                                             aria-current="page"
                                             selected={pricesTab === "prices-dermatology"}
@@ -447,7 +441,114 @@ const PricesView = () => {
                                         </ListItemButton>
                                     </ListItem>
                                 </List>
-
+                                ) : (
+                                    <Tabs
+                                        value={location.pathname}
+                                        // value={pricesTab}
+                                        variant="scrollable"
+                                        scrollButtons="auto"
+                                        aria-label="scrollable auto tabs example"
+                                        TabIndicatorProps={{ style: { background: "transparent" }}}
+                                        sx={{
+                                            [`& .${tabsClasses.scrollButtons}`]: {
+                                                '&.Mui-disabled': { opacity: 0.3 },
+                                            },
+                                        }}
+                                    >
+                                        <Tab
+                                            label="Dermatologia"
+                                            component={Link}
+                                            to={`/prices`}
+                                            value={`/prices`}
+                                            selected={pricesTab === "prices-clinical-dietitian"}
+                                            onClick={() => setTab("prices-dermatology")}
+                                        />
+                                        <Tab
+                                            label="Medycyna estetyczna"
+                                            component={Link}
+                                            to={`/prices/aesthetic-medicine`}
+                                            value={`/prices/aesthetic-medicine`}
+                                            onClick={() => setTab("prices-aesthetic-medicine")}
+                                        />
+                                        <Tab
+                                            label="Kosmetologia"
+                                            component={Link}
+                                            to={`/prices/cosmetology`}
+                                            value={`/prices/cosmetology`}
+                                            onClick={() => setTab("prices-cosmetology")}
+                                        />
+                                        <Tab
+                                            label="Fizjoterapia"
+                                            component={Link}
+                                            to={`/prices/physioterapy`}
+                                            value={`/prices/physioterapy`}
+                                            onClick={() => setTab("prices-physioterapy")}
+                                        />
+                                        <Tab
+                                            label="Chirurgia plastyczna"
+                                            component={Link}
+                                            to={`/prices/cosmetic-surgery`}
+                                            value={`/prices/cosmetic-surgery`}
+                                            onClick={() => setTab("prices-cosmetic-surgery")}
+                                        />
+                                        <Tab
+                                            label="Alergologia"
+                                            component={Link}
+                                            to={`/prices/allergology`}
+                                            value={`/prices/allergology`}
+                                            onClick={() => setTab("prices-allergology")}
+                                        />
+                                        <Tab
+                                            label="USG"
+                                            component={Link}
+                                            to={`/prices/usg`}
+                                            value={`/prices/usg`}
+                                            onClick={() => setTab("prices-usg")}
+                                        />
+                                        <Tab
+                                            label="Endykrologia"
+                                            component={Link}
+                                            to={`/prices/endocrinology`}
+                                            value={`/prices/endocrinology`}
+                                            onClick={() => setTab("prices-endocrinology")}
+                                        />
+                                        <Tab
+                                            label="Endykrologia"
+                                            component={Link}
+                                            to={`/prices/gynecology`}
+                                            value={`/prices/gynecology`}
+                                            onClick={() => setTab("prices-gynecology")}
+                                        />
+                                        <Tab
+                                            label="Ortopedia"
+                                            component={Link}
+                                            to={`/prices/orthopedics`}
+                                            value={`/prices/orthopedics`}
+                                            onClick={() => setTab("prices-orthopedics")}
+                                        />
+                                        <Tab
+                                            label="Chirurgia naczyniowa"
+                                            component={Link}
+                                            to={`/prices/vascular-surgery`}
+                                            value={`/prices/vascular-surgery`}
+                                            onClick={() => setTab("prices-vascular-surgery")}
+                                        />
+                                        <Tab
+                                            label="Dietetyka Kliniczna"
+                                            component={Link}
+                                            to={`/prices/clinical-dietitian`}
+                                            value={`/prices/clinical-dietitian`}
+                                            onClick={() => setTab("prices-clinical-dietitian")}
+                                        />
+                                        <Tab
+                                            label="Hematologia"
+                                            component={Link}
+                                            to={`/prices/hematology`}
+                                            value={`/prices/hematology`}
+                                            onClick={() => setTab("prices-hematology")}
+                                        />
+                                    </Tabs>
+                                )}
                             </Box>
                         </Box>
                         <Box className='prices-tabels'>

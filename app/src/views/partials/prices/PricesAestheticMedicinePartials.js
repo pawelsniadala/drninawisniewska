@@ -14,14 +14,14 @@ import Tooltip from '@mui/material/Tooltip';
 
 const StyledTableCell = styled(TableCell)(() => ({
     [`&.${tableCellClasses.head}`]: {
-        borderBottom: '1px solid rgba(224, 224, 224, 0.7)',
-        padding: '12px',
-        lineHeight: 1,
+        borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
+        padding: '12px 16px',
+        lineHeight: 1.25
     },
     [`&.${tableCellClasses.body}`]: {
-        borderBottom: '1px solid rgba(224, 224, 224, 0.7)',
-        padding: '12px',
-        lineHeight: 1
+        borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
+        padding: '12px 16px',
+        lineHeight: 1.25
     }
 }));
 
@@ -51,6 +51,46 @@ const tooltip = (title) => (
     </IconButton>
   </Tooltip>
 );
+
+const Table16 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('dr Olga Lenartowicz-Warakomska', 150),
+        createData('dr Klaudia Malottki', 150),
+    ];
+
+    return (
+        <TableContainer className='table-container' component={Paper} >
+            <Table size="small" aria-label="customized table">
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className="featured">
+                        Konsultacja medycyny estetycznej
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component="th" scope="row">
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
 
 const Table15 = () => {
     function createData(name, price) {
@@ -722,6 +762,7 @@ const PricesAestheticMedicinePartials = () => {
 
     return (
         <Box display="grid" gap={'15px'}>
+            <Table16 />
             <Table15 />
             <Table1 />
             <Table2 />

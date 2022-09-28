@@ -11,14 +11,14 @@ import Paper from '@mui/material/Paper';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
-        borderBottom: '1px solid rgba(224, 224, 224, 0.7)',
-        padding: '12px',
-        lineHeight: 1
+        borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
+        padding: '12px 16px',
+        lineHeight: 1.25
     },
     [`&.${tableCellClasses.body}`]: {
-        borderBottom: '1px solid rgba(224, 224, 224, 0.7)',
-        padding: '12px',
-        lineHeight: 1
+        borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
+        padding: '12px 16px',
+        lineHeight: 1.25
     }
 }));
 
