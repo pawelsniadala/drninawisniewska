@@ -3,10 +3,9 @@ import React from 'react';
 import { Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 
+import Container from '../components/Container';
 import FacebookSvg from '../assets/svg/FacebookSvg';
 import InstagramSvg from '../assets/svg/InstagramSvg';
-
-import Container from '../components/Container';
 
 const FooterSection = () => {
     return (
@@ -239,8 +238,14 @@ const FooterSection = () => {
             </Container>
             <Box className='section-wrapper info'>
                 <Box className='copyright'>
-                    <Box>Copyright © 2022 Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska.</Box>
-                    <Box>All rights reserved. Design by <a href='https://www.linkedin.com/in/pawelsniadala/' className='design' target='_blank' rel='noreferrer'>Paweł Śniadała</a>.</Box>
+                    <Box>
+                        Copyright © 2022 Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska.
+                    </Box>
+                    <Box>
+                        All rights reserved.
+                        Photos designed by <a href='https://www.freepik.com' className='design' target='_blank' rel='noreferrer'>Freepik</a>.
+                        Design by <a href='https://www.linkedin.com/in/pawelsniadala/' className='design' target='_blank' rel='noreferrer'>Paweł Śniadała</a>.
+                    </Box>
                 </Box>
             </Box>
         </footer>

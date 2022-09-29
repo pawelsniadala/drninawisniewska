@@ -17,7 +17,7 @@ const TechnologySection = () => {
     const theme = useTheme();
 
     const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-        defaultMatches: true,
+        defaultMatches: true
     });
 
     return (
@@ -113,7 +113,7 @@ const TechnologySection = () => {
                             >
                                 <CardTechnology
                                     key={index}
-                                    cardMode="section"
+                                    cardMode='section'
                                     cardImage={item.imageMedium}
                                     cardTitle={item.title}
                                     cardPath={item.path}

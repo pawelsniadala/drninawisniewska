@@ -6,7 +6,6 @@ import {
 import MainTemplate from '../templates/MainTemplate';
 import ScrollArrow from '../components/ScrollArrow';
 import NavSection from '../sections/NavSection';
-import NavSection2 from '../sections/NavSection2';
 import FooterSection from '../sections/FooterSection';
 import HomeView from './HomeView';
 import ClinicView from './ClinicView';
@@ -72,8 +71,7 @@ import ContactView from './ContactView';
 const Root = () => (
     <MainTemplate>
         <Router>
-            {/* <NavSection /> */}
-            <NavSection2 />
+            <NavSection />
             <main>
                 <Routes>
                     <Route exact path='/' element={<HomeView />} />
@@ -129,7 +127,6 @@ const Root = () => (
                     <Route path='/team/anna-kulakowska' element={<TeamAnnaKulakowskaPartial />} />
                     <Route path='/team/miroslaw-majewski' element={<TeamMiroslawMajewskiPartial />} />
                     <Route path='/team/kamil-stepkowski' element={<TeamKamilStepkowskiPartial />} />
-
                     <Route path='/technology' element={<TechnologyView />} />
                     <Route path='/technology/vectus' element={<TechnologyVectusPartial />} />
                     <Route path='/technology/alma-harmony-xl-pro' element={<TechnologyAlmaHarmonyXlProPartial />} />
@@ -137,7 +134,6 @@ const Root = () => (
                     <Route path='/technology/fons-svr-fraction-laser-co2' element={<TechnologyFonsSvrFractionLaserCo2Partial />} />
                     <Route path='/technology/alma-accent-prime' element={<TechnologyAlmaAccentPrimePartial />} />
                     <Route path='/technology/sono-queen' element={<TechnologySonoQueenPartial />} />
-
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>
             </main>

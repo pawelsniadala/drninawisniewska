@@ -16,7 +16,7 @@ import { team } from '../data/team';
 const TeamSection = () => {
     const theme = useTheme();
     const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-        defaultMatches: true,
+        defaultMatches: true
     });
 
     return (

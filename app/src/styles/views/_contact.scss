@@ -6,10 +6,16 @@
                 grid-template-columns: 1fr 1fr;
                 gap: 20px;
 
+                @media (max-width: 991.98px) {
+                    column-gap: 0;
+                    row-gap: 20px;
+                    grid-template-columns: 100%;
+                }
+
                 .contact-details-wrapper {
                     // display: flex;
                     // align-items: center;
-                    padding-right: 20px;
+                    // padding-right: 20px;
                 }
 
                 .contact-form-wrapper {
