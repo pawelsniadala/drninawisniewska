@@ -10,6 +10,10 @@
                 .team-details {
                     grid-column: span 2;
 
+                    @media (max-width: 991.98px) {
+                        grid-column: span 3;
+                    }
+
                     .card-introduction {
                         height: 100%;
                         width: 100%;
@@ -234,6 +238,10 @@
                 .team-proposed {
                     grid-column: span 1;
                     text-decoration: none;
+
+                    @media (max-width: 991.98px) {
+                        display: none;
+                    }
 
                     .card-team-proposed {
                         text-decoration: none;

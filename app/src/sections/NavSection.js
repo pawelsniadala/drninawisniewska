@@ -82,7 +82,7 @@ const NavSection = () => {
                     </NavLink>
                 </ListItem>
             </List>
-            <Divider />
+            {/* <Divider /> */}
             <List className="menu">
                 <ListItem disablePadding>
                     <NavLink

@@ -8,14 +8,14 @@ import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Lightbox from 'react-image-lightbox';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
-import Container from '../components/Container'
+import Container from '../components/Container';
+import SectionHeader from '../components/SectionHeader';
 
 import { clinic } from '../data/clinic';
 
@@ -59,84 +59,31 @@ const ClinicSection = () => {
         >
             <Container>
                 <Box>
-                    <Box marginBottom={4}>
-                        <Typography
-                            gutterBottom
-                            align={'center'}
-                            data-aos={'fade-right'}
-                            sx={{
-                                textTransform: 'uppercase',
-                                color: '#DBAF62',
-                                lineHeight: 1.5,
-                                letterSpacing: '0.045em;',
-                                fontFamily: 'Raleway, sans-serif',
-                                fontSize: '17px',
-                                fontWeight: '400',
-                            }}
-                        >
-                            Klinika
-                        </Typography>
-                        <Typography
-                            variant="h4"
-                            align={'center'}
-                            data-aos={'fade-right'}
-                            gutterBottom
-                            sx={{
-                                // fontFamily: 'Raleway, sans-serif',
-                                fontFamily: 'Lato,sans-serif',
-                                fontSize: '30px',
-                                lineHeight: '1.208em',
-                                letterSpacing: '.045em',
-                                textTransform: 'uppercase',
-                                fontWeight: '400',
-                                color: 'rgba(0, 0, 0, 0.6)'
-                            }}
-                        >
-                            Kilka słów o naszej klinice
-                        </Typography>
-                        <Typography
-                            variant="h6"
-                            align={'center'}
-                            color={'text.secondary'}
-                            data-aos={'fade-right'}
-                            sx={{
-                                fontFamily: 'Raleway, sans-serif',
-                                fontSize: '18px',
-                                fontWeight: '400',
-                            }}
-                        >
-                            Dowiedz się więcej o naszej klinice
-                        </Typography>
-                        <Box
-                            display="flex"
-                            flexDirection={{ xs: 'column', sm: 'row' }}
-                            alignItems={{ xs: 'stretched', sm: 'flex-start' }}
-                            justifyContent={'center'}
-                            marginTop={2}
-                        >
+                    <SectionHeader
+                        sectionTitle='Klinka'
+                        sectionHeader='Kilka słów o naszej klinice'
+                        sectionSubheader='Dowiedz się więcej o naszej klinice'
+                        sectionLinkText='Zobacz więcej'
+                        sectionLinkPath='/clinic'
+                        sectionWrapperClass='clinic'
+                        sectionDescription={
                             <Box
-                                className="link-contained-more"
-                                marginTop={{ xs: 2, sm: 0 }}
-                                width={{ xs: '100%', md: 'auto' }}
+                                className='description'
                                 data-aos={'fade-in'}
                             >
-                                <Button
-                                    component={Link}
-                                    to={`/clinic`}
-                                    // to={`/drninawisniewska/`}
-                                    variant="contained"
-                                    color="primary"
-                                    size="large"
-                                    fullWidth={isMd ? false : true}
-                                    endIcon={
-                                        <ArrowForwardIcon />
-                                    }
-                                >
-                                    Zobacz pełny opis
-                                </Button>
+                                <Box>
+                                    <Typography className='paragraph'>
+                                        W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, łojotokowego zapalenia skóry, eczemy i innych chorób.
+                                    </Typography>
+                                </Box>
+                                <Box>
+                                    <Typography className='paragraph'>
+                                        Dodatkowym atutem jest lampa do fototerapii UVB 311 nm i PUVA - bath przeznaczona dla pacjentów z łuszczycą, AZS, wypryskiem, a także możliwość wykonania płatkowych testów kontaktowych. <Link className='link' to={'/clinic'}>Zobacz więcej <ArrowForwardIcon fontSize='14px'/></Link>
+                                    </Typography>
+                                </Box>
                             </Box>
-                        </Box>
-                    </Box>
+                        }
+                    />
                     <Box>
                         <Box>
                             <ImageList
@@ -145,7 +92,7 @@ const ClinicSection = () => {
                                 rowHeight={isMd ? 300 : 200}
                                 // gap={isMd ? 16 : 4}
                                 gap={4}
-                                sx={{ overflowY: 'hidden' }}
+                                sx={{ overflowY: 'hidden', marginBottom: 0 }}
                             >
                                 {clinic.pictures.map((item, i) => (
                                     <ImageListItem
@@ -190,44 +137,51 @@ const ClinicSection = () => {
                         )}
                     </Box>
                 </Box>
-                <Box sx={{ paddingTop: "44px" }}>
+                <Box sx={{ paddingTop: "32px" }}>
                     <Grid container spacing={2}>
                         {clinic.statistics.map((item, i) => (
                             <Grid key={i} item xs={12} md={4} >
-                                <Typography variant="h3" gutterBottom>
+                                <Typography
+                                    variant="h4"
+                                    sx={{
+                                        display: 'flex',
+                                        justifyContent:'center',
+                                        fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+                                        // fontFamily: 'Google Sans Text, Arial, Helvetica, sans-serif',
+                                        fontSize: '35px',
+                                        letterSpacing: '.045em',
+                                        color: 'rgba(0, 0, 0, 0.55)',
+                                        lineHeight: '1.208em',
+                                        marginBottom: '0.25em'
+                                    }}
+                                >
                                     <Box>
                                         <VisibilitySensor
                                             onChange={(isVisible) => setViewPortVisibility(isVisible)}
                                             delayedCall
                                         >
-                                            <Box sx={{
-                                                display: 'flex',
-                                                justifyContent:'center',
-                                                fontFamily: '"Lato", sans-serif',
-                                                fontSize: '40px',
-                                                letterSpacing: '.045em',
-                                                color: 'rgba(0, 0, 0, 0.6)'
-                                            }}>
-                                                <CountUp
-                                                    duration={2}
-                                                    end={viewPortEntered ? item.title : 0}
-                                                    start={0}
-                                                    suffix={item.suffix}
-                                                />
-                                            </Box>
+                                            <CountUp
+                                                duration={2}
+                                                end={viewPortEntered ? item.title : 0}
+                                                start={0}
+                                                suffix={item.suffix}
+                                            />
                                         </VisibilitySensor>
                                     </Box>
                                 </Typography>
                                 <Typography
                                     variant="h6"
                                     align={'center'}
-                                    color={'text.secondary'}
+                                    // color={'text.secondary'}
                                     // data-aos={'fade-left'}
                                     sx={{
 
-                                        fontFamily: 'Raleway, sans-serif',
+                                        // fontFamily: 'Raleway, sans-serif',
+                                        fontFamily: 'Roboto, sans-serif',
                                         fontSize: '18px',
-                                        fontWeight: '400',
+                                        fontWeight: '300',
+                                        // color: '#535353'
+                                        color: 'rgba(0, 0, 0, 0.65)'
                                     }}
                                 >
                                     {item.subtitle}

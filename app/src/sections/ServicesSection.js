@@ -12,6 +12,7 @@ import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useTheme } from '@mui/material/styles';
 
 import Container from '../components/Container';
+import SectionHeader from '../components/SectionHeader';
 import CardServices from "../components/CardServices";
 
 import { services } from '../data/services';
@@ -78,83 +79,13 @@ const ServicesSection = () => {
             sx={{ backgroundColor: '#f5f5f5', borderTop: 'rgba(224, 224, 224, 0.5)'}}
         >
             <Container>
-                <Box marginBottom={4}>
-                    <Typography
-                        gutterBottom
-                        align={'center'}
-                        data-aos={'fade-right'}
-                        sx={{
-                            textTransform: 'uppercase',
-                            color: '#DBAF62',
-                            lineHeight: 1.5,
-                            letterSpacing: '0.045em;',
-                            fontFamily: 'Raleway, sans-serif',
-                            fontSize: '17px',
-                            fontWeight: '400',
-                        }}
-                    >
-                        Usługi
-                    </Typography>
-                    <Typography
-                        variant="h4"
-                        align={'center'}
-                        data-aos={'fade-right'}
-                        gutterBottom
-                        sx={{
-                            // fontFamily: 'Raleway, sans-serif',
-                            fontFamily: 'Lato,sans-serif',
-                            fontSize: '30px',
-                            lineHeight: '1.208em',
-                            letterSpacing: '.045em',
-                            textTransform: 'uppercase',
-                            fontWeight: '400',
-                            color: 'rgba(0, 0, 0, 0.6)'
-                        }}
-                    >
-                        Usługi dostępne w naszej klinice
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        align={'center'}
-                        color={'text.secondary'}
-                        data-aos={'fade-right'}
-                        sx={{
-                            fontFamily: 'Raleway, sans-serif',
-                            fontSize: '18px',
-                            fontWeight: '400',
-                        }}
-                    >
-                        Zapoznaj się z treścią naszych usług
-                    </Typography>
-                    <Box
-                        display="flex"
-                        flexDirection={{ xs: 'column', sm: 'row' }}
-                        alignItems={{ xs: 'stretched', sm: 'flex-start' }}
-                        justifyContent={'center'}
-                        marginTop={2}
-                    >
-                        <Box
-                            className="link-contained-more"
-                            marginTop={{ xs: 2, sm: 0 }}
-                            width={{ xs: '100%', md: 'auto' }}
-                            data-aos={'fade-in'}
-                        >
-                            <Button
-                                component={Link}
-                                to={'/services'}
-                                variant="contained"
-                                color="primary"
-                                size="large"
-                                fullWidth={isMd ? false : true}
-                                endIcon={
-                                    <ArrowForwardIcon />
-                                }
-                            >
-                                Zobacz wszystkie usługi
-                            </Button>
-                        </Box>
-                    </Box>
-                </Box>
+                <SectionHeader
+                    sectionTitle='Usługi'
+                    sectionHeader='Usługi dostępne w naszej klinice'
+                    sectionSubheader='Zapoznaj się z treścią naszych usług'
+                    sectionLinkText='Zobacz wszystkie usługi'
+                    sectionLinkPath='/services'
+                />
                 <Box margin={'0 auto'}>
                     <Slider {...sliderOpts}>
                         {services.slice(0, 4).map((item, index) => (

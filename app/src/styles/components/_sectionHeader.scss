@@ -1,0 +1,99 @@
+.section-header {
+    margin-bottom: 32px;
+
+    .title {
+        margin: 0;
+        text-align: center;
+        margin-bottom: 0.35em;
+        color: #DBAF62;
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 0.045em;
+        font-family: Raleway, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+
+        @media (max-width: 539.98px) {
+            font-weight: 500;
+        }
+    }
+
+    .header {
+        margin: 0;
+        text-align: center;
+        margin-bottom: 0.35em;
+        color: rgba(0, 0, 0, 0.55);
+        font-family: Lato,sans-serif;
+        font-size: 28px;
+        line-height: 1.208em;
+        letter-spacing: .045em;
+        text-transform: uppercase;
+        font-weight: 400;
+
+        @media (max-width: 539.98px) {
+            display: none;
+        }
+    }
+
+    .subheader {
+        margin: 0;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.65);
+        font-family: Raleway,sans-serif;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        // color: #535353;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .paragraph {
+        font-size: 15.5px;
+        font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+        color: #535353;
+        font-weight: 300;
+        margin-bottom: 10px;
+        letter-spacing: 0.00538em;
+        line-height: 1.6;
+        margin-top: 10px;
+        margin-bottom: 0px;
+
+        .link {
+            color: #d6a44d;
+            text-decoration: none;
+            text-align: right;
+            white-space: nowrap;
+        }
+    }
+
+    .description {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        @media (max-width: 991.98px) {
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+    }
+
+    .link-outlined {
+        display: none;
+    }
+
+    &.prices {
+        margin-bottom: 0;
+
+        .title,
+        .header,
+        .subheader {
+            color: #fff;
+        }
+    }
+
+    &.clinic {
+        .subheader,
+        .link-contained {
+            display: none;
+        }
+    }
+}
