@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Box from '@mui/material/Box';
@@ -30,7 +30,7 @@ const CardTeam = ({
                         width={1}
                         src={cardBackground}
                         alt={cardTitle}
-                        effect="blur"
+                        effect='blur'
                     />
                 ) : (
                     <Box className='card-background-color' />
@@ -40,7 +40,7 @@ const CardTeam = ({
                     component={LazyLoadImage}
                     src={cardImage}
                     alt={cardTitle}
-                    effect="blur"
+                    effect='blur'
                 />
                 <CardContent className='card-content'>
                     <Typography
