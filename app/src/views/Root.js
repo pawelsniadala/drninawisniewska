@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import MainTemplate from '../templates/MainTemplate';
 import ScrollArrow from '../components/ScrollArrow';
-import NavSection from '../sections/NavSection';
+import HeaderSection from '../sections/HeaderSection';
 import FooterSection from '../sections/FooterSection';
 import HomeView from './HomeView';
 import ClinicView from './ClinicView';
@@ -65,13 +65,12 @@ import TechnologyIcooneLaserMed2Partial from './partials/technology/TechnologyIc
 import TechnologyFonsSvrFractionLaserCo2Partial from './partials/technology/TechnologyFonsSvrFractionLaserCo2Partial';
 import TechnologyAlmaAccentPrimePartial from './partials/technology/TechnologyAlmaAccentPrimePartial';
 import TechnologySonoQueenPartial from './partials/technology/TechnologySonoQueenPartial';
-
 import ContactView from './ContactView';
 
 const Root = () => (
     <MainTemplate>
         <Router>
-            <NavSection />
+            <HeaderSection />
             <main>
                 <Routes>
                     <Route exact path='/' element={<HomeView />} />

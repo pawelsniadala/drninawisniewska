@@ -53,7 +53,7 @@ const HeroSection = () => {
                     <Box className='carousel-inner'>
                         <Box className='carousel-item active' data-bs-interval='5000' style={{ height: '670px' }}>
                             <LazyLoadImage
-                                height={'100%'}
+                                // height={'100%'}
                                 width={'100%'}
                                 src={require('../assets/hero/hero1.jpg')}
                                 alt='...'
@@ -130,9 +130,9 @@ const HeroSection = () => {
                         </Box>
                         <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
                             <LazyLoadImage
-                                height={'100%'}
+                                // height={'100%'}
                                 width={'100%'}
-                                src={require('../assets/hero/hero11.jpg')}
+                                src={require('../assets/hero/hero2.jpg')}
                                 alt='...'
                                 effect='blur'
                                 style={{
@@ -201,9 +201,9 @@ const HeroSection = () => {
                         </Box>
                         <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
                             <LazyLoadImage
-                                height={'100%'}
+                                // height={'100%'}
                                 width={'100%'}
-                                src={require('../assets/hero/hero10.jpg')}
+                                src={require('../assets/hero/hero3.jpg')}
                                 alt='...'
                                 effect='blur'
                                 style={{
@@ -272,9 +272,9 @@ const HeroSection = () => {
                         </Box>
                         <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
                             <LazyLoadImage
-                                height={'100%'}
+                                // height={'100%'}
                                 width={'100%'}
-                                src={require('../assets/hero/hero12.jpg')}
+                                src={require('../assets/hero/hero4.jpg')}
                                 alt='...'
                                 effect='blur'
                                 style={{
