@@ -5,13 +5,13 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Avatar from '@mui/material/Avatar';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../../../components/Container';
+import CardTeamProposed from '../../../components/CardTeamProposed';
 
 import { team, katarzynaZbronska } from '../../../data/team';
 
@@ -150,28 +150,17 @@ const TeamKatarzynaZbronskaPartial = () => {
                             ))}
                         </Box>
                         <Box className='team-proposed'>
-                            {teamCopy.filter(item => item.designation !== 'katarzynaZbronska').slice(0, 8).map((item, index) => (
-                                <Box className='card-team-proposed' component={Link} to={item.path} key={index}>
-                                    <Card className='card'>
-                                        <CardContent className='card-content'>
-                                            <Avatar
-                                                className='card-image'
-                                                alt={item.name}
-                                                src= {item.image}
-                                                sx={{ width: 80, height: 80 }}
-                                            />
-                                            <Box>
-                                                <Typography className='card-name'>
-                                                    {item.name}
-                                                </Typography>
-                                                <Typography className='card-speciality '>
-                                                    {item.speciality}
-                                                </Typography>
-                                            </Box>
-                                        </CardContent>
-                                    </Card>
-                                </Box>
-                            ))}
+                            <Box className='card-wrapper team-proposed'>
+                                {teamCopy.filter(item => item.designation !== 'katarzynaZbronska').slice(0, 8).map((item, index) => (
+                                    <CardTeamProposed
+                                        cardImage={item.image}
+                                        cardName={item.name}
+                                        cardSpeciality={item.speciality}
+                                        cardDescription={item.experience ? item.experience : item.education}
+                                        cardPath={item.path}
+                                    />
+                                ))}
+                            </Box>
                         </Box>
                     </Container>
                 </Box>

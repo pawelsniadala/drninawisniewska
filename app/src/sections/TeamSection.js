@@ -24,7 +24,7 @@ const TeamSection = () => {
                     sectionLinkPath='/team'
                 />
                 <Box className='section-body'>
-                    <Box className='card-wrapper team'>
+                    <Box className='card-wrapper team section'>
                         {team.slice(0, 4).map((item, index) => (
                             <Box
                                 key={index}
@@ -39,7 +39,9 @@ const TeamSection = () => {
                                     cardTitle={item.title}
                                     cardName={item.name}
                                     cardSpeciality={item.speciality}
+                                    cardDescription={item.experience ? item.experience : item.education}
                                     cardPath={item.path}
+                                    cardServices={item.services}
                                 />
                             </Box>
                         ))}

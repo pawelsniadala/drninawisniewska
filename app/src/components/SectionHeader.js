@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -24,13 +24,13 @@ const SectionHeader = ({
         </Typography>
         <Typography
             className='header'
-            variant="h4"
+            variant='h4'
             data-aos={'fade-right'}
         >
             {sectionHeader}
         </Typography>
         <Typography
-            variant="h6"
+            variant='h6'
             className='subheader'
             data-aos={'fade-right'}
         >
@@ -39,22 +39,22 @@ const SectionHeader = ({
         {sectionDescription}
         <Box
             className='link-contained'
-            display="flex"
+            display='flex'
             alignItems={'center'}
             justifyContent={'center'}
             marginTop={2}
             data-aos={'fade-in'}
         >
             <Box
-                className="link-contained-more"
+                className='link-contained-more'
                 width='auto'
             >
                 <Button
                     component={Link}
                     to={sectionLinkPath}
-                    variant="contained"
-                    color="primary"
-                    size="large"
+                    variant='contained'
+                    color='primary'
+                    size='large'
                     endIcon={
                         <ArrowForwardIcon />
                     }
@@ -63,9 +63,6 @@ const SectionHeader = ({
                 </Button>
             </Box>
         </Box>
-
-
-
     </Box>
 );
 

@@ -1,19 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
-import { Avatar, CardActions } from '@mui/material';
-import { Stack } from '@mui/material';
-import { Chip } from '@mui/material';
-import { Divider } from '@mui/material';
+import CardContent from '@mui/material/CardContent';
 
-const CardTeam = ({
+import { Avatar } from '@mui/material';
+import { Stack } from '@mui/material';
+// import { IconButton } from '@mui/material';
+// import { Chip } from '@mui/material';
+// import { Divider } from '@mui/material';
+// import { Switch } from '@mui/material';
+// import { ListItem } from '@mui/material';
+// import Button from '@mui/material/Button';
+
+const CardTeamProposed = ({
     cardPath,
     cardImage,
     cardBackground,
-    cardTitle,
+    // cardTitle,
     cardName,
     cardSpeciality,
     cardDescription,
@@ -21,12 +28,12 @@ const CardTeam = ({
 }) => {
     return (
         <Box
-            className='card-team'
+            className='card-team-proposed'
             component={Link}
             to={cardPath}
         >
             <Card className='card'>
-                <Box sx={{ p: '15px', display: 'flex', justifyContent: 'start', gap: '15px' }}>
+                <CardContent className='card-content'>
                     <Avatar
                         className='avatar'
                         variant="rounded"
@@ -43,24 +50,10 @@ const CardTeam = ({
                             {cardDescription}
                         </Typography>
                     </Stack>
-                </Box>
-                <Box style={{ paddingLeft: '15px', paddingRight: '15px' }}>
-                    <Divider />
-                </Box>
-                <CardActions className='card-actions'>
-                    <Box className='link-wrapper'>
-                        {cardServices && cardServices.map((item, index) => (
-                            <Box key={index}>
-                                <Link className='link' to={item.path}>
-                                    <Chip className='chip' label={item.text} size="small" />
-                                </Link>
-                            </Box>
-                        ))}
-                    </Box>
-                </CardActions>
+                </CardContent>
             </Card>
         </Box>
     );
 }
 
-export default CardTeam;
+export default CardTeamProposed;

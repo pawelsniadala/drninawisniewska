@@ -99,7 +99,7 @@ const ServicesSection = () => {
                                     height={1}
                                     sx={{
                                         textDecoration: 'none',
-                                        transition: 'all .2s ease-in-out',
+                                        transition: 'all .2s ease-in-out'
                                     }}
                                 >
                                     <CardServices

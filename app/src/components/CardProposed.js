@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Box from '@mui/material/Box';
@@ -37,7 +37,7 @@ const CardProposed = ({
                         width={1}
                         src={cardImage}
                         alt={cardTitle}
-                        effect="blur"
+                        effect='blur'
                     />
                 </CardMedia>
                 <CardContent className='card-content'>
@@ -51,8 +51,8 @@ const CardProposed = ({
                         className='card-link'
                         component={Link}
                         to={cardPath}
-                        variant="outline"
-                        size="small"
+                        variant='outline'
+                        size='small'
                     >
                         Zobacz więcej
                     </Button>

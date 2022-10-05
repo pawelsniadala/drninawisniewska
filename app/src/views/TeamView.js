@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 import Typography from '@mui/material/Typography';
@@ -9,6 +9,7 @@ import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../components/Container';
 import CardTeam from '../components/CardTeam';
+import CardTeamProposed from '../components/CardTeamProposed';
 
 import { team } from '../data/team';
 
@@ -16,6 +17,28 @@ const TeamView = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }, []);
+
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
 
     return (
         <Box className="contact-view">
@@ -60,18 +83,33 @@ const TeamView = () => {
                 </Box>
                 <Box className="view-body">
                     <Container className="body-wrapper">
-                        <Box className="card-wrapper team">
-                            {team.map((item, index) => (
-                                <CardTeam
-                                    key={index}
-                                    cardImage={item.image}
-                                    cardBackground={item.background}
-                                    cardTitle={item.title}
-                                    cardName={item.name}
-                                    cardSpeciality={item.speciality}
-                                    cardPath={item.path}
-                                />
-                            ))}
+                        <Box className="card-wrapper team view">
+                            {width >= 991.98 ? (
+                                team.map((item, index) => (
+                                    <CardTeam
+                                        key={index}
+                                        cardImage={item.image}
+                                        cardBackground={item.background}
+                                        cardTitle={item.title}
+                                        cardName={item.name}
+                                        cardSpeciality={item.speciality}
+                                        cardDescription={item.experience ? item.experience : item.education}
+                                        cardPath={item.path}
+                                        cardServices={item.services}
+                                    />
+                                ))
+                            ) : (
+                                team.map((item, index) => (
+                                    <CardTeamProposed
+                                        key={index}
+                                        cardImage={item.image}
+                                        cardName={item.name}
+                                        cardSpeciality={item.speciality}
+                                        cardDescription={item.experience ? item.experience : item.education}
+                                        cardPath={item.path}
+                                    />
+                                ))
+                            )}
                         </Box>
                     </Container>
                 </Box>
