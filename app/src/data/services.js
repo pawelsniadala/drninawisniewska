@@ -33,84 +33,98 @@ import aleksandraGorczynskaImage from '../assets/team/aleksandraGorczynska/aleks
 import annaKulakowskaImage from  '../assets/team/annaKulakowska/annaKulakowskaImage.jpg';
 import miroslawMajewskiImage from  '../assets/team/miroslawMajewski/miroslawMajewskiImage.jpg';
 
+export const dermatology = {
+    image: servicesDermatology,
+    title: 'Dermatologia',
+    description: 'Badanie znamion barwnikowych polega na poddaniu zmian skórnych analizie przez dermatologa. W naszej Klinice badanie można przeprowadzić za pomocą dermatoskopu lub wideodermatoskopu. Wideodermatoskopia to nowoczesna cyfrowa technologia służąca do analizy znamion barwnikowych skóry. Urządzenie służy także diagnozowaniu zmian chorobowych skóry, włosów i paznokci. Jest to zaawansowany system łączący optyczny układ wideokamery dermatoskopu z komputerową analizą obrazu za pomocą algebraicznych algorytmów.',
+    link: `<a href='https://pl.freepik.com/zdjecia/dermatolog'>Dermatolog zdjęcie utworzone przez wavebreakmedia_micro - pl.freepik.com</a>`,
+    path: '/services/dermatology',
+    prices: '/prices',
+    specialists: [
+        ninaWisniewskaImage,
+        katarzynaMysliwiecCzajkaImage,
+        justynaKlonieckaImage,
+        aldonaMaciagImage,
+        paulinaTataraImage,
+        katarzynaZbronskaImage,
+        annaKulakowskaImage
+    ]
+};
+
+export const aestheticMedicine = {
+    image: servicesAestheticMedicine,
+    title: 'Medycyna estetyczna',
+    description: 'Toksyna botulinowa, produkowana przez bakterie Clostridium Botulinum, znana jest powszechnie pod nazwami handlowymi jak Botox® czy Azzalure®. To jedna z najbardziej popularnych metod redukcji zmarszczek mimicznych, które pojawiają się w związku z powtarzającymi się skurczami mięśni twarzy. Zabieg pozwala szybko spłycić zmarszczki mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy nadmierna kurczliwość.',
+    link: `<a href='https://pl.freepik.com/zdjecia/mezoterapia'>Mezoterapia zdjęcie utworzone przez nensuria - pl.freepik.com</a>`,
+    path: '/services/aesthetic-medicine',
+    prices: '/prices/aesthetic-medicine',
+    specialists: [
+        ninaWisniewskaImage,
+        konradKochanImage,
+        klaudiaMalottkiImage,
+        paulinaTataraImage,
+        olgaLenartowiczWarakomskaImage
+    ]
+};
+
+export const cosmetology = {
+    image: servicesCosmetology,
+    title: 'Kosmetologia',
+    description: 'Peelingi chemiczne to kondycjonujące i rewitalizujące skórę zabiegi dermokosmetyczne. W zależności od zastosowanego preparatu zabiegi oferują różne efekty terapeutyczne; tj. oczyszczające i przeciwtrądzikowe, regenerujące i przeciwzmarszczkowe, rozjaśniające i redukujące przebarwienia.',
+    link: `<a href='https://pl.freepik.com/zdjecia/mezoterapia'>Mezoterapia zdjęcie utworzone przez lookstudio - pl.freepik.com</a>`,
+    path: '/services/cosmetology',
+    prices: '/prices/cosmetology',
+    specialists: [
+        paulinaBudnaImage,
+        aleksandraGorczynskaImage
+    ]
+};
+
+export const physioterapy = {
+    image: servicesPhysioterapy,
+    title: 'Fizjoterapia',
+    description: 'Medycyna ortopedyczna według Cyriaxa jest kompleksowym systemem terapii oraz diagnostyki zaburzeń narządu ruchu. Opiera się na badaniu klinicznym, które za pomocą testów i wywiadu doprowadza fizjoterapeutę do postawienia odpowiedniej diagnozy uszkodzonej tkanki w układzie ruchu.',
+    link: `<a href='https://pl.freepik.com/zdjecia/fizjoterapia'>Fizjoterapia zdjęcie utworzone przez javi_indy - pl.freepik.com</a>`,
+    path: '/services/physioterapy',
+    prices: '/prices/physioterapy',
+    specialists: [
+        milenaJuzwiakImage
+    ]
+};
+
+export const cosmeticSurgery = {
+    image: servicesCosmeticSurgery,
+    title: 'Chirurgia plastyczna',
+    description: 'Plastyka powiek, inaczej blefaroplastyka, to zabieg mający na celu usunięcie nadmiaru skóry wokół oczu. W zakres blefaroplastyki wchodzi zarówno korekta powieki górnej jak i dolnej. Plastyka powiek jest najskuteczniejszą metodą walki z twz. opadającą powieką. Wskazaniami do zabiegu prócz defektu estetycznego są również asymetria oczu, problemy z widocznością, przepukliny tłuszczowe a także wiotkość tkanki wokół oczu.',
+    link: `<a href='https://pl.freepik.com/zdjecia/kobieta'>Kobieta zdjęcie utworzone przez wayhomestudio - pl.freepik.com</a>`,
+    path: '/services/cosmetic-surgery',
+    prices: '/prices/cosmetic-surgery',
+    specialists: [
+        konradKochanImage
+    ]
+};
+
+export const allergology = {
+    image: servicesAllergology,
+    title: 'Alergologia',
+    description: 'Testy skórne są jedną z popularniejszej oraz prostszej metody diagnostycznej alergii. Największą zaletą testów skórnych jest ich krótki czas oczekiwania na wyniki. Badanie przeprowadza się na wewnętrznej części przedramienia lub skórze pleców. Przebieg testów polega na naniesieniu kropli różnych zawiesin z alergenami z zestawu przesiewowego zawierającego takie substancje uczulające jak rośliny wiatropylne, trawy, pleśnie, sierść zwierząt, jad owadów czy roztocza kurzu domowego.',
+    link: `<a href='https://pl.freepik.com/zdjecia/alergia'>Alergia zdjęcie utworzone przez freepik - pl.freepik.com</a>`,
+    path: '/services/allergology',
+    prices: '/prices/allergology',
+    specialists: [
+        tomaszMatuszewskiImage
+    ]
+};
+
+
+
 export const services = [
-    {
-        image: servicesDermatology,
-        title: 'Dermatologia',
-        description: 'Przeprowadzone ewaluacje działań związków i form informacyjno-edukacyjnych na rzecz poprawy lokalnego środowiska przyrodniczego podejmowanych przez jednostki samorządu terytorialnego pozwoliły wybrać związki gmin do dalszych etapów badań jakościowych 16 wywiadów indywidualnych.',
-        link: `<a href='https://pl.freepik.com/zdjecia/dermatolog'>Dermatolog zdjęcie utworzone przez wavebreakmedia_micro - pl.freepik.com</a>`,
-        path: '/services/dermatology',
-        prices: '/prices',
-        specialists: [
-            ninaWisniewskaImage,
-            katarzynaMysliwiecCzajkaImage,
-            justynaKlonieckaImage,
-            aldonaMaciagImage,
-            paulinaTataraImage,
-            katarzynaZbronskaImage,
-            annaKulakowskaImage
-        ]
-    },
-    {
-        image: servicesAestheticMedicine,
-        title: 'Medycyna estetyczna',
-        description: 'Dogłębna analiza statutów badanych związków gmin zawierająca listy zadań dotyczących działań prośrodowiskowych na rzecz zrównoważonego rozwoju pozwoliła wyłonić związki do dalszych etapów badań. Wyniki tych analiz wykorzystano także podczas wywiadów pogłębionych i określono zaangażowanie społeczności lokalnych w zadania wpisane w statutach.',
-        link: `<a href='https://pl.freepik.com/zdjecia/mezoterapia'>Mezoterapia zdjęcie utworzone przez nensuria - pl.freepik.com</a>`,
-        path: '/services/aesthetic-medicine',
-        prices: '/prices/aesthetic-medicine',
-        specialists: [
-            ninaWisniewskaImage,
-            konradKochanImage,
-            klaudiaMalottkiImage,
-            paulinaTataraImage,
-            olgaLenartowiczWarakomskaImage
-        ]
-    },
-    {
-        image: servicesCosmetology,
-        title: 'Kosmetologia',
-        description: 'Przeprowadzone w innej części niniejszej pracy wywiady pogłębione z przedstawicielami związków gmin wykazały, że dostępność środków zewnętrznych na realizację projektów dotyczących wymienianych obszarów działań oraz brak infrastruktury i doświadczenia sprawiły, że gminy chętniej wstępowały do związku gmin.',
-        link: `<a href='https://pl.freepik.com/zdjecia/mezoterapia'>Mezoterapia zdjęcie utworzone przez lookstudio - pl.freepik.com</a>`,
-        path: '/services/cosmetology',
-        prices: '/prices/cosmetology',
-        specialists: [
-            paulinaBudnaImage,
-            aleksandraGorczynskaImage
-        ]
-    },
-    {
-        image: servicesPhysioterapy,
-        title: 'Fizjoterapia',
-        description: 'W drugiej hipotezie pracy założono, że gminy zrzeszone w związki gmin wykazują zaangażowanie w działaniach na rzecz poprawy stanu lokalnego środowiska przyrodniczego zgodne z zasadami zrównoważonego rozwoju.',
-        link: `<a href='https://pl.freepik.com/zdjecia/fizjoterapia'>Fizjoterapia zdjęcie utworzone przez javi_indy - pl.freepik.com</a>`,
-        path: '/services/physioterapy',
-        prices: '/prices/physioterapy',
-        specialists: [
-            milenaJuzwiakImage
-        ]
-    },
-    {
-        image: servicesCosmeticSurgery,
-        title: 'Chirurgia plastyczna',
-        description: 'Zmiany ustrojowe w Polsce i zmiany niektórych ustaw sprawiły, że na gminach spoczywa obowiązek organizacji działań na rzecz zrównoważonego środowiska poprzez uregulowanie stanu gospodarki ściekowej, gospodarki odpadów komunalnych, stawianie na odnawialne źródła energii czy też inwestycje w programy gospodarki niskoemisyjnej gmin.',
-        link: `<a href='https://pl.freepik.com/zdjecia/kobieta'>Kobieta zdjęcie utworzone przez wayhomestudio - pl.freepik.com</a>`,
-        path: '/services/cosmetic-surgery',
-        prices: '/prices/cosmetic-surgery',
-        specialists: [
-            konradKochanImage
-        ]
-    },
-    {
-        image: servicesAllergology,
-        title: 'Alergologia',
-        description: 'Współpraca ze społecznością lokalną, odpowiednia promocja realizowanych działań ze szczególnym wyjaśnieniem korzyści płynących ze skorzystania z możliwości jakie dają nowe technologie bywają zachętą dla niezdecydowanych do przyłączenia się w realizowane działania.',
-        link: `<a href='https://pl.freepik.com/zdjecia/alergia'>Alergia zdjęcie utworzone przez freepik - pl.freepik.com</a>`,
-        path: '/services/allergology',
-        prices: '/prices/allergology',
-        specialists: [
-            tomaszMatuszewskiImage
-        ]
-    },
+    { ...dermatology },
+    { ...aestheticMedicine },
+    { ...cosmetology },
+    { ...physioterapy },
+    { ...cosmeticSurgery },
+    { ...allergology },
     {
         image: servicesUsg,
         title: 'USG',

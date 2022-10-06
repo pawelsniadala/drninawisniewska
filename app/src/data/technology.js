@@ -31,7 +31,8 @@ export const vectus = {
     imageMedium: vectusImageMedium,
     imageLarge: vectusImageLarge,
     path: '/technology/vectus',
-    badge: false
+    badge: false,
+    services: ['cosmetology']
 };
 
 export const icooneLaserMed2 = {
@@ -42,7 +43,8 @@ export const icooneLaserMed2 = {
     imageMedium: icooneLaserMed2ImageMedium,
     imageLarge: icooneLaserMed2ImageLarge,
     path: '/technology/icoone-laser-med2',
-    badge: 'Nowość'
+    badge: 'Nowość',
+    services: ['cosmetology']
 };
 
 export const almaHarmonyXlPro = {
@@ -52,7 +54,8 @@ export const almaHarmonyXlPro = {
     imageMedium: almaHarmonyXlProImageMedium,
     imageSmall: almaHarmonyXlProImageSmall,
     path: '/technology/alma-harmony-xl-pro',
-    badge: 'Nowość'
+    badge: 'Nowość',
+    services: ['aestheticMedicine'],
 };
 
 // export const accentUltraV = {
@@ -72,7 +75,8 @@ export const fonsSvrFractionLaserCo2 = {
     imageMedium: fonsSvrFractionLaserCo2ImageMedium,
     imageLarge: fonsSvrFractionLaserCo2ImageLarge,
     path: '/technology/fons-svr-fraction-laser-co2',
-    badge: false
+    badge: false,
+    services: ['aestheticMedicine']
 };
 
 export const almaAccentPrime = {
@@ -83,7 +87,8 @@ export const almaAccentPrime = {
     imageMedium: almaAccentPrimeImageMedium,
     imageLarge: almaAccentPrimeImageLarge,
     path: '/technology/alma-accent-prime',
-    badge: false
+    badge: false,
+    services: ['cosmetology']
 };
 
 export const sonoQueen = {
@@ -94,7 +99,8 @@ export const sonoQueen = {
     imageMedium: sonoQueenImageMedium,
     imageLarge: sonoQueenImageMedium,
     path: '/technology/sono-queen',
-    badge: false
+    badge: false,
+    services: ['aestheticMedicine']
 };
 
 export const technology = [

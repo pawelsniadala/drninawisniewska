@@ -3,11 +3,7 @@ import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
-import ListItem from '@mui/material/ListItem';
-import ListItemAvatar from '@mui/material/ListItemAvatar';
-import ListItemText from '@mui/material/ListItemText';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -15,9 +11,9 @@ import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
+import ListBulleted from '../../../components/ListBulleted';
 
-import { services } from '../../../data/services';
-import servicesDermatology from '../../../assets/services/servicesDermatology.jpg';
+import { services, dermatology } from '../../../data/services';
 
 const ServicesDermatologyPartial = () => {
     useEffect(() => {
@@ -65,93 +61,103 @@ const ServicesDermatologyPartial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper services'>
                         <Box className='service-description'>
-                            <Typography className='paragraph'>
-                                Etiam ac tristique nisl. Praesent eu elit sit amet eros rhoncus convallis. Aliquam eu tristique massa, nec cursus libero. Fusce at nunc sollicitudin, euismod orci vitae, luctus ipsum. Integer tellus est, aliquam in lobortis et, tempor sit amet mi. Nulla a commodo purus. Mauris facilisis libero id purus rhoncus, nec sollicitudin eros bibendum. Curabitur mattis nisl vel odio consequat varius. Nunc maximus, metus sit amet placerat dignissim, leo diam sodales tortor, sit amet eleifend nisl elit non metus. Ut eget lorem euismod, pellentesque lectus ac, malesuada felis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Morbi commodo arcu sem, non varius sem vestibulum a. Sed eget tempus mi. Integer faucibus ac erat non pellentesque. Sed hendrerit tortor magna, eu hendrerit enim blandit eget. Pellentesque tincidunt in enim nec sodales.
-                            </Typography>
-                            <Box marginY={4}>
-                                <LazyLoadImage
-                                    height={'100%'}
-                                    width={'100%'}
-                                    src={servicesDermatology}
-                                    alt='Remote working'
-                                    effect='blur'
-                                    style={{
-                                        objectFit: 'cover',
-                                        borderRadius: 8,
-                                        width: '100%',
-                                        height: '100%',
-                                        maxHeight: '400px',
-                                    }}
-                                />
-                            </Box>
+
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header'>
-                                    Phasellus metus leo
+                                    Badanie znamion barwnikowych
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Nulla eu mauris ut leo vulputate tempus ac ut ante. Mauris odio magna, luctus in nisi ut, rhoncus sagittis libero. Mauris porta eget velit non faucibus. Sed nulla nisl, egestas at lacus eu, pretium efficitur tortor. Cras ut metus nec justo dignissim maximus. Duis ligula ligula, varius in iaculis nec, consectetur id purus. Nam malesuada neque quis purus luctus, a varius metus tristique. Cras gravida risus sed erat vestibulum, ut tristique arcu elementum. Sed hendrerit mattis purus. Mauris blandit, diam in condimentum malesuada, lorem nisl posuere magna, venenatis sodales risus ligula nec velit. Aliquam pulvinar vehicula mi eget eleifend.
+                                    Badanie znamion barwnikowych polega na poddaniu zmian skórnych analizie przez dermatologa. W naszej Klinice badanie można przeprowadzić za pomocą dermatoskopu lub wideodermatoskopu.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Wideodermatoskopia to nowoczesna cyfrowa technologia służąca do analizy znamion barwnikowych skóry. Urządzenie służy także diagnozowaniu zmian chorobowych skóry, włosów i paznokci. Jest to zaawansowany system łączący optyczny układ wideokamery dermatoskopu z komputerową analizą obrazu za pomocą algebraicznych algorytmów.
+                                </Typography>
+                                <Box marginBottom={3} marginTop={3}>
+                                    <LazyLoadImage
+                                        height={'100%'}
+                                        width={'100%'}
+                                        src={dermatology.image}
+                                        alt='Remote working'
+                                        effect='blur'
+                                        style={{
+                                            objectFit: 'cover',
+                                            borderRadius: 8,
+                                            width: '100%',
+                                            height: '100%',
+                                            maxHeight: '400px',
+                                        }}
+                                    />
+                                </Box>
+                                <Typography className='paragraph'>
+                                    Badanie polega na oglądaniu znamion specjalistyczną kamerą w bardzo dużym powiększeniu pozwalając na dokładniejsze zbadanie zmian. W ciągu kilku minut mapuje całe ciało, a dane zostają zapisane w pamięci komputera.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Znamiona skórne często uznawane są za cechę charakterystyczną danej osoby. Należy jednak pamiętać, że niektóre znamiona mogą ewoluować w nowotwory skóry, w tym bardzo niebezpiecznego czerniaka. Z tego powodu niesamowicie istotna jest regularna profilaktyka zmian skórnych.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Wideodermatoskopia pozwala wykryć raka skóry na bardzo wczesnym etapie, co diametralnie zwiększa nasze rokowania na całkowite wyleczenie.
                                 </Typography>
                             </Box>
+
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header'>
-                                    Duis in felis odio
+                                    Fototerapia chorób skóry
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Sed dui ligula, imperdiet vel est in, imperdiet euismod ipsum. Sed quis dui ante. Curabitur lacus est, porttitor ac tincidunt ac, aliquet at purus. Aliquam eu eros et magna commodo commodo in eu velit. Fusce nec mauris accumsan, imperdiet nibh vel, viverra est. Vivamus porttitor eget ipsum nec convallis. Nam ullamcorper vitae nisl sed convallis. Aliquam lobortis mauris vulputate euismod cursus.
+                                    Fototerapia UV jest skuteczną i wygodną metodą leczenia chorób skórnych promieniowaniem ultrafioletowym o określonej terapeutycznej długości fali.
                                 </Typography>
-                                <Grid container spacing={1} sx={{ marginTop: 1 }}>
-                                {[
-                                    'Lorem ipsum dolor sit amet consectetur adipiscing elit',
-                                    'Nulla eu mauris ut leo vulputate tempus ac ut ante',
-                                    'Sed dui ligula imperdiet vel est in imperdiet euismod ipsum',
-                                    'Duis in felis odio vestibulum tempus magna',
-                                    'Phasellus metus leo efficitur ac quam quis, porta'
-                                ].map((item, i) => (
-                                    <Grid item xs={12} key={i}>
-                                        <Box
-                                            component={ListItem}
-                                            disableGutters
-                                            width={'auto'}
-                                            padding={0}
-                                        >
-                                            <Box
-                                                component={ListItemAvatar}
-                                                minWidth={'auto !important'}
-                                                marginRight={2}
-                                            >
-                                                <Box
-                                                    component={Avatar}
-                                                    sx={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
-                                                    width={20}
-                                                    height={20}
-                                                >
-                                                    <svg
-                                                        width={12}
-                                                        height={12}
-                                                        xmlns='http://www.w3.org/2000/svg'
-                                                        viewBox='0 0 20 20'
-                                                        fill='currentColor'
-                                                    >
-                                                        <path
-                                                            fillRule='evenodd'
-                                                            d='M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z'
-                                                            clipRule='evenodd'
-                                                        />
-                                                    </svg>
-                                                </Box>
-                                            </Box>
-                                            <ListItemText primary={item} className='list-item-text'/>
-                                        </Box>
-                                        </Grid>
+                                <Typography className='paragraph'>
+                                    W naszej klinice przeprowadzamy światłoterapię UVB 311nm oraz PUVA-bath, po uprzedniej konsultacji dermatologicznej w naszej Klinice. Lekarz ustala plan fototerapii i dawki naświetlań według aktualnych wytycznych Polskiego Towarzystwa Dermatologicznego.
+                                </Typography>
+                            </Box>
+
+                            <Box marginBottom={3}>
+                                <Typography variant={'h5'} className='header'>
+                                    Usunięcie zmian skórnych elektrochirurgiczne
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Elektrochirurgia, inaczej elektrokoagulacja, to metoda chirurgiczna polegająca na wykorzystaniu przepływu prądu elektrycznego o różnej częstotliwości do usuwania, wycinania lub  wypalania, wszelkich niepożądanych zmian skórnych. Zabiegi można podzielić na elektrokoagulację i cięcie, które wykonuje się w znieczuleniu miejscowym. Zabieg elektrokoagulacji wykonuje się za pomocą elektrod o różnym kształcie, odpowiednio dobranych w zależności od rodzaju zmiany.
+                                </Typography>
+                                <Typography className='paragraph heading'>
+                                    Głównymi zaletami innowacyjności elektrochirurgii w usuwaniu niezłośliwych zmian skórnych są:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'precyzyjność działania',
+                                        'ładny efekt wizualny po zabiegu',
+                                        'mała inwazyjność',
+                                        'szybkość gojenia się ran'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
                                     ))}
                                 </Grid>
-                            </Box>
-                            <Box>
-                                <Typography variant={'h5'} className='header'>
-                                    Nulla eu mauris
+                                <Typography className='paragraph heading'>
+                                    Zabiegi elektrochirurgiczne wykonuje się przy usuwaniu zmian skórnych o charakterze:
                                 </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'brodawek wirusowych (tzw. kurzajek)',
+                                        'brodawek łojotokowych',
+                                        'brodawek płaskich',
+                                        'włókniaków miękkich',
+                                        'naczyniaków gwiaździstych',
+                                        'prosaków',
+                                        'mięczaka zakaźnego',
+                                        'gruczolaków łojowych'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
                                 <Typography className='paragraph'>
-                                    Duis in felis odio. Vestibulum tempus magna sit amet imperdiet tincidunt. Nullam non neque arcu. Nunc venenatis varius hendrerit. In eget felis porta, ultrices libero sed, consectetur purus. Sed maximus risus eget urna volutpat aliquam. Ut ut vehicula lectus. Mauris id tellus orci. Curabitur luctus nisi vel ligula eleifend blandit. Vestibulum feugiat ipsum volutpat tortor consequat, id egestas nisl venenatis. Vivamus aliquam dui nec consectetur convallis.
+                                    Każdy rodzaj zmiany musi być uprzednio zakwalifikowany do zabiegu przez lekarza w naszej Klinice.
                                 </Typography>
                             </Box>
                         </Box>
