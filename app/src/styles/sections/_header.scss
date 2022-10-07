@@ -51,17 +51,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .MuiDrawer-paper {
     background-color: #fff !important;
 
@@ -76,10 +65,6 @@
             align-items: center;
             gap: 7px;
             padding-left: 16px;
-
-            // .brand-logo {
-            //     height: 51px;
-            // }
 
             .brand-text {
                 color: transparent;
@@ -125,13 +110,10 @@
 
         .list-item-text {
             span {
-                // font-weight: 400;
                 color: rgba(0, 0, 0, 0.6);
                 letter-spacing: 0.00938em;
-                // font-family: "Roboto", "Helvetica", "Arial", sans-serif;
                 font-family: "Source Sans Pro", sans-serif;
-                // font-size: 1rem;
-                font-size: 0.95rem !important;
+                font-size: 0.95rem;
             }
 
         }
@@ -163,35 +145,11 @@
     background-color: #fff !important;
 }
 
-
-
-
-
-
-
-
-
 nav.navbar {
     background-color: #fff;
-    // box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
     box-shadow: 1px 2px 3px rgb(0 0 0 / 1%);
-    // border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    // box-shadow: rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
-    // border-bottom: 1px solid rgba(224, 224, 224, 0.5);
     padding-top: 12px;
     padding-bottom: 12px;
-    // border-bottom: 1px solid rgba(0, 0, 0, .1);
-
-    // @media (min-width: 991.98px) {
-    //     position: fixed;
-    //     top: 0;
-    //     right: 0;
-    //     left: 0;
-    //     z-index: 1030;
-    // }
-
-    // background-image: url("../../assets/old-wooden-floorboard-textured-background\ —\ kopia.jpg");
-
 
     .container {
         padding-top: 0px;
@@ -205,10 +163,6 @@ nav.navbar {
                 align-items: center;
                 gap: 7px;
                 padding: 0;
-
-                // .brand-logo {
-                //     height: 60px;
-                // }
 
                 .brand-text {
                     color: transparent;
@@ -226,29 +180,6 @@ nav.navbar {
                         font-size: 8.925px;
                     }
                 }
-
-                // @media (max-width: 991.98px) {
-                //     .brand-logo {
-                //         height: 51px;
-                //     }
-
-                //     .brand-text {
-                //         font-size: 8.925px;
-                //     }
-                // }
-
-                // font-weight: 500;
-                // letter-spacing: 1px;
-                // color: rgba(255,255,255,.55);
-
-                // &:hover {
-                //     color: rgba(255,255,255,.75);
-                // }
-
-                // &.active {
-                //     color: #fff;
-                //     color: rgba(255,255,255,.95);
-                // }
             }
 
             .navbar-toggler {
@@ -279,38 +210,18 @@ nav.navbar {
                             line-height: 1.5;
                             letter-spacing: 0.00938em;
                             color: rgba(0, 0, 0, 0.6);
-                            font-size: 0.8rem;
-                            font-family: "Raleway", sans-serif;
-                            // text-transform: uppercase;
+                            font-size: 0.9rem;
+                            font-family: "Source Sans Pro", sans-serif;
                             font-weight: 500;
                             padding-left: 0;
                             padding-right: 0;
 
-
-                            // text-decoration: none !important;
-                            font-family: "Source Sans Pro", sans-serif;
-                            font-size: 0.9rem !important;
-                            // font-weight: 300 !important;
-                            // color: rgba(0, 0, 0, 0.55) !important;
-                            // display: flex;
-                            // align-items: center;
-
                             &:hover {
-                                // color: #000;
                                 color: rgba(0, 0, 0, 0.7);
                             }
 
                             &.active {
-                                // color: #000;
                                 color: rgba(0, 0, 0, 0.8);
-                                // color: #d29a3e;
-
-                                // color: transparent;
-                                // background-image: linear-gradient(90deg, #d09636 0%, #d9ab5a 51%, #dbb97b 100%);
-                                // -webkit-background-clip: text;
-                                // background-clip: text;
-
-                                // font-weight: 500;
                             }
                         }
                     }
@@ -332,15 +243,7 @@ nav.navbar {
 
             .offcanvas-header {
                 text-transform: uppercase;
-                // color: #fff;
             }
-
-            .offcanvas-body {
-                .nav-link {
-                    // text-transform: uppercase;
-                }
-            }
-
         }
     }
 }

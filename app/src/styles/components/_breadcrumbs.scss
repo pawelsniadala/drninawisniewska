@@ -1,13 +1,11 @@
 .MuiBreadcrumbs-root {
     display: flex;
-    // justify-content: start;
     justify-content: flex-start;
     padding-bottom: 1rem;
 
     .MuiBreadcrumbs-li {
         a {
             text-decoration: none !important;
-            // font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
             font-family: "Source Sans Pro", sans-serif !important;
             font-size: 0.85rem !important;
             font-weight: 300 !important;
@@ -23,7 +21,6 @@
 
     .MuiTypography-root {
         color: rgba(0, 0, 0, 0.55) !important;
-        // font-family: "Roboto", "Helvetica", "Arial", sans-serif !important;
         font-family: "Source Sans Pro", sans-serif !important;
         font-size: 0.85rem !important;
         font-weight: 300 !important;

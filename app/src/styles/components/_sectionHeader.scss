@@ -5,7 +5,6 @@
         margin: 0;
         text-align: center;
         margin-bottom: 0.35em;
-        // color: #DBAF62;
         color: #d29a3e;
         text-transform: uppercase;
         line-height: 1.5;
@@ -42,7 +41,6 @@
         color: rgba(0, 0, 0, 0.65);
         font-family: Raleway,sans-serif;
         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-        // color: #535353;
         font-size: 18px;
         font-weight: 300;
     }
@@ -92,9 +90,13 @@
     }
 
     &.clinic {
-        .subheader,
+        // .subheader,
         .link-contained {
             display: none;
         }
+
+        // .subheader {
+        //     font-weight: 400;
+        // }
     }
 }

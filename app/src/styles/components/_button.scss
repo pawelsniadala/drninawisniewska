@@ -1,26 +1,13 @@
 .link-contained {
     a.MuiButton-root {
-        // background-color: rgba(255, 255, 255, 0.95);
         background-color: #a87305;
         color: rgba(0, 0, 0, 0.87);
         color: rgba(255, 255, 255, 0.95);
         border-color: rgba(255, 255, 255, 0.95);
-        // font-family: "Roboto","Helvetica","Arial",sans-serif;
-        // font-weight: 500;
-        // font-size: 0.9375rem;
-        // font-size: 1.2rem;
-        // line-height: 1.75;
-        // letter-spacing: 0.02857em;
-        // text-transform: uppercase;
-        // min-width: 64px;
-        // padding: 8px 22px;
         border-radius: 4px;
-        // box-shadow: 0 3px 6px 0 rgb(140 152 164 / 25%);
-        // box-shadow: none;
 
         &:hover {
             text-decoration: none;
-            // background-color: darken(white,5%);
             box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
         }
     }
@@ -69,44 +56,18 @@
         background-color: transparent;
         color: rgba(255, 255, 255, 0.95);
         border-color: rgba(255, 255, 255, 0.95);
-        // font-family: "Roboto","Helvetica","Arial",sans-serif;
-        // font-weight: 500;
-        // font-size: 0.9375rem;
-        // line-height: 1.75;
-        // letter-spacing: 0.02857em;
-        // text-transform: uppercase;
-        // min-width: 64px;
-        // padding: 8px 22px;
         border-radius: 4px;
-        // box-shadow: 0 3px 6px 0 rgb(140 152 164 / 25%);
     }
 }
 
 .link-outlined-card {
     a.MuiButton-root {
         background-color: transparent;
-        // color: #DBAF62;
         color: #d6a44d;
         border-color: none;
-        // font-family: 'Lato', sans-serif;
-        // font-weight: 400;
-
-        // font-family: "Roboto", sans-serif;
-        // font: 400 14px/20px Google Sans Text, Arial, Helvetica, sans-serif;
         font-family: 'Raleway', sans-serif;
-        // font-family: 'Raleway', sans-serif;
         font-size: 12px;
         font-weight: 400;
-        // font-family: "Roboto","Helvetica","Arial",sans-serif;
-        // font-weight: 500;
-        // font-size: 0.9375rem;
-        // line-height: 1.75;
-        // letter-spacing: 0.02857em;
-        // text-transform: uppercase;
-        // min-width: 64px;
-        // padding: 8px 22px;
-        // border-radius: 4px;
-        // box-shadow: 0 3px 6px 0 rgb(140 152 164 / 25%);
 
         .css-155nyw6-MuiButton-endIcon {
             margin-left: 0;
@@ -118,15 +79,6 @@
     button.MuiButton-root {
         background-color: #1976d2;
         color: rgba(255, 255, 255, 0.95);
-        // border: 1px solid #1976d2;
-        // font-family: "Roboto","Helvetica","Arial",sans-serif;
-        // font-weight: 500;
-        // font-size: 0.9375rem;
-        // line-height: 1.75;
-        // letter-spacing: 0.02857em;
-        // text-transform: uppercase;
-        // min-width: 64px;
-        // padding: 8px 22px;
         border-radius: 4px;
         box-shadow: 0 3px 6px 0 rgb(140 152 164 / 25%);
 

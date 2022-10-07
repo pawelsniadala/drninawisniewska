@@ -1,22 +1,9 @@
 
 .carousel-item {
-
     .carousel-caption {
         padding-bottom: 0;
     }
-
-    .carousel-img {
-        // object-fit: cover;
-        // background-position: top center;
-        // width: 100% !important;
-        // height: 100% !important;
-
-        // background-repeat: no-repeat;
-        // background-size: cover;
-    }
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@200;400;500&display=swap");
 
 @mixin bd-bg-overlay($color, $opacity) {
     position: absolute;
@@ -43,34 +30,13 @@
         background: url("../../assets/hero/hero4.jpg") 65% 50% no-repeat;
         background-size: cover;
 
-        // @media (max-width: 991.98px) and (min-width: 768px) {
-        //     position: relative;
-        //     background: url("../../assets/poster/poster1.jpg") 70% 40% no-repeat;
-        //     background-size: cover;
-        // }
-
-        // @media (max-width: 767.98px) and (min-width: 540px) {
-        //     position: relative;
-        //     background: url("../../assets/poster/poster2.jpg") 40% 40% no-repeat;
-        //     background-size: cover;
-        // }
-
-        // @media (max-width: 539.98px) {
-        //     position: relative;
-        //     background: url("../../assets/poster/poster3.jpg") 50% 0 no-repeat;
-        //     background-size: cover;
-        // }
-
         &::after {
-            // @include bd-bg-overlay(rgb(255, 255, 255), .6);
             @include bd-bg-overlay(rgb(0, 0, 0), .15);
         }
 
         .content-wrapper {
             text-align: center;
             @include bd-relative-zindex;
-            // padding-top: 450px;
-            // padding-bottom: 450px;
             height: calc(100vh - 75px);
 
             .company-wrapper {
@@ -89,7 +55,6 @@
                 flex-direction: column;
                 padding-bottom: 1.25rem;
             }
-
         }
     }
 }
