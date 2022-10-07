@@ -1,26 +1,22 @@
 import React from 'react';
-import { Link } from "react-router-dom";
 import Slider from 'react-slick';
 
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useTheme } from '@mui/material/styles';
 
 import Container from '../components/Container';
 import SectionHeader from '../components/SectionHeader';
-import CardServices from "../components/CardServices";
+import CardServices from '../components/CardServices';
 
 import { services } from '../data/services';
 
 const SampleNextArrow = ({ onClick }) => {
     return (
         <Box
-            className="sample-next-arrow"
+            className='sample-next-arrow'
             onClick={onClick}
         >
             <KeyboardArrowRightIcon />
@@ -31,7 +27,7 @@ const SampleNextArrow = ({ onClick }) => {
 function SamplePrevArrow({ onClick }) {
     return (
         <Box
-            className="sample-prev-arrow"
+            className='sample-prev-arrow'
             onClick={onClick}
         >
             <KeyboardArrowLeftIcon />

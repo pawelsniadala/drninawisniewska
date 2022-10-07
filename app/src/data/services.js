@@ -128,7 +128,7 @@ export const allergology = {
 export const usg = {
     image: servicesUsg,
     title: 'USG',
-    description: 'Spośród innych aktywności niewymienionych w ankiecie respondenci wskazali samodzielnie realizowane zadania dotyczące niskiej emisji, ograniczenia spalania odpadów oraz usuwania pokryć dachowych zawierających azbest. Gminy, które najdłużej należą do związku gmin, oceniają, że ważne działania na rzecz poprawy lokalnego środowiska są skutecznie realizowane.',
+    description: 'Zastosowanie ultradźwięków do badania i obrazowania tkanek w medycynie i weterynarii. Ultrasonografia jest nieinwazyjną, atraumatyczną metodą diagnostyki obrazowej, pozwalającą na uzyskanie obrazu przekroju badanego obiektu. Charakteryzuje się dużą dokładnością: umożliwia wykrywanie w narządach nawet bardzo małych zmian (od 0,1 mm).',
     link: `<a href='https://pl.freepik.com/zdjecia/sprzet-medyczny'>Sprzęt medyczny zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
     path: '/services/usg',
     prices: '/prices/usg',
@@ -141,7 +141,7 @@ export const usg = {
 export const endocrinology = {
     image: servicesEndocrinology,
     title: 'Endykrologia',
-    description: 'Przekrój społeczności lokalnych, różnice kulturowe, dążenie do zmian wpływają na działania związku. Młodzi mieszkańcy wykazywali wyraźnie większe zainteresowanie działaniami poprawiające ich jakość życia. Promocja działań, poprzez lokalne media, parafie, organizowane spotkania przyczyniła się do poprawy poziomu świadomości społecznej.',
+    description: 'Nauka o wydzielaniu wewnętrznym, gruczołach, hormonach i ich działaniu. Jako dziedzina medycyny, zajmuje się zaburzeniami funkcji gruczołów wydzielania wewnętrznego, np. przysadki mózgowej, tarczycy, nadnerczy, jajników',
     link: `<a href='https://pl.freepik.com/zdjecia/tarczyca'>Tarczyca zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
     path: '/services/endocrinology',
     prices: '/prices/endocrinology',
@@ -153,7 +153,7 @@ export const endocrinology = {
 export const gynecology = {
     image: servicesGynecology,
     title: 'Ginekologia',
-    description: 'Ekonomiczne korzyści, które dostrzegali przy udziale ich gminy w związku często decydowały o zmianie nastawienia na proponowane przez związek działania. Związek miał większy zasięg działań i było łatwiej sięgać zarówno po środki krajowe jak i zagraniczne.',
+    description: 'Dziedzina medycyny zajmująca się profilaktyką i leczeniem chorób żeńskiego układu płciowego. Najczęstsze problemy, jakimi zajmują się ginekolodzy, to: zaburzenia miesiączkowania, stany zapalne pochwy, antykoncepcja, niepłodność, nowotwory narządów rodnych. Ściśle związana z położnictwem.',
     link: `<a href='https://pl.freepik.com/zdjecia/tarczyca'>Tarczyca zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
     path: '/services/gynecology',
     prices: '/prices/gynecology',
@@ -165,7 +165,7 @@ export const gynecology = {
 export const orthopedics = {
     image: servicesOrthopedics,
     title: 'Ortopedia',
-    description: 'Zainteresowanie społeczności lokalnych i instytucji współpracujących z gminami w realizowane projekty było widoczne wśród obserwowanych związków gmin. Zaangażowanie i deklarowana chęć udziału w proponowane przez związek gmin programy poprawy stanu powietrza atmosferycznego poprzez montaż kolektorów słonecznych czy zanotowany wysoki tonaż segregowanych odpadów komunalnych, przełożyły się na widoczną poprawę stanu lokalnego środowiska przyrodniczego.',
+    description: 'Jedna z podstawowych specjalności lekarskich. Skupia się na diagnostyce i leczeniu operacyjnym i zachowawczym schorzeń, wad wrodzonych i nabytych, zapaleń, zakażeń, nowotworów oraz uszkodzeń i zmian pourazowych narządu ruchu: szkieletu (z wyjątkiem kości czaszki), układu więzadłowo-stawowego oraz mięśni, nerwów i naczyń.',
     link: `<a href="https://pl.freepik.com/darmowe-zdjecie/fizjoterapeuta-kregow-trzymajacy-sztuczny-kregoslup_13376886.htm#query=orthopedics&position=23&from_view=search">Obraz autorstwa senivpetro</a> na Freepik`,
     path: '/services/orthopedics',
     prices: '/prices/orthopedics',
@@ -177,7 +177,7 @@ export const orthopedics = {
 export const vasularSurgery = {
     image: servicesVasularSurgery,
     title: 'Chirurgia naczyniowa',
-    description: 'W miarę wzrostu pojawiania się inwestycji infrastrukturalnych na terenach związków pojawiły się możliwości zatrudnienia okolicznych mieszkańców oraz zmiany w systemie zbiórki odpadów komunalnych co bezpośrednio wpływa na środowisko przyrodnicze. Korzyści ekonomiczne widoczne zaś były w przypadku deklaracji segregacji odpadów.',
+    description: 'Dział chirurgii zajmujący się zabiegami operacyjnymi naczyń krwionośnych oraz limfatycznych. Zakres tej specjalizacji obejmuje leczenie operacyjne, wewnątrznaczyniowe i zachowawcze układu naczyniowego, w tym: trombektomię, skleroterapię żył, pomostowanie tętnic, udrożnianie tętnic, sympatektomię, angioplastykę, implantację stentów, embolizację naczyń, leczenie trombolityczne, leczenie stopy cukrzycowej, leczenie obrzęku chłonnego, amputacje u chorych z niedokrwieniem kończyn dolnych czy wytwarzanie dostępu naczyniowego dla celów hemodializy.',
     link: `<a href="https://pl.freepik.com/darmowe-zdjecie/chirurdzy-noszacy-chirurgiczne-lupy-podczas-wykonywania-operacji_8402445.htm#query=surgery&position=37&from_view=search">Obraz autorstwa wavebreakmedia_micro</a> na Freepik`,
     path: '/services/vascular-surgery',
     prices: '/prices/vascular-surgery',
@@ -189,7 +189,7 @@ export const vasularSurgery = {
 export const clinicalDietitian = {
     image: servicesClinicalDietitian,
     title: 'Dietetyka Kliniczna',
-    description: 'W przypadku działań związanych z gospodarką wodno–ściekową określono wachlarz korzyści społeczno–środowiskowych począwszy od zmniejszania bezrobocia po coraz rzadziej występujące nielegalne pozbywanie się ścieków. Ma to przełożenie na poprawę warunków życia społeczności lokalnych.',
+    description: 'Dostarcza informacje niezbędne do opracowania zasad zdrowego odżywiania, które w połączeniu z właściwym stylem życia są najskuteczniejszą metodą zapobiegania chorobom cywilizacyjnym.',
     link: `<a href="https://pl.freepik.com/darmowe-zdjecie/lekarz-w-swoim-gabinecie-mowi-dziewczynie-jak-jesc-i-trzymac-sie-diety_18133353.htm#query=dietitian&position=8&from_view=search">Obraz autorstwa artursafronovvvv</a> na Freepik`,
     path: '/services/clinical-dietitian',
     prices: '/prices/clinical-dietitian',
