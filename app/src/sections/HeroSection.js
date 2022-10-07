@@ -129,7 +129,7 @@ const HeroSection = () => {
                             </Box>
                         </Box>
                         <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
-                            <LazyLoadImage
+                            {/* <LazyLoadImage
                                 // height={'100%'}
                                 width={'100%'}
                                 src={require('../assets/hero/hero2.jpg')}
@@ -139,6 +139,19 @@ const HeroSection = () => {
                                     objectFit: 'cover',
                                     backgroundRepeat: 'no-repeat',
                                     backgroundSize: 'cover',
+                                    height: '670px',
+                                    objectPosition: '50% 77%',
+                                    filter: 'brightness(0.85)',
+                                }}
+                            /> */}
+                            <img
+                                src={require('../assets/hero/hero2.jpg')}
+                                alt='...'
+                                style={{
+                                    objectFit: 'cover',
+                                    backgroundRepeat: 'no-repeat',
+                                    backgroundSize: 'cover',
+                                    width: '100%',
                                     height: '670px',
                                     objectPosition: '50% 77%',
                                     filter: 'brightness(0.85)',
@@ -200,7 +213,7 @@ const HeroSection = () => {
                             </Box>
                         </Box>
                         <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
-                            <LazyLoadImage
+                            {/* <LazyLoadImage
                                 // height={'100%'}
                                 width={'100%'}
                                 src={require('../assets/hero/hero3.jpg')}
@@ -210,6 +223,19 @@ const HeroSection = () => {
                                     objectFit: 'cover',
                                     backgroundRepeat: 'no-repeat',
                                     backgroundSize: 'cover',
+                                    height: '670px',
+                                    objectPosition: '50% 60%',
+                                    filter: 'brightness(0.85)',
+                                }}
+                            /> */}
+                            <img
+                                src={require('../assets/hero/hero3.jpg')}
+                                alt='...'
+                                style={{
+                                    objectFit: 'cover',
+                                    backgroundRepeat: 'no-repeat',
+                                    backgroundSize: 'cover',
+                                    width: '100%',
                                     height: '670px',
                                     objectPosition: '50% 60%',
                                     filter: 'brightness(0.85)',
@@ -271,7 +297,7 @@ const HeroSection = () => {
                             </Box>
                         </Box>
                         <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
-                            <LazyLoadImage
+                            {/* <LazyLoadImage
                                 // height={'100%'}
                                 width={'100%'}
                                 src={require('../assets/hero/hero4.jpg')}
@@ -281,6 +307,19 @@ const HeroSection = () => {
                                     objectFit: 'cover',
                                     backgroundRepeat: 'no-repeat',
                                     backgroundSize: 'cover',
+                                    height: '670px',
+                                    objectPosition: '50% 45%',
+                                    filter: 'brightness(0.85)',
+                                }}
+                            /> */}
+                            <img
+                                src={require('../assets/hero/hero4.jpg')}
+                                alt='...'
+                                style={{
+                                    objectFit: 'cover',
+                                    backgroundRepeat: 'no-repeat',
+                                    backgroundSize: 'cover',
+                                    width: '100%',
                                     height: '670px',
                                     objectPosition: '50% 45%',
                                     filter: 'brightness(0.85)',
