@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../../../components/Container';
 import ListBulleted from '../../../components/ListBulleted';
@@ -59,7 +59,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/services' aria-current='page'>
-                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
+                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' /> */}
                                     <Box>Usługi</Box>
                                 </Link>
                             </Breadcrumbs>
@@ -95,7 +95,7 @@ const ServicesAestheticMedicinePartial = () => {
                                     Toksyna botulinowa
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Toksyna botulinowa, produkowana przez bakterie Clostridium Botulinum, znana jest powszechnie  pod  nazwami handlowymi jak Botox® czy Azzalure®. To jedna z najbardziej popularnych metod redukcji zmarszczek mimicznych, które pojawiają się w związku z  powtarzającymi się skurczami mięśni twarzy. Zabieg  pozwala  szybko spłycić  zmarszczki  mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy  nadmierna kurczliwość.
+                                    <strong>Toksyna botulinowa</strong>, produkowana przez bakterie Clostridium Botulinum, znana jest powszechnie  pod  nazwami handlowymi jak <strong>Botox®</strong> czy <strong>Azzalure®</strong>. To jedna z najbardziej popularnych metod <strong>redukcji zmarszczek mimicznych</strong>, które pojawiają się w związku z  powtarzającymi się skurczami mięśni twarzy. Zabieg  pozwala  szybko spłycić  zmarszczki  mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy  nadmierna kurczliwość.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
                                     <LazyLoadImage
@@ -114,7 +114,7 @@ const ServicesAestheticMedicinePartial = () => {
                                     />
                                 </Box>
                                 <Typography className='paragraph heading'>
-                                    Toksynę botulinową warto wykorzystać w celu:
+                                    <strong>Toksynę botulinową warto wykorzystać w celu</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -136,10 +136,10 @@ const ServicesAestheticMedicinePartial = () => {
                                     Toksyna botulinowa powoduje zahamowanie uwalniania acetylocholiny - neuroprzekaźnika odpowiedzialnego za przekaźnictwo impulsów między nerwami a mięśniami. Blokuje więc tzw. synapsy nerwowo-mięśniowe, uniemożliwiając skurcz porażonego mięśnia.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Pierwsze efekty jej działania pojawiają się już  po kilku dniach od podania, a pełen efekt jest  widoczny do 2 tygodni. Należy pamiętać że efekt działania może pojawiać się niesymetrycznie - dlatego ważne jest aby poczekać na efekt końcowy. Efekt przeciwzmarszczkowy utrzymuje się średnio przez 3 do 7 miesięcy i jest uzależniony od indywidualnych cech organizmu.
+                                    Pierwsze efekty jej działania pojawiają się już po kilku dniach od podania, a <strong>pełen efekt jest widoczny do 2 tygodni</strong>. Należy pamiętać że efekt działania może pojawiać się niesymetrycznie - dlatego ważne jest aby poczekać na efekt końcowy. Efekt przeciwzmarszczkowy utrzymuje się średnio przez 3 do 7 miesięcy i jest uzależniony od indywidualnych cech organizmu.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Zalecenia pozabiegowe:
+                                    <strong>Zalecenia pozabiegowe</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -163,10 +163,10 @@ const ServicesAestheticMedicinePartial = () => {
                                     Alluzience®
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Nasz Klinika dysponuje również pierwszym na polskim rynku płynnym neuromodulatorem Alluzience®. Preparat nazywany "botoksem PREMIUM" to płynny neuromodulator BoNT-A.
+                                    Nasz Klinika dysponuje również <strong>pierwszym na polskim rynku</strong> płynnym neuromodulatorem Alluzience®. Preparat nazywany "botoksem PREMIUM" to płynny neuromodulator BoNT-A.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Alluzience® ABO Liquid od innych preparatów toksyny botulinowej odróżnia między innymi:
+                                    <strong>Alluzience® ABO Liquid od innych preparatów toksyny botulinowej odróżnia między innymi</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -191,10 +191,10 @@ const ServicesAestheticMedicinePartial = () => {
                                     Osocze bogatopłytkowe
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Osocze bogatopłytkowe uzyskuje się z krwi własnej pacjenta poprzez podwójne odwirowanie substancji, które stanowią elementy morfotyczne krwi. Podczas odwirowywania krwi pobranej bezpośrednio przed zabiegiem zostają oddzielone krwinki czerwone oraz białe od płytek krwi. Osocze bogatopłytkowe uzyskuje się z standardowego poboru krwi. Po odwirowaniu zyskuje się płynny składnik krwi o niezwykłych i pożądanych przez nas właściwościach. Aby wprowadzić go pod skórę pacjenta wykorzystuje się mezoterapię, czyli ostrzykiwanie za pomocą bardzo cienkich igieł. Najczęściej ostrzykiwaniu osoczem poddawane są policzki, linia żuchwy, czoło, powieki oraz okolice oczu. Jednak osocze bogatopłytkowe przynosi również świetne rezultaty w poprawie wyglądu skóry szyi i dekoltu, ramion i dłoni oraz owłosionej skóry głowy.
+                                    <strong>Osocze bogatopłytkowe</strong> uzyskuje się z <strong>krwi własnej pacjenta</strong> poprzez podwójne odwirowanie substancji, które stanowią elementy morfotyczne krwi. Podczas odwirowywania krwi pobranej <strong>bezpośrednio przed zabiegiem</strong> zostają oddzielone krwinki czerwone oraz białe od płytek krwi. Osocze bogatopłytkowe uzyskuje się z standardowego poboru krwi. Po odwirowaniu zyskuje się <strong>płynny składnik</strong> krwi o niezwykłych i <strong>pożądanych</strong> przez nas <strong>właściwościach</strong>. Aby wprowadzić go pod skórę pacjenta wykorzystuje się <strong>mezoterapię</strong>, czyli ostrzykiwanie za pomocą bardzo cienkich igieł. Najczęściej ostrzykiwaniu osoczem poddawane są policzki, linia żuchwy, czoło, powieki oraz okolice oczu. Jednak osocze bogatopłytkowe przynosi również świetne rezultaty w poprawie wyglądu skóry szyi i dekoltu, ramion i dłoni oraz owłosionej skóry głowy.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Wskazania:
+                                    <strong>Wskazania</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -233,13 +233,13 @@ const ServicesAestheticMedicinePartial = () => {
                                     Mezoterapia igłowa
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Mezoterapia igłowa to przede wszystkim głębokie nawilżenie skóry. Zabieg polega na bezpośrednim podaniu małych dawek substancji biologicznie czynnej śródskórnie lub podskórnie w miejsca, które chcemy poddać zabiegowi. Mezoterapia igłowa pobudza również mikrokrążenie, co stymuluje komórki do produkcji nowych włókien kolagenowych. W efekcie uzyskujemy odświeżoną, napiętą skórę.
+                                    <strong>Mezoterapia igłowa</strong> to przede wszystkim <strong>głębokie nawilżenie skóry</strong>. Zabieg polega na bezpośrednim podaniu małych dawek substancji biologicznie czynnej śródskórnie lub podskórnie w miejsca, które chcemy poddać zabiegowi. Mezoterapia igłowa <strong>pobudza</strong> również <strong>mikrokrążenie</strong>, co <strong>stymuluje komórki</strong> do <strong>produkcji nowych włókien kolagenowych</strong>. W efekcie uzyskujemy odświeżoną, napiętą skórę.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Mezoterapia igłowa wykorzystuje dwa różne mechanizmy działania. Pierwszym z nich jest  ogniskowe gojenie się skóry i jej samoregeneracja po licznych nakłuciach, do których dochodzi w trakcie zabiegu. Drugim zaś jest efekt działania substancji wstrzykiwanych w skórę. Wprowadzany lek bądź inna substancja aktywna nadaje zabiegowi dodatkowych ukierunkowanych właściwości.
+                                    Mezoterapia igłowa wykorzystuje dwa różne mechanizmy działania. Pierwszym z nich jest  <strong>ogniskowe gojenie się skóry i jej samoregeneracja po licznych nakłuciach, do których dochodzi w trakcie zabiegu</strong>. Drugim zaś jest efekt <strong>działania substancji wstrzykiwanych w skórę</strong>. Wprowadzany lek bądź inna substancja aktywna nadaje zabiegowi dodatkowych ukierunkowanych właściwości.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Wskazania:
+                                    <strong>Wskazania</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -274,13 +274,13 @@ const ServicesAestheticMedicinePartial = () => {
                                     Biostymulator tkankowy Juvenus
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Juvenus to preparat na bazie polimeryzowanych polinukleotydów. Żel ten składa się z polideoksyrybonukleotydów (PDRN), mieszaniny deoksyrybonukleotydów o masie cząsteczkowej do 1500 kDa, tworzących długi łańcuch polinukelotydowy. Łańcuch polinukleotydowy wiąże cząsteczki wody i służy jako wymiatacz wolnych rodników. W ten sposób powstaje idealne środowisko dla wzrostu fibroblastów, przy jednoczesnym wspieraniu ich biochemicznego działania - produkcji kolagenu i elastyny. Dzięki temu skóra staje się jędrniejsza i bardziej nawilżona.
+                                    <strong>Juvenus</strong> to preparat na bazie polimeryzowanych <strong>polinukleotydów</strong>. Żel ten składa się z polideoksyrybonukleotydów (PDRN), mieszaniny deoksyrybonukleotydów o masie cząsteczkowej do 1500 kDa, tworzących długi łańcuch polinukelotydowy. Łańcuch polinukleotydowy wiąże cząsteczki wody i służy jako wymiatacz wolnych rodników. W ten sposób powstaje idealne środowisko dla wzrostu fibroblastów, przy jednoczesnym wspieraniu ich biochemicznego działania - produkcji kolagenu i elastyny. Dzięki temu skóra staje się jędrniejsza i bardziej nawilżona.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Juvenus to doskonała linia produktów do iniekcji o działaniu przeciwstarzeniowym. Został specjalnie stworzony do zabiegów na różne problemy skóry twarzy i ciała, dając natychmiastowe efekty. Ma działanie nawilżające i antyoksydacyjne w wyniku czego buduje optymalne środowisko dla wzrostu fibroblastów, co prowadzi do poprawy elastyczności skóry.
+                                    Juvenus to doskonała linia produktów do iniekcji o <strong>działaniu przeciwstarzeniowym</strong>. Został specjalnie stworzony do zabiegów na różne problemy skóry twarzy i ciała, dając natychmiastowe efekty. Ma działanie nawilżające i antyoksydacyjne w wyniku czego buduje optymalne środowisko dla wzrostu fibroblastów, co prowadzi do poprawy elastyczności skóry.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Właściwości biochemiczne:
+                                    <strong>Właściwości biochemiczne</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -317,19 +317,19 @@ const ServicesAestheticMedicinePartial = () => {
                                     Biostymulator tkankowy Pluryal Silk
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Pluryal to luksemburska marka biostymulatorów, wykorzystywanych w medycynie estetycznej w ponad 70 krajach z całego świata.
+                                    <strong>Pluryal</strong> to luksemburska marka <strong>biostymulatorów</strong>, wykorzystywanych w medycynie estetycznej w ponad 70 krajach z całego świata.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Dzięki wysoko oczyszczonym polinuleotydom w hybrydowym połączeniu z kwasem hialuronowym oraz mannitolem uzyskano unikalne i innowacyjne połączenie będące doskonałą  odpowiedzią na potrzeby skóry w różnym wieku. Pluryal to bezpieczne, delikatne i w pełni wchłanialne produkty, które pozwalają uzyskać naturalne efekty bez ryzyka powikłań.
+                                    Dzięki wysoko oczyszczonym <strong>polinuleotydom w hybrydowym połączeniu z kwasem hialuronowym</strong> oraz <strong>mannitolem</strong> uzyskano unikalne i innowacyjne połączenie będące doskonałą  odpowiedzią na potrzeby skóry w różnym wieku. Pluryal to bezpieczne, delikatne i w pełni wchłanialne produkty, które pozwalają uzyskać <strong>naturalne efekty bez ryzyka powikłań</strong>.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Biostymulatory Pluryal są sterylnymi, gotowymi do użycia i wstrzykiwań, wysoko standaryzowanymi wyrobami medycznymi, zarezerwowanymi do użytku lekarzy.
+                                    <strong>Biostymulatory Pluryal</strong> są sterylnymi, gotowymi do użycia i wstrzykiwań, wysoko standaryzowanymi wyrobami medycznymi, zarezerwowanymi do użytku lekarzy.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Pluryal Silk regeneruje skórę w delikatnych obszarach wokół oczu, szyi i dekoltu.
+                                    <strong>Pluryal Silk</strong> regeneruje skórę w delikatnych obszarach wokół oczu, szyi i dekoltu.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Efekt zabiegu:
+                                    <strong>Efekt zabiegu</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -354,10 +354,10 @@ const ServicesAestheticMedicinePartial = () => {
                                     Nucleofill
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Zabieg Nucleofill to wykorzystanie innowacyjnej biotechnologii do głębokiego nawilżenia i odmłodzenia skóry. Polinukleotydy, w odróżnieniu od kwasu nukleinowego, wnikają do wnętrza komórek i pobudzają produkcję kolagenu i elastyny. Łączą się także z receptorami na powierzchni komórek, co hamuje tworzenie się mediatorów stanu zapalnego. Wiadomo, że stan zapalny jest jednym z głównych czynników odpowiedzialnych za starzenie się skóry. Polinukleotydy mają wpływ na różnicowanie fibroblastów oraz wykazują właściwości antyoksydacyjne – dzięki czemu są w stanie zahamować proces starzenia. Posiadają także zdolność wiązania wody.
+                                    Zabieg <strong>Nucleofill</strong> to wykorzystanie innowacyjnej <strong>biotechnologii</strong> do <strong>głębokiego nawilżenia</strong> i odmłodzenia skóry. <strong>Polinukleotydy</strong>, w odróżnieniu od kwasu nukleinowego, wnikają do wnętrza komórek i <strong>pobudzają produkcję kolagenu i elastyny</strong>. Łączą się także z receptorami na powierzchni komórek, co hamuje tworzenie się mediatorów stanu zapalnego. Wiadomo, że stan zapalny jest jednym z głównych czynników odpowiedzialnych za starzenie się skóry. Polinukleotydy mają wpływ na <strong>różnicowanie fibroblastów</strong> oraz wykazują <strong>właściwości antyoksydacyjne</strong> - dzięki czemu są w stanie zahamować proces starzenia. Posiadają także zdolność <strong>wiązania wody</strong>.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Efekt zabiegu:
+                                    <strong>Efekt zabiegu</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -379,7 +379,7 @@ const ServicesAestheticMedicinePartial = () => {
                                     ))}
                                 </Grid>
                                 <Typography className='paragraph heading'>
-                                    Wskazania:
+                                    <strong>Wskazania</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -407,16 +407,16 @@ const ServicesAestheticMedicinePartial = () => {
                                     Skinboosters
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Jest to zabieg, który mocno pobudza fibroblasty do produkcji kolagenu typu I oraz elastyny. "Wznowienie" tej produkcji sprawi, że będziemy wyglądali młodziej, skóra będzie bardziej promienna, wygładzona, a drobne zmarszczki wypłaszczone. Na efekty głębokiej przebudowy skóry trzeba poczekać, regeneracja wymaga czasu. Pierwsze efekty widać po 3-4 tygodniach. Skinboosters oferuje także błyskawiczną poprawę wyglądu skóry - na poziomie naskórka. Z czasem, skóra wygląda po prostu coraz lepiej i zdrowiej.
+                                    Jest to zabieg, który mocno <strong>pobudza fibroblasty</strong> do <strong>produkcji kolagenu typu I</strong> oraz <strong>elastyny</strong>. "Wznowienie" tej produkcji sprawi, że będziemy wyglądali młodziej, skóra będzie bardziej promienna, wygładzona, a drobne zmarszczki wypłaszczone. Na efekty <strong>głębokiej przebudowy skóry</strong> trzeba poczekać, regeneracja wymaga czasu. Pierwsze efekty widać po 3-4 tygodniach. Skinboosters oferuje także <strong>błyskawiczną poprawę wyglądu skóry</strong> - na poziomie naskórka. Z czasem, skóra wygląda po prostu coraz lepiej i zdrowiej.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Restylane Skinboosters to innowacyjny produkt do zabiegu rewitalizującego, odświeżającego, wygładzającego i rozjaśniającego skórę. Nie jest wypełniaczem, działa na poziomie skóry właściwej. Jego zadaniem jest stymulacja i odnowa skóry, przywrócenie optymalnego nawilżenia, elastyczności cerze oraz subtelna korekta owalu. Twarz wygląda harmonijnie i naturalnie, jest odświeżona i wypoczęta. Poza głębokim nawilżeniem i stymulacją naturalnej odnowy skóry, produkty Restylane Skinboosters zostały opracowane tak, aby odpowiadać na indywidualne potrzeby pacjentów.
+                                    <strong>Restylane Skinboosters</strong> to innowacyjny produkt do zabiegu rewitalizującego, odświeżającego, wygładzającego i rozjaśniającego skórę. <strong>Nie jest wypełniaczem</strong>, działa na poziomie skóry właściwej. Jego zadaniem jest stymulacja i odnowa skóry, przywrócenie optymalnego nawilżenia, elastyczności cerze oraz subtelna korekta owalu. Twarz wygląda harmonijnie i naturalnie, jest odświeżona i wypoczęta. Poza głębokim nawilżeniem i stymulacją naturalnej odnowy skóry, produkty Restylane Skinboosters zostały opracowane tak, aby odpowiadać na <strong>indywidualne potrzeby pacjentów</strong>.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     By optymalnie i długotrwale nawilżyć skórę, Restylane rekomenduje, aby pierwsza kuracja składała się z 3 zabiegów w odstępach 3-4 tygodniowych.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Wskazania:
+                                    <strong>Wskazania</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -441,16 +441,16 @@ const ServicesAestheticMedicinePartial = () => {
                                     Kolagen
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Kolagen to najważniejsze włókno podporowe skóry, które sprawia, że jest ona gładka, napięta i odpowiednio nawilżona. Można porównać go do rusztowania skóry. Wraz z upływem czasu staje się on coraz słabszy i mniej stabilny. Delikatna, pozbawiona sprężystości i gęstości skóra łatwo ulega "sile grawitacji" w wyniku czego powieki opadają, a owal twarzy zniekształca się poprzez pojawienie się "chomików" i "obwisłych" podbródków. Możemy temu przeciwdziałać. Najlepszym sposobem w walce z utratą kolagenu jest uzupełnianie jego niedoborów i zniwelowanie efektów jego ubytku.
+                                    <strong>Kolagen</strong> to najważniejsze <strong>włókno podporowe skóry</strong>, które sprawia, że jest ona gładka, napięta i odpowiednio nawilżona. Można porównać go do <strong>rusztowania skóry</strong>. Wraz z upływem czasu staje się on coraz słabszy i mniej stabilny. Delikatna, pozbawiona sprężystości i gęstości skóra łatwo ulega "sile grawitacji" w wyniku czego powieki opadają, a owal twarzy zniekształca się poprzez pojawienie się "chomików" i "obwisłych" podbródków. Możemy temu <strong>przeciwdziałać</strong>. Najlepszym sposobem w walce z utratą kolagenu jest uzupełnianie jego niedoborów i zniwelowanie efektów jego ubytku.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Zabieg LINERASE może być bezpiecznie stosowany bez względu na wiek, nawet u bardzo młodych osób. Cerom dojrzałym dla odzyskania utraconej jędrności i gęstości skóry, leczniczo w celu redukcji rozstępów, czy też blizn w każdym wieku.
+                                    Zabieg LINERASE może być bezpiecznie stosowany bez względu na wiek, nawet u bardzo młodych osób. Cerom dojrzałym dla odzyskania <strong>utraconej jędrności i gęstości skóry</strong>, leczniczo w celu <strong>redukcji rozstępów</strong>, czy też <strong>blizn</strong> w każdym wieku.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Wysoki profil bezpieczeństwa i delikatność produktu LINERASE pozwala na jego zastosowanie w każdej, nawet najdelikatniejszej okolicy twarzy, jak i całego ciała. Szczególnie zalecany jest do stosowania w okolicy oczu, ust, dekolcie, szyi, brzucha i powierzchni rąk.
+                                    <strong>Wysoki profil bezpieczeństwa</strong> i <strong>delikatność</strong> produktu LINERASE pozwala na jego zastosowanie w każdej, nawet najdelikatniejszej okolicy twarzy, jak i całego ciała. Szczególnie zalecany jest do stosowania w okolicy oczu, ust, dekolcie, szyi, brzucha i powierzchni rąk.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Biomateriał LINERASE stanowi nową kategorię stymulatora do rekonstrukcji i odbudowy tkanek. Tworząc optymalne warunki fizjologiczne do wytwarzania nowego kolagenu, terapia LINERASE wykazała wysoką skuteczność                  w: regeneracji i odbudowie ubytków skórnych, leczeniu blizn, rozstępów, spłyceniu drobnych zmarszczek, redukcji wiotkości skóry oraz poprawie elastyczności, sprężystości i gęstości skóry twarzy oraz całego ciała.
+                                    Biomateriał LINERASE stanowi nową kategorię stymulatora do <strong>rekonstrukcji i odbudowy tkanek</strong>. Tworząc optymalne warunki fizjologiczne do wytwarzania nowego kolagenu, terapia LINERASE wykazała wysoką skuteczność w: regeneracji i odbudowie ubytków skórnych, leczeniu blizn, rozstępów, spłyceniu drobnych zmarszczek, redukcji wiotkości skóry oraz poprawie elastyczności, sprężystości i gęstości skóry twarzy oraz całego ciała.
                                 </Typography>
                             </Box>
 
@@ -459,10 +459,10 @@ const ServicesAestheticMedicinePartial = () => {
                                     Nici rewitalizujące i liftingujące
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Nici liftingujące służą do usuwania skutków starzenia grawitacyjnego. Zmiany na skórze spowodowane są utratą sprężystości, zmniejszeniem napięcia mięśni i przemieszczaniem się podskórnej tkanki tłuszczowej. Nici liftingujące są mniej kłopotliwą i inwazyjną alternatywą dla chirurgicznego liftingu.
+                                    <strong>Nici liftingujące</strong> służą do <strong>usuwania skutków starzenia grawitacyjnego</strong>. Zmiany na skórze spowodowane są utratą sprężystości, zmniejszeniem napięcia mięśni i przemieszczaniem się podskórnej tkanki tłuszczowej. Nici liftingujące są mniej kłopotliwą i inwazyjną alternatywą dla chirurgicznego liftingu.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Efekty pozabiegowe:
+                                    <strong>Efekty pozabiegowe</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[

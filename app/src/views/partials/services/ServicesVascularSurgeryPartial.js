@@ -7,7 +7,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
@@ -30,7 +30,7 @@ const ServicesVascularSurgeryPartial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/services' aria-current='page'>
-                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
+                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' /> */}
                                     <Box>Usługi</Box>
                                 </Link>
                             </Breadcrumbs>
@@ -65,10 +65,10 @@ const ServicesVascularSurgeryPartial = () => {
                                     Skleroterapia
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Skleroterapia to nieinwazyjny zabieg zamykania rozszerzonych naczyń krwionośnych. Procedura polega na podaniu do problematycznej żyły substancji obliterującej, która powoduje jej zamknięcie.  W  porównaniu z  leczeniem operacyjnym  jest to metoda  bezpieczną i zdecydowanie mniej bolesną.  Zabieg skleroterapii poprzedzony jest dokładną oceną układu żył głównych oraz powierzchniowych przy pomocy badania ultrasonograficznego z dopplerem, które jest wykonywane w naszej Klinice.
+                                    <strong>Skleroterapia</strong> to <strong>nieinwazyjny zabieg zamykania rozszerzonych naczyń krwionośnych</strong>. Procedura polega na podaniu do problematycznej żyły substancji obliterującej, która powoduje jej zamknięcie.  W  porównaniu z  leczeniem operacyjnym  jest to metoda  bezpieczną i zdecydowanie mniej bolesną.  Zabieg skleroterapii poprzedzony jest dokładną oceną układu żył głównych oraz powierzchniowych przy pomocy badania ultrasonograficznego z dopplerem, które jest wykonywane w naszej Klinice.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Zabieg składa się z kilku lub kilkunastu wstrzyknięć preparatu do zmienionych naczyń żylnych, a następnie założenia uciskowych pończoch lub rajstop.
+                                    Zabieg składa się z kilku lub kilkunastu <strong>wstrzyknięć preparatu</strong> do zmienionych naczyń żylnych, a następnie założenia <strong>uciskowych pończoch</strong> lub <strong>rajstop</strong>.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     Podanie środka obliterującego rozpoczyna proces zamknięcia naczyń. Sam proces zamykania trwa od 3 do 4 tygodni, następnie rozpoczyna się proces wchłaniania naczynia. Wchłanianie trwa od kilku tygodni do kilku miesięcy zależnie od wielkości zamykanego naczynia.

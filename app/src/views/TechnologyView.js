@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../components/Container';
 import CardTechnology from '../components/CardTechnology';
@@ -55,7 +55,7 @@ const TechnologyView = () => {
                                     to='/'
                                     aria-current='page'
                                 >
-                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
+                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' /> */}
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>

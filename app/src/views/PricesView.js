@@ -16,7 +16,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
 import PricesAestheticMedicinePartials from './partials/prices/PricesAestheticMedicinePartials';
@@ -197,7 +197,7 @@ const PricesView = () => {
                                     to='/'
                                     aria-current='page'
                                 >
-                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
+                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' /> */}
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>

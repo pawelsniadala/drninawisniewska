@@ -22,6 +22,7 @@ import almaAccentPrimeImageLarge from '../assets/technology/almaAccentPrime/alma
 
 import sonoQueenImageSmall from '../assets/technology/sonoQueen/sonoQueenImageSmall.png';
 import sonoQueenImageMedium from '../assets/technology/sonoQueen/sonoQueenImageMedium.png';
+import sonoQueenImageLarge from '../assets/technology/sonoQueen/sonoQueenImageLarge.png';
 
 export const vectus = {
     designation: 'vectus',
@@ -97,7 +98,7 @@ export const sonoQueen = {
     description: 'SonoQueen to prawdziwie królewski dotyk odmładzający, zamknięty w formie szybkiego, komfortowego zabiegu na twarz i ciało. Proces przebudowy i liftingu odbywa się wewnątrz Twojej skóry, dzięki temu natychmiast powracasz do swoich codziennych zajęć, a resztę pracy nad młodym wyglądem pozostawiasz swojej skórze. SonoQueen to nowa era uzyskiwania efektu wielowymiarowego, trwałego napięcia i wygładzenia skóry, zarówno twarzy, jak i ciała.',
     imageSmall: sonoQueenImageSmall,
     imageMedium: sonoQueenImageMedium,
-    imageLarge: sonoQueenImageMedium,
+    imageLarge: sonoQueenImageLarge,
     path: '/technology/sono-queen',
     badge: false,
     services: ['aestheticMedicine']

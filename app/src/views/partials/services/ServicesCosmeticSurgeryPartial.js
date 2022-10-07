@@ -7,7 +7,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
@@ -30,7 +30,7 @@ const ServicesCosmeticSurgeryPartial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/services' aria-current='page'>
-                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
+                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' /> */}
                                     <Box>Usługi</Box>
                                 </Link>
                             </Breadcrumbs>
@@ -65,7 +65,7 @@ const ServicesCosmeticSurgeryPartial = () => {
                                     Plastyka powiek
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Plastyka powiek, inaczej blefaroplastyka, to zabieg mający na celu usunięcie nadmiaru skóry wokół oczu. W zakres blefaroplastyki wchodzi zarówno korekta powieki górnej jak i dolnej.
+                                    <strong>Plastyka powiek</strong>, inaczej blefaroplastyka, to zabieg mający na celu usunięcie nadmiaru skóry wokół oczu. W zakres blefaroplastyki wchodzi zarówno <strong>korekta powieki górnej jak i dolnej</strong>.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     Plastyka powiek jest najskuteczniejszą metodą walki z twz. opadającą powieką. Wskazaniami do zabiegu prócz defektu estetycznego są również asymetria oczu, problemy z widocznością, przepukliny tłuszczowe a także wiotkość tkanki wokół oczu.

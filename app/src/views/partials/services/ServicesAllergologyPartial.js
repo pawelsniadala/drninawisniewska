@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -22,6 +23,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
+import ListBulleted from '../../../components/ListBulleted';
 
 import { services, allergology } from '../../../data/services';
 
@@ -265,7 +267,7 @@ const ServicesAllergologyPartial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/services' aria-current='page'>
-                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
+                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' /> */}
                                     <Box>Usługi</Box>
                                 </Link>
                             </Breadcrumbs>
@@ -301,10 +303,10 @@ const ServicesAllergologyPartial = () => {
                                     Testy skórne
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Testy skórne są jedną z popularniejszej oraz prostszej metody diagnostycznej alergii. Największą zaletą testów skórnych jest ich krótki czas oczekiwania na wyniki.
+                                    <strong>Testy skórne</strong> są jedną z popularniejszej oraz prostszej metody diagnostycznej alergii. Największą zaletą testów skórnych jest ich <strong>krótki czas oczekiwania na wyniki</strong>.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Badanie przeprowadza się na wewnętrznej części przedramienia lub skórze pleców. Przebieg testów polega na naniesieniu kropli różnych zawiesin z alergenami z zestawu przesiewowego zawierającego takie substancje uczulające jak rośliny wiatropylne, trawy, pleśnie, sierść zwierząt, jad owadów czy roztocza kurzu domowego.
+                                    Badanie przeprowadza się na wewnętrznej części przedramienia lub skórze pleców. Przebieg testów polega na naniesieniu kropli różnych zawiesin z alergenami z zestawu przesiewowego zawierającego takie substancje uczulające jak <strong>rośliny wiatropylne</strong>, <strong>trawy</strong>, <strong>pleśnie</strong>, <strong>sierść zwierząt</strong>, <strong>jad owadów</strong> czy <strong>roztocza kurzu domowego</strong>.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
                                     <LazyLoadImage
@@ -336,27 +338,43 @@ const ServicesAllergologyPartial = () => {
                                     Płatkowe testy kontaktowe
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    TRUE TEST to gotowy do użycia plaster do prób prowokacyjnych. TRUE TEST przeznaczony jest do diagnostyki alergicznego kontaktowego zapalenia skóry. Nowy, ulepszony plaster jest bardziej komfortowy dla pacjenta, gdyż giętka taśma poliestrowa jest bardzo elastyczna i lepiej przylega do skóry.
+                                    <strong>TRUE TEST</strong> to gotowy do użycia plaster do prób prowokacyjnych. TRUE TEST przeznaczony jest do <strong>diagnostyki alergicznego kontaktowego zapalenia skóry</strong>. Nowy, ulepszony plaster jest bardziej komfortowy dla pacjenta, gdyż giętka taśma poliestrowa jest bardzo elastyczna i lepiej przylega do skóry.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Każdy zestaw testów TRUE TEST składa się z trzech paneli po 12 płatków, które zawierają 35 substancji testujących.
+                                    Każdy zestaw testów TRUE TEST składa się z trzech paneli po 12 płatków, które <strong>zawierają 35 substancji testujących</strong>.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     Aby odczyt był najdokładniejszy plastry należy usunąć po upływie 48 godzin. Reakcje należy ocenić po usunięciu plastra i ponownie po 1-2 dniach, ponieważ w tym czasie ustępują łagodne podrażnienia skóry i rozwijają się w pełni reakcje alergiczne. Odczytu dokonujemy przy użyciu wzorca dołączonego do każdego testu. Siarczan neomycyny i parafenylenodiamina powodują czasami reakcje, które ujawniają się dopiero po 4-5 dniach od aplikacji testu. Pacjenci powinni być o tym poinformowani. Należy zweryfikować opóźnioną reakcję podczas dodatkowej wizyty u lekarza.
                                 </Typography>
+                                <Typography className='paragraph heading'>
+                                    W praktyce wygląda to następująco:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        '1 dzień – założenie testów na skórę pleców,',
+                                        '3 dzień – zdjęcie testów w klinice i pierwsza ocena,',
+                                        '5 dzień – kolejny odczyt testów.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
                                 <Typography className='paragraph'>
-                                    Każdy zestaw testów TRUE TEST składa się z trzech paneli po 12 płatków, które zawierają 35 substancji testujących.
+                                    Lista alergenów i miejsca ich występowania pacjent otrzymuje wraz z odczytem testów.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Lista alergenów i miejsca ich występowania pacjent otrzymuje wraz z odczytem testów. Lista dostępna również poniżej.
+                                    Lista dostępna również poniżej.
                                 </Typography>
                                 <Accordion className='accordian'>
                                     <AccordionSummary
-                                    expandIcon={<ExpandMoreIcon />}
-                                    aria-controls="panel1a-content"
-                                    id="panel1a-header"
+                                        expandIcon={<ExpandMoreIcon />}
+                                        aria-controls="panel1a-content"
+                                        id="panel1a-header"
                                     >
-                                    <Typography>Panel 1.1</Typography>
+                                        <Typography>Panel 1.1</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Table1 />
@@ -364,11 +382,11 @@ const ServicesAllergologyPartial = () => {
                                 </Accordion>
                                 <Accordion className='accordian'>
                                     <AccordionSummary
-                                    expandIcon={<ExpandMoreIcon />}
-                                    aria-controls="panel2a-content"
-                                    id="panel2a-header"
+                                        expandIcon={<ExpandMoreIcon />}
+                                        aria-controls="panel2a-content"
+                                        id="panel2a-header"
                                     >
-                                    <Typography>Panel 2.2</Typography>
+                                        <Typography>Panel 2.2</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Table2 />
@@ -376,11 +394,11 @@ const ServicesAllergologyPartial = () => {
                                 </Accordion>
                                 <Accordion className='accordian'>
                                     <AccordionSummary
-                                    expandIcon={<ExpandMoreIcon />}
-                                    aria-controls="panel3a-content"
-                                    id="panel3a-header"
+                                        expandIcon={<ExpandMoreIcon />}
+                                        aria-controls="panel3a-content"
+                                        id="panel3a-header"
                                     >
-                                    <Typography>Panel 3.3</Typography>
+                                        <Typography>Panel 3.3</Typography>
                                     </AccordionSummary>
                                     <AccordionDetails>
                                         <Table3 />
@@ -393,10 +411,10 @@ const ServicesAllergologyPartial = () => {
                                     Odczulanie
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Immunoterapia swoista, czyli odczulanie, to jedyna przyczynowa metoda leczenia alergii.
+                                    <strong>Immunoterapia swoista</strong>, czyli odczulanie, to jedyna <strong>przyczynowa</strong> metoda leczenia alergii.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Odczulanie ma na celu zmniejszyć wrażliwość organizmu na dany czynnik alergizujący, co                               w następstwie redukuje uciążliwe objawy alergii. Polega ono na podawaniu coraz to większych stężeń alergenu w szczepionce co stopniowo zmniejsza wrażliwość organizmu na hapteny uczulające. Dawka wyciągu alergennego wynosi od 5 do 20 μg podanego w iniekcji podskórnej.
+                                    Odczulanie ma na celu zmniejszyć wrażliwość organizmu na dany czynnik alergizujący, co w następstwie redukuje uciążliwe objawy alergii. Polega ono na podawaniu coraz to większych stężeń alergenu w szczepionce co stopniowo zmniejsza wrażliwość organizmu na hapteny uczulające. Dawka wyciągu alergennego wynosi od 5 do 20 μg podanego w iniekcji podskórnej.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     Odczulanie jest procesem czasochłonnym. Zajmuje od 3 do 5 lat. Immunoterapia swoista jest szczególnie skuteczna w przypadku alergii na jad owadów bąkoskrzydłych, pyłki roślinne oraz roztocza kurzu domowego. Odczulania nie stosuje się w przypadku alergii pokarmowych.

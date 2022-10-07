@@ -5,10 +5,11 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../components/Container';
-import CardTeam from '../components/CardTeam';
+// import CardTeam from '../components/CardTeam';
+import CardTeam2 from '../components/CardTeam2';
 import CardTeamProposed from '../components/CardTeamProposed';
 
 import { team } from '../data/team';
@@ -54,7 +55,7 @@ const TeamView = () => {
                                     to="/"
                                     aria-current="page"
                                 >
-                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize="smform" />
+                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize="smform" /> */}
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>
@@ -86,7 +87,7 @@ const TeamView = () => {
                         <Box className="card-wrapper team view">
                             {width >= 991.98 ? (
                                 team.map((item, index) => (
-                                    <CardTeam
+                                    <CardTeam2
                                         key={index}
                                         cardImage={item.image}
                                         cardBackground={item.background}

@@ -7,7 +7,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
@@ -31,7 +31,7 @@ const ServicesDermatologyPartial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/services' aria-current='page'>
-                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
+                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' /> */}
                                     <Box>Usługi</Box>
                                 </Link>
                             </Breadcrumbs>
@@ -67,10 +67,10 @@ const ServicesDermatologyPartial = () => {
                                     Badanie znamion barwnikowych
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Badanie znamion barwnikowych polega na poddaniu zmian skórnych analizie przez dermatologa. W naszej Klinice badanie można przeprowadzić za pomocą dermatoskopu lub wideodermatoskopu.
+                                    Badanie znamion barwnikowych polega na poddaniu zmian skórnych analizie przez dermatologa. W naszej Klinice badanie można przeprowadzić za pomocą <strong>dermatoskopu</strong> lub <strong>wideodermatoskopu</strong>.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Wideodermatoskopia to nowoczesna cyfrowa technologia służąca do analizy znamion barwnikowych skóry. Urządzenie służy także diagnozowaniu zmian chorobowych skóry, włosów i paznokci. Jest to zaawansowany system łączący optyczny układ wideokamery dermatoskopu z komputerową analizą obrazu za pomocą algebraicznych algorytmów.
+                                    Wideodermatoskopia to <strong>nowoczesna cyfrowa technologia</strong> służąca do analizy znamion barwnikowych skóry. Urządzenie służy także diagnozowaniu zmian chorobowych skóry, włosów i paznokci. Jest to zaawansowany system łączący <strong>optyczny układ wideokamery</strong> dermatoskopu z <strong>komputerową analizą obrazu</strong> za pomocą algebraicznych algorytmów.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
                                     <LazyLoadImage
@@ -92,10 +92,10 @@ const ServicesDermatologyPartial = () => {
                                     Badanie polega na oglądaniu znamion specjalistyczną kamerą w bardzo dużym powiększeniu pozwalając na dokładniejsze zbadanie zmian. W ciągu kilku minut mapuje całe ciało, a dane zostają zapisane w pamięci komputera.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Znamiona skórne często uznawane są za cechę charakterystyczną danej osoby. Należy jednak pamiętać, że niektóre znamiona mogą ewoluować w nowotwory skóry, w tym bardzo niebezpiecznego czerniaka. Z tego powodu niesamowicie istotna jest regularna profilaktyka zmian skórnych.
+                                    <strong>Znamiona skórne</strong> często uznawane są za cechę charakterystyczną danej osoby. Należy jednak pamiętać, że niektóre znamiona <strong>mogą ewoluować w nowotwory skóry</strong>, w tym bardzo niebezpiecznego <strong>czerniaka</strong>. Z tego powodu niesamowicie istotna jest regularna profilaktyka zmian skórnych.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Wideodermatoskopia pozwala wykryć raka skóry na bardzo wczesnym etapie, co diametralnie zwiększa nasze rokowania na całkowite wyleczenie.
+                                    Wideodermatoskopia pozwala wykryć raka skóry na bardzo wczesnym etapie, co diametralnie zwiększa nasze rokowania na <strong>całkowite wyleczenie</strong>.
                                 </Typography>
                             </Box>
 
@@ -104,10 +104,10 @@ const ServicesDermatologyPartial = () => {
                                     Fototerapia chorób skóry
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Fototerapia UV jest skuteczną i wygodną metodą leczenia chorób skórnych promieniowaniem ultrafioletowym o określonej terapeutycznej długości fali.
+                                    Fototerapia UV jest skuteczną i wygodną metodą leczenia chorób skórnych <strong>promieniowaniem ultrafioletowym</strong> o określonej terapeutycznej długości fali.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    W naszej klinice przeprowadzamy światłoterapię UVB 311nm oraz PUVA-bath, po uprzedniej konsultacji dermatologicznej w naszej Klinice. Lekarz ustala plan fototerapii i dawki naświetlań według aktualnych wytycznych Polskiego Towarzystwa Dermatologicznego.
+                                    W naszej klinice przeprowadzamy światłoterapię <strong>UVB 311nm</strong> oraz <strong>PUVA-bath</strong>, po uprzedniej konsultacji dermatologicznej w naszej Klinice. Lekarz ustala plan fototerapii i dawki naświetlań według aktualnych wytycznych Polskiego Towarzystwa Dermatologicznego.
                                 </Typography>
                             </Box>
 
@@ -116,10 +116,10 @@ const ServicesDermatologyPartial = () => {
                                     Usunięcie zmian skórnych elektrochirurgiczne
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Elektrochirurgia, inaczej elektrokoagulacja, to metoda chirurgiczna polegająca na wykorzystaniu przepływu prądu elektrycznego o różnej częstotliwości do usuwania, wycinania lub  wypalania, wszelkich niepożądanych zmian skórnych. Zabiegi można podzielić na elektrokoagulację i cięcie, które wykonuje się w znieczuleniu miejscowym. Zabieg elektrokoagulacji wykonuje się za pomocą elektrod o różnym kształcie, odpowiednio dobranych w zależności od rodzaju zmiany.
+                                    <strong>Elektrochirurgia</strong>, inaczej <strong>elektrokoagulacja</strong>, to metoda chirurgiczna polegająca na wykorzystaniu przepływu <strong>prądu elektrycznego o różnej częstotliwości</strong> do usuwania, wycinania lub  wypalania, wszelkich niepożądanych zmian skórnych. Zabiegi można podzielić na elektrokoagulację i cięcie, które wykonuje się w znieczuleniu miejscowym. Zabieg elektrokoagulacji wykonuje się za pomocą elektrod o różnym kształcie, odpowiednio dobranych w zależności od rodzaju zmiany.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Głównymi zaletami innowacyjności elektrochirurgii w usuwaniu niezłośliwych zmian skórnych są:
+                                    <strong>Głównymi zaletami innowacyjności elektrochirurgii w usuwaniu niezłośliwych zmian skórnych są</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -136,7 +136,7 @@ const ServicesDermatologyPartial = () => {
                                     ))}
                                 </Grid>
                                 <Typography className='paragraph heading'>
-                                    Zabiegi elektrochirurgiczne wykonuje się przy usuwaniu zmian skórnych o charakterze:
+                                    <strong>Zabiegi elektrochirurgiczne wykonuje się przy usuwaniu zmian skórnych o charakterze</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -157,7 +157,7 @@ const ServicesDermatologyPartial = () => {
                                     ))}
                                 </Grid>
                                 <Typography className='paragraph'>
-                                    Każdy rodzaj zmiany musi być uprzednio zakwalifikowany do zabiegu przez lekarza w naszej Klinice.
+                                    <strong>Każdy rodzaj zmiany musi być uprzednio zakwalifikowany do zabiegu przez lekarza w naszej Klinice</strong>.
                                 </Typography>
                             </Box>
                         </Box>

@@ -9,7 +9,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 
 import Container from '../components/Container';
@@ -55,7 +55,7 @@ const ContactView = () => {
                                     to='/'
                                     aria-current='page'
                                 >
-                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
+                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' /> */}
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>

@@ -7,12 +7,11 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../../../components/Container';
 import ListBulleted from '../../../components/ListBulleted';
 import CardProposed from '../../../components/CardProposed';
-import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardTechnology from '../../../components/CardTechnology';
 
 import { services, cosmetology } from '../../../data/services';
@@ -57,7 +56,7 @@ const ServicesCosmetologyPartial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/services' aria-current='page'>
-                                    <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' />
+                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' /> */}
                                     <Box>Usługi</Box>
                                 </Link>
                             </Breadcrumbs>
@@ -93,13 +92,29 @@ const ServicesCosmetologyPartial = () => {
                                     Peeling medyczny
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Peelingi chemiczne to kondycjonujące i rewitalizujące skórę zabiegi dermokosmetyczne. W zależności od zastosowanego preparatu zabiegi oferują różne efekty terapeutyczne; tj. oczyszczające i przeciwtrądzikowe, regenerujące i przeciwzmarszczkowe, rozjaśniające i redukujące przebarwienia.
+                                    Peelingi chemiczne to <strong>kondycjonujące</strong> i <strong>rewitalizujące</strong> skórę zabiegi dermokosmetyczne. W zależności od zastosowanego preparatu zabiegi oferują <strong>różne efekty terapeutyczne</strong>; tj. oczyszczające i przeciwtrądzikowe, regenerujące i przeciwzmarszczkowe, rozjaśniające i redukujące przebarwienia.
+                                </Typography>
+                                <Box marginBottom={3} marginTop={3}>
+                                    <LazyLoadImage
+                                        height={'100%'}
+                                        width={'100%'}
+                                        src={cosmetology.servicesCosmetologyPeeling}
+                                        alt='Remote working'
+                                        effect='blur'
+                                        style={{
+                                            objectFit: 'cover',
+                                            borderRadius: 8,
+                                            width: '100%',
+                                            height: '100%',
+                                            maxHeight: '400px',
+                                        }}
+                                    />
+                                </Box>
+                                <Typography className='paragraph'>
+                                    <strong>Mechanizm działania</strong> peelingów chemicznych polega na <strong>kontrolowanym złuszczania</strong> powierzchownych warstw naskórka i/lub górnych warstw skóry właściwej. Peelingi rozluźniają połączenia międzykomórkowe keratynocytów, komórek skóry, dzięki czemu dochodzi do złuszczania jej zewnętrznych warstw. Pobudzone zostają naturalne procesy gojenia a także następuje przyspieszona przebudowa skóry dzięki <strong>stymulacji skóry do syntezy nowego kolagenu i elastyny</strong>. W konsekwencji powierzchniowe defekty estetyczne zostają usunięte, a problemy zlokalizowane w głębszych warstwach zostają zniwelowane.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Mechanizm działania peelingów chemicznych polega na kontrolowanym złuszczania powierzchownych warstw naskórka i/lub górnych warstw skóry właściwej. Peelingi rozluźniają połączenia międzykomórkowe keratynocytów, komórek skóry, dzięki czemu dochodzi do złuszczania jej zewnętrznych warstw. Pobudzone zostają naturalne procesy gojenia a także następuje przyspieszona przebudowa skóry dzięki stymulacji skóry do syntezy nowego kolagenu i elastyny. W konsekwencji powierzchniowe defekty estetyczne zostają usunięte, a problemy zlokalizowane w głębszych warstwach zostają zniwelowane.
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    Peelingi chemiczne to zabiegi pielęgnacyjne oraz lecznicze. Stanowią dobrą opcję dla osób, które nie chcą zdecydować się na bardziej inwazyjny zabieg z medycyny estetycznej lub szukają alternatywnego leczenia skór problemowych. Zastosowanie kwasów pomaga w usunięciu przebarwień, likwidowaniu blizn i leczeniu trądziku.
+                                    Peelingi chemiczne to zabiegi <strong>pielęgnacyjne</strong> oraz <strong>lecznicze</strong>. Stanowią dobrą opcję dla osób, które nie chcą zdecydować się na bardziej inwazyjny zabieg z medycyny estetycznej lub szukają <strong>alternatywnego leczenia skór problemowych</strong>. Zastosowanie kwasów pomaga w usunięciu przebarwień, likwidowaniu blizn i leczeniu trądziku.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     W zależności od rodzaju, stężenia, pH zastosowanego preparatu oraz szeregu innych czynników uzyskujemy różną siłę i efekt działania. Dzięki peelingom medycznym uzyskujemy:
@@ -124,13 +139,13 @@ const ServicesCosmetologyPartial = () => {
                                     ))}
                                 </Grid>
                                 <Typography className='paragraph'>
-                                    Zabiegi są bezbolesne, odczuwalne może być jedynie delikatne pieczenie lub  uczucie ściągnięcia skóry. Najlepsze efekty terapeutyczne  przynosi pełna seria zabiegowa.
+                                    Zabiegi są <strong>bezbolesne</strong>, odczuwalne może być jedynie delikatne pieczenie lub  uczucie ściągnięcia skóry. Najlepsze efekty terapeutyczne  przynosi pełna seria zabiegowa.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     Szerokie grono peelingów chemicznych o odmiennych właściwościach oraz różnych głębokościach działania pozwala na stworzenie zabiegów dedykowanych dla każdego pacjenta. Dodatkowo tworzone są także mieszanki kilku różnych substancji złuszczających o specyficznych właściwościach, które można wykorzystać w pielęgnacji konkretnego rodzaju cery. Nasza Klinika oferuje szeroką gamę marek i peelingów pozwalające na stworzenie procedury zabiegowej dobranej indywidualnie pod potrzeby każdej cery.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Jak należy pielęgnować skórę po zabiegu eksfoliacji chemicznej?
+                                    <strong>Jak należy pielęgnować skórę po zabiegu eksfoliacji chemicznej?</strong>
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -156,7 +171,7 @@ const ServicesCosmetologyPartial = () => {
                                     Przeciwwskazania: stany zapalne skóry, aktywne infekcje bakteryjne lub wirusowe, przerwana ciągłość naskórka, aktywna opryszczka, przyjmowanie retinoidów (a także 6 miesięcy od ostatniej dawki), fototerapia, ciąża lub karmienie piersią, bezpośrednio po depilacji,  choroby autoimmunologiczne, radioterapia, bliznowce lub blizny przerostowe, podrażniona skóra, świeża opalenizna.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    Nasza Klinika oferuje:
+                                    <strong>Nasza Klinika oferuje</strong>:
                                 </Typography>
                                 <Typography className='paragraph'>
                                     <strong>Kwas salicylowy</strong> - dedykowany cerze trądzikowej, tłustej i mieszanej, wykazuje działanie antybakteryjne, intensywne działanie keratolityczne i regulujące wydzielanie sebum; wskazania: łojotok, trądzik zapalny, tendencja do wyprysków, zaskórniki, przetłuszczanie się skóry, nadmierna rogowacenie, rozszerzone pory.

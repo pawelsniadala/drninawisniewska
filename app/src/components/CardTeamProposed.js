@@ -36,7 +36,7 @@ const CardTeamProposed = ({
                 <CardContent className='card-content'>
                     <Avatar
                         className='avatar'
-                        variant="rounded"
+                        // variant="rounded"
                         src={cardImage}
                     />
                     <Stack spacing={0.5}>

@@ -4,7 +4,8 @@ import Box from '@mui/material/Box';
 
 import Container from '../components/Container';
 import SectionHeader from '../components/SectionHeader';
-import CardTeam from '../components/CardTeam';
+// import CardTeam from '../components/CardTeam';
+import CardTeam2 from '../components/CardTeam2';
 
 import { team } from '../data/team';
 
@@ -33,7 +34,7 @@ const TeamSection = () => {
                                 data-aos-offset={100}
                                 data-aos-duration={600}
                             >
-                                <CardTeam
+                                <CardTeam2
                                     cardImage={item.image}
                                     cardBackground={item.background}
                                     cardTitle={item.title}
