@@ -64,47 +64,45 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                         <Box className='technology-description'>
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
-                                    Laser Frakcyjny Fons SVR™ jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci likwidacji blizn potrądzikowych, poprawy jakości skóry i wytworzenia nowych struktur kolagenu. W porównaniu z tradycyjnymi laserami CO<sub>2</sub>, frakcjonowanie ablacyjne laserami Fons pozwala osiągnąć dużą głębokość penetracji w skórze, dając efektywne procedury zabiegowe. Dzięki wysokiej mocy i wszechstronności może być wykorzystywany w wielu wskazaniach. Wygodę i precyzję działania zapewnia siedmioprzegubowe ramię.
+                                    <strong>Laser frakcyjny FONS SVR™</strong> jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci <strong>likwidacji blizn potrądzikowych</strong>, <strong>poprawy jakości skóry</strong> i <strong>wytworzenia nowych struktur kolagenu</strong>.
+                                </Typography>
+                                <Box marginBottom={3} marginTop={3}>
+                                    <LazyLoadImage
+                                        height={'100%'}
+                                        width={'100%'}
+                                        src={fonsSvrFractionLaserCo2.imageLarge}
+                                        alt='Remote working'
+                                        effect='blur'
+                                        style={{
+                                            objectFit: 'cover',
+                                            borderRadius: 8,
+                                            width: '100%',
+                                            height: '100%',
+                                            maxHeight: '400px',
+                                            objectPosition: '50% 85%',
+                                            backgroundColor: '#e6e6e6'
+                                        }}
+                                    />
+                                </Box>
+                                <Typography className='paragraph'>
+                                    W porównaniu z tradycyjnymi laserami CO<sub>2</sub>, frakcjonowanie ablacyjne laserami Fons pozwala osiągnąć <strong>dużą głębokość penetracji w skórze</strong>, dając efektywne procedury zabiegowe. Dzięki wysokiej mocy i wszechstronności może być wykorzystywany w wielu wskazaniach. Wygodę i precyzję działania zapewnia siedmioprzegubowe ramię.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Ogromną zaletą jest bezkontaktowa praca lasera gwarantująca całkowitą czystość pola operacyjnego. Bardzo ważna jest także istotna redukcja krwawienia oraz natychmiastowa koagulacja. W trakcie wykonywania zabiegu uzyskujemy tysiące mikroskopijnych uszkodzeń tkanki, natomiast pozostałe obszary pozostają nienaruszone i to właśnie one przyspieszają odnowę zniszczonych stref skóry. Dzięki temu okres rekonwalescencji jest zredukowany do minimum przy jedoczesnym zachowaniu wysokiej efektywności terapii.
+                                    Ogromną zaletą jest <strong>bezkontaktowa praca</strong> lasera gwarantująca całkowitą czystość pola operacyjnego. Bardzo ważna jest także istotna redukcja krwawienia oraz natychmiastowa koagulacja. W trakcie wykonywania zabiegu uzyskujemy tysiące mikroskopijnych uszkodzeń tkanki, natomiast pozostałe obszary pozostają nienaruszone i to właśnie one przyspieszają odnowę zniszczonych stref skóry. Dzięki temu okres rekonwalescencji jest zredukowany do minimum przy jedoczesnym zachowaniu wysokiej efektywności terapii.
                                 </Typography>
-                            </Box>
-                            <Box marginBottom={3}>
-                                <LazyLoadImage
-                                    height={'100%'}
-                                    width={'100%'}
-                                    src={fonsSvrFractionLaserCo2.imageLarge}
-                                    alt='Remote working'
-                                    effect='blur'
-                                    style={{
-                                        objectFit: 'cover',
-                                        borderRadius: 8,
-                                        width: '100%',
-                                        height: '100%',
-                                        maxHeight: '400px',
-                                        objectPosition: '50% 85%',
-                                        backgroundColor: '#e6e6e6'
-                                    }}
-                                />
-                            </Box>
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header'>
-                                    Możliwości zabiegowe
+                                <Typography className='paragraph heading'>
+                                    <strong>Zalety lasera FONS SVR™</strong>:
                                 </Typography>
-                                <Grid container spacing={1} sx={{ marginTop: 1 }}>
+                                <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'Resurfacing skóry',
-                                        'Lifting i ujędrnianie skóry',
-                                        'Usuwanie blizn (potrądzikowych, pourazowych, oparzeniowych)',
-                                        'Likwidacja rozstępów',
-                                        'Redukcja trądziku',
-                                        'Usuwanie przebarwień',
-                                        'Usuwanie zmarszczek',
-                                        'Poprawa jakości skóry',
-                                        'Skuteczne efekty w niwelowaniu fotostarzenia się skóry',
-                                        'Zabiegi chirurgiczne z wykorzystaniem punktowej głowicy lasera CO\u2082',
-                                        'Ginekologia estetyczna',
+                                        'szybki czas rekonwalescencji (od 3 do 6 dni),',
+                                        'wszechstronność - podwójny moduł w jednym aparacie (zabiegi frakcyjne oraz standardowe procedury chirurgiczne),',
+                                        'łatwość obsługi aparatu przez użytkownika,',
+                                        'bardzo prosty panel sterowania,',
+                                        'czytelny i intuicyjny interfejs,',
+                                        'nowoczesny wygląd urządzenia,',
+                                        'możliwość doboru pola zabiegowego podczas skanowania powierzchni zabiegowej,',
+                                        'precyzja wykonanego zabiegu.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -113,22 +111,45 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                         />
                                     ))}
                                 </Grid>
-                            </Box>
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header'>
-                                    Zalety Lasera Fons SVR™
+                                <Typography className='paragraph heading'>
+                                    <strong>Możliwości zabiegowe</strong>:
                                 </Typography>
-                                <Grid container spacing={1} sx={{ marginTop: 1 }}>
+                                <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'Szybki czas rekonwalescencji (od 3 do 6 dni)',
-                                        'Wszechstronność - podwójny moduł w jednym aparacie (zabiegi frakcyjne oraz standardowe procedury chirurgiczne)',
-                                        'Łatwość obsługi aparatu przez użytkownika',
-
-                                        'Bardzo prosty panel sterowania',
-                                        'Czytelny i intuicyjny interfejs',
-                                        'Nowoczesny wygląd urządzenia',
-                                        'Możliwość doboru pola zabiegowego podczas skanowania powierzchni zabiegowej',
-                                        'Precyzja wykonanego zabiegu'
+                                        'resurfacing skóry,',
+                                        'lifting i ujędrnianie skóry,',
+                                        'usuwanie blizn (potrądzikowych, pourazowych, oparzeniowych),',
+                                        'likwidacja rozstępów,',
+                                        'redukcja trądziku,',
+                                        'usuwanie przebarwień,',
+                                        'usuwanie zmarszczek,',
+                                        'poprawa jakości skóry',
+                                        'skuteczne efekty w niwelowaniu fotostarzenia się skóry,',
+                                        'zabiegi chirurgiczne z wykorzystaniem punktowej głowicy lasera CO\u2082,',
+                                        'ginekologia estetyczna.',
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph'>
+                                    Efekty po zabiegu laserem frakcyjnym CO2 są widoczne stopniowo po około 4 tygodniach od zabiegu. Zmiany można zaobserwować już po jednym naświetlaniu, jednak, aby osiągnąć lepsze rezultaty należy wykonać 2-4 zabiegi.
+                                </Typography>
+                                <Typography className='paragraph heading'>
+                                    <strong>Jak przygotować się do zabiegu nieablacyjnego odmładzania skóry?</strong>
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'Po terapii doustnymi retinoidami lub izotretynoiną należy odczekać okres 6 miesięcy od momentu odstawienia.',
+                                        'Należy odstawić leki zioła fototoksyczne i fotouczulające (dziurawiec, pokrzywa, nagietek, herbaty odchudzające typu "figura", zioła chińskie) na 3 tygodnie przed zabiegiem.',
+                                        'Po kuracji antybiotykami należy odczekać ok. 2 tygodnie od momentu odstawienia leków.',
+                                        'Tydzień przed zabiegiem nie wykonywać depilacji w okolicy zabiegowej.',
+                                        'Obszar zabiegowy nie może być podrażniony ani przesuszony.',
+                                        'Na 4 tygodnie przed zabiegiem nie należy opalać skóry.',
+                                        'Na 2 tygodnie przed zabiegiem nie należy stosować kremów z retinoidami, innych preparatów złuszczających (peelingi, kwasy owocowe, witamina A) oraz kosmetyków brązujących, samoopalaczy.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
