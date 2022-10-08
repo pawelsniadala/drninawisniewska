@@ -201,7 +201,7 @@ export const clinicalDietitian = {
 export const hematology = {
     image: servicesHematology,
     title: 'Hematologia',
-    description: 'W pierwszej postawionej hipotezie badań założono, że związki gmin realizują liczne zadania środowiskowe finansowane ze środków krajowych i zagranicznych, które wpływają na lokalny rozwój gospodarczy i społeczny.',
+    description: 'Dziedzina kliniczna medycyny zajmująca się diagnostyką i leczeniem nowotworowych i nienowotworowych chorób krwi i układu krwiotwórczego, a także zaburzeń krwi występujących w pierwotnych schorzeniach innych narządów; również dziedzina naukowa zajmująca się badaniami krwi i układu krwiotwórczego w stanach zdrowia i choroby.',
     link: `<a href='https://pl.freepik.com/zdjecia/badania-krwi'>Badania krwi zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
     path: '/services/hematology',
     prices: '/prices/hematology',

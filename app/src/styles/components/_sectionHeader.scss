@@ -43,6 +43,10 @@
         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
         font-size: 18px;
         font-weight: 300;
+
+        @media (max-width: 539.98px) {
+            display: block !important;
+        }
     }
 
     .paragraph {
@@ -90,13 +94,9 @@
     }
 
     &.clinic {
-        // .subheader,
+        .subheader,
         .link-contained {
             display: none;
         }
-
-        // .subheader {
-        //     font-weight: 400;
-        // }
     }
 }

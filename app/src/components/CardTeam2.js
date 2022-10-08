@@ -35,13 +35,15 @@ const CardTeam2 = ({
                 ) : (
                     <Box className='card-background-color' />
                 )}
-                 <Box
-                    className='card-image'
-                    component={LazyLoadImage}
-                    src={cardImage}
-                    alt={cardTitle}
-                    effect='blur'
-                />
+                <Box className='card-image-background'>
+                    <Box
+                        className='card-image'
+                        component={LazyLoadImage}
+                        src={cardImage}
+                        alt={cardTitle}
+                        effect='blur'
+                    />
+                </Box>
                 <CardContent className='card-content'>
                     <Typography
                         className='card-name'
