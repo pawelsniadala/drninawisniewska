@@ -17,6 +17,10 @@ import almaAccentPrimeImageSmall from '../assets/technology/almaAccentPrime/alma
 import almaAccentPrimeImageMedium from '../assets/technology/almaAccentPrime/almaAccentPrimeImageMedium.png';
 import almaAccentPrimeImageLarge from '../assets/technology/almaAccentPrime/almaAccentPrimeImageLarge.png';
 
+import almaAccentUltraVShapeImageSmall from '../assets/technology/almaAccentUltraVShape/almaAccentUltraVShapeImageSmall.jpg';
+import almaAccentUltraVShapeImageMedium from '../assets/technology/almaAccentUltraVShape/almaAccentUltraVShapeImageMedium.png';
+// import almaAccentPrimeImageLarge from '../assets/technology/almaAccentPrime/almaAccentPrimeImageLarge.png';
+
 import sonoQueenImageSmall from '../assets/technology/sonoQueen/sonoQueenImageSmall.png';
 import sonoQueenImageMedium from '../assets/technology/sonoQueen/sonoQueenImageMedium.png';
 import sonoQueenImageLarge from '../assets/technology/sonoQueen/sonoQueenImageLarge.png';
@@ -68,6 +72,18 @@ export const fonsSvrFractionLaserCo2 = {
     services: ['aestheticMedicine']
 };
 
+export const almaAccentUltraVShape = {
+    designation: 'almaAccentUltraVShape',
+    title: 'Alma™ Accent Ultra V Shape',
+    description: 'Accent Ultra V to zabieg, który w bezpieczny, bezbolesny sposób redukuje cellulit i tkankę tłuszczową, niweluje wiotkość skóry oraz modeluje twarz. Accent Ultra V łączy ze sobą dwie technologie, fale ultradźwiękową oraz radiofrekwencję, intensyfikując w ten sposób efekty terapeuryczne.',
+    imageSmall: almaAccentUltraVShapeImageSmall,
+    imageMedium: almaAccentUltraVShapeImageMedium,
+    imageLarge: almaAccentUltraVShapeImageMedium,
+    path: '/technology/alma-accent-ultra-v-shape',
+    badge: false,
+    services: ['cosmetology']
+};
+
 export const almaAccentPrime = {
     designation: 'almaAccentPrime',
     title: 'Alma™ Accent Prime',
@@ -79,6 +95,7 @@ export const almaAccentPrime = {
     badge: false,
     services: ['cosmetology']
 };
+
 
 export const sonoQueen = {
     designation: 'sonoQueen',
@@ -97,6 +114,7 @@ export const technology = [
     { ...almaHarmonyXlPro },
     { ...icooneLaserMed2 },
     { ...fonsSvrFractionLaserCo2 },
+    { ...almaAccentUltraVShape },
     { ...almaAccentPrime },
     { ...sonoQueen }
 ];

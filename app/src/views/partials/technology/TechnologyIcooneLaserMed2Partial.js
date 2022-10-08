@@ -13,8 +13,7 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology } from '../../../data/technology';
-import { icooneLaserMed2 } from '../../../data/technology';
+import { technology, icooneLaserMed2 } from '../../../data/technology';
 
 const TechnologyIcooneLaserMed2Partial = () => {
     useEffect(() => {
@@ -64,54 +63,43 @@ const TechnologyIcooneLaserMed2Partial = () => {
                         <Box className='technology-description'>
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
-                                    Projekt Icoone® jest inspirowany intuicją profesora Jean-Claude'a Guimberteau, specjalisty w dziedzinie chirurgii rekonstrukcyjnej, który poświęcił wiele lat na obserwację skóry w zakresie struktury tkanki łącznej: Guimberteau wykazał, że skóra musi być pojmowana jako żywa, ciągła materia, a tkanka podskórna składa się z sieci mikrowakuoli, które tworzą funkcjonalną jednostkę struktury tkanki. Ta nowa wizja całkowicie zastępuje tradycyjną koncepcję tkanki warstwowej, a tym samym narzuca potrzebę nowego sposobu leczenia skóry.
+                                    <strong>Projekt Icoone® </strong> jest inspirowany intuicją <strong>profesora Jean-Claude'a Guimberteau</strong>, specjalisty w dziedzinie chirurgii rekonstrukcyjnej, który poświęcił wiele lat na obserwację skóry w zakresie struktury tkanki łącznej. Guimberteau wykazał, że <strong>skóra musi być pojmowana jako żywa</strong>, <strong>ciągła materia</strong>, a tkanka podskórna składa się z sieci <strong>mikrowakuoli</strong>, które tworzą funkcjonalną jednostkę struktury tkanki. Ta nowa wizja całkowicie zastępuje tradycyjną koncepcję tkanki warstwowej, a tym samym narzuca potrzebę nowego sposobu leczenia skóry.
                                 </Typography>
-                            </Box>
-                            <Box marginBottom={3}>
-                                <LazyLoadImage
-                                    height={'100%'}
-                                    width={'100%'}
-                                    src={icooneLaserMed2.imageLarge}
-                                    alt='Remote working'
-                                    effect='blur'
-                                    style={{
-                                        objectFit: 'cover',
-                                        borderRadius: 8,
-                                        width: '100%',
-                                        height: '100%',
-                                        maxHeight: '400px',
-                                        objectPosition: '50% 80%',
-                                        backgroundColor: '#e6e6e6'
-                                    }}
-                                />
-                            </Box>
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header'>
-                                    Zaskakujące rezultaty
+                                <Box marginBottom={3} marginTop={3}>
+                                    <LazyLoadImage
+                                        height={'100%'}
+                                        width={'100%'}
+                                        src={icooneLaserMed2.imageLarge}
+                                        alt='Remote working'
+                                        effect='blur'
+                                        style={{
+                                            objectFit: 'cover',
+                                            borderRadius: 8,
+                                            width: '100%',
+                                            height: '100%',
+                                            maxHeight: '400px',
+                                            objectPosition: '50% 80%',
+                                            backgroundColor: '#e6e6e6'
+                                        }}
+                                    />
+                                </Box>
+                                <Typography className='paragraph'>
+                                    <strong>Najnowsza, opatentowana technologia Roboderm® zapewnia zaskakujące rezultaty</strong>. Dzięki ekskluzywnemu, rozszerzonemu na skalę międzynarodową patentowi Roboderm®, ICOONE® oferuje w pełni konfigurowalny zabieg odmładzania skóry i modelowania sylwetki. Roboderm® jest unikalną technologią na świecie zdolną do generowania Multi <strong>Mikropęcherzykowej Stymulacji (M.M.S.A.)</strong> za pomocą zestawu mikrootworów obecnych na powierzchni mikrostymulatorów znajdujących się w głowicach zabiegowych ICOONE®. Mikrostymulatory obracają się tam i z powrotem, precyzyjnie i skutecznie stymulując skórę na całej powierzchni, docierając do najmniejszych jej części i generując <strong>do 21 600 mikrostymulacji na minutę</strong>.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Dzięki ekskluzywnemu, rozszerzonemu na skalę międzynarodową patentowi Roboderm®, Icoone® oferuje w pełni konfigurowalny zabieg odmładzania skóry i modelowania sylwetki. Roboderm® jest unikalną technologią na świecie zdolną do generowania Multi Mikropęcherzykowej Stymulacji (M.M.S.A.) za pomocą zestawu mikrootworów obecnych na powierzchni mikrostymulatorów znajdujących się w głowicach zabiegowych Icoone®. Mikrostymulatory obracają się tam i z powrotem, precyzyjnie i skutecznie stymulując skórę na całej powierzchni, docierając do najmniejszych jej części i generując do 21 600 mikrostymulacji na minutę.
+                                    Działanie stymulujące odbywa się na <strong>3 powierzchniach jednocześnie</strong>: 2 niezależne, zmotoryzowane mikrostymulatory, które poruszają się jednocześnie na tym samym obszarze, uzupełniając swoje działanie i generując gimnastykę tkankową z efektem ujędrniającym oraz 1 centralna komora umieszczona pomiędzy mikrostymulatorami, która oddziałuje dogłębniej na tkankę tłuszczową.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Działanie stymulujące odbywa się na 3 powierzchniach jednocześnie: 2 niezależne, zmotoryzowane mikrostymulatory, które poruszają się jednocześnie na tym samym obszarze, uzupełniając swoje działanie i generując gimnastykę tkankową z efektem ujędrniającym oraz 1 centralna komora umieszczona pomiędzy mikrostymulatorami, która oddziałuje dogłębniej na tkankę tłuszczową. Dlatego też technologia Roboderm® umożliwia potrojenie powierzchni stymulacji, uzyskując głębszą i bardziej efektywną stymulację skóry.
+                                    Technologia Roboderm® umożliwia <strong>potrojenie powierzchni stymulacji</strong>, uzyskując głębszą i bardziej efektywną stymulację skóry. Dzięki takiemu mechanizmowi działania ciało jest pobudzane na poziomie naskórka, skóry właściwej, tkanki podskórnej oraz tkanki mięśniowej.
                                 </Typography>
-                                <Typography className='paragraph'>
-                                    Potrójna powierzchnia ssąca pozwala również na lepsze przemieszczanie głowic, dzięki czemu operator nie musi wywierać nacisku. W ten sposób obie ręce mogą być używane jednocześnie, co zapewnia klientowi bardziej naturalną i delikatną stymulację, bez zmęczenia operatora.
+                                <Typography className='paragraph heading'>
+                                    <strong>Wpływ na tkanki</strong>:
                                 </Typography>
-                                <Typography className='paragraph'>
-                                    Icoone® jest w rzeczywistości technologią, która umożliwia dwuręczny symetryczny zabieg, pracując jednocześnie po obu stronach ciała. Rezultatem jest niezwykle dokładny, wielowymiarowy masaż leczonej powierzchni przy zachowaniu ogromnego szacunku dla skóry. Icoone® to nowa metoda leczenia skóry i przylegających do niej tkanek, która pozwala na precyzyjną pracę na tkance łącznej, likwiduje cellulit, zlokalizowany tłuszcz, luźną skórę, obrzęki limfatyczne, blizny, zaparcia, sztywność mięśni, zapalenia ścięgien oraz wszelkie objawy starzenia się skóry.
-                                </Typography>
-                            </Box>
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header'>
-                                    Wpływ na tkanki
-                                </Typography>
-                                <Grid container spacing={1} sx={{ marginTop: 1 }}>
+                                <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'W naturalny sposób rozkłada komórki tłuszczowe do glicerolu i wolnych kwasów tłuszczowych.',
-                                        'Redukuje cellulit poprzez zmniejszenie objętości adipocytów.',
-                                        'Przyśpiesza metabolizm komórkowy.',
-                                        'Przyśpiesza metabolizm.'
+                                        'w naturalny sposób rozkłada komórki tłuszczowe do glicerolu i wolnych kwasów tłuszczowych,',
+                                        'redukuje cellulit poprzez zmniejszenie objętości adipocytów,',
+                                        'przyśpiesza metabolizm komórkowy oraz metabolizm całego ustroju.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -120,17 +108,15 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                         />
                                     ))}
                                 </Grid>
-                            </Box>
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header'>
-                                    Zalety Icoone® Laser Med 2
+                                <Typography className='paragraph heading'>
+                                    <strong>Zalety</strong>:
                                 </Typography>
-                                <Grid container spacing={1} sx={{ marginTop: 1 }}>
+                                <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'Nie niszczy błony komórek tłuszczowych, a jedynie redukuje w sposób znaczny i kontrolowany ich zawartość i objętość.',
-                                        'Mocne działanie na głęboko zlokalizowany tłuszcz.',
-                                        'Nie uszkadza sąsiednich tkanek i naczyń krwionośnych.',
-                                        'Zabieg jest bezbolesny.'
+                                        'nie niszczy błony komórek tłuszczowych, a jedynie redukuje w sposób znaczny i kontrolowany ich zawartość i objętość,',
+                                        'mocne działanie na głęboko zlokalizowany tłuszcz,',
+                                        'nie uszkadza sąsiednich tkanek i naczyń krwionośnych,',
+                                        'zabieg jest bezbolesny.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -139,47 +125,21 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                         />
                                     ))}
                                 </Grid>
-                            </Box>
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header'>
-                                    Icoone® zapewnia 3-stopniową stymulację
+                                <Typography className='paragraph heading'>
+                                    <strong>Wskazania</strong>:
                                 </Typography>
-                                <Typography className='paragraph'>
-                                    Dzięki takiemu mechanizmowi działania pobudzamy skórę na poziomie naskórka, skóry właściwej i tkanki podskórnej oraz dużo efektywniej oddziałujemy na komórki tłuszczowe i tkankę mięśniową. Zapewnia to znakomite efekty zarówno w działaniu modelującym sylwetkę i ujędrniającym skórę, jak i w leczeniu problemów mięśniowych lub zastojów limfatycznych.
-                                </Typography>
-                                <Grid container spacing={1} sx={{ marginTop: 1 }}>
+                                <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'Podciśnienie na rolkach wywołuje efekt drenażowy.',
-                                        'Zassanie do komory głowicy stymuluję skórę i system włókien MCDS.',
-                                        'Działanie pulsacyjne ICOONE® pobudza układ neurowegetatywny.'
-                                    ].map((item, index) => (
-                                        <ListBulleted
-                                            key={index}
-                                            ListBulletedItem={item}
-                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
-                                        />
-                                    ))}
-                                </Grid>
-                            </Box>
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header'>
-                                    Idealne rozwiązanie dla osób:
-                                </Typography>
-                                <Grid container spacing={1} sx={{ marginTop: 1 }}>
-                                    {[
-                                        'Z problemami naczyniowymi i obrzękami',
-                                        'Pragnących nadać swojej twarzy młody i zdrowy wygląd bez ingerencji chirurga',
-                                        'Bezskutecznie walczących z głęboko zlokalizowanym tłuszczem, trudnym do likwidacji za pomocą diety i ćwiczeń fizycznych',
-                                        'Przed i po zabiegach chirurgicznych',
-                                        'Mających bóle mięśni, bóle pleców i karku spowodowane nieprawidłową postawą ciała',
-                                        'Cierpiących na zaparcia',
-                                        'Kobiet po porodach',
-                                        'Uprawiających wyczynowo lub amatorsko sport',
-                                        'Które żyją intensywnie i oczekują masażu, który zregeneruje ich ciało i umysł',
-                                        'Mających problem z luźną skórą',
-                                        'Walczących z nadwagą i cellulitem',
-                                        'Po liposukcji',
-                                        'Mających blizny pooperacyjne i pooparzeniowe'
+                                        'problemy naczyniowe i obrzęki,',
+                                        'nadanie promiennego, zdrowego wyglądu skóry twarzy,',
+                                        'walka z głęboko zlokalizowanym tłuszczem,',
+                                        'kobiety po porodach,',
+                                        'problemy z zaparciami,',
+                                        'nadmiernie wiotka skóra,',
+                                        'walka z cellulitem lub nadwagą,',
+                                        'blizny pooperacyjne i pooparzeniowe,',
+                                        'po liposukcji oraz zabiegach chirurgicznych,',
+                                        'bóle mięśni, pleców i karku.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

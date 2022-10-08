@@ -13,8 +13,7 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology } from '../../../data/technology';
-import { almaAccentPrime } from '../../../data/technology';
+import { technology, almaAccentPrime } from '../../../data/technology';
 
 const TechnologyAlmaAccentPrimePartial = () => {
     useEffect(() => {

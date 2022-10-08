@@ -13,9 +13,9 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology, sonoQueen } from '../../../data/technology';
+import { technology, almaAccentUltraVShape } from '../../../data/technology';
 
-const TechnologySonoQueenPartial = () => {
+const TechnologyAlmaAccentUltraVShapePartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -47,13 +47,13 @@ const TechnologySonoQueenPartial = () => {
                                     Technologia
                                 </Link>
                                 <Typography color='text.primary'>
-                                    {sonoQueen.title}
+                                    Alma Accent Ultra V Shape
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {sonoQueen.title}
+                                {almaAccentUltraVShape.title}
                             </Typography>
                         </Box>
                     </Container>
@@ -63,34 +63,29 @@ const TechnologySonoQueenPartial = () => {
                         <Box className='technology-description'>
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
-                                    <strong>SonoQueen</strong> to nowoczesna technologia wykorzystująca moc HIFU. Najnowsza generacja <strong>technologii HIFU</strong> (High Intensity Focused Ultrasound) to <strong>sfokusowane ultradźwięki o wysokiej częstotliwości</strong> do <strong>bezinwazyjnego</strong>, <strong>niechirurgicznego liftingu</strong> twarzy i ciała.
+                                    <strong>Accent Ultra V</strong> to zabieg, który w bezpieczny, bezbolesny sposób redukuje cellulit i tkankę tłuszczową, niweluje wiotkość skóry oraz modeluje twarz. Accent Ultra V łączy ze sobą dwie technologie, <strong>fale ultradźwiękową</strong> oraz <strong>radiofrekwencję</strong>, intensyfikując w ten sposób efekty terapeuryczne.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Precyzyjna i skoncentrowana wiązka fali ultradźwiękowej pozwala dotrzeć do 3 warstw - skóry właściwej, tkanki tłuszczowej i powięzi mięśniowej (SMAS), osiągając temperaturę ok. 60°C-70°C wywołuje tym samym punkty termicznej koagulacji. Rozpoczyna to <strong>proces kolagenogenezy</strong>, <strong>regeneracji zwiotczałych włókien kolagenowych</strong> i <strong>obkurczenia tkanek</strong>, dając efekt wielowymiarowego ujędrnienia. Dzięki temu uzyskujemy spektakularny i trwały efekt napięcia aktywowany w głębokiej warstwie skóry.
+                                    Ultradźwięki selektywnie niszczą błony komórkowe adipocytów, czyli komórek tłuszczowych. Następnie fala radiowa przyśpiesza metabolizm usprawniając działanie układu limfatycznego oraz usuwanie uwolnionego tłuszczu z organizmu. Radiofrekwencja pobudza również fibroblasty co skutkuje ujędrnieniem skóry w okolicy zabiegowej.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    SonoQueen wyposażone jest w komplet specjalnych kartridży umożliwiających <strong>precyzyjne działanie na różnych głębokościach tkanki</strong> - od 2,0 mm do 4,5 mm na twarzy i 6 mm na ciele.
+                                    Zabieg ten jest <strong>alternatywą dla procedur chirurgicznych</strong>. Można przeprowadzać go w każdej okolicy ciała lub twarzy, bez pominięcia szyi, brzucha, pośladków czy ud. Już po jednorazowej procedurze kondycja skóra ulega widocznej poprawie. By osiągnąć trwałe rezultaty zalecana jest seria 5 zabiegów w odstępach dwutygodniowych.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    <strong>Wskazania:</strong>
+                                    <strong>Wskazania</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'lifting twarzy, szyi oraz dekoltu,',
-                                        'wygładzenie płytkich i głębokich zmarszczek,',
-                                        'wyszczuplanie ciała,',
-                                        'rozświetlenie skóry,',
-                                        'opadające powieki,',
-                                        'ujędrnienie wiotkiej skóry w różnych partiach ciała,',
-                                        'lifting twarzy i ujędrnianie ciała,',
-                                        'napięcie delikatnej skóry w okolicach oczu,',
-                                        'ujędrnienie skóry w okolicy ramion,',
-                                        'lifting wiotkiej skóry na brzuchu,',
-                                        'uniesienie i ujędrnienie pośladków,',
-                                        'wygładzenie skóry w okolicach ud i kolan,',
-                                        'redukcja tzw. "drugiego podbródka",',
-                                        'wygładzenie zmarszczek,',
-                                        'spowolnienie procesu starzenia skóry.'
+                                        'niszczenie komórek tłuszczowych,',
+                                        'cellulit,',
+                                        'redukcja blizn i rozstępów,',
+                                        'nierówności po liposukcji,',
+                                        'redukcja zmarszczek,',
+                                        'termiczny lifting skóry,',
+                                        'ujędrnienie i modelowanie ciała,',
+                                        'poprawa owalu twarzy,',
+                                        'likwidacja "chomików",',
+                                        'likwidacja drugiego podbródka.',
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -100,13 +95,19 @@ const TechnologySonoQueenPartial = () => {
                                     ))}
                                 </Grid>
                                 <Typography className='paragraph'>
-                                    Zabieg Sonoqueen jest <strong>bezbolesny</strong> dla pacjenta i <strong>nie wymaga okresu rekonwalescencji</strong>. Seria zabiegowa wynosi od 1 do 3 zabiegów w odstępach co 3-4 miesiące, ale w większości przypadków wystarcza jeden. Pierwsze efekty widoczne są bezpośrednio po zabiegu, a pełnym efektem niechirurgicznego liftingu pacjent może cieszyć się już po 3 miesiącach.
+                                    Urządzenie Accent Ultra V posiada wymienne głowice zapewniające dodatkowe opcje zabiegowe. Głowica <strong>iPixel RF</strong> to rewolucyjna technologia łącząca <strong>mikroplazmę frakcyjną</strong> z <strong>radiofrekwencją</strong>, służąca do niwelowania rozstępów, blizn, zmarszczek, blizn potrądzikowych oraz wiotkiej skóry.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Działanie iPixel RF opiera się na <strong>jednoczesnej ablacji</strong> i <strong>koagulacja tkanki</strong>, dzieki czemu dogłębnie przebudowuje skórę. Wiązka lasera tworzy siateczkę mikrouszkodzeń na poziomie skóry właściwej i naskórka, stymulując silną odbudowę włókien kolagenu i elastyny, które są odpowiedzialne za zdrowy i jędrny wygląd skóry. Proces naprawy i regeneracji skóry następuje w ciągu 48-96 godzin od zabiegu.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Głowica frakcyjna wyposażona w setki mikroelektrod umożliwia przeprowadzenie terapii zarówno na małych obszarach, jaką jest twarz, jak i na dużych, tj. brzuch, pośladki, uda.
                                 </Typography>
                             </Box>
                         </Box>
                         <Box className='proposed-technology'>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'sonoQueen').map((item, index) => (
+                                {technology.filter(item => item.designation !== 'almaAccentUltraVShape').map((item, index) => (
                                     <CardProposed
                                         key={index}
                                         cardTitle={item.title}
@@ -124,4 +125,4 @@ const TechnologySonoQueenPartial = () => {
     );
 }
 
-export default TechnologySonoQueenPartial;
+export default TechnologyAlmaAccentUltraVShapePartial;

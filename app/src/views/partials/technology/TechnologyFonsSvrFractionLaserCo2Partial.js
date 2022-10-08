@@ -13,8 +13,7 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology } from '../../../data/technology';
-import { fonsSvrFractionLaserCo2 } from '../../../data/technology';
+import { technology, fonsSvrFractionLaserCo2 } from '../../../data/technology';
 
 const TechnologyFonsSvrFractionLaserCo2Partial = () => {
     useEffect(() => {

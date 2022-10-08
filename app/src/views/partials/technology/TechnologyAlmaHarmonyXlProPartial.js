@@ -13,8 +13,7 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology } from '../../../data/technology';
-import { almaHarmonyXlPro } from '../../../data/technology';
+import { technology, almaHarmonyXlPro } from '../../../data/technology';
 
 const TechnologyAlmaHarmonyXlProPartial = () => {
     useEffect(() => {
