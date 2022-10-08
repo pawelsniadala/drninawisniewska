@@ -7,8 +7,8 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 
 import Container from '../components/Container';
 import SectionHeader from '../components/SectionHeader';
-import princesJpg1 from '../assets/princes/prices1.jpg';
-import princesJpg2 from '../assets/princes/prices2.jpg';
+import pricesJpg1 from '../assets/prices/prices1.jpg';
+import pricesJpg2 from '../assets/prices/prices2.jpg';
 
 const PriceSection = () => {
     const theme = useTheme();
@@ -65,7 +65,7 @@ const PriceSection = () => {
                         backgroundSize: 'cover',
                         backgroundPosition: 'top center',
                         // backgroundImage: 'url(https://assets.maccarianagency.com/backgrounds/img52.jpg)'
-                        backgroundImage: `url(${isMd ? princesJpg1 : princesJpg2})`,
+                        backgroundImage: `url(${isMd ? pricesJpg1 : pricesJpg2})`,
 
                         // display: 'flex',
                         // alignItems: 'center',

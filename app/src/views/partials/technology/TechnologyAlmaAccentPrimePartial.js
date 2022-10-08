@@ -79,7 +79,7 @@ const TechnologyAlmaAccentPrimePartial = () => {
                                             width: '100%',
                                             height: '100%',
                                             maxHeight: '400px',
-                                            objectPosition: '50% 11%',
+                                            objectPosition: '50% 25%',
                                             backgroundColor: '#e6e6e6'
                                         }}
                                     />
