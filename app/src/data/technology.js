@@ -13,9 +13,6 @@ import fonsSvrFractionLaserCo2ImageSmall from '../assets/technology/fonsSvrFract
 import fonsSvrFractionLaserCo2ImageMedium from '../assets/technology/fonsSvrFractionLaserCo2/fonsSvrFractionLaserCo2ImageMedium.png';
 import fonsSvrFractionLaserCo2ImageLarge from '../assets/technology/fonsSvrFractionLaserCo2/fonsSvrFractionLaserCo2ImageLarge.png';
 
-// import accentUltraImageSmall from '../assets/technology/accentUltra/accentUltraImageSmall.jpg';
-// import accentUltraImageMedium from '../assets/technology/accentUltra/accentUltraImageMedium.png';
-
 import almaAccentPrimeImageSmall from '../assets/technology/almaAccentPrime/almaAccentPrimeImageSmall.png';
 import almaAccentPrimeImageMedium from '../assets/technology/almaAccentPrime/almaAccentPrimeImageMedium.png';
 import almaAccentPrimeImageLarge from '../assets/technology/almaAccentPrime/almaAccentPrimeImageLarge.png';
@@ -58,15 +55,6 @@ export const almaHarmonyXlPro = {
     badge: 'Nowość',
     services: ['aestheticMedicine'],
 };
-
-// export const accentUltraV = {
-//     designation: 'accentUltra',
-//     title: 'Accent Ultra V',
-//     imageSmall: accentUltraImageSmall,
-//     imageMedium: accentUltraImageMedium,
-//     path: '/technology/icoone',
-//     badge: false
-// };
 
 export const fonsSvrFractionLaserCo2 = {
     designation: 'fonsSvrLaserFrakcyjnyCo2',
