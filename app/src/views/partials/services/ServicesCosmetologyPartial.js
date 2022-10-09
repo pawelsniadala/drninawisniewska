@@ -121,15 +121,15 @@ const ServicesCosmetologyPartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'oczyszczenie i dotlenienie skóry',
-                                        'odmłodzenie skóry',
-                                        'redukcję zmarszczek',
-                                        'poprawę gęstości i elastyczności skóry',
-                                        'rozjaśnienie lub całkowitą redukcję plam i przebarwień różnego pochodzenia',
-                                        'wyrównanie kolorytu cery',
-                                        'zwężenie porów skóry',
-                                        'unormowanie pracy gruczołów łojowych',
-                                        'zmniejszenie ilości wykwitów trądzikowych'
+                                        'oczyszczenie i dotlenienie skóry,',
+                                        'odmłodzenie skóry,',
+                                        'redukcję zmarszczek,',
+                                        'poprawę gęstości i elastyczności skóry,',
+                                        'rozjaśnienie lub całkowitą redukcję plam i przebarwień różnego pochodzenia,',
+                                        'wyrównanie kolorytu cery,',
+                                        'zwężenie porów skóry,',
+                                        'unormowanie pracy gruczołów łojowych,',
+                                        'zmniejszenie ilości wykwitów trądzikowych.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -149,16 +149,16 @@ const ServicesCosmetologyPartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'należy zachować sterylność pozabiegową (świeży ręcznik, pościel)',
-                                        'miejsce zabiegowe należy smarować kremem regeneracyjnym (Solcoseryl, Zinalfate, Cicalfate) do całkowitego zagojenia',
-                                        'nie należy  zdrapywania lub dodatkowego złuszczania odchodzącego naskórka',
-                                        'nie należy opalać miejsca zabiegowego, należy chronić skórę przed promieniami słonecznymi (SPF50)',
-                                        'należy stosować delikatny preparat do mycia (Cetaphil, emulsja PhDoctor)',
-                                        'na tydzień przed zabiegiem nie stosować kremów, maści z retinolem (witamina A)',
-                                        'między zabiegami nie stosować innych środków ścierających, peelingów w okolicy zabiegowej',
-                                        'nie należy korzystać z sauny, jacuzzi, basenów przez najbliższe 2-3 dni',
-                                        'nie należy brać długich rozgrzewających kąpieli bezpośrednio po zabiegu, zalecany szybki letni prysznic',
-                                        'należy ograniczyć zabawę ze zwierzętami domowymi by nie nadkazić skóry'
+                                        'Należy zachować sterylność pozabiegową (świeży ręcznik, pościel).',
+                                        'Miejsce zabiegowe należy smarować kremem regeneracyjnym (Solcoseryl, Zinalfate, Cicalfate) do całkowitego zagojenia.',
+                                        'Nie należy  zdrapywania lub dodatkowego złuszczania odchodzącego naskórka.',
+                                        'Nie należy opalać miejsca zabiegowego, należy chronić skórę przed promieniami słonecznymi (SPF50).',
+                                        'Należy stosować delikatny preparat do mycia (Cetaphil, emulsja PhDoctor).',
+                                        'Na tydzień przed zabiegiem nie stosować kremów, maści z retinolem (witamina A).',
+                                        'Między zabiegami nie stosować innych środków ścierających, peelingów w okolicy zabiegowej.',
+                                        'Nie należy korzystać z sauny, jacuzzi, basenów przez najbliższe 2-3 dni.',
+                                        'Nie należy brać długich rozgrzewających kąpieli bezpośrednio po zabiegu, zalecany szybki letni prysznic.',
+                                        'Należy ograniczyć zabawę ze zwierzętami domowymi by nie nadkazić skóry.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import VisibilitySensor from 'react-visibility-sensor';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CountUp from 'react-countup';
+import VisibilitySensor from 'react-visibility-sensor';
 
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -150,7 +150,7 @@ const ClinicSection = () => {
                                         // fontFamily: 'Google Sans Text, Arial, Helvetica, sans-serif',
                                         fontSize: '35px',
                                         letterSpacing: '.045em',
-                                        color: 'rgba(0, 0, 0, 0.55)',
+                                        color: 'rgba(0, 0, 0, 0.65)',
                                         lineHeight: '1.208em',
                                         marginBottom: '0.25em'
                                     }}
@@ -181,7 +181,7 @@ const ClinicSection = () => {
                                         fontSize: '18px',
                                         fontWeight: '300',
                                         // color: '#535353'
-                                        color: 'rgba(0, 0, 0, 0.65)'
+                                        color: '#535353'
                                     }}
                                 >
                                     {item.subtitle}

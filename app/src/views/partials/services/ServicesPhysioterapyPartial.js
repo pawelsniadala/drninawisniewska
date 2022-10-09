@@ -120,11 +120,11 @@ const ServicesPhysioterapyPartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'rozluźnienia mięśni',
-                                        'złagodzenia sztywności, napięcia i bólu mięśni',
-                                        'zwiększenia elastyczności i wytrzymałości więzadeł',
-                                        'poprawy ruchomości stawów',
-                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu'
+                                        'rozluźnienia mięśni,',
+                                        'złagodzenia sztywności, napięcia i bólu mięśni,',
+                                        'zwiększenia elastyczności i wytrzymałości więzadeł,',
+                                        'poprawy ruchomości stawów,',
+                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

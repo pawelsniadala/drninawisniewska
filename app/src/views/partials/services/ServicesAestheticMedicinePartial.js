@@ -118,12 +118,12 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'redukcji zmarszczek - zmarszczki poprzeczne czoła, zmarszczka między brwiami, zmarszczki wokół oczu',
-                                        'redukcji zmarszczek dolnej części twarzy - "bruzdy marionetki", na szyi czy brodzie',
-                                        'korekcji opadającego nosa',
-                                        'leczenia nadpotliwości pach i dłoni',
-                                        'leczenie bruksizmu - patologiczne tarcie zębów żuchwy o zęby szczęki, nasilające się nocą',
-                                        'korekty opadającego kącika ust oraz opadającej powieki',
+                                        'redukcji zmarszczek - zmarszczki poprzeczne czoła, zmarszczka między brwiami, zmarszczki wokół oczu,',
+                                        'redukcji zmarszczek dolnej części twarzy - "bruzdy marionetki", na szyi czy brodzie,',
+                                        'korekcji opadającego nosa,',
+                                        'leczenia nadpotliwości pach i dłoni,',
+                                        'leczenie bruksizmu - patologiczne tarcie zębów żuchwy o zęby szczęki, nasilające się nocą,',
+                                        'korekty opadającego kącika ust oraz opadającej powieki.',
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -143,11 +143,11 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'w ciągu pierwszych 4 godzin po zabiegu nie kłaść się ani nie pochylać głowy',
-                                        'nie masować miejsc wkłucia',
-                                        'nie spożywać alkoholu w pierwszej dobie po zabiegu',
-                                        'nie odbywać podróży samolotem w pierwszej dobie po zabiegu',
-                                        'nie wykonywać intensywnej aktywności fizycznej w pierwszej dobie po zabiegu',
+                                        'w ciągu pierwszych 4 godzin po zabiegu nie kłaść się ani nie pochylać głowy,',
+                                        'nie masować miejsc wkłucia,',
+                                        'nie spożywać alkoholu w pierwszej dobie po zabiegu,',
+                                        'nie odbywać podróży samolotem w pierwszej dobie po zabiegu,',
+                                        'nie wykonywać intensywnej aktywności fizycznej w pierwszej dobie po zabiegu.',
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -170,9 +170,9 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'szybkość działania - preparat zaczyna działać od razu, od momentu wstrzyknięcia, a efekty jej działania pojawiają się z czasem',
-                                        'ługość działania',
-                                        'brak środków konserwujących, laktozy, białka ludzkiego czy zwierzęcego co znacząco obniża potencjał alergizujący preparatu'
+                                        'szybkość działania - preparat zaczyna działać od razu, od momentu wstrzyknięcia, a efekty jej działania pojawiają się z czasem,',
+                                        'ługość działania,',
+                                        'brak środków konserwujących, laktozy, białka ludzkiego czy zwierzęcego co znacząco obniża potencjał alergizujący preparatu.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -198,23 +198,23 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'rewitalizacja skóry twarzy',
-                                        'skóra zmęczona, bez napięcia',
-                                        'niejednolity kolor',
-                                        'skóra wysuszona, wiotka, pozbawiona blask',
-                                        'oznaki starzenia się skóry',
-                                        'fałdy',
-                                        'zmarszczki',
-                                        'zapadnięta skóra',
-                                        'zmniejszona gęstość skóry',
-                                        'przebyte zabiegi medycyny estetycznej',
-                                        'regeneracja skóry',
-                                        'przyspieszenie gojenia',
-                                        'łysienie androgenowe i inne',
-                                        'rozstępy',
-                                        'blizny zanikowe',
-                                        'blizny po cięciu cesarskim',
-                                        'blizny potrądzikowe'
+                                        'rewitalizacja skóry twarzy,',
+                                        'skóra zmęczona, bez napięcia,',
+                                        'niejednolity kolor,',
+                                        'skóra wysuszona, wiotka, pozbawiona blask,',
+                                        'oznaki starzenia się skóry,',
+                                        'fałdy,',
+                                        'zmarszczki,',
+                                        'zapadnięta skóra,',
+                                        'zmniejszona gęstość skóry,',
+                                        'przebyte zabiegi medycyny estetycznej,',
+                                        'regeneracja skóry,',
+                                        'przyspieszenie gojenia,',
+                                        'łysienie androgenowe i inne,',
+                                        'rozstępy,',
+                                        'blizny zanikowe,',
+                                        'blizny po cięciu cesarskim,',
+                                        'blizny potrądzikowe.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -243,19 +243,19 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'spadek nawilżenia skóry',
-                                        'profilaktyka przeciwstarzeniowa skóry',
-                                        'objawy starzenia się skóry',
-                                        'fotostarzenie',
-                                        'drobne linie oraz zmarszczki',
-                                        'utrata jędrności, elastyczności, blasku skóry',
-                                        'cienie i zmarszczki wokół oczu',
-                                        'przebarwienia',
-                                        'łojotok ',
-                                        'rozszerzone pory',
-                                        'osłabione włosy',
-                                        'wypadanie włosów i łysienie',
-                                        'cellulit'
+                                        'spadek nawilżenia skóry,',
+                                        'profilaktyka przeciwstarzeniowa skóry,',
+                                        'objawy starzenia się skóry,',
+                                        'fotostarzenie,',
+                                        'drobne linie oraz zmarszczki,',
+                                        'utrata jędrności, elastyczności, blasku skóry,',
+                                        'cienie i zmarszczki wokół oczu,',
+                                        'przebarwienia,',
+                                        'łojotok,',
+                                        'rozszerzone pory,',
+                                        'osłabione włosy,',
+                                        'wypadanie włosów i łysienie,',
+                                        'cellulit.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -282,26 +282,22 @@ const ServicesAestheticMedicinePartial = () => {
                                 <Typography className='paragraph heading'>
                                     <strong>Właściwości biochemiczne</strong>:
                                 </Typography>
-                                <Grid container spacing={0.5} marginBottom={2}>
-                                    {[
-                                        'Efekt antyoksydacyjny - Polinukleotydy działają jak wymiatacz wolnych rodników. Dzięki swojej makrocząsteczkowej budowie polinukleotydy wiążą wolne rodniki, co stanowi o ich funkcji ochronnej. Makrocząsteczki są metabolitami enzymatycznej degradacji cząsteczek polinukleotydów.',
-                                        'Nawilżenie - Hydrofilowa i polianionowa struktura umożliwia PDRN wiązanie cząsteczek wody, co powoduje intensywne nawilżenie tkanek. Cząsteczki wody wypełniają przestrzenie śródskórne i sprawiają, że skóra staje się jędrniejsza i bardziej nawilżona.',
-                                        'Wzrost fibroblastów - Silne nawilżenie i działanie antyoksydacyjne przyczyniają się do stworzenia optymalnego środowiska fizjologicznego dla wzrostu fibroblastów, sprzyjającego przywróceniu elastyczności tkanek.'
-                                    ].map((item, index) => (
-                                        <ListBulleted
-                                            key={index}
-                                            ListBulletedItem={item}
-                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
-                                        />
-                                    ))}
-                                </Grid>
+                                <Typography className='paragraph'>
+                                    <strong>Efekt antyoksydacyjny</strong> - Polinukleotydy działają jak wymiatacz wolnych rodników. Dzięki swojej makrocząsteczkowej budowie polinukleotydy wiążą wolne rodniki, co stanowi o ich funkcji ochronnej. Makrocząsteczki są metabolitami enzymatycznej degradacji cząsteczek polinukleotydów.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    <strong>Nawilżenie</strong> - Hydrofilowa i polianionowa struktura umożliwia PDRN wiązanie cząsteczek wody, co powoduje intensywne nawilżenie tkanek. Cząsteczki wody wypełniają przestrzenie śródskórne i sprawiają, że skóra staje się jędrniejsza i bardziej nawilżona.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    <strong>Wzrost fibroblastów</strong> - Silne nawilżenie i działanie antyoksydacyjne przyczyniają się do stworzenia optymalnego środowiska fizjologicznego dla wzrostu fibroblastów, sprzyjającego przywróceniu elastyczności tkanek.
+                                </Typography>
                                 <Typography className='paragraph'>
                                     Preparat Juvenus jest dostępny w dwóch stężeniach, dzięki czemu jest idealnie dopasowany do różnych problemów i indywidualnych potrzeb pacjentów.
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'juvenus medium poprawia elastyczność skóry i chroni ją przed starzeniem.',
-                                        'juvenus strong, dodatkowo, posiada znakomite właściwości liftingujące.'
+                                        'Juvenus medium poprawia elastyczność skóry i chroni ją przed starzeniem.',
+                                        'Juvenus strong, dodatkowo, posiada znakomite właściwości liftingujące.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -333,9 +329,9 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'poprawa kolorytu',
-                                        'przywrócenie blasku skórze',
-                                        'regeneracja delikatnych obszarów'
+                                        'poprawa kolorytu,',
+                                        'przywrócenie blasku skórze,',
+                                        'regeneracja delikatnych obszarów.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -361,15 +357,15 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'ujędrniona, elastyczna skóra',
-                                        'zniwelowane oznaki starzenia',
-                                        'redukcja zmarszczek',
-                                        'przywrócenie blasku skórze',
-                                        'lifting skóry twarzy',
-                                        'odświeżone spojrzenie',
-                                        'głębokie nawilżenie skóry',
-                                        'naturalny efekt odmłodzenia',
-                                        'niwelowanie blizn i rozstępów'
+                                        'ujędrniona, elastyczna skóra,',
+                                        'zniwelowane oznaki starzenia,',
+                                        'redukcja zmarszczek,',
+                                        'przywrócenie blasku skórze,',
+                                        'lifting skóry twarzy,',
+                                        'odświeżone spojrzenie,',
+                                        'głębokie nawilżenie skóry,',
+                                        'naturalny efekt odmłodzenia,',
+                                        'niwelowanie blizn i rozstępów.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -383,12 +379,12 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'niedotleniona lub odwodniona skóra',
-                                        'skóra narażona na stres oksydacyjny',
-                                        'zmęczona skóra, z oznakami starzenia i widocznymi zmarszczkami',
-                                        'ziemista, pozbawiona blasku cera',
-                                        'wyraźna utrata jędrności twarzy',
-                                        'rozstępy i blizny'
+                                        'niedotleniona lub odwodniona skóra,',
+                                        'skóra narażona na stres oksydacyjny,',
+                                        'zmęczona skóra, z oznakami starzenia i widocznymi zmarszczkami,',
+                                        'ziemista, pozbawiona blasku cera,',
+                                        'wyraźna utrata jędrności twarzy,',
+                                        'rozstępy i blizny.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -420,12 +416,12 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'zmarszczki na czole',
-                                        'kurze łapki',
-                                        'zmarszczki wokół ust',
-                                        'rewitalizacja policzków',
-                                        'ujędrnianie szyi i dekoltu',
-                                        'rewitalizacja dłoni',
+                                        'zmarszczki na czole,',
+                                        'kurze łapki,',
+                                        'zmarszczki wokół ust,',
+                                        'rewitalizacja policzków,',
+                                        'ujędrnianie szyi i dekoltu,',
+                                        'rewitalizacja dłoni.',
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -466,10 +462,10 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'poprawa owalu twarzy - likwidacja tzw. "chomików" podwójnego podbródka',
-                                        'usuwanie asymetrii łuków brwiowych, opadającej powieki',
-                                        'spłycenie zmarszczek',
-                                        'modelowanie ciała - opadające ramiona, pośladki, biust'
+                                        'poprawa owalu twarzy - likwidacja tzw. "chomików" podwójnego podbródka,',
+                                        'usuwanie asymetrii łuków brwiowych, opadającej powieki,',
+                                        'spłycenie zmarszczek,',
+                                        'modelowanie ciała - opadające ramiona, pośladki, biust.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -483,8 +479,8 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'nici rewitalizujące (rozpuszczalne)',
-                                        'nici liftingujące właściwe (nierozpuszczalne)'
+                                        'nici rewitalizujące (rozpuszczalne),',
+                                        'nici liftingujące właściwe (nierozpuszczalne).'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

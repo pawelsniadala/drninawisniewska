@@ -69,9 +69,6 @@ const ServicesDermatologyPartial = () => {
                                 <Typography className='paragraph'>
                                     Badanie znamion barwnikowych polega na poddaniu zmian skórnych analizie przez dermatologa. W naszej Klinice badanie można przeprowadzić za pomocą <strong>dermatoskopu</strong> lub <strong>wideodermatoskopu</strong>.
                                 </Typography>
-                                <Typography className='paragraph'>
-                                    Wideodermatoskopia to <strong>nowoczesna cyfrowa technologia</strong> służąca do analizy znamion barwnikowych skóry. Urządzenie służy także diagnozowaniu zmian chorobowych skóry, włosów i paznokci. Jest to zaawansowany system łączący <strong>optyczny układ wideokamery</strong> dermatoskopu z <strong>komputerową analizą obrazu</strong> za pomocą algebraicznych algorytmów.
-                                </Typography>
                                 <Box marginBottom={3} marginTop={3}>
                                     <LazyLoadImage
                                         height={'100%'}
@@ -88,6 +85,9 @@ const ServicesDermatologyPartial = () => {
                                         }}
                                     />
                                 </Box>
+                                <Typography className='paragraph'>
+                                    Wideodermatoskopia to <strong>nowoczesna cyfrowa technologia</strong> służąca do analizy znamion barwnikowych skóry. Urządzenie służy także diagnozowaniu zmian chorobowych skóry, włosów i paznokci. Jest to zaawansowany system łączący <strong>optyczny układ wideokamery</strong> dermatoskopu z <strong>komputerową analizą obrazu</strong> za pomocą algebraicznych algorytmów.
+                                </Typography>
                                 <Typography className='paragraph'>
                                     Badanie polega na oglądaniu znamion specjalistyczną kamerą w bardzo dużym powiększeniu pozwalając na dokładniejsze zbadanie zmian. W ciągu kilku minut mapuje całe ciało, a dane zostają zapisane w pamięci komputera.
                                 </Typography>
@@ -116,17 +116,20 @@ const ServicesDermatologyPartial = () => {
                                     Usunięcie zmian skórnych elektrochirurgiczne
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    <strong>Elektrochirurgia</strong>, inaczej <strong>elektrokoagulacja</strong>, to metoda chirurgiczna polegająca na wykorzystaniu przepływu <strong>prądu elektrycznego o różnej częstotliwości</strong> do usuwania, wycinania lub  wypalania, wszelkich niepożądanych zmian skórnych. Zabiegi można podzielić na elektrokoagulację i cięcie, które wykonuje się w znieczuleniu miejscowym. Zabieg elektrokoagulacji wykonuje się za pomocą elektrod o różnym kształcie, odpowiednio dobranych w zależności od rodzaju zmiany.
+                                    <strong>Elektrochirurgia</strong>, inaczej <strong>elektrokoagulacja</strong>, to metoda chirurgiczna polegająca na wykorzystaniu przepływu <strong>prądu elektrycznego o różnej częstotliwości</strong> do usuwania, wycinania lub  wypalania, wszelkich niepożądanych zmian skórnych.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Zabiegi można podzielić na elektrokoagulację i cięcie, które wykonuje się w znieczuleniu miejscowym. Zabieg elektrokoagulacji wykonuje się za pomocą elektrod o różnym kształcie, odpowiednio dobranych w zależności od rodzaju zmiany.
                                 </Typography>
                                 <Typography className='paragraph heading'>
                                     <strong>Głównymi zaletami innowacyjności elektrochirurgii w usuwaniu niezłośliwych zmian skórnych są</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'precyzyjność działania',
-                                        'ładny efekt wizualny po zabiegu',
-                                        'mała inwazyjność',
-                                        'szybkość gojenia się ran'
+                                        'precyzyjność działania,',
+                                        'ładny efekt wizualny po zabiegu,',
+                                        'mała inwazyjność,',
+                                        'szybkość gojenia się ran.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -140,14 +143,14 @@ const ServicesDermatologyPartial = () => {
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'brodawek wirusowych (tzw. kurzajek)',
-                                        'brodawek łojotokowych',
-                                        'brodawek płaskich',
-                                        'włókniaków miękkich',
-                                        'naczyniaków gwiaździstych',
-                                        'prosaków',
-                                        'mięczaka zakaźnego',
-                                        'gruczolaków łojowych'
+                                        'brodawek wirusowych (tzw. kurzajek),',
+                                        'brodawek łojotokowych,',
+                                        'brodawek płaskich,',
+                                        'włókniaków miękkich,',
+                                        'naczyniaków gwiaździstych,',
+                                        'prosaków,',
+                                        'mięczaka zakaźnego,',
+                                        'gruczolaków łojowych.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
