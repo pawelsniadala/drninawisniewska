@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CountUp from 'react-countup';
@@ -49,6 +49,28 @@ const ClinicSection = () => {
         setViewerIsOpen(false);
     };
 
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
+
     return (
         <Box
             component='section'
@@ -63,17 +85,18 @@ const ClinicSection = () => {
                         sectionTitle='Klinka'
                         sectionHeader='Kilka słów o naszej klinice'
                         sectionSubheader='Dowiedz się więcej o naszej klinice'
-                        sectionLinkText='Zobacz więcej'
+                        sectionLinkText='Zobacz pełny opis'
                         sectionLinkPath='/clinic'
                         sectionWrapperClass='clinic'
                         sectionDescription={
+                            width >= 991.98 ? (
                             <Box
                                 className='description'
                                 data-aos={'fade-in'}
                             >
                                 <Box>
                                     <Typography className='paragraph'>
-                                        W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, łojotokowego zapalenia skóry, eczemy i innych chorób.
+                                        W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, łojotokowego zapalenia skóry egzemy i innych chorób.
                                     </Typography>
                                 </Box>
                                 <Box>
@@ -82,6 +105,13 @@ const ClinicSection = () => {
                                     </Typography>
                                 </Box>
                             </Box>
+                            ) : (
+                                <Box>
+                                    <Typography className='paragraph' data-aos={'fade-right'} sx={{ textAlign: 'center' }}>
+                                        W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, egzemy i innych chorób.
+                                    </Typography>
+                                </Box>
+                            )
                         }
                     />
                     <Box>
@@ -89,7 +119,7 @@ const ClinicSection = () => {
                             <ImageList
                                 variant="quilted"
                                 cols={3}
-                                rowHeight={isMd ? 300 : 200}
+                                rowHeight={isMd ? 300 : 160}
                                 // gap={isMd ? 16 : 4}
                                 gap={4}
                                 sx={{ overflowY: 'hidden', marginBottom: 0 }}
@@ -137,7 +167,7 @@ const ClinicSection = () => {
                         )}
                     </Box>
                 </Box>
-                <Box sx={{ paddingTop: "32px" }}>
+                <Box sx={{ paddingTop: "32px" }} className='statistics-wrapper'>
                     <Grid container spacing={2}>
                         {clinic.statistics.map((item, i) => (
                             <Grid key={i} item xs={12} md={4} >
@@ -147,7 +177,6 @@ const ClinicSection = () => {
                                         display: 'flex',
                                         justifyContent:'center',
                                         fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-                                        // fontFamily: 'Google Sans Text, Arial, Helvetica, sans-serif',
                                         fontSize: '35px',
                                         letterSpacing: '.045em',
                                         color: 'rgba(0, 0, 0, 0.65)',
@@ -175,12 +204,9 @@ const ClinicSection = () => {
                                     // color={'text.secondary'}
                                     // data-aos={'fade-left'}
                                     sx={{
-
-                                        // fontFamily: 'Raleway, sans-serif',
                                         fontFamily: 'Roboto, sans-serif',
                                         fontSize: '18px',
                                         fontWeight: '300',
-                                        // color: '#535353'
                                         color: '#535353'
                                     }}
                                 >

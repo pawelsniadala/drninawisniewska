@@ -43,10 +43,6 @@
         font-family: "Roboto", "Helvetica", "Arial", sans-serif;
         font-size: 18px;
         font-weight: 300;
-
-        @media (max-width: 539.98px) {
-            display: block !important;
-        }
     }
 
     .paragraph {
@@ -97,6 +93,12 @@
         .subheader,
         .link-contained {
             display: none;
+        }
+
+        .link-contained {
+            @media (max-width: 991.98px) {
+                display: flex !important;
+            }
         }
     }
 }

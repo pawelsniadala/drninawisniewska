@@ -90,7 +90,7 @@ const TechnologyView = () => {
                         <Box className='clinic-description-wrapper'>
                             <Box>
                                 <Typography className='paragraph'>
-                                    W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, łojotokowego zapalenia skóry, eczemy i innych chorób.
+                                    W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, łojotokowego zapalenia skóry, egzemy i innych chorób.
                                 </Typography>
                             </Box>
                             <Box>
@@ -104,7 +104,7 @@ const TechnologyView = () => {
                                 className='image-list'
                                 variant='quilted'
                                 cols={3}
-                                rowHeight={isMd ? 300 : 200}
+                                rowHeight={isMd ? 300 : 160}
                                 gap={4}
                                 sx={{ overflowY: 'hidden' }}
                             >

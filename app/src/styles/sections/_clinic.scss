@@ -6,4 +6,10 @@
             filter: brightness(0.9) !important;
         }
     }
+
+    .statistics-wrapper {
+        @media (max-width: 991.98px) {
+            display: none;
+        }
+    }
 }

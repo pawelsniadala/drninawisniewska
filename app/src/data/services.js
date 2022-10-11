@@ -18,26 +18,26 @@ import servicesOrthopedics from "../assets/services/servicesOrthopedics.jpg";
 import servicesVasularSurgery from "../assets/services/servicesVasularSurgery.jpg";
 import servicesClinicalDietitian from "../assets/services/servicesClinicalDietitian.jpg";
 
-import ninaWisniewskaImage from '../assets/team/ninaWisniewska/ninaWisniewskaImage.jpg';
-import justynaFilipekImage from '../assets/team/justynaFilipek/justynaFilipekImage.jpg';
-import paulinaBudnaImage from '../assets/team/paulinaBudna/paulinaBudnaImage.jpg';
-import konradKochanImage from '../assets/team/konradKochan/konradKochanImage.jpg';
-import wojciechKaszewskiImage from '../assets/team/wojciechKaszewski/wojciechKaszewskiImage.jpg';
-import justynaKlonieckaImage from '../assets/team/justynaKloniecka/justynaKlonieckaImage.jpg';
-import katarzynaMysliwiecCzajkaImage from '../assets/team/katarzynaMysliwiecCzajka/katarzynaMysliwiecCzajkaImage.jpg';
-import klaudiaMalottkiImage from '../assets/team/klaudiaMalottki/klaudiaMalottkiImage.jpg';
-import aldonaMaciagImage from '../assets/team/aldonaMaciag/aldonaMaciagImage.jpg';
-import milenaJuzwiakImage from '../assets/team/milenaJuzwiak/milenaJuzwiakImage.jpg';
-import katarzynaZbronskaImage from '../assets/team/katarzynaZbronska/katarzynaZbronskaImage.jpg';
-import tomaszMatuszewskiImage from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImage.jpg';
-import wojciechTrojanowskiImage from '../assets/team/wojciechTrojanowski/wojciechTrojanowskiImage.jpg';
-import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowskiImage.jpg';
-import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
-import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
-import joannaOjrzenskaImage from '../assets/team/joannaOjrzenska/joannaOjrzenskaImage.jpg';
-import aleksandraGorczynskaImage from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImage.jpg';
-import annaKulakowskaImage from  '../assets/team/annaKulakowska/annaKulakowskaImage.jpg';
-import miroslawMajewskiImage from  '../assets/team/miroslawMajewski/miroslawMajewskiImage.jpg';
+import ninaWisniewskaImageSmall from '../assets/team/ninaWisniewska/ninaWisniewskaImageSmall.jpg';
+import justynaFilipekImageSmall from '../assets/team/justynaFilipek/justynaFilipekImageSmall.jpg';
+import paulinaBudnaImageSmall from '../assets/team/paulinaBudna/paulinaBudnaImageSmall.jpg';
+import konradKochanImageSmall from '../assets/team/konradKochan/konradKochanImageSmall.jpg';
+import wojciechKaszewskiImageSmall from '../assets/team/wojciechKaszewski/wojciechKaszewskiImageSmall.jpg';
+import justynaKlonieckaImageSmall from '../assets/team/justynaKloniecka/justynaKlonieckaImageSmall.jpg';
+import katarzynaMysliwiecCzajkaImageSmall from '../assets/team/katarzynaMysliwiecCzajka/katarzynaMysliwiecCzajkaImageSmall.jpg';
+import klaudiaMalottkiImageSmall from '../assets/team/klaudiaMalottki/klaudiaMalottkiImageSmall.jpg';
+import aldonaMaciagImageSmall from '../assets/team/aldonaMaciag/aldonaMaciagImageSmall.jpg';
+import milenaJuzwiakImageSmall from '../assets/team/milenaJuzwiak/milenaJuzwiakImageSmall.jpg';
+import katarzynaZbronskaImageSmall from '../assets/team/katarzynaZbronska/katarzynaZbronskaImageSmall.jpg';
+import tomaszMatuszewskiImageSmall from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImageSmall.jpg';
+import wojciechTrojanowskiImageSmall from '../assets/team/wojciechTrojanowski/wojciechTrojanowskiImageSmall.jpg';
+import kamilStepkowskiImageSmall from '../assets/team/kamilStepkowski/kamilStepkowskiImageSmall.jpg';
+import olgaLenartowiczWarakomskaImageSmall from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImageSmall.jpg';
+import paulinaTataraImageSmall from '../assets/team/paulinaTatara/paulinaTataraImageSmall.jpg';
+import joannaOjrzenskaImageSmall from '../assets/team/joannaOjrzenska/joannaOjrzenskaImageSmall.jpg';
+import aleksandraGorczynskaImageSmall from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImageSmall.jpg';
+import annaKulakowskaImageSmall from  '../assets/team/annaKulakowska/annaKulakowskaImageSmall.jpg';
+import miroslawMajewskiImageSmall from  '../assets/team/miroslawMajewski/miroslawMajewskiImageSmall.jpg';
 
 export const dermatology = {
     image: servicesDermatology,
@@ -47,13 +47,13 @@ export const dermatology = {
     path: '/services/dermatology',
     prices: '/prices',
     specialists: [
-        ninaWisniewskaImage,
-        katarzynaMysliwiecCzajkaImage,
-        justynaKlonieckaImage,
-        aldonaMaciagImage,
-        paulinaTataraImage,
-        katarzynaZbronskaImage,
-        annaKulakowskaImage
+        ninaWisniewskaImageSmall,
+        katarzynaMysliwiecCzajkaImageSmall,
+        justynaKlonieckaImageSmall,
+        aldonaMaciagImageSmall,
+        paulinaTataraImageSmall,
+        katarzynaZbronskaImageSmall,
+        annaKulakowskaImageSmall
     ]
 };
 
@@ -65,11 +65,11 @@ export const aestheticMedicine = {
     path: '/services/aesthetic-medicine',
     prices: '/prices/aesthetic-medicine',
     specialists: [
-        ninaWisniewskaImage,
-        konradKochanImage,
-        klaudiaMalottkiImage,
-        paulinaTataraImage,
-        olgaLenartowiczWarakomskaImage
+        ninaWisniewskaImageSmall,
+        konradKochanImageSmall,
+        klaudiaMalottkiImageSmall,
+        paulinaTataraImageSmall,
+        olgaLenartowiczWarakomskaImageSmall
     ]
 };
 
@@ -81,8 +81,8 @@ export const cosmetology = {
     path: '/services/cosmetology',
     prices: '/prices/cosmetology',
     specialists: [
-        paulinaBudnaImage,
-        aleksandraGorczynskaImage
+        paulinaBudnaImageSmall,
+        aleksandraGorczynskaImageSmall
     ],
     servicesCosmetologyPeeling: servicesCosmetologyPeeling
 };
@@ -95,7 +95,7 @@ export const physioterapy = {
     path: '/services/physioterapy',
     prices: '/prices/physioterapy',
     specialists: [
-        milenaJuzwiakImage
+        milenaJuzwiakImageSmall
     ],
     servicesPhysioterapyElasticTherapeuticTape: servicesPhysioterapyElasticTherapeuticTape,
     servicesPhysioterapyMassage: servicesPhysioterapyMassage,
@@ -109,7 +109,7 @@ export const cosmeticSurgery = {
     path: '/services/cosmetic-surgery',
     prices: '/prices/cosmetic-surgery',
     specialists: [
-        konradKochanImage
+        konradKochanImageSmall
     ]
 };
 
@@ -121,7 +121,7 @@ export const allergology = {
     path: '/services/allergology',
     prices: '/prices/allergology',
     specialists: [
-        tomaszMatuszewskiImage
+        tomaszMatuszewskiImageSmall
     ]
 };
 
@@ -133,8 +133,8 @@ export const usg = {
     path: '/services/usg',
     prices: '/prices/usg',
     specialists: [
-        justynaFilipekImage,
-        wojciechTrojanowskiImage
+        justynaFilipekImageSmall,
+        wojciechTrojanowskiImageSmall
     ]
 };
 
@@ -146,7 +146,7 @@ export const endocrinology = {
     path: '/services/endocrinology',
     prices: '/prices/endocrinology',
     specialists: [
-        justynaFilipekImage
+        justynaFilipekImageSmall
     ]
 };
 
@@ -158,7 +158,7 @@ export const gynecology = {
     path: '/services/gynecology',
     prices: '/prices/gynecology',
     specialists: [
-        justynaFilipekImage
+        justynaFilipekImageSmall
     ]
 };
 
@@ -170,7 +170,7 @@ export const orthopedics = {
     path: '/services/orthopedics',
     prices: '/prices/orthopedics',
     specialists: [
-        wojciechKaszewskiImage
+        wojciechKaszewskiImageSmall
     ]
 };
 
@@ -182,7 +182,7 @@ export const vasularSurgery = {
     path: '/services/vascular-surgery',
     prices: '/prices/vascular-surgery',
     specialists: [
-        kamilStepkowskiImage
+        kamilStepkowskiImageSmall
     ]
 };
 
@@ -194,7 +194,7 @@ export const clinicalDietitian = {
     path: '/services/clinical-dietitian',
     prices: '/prices/clinical-dietitian',
     specialists: [
-        joannaOjrzenskaImage
+        joannaOjrzenskaImageSmall
     ]
 };
 
@@ -206,7 +206,7 @@ export const hematology = {
     path: '/services/hematology',
     prices: '/prices/hematology',
     specialists: [
-        miroslawMajewskiImage
+        miroslawMajewskiImageSmall
     ]
 };
 

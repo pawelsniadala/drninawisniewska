@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 
 import Box from '@mui/material/Box';
@@ -10,6 +10,7 @@ import { useTheme } from '@mui/material/styles';
 import Container from '../components/Container';
 import SectionHeader from '../components/SectionHeader';
 import CardServices from '../components/CardServices';
+import CardProposed from '../components/CardProposed';
 
 import { services } from '../data/services';
 
@@ -68,6 +69,28 @@ const ServicesSection = () => {
         prevArrow: <SamplePrevArrow />
     };
 
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
+
     return (
         <Box
             component='section'
@@ -82,36 +105,50 @@ const ServicesSection = () => {
                     sectionLinkText='Zobacz wszystkie usługi'
                     sectionLinkPath='/services'
                 />
-                <Box margin={'0 auto'}>
-                    <Slider {...sliderOpts}>
-                        {services.slice(0, 4).map((item, index) => (
-                            <Box
-                                key={index}
-                                padding={{ xs: 1, md: 1, lg: '10px' }}
-                                sx={{ paddingTop: '0 !important' }}
-                            >
+                <Box className='section-body'>
+                    {width >= 991.98 ? (
+                        <Slider {...sliderOpts}>
+                            {services.slice(0, 4).map((item, index) => (
                                 <Box
-                                    width={1}
-                                    height={1}
-                                    sx={{
-                                        textDecoration: 'none',
-                                        transition: 'all .2s ease-in-out'
-                                    }}
+                                    key={index}
+                                    padding={{ xs: 1, md: 1, lg: '10px' }}
+                                    sx={{ paddingTop: '0 !important' }}
                                 >
-                                    <CardServices
-                                        key={index}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardPath={item.path}
-                                        cardPrice={item.prices}
-                                        cardSpecialist={item.specialists}
-                                        cardImage={item.image}
-                                        cardImageVisible={true}
-                                    />
+                                    <Box
+                                        width={1}
+                                        height={1}
+                                        sx={{
+                                            textDecoration: 'none',
+                                            transition: 'all .2s ease-in-out'
+                                        }}
+                                    >
+                                        <CardServices
+                                            key={index}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardPath={item.path}
+                                            cardPrice={item.prices}
+                                            cardSpecialist={item.specialists}
+                                            cardImage={item.image}
+                                            cardImageVisible={true}
+                                        />
+                                    </Box>
                                 </Box>
-                            </Box>
-                        ))}
-                    </Slider>
+                            ))}
+                        </Slider>
+                    ) : (
+                        <Box className='card-wrapper services'>
+                            {services.slice(0, 4).map((item, index) => (
+                                <CardProposed
+                                    key={index}
+                                    cardTitle={item.title}
+                                    cardDescription={item.description}
+                                    cardImage={item.image}
+                                    cardPath={item.path}
+                                />
+                            ))}
+                        </Box>
+                    )}
                 </Box>
             </Container>
         </Box>
