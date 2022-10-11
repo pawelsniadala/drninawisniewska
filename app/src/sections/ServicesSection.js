@@ -3,8 +3,8 @@ import Slider from 'react-slick';
 
 import Box from '@mui/material/Box';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
+// import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+// import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import { useTheme } from '@mui/material/styles';
 
 import Container from '../components/Container';
@@ -14,27 +14,27 @@ import CardProposed from '../components/CardProposed';
 
 import { services } from '../data/services';
 
-const SampleNextArrow = ({ onClick }) => {
-    return (
-        <Box
-            className='sample-next-arrow'
-            onClick={onClick}
-        >
-            <KeyboardArrowRightIcon />
-        </Box>
-    );
-}
+// const SampleNextArrow = ({ onClick }) => {
+//     return (
+//         <Box
+//             className='sample-next-arrow'
+//             onClick={onClick}
+//         >
+//             <KeyboardArrowRightIcon />
+//         </Box>
+//     );
+// }
 
-function SamplePrevArrow({ onClick }) {
-    return (
-        <Box
-            className='sample-prev-arrow'
-            onClick={onClick}
-        >
-            <KeyboardArrowLeftIcon />
-        </Box>
-    );
-}
+// function SamplePrevArrow({ onClick }) {
+//     return (
+//         <Box
+//             className='sample-prev-arrow'
+//             onClick={onClick}
+//         >
+//             <KeyboardArrowLeftIcon />
+//         </Box>
+//     );
+// }
 
 const ServicesSection = () => {
     const theme = useTheme();
@@ -65,8 +65,8 @@ const ServicesSection = () => {
         autoplay: true,
         // autoplay: false,
         autoplaySpeed: 2000,
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />
+        // nextArrow: <SampleNextArrow />,
+        // prevArrow: <SamplePrevArrow />
     };
 
     function getWindowDimensions() {
@@ -138,7 +138,7 @@ const ServicesSection = () => {
                         </Slider>
                     ) : (
                         <Box className='card-wrapper services'>
-                            {services.slice(0, 4).map((item, index) => (
+                            {services.slice(0, width <= 539.98 ? 3 : 4).map((item, index) => (
                                 <CardProposed
                                     key={index}
                                     cardTitle={item.title}
