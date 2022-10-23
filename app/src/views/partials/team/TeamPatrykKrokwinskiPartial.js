@@ -13,9 +13,9 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Container from '../../../components/Container';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 
-import { team, annaKulakowska } from '../../../data/team';
+import { team, patrykKrokwinski } from '../../../data/team';
 
-const TeamAnnaKulakowskaPartial = () => {
+const TeamPatrykKrokwinskiPartial = () => {
     const shuffleArray = (array) => {
         for (let i = array.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
@@ -24,7 +24,7 @@ const TeamAnnaKulakowskaPartial = () => {
     }
 
     const teamCopy = [ ...team ];
-    const annaKulakowskaCopy = [{ ...annaKulakowska }];
+    const patrykKrokwinskiCopy = [{ ...patrykKrokwinski }];
 
     shuffleArray(teamCopy);
 
@@ -59,13 +59,13 @@ const TeamAnnaKulakowskaPartial = () => {
                                     Zespół
                                 </Link>
                                 <Typography color='text.primary'>
-                                    {annaKulakowska.name}
+                                    {patrykKrokwinski.name}
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {annaKulakowska.name}
+                                {patrykKrokwinski.name}
                             </Typography>
                         </Box>
                     </Container>
@@ -73,7 +73,7 @@ const TeamAnnaKulakowskaPartial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper team'>
                         <Box className='team-details'>
-                            {annaKulakowskaCopy.map((item, index) => (
+                            {patrykKrokwinskiCopy.map((item, index) => (
                                 <Box key={index}>
                                     <Card className='card-introduction'>
                                         {item.background ? (
@@ -151,7 +151,7 @@ const TeamAnnaKulakowskaPartial = () => {
                         </Box>
                         <Box className='team-proposed'>
                             <Box className='card-wrapper team-proposed'>
-                                {teamCopy.filter(item => item.designation !== 'annaKulakowska').slice(0, 8).map((item, index) => (
+                                {teamCopy.filter(item => item.designation !== 'patrykKrokwinski').slice(0, 8).map((item, index) => (
                                     <CardTeamProposed
                                         cardImage={item.image}
                                         cardName={item.name}
@@ -169,4 +169,4 @@ const TeamAnnaKulakowskaPartial = () => {
     );
 }
 
-export default TeamAnnaKulakowskaPartial;
+export default TeamPatrykKrokwinskiPartial;

@@ -39,6 +39,10 @@
             @include bd-relative-zindex;
             height: calc(100vh - 75px);
 
+            @media (max-width: 539.98px) {
+                height: calc(90vh - 75px);
+            }
+
             .company-wrapper {
                 position: absolute;
                 top: 0;

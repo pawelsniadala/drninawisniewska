@@ -50,21 +50,20 @@ import TeamAldonaMaciagPartial from './partials/team/TeamAldonaMaciagPartial';
 import TeamMilenaJuzwiakPartial from './partials/team/TeamMilenaJuzwiakPartial';
 import TeamPaulinaTataraPartial from './partials/team/TeamPaulinaTataraPartial';
 import TeamTomaszMatuszewskiPartial from './partials/team/TeamTomaszMatuszewskiPartial';
-import TeamWojciechTrojanowskiPartial from './partials/team/TeamWojciechTrojanowskiPartial';
 import TeamOlgaLenartowiczWarakomskaPartial from './partials/team/TeamOlgaLenartowiczWarakomskaPartial';
 import TeamKatarzynaZbronskaPartial from './partials/team/TeamKatarzynaZbronskaPartial';
 import TeamJoannaOjrzenskaPartial from './partials/team/TeamJoannaOjrzenskaPartial';
 import TeamAleksandraGorczynskaPartial from './partials/team/TeamAleksandraGorczynskaPartial';
-import TeamAnnaKulakowskaPartial from './partials/team/TeamAnnaKulakowskaPartial';
 import TeamMiroslawMajewskiPartial from './partials/team/TeamMiroslawMajewskiPartial';
 import TeamKamilStepkowskiPartial from './partials/team/TeamKamilStepkowskiPartial';
+import TeamKatarzynaRychlikPartial from './partials/team/TeamKatarzynaRychlikPartial';
+import TeamPatrykKrokwinskiPartial from './partials/team/TeamPatrykKrokwinskiPartial';
 import TechnologyView from './TechnologyView';
 import TechnologyVectusPartial from './partials/technology/TechnologyVectusPartial';
 import TechnologyAlmaHarmonyXlProPartial from './partials/technology/TechnologyAlmaHarmonyXlProPartial';
 import TechnologyIcooneLaserMed2Partial from './partials/technology/TechnologyIcooneLaserMed2Partial';
 import TechnologyFonsSvrFractionLaserCo2Partial from './partials/technology/TechnologyFonsSvrFractionLaserCo2Partial';
 import TechnologyAlmaAccentUltraVShapePartial from './partials/technology/TechnologyAlmaAccentUltraVShapePartial';
-import TechnologyAlmaAccentPrimePartial from './partials/technology/TechnologyAlmaAccentPrimePartial';
 import TechnologySonoQueenPartial from './partials/technology/TechnologySonoQueenPartial';
 import ContactView from './ContactView';
 
@@ -119,21 +118,20 @@ const Root = () => (
                     <Route path='/team/milena-juzwiak' element={<TeamMilenaJuzwiakPartial />} />
                     <Route path='/team/paulina-tatara' element={<TeamPaulinaTataraPartial />} />
                     <Route path='/team/tomasz-matuszewski' element={<TeamTomaszMatuszewskiPartial />} />
-                    <Route path='/team/wojciech-trojanowski' element={<TeamWojciechTrojanowskiPartial />} />
                     <Route path='/team/olga-lenartowicz-warakomska' element={<TeamOlgaLenartowiczWarakomskaPartial />} />
                     <Route path='/team/katarzyna-zbronska' element={<TeamKatarzynaZbronskaPartial />} />
                     <Route path='/team/joanna-ojrzenska' element={<TeamJoannaOjrzenskaPartial />} />
                     <Route path='/team/aleksandra-gorczynska' element={<TeamAleksandraGorczynskaPartial />} />
-                    <Route path='/team/anna-kulakowska' element={<TeamAnnaKulakowskaPartial />} />
                     <Route path='/team/miroslaw-majewski' element={<TeamMiroslawMajewskiPartial />} />
                     <Route path='/team/kamil-stepkowski' element={<TeamKamilStepkowskiPartial />} />
+                    <Route path='/team/katarzyna-rychlik' element={<TeamKatarzynaRychlikPartial />} />
+                    <Route path='/team/patryk-krokwinski' element={<TeamPatrykKrokwinskiPartial />} />
                     <Route path='/technology' element={<TechnologyView />} />
                     <Route path='/technology/vectus' element={<TechnologyVectusPartial />} />
                     <Route path='/technology/alma-harmony-xl-pro' element={<TechnologyAlmaHarmonyXlProPartial />} />
                     <Route path='/technology/icoone-laser-med2' element={<TechnologyIcooneLaserMed2Partial />} />
                     <Route path='/technology/fons-svr-fraction-laser-co2' element={<TechnologyFonsSvrFractionLaserCo2Partial />} />
                     <Route path='/technology/alma-accent-ultra-v-shape' element={<TechnologyAlmaAccentUltraVShapePartial />} />
-                    <Route path='/technology/alma-accent-prime' element={<TechnologyAlmaAccentPrimePartial />} />
                     <Route path='/technology/sono-queen' element={<TechnologySonoQueenPartial />} />
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>

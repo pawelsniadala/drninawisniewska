@@ -40,9 +40,12 @@ const PriceSection = () => {
                 data-jarallax
                 data-speed="0.2"
                 position={'relative'}
-                minHeight={{ xs: 400, sm: 500, md: 650 }}
+                minHeight={{ xs: 500, sm: '100vh', md: 650 }} // 'calc(80vh - 75px)'
+                // minHeight={{ xs: '100vh', sm: 650, md: 650 }}
                 // sx={{ height: 'calc(100vh)' }}
+                sx={{ paddingBottom: '1.25rem', paddingTop: '1.25rem' }}
                 display={'flex'}
+                // alignItems={ isMd ? 'center' : 'flex-start'}
                 alignItems={'center'}
                 // marginTop={-13}
                 // paddingTop={13}
@@ -63,7 +66,7 @@ const PriceSection = () => {
                         zIndex: -1,
                         backgroundRepeat: 'no-repeat',
                         backgroundSize: 'cover',
-                        backgroundPosition: 'top center',
+                        backgroundPosition: 'center center',
                         // backgroundImage: 'url(https://assets.maccarianagency.com/backgrounds/img52.jpg)'
                         backgroundImage: `url(${isMd ? pricesJpg1 : pricesJpg2})`,
 

@@ -35,6 +35,7 @@ const Table1 = () => {
 
     const rows = [
         createData('Konsultacja dr n. med. Tomasz Matuszewski', 200),
+        createData('Płatkowe testy kontaktowe', 350),
         createData('Testy skórne', 150),
         createData('Odczulanie', 60)
     ];

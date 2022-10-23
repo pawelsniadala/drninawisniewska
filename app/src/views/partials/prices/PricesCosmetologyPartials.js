@@ -149,7 +149,7 @@ const Table3 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        PQ AGE - Peeling Liftingujący
+                        Peeling Liftingujący
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -189,7 +189,7 @@ const Table4 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        PRX-T 33 - Biorewitalizacja bez igieł
+                        Biorewitalizacja bez igieł
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -219,6 +219,7 @@ const Table5 = () => {
     }
 
     const rows = [
+        createData('Oczy', 250),
         createData('Zabieg na twarz', 350),
         createData('Cena w pakiecie 3 zabiegów', 900),
         createData('Twarz, szyja, dekolt', 600),
@@ -231,7 +232,7 @@ const Table5 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        Terapia Anty-Aging - Retises CT
+                        Terapia Anty-Aging
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -255,44 +256,44 @@ const Table5 = () => {
     );
 }
 
-const Table6 = () => {
-    function createData(name, price) {
-        return { name, price };
-    }
+// const Table6 = () => {
+//     function createData(name, price) {
+//         return { name, price };
+//     }
 
-    const rows = [
-        createData('Oczy', 250)
-    ];
+//     const rows = [
+//         createData('Oczy', 250)
+//     ];
 
-    return (
-        <TableContainer className='table-container' component={Paper} >
-            <Table size="small" aria-label="customized table">
-                <TableHead>
-                    <TableRow>
-                    <StyledTableCell className="featured">
-                        Retix C Eye - zabieg z retinolem i witaminą C
-                    </StyledTableCell>
-                    <StyledTableCell align="right">
-                        Cena
-                    </StyledTableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {rows.map((row) => (
-                        <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
-                                {row.name}
-                            </StyledTableCell>
-                            <StyledTableCell align="right">
-                                {row.price}
-                            </StyledTableCell>
-                        </StyledTableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
-    );
-}
+//     return (
+//         <TableContainer className='table-container' component={Paper} >
+//             <Table size="small" aria-label="customized table">
+//                 <TableHead>
+//                     <TableRow>
+//                     <StyledTableCell className="featured">
+//                         Retix C Eye - zabieg z retinolem i witaminą C
+//                     </StyledTableCell>
+//                     <StyledTableCell align="right">
+//                         Cena
+//                     </StyledTableCell>
+//                     </TableRow>
+//                 </TableHead>
+//                 <TableBody>
+//                     {rows.map((row) => (
+//                         <StyledTableRow key={row.name}>
+//                             <StyledTableCell component="th" scope="row">
+//                                 {row.name}
+//                             </StyledTableCell>
+//                             <StyledTableCell align="right">
+//                                 {row.price}
+//                             </StyledTableCell>
+//                         </StyledTableRow>
+//                     ))}
+//                 </TableBody>
+//             </Table>
+//         </TableContainer>
+//     );
+// }
 
 const Table7 = () => {
     function createData(name, price) {
@@ -307,53 +308,13 @@ const Table7 = () => {
         createData('Modified Jessner', 180),
         createData('Azelan', 180),
         createData('TCA soft 15%', 220),
-        createData('TCA 35%', 220)
-    ];
-
-    return (
-        <TableContainer className='table-container' component={Paper} >
-            <Table size="small" aria-label="customized table">
-                <TableHead>
-                    <TableRow>
-                    <StyledTableCell className="featured">
-                        Peelingi Mesopeel Mesoestetic
-                    </StyledTableCell>
-                    <StyledTableCell align="right">
-                        Cena
-                    </StyledTableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {rows.map((row) => (
-                        <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
-                                {row.name}
-                            </StyledTableCell>
-                            <StyledTableCell align="right">
-                                {row.price}
-                            </StyledTableCell>
-                        </StyledTableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
-    );
-}
-
-const Table8 = () => {
-    function createData(name, price) {
-        return { name, price };
-    }
-
-    const rows = [
-        createData('Peeling węglowy', 350),
-        createData('Architect Peel Mision', 250),
+        createData('TCA 35%', 220),
         createData('Kwas ferulowy', 200),
         createData('Kwas laktobionowy', 200),
-        createData('Kwas traneksamowy (przebarwienia)', 300),
-        createData('Namelau Cafeico', 350),
+        createData('Kwas traneksamowy', 300),
+        createData('Nomelan Cafeico', 350),
         createData('A.C. Solution', 250),
-        createData('C.R. Complexy', 250)
+        createData('C.R. Complex', 250)
     ];
 
     return (
@@ -362,7 +323,7 @@ const Table8 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        Pielęgnacja skóry z niedoskonałościami
+                        Peelingi medyczne
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -385,6 +346,52 @@ const Table8 = () => {
         </TableContainer>
     );
 }
+
+// const Table8 = () => {
+//     function createData(name, price) {
+//         return { name, price };
+//     }
+
+//     const rows = [
+//         createData('Peeling węglowy', 350),
+//         createData('Architect Peel Mision', 250),
+//         createData('Kwas ferulowy', 200),
+//         createData('Kwas laktobionowy', 200),
+//         createData('Kwas traneksamowy (przebarwienia)', 300),
+//         createData('Namelau Cafeico', 350),
+//         createData('A.C. Solution', 250),
+//         createData('C.R. Complexy', 250)
+//     ];
+
+//     return (
+//         <TableContainer className='table-container' component={Paper} >
+//             <Table size="small" aria-label="customized table">
+//                 <TableHead>
+//                     <TableRow>
+//                     <StyledTableCell className="featured">
+//                         Pielęgnacja skóry z niedoskonałościami
+//                     </StyledTableCell>
+//                     <StyledTableCell align="right">
+//                         Cena
+//                     </StyledTableCell>
+//                     </TableRow>
+//                 </TableHead>
+//                 <TableBody>
+//                     {rows.map((row) => (
+//                         <StyledTableRow key={row.name}>
+//                             <StyledTableCell component="th" scope="row">
+//                                 {row.name}
+//                             </StyledTableCell>
+//                             <StyledTableCell align="right">
+//                                 {row.price}
+//                             </StyledTableCell>
+//                         </StyledTableRow>
+//                     ))}
+//                 </TableBody>
+//             </Table>
+//         </TableContainer>
+//     );
+// }
 
 const Table9 = () => {
     function createData(name, price) {
@@ -566,9 +573,9 @@ const PricesCosmetologyPartials = () => {
             <Table3 />
             <Table4 />
             <Table5 />
-            <Table6 />
+            {/* <Table6 /> */}
             <Table7 />
-            <Table8 />
+            {/* <Table8 /> */}
             <Table9 />
             <Table10 />
             <Table11 />

@@ -36,7 +36,7 @@ const Table1 = () => {
     const rows = [
         createData('Konsultacja - mgr Milena Juźwiak (30min)', 100),
         createData('Terapia metodą PNF (30/60min)', '80/130'),
-        createData('Kineso Taping', 'od 35'),
+        createData('Kinesotaping', 'od 35'),
         createData('Masaż limfatyczny ręczny (1h)', 230),
         createData('Masaż leczniczy całego kręgosłupa (30min)', 80),
         createData('Masaż leczniczy częściowy (20min)', 50),

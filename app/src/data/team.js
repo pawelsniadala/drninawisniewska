@@ -10,14 +10,14 @@ import aldonaMaciagImage from '../assets/team/aldonaMaciag/aldonaMaciagImage.jpg
 import milenaJuzwiakImage from '../assets/team/milenaJuzwiak/milenaJuzwiakImage.jpg';
 import katarzynaZbronskaImage from '../assets/team/katarzynaZbronska/katarzynaZbronskaImage.jpg';
 import tomaszMatuszewskiImage from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImage.jpg';
-import wojciechTrojanowskiImage from '../assets/team/wojciechTrojanowski/wojciechTrojanowskiImage.jpg';
 import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowskiImage.jpg';
 import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
 import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
 import joannaOjrzenskaImage from '../assets/team/joannaOjrzenska/joannaOjrzenskaImage.jpg';
 import aleksandraGorczynskaImage from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImage.jpg';
-import annaKulakowskaImage from  '../assets/team/annaKulakowska/annaKulakowskaImage.jpg';
 import miroslawMajewskiImage from  '../assets/team/miroslawMajewski/miroslawMajewskiImage.jpg';
+import katarzynaRychlikImage from  '../assets/team/katarzynaRychlik/katarzynaRychlikImage.jpg';
+import patrykKrokwinskiImage from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImage.jpg';
 
 export const ninaWisniewska = {
     designation: 'ninaWisniewska',
@@ -267,25 +267,6 @@ export const tomaszMatuszewski = {
     ]
 };
 
-export const wojciechTrojanowski = {
-    designation: 'wojciechTrojanowski',
-    name: 'lek. med. Wojciech Trojanowski',
-    speciality: 'Radiolog',
-    summary: false,
-    education: 'Absolwent Wydziału Lekarskiego  Akademii Medycznej w Łodzi, gdzie ukończył dwie specjalizacje: z chirurgii ogólnej oraz radiodiagnostyki.',
-    experience: 'Posiada wieloletnie doświadczenie zawodowe, zdobyte w placówkach medycznych na terenie województwa łódzkiego i mazowieckiego.',
-    interested: false,
-    image: wojciechTrojanowskiImage,
-    background: false,
-    path: '/team/wojciech-trojanowski',
-    services: [
-        {
-            text: 'USG',
-            path: '/services/usg'
-        }
-    ]
-};
-
 export const olgaLenartowiczWarakomska = {
     designation: 'olgaLenartowiczWarakomska',
     name: 'lek. dent. Olga Lenartowicz-Warakomska',
@@ -362,25 +343,6 @@ export const aleksandraGorczynska = {
     ]
 };
 
-export const annaKulakowska = {
-    designation: 'annaKulakowska',
-    name: 'lek. med. Anna Kułakowska',
-    speciality: 'Dermatolog, trycholog',
-    summary: false,
-    education: 'Ukończyła studia na Wydziale Lekarskim Uniwersytetu Medycznego w Łodzi. Swoją wiedzę praktyczną zdobywała pod okiem doświadczonych specjalistów w wielu ośrodkach na terenie kraju. Na co dzień pracuje w specjalistycznych Poradniach Dermatologicznych, konsultując pacjentów dorosłych i dzieci. Zajmuje się leczeniem chorób skóry, włosów i paznokci, chorób przenoszonych drogą płciową oraz trudno gojących się ran i owrzodzeń.',
-    experience: 'Lekarz specjalizujący się w dziedzinie dermatologii i wenerologii. Przeprowadza diagnostykę: dermatoskopową m.in. znamion barwnikowych i nowotworów skóry, trichoskopową skóry owłosionej, a także zabiegi z zakresu chirurgii dermatologicznej i kriochirurgii. W pracy odznacza się duża starannością i holistycznym podejściem do pacjenta. Dba o stałe poszerzanie wiedzy i umiejętności uczestnicząc w konferencjach i szkoleniach naukowych. Jest członkinią Polskiego Towarzystwa Dermatologicznego.',
-    interested: false,
-    image: annaKulakowskaImage,
-    background: false,
-    path: '/team/anna-kulakowska',
-    services: [
-        {
-            text: 'Dermatologia',
-            path: '/services/dermatology'
-        }
-    ]
-};
-
 export const miroslawMajewski = {
     designation: 'miroslawMajewski',
     name: 'dr Mirosław Majewski',
@@ -419,6 +381,44 @@ export const kamilStepkowski = {
     ]
 };
 
+export const katarzynaRychlik = {
+    designation: 'katarzynaRychlik',
+    name: 'lek. med. Katarzyna Rychlik',
+    speciality: 'Dermatolog',
+    summary: false,
+    education: false,
+    experience: false,
+    interested: false,
+    image: katarzynaRychlikImage,
+    background: false,
+    path: '/team/katarzyna-rychlik',
+    services: [
+        {
+            text: 'Dermatologia',
+            path: '/services/dermatology'
+        }
+    ]
+};
+
+export const patrykKrokwinski = {
+    designation: 'patrykKrokwinski',
+    name: 'lek. med. Patryk Krokwiński',
+    speciality: 'Radiolog',
+    summary: false,
+    education: false,
+    experience: false,
+    interested: false,
+    image: patrykKrokwinskiImage,
+    background: false,
+    path: '/team/patryk-krokwinski',
+    services: [
+        {
+            text: 'USG',
+            path: '/services/usg'
+        }
+    ]
+};
+
 export const team = [
     { ...ninaWisniewska },
     { ...justynaFilipek },
@@ -432,12 +432,12 @@ export const team = [
     { ...milenaJuzwiak },
     { ...paulinaTatara },
     { ...tomaszMatuszewski },
-    { ...wojciechTrojanowski },
     { ...olgaLenartowiczWarakomska },
     { ...katarzynaZbronska },
     { ...joannaOjrzenska },
     { ...aleksandraGorczynska },
-    { ...annaKulakowska },
     { ...miroslawMajewski },
-    { ...kamilStepkowski }
+    { ...kamilStepkowski },
+    { ...katarzynaRychlik },
+    { ...patrykKrokwinski },
 ];

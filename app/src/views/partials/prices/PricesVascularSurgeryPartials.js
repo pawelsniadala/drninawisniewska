@@ -8,6 +8,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TableContainer from '@mui/material/TableContainer';
 import Paper from '@mui/material/Paper';
+import InfoIcon from '@mui/icons-material/Info';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 
 const StyledTableCell = styled(TableCell)(() => ({
     [`&.${tableCellClasses.head}`]: {
@@ -28,17 +31,34 @@ const StyledTableRow = styled(TableRow)(() => ({
     }
 }));
 
+const tooltip = (title) => (
+    <Tooltip title={title}>
+        <IconButton
+            sx={{
+                height: '12px',
+                width: '12px',
+                marginLeft: '8px',
+                color: '#008AC9',
+            }}
+        >
+        <InfoIcon fontSize='small' />
+        </IconButton>
+    </Tooltip>
+);
+
 const Table1 = () => {
-    function createData(name, price) {
-        return { name, price };
+    function createData(name, price, tooltip) {
+        return { name, price, tooltip };
     }
 
     const rows = [
-        createData('Konsultacja - dr Kamil Stępkowski', 200),
-        createData('USG doppler tętnic szyjnych', 150),
-        createData('USG doppler kończyn dolnych (jedna noga)', 170),
-        createData('USG doppler kończyn dolnych (dwie nogi)', 250),
-        createData('Skleroterapia', 800)
+        createData('Konsultacja - dr Kamil Stępkowski', 200, false),
+        createData('USG doppler tętnic szyjnych', 150, false),
+        createData('USG doppler kończyn dolnych (jedna noga)', 170, false),
+        createData('USG doppler kończyn dolnych (dwie nogi)', 250, false),
+        createData('Skleroterapia', 800, false),
+        createData('Miniflebektomia', '800 - 1500', false),
+        createData('Laserowe usuwanie żylaków', 'od 3700', 'Dokładną cenę ustala lekarz.'),
     ];
 
     return (
@@ -62,6 +82,7 @@ const Table1 = () => {
                             </StyledTableCell>
                             <StyledTableCell align="right">
                                 {row.price}
+                                {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
                         </StyledTableRow>
                     ))}

@@ -30,14 +30,14 @@ import aldonaMaciagImageSmall from '../assets/team/aldonaMaciag/aldonaMaciagImag
 import milenaJuzwiakImageSmall from '../assets/team/milenaJuzwiak/milenaJuzwiakImageSmall.jpg';
 import katarzynaZbronskaImageSmall from '../assets/team/katarzynaZbronska/katarzynaZbronskaImageSmall.jpg';
 import tomaszMatuszewskiImageSmall from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImageSmall.jpg';
-import wojciechTrojanowskiImageSmall from '../assets/team/wojciechTrojanowski/wojciechTrojanowskiImageSmall.jpg';
 import kamilStepkowskiImageSmall from '../assets/team/kamilStepkowski/kamilStepkowskiImageSmall.jpg';
 import olgaLenartowiczWarakomskaImageSmall from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImageSmall.jpg';
 import paulinaTataraImageSmall from '../assets/team/paulinaTatara/paulinaTataraImageSmall.jpg';
 import joannaOjrzenskaImageSmall from '../assets/team/joannaOjrzenska/joannaOjrzenskaImageSmall.jpg';
 import aleksandraGorczynskaImageSmall from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImageSmall.jpg';
-import annaKulakowskaImageSmall from  '../assets/team/annaKulakowska/annaKulakowskaImageSmall.jpg';
 import miroslawMajewskiImageSmall from  '../assets/team/miroslawMajewski/miroslawMajewskiImageSmall.jpg';
+import katarzynaRychlikImageSmall from  '../assets/team/katarzynaRychlik/katarzynaRychlikImageSmall.jpg';
+import patrykKrokwinskiImageSmall from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImageSmall.jpg';
 
 export const dermatology = {
     image: servicesDermatology,
@@ -53,7 +53,7 @@ export const dermatology = {
         aldonaMaciagImageSmall,
         paulinaTataraImageSmall,
         katarzynaZbronskaImageSmall,
-        annaKulakowskaImageSmall
+        katarzynaRychlikImageSmall
     ]
 };
 
@@ -134,7 +134,7 @@ export const usg = {
     prices: '/prices/usg',
     specialists: [
         justynaFilipekImageSmall,
-        wojciechTrojanowskiImageSmall
+        patrykKrokwinskiImageSmall
     ]
 };
 

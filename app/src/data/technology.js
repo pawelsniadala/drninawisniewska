@@ -13,10 +13,6 @@ import fonsSvrFractionLaserCo2ImageSmall from '../assets/technology/fonsSvrFract
 import fonsSvrFractionLaserCo2ImageMedium from '../assets/technology/fonsSvrFractionLaserCo2/fonsSvrFractionLaserCo2ImageMedium.png';
 import fonsSvrFractionLaserCo2ImageLarge from '../assets/technology/fonsSvrFractionLaserCo2/fonsSvrFractionLaserCo2ImageLarge.png';
 
-import almaAccentPrimeImageSmall from '../assets/technology/almaAccentPrime/almaAccentPrimeImageSmall.png';
-import almaAccentPrimeImageMedium from '../assets/technology/almaAccentPrime/almaAccentPrimeImageMedium.png';
-import almaAccentPrimeImageLarge from '../assets/technology/almaAccentPrime/almaAccentPrimeImageLarge.png';
-
 import almaAccentUltraVShapeImageSmall from '../assets/technology/almaAccentUltraVShape/almaAccentUltraVShapeImageSmall.jpg';
 import almaAccentUltraVShapeImageMedium from '../assets/technology/almaAccentUltraVShape/almaAccentUltraVShapeImageMedium.png';
 // import almaAccentPrimeImageLarge from '../assets/technology/almaAccentPrime/almaAccentPrimeImageLarge.png';
@@ -84,19 +80,6 @@ export const almaAccentUltraVShape = {
     services: ['cosmetology']
 };
 
-export const almaAccentPrime = {
-    designation: 'almaAccentPrime',
-    title: 'Alma™ Accent Prime',
-    description: 'Accent Prime to zaawansowana i wielozadaniowa platforma zabiegowa marki Alma Lasers przeznaczona do zabiegów ujędrniających skórę oraz modelujących ciało i twarz. Urządzenie łączy w sobie kilka innowacyjnych technologii: unipolarną falę radiową o wysokiej częstotliwości (40,68 MHz), bipolarną falę radiową oraz dwa typy ultradźwięków m.in. Lamba, ultradźwięki zimne działające selektywnie na komórki tłuszczowe oraz ultradźwięki ciepłe dające bardzo wysoki poziom kawitacji. Dla uzyskania najlepszych efektów zabiegowych warto łączyć w procedurach zabiegowych technologie ultradźwiękowe z falą radiową, która nie tylko zmniejsza objętość komórek tłuszczowych ale działa także ujędrniająco na skórę.',
-    imageSmall: almaAccentPrimeImageSmall,
-    imageMedium: almaAccentPrimeImageMedium,
-    imageLarge: almaAccentPrimeImageLarge,
-    path: '/technology/alma-accent-prime',
-    badge: false,
-    services: ['cosmetology']
-};
-
-
 export const sonoQueen = {
     designation: 'sonoQueen',
     title: 'SonoQueen',
@@ -115,6 +98,5 @@ export const technology = [
     { ...icooneLaserMed2 },
     { ...fonsSvrFractionLaserCo2 },
     { ...almaAccentUltraVShape },
-    { ...almaAccentPrime },
     { ...sonoQueen }
 ];

@@ -33,17 +33,17 @@ const StyledTableRow = styled(TableRow)(() => ({
 
 const tooltip = (title) => (
     <Tooltip title={title}>
-    <IconButton
-        sx={{
-            height: '12px',
-            width: '12px',
-            marginLeft: '8px',
-            color: '#008AC9',
-        }}
-    >
-      <InfoIcon fontSize='small' />
-    </IconButton>
-  </Tooltip>
+        <IconButton
+            sx={{
+                height: '12px',
+                width: '12px',
+                marginLeft: '8px',
+                color: '#008AC9',
+            }}
+        >
+        <InfoIcon fontSize='small' />
+        </IconButton>
+    </Tooltip>
 );
 
 const Table1 = () => {
@@ -54,6 +54,7 @@ const Table1 = () => {
     const rows = [
         createData('Konsultacja ginekologiczna - dr Justyna Filipek', 200, false),
         createData('Konsultacja ginekologiczno - endokrynologiczna', 250, false),
+        createData('Cytologia', 50, false),
         createData('USG - dopłata do wizyty', '50/100', 'Dokładną cenę ustala lekarz.')
     ];
 

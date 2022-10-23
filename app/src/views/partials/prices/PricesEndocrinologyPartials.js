@@ -53,8 +53,7 @@ const Table1 = () => {
 
     const rows = [
         createData('Konsultacja endokrynologiczna - dr Justyna Filipek', 200, false),
-        createData('Konsultacja ginekologiczno - endokrynologiczna', 250, false),
-        createData('USG - dopłata do wizyty', '50/100', 'Dokładną cenę ustala lekarz.')
+        createData('Konsultacja ginekologiczno - endokrynologiczna', 250, false)
     ];
 
     return (

@@ -367,7 +367,7 @@ const PricesView = () => {
                                                 selected={pricesTab === 'prices-endocrinology'}
                                                 onClick={() => setTab('prices-endocrinology')}
                                             >
-                                                <ListItemText className='list-item-text' primary='Endykrologia' />
+                                                <ListItemText className='list-item-text' primary='Endokrynologia' />
                                                 <ListItemIcon className='list-item-icon'>
                                                     <KeyboardArrowRightIcon />
                                                 </ListItemIcon>
