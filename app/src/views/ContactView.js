@@ -1,8 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
+import * as bootstrap from 'bootstrap';
 
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
@@ -19,17 +22,36 @@ import EmailSvg from '../assets/svg/EmailSvg';
 import { contact } from '../data/contact';
 
 const ContactView = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_ry9l1s7', 'template_kidfc2k', form.current, '_o3zGPDB_96l97OYE')
+            .then((result) => {
+                console.log(result.text);
+                showToast();
+                e.target.reset();
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
+    const showToast = () => {
+        new bootstrap.Toast(document.getElementById('successToast')).show();
+    }
+
     const renderIcon = (designation) => {
         switch(designation) {
-            case "phone":
+            case 'phone':
                 return (
                     <PhoneSvg width='20px' height='20px' color='#fff'/>
                 );
-            case "email":
+            case 'email':
                 return (
                     <EmailSvg width='20px' height='20px' color='#fff' />
                 );
-            case "address":
+            case 'address':
                 return (
                     <FmdGoodIcon />
                 );
@@ -84,12 +106,60 @@ const ContactView = () => {
                 </Box>
                 <Box className='view-body'>
                     <Container className='body-wrapper contact'>
+                        <Box className='contact-form-wrapper'>
+                            <form ref={form} onSubmit={sendEmail}>
+                                <Box className='mb-3'>
+                                    <label htmlFor='name' className='form-label'>
+                                        Imię i nazwisko
+                                        <span className='text-danger'>&nbsp;*</span>
+                                    </label>
+                                    <input type='text' className='form-control' name='name' minLength='2' required />
+                                </Box>
+                                <Box className='mb-3 row'>
+                                    <Box className='col-6'>
+                                        <label htmlFor='email' className='form-label'>
+                                            Adres e-mail
+                                            <span className='text-danger'>&nbsp;*</span>
+                                        </label>
+                                        <input type='email' className='form-control' name='email' required />
+                                    </Box>
+                                    <Box className='col-6'>
+                                        <label htmlFor='phone' className='form-label'>
+                                            Numer telefonu
+                                            <span className='text-danger'>&nbsp;*</span>
+                                        </label>
+                                        <input type='tel' className='form-control' name='phone' required />
+                                    </Box>
+                                </Box>
+                                <Box>
+                                    <label htmlFor='message' className='form-label'>
+                                        Wiadomość
+                                        <span className='text-danger'>&nbsp;*</span>
+                                    </label>
+                                    <textarea className='form-control' name='message' rows='6' required></textarea>
+                                </Box>
+                                <Box
+                                    className='link-contained-submit'
+                                    width='auto'
+                                >
+                                    <Button
+                                        variant='contained'
+                                        color='primary'
+                                        size='large'
+                                        type='submit'
+                                        id='liveToastBtn'
+                                    >
+                                        Wyślij wiadomość
+                                    </Button>
+                                </Box>
+                            </form>
+                        </Box>
                         <Box className='contact-details-wrapper'>
-                            <Box marginBottom={2}>
+                            {/* <Box marginBottom={2}>
                                 <Typography className='paragraph'>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare dictum ultricies. In hac habitasse platea dictumst. Integer eget ultricies erat. Duis vestibulum convallis orci, sed sodales diam placerat vel. Nunc blandit massa sapien, sit amet porttitor nisi condimentum.
                                 </Typography>
-                            </Box>
+                            </Box> */}
                             <Box
                                 display={'flex'}
                                 flexDirection={'column'}
@@ -124,28 +194,21 @@ const ContactView = () => {
                                 ))}
                             </Box>
                         </Box>
-                        <Box
-                            className='contact-wrapper-map'
-                            data-aos={'fade-in'}
-                            data-aos-delay={'300'}
-                        >
-                            <iframe
-                                width="100%"
-                                height="100%"
-                                frameBorder="0"
-                                title="map"
-                                marginHeight={0}
-                                marginWidth={0}
-                                scrolling="no"
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9694.856415856955!2d21.453784!3d52.592862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ee5a5adb9d581%3A0x2835d4bb585fbf47!2sFryderyka%20Chopina%2013%2C%2007-200%20Wyszk%C3%B3w!5e0!3m2!1spl!2spl!4v1660443766192!5m2!1spl!2spl"
-                                style={{
-                                    minHeight: 500,
-                                    borderRadius: 8,
-                                    boxShadow: '1px 2px 6px rgb(0 0 0 / 4%)'
-                                }}
-                            />
-                        </Box>
                     </Container>
+                    <iframe
+                        width='100%'
+                        height='100%'
+                        frameBorder='0'
+                        title='map'
+                        marginHeight={0}
+                        marginWidth={0}
+                        scrolling='no'
+                        src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9694.856415856955!2d21.453784!3d52.592862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ee5a5adb9d581%3A0x2835d4bb585fbf47!2sFryderyka%20Chopina%2013%2C%2007-200%20Wyszk%C3%B3w!5e0!3m2!1spl!2spl!4v1660443766192!5m2!1spl!2spl'
+                        style={{
+                            minHeight: 500,
+                            marginBottom: -6
+                        }}
+                    />
                 </Box>
             </Box>
         </Box>

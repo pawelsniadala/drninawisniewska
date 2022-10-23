@@ -66,6 +66,7 @@ import TechnologyFonsSvrFractionLaserCo2Partial from './partials/technology/Tech
 import TechnologyAlmaAccentUltraVShapePartial from './partials/technology/TechnologyAlmaAccentUltraVShapePartial';
 import TechnologySonoQueenPartial from './partials/technology/TechnologySonoQueenPartial';
 import ContactView from './ContactView';
+import Toast from '../components/Toast';
 
 const Root = () => (
     <MainTemplate>
@@ -136,6 +137,7 @@ const Root = () => (
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>
             </main>
+            <Toast />
             <FooterSection />
             <ScrollArrow />
         </Router>

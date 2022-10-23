@@ -75,17 +75,21 @@
     }
 }
 
-.button-contained-submit {
+.link-contained-submit {
+    padding-top: 30px;
+
     button.MuiButton-root {
-        background-color: #1976d2;
+        background-color: transparent;
         color: rgba(255, 255, 255, 0.95);
-        border-radius: 4px;
-        box-shadow: 0 3px 6px 0 rgb(140 152 164 / 25%);
+        box-shadow: none;
+        border-radius: 180px !important;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 500;
+        background-image: linear-gradient(45deg, #D29A3E 0%, #DBAF62  51%, #DDBD83  100%);
 
         &:hover {
-            text-decoration: none;
-            background-color: #1565c0;
-            box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%), 0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+            background-image: linear-gradient(45deg, #c88e2f 0%, #d6a44d  51%, #d8b26f  100%);
+            box-shadow: none;
         }
     }
 }
