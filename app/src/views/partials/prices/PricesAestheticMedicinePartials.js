@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
@@ -680,7 +681,7 @@ const Table13 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        Alma Laser Harmony XL PRO - nr 1 na świecie
+                        Alma Harmony XL Pro
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena
@@ -730,7 +731,7 @@ const Table14 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        Laser frakcyjny CO2
+                        Fons SVR Laser Frakcyjny CO<sub>2</sub>
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         Cena

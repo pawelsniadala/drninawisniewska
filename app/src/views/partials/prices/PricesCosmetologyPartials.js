@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Table from '@mui/material/Table';
@@ -256,45 +257,6 @@ const Table5 = () => {
     );
 }
 
-// const Table6 = () => {
-//     function createData(name, price) {
-//         return { name, price };
-//     }
-
-//     const rows = [
-//         createData('Oczy', 250)
-//     ];
-
-//     return (
-//         <TableContainer className='table-container' component={Paper} >
-//             <Table size="small" aria-label="customized table">
-//                 <TableHead>
-//                     <TableRow>
-//                     <StyledTableCell className="featured">
-//                         Retix C Eye - zabieg z retinolem i witaminą C
-//                     </StyledTableCell>
-//                     <StyledTableCell align="right">
-//                         Cena
-//                     </StyledTableCell>
-//                     </TableRow>
-//                 </TableHead>
-//                 <TableBody>
-//                     {rows.map((row) => (
-//                         <StyledTableRow key={row.name}>
-//                             <StyledTableCell component="th" scope="row">
-//                                 {row.name}
-//                             </StyledTableCell>
-//                             <StyledTableCell align="right">
-//                                 {row.price}
-//                             </StyledTableCell>
-//                         </StyledTableRow>
-//                     ))}
-//                 </TableBody>
-//             </Table>
-//         </TableContainer>
-//     );
-// }
-
 const Table7 = () => {
     function createData(name, price) {
         return { name, price };
@@ -347,52 +309,6 @@ const Table7 = () => {
     );
 }
 
-// const Table8 = () => {
-//     function createData(name, price) {
-//         return { name, price };
-//     }
-
-//     const rows = [
-//         createData('Peeling węglowy', 350),
-//         createData('Architect Peel Mision', 250),
-//         createData('Kwas ferulowy', 200),
-//         createData('Kwas laktobionowy', 200),
-//         createData('Kwas traneksamowy (przebarwienia)', 300),
-//         createData('Namelau Cafeico', 350),
-//         createData('A.C. Solution', 250),
-//         createData('C.R. Complexy', 250)
-//     ];
-
-//     return (
-//         <TableContainer className='table-container' component={Paper} >
-//             <Table size="small" aria-label="customized table">
-//                 <TableHead>
-//                     <TableRow>
-//                     <StyledTableCell className="featured">
-//                         Pielęgnacja skóry z niedoskonałościami
-//                     </StyledTableCell>
-//                     <StyledTableCell align="right">
-//                         Cena
-//                     </StyledTableCell>
-//                     </TableRow>
-//                 </TableHead>
-//                 <TableBody>
-//                     {rows.map((row) => (
-//                         <StyledTableRow key={row.name}>
-//                             <StyledTableCell component="th" scope="row">
-//                                 {row.name}
-//                             </StyledTableCell>
-//                             <StyledTableCell align="right">
-//                                 {row.price}
-//                             </StyledTableCell>
-//                         </StyledTableRow>
-//                     ))}
-//                 </TableBody>
-//             </Table>
-//         </TableContainer>
-//     );
-// }
-
 const Table9 = () => {
     function createData(name, price) {
         return { name, price };
@@ -440,24 +356,25 @@ const Table10 = () => {
     }
 
     const rows = [
-        createData('Szyja', 190),
-        createData('Broda', 190),
-        createData('Szyja, policzki', 250),
-        createData('Okolica między brwiami', 50),
-        createData('Pachy', 250),
-        createData('Kark', 'Od 250'),
-        createData('Tors/Klatka piersiowa', 400),
-        createData('Plecy', 400),
-        createData('Plecy męskie', 'Od 400'),
-        createData('Brzuch', 200),
-        createData('Ramiona', 200),
-        createData('Przedramiona', 200),
-        createData('Pośladki', 250),
-        createData('Łydki', 350),
-        createData('Uda', 400),
-        createData('Całe nogi', 600),
-        createData('Bikini podstawowe', 300),
-        createData('Bikini pełne', 400)
+        createData('Górna warga', 190, '-'),
+        createData('Broda', 190, 560),
+        createData('Wąsik', 190, 560),
+        createData('Szyja, policzki', 250, '-'),
+        createData('Okolica między brwiami', 50, '-'),
+        createData('Pachy', 250, 700),
+        createData('Kark', 'Od 250', '-'),
+        createData('Tors/Klatka piersiowa', 400, '-'),
+        createData('Plecy', 400, '-'),
+        createData('Plecy męskie', 'Od 400', '-'),
+        createData('Brzuch', 200, '-'),
+        createData('Ramiona', 200, '-'),
+        createData('Przedramiona', 200, '-'),
+        createData('Pośladki', 250, '-'),
+        createData('Łydki', 350, 1000),
+        createData('Uda', 400, 1100),
+        createData('Całe nogi', 600, 2000),
+        createData('Bikini podstawowe', 300, 840),
+        createData('Bikini pełne', 400, 1100)
     ];
 
     return (
@@ -466,9 +383,9 @@ const Table10 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        VECTUS - epilacja laserowa
+                        Vectus - epilacja laserowa
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell colSpan={2} align="right">
                         Cena
                     </StyledTableCell>
                     </TableRow>
@@ -478,6 +395,9 @@ const Table10 = () => {
                     </StyledTableCell>
                     <StyledTableCell align="right">
                         1 zabieg
+                    </StyledTableCell>
+                    <StyledTableCell align="right">
+                        4 zabiegi
                     </StyledTableCell>
                     </TableRow>
                 </TableHead>
@@ -489,6 +409,9 @@ const Table10 = () => {
                             </StyledTableCell>
                             <StyledTableCell align="right">
                                 {row.price}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                                {row.fat}
                             </StyledTableCell>
                         </StyledTableRow>
                     ))}
@@ -517,7 +440,7 @@ const Table11 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className="featured">
-                        ICOONE LASER MED 2
+                        Icoone Laser Med 2
                     </StyledTableCell>
                     <StyledTableCell align="right" colSpan={3}>
                         Cena
@@ -573,9 +496,7 @@ const PricesCosmetologyPartials = () => {
             <Table3 />
             <Table4 />
             <Table5 />
-            {/* <Table6 /> */}
             <Table7 />
-            {/* <Table8 /> */}
             <Table9 />
             <Table10 />
             <Table11 />
