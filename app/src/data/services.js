@@ -140,7 +140,7 @@ export const usg = {
 
 export const endocrinology = {
     image: servicesEndocrinology,
-    title: 'Endykrologia',
+    title: 'Endokrynologia',
     description: 'Nauka o wydzielaniu wewnętrznym, gruczołach, hormonach i ich działaniu. Jako dziedzina medycyny, zajmuje się zaburzeniami funkcji gruczołów wydzielania wewnętrznego, np. przysadki mózgowej, tarczycy, nadnerczy, jajników',
     link: `<a href='https://pl.freepik.com/zdjecia/tarczyca'>Tarczyca zdjęcie utworzone przez stefamerpik - pl.freepik.com</a>`,
     path: '/services/endocrinology',

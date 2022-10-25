@@ -8,7 +8,7 @@ const Toast = () => (
             role='alert'
             aria-live='assertive'
             aria-atomic='true'
-            data-bs-delay='500000'
+            data-bs-delay='5000'
         >
             <Box className='d-flex'>
                 <Box className='toast-body'>

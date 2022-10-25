@@ -27,7 +27,8 @@ const ContactView = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_ry9l1s7', 'template_kidfc2k', form.current, '_o3zGPDB_96l97OYE')
+        // emailjs.sendForm('service_ry9l1s7', 'template_kidfc2k', form.current, '_o3zGPDB_96l97OYE')
+        emailjs.sendForm('service_9g7vvpa', 'template_m31cx8e', form.current, 'Jiq_tSM15t4_c67cj')
             .then((result) => {
                 console.log(result.text);
                 showToast();

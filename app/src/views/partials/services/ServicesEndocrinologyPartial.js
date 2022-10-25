@@ -46,13 +46,13 @@ const ServicesEndocrinologyPartial = () => {
                                     Usługi
                                 </Link>
                                 <Typography color='text.primary'>
-                                    Endykrologia
+                                    Endokrynologia
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Endykrologia
+                                Endokrynologia
                             </Typography>
                         </Box>
                     </Container>
@@ -86,7 +86,7 @@ const ServicesEndocrinologyPartial = () => {
                         </Box>
                         <Box className='proposed-services'>
                             <Box className='card-wrapper services-proposed'>
-                                {services.length ? services.filter(item => item.title !== 'Endykrologia').map((item, index) => (
+                                {services.length ? services.filter(item => item.title !== 'Endokrynologia').map((item, index) => (
                                     <CardProposed
                                         key={index}
                                         cardTitle={item.title}

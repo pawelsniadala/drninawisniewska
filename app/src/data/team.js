@@ -59,7 +59,7 @@ export const justynaFilipek = {
             path: '/services/gynecology'
         },
         {
-            text: 'Endykrologia',
+            text: 'Endokrynologia',
             path: '/services/endocrinology'
         },
         {

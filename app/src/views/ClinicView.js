@@ -173,7 +173,7 @@ const TechnologyView = () => {
                                 </Grid>
                                 <Grid container spacing={1} sx={{ marginTop: 0 }}>
                                     {[
-                                        'Endykrologia',
+                                        'Endokrynologia',
                                         'Ginekologia',
                                         'Ortopedia',
                                         'Chirurgia naczyniowa',

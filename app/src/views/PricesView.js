@@ -502,7 +502,7 @@ const PricesView = () => {
                                             onClick={() => setTab('prices-usg')}
                                         />
                                         <Tab
-                                            label='Endykrologia'
+                                            label='Endokrynologia'
                                             component={Link}
                                             to={`/prices/endocrinology`}
                                             value={`/prices/endocrinology`}
