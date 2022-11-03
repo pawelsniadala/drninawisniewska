@@ -17,9 +17,25 @@ import almaAccentUltraVShapeImageSmall from '../assets/technology/almaAccentUltr
 import almaAccentUltraVShapeImageMedium from '../assets/technology/almaAccentUltraVShape/almaAccentUltraVShapeImageMedium.png';
 // import almaAccentPrimeImageLarge from '../assets/technology/almaAccentPrime/almaAccentPrimeImageLarge.png';
 
+import fotoFinderDermoscopeVexiaImageSmall from '../assets/technology/fotoFinderDermoscopeVexia/fotoFinderDermoscopeVexiaImageSmall.png';
+import fotoFinderDermoscopeVexiaImageMedium from '../assets/technology/fotoFinderDermoscopeVexia/fotoFinderDermoscopeVexiaImageMedium.png';
+import fotoFinderDermoscopeVexiaImageLarge from '../assets/technology/fotoFinderDermoscopeVexia/fotoFinderDermoscopeVexiaImageLarge.png';
+
+import philipsUltrasonografAffiniti50ImageSmall from '../assets/technology/philipsUltrasonografAffiniti50/philipsUltrasonografAffiniti50ImageSmall.png';
+import philipsUltrasonografAffiniti50ImageMedium from '../assets/technology/philipsUltrasonografAffiniti50/philipsUltrasonografAffiniti50ImageMedium.png';
+import philipsUltrasonografAffiniti50ImageLarge from '../assets/technology/philipsUltrasonografAffiniti50/philipsUltrasonografAffiniti50ImageLarge.png';
+
 import sonoQueenImageSmall from '../assets/technology/sonoQueen/sonoQueenImageSmall.png';
 import sonoQueenImageMedium from '../assets/technology/sonoQueen/sonoQueenImageMedium.png';
 import sonoQueenImageLarge from '../assets/technology/sonoQueen/sonoQueenImageLarge.png';
+
+import biolitecLeonardoMiniImageLarge from '../assets/technology/biolitecLeonardoMini/biolitecLeonardoMiniImageLarge.png';
+import biolitecLeonardoMiniImageMedium from '../assets/technology/biolitecLeonardoMini/biolitecLeonardoMiniImageMedium.png';
+import biolitecLeonardoMiniImageSmall from '../assets/technology/biolitecLeonardoMini/biolitecLeonardoMiniImageSmall.png';
+
+import hettichArthrexAcpImageLarge from '../assets/technology/hettichArthrexAcp/hettichArthrexAcpImageLarge.png';
+import hettichArthrexAcpImageMedium from '../assets/technology/hettichArthrexAcp/hettichArthrexAcpImageMedium.png';
+import hettichArthrexAcpImageSmall from '../assets/technology/hettichArthrexAcp/hettichArthrexAcpImageSmall.png';
 
 export const vectus = {
     designation: 'vectus',
@@ -80,6 +96,53 @@ export const almaAccentUltraVShape = {
     services: ['cosmetology']
 };
 
+export const biolitecLeonardoMini = {
+    designation: 'biolitecLeonardoMini',
+    title: 'Biolitec Leonardo Mini',
+    description: 'Laser Biolitec® Leonardo® Mini współpracuje z szerokim spektrum specjalnych światłowódów i zestawów aplikacyjnych opracowanych przez Biolitec®. Leonardo® Mini współpracuje z szerokim spektrum światłowodów opracowanych przez Biolitec. Zastosowane złącze światłowodu jest przyjazne dla użytkownika oraz posiada zabezpieczenie elektroniczne.',
+    imageSmall: biolitecLeonardoMiniImageSmall,
+    imageMedium: biolitecLeonardoMiniImageMedium,
+    imageLarge: biolitecLeonardoMiniImageLarge,
+    path: '/technology/biolitec-leonardo-mini',
+    badge: false,
+    services: ['']
+};
+export const hettichArthrexAcp = {
+    designation: 'hettichArthrexAcp',
+    title: 'Hettich Arthrex ACP',
+    description: 'Osocze bogatopłytkowe to zabieg modny i tani. Ale czy działa? to pytanie słyszę prawie codziennie. No właśnie działa czy nie? Odpowiedź jest prosta. Nie każde osocze działa ! Wynika to z faktu, że niektórzy pracują na zwykłych, niesterylnych probówkach, bez certyfikatów a ilość odwirowanych płytek krwi jest znikoma. Wybrałam system Arthrex, gdyż nie wymaga żadnych koagulantów, jest to system bezpieczny i o bardzo dużej koncentracji płytek krwi. Z jednego pobrania krwi otrzymuję 6-7 ml osocza co oznacza 3 strzykawki samych płytek krwi z licznymi czynnikami wzrostu. W trakcie jednego zabiegu w cenie 700 możemy ostrzyknąć aż 3-4 okolice (twarz, szyja, dekolt, skóra głowy, rozstępy, blizny). już dziś!',
+    imageSmall: hettichArthrexAcpImageSmall,
+    imageMedium: hettichArthrexAcpImageMedium,
+    imageLarge: hettichArthrexAcpImageLarge,
+    path: '/technology/hettich-arthrex-acp',
+    badge: false,
+    services: ['']
+};
+
+export const fotoFinderDermoscopeVexia = {
+    designation: 'fotoFinderDermoscopeVexia',
+    title: 'FotoFinder Dermoscope Vexia',
+    description: 'FotoFinder dermoscope vexia jest wszechstronnym systemem wyposażonym w kamerę medicam® 1000 (do wyboru z obiektywem D-Scope IV). Jest mocnym wsparciem w postawieniu diagnozy, zachęca pacjentów do regularnych kontroli, a co najważniejsze chroni przed niepotrzebnym wycinaniem znamion.',
+    imageSmall: fotoFinderDermoscopeVexiaImageSmall,
+    imageMedium: fotoFinderDermoscopeVexiaImageMedium,
+    imageLarge: fotoFinderDermoscopeVexiaImageLarge,
+    path: '/technology/foto-finder-dermoscope-vexia',
+    badge: false,
+    services: ['dermatology']
+};
+
+export const philipsUltrasonografAffiniti50 = {
+    designation: 'philipsUltrasonografAffiniti50',
+    title: 'Philips Ultrasonograf Affiniti 50',
+    description: 'Ultrasonograf Affiniti 50 firmy Philips zapewnia znakomity przebieg pracy. To odpowiedź na codzienne potrzeby szybkiego skanowania i efektywnego uzyskiwania wyników, a także znakomite rozwiązanie dla placówek wymagających obrazowania wysokiej jakości oraz sprawdzonych rozwiązań klinicznych.',
+    imageSmall: philipsUltrasonografAffiniti50ImageSmall,
+    imageMedium: philipsUltrasonografAffiniti50ImageMedium,
+    imageLarge: philipsUltrasonografAffiniti50ImageLarge,
+    path: '/technology/philips-ultrasonograf-affiniti-50',
+    badge: false,
+    services: ['usg']
+};
+
 export const sonoQueen = {
     designation: 'sonoQueen',
     title: 'SonoQueen',
@@ -98,5 +161,9 @@ export const technology = [
     { ...icooneLaserMed2 },
     { ...fonsSvrFractionLaserCo2 },
     { ...almaAccentUltraVShape },
+    { ...biolitecLeonardoMini },
+    { ...hettichArthrexAcp },
+    { ...fotoFinderDermoscopeVexia },
+    { ...philipsUltrasonografAffiniti50 },
     { ...sonoQueen }
 ];

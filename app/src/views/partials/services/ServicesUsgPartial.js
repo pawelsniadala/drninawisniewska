@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -11,13 +11,37 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
+import CardTechnology from '../../../components/CardTechnology';
 
 import { services, usg } from '../../../data/services';
+import { technology } from '../../../data/technology';
 
 const ServicesUsgPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
+
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
 
     return (
         <Box className='contact-view'>
@@ -83,6 +107,34 @@ const ServicesUsgPartial = () => {
                                 </Box>
                             </Box>
 
+                            <Box marginBottom={3}>
+                                <Typography variant={'h5'} className='header alternative'>
+                                    Technologia
+                                </Typography>
+                                <Box className='card-wrapper technology page'>
+                                    {width >= 991.98 ? (
+                                        technology.filter(item => item.services.includes('usg')).map((item, index) => (
+                                            <CardTechnology
+                                                key={index}
+                                                cardImage={item.imageMedium}
+                                                cardTitle={item.title}
+                                                cardPath={item.path}
+                                                cardBadge={item.badge}
+                                            />
+                                        ))
+                                    ) : (
+                                        technology.filter(item => item.services.includes('usg')).map((item, index) => (
+                                            <CardProposed
+                                                key={index}
+                                                cardTitle={item.title}
+                                                cardDescription={item.description}
+                                                cardImage={item.imageSmall}
+                                                cardPath={item.path}
+                                            />
+                                        ))
+                                    )}
+                                </Box>
+                            </Box>
                         </Box>
                         <Box className='proposed-services'>
                             <Box className='card-wrapper services-proposed'>

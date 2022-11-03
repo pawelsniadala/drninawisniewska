@@ -143,31 +143,17 @@ const FooterSection = () => {
                         </Typography>
                         <Typography
                             component='a'
-                            href='/technology/icoone-laser-med2'
-                            className='footer-text link'
-                        >
-                            Icoone Laser Med 2
-                        </Typography>
-                        <Typography
-                            component='a'
-                            href='/technology/alma-accent-prime'
-                            className='footer-text link'
-                        >
-                            Alma Accent Prime
-                        </Typography>
-                        <Typography
-                            component='a'
-                            href='/technology/sono-queen'
-                            className='footer-text link'
-                        >
-                            SonoQueen
-                        </Typography>
-                        <Typography
-                            component='a'
                             href='/technology/alma-harmony-xl-pro'
                             className='footer-text link'
                         >
                             Alma Harmony XL Pro
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='/technology/icoone-laser-med2'
+                            className='footer-text link'
+                        >
+                            Icoone Laser Med 2
                         </Typography>
                         <Typography
                             component='a'
@@ -176,6 +162,50 @@ const FooterSection = () => {
                         >
                             Fons SVR Laser Frakcyjny CO<sub>2</sub>
                         </Typography>
+                        <Typography
+                            component='a'
+                            href='/technology/alma-accent-ultra-v-shape'
+                            className='footer-text link'
+                        >
+                            Alma Accent Ultra V Shape
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='/technology/biolitec-leonardo-mini'
+                            className='footer-text link'
+                        >
+                            Biolitec Leonardo Mini
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='/technology/hettich-arthrex-acp'
+                            className='footer-text link'
+                        >
+                            Hettich Arthrex ACP
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='/technology/foto-finder-dermoscope-vexia'
+                            className='footer-text link'
+                        >
+                            FotoFinder Dermoscope Vexia
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='/technology/philips-ultrasonograf-affiniti-50'
+                            className='footer-text link'
+                        >
+                            Philips Ultrasonograf Affiniti 50
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='/technology/sono-queen'
+                            className='footer-text link'
+                        >
+                            SonoQueen
+                        </Typography>
+
+
                         {/* <Typography
                             variant='span'
                             className='footer-text'
