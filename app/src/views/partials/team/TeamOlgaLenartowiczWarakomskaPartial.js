@@ -65,7 +65,7 @@ const TeamOlgaLenartowiczWarakomskaPartial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {olgaLenartowiczWarakomska.name}
+                                &nbsp;
                             </Typography>
                         </Box>
                     </Container>
