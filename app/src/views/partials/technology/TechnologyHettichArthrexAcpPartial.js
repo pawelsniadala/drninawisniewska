@@ -118,7 +118,7 @@ const TechnologyHettichArthrexAcpPartial = () => {
                                     Innowacyjny system PRP firmy Arthrex pozwala na łatwe przygotowanie PRP o sprawdzonym i udowodnionym klinicznie działaniu bez kompromisów w zakresie bezpieczeństwa i jakości.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Ponieważ PRP uzyskane za pomocą systemu podwójnej strzykawki Arthrex® ACP® nie zawiera antykoagulantów, które ze względu na swój poziom pH mogą wywoływać podczas iniekcji nieprzyjemne uczucie pieczenia, jego podanie pacjentowi jest wyjątkowo mało bolesne.
+                                    Ponieważ PRP uzyskane za pomocą systemu podwójnej strzykawki Arthrex<sup>®</sup> ACP<sup>®</sup>nie zawiera antykoagulantów, które ze względu na swój poziom pH mogą wywoływać podczas iniekcji nieprzyjemne uczucie pieczenia, jego podanie pacjentowi jest wyjątkowo mało bolesne.
                                 </Typography>
                             </Box>
                         </Box>

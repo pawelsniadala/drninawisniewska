@@ -61,7 +61,7 @@ const TechnologyBiolitecLeonardoMiniPartial = () => {
                         <Box className='technology-description'>
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
-                                    Laser Biolitec® Leonardo® Mini współpracuje z szerokim spektrum specjalnych światłowódów i zestawów aplikacyjnych opracowanych przez biolitec®.
+                                    Laser Biolitec<sup>®</sup> Leonardo<sup>®</sup> Mini współpracuje z szerokim spektrum specjalnych światłowódów i zestawów aplikacyjnych opracowanych przez Biolitec<sup>®</sup>.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
                                     <LazyLoadImage
@@ -107,7 +107,7 @@ const TechnologyBiolitecLeonardoMiniPartial = () => {
                                     ))}
                                 </Grid>
                                 <Typography className='paragraph'>
-                                    Leonardo® Mini współpracuje z szerokim spektrum światłowodów opracowanych przez Biolitec. Zastosowane złącze światłowodu jest przyjazne dla użytkownika oraz posiada zabezpieczenie elektroniczne.
+                                    Leonardo<sup>®</sup> Mini współpracuje z szerokim spektrum światłowodów opracowanych przez Biolitec. Zastosowane złącze światłowodu jest przyjazne dla użytkownika oraz posiada zabezpieczenie elektroniczne.
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
