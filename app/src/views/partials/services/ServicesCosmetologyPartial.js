@@ -111,7 +111,7 @@ const ServicesCosmetologyPartial = () => {
                                     />
                                 </Box>
                                 <Typography className='paragraph'>
-                                    <strong>Mechanizm działania</strong> peelingów chemicznych polega na <strong>kontrolowanym złuszczania</strong> powierzchownych warstw naskórka i/lub górnych warstw skóry właściwej. Peelingi rozluźniają połączenia międzykomórkowe keratynocytów, komórek skóry, dzięki czemu dochodzi do złuszczania jej zewnętrznych warstw. Pobudzone zostają naturalne procesy gojenia a także następuje przyspieszona przebudowa skóry dzięki <strong>stymulacji skóry do syntezy nowego kolagenu i elastyny</strong>. W konsekwencji powierzchniowe defekty estetyczne zostają usunięte, a problemy zlokalizowane w głębszych warstwach zostają zniwelowane.
+                                    <strong>Mechanizm działania</strong> peelingów chemicznych polega na <strong>kontrolowanym złuszczaniu</strong> powierzchownych warstw naskórka i/lub górnych warstw skóry właściwej. Peelingi rozluźniają połączenia międzykomórkowe keratynocytów, komórek skóry, dzięki czemu dochodzi do złuszczania jej zewnętrznych warstw. Pobudzone zostają naturalne procesy gojenia a także następuje przyspieszona przebudowa skóry dzięki <strong>stymulacji skóry do syntezy nowego kolagenu i elastyny</strong>. W konsekwencji powierzchniowe defekty estetyczne zostają usunięte, a problemy zlokalizowane w głębszych warstwach zostają zniwelowane.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     Peelingi chemiczne to zabiegi <strong>pielęgnacyjne</strong> oraz <strong>lecznicze</strong>. Stanowią dobrą opcję dla osób, które nie chcą zdecydować się na bardziej inwazyjny zabieg z medycyny estetycznej lub szukają <strong>alternatywnego leczenia skór problemowych</strong>. Zastosowanie kwasów pomaga w usunięciu przebarwień, likwidowaniu blizn i leczeniu trądziku.
@@ -151,7 +151,7 @@ const ServicesCosmetologyPartial = () => {
                                     {[
                                         'Należy zachować sterylność pozabiegową (świeży ręcznik, pościel).',
                                         'Miejsce zabiegowe należy smarować kremem regeneracyjnym (Solcoseryl, Zinalfate, Cicalfate) do całkowitego zagojenia.',
-                                        'Nie należy  zdrapywania lub dodatkowego złuszczania odchodzącego naskórka.',
+                                        'Nie należy zdrapywanić lub dodatkowo złuszczać odchodzącego naskórka.',
                                         'Nie należy opalać miejsca zabiegowego, należy chronić skórę przed promieniami słonecznymi (SPF50).',
                                         'Należy stosować delikatny preparat do mycia (Cetaphil, emulsja PhDoctor).',
                                         'Na tydzień przed zabiegiem nie stosować kremów, maści z retinolem (witamina A).',

@@ -163,7 +163,7 @@ const ServicesAestheticMedicinePartial = () => {
                                     Alluzience®
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Nasz Klinika dysponuje również <strong>pierwszym na polskim rynku</strong> płynnym neuromodulatorem Alluzience®. Preparat nazywany "botoksem PREMIUM" to płynny neuromodulator BoNT-A.
+                                    Nasza Klinika dysponuje również <strong>pierwszym na polskim rynku</strong> płynnym neuromodulatorem Alluzience®. Preparat nazywany "botoksem PREMIUM" to płynny neuromodulator BoNT-A.
                                 </Typography>
                                 <Typography className='paragraph heading'>
                                     <strong>Alluzience® ABO Liquid od innych preparatów toksyny botulinowej odróżnia między innymi</strong>:
@@ -171,7 +171,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
                                         'szybkość działania - preparat zaczyna działać od razu, od momentu wstrzyknięcia, a efekty jej działania pojawiają się z czasem,',
-                                        'ługość działania,',
+                                        'długość działania,',
                                         'brak środków konserwujących, laktozy, białka ludzkiego czy zwierzęcego co znacząco obniża potencjał alergizujący preparatu.'
                                     ].map((item, index) => (
                                         <ListBulleted
@@ -265,7 +265,7 @@ const ServicesAestheticMedicinePartial = () => {
                                     ))}
                                 </Grid>
                                 <Typography className='paragraph'>
-                                    <strong>Przeciwwskazania</strong>: ciąża i laktacja, aktywne infekcje wirusowe lub bakteryjne, nadciśnienie tętnicze, choroby autoimmunologiczne, stany zapalne, uczulenie na stosowanesubstancje, zażywanie antykoagulantów, zażywanie doustnych kortykosteroidów, poważna egzema, łuszczyca, niestabilna cukrzyca, czynna choroba nowotworowa oraz okres do 5 lat od wyleczenia.
+                                    <strong>Przeciwwskazania</strong>: ciąża i laktacja, aktywne infekcje wirusowe lub bakteryjne, nadciśnienie tętnicze, choroby autoimmunologiczne, stany zapalne, uczulenie na stosowane substancje, zażywanie antykoagulantów, zażywanie doustnych kortykosteroidów, poważna egzema, łuszczyca, niestabilna cukrzyca, czynna choroba nowotworowa oraz okres do 5 lat od wyleczenia.
                                 </Typography>
                             </Box>
 
