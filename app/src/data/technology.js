@@ -37,6 +37,14 @@ import hettichArthrexAcpImageLarge from '../assets/technology/hettichArthrexAcp/
 import hettichArthrexAcpImageMedium from '../assets/technology/hettichArthrexAcp/hettichArthrexAcpImageMedium.png';
 import hettichArthrexAcpImageSmall from '../assets/technology/hettichArthrexAcp/hettichArthrexAcpImageSmall.png';
 
+// import dermalight500ImageLarge from '../assets/technology/dermalight500/dermalight500ImageLarge.png';
+import dermalight500ImageMedium from '../assets/technology/dermalight500/dermalight500ImageMedium.png';
+import dermalight500ImageSmall from '../assets/technology/dermalight500/dermalight500ImageSmall.png';
+
+// import dermalight1000UvaUvb311nmImageLarge from '../assets/technology/dermalight1000UvaUvb311nm/dermalight1000UvaUvb311nmImageLarge.png';
+import dermalight1000UvaUvb311nmImageMedium from '../assets/technology/dermalight1000UvaUvb311nm/dermalight1000UvaUvb311nmImageMedium.png';
+import dermalight1000UvaUvb311nmImageSmall from '../assets/technology/dermalight1000UvaUvb311nm/dermalight1000UvaUvb311nmImageSmall.png';
+
 export const vectus = {
     designation: 'vectus',
     title: 'Vectus™',
@@ -90,7 +98,7 @@ export const almaAccentUltraVShape = {
     description: 'Accent Ultra V to zabieg, który w bezpieczny, bezbolesny sposób redukuje cellulit i tkankę tłuszczową, niweluje wiotkość skóry oraz modeluje twarz. Accent Ultra V łączy ze sobą dwie technologie, fale ultradźwiękową oraz radiofrekwencję, intensyfikując w ten sposób efekty terapeuryczne.',
     imageSmall: almaAccentUltraVShapeImageSmall,
     imageMedium: almaAccentUltraVShapeImageMedium,
-    imageLarge: almaAccentUltraVShapeImageMedium,
+    imageLarge: false,
     path: '/technology/alma-accent-ultra-v-shape',
     badge: false,
     services: ['cosmetology']
@@ -110,7 +118,7 @@ export const biolitecLeonardoMini = {
 export const hettichArthrexAcp = {
     designation: 'hettichArthrexAcp',
     title: 'Hettich Arthrex ACP',
-    description: 'Osocze bogatopłytkowe to zabieg modny i tani. Ale czy działa? to pytanie słyszę prawie codziennie. No właśnie działa czy nie? Odpowiedź jest prosta. Nie każde osocze działa ! Wynika to z faktu, że niektórzy pracują na zwykłych, niesterylnych probówkach, bez certyfikatów a ilość odwirowanych płytek krwi jest znikoma. Wybrałam system Arthrex, gdyż nie wymaga żadnych koagulantów, jest to system bezpieczny i o bardzo dużej koncentracji płytek krwi. Z jednego pobrania krwi otrzymuję 6-7 ml osocza co oznacza 3 strzykawki samych płytek krwi z licznymi czynnikami wzrostu. W trakcie jednego zabiegu w cenie 700 możemy ostrzyknąć aż 3-4 okolice (twarz, szyja, dekolt, skóra głowy, rozstępy, blizny). już dziś!',
+    description: 'Osocze bogatopłytkowe to zabieg modny i tani. Ale czy działa? to pytanie słyszę prawie codziennie. No właśnie działa czy nie? Odpowiedź jest prosta. Nie każde osocze działa! Wynika to z faktu, że niektórzy pracują na zwykłych, niesterylnych probówkach, bez certyfikatów a ilość odwirowanych płytek krwi jest znikoma. Wybrałam system Arthrex, gdyż nie wymaga żadnych koagulantów, jest to system bezpieczny i o bardzo dużej koncentracji płytek krwi. Z jednego pobrania krwi otrzymuję 6-7 ml osocza co oznacza 3 strzykawki samych płytek krwi z licznymi czynnikami wzrostu. W trakcie jednego zabiegu w cenie 700 możemy ostrzyknąć aż 3-4 okolice (twarz, szyja, dekolt, skóra głowy, rozstępy, blizny). już dziś!',
     imageSmall: hettichArthrexAcpImageSmall,
     imageMedium: hettichArthrexAcpImageMedium,
     imageLarge: hettichArthrexAcpImageLarge,
@@ -155,6 +163,30 @@ export const sonoQueen = {
     services: ['aestheticMedicine']
 };
 
+export const dermalight500 = {
+    designation: 'dermalight500',
+    title: 'Dermalight 500',
+    description: 'Dermalight 500 jako urządzenie podstawowe pozwala na terapię dłoni, stóp, klatki piersiowej, pleców, kości ogonowej oraz kolan.',
+    imageSmall: dermalight500ImageSmall,
+    imageMedium: dermalight500ImageMedium,
+    imageLarge: false,
+    path: '/technology/dermalight-500',
+    badge: false,
+    services: ['dermatology']
+};
+
+export const dermalight1000UvaUvb311nm = {
+    designation: 'dermalight1000UvaUvb311nm',
+    title: 'Dermalight 1000 UVA UVB 311nm',
+    description: 'Terapia UVB 311nm w leczeniu łuszczycy wykazuje przewagę nad naświetlaniami szerokim spektrum UVB, natomiast w porównaniu z metodą PUVA jest bardziej bezpieczna. Atopowe zapalenie skóry i bielactwo również można leczyć metodą naświetlań UVB 311 nm. Poandto dowiedziono, że fototerapia UVB 311 nm jest mniej rumieniotwórcza i karcynogenna niż PUVA. Zalety naświetlań UVB 311 nm są to: niskie ryzyko oparzeń, porównywalna skuteczność z PUVA, prostota wykonania zabiegów, wysokie korzyści terapeutyczna oraz możliwość kojarzenia z terapią miejscową i układową. UVB-NB może być zastosowane u młodszych dzieci (od ok. 3-4 r. życia), kobiet w ciąży i karmiących piersią.',
+    imageSmall: dermalight1000UvaUvb311nmImageSmall,
+    imageMedium: dermalight1000UvaUvb311nmImageMedium,
+    imageLarge: false,
+    path: '/technology/dermalight-1000-uva-uvb-311nm',
+    badge: false,
+    services: ['dermatology']
+};
+
 export const technology = [
     { ...vectus },
     { ...almaHarmonyXlPro },
@@ -165,5 +197,7 @@ export const technology = [
     { ...hettichArthrexAcp },
     { ...fotoFinderDermoscopeVexia },
     { ...philipsUltrasonografAffiniti50 },
-    { ...sonoQueen }
+    { ...sonoQueen },
+    { ...dermalight500 },
+    { ...dermalight1000UvaUvb311nm }
 ];

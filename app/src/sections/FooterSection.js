@@ -204,14 +204,20 @@ const FooterSection = () => {
                         >
                             SonoQueen
                         </Typography>
-
-
-                        {/* <Typography
-                            variant='span'
-                            className='footer-text'
+                        <Typography
+                            component='a'
+                            href='/technology/dermalight-500'
+                            className='footer-text link'
                         >
-                            Lampa  UVB
-                        </Typography> */}
+                            Dermalight 500
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='/dermalight-1000-uva-uvb-311nm'
+                            className='footer-text link'
+                        >
+                            Dermalight 1000 UVA UVB 311nm
+                        </Typography>
                     </Box>
                 </Box>
                 <Box className='contact'>
