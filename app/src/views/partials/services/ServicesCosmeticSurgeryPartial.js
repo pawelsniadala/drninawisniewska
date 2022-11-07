@@ -74,15 +74,32 @@ const ServicesCosmeticSurgeryPartial = () => {
                                     <LazyLoadImage
                                         height={'100%'}
                                         width={'100%'}
-                                        src={cosmeticSurgery.servicesCosmeticSurgeryPlasticSurgeryOfTheEyelids}
+                                        src={cosmeticSurgery.servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore}
                                         alt='Remote working'
                                         effect='blur'
                                         style={{
                                             objectFit: 'cover',
-                                            borderRadius: 8,
+                                            borderTopLeftRadius: 8,
+                                            borderTopRightRadius: 8,
                                             width: '100%',
                                             height: '100%',
-                                            maxHeight: '758px',
+                                            maxHeight: '360px',
+                                            marginBottom: '4px'
+                                        }}
+                                    />
+                                    <LazyLoadImage
+                                        height={'100%'}
+                                        width={'100%'}
+                                        src={cosmeticSurgery.servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter}
+                                        alt='Remote working'
+                                        effect='blur'
+                                        style={{
+                                            objectFit: 'cover',
+                                            borderBottomLeftRadius: 8,
+                                            borderBottomRightRadius: 8,
+                                            width: '100%',
+                                            height: '100%',
+                                            maxHeight: '360px',
                                         }}
                                     />
                                 </Box>

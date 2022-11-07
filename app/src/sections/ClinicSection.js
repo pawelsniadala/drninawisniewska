@@ -120,7 +120,6 @@ const ClinicSection = () => {
                                 variant="quilted"
                                 cols={3}
                                 rowHeight={isMd ? 300 : 160}
-                                // gap={isMd ? 16 : 4}
                                 gap={4}
                                 sx={{ overflowY: 'hidden', marginBottom: 0 }}
                             >
@@ -201,8 +200,6 @@ const ClinicSection = () => {
                                 <Typography
                                     variant="h6"
                                     align={'center'}
-                                    // color={'text.secondary'}
-                                    // data-aos={'fade-left'}
                                     sx={{
                                         fontFamily: 'Roboto, sans-serif',
                                         fontSize: '18px',
