@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 // import Grid from '@mui/material/Grid';
@@ -12,7 +12,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 
-import { services } from '../../../data/services';
+import { services, cosmeticSurgery } from '../../../data/services';
 
 const ServicesCosmeticSurgeryPartial = () => {
     useEffect(() => {
@@ -70,6 +70,22 @@ const ServicesCosmeticSurgeryPartial = () => {
                                 <Typography className='paragraph'>
                                     Plastyka powiek jest najskuteczniejszą metodą walki z twz. opadającą powieką. Wskazaniami do zabiegu prócz defektu estetycznego są również asymetria oczu, problemy z widocznością, przepukliny tłuszczowe a także wiotkość tkanki wokół oczu.
                                 </Typography>
+                                <Box marginBottom={3} marginTop={3}>
+                                    <LazyLoadImage
+                                        height={'100%'}
+                                        width={'100%'}
+                                        src={cosmeticSurgery.servicesCosmeticSurgeryPlasticSurgeryOfTheEyelids}
+                                        alt='Remote working'
+                                        effect='blur'
+                                        style={{
+                                            objectFit: 'cover',
+                                            borderRadius: 8,
+                                            width: '100%',
+                                            height: '100%',
+                                            maxHeight: '758px',
+                                        }}
+                                    />
+                                </Box>
                                 <Typography className='paragraph'>
                                     Zabieg przeprowadzany jest w znieczuleniu miejscowym. Bezpośrednio po zabiegu skóra jest zaczerwieniona i widoczne są delikatne punkty sublimacji. Drugiego dnia po zabiegu może pojawić się lekki obrzęk, który utrzymuje się maksymalnie cztery dni. Drobne strupki  odpadają  po sześciu dniach.
                                 </Typography>

@@ -10,6 +10,9 @@ import servicesPhysioterapyElasticTherapeuticTape from  "../assets/services/phys
 import servicesPhysioterapyMassage from  "../assets/services/physioteraphy/servicesPhysioterapyMassage.jpg";
 
 import servicesCosmeticSurgery from "../assets/services/servicesCosmeticSurgery.jpg";
+import servicesCosmeticSurgeryPlasticSurgeryOfTheEyelids from "../assets/services/vasularSurgery/servicesCosmeticSurgeryPlasticSurgeryOfTheEyelids.png";
+
+
 import servicesAllergology from "../assets/services/servicesAllergology.jpg";
 import servicesUsg from "../assets/services/servicesUsg.jpg";
 import servicesEndocrinology from "../assets/services/servicesEndocrinology.jpg";
@@ -110,7 +113,8 @@ export const cosmeticSurgery = {
     prices: '/prices/cosmetic-surgery',
     specialists: [
         konradKochanImageSmall
-    ]
+    ],
+    servicesCosmeticSurgeryPlasticSurgeryOfTheEyelids: servicesCosmeticSurgeryPlasticSurgeryOfTheEyelids
 };
 
 export const allergology = {

@@ -113,7 +113,7 @@ export const biolitecLeonardoMini = {
     imageLarge: biolitecLeonardoMiniImageLarge,
     path: '/technology/biolitec-leonardo-mini',
     badge: false,
-    services: ['']
+    services: ['vascularSurgery']
 };
 export const hettichArthrexAcp = {
     designation: 'hettichArthrexAcp',
