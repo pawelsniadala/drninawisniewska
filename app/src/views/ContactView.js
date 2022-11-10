@@ -12,8 +12,8 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 import Container from '../components/Container';
 import PhoneSvg from '../assets/svg/PhoneSvg';
@@ -55,6 +55,10 @@ const ContactView = () => {
                 return (
                     <FmdGoodIcon />
                 );
+            case 'hours':
+                return (
+                    <AccessTimeIcon />
+                );
             default:
         }
     }
@@ -77,7 +81,6 @@ const ContactView = () => {
                                     to='/'
                                     aria-current='page'
                                 >
-                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' /> */}
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>

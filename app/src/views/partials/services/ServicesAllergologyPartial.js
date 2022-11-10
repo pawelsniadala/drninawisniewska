@@ -27,13 +27,15 @@ const StyledTableCell = styled(TableCell)(() => ({
         borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
         padding: '12px 16px',
         lineHeight: 1.25,
-        whiteSpace: 'nowrap'
+        whiteSpace: 'nowrap',
+        color: '#535353'
     },
     [`&.${tableCellClasses.body}`]: {
         borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
         padding: '12px 16px',
         lineHeight: 1.25,
-        fontWeight: 300
+        fontWeight: 300,
+        color: '#535353'
     }
 }));
 
@@ -45,7 +47,7 @@ const StyledTableRow = styled(TableRow)(() => ({
 
 const Table1 = () => {
     function createData(num, substance, amount, petal, occurrence) {
-        return { num, substance, amount, petal, occurrence};
+        return { num, substance, amount, petal, occurrence };
     }
 
     const rows = [

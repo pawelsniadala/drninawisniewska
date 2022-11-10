@@ -17,12 +17,14 @@ const StyledTableCell = styled(TableCell)(() => ({
     [`&.${tableCellClasses.head}`]: {
         borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
         padding: '12px 16px',
-        lineHeight: 1.25
+        lineHeight: 1.25,
+        color: '#535353'
     },
     [`&.${tableCellClasses.body}`]: {
         borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
         padding: '12px 16px',
-        lineHeight: 1.25
+        lineHeight: 1.25,
+        color: '#535353'
     }
 }));
 

@@ -93,11 +93,6 @@
         filter: invert(0%) sepia(100%) saturate(7500%) hue-rotate(327deg) brightness(114%) contrast(114%);
         opacity: 0.75;
         user-select: none;
-
-        // &:hover {
-        //     opacity: 0.7;
-        //     cursor: pointer;
-        // }
     }
 
     .nav-link {
@@ -115,7 +110,6 @@
                 font-family: "Source Sans Pro", sans-serif;
                 font-size: 0.95rem;
             }
-
         }
 
         &:hover {
@@ -218,15 +212,14 @@ nav.navbar {
                             padding-right: 0;
 
                             &:hover {
-                                color: rgba(0, 0, 0, 0.65);
+                                color: rgba(0, 0, 0, 0.55);
                             }
 
                             &.active {
-                                color: rgba(0, 0, 0, 0.75);
+                                color: #d29a3e;
                             }
                         }
                     }
-
                 }
             }
 
