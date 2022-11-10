@@ -90,21 +90,21 @@ const ClinicSection = () => {
                         sectionWrapperClass='clinic'
                         sectionDescription={
                             width >= 991.98 ? (
-                            <Box
-                                className='description'
-                                data-aos={'fade-in'}
-                            >
-                                <Box>
-                                    <Typography className='paragraph'>
-                                        W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, łojotokowego zapalenia skóry, egzemy i innych chorób.
-                                    </Typography>
+                                <Box
+                                    className='description'
+                                    data-aos={'fade-in'}
+                                >
+                                    <Box>
+                                        <Typography className='paragraph'>
+                                            W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, łojotokowego zapalenia skóry, egzemy i innych chorób.
+                                        </Typography>
+                                    </Box>
+                                    <Box>
+                                        <Typography className='paragraph'>
+                                            Dodatkowym atutem jest lampa do fototerapii UVB 311 nm i PUVA - bath przeznaczona dla pacjentów z łuszczycą, AZS, wypryskiem, a także możliwość wykonania płatkowych testów kontaktowych. <Link className='link' to={'/clinic'}>Zobacz więcej <ArrowForwardIcon fontSize='14px'/></Link>
+                                        </Typography>
+                                    </Box>
                                 </Box>
-                                <Box>
-                                    <Typography className='paragraph'>
-                                        Dodatkowym atutem jest lampa do fototerapii UVB 311 nm i PUVA - bath przeznaczona dla pacjentów z łuszczycą, AZS, wypryskiem, a także możliwość wykonania płatkowych testów kontaktowych. <Link className='link' to={'/clinic'}>Zobacz więcej <ArrowForwardIcon fontSize='14px'/></Link>
-                                    </Typography>
-                                </Box>
-                            </Box>
                             ) : (
                                 <Box>
                                     <Typography className='paragraph' data-aos={'fade-right'} sx={{ textAlign: 'center' }}>

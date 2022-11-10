@@ -138,7 +138,7 @@ const ServicesSection = () => {
                         </Slider>
                     ) : (
                         <Box className='card-wrapper services'>
-                            {services.slice(0, width <= 539.98 ? 3 : 4).map((item, index) => (
+                            {services.slice(0, 4).map((item, index) => (
                                 <CardProposed
                                     key={index}
                                     cardTitle={item.title}
