@@ -14,11 +14,11 @@ import Avatar from '@mui/material/Avatar';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import SendIcon from '@mui/icons-material/Send';
 
 import Container from '../components/Container';
 import PhoneSvg from '../assets/svg/PhoneSvg';
 import EmailSvg from '../assets/svg/EmailSvg';
-import SendIcon from '@mui/icons-material/Send';
 
 import { contact } from '../data/contact';
 
