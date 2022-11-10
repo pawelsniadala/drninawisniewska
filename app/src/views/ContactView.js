@@ -18,6 +18,7 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import Container from '../components/Container';
 import PhoneSvg from '../assets/svg/PhoneSvg';
 import EmailSvg from '../assets/svg/EmailSvg';
+import SendIcon from '@mui/icons-material/Send';
 
 import { contact } from '../data/contact';
 
@@ -151,6 +152,9 @@ const ContactView = () => {
                                         size='large'
                                         type='submit'
                                         id='liveToastBtn'
+                                        endIcon={
+                                            <SendIcon />
+                                        }
                                     >
                                         Wyślij wiadomość
                                     </Button>
