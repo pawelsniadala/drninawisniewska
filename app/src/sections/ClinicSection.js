@@ -26,7 +26,7 @@ const ClinicSection = () => {
         defaultMatches: true,
     });
 
-    const [viewPortEntered, setViewPortEntered] = useState(false);
+    const [ viewPortEntered, setViewPortEntered ] = useState(false);
 
     const setViewPortVisibility = (isVisible) => {
         if (viewPortEntered) {
@@ -36,8 +36,8 @@ const ClinicSection = () => {
         setViewPortEntered(isVisible);
     };
 
-    const [currentImage, setCurrentImage] = useState(0);
-    const [viewerIsOpen, setViewerIsOpen] = useState(false);
+    const [ currentImage, setCurrentImage ] = useState(0);
+    const [ viewerIsOpen, setViewerIsOpen ] = useState(false);
 
     const openLightbox = (index) => {
         setCurrentImage(index);
@@ -55,7 +55,7 @@ const ClinicSection = () => {
     }
 
     function useWindowDimensions() {
-        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
 
         useEffect(() => {
             function handleResize() {

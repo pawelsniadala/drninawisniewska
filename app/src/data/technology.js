@@ -124,7 +124,7 @@ export const hettichArthrexAcp = {
     imageLarge: hettichArthrexAcpImageLarge,
     path: '/technology/hettich-arthrex-acp',
     badge: false,
-    services: ['']
+    services: ['aestheticMedicine']
 };
 
 export const fotoFinderDermoscopeVexia = {

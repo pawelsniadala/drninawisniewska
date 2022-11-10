@@ -5,7 +5,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import Container from '../components/Container';
 // import CardTeam from '../components/CardTeam';
@@ -25,7 +24,7 @@ const TeamView = () => {
     }
 
     function useWindowDimensions() {
-        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
 
         useEffect(() => {
             function handleResize() {
@@ -55,7 +54,6 @@ const TeamView = () => {
                                     to="/"
                                     aria-current="page"
                                 >
-                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize="smform" /> */}
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>

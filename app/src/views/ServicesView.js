@@ -6,7 +6,6 @@ import Box from '@mui/material/Box';
 import Container from '../components/Container';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-// import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
 
 import CardServices from '../components/CardServices';
 import CardProposed from '../components/CardProposed';
@@ -24,7 +23,7 @@ const ServicesView = () => {
     }
 
     function useWindowDimensions() {
-        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
 
         useEffect(() => {
             function handleResize() {
@@ -54,7 +53,6 @@ const ServicesView = () => {
                                     to='/'
                                     aria-current='page'
                                 >
-                                    {/* <NavigateBeforeIcon sx={{ mr: '3px' }} fontSize='smform' /> */}
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>

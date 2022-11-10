@@ -39,7 +39,7 @@ const HeaderSection = () => {
     }
 
     function useWindowDimensions() {
-        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
 
         useEffect(() => {
             function handleResize() {
@@ -328,7 +328,7 @@ const HeaderSection = () => {
                             <h5 className='offcanvas-title'
                                 id='offcanvasNavbarLabel'
                             >
-                                {/* Radiostory */}
+                                {/* TODO */}
                             </h5>
                             <button type='button'
                                 className='btn-close'
