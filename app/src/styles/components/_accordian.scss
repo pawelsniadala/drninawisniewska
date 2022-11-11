@@ -26,6 +26,10 @@
     background-image: url('data:image/svg+xml,\00003csvg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\00003cpath fill="rgba(0,0,0,.54)" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">\00003c/path>\00003c/svg>') !important;
 }
 
+.accordion-button:not(.collapsed):after {
+    filter: invert(61%) sepia(79%) saturate(449%) hue-rotate(357deg) brightness(85%) contrast(81%);
+}
+
 .accordion-item:first-of-type {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;

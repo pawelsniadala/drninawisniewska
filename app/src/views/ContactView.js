@@ -208,7 +208,8 @@ const ContactView = () => {
                         src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9694.856415856955!2d21.453784!3d52.592862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ee5a5adb9d581%3A0x2835d4bb585fbf47!2sFryderyka%20Chopina%2013%2C%2007-200%20Wyszk%C3%B3w!5e0!3m2!1spl!2spl!4v1660443766192!5m2!1spl!2spl'
                         style={{
                             minHeight: 500,
-                            marginBottom: -6
+                            marginBottom: -6,
+                            backgroundColor: '#ebebeb'
                         }}
                     />
                 </Box>

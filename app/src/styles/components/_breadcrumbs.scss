@@ -6,7 +6,7 @@
     .MuiBreadcrumbs-li {
         a {
             text-decoration: none !important;
-            font-family: "Source Sans Pro", sans-serif !important;
+            font-family: 'Source Sans Pro', sans-serif !important;
             font-size: 0.8rem !important;
             font-weight: 300 !important;
             color: rgba(0, 0, 0, 0.45) !important;
@@ -21,7 +21,7 @@
 
     .MuiTypography-root {
         color: rgba(0, 0, 0, 0.45) !important;
-        font-family: "Source Sans Pro", sans-serif !important;
+        font-family: 'Source Sans Pro', sans-serif !important;
         font-size: 0.8rem !important;
         font-weight: 300 !important;
     }
@@ -30,6 +30,7 @@
 .MuiBreadcrumbs-separator {
     margin-left: 3px !important;
     margin-right: 3px !important;
+    color: rgba(0, 0, 0, 0.45) !important;
 }
 
 .breadcrumb {
