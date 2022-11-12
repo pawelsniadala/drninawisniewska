@@ -61,7 +61,7 @@ const TechnologyDermalight500Partial = () => {
                         <Box className='technology-description'>
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
-                                    Urządzeniem Dermalight 500 przeznaczonym do fototerapii <strong>PUVA-bath</strong>. Metoda ta najczęściej wykorzystywana jest w terapii dłoni oraz stóp. PUVA stosuje się przy podobnych dermatozach jak przy UVB, np. przy <strong>łuszczycy krostkowej dłoni i stóp</strong>, <strong>atopowym zapaleniu skóry</strong> czy <strong>wyprysku dłoni</strong>.
+                                    Urządzeniem Dermalight 500 służy do fototerapii <strong>PUVA-bath</strong>. Metoda ta najczęściej wykorzystywana jest w terapii dłoni oraz stóp. PUVA stosuje się przy podobnych dermatozach jak przy UVB, np. przy <strong>łuszczycy krostkowej dłoni i stóp</strong>, <strong>atopowym zapaleniu skóry</strong> czy <strong>wyprysku dłoni</strong>.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     PUVA polega na naświetlaniu skóry promieniami UVA po wcześniejszym przyjęciu  światłouczulających  leków (<strong>psoralenów</strong>). PUVA-bath to odmiana naświetleń PUVA, polegająca na podaniu psoralenów miejscowo na skórę w postaci kąpieli. Najpierw dłonie/stopy chorego poddawane są 10-15 minutowej kąpieli w roztworze z psoralenów, a następnie naświetla się je promieniami UVA.
