@@ -62,7 +62,7 @@ const Table16 = () => {
 
     const rows = [
         createData('dr Olga Lenartowicz-Warakomska', 150),
-        createData('dr Klaudia Malottki', 150),
+        createData('dr Klaudia Malottki', 150)
     ];
 
     return (
@@ -103,7 +103,7 @@ const Table15 = () => {
     const rows = [
         createData('Jedna okolica', 600),
         createData('Dwie okolice', 1000),
-        createData('Trzy okolice', 1200),
+        createData('Trzy okolice', 1200)
     ];
 
     return (
@@ -143,7 +143,7 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Leczenie powikłań po zabiegach z zakresu medycyny estetycznej', 'Od 550'),
+        createData('Leczenie powikłań po zabiegach z zakresu medycyny estetycznej', 'Od 550')
     ];
 
     return (
@@ -194,7 +194,7 @@ const Table2 = () => {
         createData('Szyja', false, 900),
         createData('Dekolt', false, 900),
         createData('Leczenie nadpotliwości pach', false, 1500),
-        createData('Leczenie nadpotliwości dłoni', false, 1500),
+        createData('Leczenie nadpotliwości dłoni', false, 1500)
     ];
 
     return (
@@ -244,7 +244,7 @@ const Table3 = () => {
         createData('Korekta nosa', 'od 1100'),
         createData('Korekta brody', 'od 1100'),
         createData('Korekta brwi', 'od 1100'),
-        createData('Dłonie', 'od 1100'),
+        createData('Dłonie', 'od 1100')
     ];
 
     return (
@@ -288,7 +288,7 @@ const Table4 = () => {
         createData('Twarz szyja', 'od 500'),
         createData('Twarz szyja dekolt', 'od 800'),
         createData('Okolice oczu', 'od 300'),
-        createData('Skinbooster', 900),
+        createData('Skinbooster', 900)
     ];
 
     return (
@@ -333,7 +333,7 @@ const Table5 = () => {
         createData('Pluryal Silk', 1200),
         createData('Profhilo', 1200),
         createData('Kolagen (4 okolice)', 1200),
-        createData('Kolagen (cała twarz)', 700),
+        createData('Kolagen (cała twarz)', 700)
     ];
 
     return (
@@ -454,7 +454,7 @@ const Table8 = () => {
     const rows = [
         createData('Twarz', 800),
         createData('Twarz, szyja lub dekolt', 1100),
-        createData('Skóra głowy', 800),
+        createData('Skóra głowy', 800)
     ];
 
     return (
@@ -533,7 +533,7 @@ const Table10 = () => {
     }
 
     const rows = [
-        createData('Rystylane SkinBooster Vital 1ml', 900),
+        createData('Rystylane SkinBooster Vital 1ml', 900)
     ];
 
     return (
@@ -674,7 +674,7 @@ const Table13 = () => {
         createData('Zamykanie naczynek - nos', 'od 200', 'Dokładną cenę ustala lekarz.'),
         createData('Zamykanie naczyń na kończynach dolnych', 'od 200', 'Dokładną cenę ustala lekarz.'),
         createData('Blizny potrądzikowe', 'od 200', 'Dokładną cenę ustala lekarz.'),
-        createData('Rozstępy, blizny', 'od 200', 'Dokładną cenę ustala lekarz.'),
+        createData('Rozstępy, blizny', 'od 200', 'Dokładną cenę ustala lekarz.')
     ];
 
     return (

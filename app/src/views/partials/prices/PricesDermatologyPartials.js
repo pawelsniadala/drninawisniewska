@@ -61,7 +61,7 @@ const Table1 = () => {
         createData('lek. med. Paulina Tatara', 180),
         createData('lek. med. Justyna Kłoniecka', 180),
         createData('lek. med. Katarzyna Myśliwiec-Czajka', 180),
-        createData('lek. med. Katarzyna Rychlik', 180),
+        createData('lek. med. Katarzyna Rychlik', 180)
     ];
 
     return (
