@@ -66,13 +66,13 @@ const Table1 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper} >
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className="featured">
+                    <StyledTableCell className='featured'>
                         Konsultacja dermatologiczna
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         Cena
                     </StyledTableCell>
                     </TableRow>
@@ -80,10 +80,10 @@ const Table1 = () => {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -115,25 +115,25 @@ const Table2 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper} sx={{ width: '100%', overflow: 'auto' }}>
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className="featured">
+                    <StyledTableCell className='featured'>
                         Nazwa
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         Cena
                     </StyledTableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {rows.map((row) => (
-                        <StyledTableRow key={row.name} className="caption">
-                            <StyledTableCell component="th" scope="row">
+                        <StyledTableRow key={row.name} className='caption'>
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                                 {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -146,11 +146,11 @@ const Table2 = () => {
 
 const PricesDermatologyPartials = () => {
     useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
 
     return (
-        <Box display="grid" gap={'15px'}>
+        <Box display='grid' gap={'15px'}>
             <Table1 />
             <Table2 />
         </Box>

@@ -42,13 +42,13 @@ const Table1 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper}>
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
                     <StyledTableCell>
                         Nazwa
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         Cena
                     </StyledTableCell>
                     </TableRow>
@@ -56,10 +56,10 @@ const Table1 = () => {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -94,13 +94,13 @@ const Table2 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper}>
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className="featured">
+                    <StyledTableCell className='featured'>
                         Accent Ultra V termolifting z ultradźwiękami (ujędrnienie plus redukcja tkanki tłuszczowej)
                     </StyledTableCell>
-                    <StyledTableCell colSpan={2} align="right">
+                    <StyledTableCell colSpan={2} align='right'>
                         Cena
                     </StyledTableCell>
                     </TableRow>
@@ -108,10 +108,10 @@ const Table2 = () => {
                     <StyledTableCell>
                         Okolica
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         1 zabieg
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         5 zabiegów
                     </StyledTableCell>
                     </TableRow>
@@ -119,13 +119,13 @@ const Table2 = () => {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.fat}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -148,13 +148,13 @@ const Table3 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper} >
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className="featured">
+                    <StyledTableCell className='featured'>
                         Peeling Liftingujący
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         Cena
                     </StyledTableCell>
                     </TableRow>
@@ -162,10 +162,10 @@ const Table3 = () => {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -188,13 +188,13 @@ const Table4 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper} >
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className="featured">
+                    <StyledTableCell className='featured'>
                         Biorewitalizacja bez igieł
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         Cena
                     </StyledTableCell>
                     </TableRow>
@@ -202,10 +202,10 @@ const Table4 = () => {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -231,13 +231,13 @@ const Table5 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper} >
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className="featured">
+                    <StyledTableCell className='featured'>
                         Terapia Anty-Aging
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         Cena
                     </StyledTableCell>
                     </TableRow>
@@ -245,10 +245,10 @@ const Table5 = () => {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -283,13 +283,13 @@ const Table7 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper} >
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className="featured">
+                    <StyledTableCell className='featured'>
                         Peelingi medyczne
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         Cena
                     </StyledTableCell>
                     </TableRow>
@@ -297,10 +297,10 @@ const Table7 = () => {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -324,13 +324,13 @@ const Table9 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper} >
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className="featured">
+                    <StyledTableCell className='featured'>
                         Laser Alma Harmony - nieablacyjne odmłodzenie skóry
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         Cena
                     </StyledTableCell>
                     </TableRow>
@@ -338,10 +338,10 @@ const Table9 = () => {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -381,13 +381,13 @@ const Table10 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper}>
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className="featured">
+                    <StyledTableCell className='featured'>
                         Vectus - epilacja laserowa
                     </StyledTableCell>
-                    <StyledTableCell colSpan={2} align="right">
+                    <StyledTableCell colSpan={2} align='right'>
                         Cena
                     </StyledTableCell>
                     </TableRow>
@@ -395,10 +395,10 @@ const Table10 = () => {
                     <StyledTableCell>
                         Okolica
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         1 zabieg
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         4 zabiegi
                     </StyledTableCell>
                     </TableRow>
@@ -406,13 +406,13 @@ const Table10 = () => {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.fat}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -438,13 +438,13 @@ const Table11 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper}>
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className="featured">
+                    <StyledTableCell className='featured'>
                         Icoone Laser Med 2
                     </StyledTableCell>
-                    <StyledTableCell align="right" colSpan={3}>
+                    <StyledTableCell align='right' colSpan={3}>
                         Cena
                     </StyledTableCell>
                     </TableRow>
@@ -452,13 +452,13 @@ const Table11 = () => {
                     <StyledTableCell>
                         Okolica
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         1 zabieg
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         5 zabiegów
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         10 zabiegów
                     </StyledTableCell>
                     </TableRow>
@@ -466,16 +466,16 @@ const Table11 = () => {
                 <TableBody>
                     {rows.map((row) => (
                         <StyledTableRow key={row.name}>
-                            <StyledTableCell component="th" scope="row">
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price2}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price3}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -488,11 +488,11 @@ const Table11 = () => {
 
 const PricesCosmetologyPartials = () => {
     useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
 
     return (
-        <Box display="grid" gap={'15px'}>
+        <Box display='grid' gap={'15px'}>
             <Table1 />
             <Table2 />
             <Table3 />

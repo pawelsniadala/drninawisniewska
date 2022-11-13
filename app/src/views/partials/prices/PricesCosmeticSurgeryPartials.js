@@ -54,24 +54,24 @@ const Table1 = () => {
 
     return (
         <TableContainer className='table-container' component={Paper} >
-            <Table size="small" aria-label="customized table">
+            <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className="featured">
+                    <StyledTableCell className='featured'>
                         Nazwa
                     </StyledTableCell>
-                    <StyledTableCell align="right">
+                    <StyledTableCell align='right'>
                         Cena
                     </StyledTableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
                     {rows.map((row) => (
-                        <StyledTableRow key={row.name} className="caption">
-                            <StyledTableCell component="th" scope="row">
+                        <StyledTableRow key={row.name} className='caption'>
+                            <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align="right">
+                            <StyledTableCell align='right'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -84,11 +84,11 @@ const Table1 = () => {
 
 const PricesCosmeticSurgeryPartials = () => {
     useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
 
     return (
-        <Box display="grid" gap={'15px'}>
+        <Box display='grid' gap={'15px'}>
             <Table1 />
         </Box>
     );
