@@ -115,6 +115,7 @@ export const biolitecLeonardoMini = {
     badge: false,
     services: ['vascularSurgery']
 };
+
 export const hettichArthrexAcp = {
     designation: 'hettichArthrexAcp',
     title: 'Hettich Arthrex ACP',

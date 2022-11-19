@@ -169,7 +169,7 @@ const ContactView = () => {
                                 marginBottom={2}
                             >
                                 {contact.map((item, index) => (
-                                    <Box key={index} component='a' href={item.href} className='link'>
+                                    <Box key={index} component='a' href={item.href} target='_blank' className='link'>
                                         <Box
                                             component={ListItem}
                                             disableGutters
