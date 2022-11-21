@@ -53,7 +53,6 @@ const HeroSection = () => {
                     <Box className='carousel-inner'>
                         <Box className='carousel-item active' data-bs-interval='5000' style={{ height: '670px' }}>
                             <LazyLoadImage
-                                // height={'100%'}
                                 width={'100%'}
                                 src={require('../assets/hero/hero1.jpg')}
                                 alt='...'
@@ -129,21 +128,6 @@ const HeroSection = () => {
                             </Box>
                         </Box>
                         <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
-                            {/* <LazyLoadImage
-                                // height={'100%'}
-                                width={'100%'}
-                                src={require('../assets/hero/hero2.jpg')}
-                                alt='...'
-                                effect='blur'
-                                style={{
-                                    objectFit: 'cover',
-                                    backgroundRepeat: 'no-repeat',
-                                    backgroundSize: 'cover',
-                                    height: '670px',
-                                    objectPosition: '50% 77%',
-                                    filter: 'brightness(0.85)',
-                                }}
-                            /> */}
                             <img
                                 src={require('../assets/hero/hero2.jpg')}
                                 alt='...'
@@ -213,21 +197,6 @@ const HeroSection = () => {
                             </Box>
                         </Box>
                         <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
-                            {/* <LazyLoadImage
-                                // height={'100%'}
-                                width={'100%'}
-                                src={require('../assets/hero/hero3.jpg')}
-                                alt='...'
-                                effect='blur'
-                                style={{
-                                    objectFit: 'cover',
-                                    backgroundRepeat: 'no-repeat',
-                                    backgroundSize: 'cover',
-                                    height: '670px',
-                                    objectPosition: '50% 60%',
-                                    filter: 'brightness(0.85)',
-                                }}
-                            /> */}
                             <img
                                 src={require('../assets/hero/hero3.jpg')}
                                 alt='...'
@@ -297,21 +266,6 @@ const HeroSection = () => {
                             </Box>
                         </Box>
                         <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
-                            {/* <LazyLoadImage
-                                // height={'100%'}
-                                width={'100%'}
-                                src={require('../assets/hero/hero4.jpg')}
-                                alt='...'
-                                effect='blur'
-                                style={{
-                                    objectFit: 'cover',
-                                    backgroundRepeat: 'no-repeat',
-                                    backgroundSize: 'cover',
-                                    height: '670px',
-                                    objectPosition: '50% 45%',
-                                    filter: 'brightness(0.85)',
-                                }}
-                            /> */}
                             <img
                                 src={require('../assets/hero/hero4.jpg')}
                                 alt='...'

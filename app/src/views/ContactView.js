@@ -152,9 +152,7 @@ const ContactView = () => {
                                         size='large'
                                         type='submit'
                                         id='liveToastBtn'
-                                        endIcon={
-                                            <SendIcon />
-                                        }
+                                        endIcon={<SendIcon />}
                                     >
                                         Wyślij wiadomość
                                     </Button>

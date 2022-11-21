@@ -55,9 +55,7 @@ const SectionHeader = ({
                     variant='contained'
                     color='primary'
                     size='large'
-                    endIcon={
-                        <ArrowForwardIcon />
-                    }
+                    endIcon={<ArrowForwardIcon />}
                 >
                     {sectionLinkText}
                 </Button>
