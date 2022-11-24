@@ -7,9 +7,7 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Container from '../components/Container';
-// import CardTeam from '../components/CardTeam';
 import CardTeam2 from '../components/CardTeam2';
-// import CardTeamProposed from '../components/CardTeamProposed';
 import CardTeamProposed2 from '../components/CardTeamProposed2';
 
 import { team } from '../data/team';
@@ -119,11 +117,3 @@ const TeamView = () => {
 }
 
 export default TeamView;
-{/* <CardTeamProposed
-key={index}
-cardImage={item.image}
-cardName={item.name}
-cardSpeciality={item.speciality}
-cardDescription={item.experience ? item.experience : item.education}
-cardPath={item.path}
-/> */}
