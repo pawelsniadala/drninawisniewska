@@ -31,14 +31,8 @@ export const ninaWisniewska = {
     background: false,
     path: '/team/nina-wisniewska',
     services: [
-        {
-            text: 'Dermatologia',
-            path: '/services/dermatology'
-        },
-        {
-            text: 'Medycyna estetyczna',
-            path: '/services/aesthetic-medicine'
-        }
+        'dermatology',
+        'aestheticMedicine'
     ]
 };
 
@@ -54,18 +48,9 @@ export const justynaFilipek = {
     background: false,
     path: '/team/justyna-filipek',
     services: [
-        {
-            text: 'Ginekologia',
-            path: '/services/gynecology'
-        },
-        {
-            text: 'Endokrynologia',
-            path: '/services/endocrinology'
-        },
-        {
-            text: 'USG',
-            path: '/services/usg'
-        }
+        'gynecology',
+        'endocrinology',
+        'usg'
     ]
 };
 
@@ -80,12 +65,7 @@ export const paulinaBudna = {
     image: paulinaBudnaImage,
     background: false,
     path: '/team/paulina-budna',
-    services: [
-        {
-            text: 'Kosmetologia',
-            path: '/services/cosmetology'
-        }
-    ]
+    services: ['cosmetology']
 };
 
 export const konradKochan = {
@@ -100,14 +80,8 @@ export const konradKochan = {
     background: false,
     path: '/team/konrad-kochan',
     services: [
-        {
-            text: 'Chirurgia plastyczna',
-            path: '/services/cosmetic-surgery'
-        },
-        {
-            text: 'Medycyna estetyczna',
-            path: '/services/aesthetic-medicine'
-        }
+        'aestheticMedicine',
+        'cosmeticSurgery'
     ]
 };
 
@@ -122,12 +96,7 @@ export const wojciechKaszewski = {
     image: wojciechKaszewskiImage,
     background: false,
     path: '/team/wojciech-kaszewski',
-    services: [
-        {
-            text: 'Ortopedia',
-            path: '/services/orthopedics'
-        }
-    ]
+    services: ['orthopedics']
 };
 
 export const klaudiaMalottki = {
@@ -141,12 +110,7 @@ export const klaudiaMalottki = {
     image: klaudiaMalottkiImage,
     background: false,
     path: '/team/klaudia-malottki',
-    services: [
-        {
-            text: 'Medycyna estetyczna',
-            path: '/services/aesthetic-medicine'
-        }
-    ]
+    services: ['aestheticMedicine']
 };
 
 export const katarzynaMysliwiecCzajka = {
@@ -160,12 +124,7 @@ export const katarzynaMysliwiecCzajka = {
     image: katarzynaMysliwiecCzajkaImage,
     background: false,
     path: '/team/katarzyna-mysliwiec-czajka',
-    services: [
-        {
-            text: 'Dermatologia',
-            path: '/services/dermatology'
-        }
-    ]
+    services: ['dermatology']
 };
 
 export const justynaKloniecka = {
@@ -179,12 +138,7 @@ export const justynaKloniecka = {
     image: justynaKlonieckaImage,
     background: false,
     path: '/team/justyna-kloniecka',
-    services: [
-        {
-            text: 'Dermatologia',
-            path: '/services/dermatology'
-        }
-    ]
+    services: ['dermatology']
 };
 
 export const aldonaMaciag = {
@@ -198,12 +152,7 @@ export const aldonaMaciag = {
     image: aldonaMaciagImage,
     background: false,
     path: '/team/aldona-maciag',
-    services: [
-        {
-            text: 'Dermatologia',
-            path: '/services/dermatology'
-        }
-    ]
+    services: ['dermatology']
 };
 
 export const milenaJuzwiak = {
@@ -217,12 +166,7 @@ export const milenaJuzwiak = {
     image: milenaJuzwiakImage,
     background: false,
     path: '/team/milena-juzwiak',
-    services: [
-        {
-            text: 'Fizjoterapia',
-            path: '/services/physioterapy'
-        }
-    ]
+    services: ['physioterapy']
 };
 
 export const paulinaTatara = {
@@ -237,14 +181,8 @@ export const paulinaTatara = {
     background: false,
     path: '/team/paulina-tatara',
     services: [
-        {
-            text: 'Dermatologia',
-            path: '/services/dermatology'
-        },
-        {
-            text: 'Medycyna estetyczna',
-            path: '/services/aesthetic-medicine'
-        }
+        'dermatology',
+        'aestheticMedicine'
     ]
 };
 
@@ -259,12 +197,7 @@ export const tomaszMatuszewski = {
     image: tomaszMatuszewskiImage,
     background: false,
     path: '/team/tomasz-matuszewski',
-    services: [
-        {
-            text: 'Alergologia',
-            path: '/services/allergology'
-        }
-    ]
+    services: ['allergology']
 };
 
 export const olgaLenartowiczWarakomska = {
@@ -278,12 +211,7 @@ export const olgaLenartowiczWarakomska = {
     image: olgaLenartowiczWarakomskaImage,
     background: false,
     path: '/team/olga-lenartowicz-warakomska',
-    services: [
-        {
-            text: 'Medycyna estetyczna',
-            path: '/services/aesthetic-medicine'
-        }
-    ]
+    services: ['aestheticMedicine']
 };
 
 export const katarzynaZbronska = {
@@ -297,12 +225,7 @@ export const katarzynaZbronska = {
     image: katarzynaZbronskaImage,
     background: false,
     path: '/team/katarzyna-zbronska',
-    services: [
-        {
-            text: 'Dermatologia',
-            path: '/services/dermatology'
-        }
-    ]
+    services: ['dermatology']
 };
 
 export const joannaOjrzenska = {
@@ -316,12 +239,7 @@ export const joannaOjrzenska = {
     image: joannaOjrzenskaImage,
     background: false,
     path: '/team/joanna-ojrzenska',
-    services: [
-        {
-            text: 'Dietetyka Kliniczna',
-            path: '/services/clinical-dietitian'
-        }
-    ]
+    services: ['clinicalDietitian']
 };
 
 export const aleksandraGorczynska = {
@@ -335,12 +253,7 @@ export const aleksandraGorczynska = {
     image: aleksandraGorczynskaImage,
     background: false,
     path: '/team/aleksandra-gorczynska',
-    services: [
-        {
-            text: 'Kosmetologia',
-            path: '/services/cosmetology'
-        }
-    ]
+    services: ['cosmetology']
 };
 
 export const miroslawMajewski = {
@@ -354,12 +267,7 @@ export const miroslawMajewski = {
     image: miroslawMajewskiImage,
     background: false,
     path: '/team/miroslaw-majewski',
-    services: [
-        {
-            text: 'Hematologia',
-            path: '/services/hematology'
-        }
-    ]
+    services: ['hematology']
 };
 
 export const kamilStepkowski = {
@@ -373,12 +281,7 @@ export const kamilStepkowski = {
     image: kamilStepkowskiImage,
     background: false,
     path: '/team/kamil-stepkowski',
-    services: [
-        {
-            text: 'Chirurgia naczyniowa',
-            path: '/services/vascular-surgery'
-        }
-    ]
+    services: ['vascularSurgery']
 };
 
 export const katarzynaRychlik = {
@@ -392,12 +295,7 @@ export const katarzynaRychlik = {
     image: katarzynaRychlikImage,
     background: false,
     path: '/team/katarzyna-rychlik',
-    services: [
-        {
-            text: 'Dermatologia',
-            path: '/services/dermatology'
-        }
-    ]
+    services: ['dermatology']
 };
 
 export const patrykKrokwinski = {
@@ -411,12 +309,7 @@ export const patrykKrokwinski = {
     image: patrykKrokwinskiImage,
     background: false,
     path: '/team/patryk-krokwinski',
-    services: [
-        {
-            text: 'USG',
-            path: '/services/usg'
-        }
-    ]
+    services: ['usg']
 };
 
 export const team = [
@@ -439,5 +332,5 @@ export const team = [
     { ...miroslawMajewski },
     { ...kamilStepkowski },
     { ...katarzynaRychlik },
-    { ...patrykKrokwinski },
+    { ...patrykKrokwinski }
 ];

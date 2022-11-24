@@ -9,13 +9,15 @@ import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Container from '../../../components/Container';
-import ListBulleted from '../../../components/ListBulleted';
+import CardTeam2 from '../../../components/CardTeam2';
+import CardTeamProposed2 from '../../../components/CardTeamProposed2';
 import CardProposed from '../../../components/CardProposed';
 import CardTechnology from '../../../components/CardTechnology';
+import ListBulleted from '../../../components/ListBulleted';
 
 import { services, cosmetology } from '../../../data/services';
 import { technology } from '../../../data/technology';
-// import { team } from '../../../data/team';
+import { team } from '../../../data/team';
 
 const ServicesCosmetologyPartial = () => {
     useEffect(() => {
@@ -217,7 +219,41 @@ const ServicesCosmetologyPartial = () => {
 
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header alternative'>
-                                    Technologia
+                                    Specjaliści
+                                </Typography>
+                                <Box className='card-wrapper team page'>
+                                    {width >= 991.98 ? (
+                                        team.filter(item => item.services.includes('cosmetology')).map((item, index) => (
+                                            <CardTeam2
+                                                key={index}
+                                                cardImage={item.image}
+                                                cardBackground={item.background}
+                                                cardTitle={item.title}
+                                                cardName={item.name}
+                                                cardSpeciality={item.speciality}
+                                                cardDescription={item.experience ? item.experience : item.education}
+                                                cardPath={item.path}
+                                                cardServices={item.services}
+                                            />
+                                        ))
+                                    ) : (
+                                        team.filter(item => item.services.includes('cosmetology')).map((item, index) => (
+                                            <CardTeamProposed2
+                                                key={index}
+                                                cardTitle={item.name}
+                                                cardSpeciality={item.speciality}
+                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                                cardImage={item.image}
+                                                cardPath={item.path}
+                                            />
+                                        ))
+                                    )}
+                                </Box>
+                            </Box>
+
+                            <Box marginBottom={3}>
+                                <Typography variant={'h5'} className='header alternative'>
+                                    Sprzęt
                                 </Typography>
                                 <Box className='card-wrapper technology page'>
                                     {width >= 991.98 ? (

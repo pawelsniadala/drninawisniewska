@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -9,17 +9,40 @@ import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Container from '../../../components/Container';
-import ListBulleted from '../../../components/ListBulleted';
+import CardTeam2 from '../../../components/CardTeam2';
+import CardTeamProposed2 from '../../../components/CardTeamProposed2';
 import CardProposed from '../../../components/CardProposed';
-// import CardTeamProposed from '../../../components/CardTeamProposed';
-// import CardTechnology from '../../../components/CardTechnology';
+import ListBulleted from '../../../components/ListBulleted';
 
 import { services, physioterapy } from '../../../data/services';
+import { team } from '../../../data/team';
 
 const ServicesPhysioterapyPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
+
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    function useWindowDimensions() {
+        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
 
     return (
         <Box className='contact-view'>
@@ -159,6 +182,40 @@ const ServicesPhysioterapyPartial = () => {
                                 <Typography className='paragraph'>
                                     Naciągnięcie skóry powoduje zwiększenie przestrzeni pomiędzy skórą właściwą a powięzią, błoną otaczającą mięśnie, wywołując usprawnienie pracy układu limfatycznego. Dzięki większej ilości  przepływającej limfy zastoiny i stany zapalne ulegają zmniejszeniu a krwiaki  zostają zredukowane. Kinesiotaping wywołuje również działanie znieczulające oddziaływując na receptory bólu i czucia głębokiego znajdujące się w skórze.
                                 </Typography>
+                            </Box>
+
+                            <Box marginBottom={3}>
+                                <Typography variant={'h5'} className='header alternative'>
+                                    Specjaliści
+                                </Typography>
+                                <Box className='card-wrapper team page'>
+                                    {width >= 991.98 ? (
+                                        team.filter(item => item.services.includes('physioterapy')).map((item, index) => (
+                                            <CardTeam2
+                                                key={index}
+                                                cardImage={item.image}
+                                                cardBackground={item.background}
+                                                cardTitle={item.title}
+                                                cardName={item.name}
+                                                cardSpeciality={item.speciality}
+                                                cardDescription={item.experience ? item.experience : item.education}
+                                                cardPath={item.path}
+                                                cardServices={item.services}
+                                            />
+                                        ))
+                                    ) : (
+                                        team.filter(item => item.services.includes('physioterapy')).map((item, index) => (
+                                            <CardTeamProposed2
+                                                key={index}
+                                                cardTitle={item.name}
+                                                cardSpeciality={item.speciality}
+                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                                cardImage={item.image}
+                                                cardPath={item.path}
+                                            />
+                                        ))
+                                    )}
+                                </Box>
                             </Box>
 
                         </Box>

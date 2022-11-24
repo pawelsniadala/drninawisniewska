@@ -1,22 +1,46 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-// import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Container from '../../../components/Container';
+import CardTeam2 from '../../../components/CardTeam2';
+import CardTeamProposed2 from '../../../components/CardTeamProposed2';
 import CardProposed from '../../../components/CardProposed';
 
 import { services, endocrinology } from '../../../data/services';
+import { team } from '../../../data/team';
 
 const ServicesEndocrinologyPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
+
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    function useWindowDimensions() {
+        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
 
     return (
         <Box className='contact-view'>
@@ -78,6 +102,40 @@ const ServicesEndocrinologyPartial = () => {
                                             maxHeight: '400px',
                                         }}
                                     />
+                                </Box>
+                            </Box>
+
+                            <Box marginBottom={3}>
+                                <Typography variant={'h5'} className='header alternative'>
+                                    Specjaliści
+                                </Typography>
+                                <Box className='card-wrapper team page'>
+                                    {width >= 991.98 ? (
+                                        team.filter(item => item.services.includes('endocrinology')).map((item, index) => (
+                                            <CardTeam2
+                                                key={index}
+                                                cardImage={item.image}
+                                                cardBackground={item.background}
+                                                cardTitle={item.title}
+                                                cardName={item.name}
+                                                cardSpeciality={item.speciality}
+                                                cardDescription={item.experience ? item.experience : item.education}
+                                                cardPath={item.path}
+                                                cardServices={item.services}
+                                            />
+                                        ))
+                                    ) : (
+                                        team.filter(item => item.services.includes('endocrinology')).map((item, index) => (
+                                            <CardTeamProposed2
+                                                key={index}
+                                                cardTitle={item.name}
+                                                cardSpeciality={item.speciality}
+                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                                cardImage={item.image}
+                                                cardPath={item.path}
+                                            />
+                                        ))
+                                    )}
                                 </Box>
                             </Box>
 

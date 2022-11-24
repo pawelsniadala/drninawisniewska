@@ -10,7 +10,7 @@ import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Container from '../../../components/Container';
-import CardTeamProposed from '../../../components/CardTeamProposed';
+import CardTeamProposed2 from '../../../components/CardTeamProposed2';
 
 import { team, wojciechKaszewski } from '../../../data/team';
 
@@ -150,11 +150,12 @@ const TeamWojciechKaszewskiPartial = () => {
                         <Box className='team-proposed'>
                             <Box className='card-wrapper team-proposed'>
                                 {teamCopy.filter(item => item.designation !== 'wojciechKaszewski').slice(0, 8).map((item, index) => (
-                                    <CardTeamProposed
-                                        cardImage={item.image}
-                                        cardName={item.name}
+                                    <CardTeamProposed2
+                                        key={index}
+                                        cardTitle={item.name}
                                         cardSpeciality={item.speciality}
-                                        cardDescription={item.experience ? item.experience : item.education}
+                                        cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                        cardImage={item.image}
                                         cardPath={item.path}
                                     />
                                 ))}

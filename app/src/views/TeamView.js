@@ -9,7 +9,8 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Container from '../components/Container';
 // import CardTeam from '../components/CardTeam';
 import CardTeam2 from '../components/CardTeam2';
-import CardTeamProposed from '../components/CardTeamProposed';
+// import CardTeamProposed from '../components/CardTeamProposed';
+import CardTeamProposed2 from '../components/CardTeamProposed2';
 
 import { team } from '../data/team';
 
@@ -99,12 +100,12 @@ const TeamView = () => {
                                 ))
                             ) : (
                                 team.map((item, index) => (
-                                    <CardTeamProposed
+                                    <CardTeamProposed2
                                         key={index}
-                                        cardImage={item.image}
-                                        cardName={item.name}
+                                        cardTitle={item.name}
                                         cardSpeciality={item.speciality}
-                                        cardDescription={item.experience ? item.experience : item.education}
+                                        cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></>}
+                                        cardImage={item.image}
                                         cardPath={item.path}
                                     />
                                 ))
@@ -118,3 +119,11 @@ const TeamView = () => {
 }
 
 export default TeamView;
+{/* <CardTeamProposed
+key={index}
+cardImage={item.image}
+cardName={item.name}
+cardSpeciality={item.speciality}
+cardDescription={item.experience ? item.experience : item.education}
+cardPath={item.path}
+/> */}
