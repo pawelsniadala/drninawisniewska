@@ -114,23 +114,13 @@ const TechnologyView = () => {
                                         className='image-list-item'
                                     >
                                         <LazyLoadImage
-                                            className='lazy-load-image'
+                                            className={`lazy-load-image ${item.designation}`}
                                             height={'100%'}
                                             width={'100%'}
                                             src={item.src}
-                                            alt='...'
+                                            alt={item.designation}
                                             effect='blur'
                                             onClick={() => openLightbox(index)}
-                                            style={{
-                                                objectFit: 'cover',
-                                                filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
-                                                cursor: 'pointer',
-                                                borderTopLeftRadius: item.order === 1 ? '8px' : 'none',
-                                                borderTopRightRadius: item.order === 2 ? '8px' : 'none',
-                                                borderBottomLeftRadius: item.order === 3 ? '8px' : 'none',
-                                                borderBottomRightRadius: item.order === 4 ? '8px' : 'none',
-                                                transition: 'opacity, transform ease 0.3s !important',
-                                            }}
                                         />
                                     </ImageListItem>
                                 ))}

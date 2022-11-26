@@ -1,9 +1,50 @@
 .clinic-section {
-    .lazy-load-image {
-        transition: filter ease 0.5s !important;
+    .image-list {
+        .lazy-load-image {
+            object-fit: cover;
+            filter: none;
+            cursor: pointer;
+            transition: filter ease 0.5s !important;
 
-        &:hover {
-            filter: brightness(0.9) !important;
+            &:hover {
+                filter: brightness(0.9) !important;
+            }
+        }
+
+        .clinic1 {
+            border-top-left-radius: 8px;
+        }
+
+        .clinic2 {
+            border-top-right-radius: 8px;
+        }
+
+        .clinic3 {
+            border-bottom-left-radius: 8px;
+        }
+
+        .clinic4 {
+            border-bottom-right-radius: 8px;
+        }
+
+        @media (max-width: 539.98px) {
+            grid-template-columns: repeat(2, 1fr) !important;
+
+            .clinic1 {
+                border-top-right-radius: 8px;
+            }
+
+            .clinic2 {
+                border-top-right-radius: 0;
+            }
+
+            .clinic3 {
+                border-bottom-left-radius: 0;
+            }
+
+            .clinic4 {
+                border-bottom-left-radius: 8px;
+            }
         }
     }
 

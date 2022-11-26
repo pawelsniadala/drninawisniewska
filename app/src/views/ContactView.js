@@ -119,15 +119,15 @@ const ContactView = () => {
                                     </label>
                                     <input type='text' className='form-control' name='name' minLength='2' required />
                                 </Box>
-                                <Box className='mb-3 row'>
-                                    <Box className='col-6'>
+                                <Box className='row'>
+                                    <Box className='col-sm-12 col-md-6 mb-3'>
                                         <label htmlFor='email' className='form-label'>
                                             Adres e-mail
                                             <span className='text-danger'>&nbsp;*</span>
                                         </label>
                                         <input type='email' className='form-control' name='email' required />
                                     </Box>
-                                    <Box className='col-6'>
+                                    <Box className='col-sm-12 col-md-6 mb-3'>
                                         <label htmlFor='phone' className='form-label'>
                                             Numer telefonu
                                             <span className='text-danger'>&nbsp;*</span>

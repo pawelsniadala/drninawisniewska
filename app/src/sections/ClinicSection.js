@@ -115,44 +115,33 @@ const ClinicSection = () => {
                         }
                     />
                     <Box>
-                        <Box>
-                            <ImageList
-                                variant="quilted"
-                                cols={3}
-                                rowHeight={isMd ? 300 : 160}
-                                gap={4}
-                                sx={{ overflowY: 'hidden', marginBottom: 0 }}
-                            >
-                                {clinic.pictures.map((item, i) => (
-                                    <ImageListItem
-                                        key={i}
-                                        cols={item.cols}
-                                        rows={item.rows}
-                                    >
-                                        <LazyLoadImage
-                                            className='lazy-load-image'
-                                            height={'100%'}
-                                            width={'100%'}
-                                            src={item.src}
-                                            alt="..."
-                                            effect="blur"
-                                            visibleByDefault={true}
-                                            onClick={() => openLightbox(i)}
-                                            style={{
-                                                objectFit: 'cover',
-                                                filter: theme.palette.mode === 'dark' ? 'brightness(0.7)' : 'none',
-                                                cursor: 'pointer',
-                                                borderTopLeftRadius: item.order === 1 ? '8px' : 'none',
-                                                borderTopRightRadius: item.order === 2 ? '8px' : 'none',
-                                                borderBottomLeftRadius: item.order === 3 ? '8px' : 'none',
-                                                borderBottomRightRadius: item.order === 4 ? '8px' : 'none',
-                                                transition: 'opacity, transform ease 0.3s !important',
-                                            }}
-                                        />
-                                    </ImageListItem>
-                                ))}
-                            </ImageList>
-                        </Box>
+                        <ImageList
+                            className='image-list'
+                            variant="quilted"
+                            cols={3}
+                            rowHeight={isMd ? 300 : 160}
+                            gap={4}
+                            sx={{ overflowY: 'hidden', marginBottom: 0 }}
+                        >
+                            {clinic.pictures.map((item, i) => (
+                                <ImageListItem
+                                    key={i}
+                                    cols={item.cols}
+                                    rows={item.rows}
+                                >
+                                    <LazyLoadImage
+                                        className={`lazy-load-image ${item.designation}`}
+                                        height={'100%'}
+                                        width={'100%'}
+                                        src={item.src}
+                                        alt={item.designation}
+                                        effect="blur"
+                                        visibleByDefault={true}
+                                        onClick={() => openLightbox(i)}
+                                    />
+                                </ImageListItem>
+                            ))}
+                        </ImageList>
                         {viewerIsOpen && (
                             <Lightbox
                                 mainSrc={clinic.pictures[currentImage].src}

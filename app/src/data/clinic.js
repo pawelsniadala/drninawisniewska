@@ -6,6 +6,7 @@ import clinic4 from "../assets/clinic/clinic4.jpg";
 export const clinic = {
     pictures: [
         {
+            designation: 'clinic1',
             src: clinic1,
             source: clinic1,
             rows: 1,
@@ -13,6 +14,7 @@ export const clinic = {
             order: 1
         },
         {
+            designation: 'clinic2',
             src: clinic2,
             source: clinic2,
             rows: 1,
@@ -21,6 +23,7 @@ export const clinic = {
             link: `<a href="https://pl.freepik.com/darmowe-zdjecie/mloda-kobieta-lezy-z-zamknietymi-oczami-procedura-kosmetologa_7168639.htm#query=cosmetology&position=45&from_view=search">Image by ArthurHidden</a> on Freepik`
         },
         {
+            designation: 'clinic3',
             src: clinic3,
             source: clinic3,
             rows: 1,
@@ -29,6 +32,7 @@ export const clinic = {
             link: `<a href="https://pl.freepik.com/darmowe-zdjecie/kobieta-na-kosmetologa-dokonywanie-zabiegow-kosmetycznych_12178066.htm#query=cosmetology&position=48&from_view=search#position=48&query=cosmetology">Image by senivpetro</a> on Freepik`
         },
         {
+            designation: 'clinic4',
             src: clinic4,
             source: clinic4,
             rows: 1,
