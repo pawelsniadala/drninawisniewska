@@ -17,7 +17,6 @@ import PhoneSvg from '../assets/svg/PhoneSvg';
 import EmailSvg from '../assets/svg/EmailSvg';
 import FacebookSvg from '../assets/svg/FacebookSvg';
 import InstagramSvg from '../assets/svg/InstagramSvg';
-
 import ClinicSvg from '../assets/svg/ClinicSvg';
 import ServicesSvg from '../assets/svg/ServicesSvg';
 import PricesSvg from '../assets/svg/PricesSvg';
@@ -84,7 +83,6 @@ const HeaderSection = () => {
                     </NavLink>
                 </ListItem>
             </List>
-            {/* <Divider /> */}
             <List className='menu'>
                 <ListItem disablePadding>
                     <NavLink
@@ -101,7 +99,6 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                {/* <Divider className='divider' disablePadding/> */}
                 <ListItem disablePadding>
                     <NavLink
                         className='nav-link'
@@ -117,7 +114,6 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                {/* <Divider className='divider' disablePadding/> */}
                 <ListItem disablePadding>
                     <NavLink
                         className='nav-link'
@@ -133,7 +129,6 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                {/* <Divider className='divider' disablePadding/> */}
                 <ListItem disablePadding>
                     <NavLink
                         className='nav-link'
@@ -149,7 +144,6 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                {/* <Divider className='divider' disablePadding/> */}
                 <ListItem disablePadding>
                     <NavLink
                         className='nav-link'
@@ -165,7 +159,6 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                {/* <Divider className='divider' disablePadding/> */}
                 <ListItem disablePadding>
                     <NavLink
                         className='nav-link'

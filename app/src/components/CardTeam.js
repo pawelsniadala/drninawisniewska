@@ -29,7 +29,7 @@ const CardTeam = ({
                 <Box sx={{ p: '15px', display: 'flex', justifyContent: 'start', gap: '15px' }}>
                     <Avatar
                         className='avatar'
-                        variant="rounded"
+                        variant='rounded'
                         src={cardImage}
                     />
                     <Stack spacing={0.5}>
@@ -52,7 +52,7 @@ const CardTeam = ({
                         {cardServices && cardServices.map((item, index) => (
                             <Box key={index}>
                                 <Link className='link' to={item.path}>
-                                    <Chip className='chip' label={item.text} size="small" />
+                                    <Chip className='chip' label={item.text} size='small' />
                                 </Link>
                             </Box>
                         ))}

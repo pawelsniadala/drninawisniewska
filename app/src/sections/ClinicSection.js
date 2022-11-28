@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
@@ -117,7 +117,7 @@ const ClinicSection = () => {
                     <Box>
                         <ImageList
                             className='image-list'
-                            variant="quilted"
+                            variant='quilted'
                             cols={3}
                             rowHeight={isMd ? 300 : 160}
                             gap={4}
@@ -135,7 +135,7 @@ const ClinicSection = () => {
                                         width={'100%'}
                                         src={item.src}
                                         alt={item.designation}
-                                        effect="blur"
+                                        effect='blur'
                                         visibleByDefault={true}
                                         onClick={() => openLightbox(i)}
                                     />
@@ -155,16 +155,16 @@ const ClinicSection = () => {
                         )}
                     </Box>
                 </Box>
-                <Box sx={{ paddingTop: "32px" }} className='statistics-wrapper'>
+                <Box sx={{ paddingTop: '32px' }} className='statistics-wrapper'>
                     <Grid container spacing={2}>
                         {clinic.statistics.map((item, i) => (
                             <Grid key={i} item xs={12} md={4} >
                                 <Typography
-                                    variant="h4"
+                                    variant='h4'
                                     sx={{
                                         display: 'flex',
                                         justifyContent:'center',
-                                        fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+                                        fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
                                         fontSize: '35px',
                                         letterSpacing: '.045em',
                                         color: 'rgba(0, 0, 0, 0.65)',
@@ -187,7 +187,7 @@ const ClinicSection = () => {
                                     </Box>
                                 </Typography>
                                 <Typography
-                                    variant="h6"
+                                    variant='h6'
                                     align={'center'}
                                     sx={{
                                         fontFamily: 'Roboto, sans-serif',
