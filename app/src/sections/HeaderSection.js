@@ -9,6 +9,7 @@ import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 
 import Container from '../components/Container';
@@ -16,6 +17,13 @@ import PhoneSvg from '../assets/svg/PhoneSvg';
 import EmailSvg from '../assets/svg/EmailSvg';
 import FacebookSvg from '../assets/svg/FacebookSvg';
 import InstagramSvg from '../assets/svg/InstagramSvg';
+
+import ClinicSvg from '../assets/svg/ClinicSvg';
+import ServicesSvg from '../assets/svg/ServicesSvg';
+import PricesSvg from '../assets/svg/PricesSvg';
+import TeamSvg from '../assets/svg/TeamSvg';
+import TechnologySvg from '../assets/svg/TechnologySvg';
+import ContactSvg from '../assets/svg/ContactSvg';
 
 const HeaderSection = () => {
     const [ state, setState ] = useState({
@@ -86,6 +94,9 @@ const HeaderSection = () => {
                         to='/clinic'
                     >
                         <ListItemButton>
+                            <ListItemIcon className='list-item-icon'>
+                                <ClinicSvg width='17px' height='17px' />
+                            </ListItemIcon>
                             <ListItemText className='list-item-text' primary='Klinika' />
                         </ListItemButton>
                     </NavLink>
@@ -99,6 +110,9 @@ const HeaderSection = () => {
                         to='/services'
                     >
                         <ListItemButton>
+                            <ListItemIcon className='list-item-icon'>
+                                <ServicesSvg width='17px' height='17px' />
+                            </ListItemIcon>
                             <ListItemText className='list-item-text' primary='Usługi' />
                         </ListItemButton>
                     </NavLink>
@@ -112,6 +126,9 @@ const HeaderSection = () => {
                         to='/prices'
                     >
                         <ListItemButton>
+                            <ListItemIcon className='list-item-icon'>
+                                <PricesSvg width='17px' height='17px' />
+                            </ListItemIcon>
                             <ListItemText className='list-item-text' primary='Cennik' />
                         </ListItemButton>
                     </NavLink>
@@ -125,6 +142,9 @@ const HeaderSection = () => {
                         to='/team'
                     >
                         <ListItemButton>
+                            <ListItemIcon className='list-item-icon'>
+                                <TeamSvg width='17px' height='17px' />
+                            </ListItemIcon>
                             <ListItemText className='list-item-text' primary='Zespół' />
                         </ListItemButton>
                     </NavLink>
@@ -138,6 +158,9 @@ const HeaderSection = () => {
                         to='/technology'
                     >
                         <ListItemButton>
+                            <ListItemIcon className='list-item-icon'>
+                                <TechnologySvg width='17px' height='17px' />
+                            </ListItemIcon>
                             <ListItemText className='list-item-text' primary='Technologia' />
                         </ListItemButton>
                     </NavLink>
@@ -151,61 +174,45 @@ const HeaderSection = () => {
                         to='/contact'
                     >
                         <ListItemButton>
+                            <ListItemIcon className='list-item-icon'>
+                                <ContactSvg width='17px' height='17px' />
+                            </ListItemIcon>
                             <ListItemText className='list-item-text' primary='Kontakt' />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
             </List>
             <Divider />
-            {/* <List className='media'>
+            <List className='media'>
                 <ListItem disablePadding>
-                    <a href='https://www.facebook.com/Radiostory-104327058985831/'
-                        className='facebook'
-                        title='Facebook'
+                    <a href='https://www.facebook.com/profile.php?id=100063736802328'
+                        className='link'
                         target='_blank'
                         rel='noreferrer'
                     >
                         <ListItemButton>
-                            <ListItemIcon>
-                                <FacebookSvg />
-                                <FacebookSvg width='14px' height='14px' color='#fff' />
+                            <ListItemIcon className='list-item-icon'>
+                                <FacebookSvg width='17px' height='17px' />
                             </ListItemIcon>
-                            <ListItemText primary='Facebook' />
+                            <ListItemText className='list-item-text' primary='Facebook' />
                         </ListItemButton>
                     </a>
                 </ListItem>
                 <ListItem disablePadding>
-                    <a href='https://www.youtube.com/'
-                        className='youtube'
-                        title='Youtube'
+                    <a href='https://www.instagram.com/klinikawyszkow/'
+                        className='link'
                         target='_blank'
                         rel='noreferrer'
                     >
                         <ListItemButton>
-                            <ListItemIcon>
-                                <YouTubeSvg />
-                                <InstagramSvg width='14px' height='14px' color='#fff' />
+                            <ListItemIcon className='list-item-icon'>
+                                <InstagramSvg width='17px' height='17px' />
                             </ListItemIcon>
-                            <ListItemText primary='Youtube' />
+                            <ListItemText className='list-item-text' primary='Instagram' />
                         </ListItemButton>
                     </a>
                 </ListItem>
-                <ListItem disablePadding>
-                    <a href='https://open.spotify.com/'
-                        className='spotify'
-                        title='Spotify'
-                        target='_blank'
-                        rel='noreferrer'
-                    >
-                        <ListItemButton>
-                            <ListItemIcon>
-                                <SpotifySvg />
-                            </ListItemIcon>
-                            <ListItemText primary='Spotify' />
-                        </ListItemButton>
-                    </a>
-                </ListItem>
-            </List> */}
+            </List>
         </Box>
     );
 
@@ -239,7 +246,7 @@ const HeaderSection = () => {
                                     rel='noreferrer'
                                 >
                                     <Box className='link-wrapper'>
-                                        <PhoneSvg width='14px' height='14px' color='#fff'/>
+                                        <PhoneSvg width='14px' height='14px' color='#fff' />
                                         <Typography className='link-text'>
                                             539 968 541
                                         </Typography>

@@ -95,13 +95,18 @@
         user-select: none;
     }
 
-    .nav-link {
+    .nav-link,
+    .link {
         flex: 1 1 auto;
         min-width: 0px;
         padding: 0;
         line-height: 1.5;
         display: block;
         text-decoration: none;
+
+        .list-item-icon {
+            min-width: 45px;
+        }
 
         .list-item-text {
             span {
@@ -121,6 +126,12 @@
         }
 
         &.active {
+            .list-item-icon {
+                svg {
+                    filter: invert(65%) sepia(73%) saturate(403%) hue-rotate(356deg) brightness(87%) contrast(88%);
+                }
+            }
+
             .list-item-text {
                 span {
                     color: #d29a3e;
