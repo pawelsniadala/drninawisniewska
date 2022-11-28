@@ -93,7 +93,7 @@ const HeaderSection = () => {
                         aria-current='page'
                         to='/clinic'
                     >
-                        <ListItemButton>
+                        <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
                                 <ClinicSvg width='17px' height='17px' />
                             </ListItemIcon>
@@ -109,7 +109,7 @@ const HeaderSection = () => {
                         aria-current='page'
                         to='/services'
                     >
-                        <ListItemButton>
+                        <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
                                 <ServicesSvg width='17px' height='17px' />
                             </ListItemIcon>
@@ -125,7 +125,7 @@ const HeaderSection = () => {
                         aria-current='page'
                         to='/prices'
                     >
-                        <ListItemButton>
+                        <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
                                 <PricesSvg width='17px' height='17px' />
                             </ListItemIcon>
@@ -141,7 +141,7 @@ const HeaderSection = () => {
                         aria-current='page'
                         to='/team'
                     >
-                        <ListItemButton>
+                        <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
                                 <TeamSvg width='17px' height='17px' />
                             </ListItemIcon>
@@ -157,7 +157,7 @@ const HeaderSection = () => {
                         aria-current='page'
                         to='/technology'
                     >
-                        <ListItemButton>
+                        <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
                                 <TechnologySvg width='17px' height='17px' />
                             </ListItemIcon>
@@ -173,7 +173,7 @@ const HeaderSection = () => {
                         aria-current='page'
                         to='/contact'
                     >
-                        <ListItemButton>
+                        <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
                                 <ContactSvg width='17px' height='17px' />
                             </ListItemIcon>
@@ -190,7 +190,7 @@ const HeaderSection = () => {
                         target='_blank'
                         rel='noreferrer'
                     >
-                        <ListItemButton>
+                        <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
                                 <FacebookSvg width='17px' height='17px' />
                             </ListItemIcon>
@@ -204,7 +204,7 @@ const HeaderSection = () => {
                         target='_blank'
                         rel='noreferrer'
                     >
-                        <ListItemButton>
+                        <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
                                 <InstagramSvg width='17px' height='17px' />
                             </ListItemIcon>
