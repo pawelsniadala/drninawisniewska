@@ -106,6 +106,10 @@
 
         .list-item-icon {
             min-width: 45px;
+
+            svg {
+                filter: invert(22%) sepia(2%) saturate(127%) hue-rotate(30deg) brightness(93%) contrast(89%);
+            }
         }
 
         .list-item-text {

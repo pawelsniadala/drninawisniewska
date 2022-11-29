@@ -123,7 +123,7 @@ const HeaderSection = () => {
                     >
                         <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
-                                <PricesSvg width='17px' height='17px' />
+                                <PricesSvg width='16px' height='16px' />
                             </ListItemIcon>
                             <ListItemText className='list-item-text' primary='Cennik' />
                         </ListItemButton>
@@ -185,7 +185,7 @@ const HeaderSection = () => {
                     >
                         <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
-                                <FacebookSvg width='17px' height='17px' />
+                                <FacebookSvg width='16px' height='16px' />
                             </ListItemIcon>
                             <ListItemText className='list-item-text' primary='Facebook' />
                         </ListItemButton>
@@ -199,7 +199,7 @@ const HeaderSection = () => {
                     >
                         <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
-                                <InstagramSvg width='17px' height='17px' />
+                                <InstagramSvg width='16px' height='16px' />
                             </ListItemIcon>
                             <ListItemText className='list-item-text' primary='Instagram' />
                         </ListItemButton>

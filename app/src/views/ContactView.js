@@ -174,20 +174,20 @@ const ContactView = () => {
                                             width={'auto'}
                                             padding={0}
                                         >
-                                        <Box
-                                            component={ListItemAvatar}
-                                            minWidth={'auto !important'}
-                                            marginRight={2}
-                                        >
                                             <Box
-                                                component={Avatar}
-                                                width={40}
-                                                height={40}
-                                                sx={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                                component={ListItemAvatar}
+                                                minWidth={'auto !important'}
+                                                marginRight={2}
                                             >
-                                                {renderIcon(item.designation)}
+                                                <Box
+                                                    component={Avatar}
+                                                    width={40}
+                                                    height={40}
+                                                    sx={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                                >
+                                                    {renderIcon(item.designation)}
+                                                </Box>
                                             </Box>
-                                        </Box>
                                             <ListItemText primary={item.label} secondary={item.value} />
                                         </Box>
                                     </Box>
