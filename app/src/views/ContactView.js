@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import * as bootstrap from 'bootstrap';
 
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -24,6 +26,11 @@ import { contact } from '../data/contact';
 
 const ContactView = () => {
     const form = useRef();
+    const theme = useTheme();
+
+    const isSm = useMediaQuery(theme.breakpoints.up('sm'), {
+        defaultMatches: true,
+    });
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -140,7 +147,7 @@ const ContactView = () => {
                                         Wiadomość
                                         <span className='text-danger'>&nbsp;*</span>
                                     </label>
-                                    <textarea className='form-control' name='message' rows='6' required></textarea>
+                                    <textarea className='form-control' name='message' rows={isSm ? '6' : '4'} required></textarea>
                                 </Box>
                                 <Box
                                     className='link-contained-submit'

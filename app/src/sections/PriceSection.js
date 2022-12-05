@@ -13,7 +13,7 @@ import pricesJpg2 from '../assets/prices/prices2.jpg';
 const PriceSection = () => {
     const theme = useTheme();
     const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-      defaultMatches: true,
+        defaultMatches: true,
     });
 
     useEffect(() => {
@@ -40,7 +40,7 @@ const PriceSection = () => {
                 data-jarallax
                 data-speed="0.2"
                 position={'relative'}
-                minHeight={{ xs: 500, sm: '100vh', md: 650 }} // 'calc(80vh - 75px)'
+                minHeight={{ xs: 'calc(90vh - 75px)', sm: 650, md: 650 }} // 'calc(80vh - 75px)'
                 // minHeight={{ xs: '100vh', sm: 650, md: 650 }}
                 // sx={{ height: 'calc(100vh)' }}
                 sx={{ paddingBottom: '1.25rem', paddingTop: '1.25rem' }}
@@ -69,7 +69,6 @@ const PriceSection = () => {
                         backgroundPosition: 'center center',
                         // backgroundImage: 'url(https://assets.maccarianagency.com/backgrounds/img52.jpg)'
                         backgroundImage: `url(${isMd ? pricesJpg1 : pricesJpg2})`,
-
                         // display: 'flex',
                         // alignItems: 'center',
                         // justifyContent: 'center',

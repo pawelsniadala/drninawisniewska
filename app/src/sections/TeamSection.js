@@ -4,7 +4,6 @@ import Box from '@mui/material/Box';
 
 import Container from '../components/Container';
 import SectionHeader from '../components/SectionHeader';
-// import CardTeam from '../components/CardTeam';
 import CardTeam2 from '../components/CardTeam2';
 import CardTeamProposed2 from '../components/CardTeamProposed2';
 
