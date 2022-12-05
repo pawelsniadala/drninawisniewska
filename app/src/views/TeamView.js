@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
+import Page from '../components/Page';
 import Container from '../components/Container';
 import CardTeam2 from '../components/CardTeam2';
 import CardTeamProposed2 from '../components/CardTeamProposed2';
@@ -116,4 +117,4 @@ const TeamView = () => {
     );
 }
 
-export default TeamView;
+export default Page(TeamView);

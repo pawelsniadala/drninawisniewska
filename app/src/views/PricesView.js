@@ -17,6 +17,7 @@ import Divider from '@mui/material/Divider';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
+import Page from '../components/Page';
 import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
 import PricesAestheticMedicinePartials from './partials/prices/PricesAestheticMedicinePartials';
 import PricesHematologyPartials from './partials/prices/PricesHematologyPartials';
@@ -562,4 +563,4 @@ const PricesView = () => {
     );
 }
 
-export default PricesView;
+export default Page(PricesView);

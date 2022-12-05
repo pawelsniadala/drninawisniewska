@@ -18,6 +18,7 @@ import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import SendIcon from '@mui/icons-material/Send';
 
+import Page from '../components/Page';
 import Container from '../components/Container';
 import PhoneSvg from '../assets/svg/PhoneSvg';
 import EmailSvg from '../assets/svg/EmailSvg';
@@ -223,4 +224,4 @@ const ContactView = () => {
     );
 }
 
-export default ContactView;
+export default Page(ContactView);

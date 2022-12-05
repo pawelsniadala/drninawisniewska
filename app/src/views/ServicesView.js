@@ -7,6 +7,7 @@ import Container from '../components/Container';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
+import Page from '../components/Page';
 import CardServices from '../components/CardServices';
 import CardProposed from '../components/CardProposed';
 
@@ -114,4 +115,4 @@ const ServicesView = () => {
     );
 }
 
-export default ServicesView;
+export default Page(ServicesView);

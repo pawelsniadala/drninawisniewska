@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
+import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardTeam2 from '../../../components/CardTeam2';
 import CardTeamProposed2 from '../../../components/CardTeamProposed2';
@@ -302,4 +303,4 @@ const ServicesCosmetologyPartial = () => {
     );
 }
 
-export default ServicesCosmetologyPartial;
+export default Page(ServicesCosmetologyPartial);

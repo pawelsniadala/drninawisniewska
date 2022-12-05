@@ -16,6 +16,7 @@ import TableRow from '@mui/material/TableRow';
 import TableContainer from '@mui/material/TableContainer';
 import Paper from '@mui/material/Paper';
 
+import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardTeam2 from '../../../components/CardTeam2';
 import CardTeamProposed2 from '../../../components/CardTeamProposed2';
@@ -533,4 +534,4 @@ const ServicesAllergologyPartial = () => {
     );
 }
 
-export default ServicesAllergologyPartial;
+export default Page(ServicesAllergologyPartial);

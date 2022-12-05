@@ -80,24 +80,24 @@ const Root = () => (
             <HeaderSection />
             <main>
                 <Routes>
-                    <Route exact path='/' element={<HomeView />} />
-                    <Route exact path='/drninawisniewska/' element={<HomeView />} />
-                    <Route path='/clinic' element={<ClinicView />} />
-                    <Route exact path='/services' element={<ServicesView />} />
-                    <Route path='/services/dermatology' element={<ServicesDermatologyPartial />} />
-                    <Route path='/services/aesthetic-medicine' element={<ServicesAestheticMedicinePartial />} />
-                    <Route path='/services/hematology' element={<ServicesHematologyPartial />} />
-                    <Route path='/services/cosmetology' element={<ServicesCosmetologyPartial />} />
-                    <Route path='/services/physioterapy' element={<ServicesPhysioterapyPartial />} />
-                    <Route path='/services/cosmetic-surgery' element={<ServicesCosmeticSurgeryPartial />} />
-                    <Route path='/services/allergology' element={<ServicesAllergologyPartial />} />
-                    <Route path='/services/usg' element={<ServicesUsgPartial />} />
-                    <Route path='/services/endocrinology' element={<ServicesEndocrinologyPartial />} />
-                    <Route path='/services/gynecology' element={<ServicesGynecologyPartial />} />
-                    <Route path='/services/orthopedics' element={<ServicesOrthopedicsPartial />} />
-                    <Route path='/services/vascular-surgery' element={<ServicesVascularSurgeryPartial />} />
-                    <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial />} />
-                    <Route path='/prices' element={<PricesView />}>
+                    <Route exact path='/' element={<HomeView main />} />
+                    <Route exact path='/drninawisniewska/' element={<HomeView main />} />
+                    <Route path='/clinic' element={<ClinicView title='Klinika' />} />
+                    <Route exact path='/services' element={<ServicesView title='Usługi' />} />
+                    <Route path='/services/dermatology' element={<ServicesDermatologyPartial title='Dermatologia' />} />
+                    <Route path='/services/aesthetic-medicine' element={<ServicesAestheticMedicinePartial title='Medycyna estetyczna' />} />
+                    <Route path='/services/hematology' element={<ServicesHematologyPartial title='Hematologia' />} />
+                    <Route path='/services/cosmetology' element={<ServicesCosmetologyPartial title='Kosmetologia' />} />
+                    <Route path='/services/physioterapy' element={<ServicesPhysioterapyPartial title='Fizjoterapia' />} />
+                    <Route path='/services/cosmetic-surgery' element={<ServicesCosmeticSurgeryPartial title='Chirurgia plastyczna' />} />
+                    <Route path='/services/allergology' element={<ServicesAllergologyPartial title='Alergologia' />} />
+                    <Route path='/services/usg' element={<ServicesUsgPartial title='USG' />} />
+                    <Route path='/services/endocrinology' element={<ServicesEndocrinologyPartial title='Endokrynologia' />} />
+                    <Route path='/services/gynecology' element={<ServicesGynecologyPartial title='Ginekologia' />} />
+                    <Route path='/services/orthopedics' element={<ServicesOrthopedicsPartial title='Ortopedia' />} />
+                    <Route path='/services/vascular-surgery' element={<ServicesVascularSurgeryPartial title='Chirurgia naczyniowa' />} />
+                    <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial title='Dietetyka Kliniczna' />} />
+                    <Route path='/prices' element={<PricesView title='Cennik' />}>
                         <Route path='/prices' element={<PricesDermatologyPartials />} />
                         <Route path='/prices/aesthetic-medicine' element={<PricesAestheticMedicinePartials />} />
                         <Route path='/prices/hematology' element={<PricesHematologyPartials />} />
@@ -112,41 +112,41 @@ const Root = () => (
                         <Route path='/prices/vascular-surgery' element={<PricesVascularSurgeryPartials />} />
                         <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartials />} />
                     </Route>
-                    <Route path='/team' element={<TeamView />} />
-                    <Route path='/team/nina-wisniewska' element={<TeamNinaWisniewskaPartial />} />
-                    <Route path='/team/justyna-filipek' element={<TeamJustynaFilipekPartial />} />
-                    <Route path='/team/paulina-budna' element={<TeamPaulinaBudnaPartial />} />
-                    <Route path='/team/konrad-kochan' element={<TeamKonradKochanPartial />} />
-                    <Route path='/team/wojciech-kaszewski' element={<TeamWojciechKaszewskiPartial />} />
-                    <Route path='/team/klaudia-malottki' element={<TeamKlaudiaMalottkiPartial />} />
-                    <Route path='/team/katarzyna-mysliwiec-czajka' element={<TeamKatarzynaMysliwiecCzajkaPartial />} />
-                    <Route path='/team/justyna-kloniecka' element={<TeamJustynaKlonieckaPartial />} />
-                    <Route path='/team/aldona-maciag' element={<TeamAldonaMaciagPartial />} />
-                    <Route path='/team/milena-juzwiak' element={<TeamMilenaJuzwiakPartial />} />
-                    <Route path='/team/paulina-tatara' element={<TeamPaulinaTataraPartial />} />
-                    <Route path='/team/tomasz-matuszewski' element={<TeamTomaszMatuszewskiPartial />} />
-                    <Route path='/team/olga-lenartowicz-warakomska' element={<TeamOlgaLenartowiczWarakomskaPartial />} />
-                    <Route path='/team/katarzyna-zbronska' element={<TeamKatarzynaZbronskaPartial />} />
-                    <Route path='/team/joanna-ojrzenska' element={<TeamJoannaOjrzenskaPartial />} />
-                    <Route path='/team/aleksandra-gorczynska' element={<TeamAleksandraGorczynskaPartial />} />
-                    <Route path='/team/miroslaw-majewski' element={<TeamMiroslawMajewskiPartial />} />
-                    <Route path='/team/kamil-stepkowski' element={<TeamKamilStepkowskiPartial />} />
-                    <Route path='/team/katarzyna-rychlik' element={<TeamKatarzynaRychlikPartial />} />
-                    <Route path='/team/patryk-krokwinski' element={<TeamPatrykKrokwinskiPartial />} />
-                    <Route path='/technology' element={<TechnologyView />} />
-                    <Route path='/technology/vectus' element={<TechnologyVectusPartial />} />
-                    <Route path='/technology/alma-harmony-xl-pro' element={<TechnologyAlmaHarmonyXlProPartial />} />
-                    <Route path='/technology/icoone-laser-med2' element={<TechnologyIcooneLaserMed2Partial />} />
-                    <Route path='/technology/fons-svr-fraction-laser-co2' element={<TechnologyFonsSvrFractionLaserCo2Partial />} />
-                    <Route path='/technology/alma-accent-ultra-v-shape' element={<TechnologyAlmaAccentUltraVShapePartial />} />
-                    <Route path='/technology/biolitec-leonardo-mini' element={<TechnologyBiolitecLeonardoMiniPartial />} />
-                    <Route path='/technology/hettich-arthrex-acp' element={<TechnologyHettichArthrexAcpPartial />} />
-                    <Route path='/technology/foto-finder-dermoscope-vexia' element={<TechnologyFotoFinderDermoscopeVexiaPartial />} />
-                    <Route path='/technology/philips-ultrasonograf-affiniti-50' element={<TechnologyPhilipsUltrasonografAffiniti50Partial />} />
-                    <Route path='/technology/sono-queen' element={<TechnologySonoQueenPartial />} />
-                    <Route path='/technology/dermalight-500' element={<TechnologyDermalight500Partial />} />
-                    <Route path='/technology/dermalight-1000-uva-uvb-311nm' element={<TechnologyDermalight1000UvaUvb311nmPartial />} />
-                    <Route path='/contact' element={<ContactView />} />
+                    <Route path='/team' element={<TeamView title='Zespół' />} />
+                    <Route path='/team/nina-wisniewska' element={<TeamNinaWisniewskaPartial title='Nina Wiśniewska' />} />
+                    <Route path='/team/justyna-filipek' element={<TeamJustynaFilipekPartial title='Justyna Filipek' />} />
+                    <Route path='/team/paulina-budna' element={<TeamPaulinaBudnaPartial title='Paulina Budna' />} />
+                    <Route path='/team/konrad-kochan' element={<TeamKonradKochanPartial title='Konrad Kochan' />} />
+                    <Route path='/team/wojciech-kaszewski' element={<TeamWojciechKaszewskiPartial title='Wojciech Kaszewski' />} />
+                    <Route path='/team/klaudia-malottki' element={<TeamKlaudiaMalottkiPartial title='Klaudia Malottki' />} />
+                    <Route path='/team/katarzyna-mysliwiec-czajka' element={<TeamKatarzynaMysliwiecCzajkaPartial title='Katarzyna Myśliwiec-Czajka' />} />
+                    <Route path='/team/justyna-kloniecka' element={<TeamJustynaKlonieckaPartial title='Justyna Kłoniecka' />} />
+                    <Route path='/team/aldona-maciag' element={<TeamAldonaMaciagPartial title='Aldona Maciąg' />} />
+                    <Route path='/team/milena-juzwiak' element={<TeamMilenaJuzwiakPartial title='Milena Juźwiak' />} />
+                    <Route path='/team/paulina-tatara' element={<TeamPaulinaTataraPartial title='Paulina Tatara' />} />
+                    <Route path='/team/tomasz-matuszewski' element={<TeamTomaszMatuszewskiPartial title='Tomasz Matuszewski' />} />
+                    <Route path='/team/olga-lenartowicz-warakomska' element={<TeamOlgaLenartowiczWarakomskaPartial title='Olga Lenartowicz-Warakomska' />} />
+                    <Route path='/team/katarzyna-zbronska' element={<TeamKatarzynaZbronskaPartial title='Katarzyna Zbrońska' />} />
+                    <Route path='/team/joanna-ojrzenska' element={<TeamJoannaOjrzenskaPartial title='Joanna Ojrzeńska' />} />
+                    <Route path='/team/aleksandra-gorczynska' element={<TeamAleksandraGorczynskaPartial title='Aleksandra Górczyńska' />} />
+                    <Route path='/team/miroslaw-majewski' element={<TeamMiroslawMajewskiPartial title='Mirosław Majewski' />} />
+                    <Route path='/team/kamil-stepkowski' element={<TeamKamilStepkowskiPartial title='Kamil Stępkowski' />} />
+                    <Route path='/team/katarzyna-rychlik' element={<TeamKatarzynaRychlikPartial title='Katarzyna Rychlik' />} />
+                    <Route path='/team/patryk-krokwinski' element={<TeamPatrykKrokwinskiPartial title='Patryk Krokwiński' />} />
+                    <Route path='/technology' element={<TechnologyView title='Technologia' />} />
+                    <Route path='/technology/vectus' element={<TechnologyVectusPartial title='Vectus' />} />
+                    <Route path='/technology/alma-harmony-xl-pro' element={<TechnologyAlmaHarmonyXlProPartial title='Alma Harmony XL Pro' />} />
+                    <Route path='/technology/icoone-laser-med2' element={<TechnologyIcooneLaserMed2Partial title='Icoone Laser Med 2' />} />
+                    <Route path='/technology/fons-svr-fraction-laser-co2' element={<TechnologyFonsSvrFractionLaserCo2Partial title='Fons SVR Laser Frakcyjny CO2' />} />
+                    <Route path='/technology/alma-accent-ultra-v-shape' element={<TechnologyAlmaAccentUltraVShapePartial title='Alma Accent Ultra V Shape' />} />
+                    <Route path='/technology/biolitec-leonardo-mini' element={<TechnologyBiolitecLeonardoMiniPartial title='Biolitec Leonardo Mini' />} />
+                    <Route path='/technology/hettich-arthrex-acp' element={<TechnologyHettichArthrexAcpPartial title='Hettich Arthrex ACP' />} />
+                    <Route path='/technology/foto-finder-dermoscope-vexia' element={<TechnologyFotoFinderDermoscopeVexiaPartial title='FotoFinder Dermoscope Vexia' />} />
+                    <Route path='/technology/philips-ultrasonograf-affiniti-50' element={<TechnologyPhilipsUltrasonografAffiniti50Partial title='Philips Ultrasonograf Affiniti 50' />} />
+                    <Route path='/technology/sono-queen' element={<TechnologySonoQueenPartial title='SonoQueen' />} />
+                    <Route path='/technology/dermalight-500' element={<TechnologyDermalight500Partial title='Dermalight 500' />} />
+                    <Route path='/technology/dermalight-1000-uva-uvb-311nm' element={<TechnologyDermalight1000UvaUvb311nmPartial title='Dermalight 1000 UVA UVB 311nm' />} />
+                    <Route path='/contact' element={<ContactView title='Kontakt' />} />
                 </Routes>
             </main>
             <Toast />

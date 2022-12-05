@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
+import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardTeamProposed2 from '../../../components/CardTeamProposed2';
 
@@ -168,4 +169,4 @@ const TeamPatrykKrokwinskiPartial = () => {
     );
 }
 
-export default TeamPatrykKrokwinskiPartial;
+export default Page(TeamPatrykKrokwinskiPartial);

@@ -1,3 +1,4 @@
+import Page from '../components/Page';
 import HeroSection from '../sections/HeroSection';
 import ClinicSection from '../sections/ClinicSection';
 import ServicesSection from '../sections/ServicesSection';
@@ -18,4 +19,4 @@ const HomeView = () => {
     );
 }
 
-export default HomeView;
+export default Page(HomeView);

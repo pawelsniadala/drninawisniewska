@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-// import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
+import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardTeam2 from '../../../components/CardTeam2';
 import CardTeamProposed2 from '../../../components/CardTeamProposed2';
@@ -193,4 +193,4 @@ const ServicesUsgPartial = () => {
     );
 }
 
-export default ServicesUsgPartial;
+export default Page(ServicesUsgPartial);

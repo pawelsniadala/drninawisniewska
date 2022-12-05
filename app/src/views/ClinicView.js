@@ -13,6 +13,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
+import Page from '../components/Page';
 import Container from '../components/Container';
 import ListBulleted from '../components/ListBulleted';
 
@@ -184,4 +185,4 @@ const TechnologyView = () => {
     );
 }
 
-export default TechnologyView;
+export default Page(TechnologyView);

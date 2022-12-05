@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
+import Page from '../components/Page';
 import Container from '../components/Container';
 import CardTechnology from '../components/CardTechnology';
 import CardProposed from '../components/CardProposed';
@@ -13,7 +14,6 @@ import CardProposed from '../components/CardProposed';
 import { technology } from '../data/technology';
 
 const TechnologyView = () => {
-
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -112,4 +112,4 @@ const TechnologyView = () => {
     );
 }
 
-export default TechnologyView;
+export default Page(TechnologyView);

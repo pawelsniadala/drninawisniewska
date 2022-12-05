@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
+import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 
@@ -112,4 +113,4 @@ const TechnologyFotoFinderDermoscopeVexiaPartial = () => {
     );
 }
 
-export default TechnologyFotoFinderDermoscopeVexiaPartial;
+export default Page(TechnologyFotoFinderDermoscopeVexiaPartial);
