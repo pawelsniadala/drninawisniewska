@@ -179,10 +179,6 @@ const PricesView = () => {
 
     const { width } = useWindowDimensions();
 
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>

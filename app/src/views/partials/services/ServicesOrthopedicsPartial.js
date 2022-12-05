@@ -17,10 +17,6 @@ import { services, orthopedics } from '../../../data/services';
 import { team } from '../../../data/team';
 
 const ServicesOrthopedicsPartial = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     function getWindowDimensions() {
         const { innerWidth: width } = window;
         return { width };

@@ -14,10 +14,6 @@ import CardTeamProposed2 from '../components/CardTeamProposed2';
 import { team } from '../data/team';
 
 const TeamView = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     function getWindowDimensions() {
         const { innerWidth: width } = window;
         return { width };

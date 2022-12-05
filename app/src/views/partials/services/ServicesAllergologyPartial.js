@@ -253,10 +253,6 @@ const Table3 = () => {
 }
 
 const ServicesAllergologyPartial = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     function getWindowDimensions() {
         const { innerWidth: width } = window;
         return { width };

@@ -20,10 +20,6 @@ import { team } from '../../../data/team';
 import { technology } from '../../../data/technology';
 
 const ServicesVascularSurgeryPartial = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     function getWindowDimensions() {
         const { innerWidth: width } = window;
         return { width };

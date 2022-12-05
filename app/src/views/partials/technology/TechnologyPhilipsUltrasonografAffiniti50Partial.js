@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -14,10 +14,6 @@ import CardProposed from '../../../components/CardProposed';
 import { technology, philipsUltrasonografAffiniti50 } from '../../../data/technology';
 
 const TechnologyPhilipsUltrasonografAffiniti50Partial = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>

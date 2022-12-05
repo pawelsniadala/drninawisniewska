@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -12,6 +12,8 @@ import Paper from '@mui/material/Paper';
 import InfoIcon from '@mui/icons-material/Info';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
+
+import Page from '../../../components/Page';
 
 const StyledTableCell = styled(TableCell)(() => ({
     [`&.${tableCellClasses.head}`]: {
@@ -93,10 +95,6 @@ const Table1 = () => {
 }
 
 const PricesGynecologyPartials = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     return (
         <Box display='grid' gap={'15px'}>
             <Table1 />
@@ -104,4 +102,4 @@ const PricesGynecologyPartials = () => {
     );
 }
 
-export default PricesGynecologyPartials;
+export default Page(PricesGynecologyPartials);

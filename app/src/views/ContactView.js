@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import * as bootstrap from 'bootstrap';
@@ -71,10 +71,6 @@ const ContactView = () => {
             default:
         }
     }
-
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
 
     return (
         <Box className='contact-view'>

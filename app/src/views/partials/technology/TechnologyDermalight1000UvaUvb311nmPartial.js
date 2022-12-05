@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -15,10 +15,6 @@ import ListBulleted from '../../../components/ListBulleted';
 import { technology, dermalight1000UvaUvb311nm } from '../../../data/technology';
 
 const TechnologyDermalight1000UvaUvb311nmPartial = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>

@@ -14,10 +14,6 @@ import CardProposed from '../components/CardProposed';
 import { services } from '../data/services';
 
 const ServicesView = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     function getWindowDimensions() {
         const { innerWidth: width } = window;
         return { width };

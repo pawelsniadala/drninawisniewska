@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -13,10 +13,6 @@ import CardProposed from '../../../components/CardProposed';
 import { technology, dermalight500 } from '../../../data/technology';
 
 const TechnologyDermalight500Partial = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>

@@ -21,10 +21,6 @@ import { technology } from '../../../data/technology';
 import { team } from '../../../data/team';
 
 const ServicesCosmetologyPartial = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     function getWindowDimensions() {
         const { innerWidth: width } = window;
         return { width };

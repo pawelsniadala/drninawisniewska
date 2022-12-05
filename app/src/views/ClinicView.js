@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Lightbox from 'react-image-lightbox';
@@ -38,10 +38,6 @@ const TechnologyView = () => {
         setCurrentImage(0);
         setViewerIsOpen(false);
     };
-
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
 
     return (
         <Box className='contact-view'>

@@ -17,10 +17,6 @@ import { services, cosmeticSurgery } from '../../../data/services';
 import { team } from '../../../data/team';
 
 const ServicesCosmeticSurgeryPartial = () => {
-    useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
-
     function getWindowDimensions() {
         const { innerWidth: width } = window;
         return { width };
