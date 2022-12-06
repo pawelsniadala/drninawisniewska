@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -9,8 +9,6 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TableContainer from '@mui/material/TableContainer';
 import Paper from '@mui/material/Paper';
-
-import Page from '../../../components/Page';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -489,6 +487,10 @@ const Table11 = () => {
 }
 
 const PricesCosmetologyPartials = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, []);
+
     return (
         <Box display='grid' gap={'15px'}>
             <Table1 />
@@ -504,4 +506,4 @@ const PricesCosmetologyPartials = () => {
     );
 };
 
-export default Page(PricesCosmetologyPartials);
+export default PricesCosmetologyPartials;

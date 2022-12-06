@@ -70,7 +70,7 @@ const HeaderSection = () => {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List className='logo'>
-                <ListItem className='list-item' disablePadding>
+                <ListItem className='list-item'>
                     <NavLink
                         className='navbar-brand text-uppercase'
                         activeclassname='active'
@@ -84,7 +84,7 @@ const HeaderSection = () => {
                 </ListItem>
             </List>
             <List className='menu'>
-                <ListItem disablePadding>
+                <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
                         activeclassname='active'
@@ -99,7 +99,7 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                <ListItem disablePadding>
+                <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
                         activeclassname='active'
@@ -114,7 +114,7 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                <ListItem disablePadding>
+                <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
                         activeclassname='active'
@@ -129,7 +129,7 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                <ListItem disablePadding>
+                <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
                         activeclassname='active'
@@ -144,7 +144,7 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                <ListItem disablePadding>
+                <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
                         activeclassname='active'
@@ -159,7 +159,7 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                <ListItem disablePadding>
+                <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
                         activeclassname='active'
@@ -177,7 +177,7 @@ const HeaderSection = () => {
             </List>
             <Divider />
             <List className='media'>
-                <ListItem disablePadding>
+                <ListItem className='list-item'>
                     <a href='https://www.facebook.com/profile.php?id=100063736802328'
                         className='link'
                         target='_blank'
@@ -191,7 +191,7 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </a>
                 </ListItem>
-                <ListItem disablePadding>
+                <ListItem className='list-item'>
                     <a href='https://www.instagram.com/klinikawyszkow/'
                         className='link'
                         target='_blank'
@@ -324,18 +324,6 @@ const HeaderSection = () => {
                         id='offcanvasNavbar'
                         aria-labelledby='offcanvasNavbarLabel'
                     >
-                        <Box className='offcanvas-header'>
-                            <h5 className='offcanvas-title'
-                                id='offcanvasNavbarLabel'
-                            >
-                                {/* TODO */}
-                            </h5>
-                            <button type='button'
-                                className='btn-close'
-                                data-bs-dismiss='offcanvas'
-                                aria-label='Close'>
-                            </button>
-                        </Box>
                         <Box className='offcanvas-body navbar-light' id='navbarSupportedContent'>
                             <ul className='navbar-nav'>
                                 <li className='nav-item'>

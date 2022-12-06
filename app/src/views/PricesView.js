@@ -225,7 +225,7 @@ const PricesView = () => {
                             <Box className='navigation-wrapper'>
                                 {width >= 991.98 ? (
                                     <List className='list'>
-                                        <ListItem className='list-item' disablePadding>
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices'
@@ -240,8 +240,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/aesthetic-medicine'
@@ -256,8 +256,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/hematology'
@@ -272,8 +272,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/cosmetology'
@@ -288,8 +288,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/physioterapy'
@@ -304,8 +304,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/cosmetic-surgery'
@@ -320,8 +320,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/allergology'
@@ -336,8 +336,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/usg'
@@ -352,8 +352,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/endocrinology'
@@ -368,8 +368,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/gynecology'
@@ -384,8 +384,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/orthopedics'
@@ -400,8 +400,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/vascular-surgery'
@@ -416,8 +416,8 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
-                                        <Divider className='divider' disablePadding/>
-                                        <ListItem className='list-item' disablePadding>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
                                                 to='/prices/clinical-dietitian'

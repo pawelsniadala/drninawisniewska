@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -12,8 +12,6 @@ import Paper from '@mui/material/Paper';
 import InfoIcon from '@mui/icons-material/Info';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-
-import Page from '../../../components/Page';
 
 const StyledTableCell = styled(TableCell)(() => ({
     [`&.${tableCellClasses.head}`]: {
@@ -761,6 +759,10 @@ const Table14 = () => {
 };
 
 const PricesAestheticMedicinePartials = () => {
+    useEffect(() => {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    }, []);
+
     return (
         <Box display='grid' gap={'15px'}>
             <Table16 />
@@ -783,4 +785,4 @@ const PricesAestheticMedicinePartials = () => {
     );
 };
 
-export default Page(PricesAestheticMedicinePartials);
+export default PricesAestheticMedicinePartials;
