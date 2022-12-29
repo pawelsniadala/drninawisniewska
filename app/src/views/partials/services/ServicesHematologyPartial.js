@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -9,35 +10,35 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
-import CardTeam2 from '../../../components/CardTeam2';
-import CardTeamProposed2 from '../../../components/CardTeamProposed2';
+// import CardTeam2 from '../../../components/CardTeam2';
+// import CardTeamProposed2 from '../../../components/CardTeamProposed2';
 import CardProposed from '../../../components/CardProposed';
 
 import { services, hematology } from '../../../data/services';
-import { team } from '../../../data/team';
+// import { team } from '../../../data/team';
 
 const ServicesHematologyPartial = () => {
-    function getWindowDimensions() {
-        const { innerWidth: width } = window;
-        return { width };
-    }
+    // function getWindowDimensions() {
+    //     const { innerWidth: width } = window;
+    //     return { width };
+    // }
 
-    function useWindowDimensions() {
-        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
+    // function useWindowDimensions() {
+    //     const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
 
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
+    //     useEffect(() => {
+    //         function handleResize() {
+    //             setWindowDimensions(getWindowDimensions());
+    //         }
 
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
+    //         window.addEventListener('resize', handleResize);
+    //         return () => window.removeEventListener('resize', handleResize);
+    //     }, []);
 
-        return windowDimensions;
-    }
+    //     return windowDimensions;
+    // }
 
-    const { width } = useWindowDimensions();
+    // const { width } = useWindowDimensions();
 
     return (
         <Box className='contact-view'>
@@ -102,7 +103,7 @@ const ServicesHematologyPartial = () => {
                                 </Box>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            {/* <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header alternative'>
                                     Specjaliści
                                 </Typography>
@@ -134,7 +135,7 @@ const ServicesHematologyPartial = () => {
                                         ))
                                     )}
                                 </Box>
-                            </Box>
+                            </Box> */}
 
                         </Box>
                         <Box className='proposed-services'>
