@@ -94,7 +94,7 @@ const TechnologyBiolitecLeonardoMiniPartial = () => {
                                         'szybka konfiguracja,',
                                         'przejrzysty i intuicyjny interfejs użytkownika,',
                                         'opcjonalne zastosowania,',
-                                        'możliwość zasilania bateryjnego,'
+                                        'możliwość zasilania bateryjnego.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -106,10 +106,21 @@ const TechnologyBiolitecLeonardoMiniPartial = () => {
                                 <Typography className='paragraph'>
                                     Leonardo<sup>®</sup> Mini współpracuje z szerokim spektrum światłowodów opracowanych przez Biolitec. Zastosowane złącze światłowodu jest przyjazne dla użytkownika oraz posiada zabezpieczenie elektroniczne.
                                 </Typography>
+                                <Typography className='paragraph'>
+                                    Mobilna wersja lasera Leonardo Mini jest idealnym rozwiązaniem do endożylnego usuwania żył i obecnie jest uważany za złoty standard w tego typu zabiegach. Długość fali 1470nm zapewnia odpowiednio płytką penetrację światła w ścianie żyły by nie uszkadzać niepotrzebnie otaczających tkanek, a dwupierścieniowa konstrukcja światłowodu zwiększa skuteczność zamykania małych i dużych żył.
+                                </Typography>
+                                <Typography className='paragraph heading'>
+                                    <strong>Zalety leczenia ELVeS</strong>:
+                                </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'użytkowaniu poza okresem ważności produktu,',
-                                        'zagrożeniom spowodowanym niewłaściwym połączeniem światłowodu z laserem.'
+                                        'maksymalny komfort pacjenta,',
+                                        'mniejszy ból po zabiegu,',
+                                        'mniejszy stan zapalny,',
+                                        'mniejsze ryzyko siniaków,',
+                                        'lepszy efekt kosmetyczny,',
+                                        'szybki powrót do normalnej aktywności,',
+                                        'krótki czas zabiegu.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -118,9 +129,6 @@ const TechnologyBiolitecLeonardoMiniPartial = () => {
                                         />
                                     ))}
                                 </Grid>
-                                <Typography className='paragraph'>
-                                    Dzięki temu zostało zapewnione wysokie bezpieczeństwo pacjenta.
-                                </Typography>
                             </Box>
                         </Box>
                         <Box className='proposed-technology'>
