@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -12,6 +13,7 @@ import Container from '../../../components/Container';
 import CardTeam2 from '../../../components/CardTeam2';
 import CardTeamProposed2 from '../../../components/CardTeamProposed2';
 import CardProposed from '../../../components/CardProposed';
+import ListBulleted from '../../../components/ListBulleted';
 
 import { services, clinicalDietitian } from '../../../data/services';
 import { team } from '../../../data/team';
@@ -82,7 +84,7 @@ const ServicesClinicalDietitianPartial = () => {
 
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
-                                    Strona w budowie.
+                                    <strong>Dietetyka</strong> - nauka medyczna zajmująca się prawidłowym odżywianiem, zarówno osób zdrowych, jak i chorych.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
                                     <LazyLoadImage
@@ -100,6 +102,22 @@ const ServicesClinicalDietitianPartial = () => {
                                         }}
                                     />
                                 </Box>
+                                <Typography className='paragraph heading'>
+                                    <strong>Najczęstsze problemy z jakimi możesz zgłosić się do naszej Kliniki</strong>:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'uzupełnienie niedoborów organizmu,',
+                                        'chęć odchudzania się w racjonalny sposób,',
+                                        'potrzeba wdrożenia specjalistycznej diety ze względu na choroby współistniejące.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
                             </Box>
 
                             <Box marginBottom={3}>

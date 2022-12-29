@@ -85,11 +85,8 @@ const ServicesDermatologyPartial = () => {
                         <Box className='service-description'>
 
                             <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header'>
-                                    Badanie znamion barwnikowych
-                                </Typography>
                                 <Typography className='paragraph'>
-                                    Badanie znamion barwnikowych polega na poddaniu zmian skórnych analizie przez dermatologa. W naszej Klinice badanie można przeprowadzić za pomocą <strong>dermatoskopu</strong> lub <strong>wideodermatoskopu</strong>.
+                                    <strong>Dermatologia</strong> - dziedzina medycyny zajmująca się chorobami skóry, włosów i paznokci oraz chorobami wenerycznymi (choroby przenoszone drogą płciową). 
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
                                     <LazyLoadImage
@@ -103,10 +100,48 @@ const ServicesDermatologyPartial = () => {
                                             borderRadius: 8,
                                             width: '100%',
                                             height: '100%',
-                                            maxHeight: '400px',
+                                            maxHeight: '400px'
                                         }}
                                     />
                                 </Box>
+                                <Typography className='paragraph heading'>
+                                    <strong>Najczęstsze problemy z jakimi możesz zgłosić się do naszej Kliniki</strong>:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'kontrola znamion barwnikowych,',
+                                        'trądzik pospolity,',
+                                        'trądzik różowaty,',
+                                        'atopowe zapalenie skóry,',
+                                        'łojotokowe zapalenie skóry,',
+                                        'łuszczyca,',
+                                        'pokrzywka,',
+                                        'kontaktowe zapalenie skóry,',
+                                        'liszaj płaski,',
+                                        'łysienie,',
+                                        'łupież,',
+                                        'grzybice skóry i paznokci,',
+                                        'choroby weneryczne.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph heading'>
+                                    Przyjmujemy dzieci w każdym wieku.
+                                </Typography>
+                            </Box>
+
+                            <Box marginBottom={3}>
+                                <Typography variant={'h5'} className='header'>
+                                    Badanie znamion barwnikowych
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Badanie znamion barwnikowych polega na poddaniu zmian skórnych analizie przez dermatologa. W naszej Klinice badanie można przeprowadzić za pomocą <strong>dermatoskopu</strong> lub <strong>wideodermatoskopu</strong>.
+                                </Typography>
                                 <Typography className='paragraph'>
                                     Wideodermatoskopia to <strong>nowoczesna cyfrowa technologia</strong> służąca do analizy znamion barwnikowych skóry. Urządzenie służy także diagnozowaniu zmian chorobowych skóry, włosów i paznokci. Jest to zaawansowany system łączący <strong>optyczny układ wideokamery</strong> dermatoskopu z <strong>komputerową analizą obrazu</strong> za pomocą algebraicznych algorytmów.
                                 </Typography>

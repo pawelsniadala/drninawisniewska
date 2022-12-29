@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -13,6 +14,7 @@ import CardTeam2 from '../../../components/CardTeam2';
 import CardTeamProposed2 from '../../../components/CardTeamProposed2';
 import CardProposed from '../../../components/CardProposed';
 import CardTechnology from '../../../components/CardTechnology';
+import ListBulleted from '../../../components/ListBulleted';
 
 import { services, usg } from '../../../data/services';
 import { team } from '../../../data/team';
@@ -84,7 +86,7 @@ const ServicesUsgPartial = () => {
 
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
-                                    Strona w budowie.
+                                    <strong>USG</strong> - specjalistyczne nieinwazyjne badanie obrazowe tkanek miękkich w czasie rzeczywistym wykorzystujące fale ultradźwiękowe.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
                                     <LazyLoadImage
@@ -102,6 +104,36 @@ const ServicesUsgPartial = () => {
                                         }}
                                     />
                                 </Box>
+                                <Typography className='paragraph heading'>
+                                    <strong>Badania USG na które możesz zgłosić się do naszej Kliniki</strong>:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'jama brzuszna,',
+                                        'tarczyca,',
+                                        'piersi,',
+                                        'ślinianki,',
+                                        'węzły chłonne,',
+                                        'prostata,',
+                                        'jądra,',
+                                        'układ moczowy,',
+                                        'doppler tętnic szyjnych,',
+                                        'doppler kończyny dolnej (jedna noga),',
+                                        'doppler kończyn dolnych (dwie nogi).'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph heading'>
+                                    Przyjmujemy dzieci w każdym wieku.
+                                </Typography>
+                                <Typography className='paragraph heading'>
+                                    Nie wykonujemy badania USG układu kostno-stawowego.
+                                </Typography>
                             </Box>
 
                             <Box marginBottom={3}>

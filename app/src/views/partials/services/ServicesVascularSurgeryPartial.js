@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -15,7 +16,7 @@ import CardProposed from '../../../components/CardProposed';
 import CardTechnology from '../../../components/CardTechnology';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { services } from '../../../data/services';
+import { services, vasularSurgery } from '../../../data/services';
 import { team } from '../../../data/team';
 import { technology } from '../../../data/technology';
 
@@ -83,6 +84,51 @@ const ServicesVascularSurgeryPartial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper services'>
                         <Box className='service-description'>
+
+                            <Box marginBottom={3}>
+                                <Typography className='paragraph'>
+                                    <strong>Chirurgia naczyniowa</strong> - dziedzina medycyny zajmująca się diagnozowaniem i nieinwazyjnym lub inwazyjnym operacyjnym leczeniem chorób związanych z nieprawidłowym funkcjonowaniem naczyń krwionośnych i limfatycznych.
+                                </Typography>
+                                <Box marginBottom={3} marginTop={3}>
+                                    <LazyLoadImage
+                                        height={'100%'}
+                                        width={'100%'}
+                                        src={vasularSurgery.image}
+                                        alt='Remote working'
+                                        effect='blur'
+                                        style={{
+                                            objectFit: 'cover',
+                                            borderRadius: 8,
+                                            width: '100%',
+                                            height: '100%',
+                                            maxHeight: '400px',
+                                        }}
+                                    />
+                                </Box>
+                                <Typography className='paragraph heading'>
+                                    <strong>Najczęstsze problemy z jakimi możesz zgłosić się do naszej Kliniki</strong>:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'miażdżyca,',
+                                        'tętniaki,',
+                                        'żylaki kończyn dolnych,',
+                                        'kamica żółciowa.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph heading'>
+                                    U nas wykonasz również zabieg skleroterapii oraz laserowe usuwanie żylaków.
+                                </Typography>
+                                <Typography className='paragraph heading'>
+                                    W zakres chirurgii naczyniowej nie wchodzi leczenie żylaków odbytu (hemoroidy).
+                                </Typography>
+                            </Box>
 
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header'>
