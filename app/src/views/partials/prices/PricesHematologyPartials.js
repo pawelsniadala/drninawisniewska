@@ -37,7 +37,7 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja - dr Mirosław Majewski', 250)
+        createData('Brak informacji', false)
     ];
 
     return (

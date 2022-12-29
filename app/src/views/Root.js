@@ -54,7 +54,6 @@ import TeamOlgaLenartowiczWarakomskaPartial from './partials/team/TeamOlgaLenart
 import TeamKatarzynaZbronskaPartial from './partials/team/TeamKatarzynaZbronskaPartial';
 import TeamJoannaOjrzenskaPartial from './partials/team/TeamJoannaOjrzenskaPartial';
 import TeamAleksandraGorczynskaPartial from './partials/team/TeamAleksandraGorczynskaPartial';
-import TeamMiroslawMajewskiPartial from './partials/team/TeamMiroslawMajewskiPartial';
 import TeamKamilStepkowskiPartial from './partials/team/TeamKamilStepkowskiPartial';
 import TeamKatarzynaRychlikPartial from './partials/team/TeamKatarzynaRychlikPartial';
 import TeamPatrykKrokwinskiPartial from './partials/team/TeamPatrykKrokwinskiPartial';
@@ -129,7 +128,6 @@ const Root = () => (
                     <Route path='/team/katarzyna-zbronska' element={<TeamKatarzynaZbronskaPartial title='Katarzyna Zbrońska' />} />
                     <Route path='/team/joanna-ojrzenska' element={<TeamJoannaOjrzenskaPartial title='Joanna Ojrzeńska' />} />
                     <Route path='/team/aleksandra-gorczynska' element={<TeamAleksandraGorczynskaPartial title='Aleksandra Górczyńska' />} />
-                    <Route path='/team/miroslaw-majewski' element={<TeamMiroslawMajewskiPartial title='Mirosław Majewski' />} />
                     <Route path='/team/kamil-stepkowski' element={<TeamKamilStepkowskiPartial title='Kamil Stępkowski' />} />
                     <Route path='/team/katarzyna-rychlik' element={<TeamKatarzynaRychlikPartial title='Katarzyna Rychlik' />} />
                     <Route path='/team/patryk-krokwinski' element={<TeamPatrykKrokwinskiPartial title='Patryk Krokwiński' />} />

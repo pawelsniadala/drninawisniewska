@@ -15,7 +15,6 @@ import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarako
 import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
 import joannaOjrzenskaImage from '../assets/team/joannaOjrzenska/joannaOjrzenskaImage.jpg';
 import aleksandraGorczynskaImage from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImage.jpg';
-import miroslawMajewskiImage from  '../assets/team/miroslawMajewski/miroslawMajewskiImage.jpg';
 import katarzynaRychlikImage from  '../assets/team/katarzynaRychlik/katarzynaRychlikImage.jpg';
 import patrykKrokwinskiImage from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImage.jpg';
 
@@ -243,20 +242,6 @@ export const aleksandraGorczynska = {
     services: ['cosmetology']
 };
 
-export const miroslawMajewski = {
-    designation: 'miroslawMajewski',
-    name: 'dr Mirosław Majewski',
-    speciality: 'Hematolog',
-    summary: false,
-    education: false,
-    experience: false,
-    interested: false,
-    image: miroslawMajewskiImage,
-    background: false,
-    path: '/team/miroslaw-majewski',
-    services: ['hematology']
-};
-
 export const kamilStepkowski = {
     designation: 'kamilStepkowski',
     name: 'lek. med. Kamil Stępkowski',
@@ -316,7 +301,6 @@ export const team = [
     { ...katarzynaZbronska },
     { ...joannaOjrzenska },
     { ...aleksandraGorczynska },
-    { ...miroslawMajewski },
     { ...kamilStepkowski },
     { ...katarzynaRychlik },
     { ...patrykKrokwinski }

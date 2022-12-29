@@ -38,7 +38,6 @@ import olgaLenartowiczWarakomskaImageSmall from '../assets/team/olgaLenartowiczW
 import paulinaTataraImageSmall from '../assets/team/paulinaTatara/paulinaTataraImageSmall.jpg';
 import joannaOjrzenskaImageSmall from '../assets/team/joannaOjrzenska/joannaOjrzenskaImageSmall.jpg';
 import aleksandraGorczynskaImageSmall from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImageSmall.jpg';
-import miroslawMajewskiImageSmall from  '../assets/team/miroslawMajewski/miroslawMajewskiImageSmall.jpg';
 import katarzynaRychlikImageSmall from  '../assets/team/katarzynaRychlik/katarzynaRychlikImageSmall.jpg';
 import patrykKrokwinskiImageSmall from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImageSmall.jpg';
 
@@ -197,9 +196,7 @@ export const hematology = {
     description: 'Dziedzina kliniczna medycyny zajmująca się diagnostyką i leczeniem nowotworowych i nienowotworowych chorób krwi i układu krwiotwórczego, a także zaburzeń krwi występujących w pierwotnych schorzeniach innych narządów; również dziedzina naukowa zajmująca się badaniami krwi i układu krwiotwórczego w stanach zdrowia i choroby.',
     path: '/services/hematology',
     prices: '/prices/hematology',
-    specialists: [
-        miroslawMajewskiImageSmall
-    ]
+    // specialists: []
 };
 
 export const services = [

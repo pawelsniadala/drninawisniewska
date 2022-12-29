@@ -60,7 +60,7 @@ const Table1 = () => {
         createData('USG doppler kończyn dolnych (jedna noga)', 170, false),
         createData('USG doppler kończyn dolnych (dwie nogi)', 250, false),
         createData('Skleroterapia', 800, false),
-        createData('Miniflebektomia', '800 - 1500', false),
+        createData('Miniflebektomia', '1000 - 1800', false),
         createData('Laserowe usuwanie żylaków', 'od 3700', 'Dokładną cenę ustala lekarz.')
     ];
 
