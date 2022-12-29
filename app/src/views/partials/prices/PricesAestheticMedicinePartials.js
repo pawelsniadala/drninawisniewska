@@ -203,7 +203,7 @@ const Table2 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className='featured'>
-                        Korekcja zmarszczek mimicznych (Botox, Azzalure)
+                        Korekcja zmarszczek mimicznych
                         {tooltip('Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych - cena podstawowa + 20% dopłaty.')}
                     </StyledTableCell>
                     <StyledTableCell align='right'>
