@@ -79,7 +79,7 @@ const TechnologyAlmaAccentUltraVShapePartial = () => {
                                         'ujędrnienie i modelowanie ciała,',
                                         'poprawa owalu twarzy,',
                                         'likwidacja "chomików",',
-                                        'likwidacja drugiego podbródka.',
+                                        'likwidacja drugiego podbródka.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

@@ -73,7 +73,7 @@ const TechnologyBiolitecLeonardoMiniPartial = () => {
                                             width: '100%',
                                             height: '100%',
                                             maxHeight: '400px',
-                                            objectPosition: '50% 30%',
+                                            objectPosition: '50% 30%'
                                         }}
                                     />
                                 </Box>

@@ -41,7 +41,7 @@ const tooltip = (title) => (
                 height: '12px',
                 width: '12px',
                 marginLeft: '8px',
-                color: '#008AC9',
+                color: '#008AC9'
             }}
         >
         <InfoIcon fontSize='small' />

@@ -81,7 +81,7 @@ const TechnologyAlmaHarmonyXlProPartial = () => {
                                         'melasma - głowica DyeV,',
                                         'zmiany naczyniowe, trądzik różowaty, naczyniaki, teleangiektazje - głowica DeyVL,',
                                         'lifting skóry - iPixel,',
-                                        'zamykanie naczyń - głowica Nd : Yag.',
+                                        'zamykanie naczyń - głowica Nd : Yag.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

@@ -74,7 +74,7 @@ const TechnologyDermalight1000UvaUvb311nmPartial = () => {
                                         'świąd skóry,',
                                         'liszaj płaski,',
                                         'łojotokowe zapalenie skóry,',
-                                        'egzema i inne dermatozy.',
+                                        'egzema i inne dermatozy.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

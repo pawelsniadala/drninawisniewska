@@ -74,7 +74,7 @@ const TechnologyVectusPartial = () => {
                                             width: '100%',
                                             height: '100%',
                                             maxHeight: '400px',
-                                            objectPosition: '50% 67%',
+                                            objectPosition: '50% 67%'
                                         }}
                                     />
                                 </Box>

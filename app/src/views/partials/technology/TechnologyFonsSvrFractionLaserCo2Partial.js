@@ -120,7 +120,7 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                         'poprawa jakości skóry',
                                         'skuteczne efekty w niwelowaniu fotostarzenia się skóry,',
                                         'zabiegi chirurgiczne z wykorzystaniem punktowej głowicy lasera CO\u2082,',
-                                        'ginekologia estetyczna.',
+                                        'ginekologia estetyczna.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

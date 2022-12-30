@@ -27,7 +27,7 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 
 const StyledTableRow = styled(TableRow)(() => ({
     '&:last-child td, &:last-child th': {
-        border: 0,
+        border: 0
     }
 }));
 

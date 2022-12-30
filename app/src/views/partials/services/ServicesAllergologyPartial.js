@@ -66,7 +66,7 @@ const Table1 = () => {
         createData('09', 'Pusty płatek', '', '', ''),
         createData('10', 'Balsam peruwiański', 800, 800, 'preparaty lecznicze: czopki, maści doodbytnicze, maści rozgrzewające (Anusol, Depulol, Hemorectal, Neo Aesculan, Pulmex, Rectosec, Rectosol), pasty do zębów, płyny do płukania ust, cement dentystyczny; kosmetyki: dezodoranty, płyny po goleniu, kremy do opalania; napoje bezalkoholowe, przyprawy, dezodoranty, odświeżacze powietrza, świece zapachowe, papierosy'),
         createData('11', 'Etylenodiaminy dichlorowodorek', 50, 41, 'emulgator, środek konserwujący, rozpuszczalnik, wybielacze, atrament'),
-        createData('12', 'Chlorek kobaltu', 20, 20, 'barwnik do szkła, ceramiki, glazury, składnik farb, żywic poliestrowych, atramentu, materiałów budowlanych'),
+        createData('12', 'Chlorek kobaltu', 20, 20, 'barwnik do szkła, ceramiki, glazury, składnik farb, żywic poliestrowych, atramentu, materiałów budowlanych')
     ];
 
     return (
@@ -134,7 +134,7 @@ const Table2 = () => {
         createData('21', 'Formaldehyd', 180, 146, 'kleje, farby, atrament, środki czyszczące, kosmetyki: mydła, szampony, kosmetyki kolorowe, kremy, materiały budowlane, dym palonego węgla, drewna, papierosów'),
         createData('22', 'Mieszanina pochodnych merkaptanowych', 75, 61, 'przedmioty z gumy naturalnej: paski, słuchawki, prezerwatywy, buty, rękawiczki, zabawki, węże itp.'),
         createData('23', 'Tiomersal', 7, 6, 'szczepionki i surowice, leki stosowane w leczeniu oczu, uszu i nosa, aerozole antyseptyczne'),
-        createData('24', 'Mieszanina tiuramów', 27, 22, 'przedmioty z gumy: paski, słuchawki, prezerwatywy, buty, rękawiczki, zabawki, węże, kable elektryczne, pestycydy, fungicydy'),
+        createData('24', 'Mieszanina tiuramów', 27, 22, 'przedmioty z gumy: paski, słuchawki, prezerwatywy, buty, rękawiczki, zabawki, węże, kable elektryczne, pestycydy, fungicydy')
     ];
 
     return (
@@ -201,7 +201,7 @@ const Table3 = () => {
         createData(33, 'Bacytracyna', 600, 490, 'stosowana jako antybiotyk do leczenia pooperacyjnego i pielęgnacji ran. Jest to często miejscowy środek pierwszego rzutu w przypadku wielu urazów skóry i dermatoz, a także chorób oczu i uszu'),
         createData(34, 'Partenolid', 3, '2,4', 'występuje naturalnie w tysiącach roślin, w tym w stokrotkach i magnolii'),
         createData(35, 'Błękit zawiesinowy 106', 50, 41, 'używany jako barwnik do tekstyliów. Występuje w tkaninach w kolorze ciemnoniebieskim, brązowym, czarnym, fioletowym i niektórych zielonych: octan i poliester w tekstyliach i wyściółki, pościel, odzież, nylonowe pończochy, stroje kąpielowe, rajstopy (Spandex i Lycra), welur, pieluchy dziecięce'),
-        createData(36, '2-bromo-2-nitropropano-1,3-diol', 250, 200, 'używany jako środek konserwujący zapobiegający zmianom chemicznym lub działaniu drobnoustrojów: produkty kosmetyczne i do pielęgnacji ciała, leki do stosowania miejscowego'),
+        createData(36, '2-bromo-2-nitropropano-1,3-diol', 250, 200, 'używany jako środek konserwujący zapobiegający zmianom chemicznym lub działaniu drobnoustrojów: produkty kosmetyczne i do pielęgnacji ciała, leki do stosowania miejscowego')
     ];
 
     return (

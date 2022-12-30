@@ -77,7 +77,7 @@ export const almaHarmonyXlPro = {
     imageSmall: almaHarmonyXlProImageSmall,
     path: '/technology/alma-harmony-xl-pro',
     badge: 'Nowość',
-    services: ['aestheticMedicine'],
+    services: ['aestheticMedicine']
 };
 
 export const fonsSvrFractionLaserCo2 = {

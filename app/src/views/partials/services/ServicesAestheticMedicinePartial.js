@@ -117,7 +117,7 @@ const ServicesAestheticMedicinePartial = () => {
                                         'korekcji opadającego nosa,',
                                         'leczenia nadpotliwości pach i dłoni,',
                                         'leczenie bruksizmu - patologiczne tarcie zębów żuchwy o zęby szczęki, nasilające się nocą,',
-                                        'korekty opadającego kącika ust oraz opadającej powieki.',
+                                        'korekty opadającego kącika ust oraz opadającej powieki.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -141,7 +141,7 @@ const ServicesAestheticMedicinePartial = () => {
                                         'nie masować miejsc wkłucia,',
                                         'nie spożywać alkoholu w pierwszej dobie po zabiegu,',
                                         'nie odbywać podróży samolotem w pierwszej dobie po zabiegu,',
-                                        'nie wykonywać intensywnej aktywności fizycznej w pierwszej dobie po zabiegu.',
+                                        'nie wykonywać intensywnej aktywności fizycznej w pierwszej dobie po zabiegu.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -415,7 +415,7 @@ const ServicesAestheticMedicinePartial = () => {
                                         'zmarszczki wokół ust,',
                                         'rewitalizacja policzków,',
                                         'ujędrnianie szyi i dekoltu,',
-                                        'rewitalizacja dłoni.',
+                                        'rewitalizacja dłoni.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

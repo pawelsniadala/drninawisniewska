@@ -100,7 +100,7 @@ const ServicesUsgPartial = () => {
                                             borderRadius: 8,
                                             width: '100%',
                                             height: '100%',
-                                            maxHeight: '400px',
+                                            maxHeight: '400px'
                                         }}
                                     />
                                 </Box>

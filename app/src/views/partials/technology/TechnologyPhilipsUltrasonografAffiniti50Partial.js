@@ -71,7 +71,7 @@ const TechnologyPhilipsUltrasonografAffiniti50Partial = () => {
                                             width: '100%',
                                             height: '100%',
                                             maxHeight: '400px',
-                                            objectPosition: '50% 35%',
+                                            objectPosition: '50% 35%'
                                         }}
                                     />
                                 </Box>
