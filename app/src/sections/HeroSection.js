@@ -98,7 +98,7 @@ const HeroSection = () => {
                                             fontFamily: 'Raleway, sans-serif',
                                         }}
                                     >
-                                        Zapoznaj się z treścią naszych usług
+                                        Zapoznaj się z treścią naszych specjalizacji
                                     </Typography>
                                     <Box
                                         display='flex'
@@ -120,7 +120,7 @@ const HeroSection = () => {
                                                 size='large'
                                                 endIcon={<ArrowForwardIcon />}
                                             >
-                                                Zobacz nasze usługi
+                                                Zobacz nasze Specjalizacje
                                             </Button>
                                         </Box>
                                     </Box>
@@ -410,7 +410,7 @@ const HeroSection = () => {
                                                 size='large'
                                                 endIcon={<ArrowForwardIcon />}
                                             >
-                                                Zobacz nasze usługi
+                                                Zobacz nasze Specjalizacje
                                             </Button>
                                         </Box>
                                     </Box>

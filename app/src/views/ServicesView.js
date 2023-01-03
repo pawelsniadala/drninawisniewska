@@ -65,13 +65,13 @@ const ServicesView = () => {
                                     Home
                                 </Link>
                                 <Typography color='text.primary'>
-                                    Usługi
+                                    Specjalizacje
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Usługi
+                                Specjalizacje
                             </Typography>
                         </Box>
                     </Container>

@@ -147,7 +147,7 @@ const TechnologyView = () => {
                                         'Fizjoterapia',
                                         'Chirurgia plastyczna',
                                         'Alergologia',
-                                        'USG',
+                                        'USG'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

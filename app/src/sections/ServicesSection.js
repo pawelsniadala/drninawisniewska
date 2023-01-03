@@ -99,10 +99,10 @@ const ServicesSection = () => {
         >
             <Container>
                 <SectionHeader
-                    sectionTitle='Usługi'
-                    sectionHeader='Usługi dostępne w naszej klinice'
-                    sectionSubheader='Zapoznaj się z treścią naszych usług'
-                    sectionLinkText='Zobacz wszystkie usługi'
+                    sectionTitle='Specjalizacje'
+                    sectionHeader='Specjalizacje dostępne w naszej klinice'
+                    sectionSubheader='Zapoznaj się z treścią naszych specjalizacji'
+                    sectionLinkText='Zobacz wszystkie Specjalizacje'
                     sectionLinkPath='/services'
                 />
                 <Box className='section-body'>

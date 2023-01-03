@@ -52,7 +52,7 @@ const ServicesPhysioterapyPartial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/services' aria-current='page'>
-                                    <Box>Usługi</Box>
+                                    <Box>Specjalizacje</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -64,7 +64,7 @@ const ServicesPhysioterapyPartial = () => {
                                     Home
                                 </Link>
                                 <Link to='/services' aria-current='page'>
-                                    Usługi
+                                    Specjalizacje
                                 </Link>
                                 <Typography color='text.primary'>
                                     Fizjoterapia

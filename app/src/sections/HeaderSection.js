@@ -110,7 +110,7 @@ const HeaderSection = () => {
                             <ListItemIcon className='list-item-icon'>
                                 <ServicesSvg width='17px' height='17px' />
                             </ListItemIcon>
-                            <ListItemText className='list-item-text' primary='Usługi' />
+                            <ListItemText className='list-item-text' primary='Specjalizacje' />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
@@ -343,7 +343,7 @@ const HeaderSection = () => {
                                         aria-current='page'
                                         to='/services'
                                     >
-                                        Usługi
+                                        Specjalizacje
                                     </NavLink>
                                 </li>
                                 <li className='nav-item'>

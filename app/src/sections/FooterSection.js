@@ -40,7 +40,7 @@ const FooterSection = () => {
                         variant='h6'
                         className='footer-heading'
                     >
-                        Usługi
+                        Specjalizacje
                     </Typography>
                     <Box className='services-wrapper'>
                         <Typography
