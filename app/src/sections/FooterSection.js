@@ -275,7 +275,7 @@ const FooterSection = () => {
             <Box className='section-wrapper info'>
                 <Box className='copyright'>
                     <Box>
-                        Copyright © 2022 Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska.
+                        Copyright © 2023 Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska.
                     </Box>
                     <Box>
                         All rights reserved.
