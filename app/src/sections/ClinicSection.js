@@ -128,7 +128,6 @@ const ClinicSection = () => {
                                     key={i}
                                     cols={item.cols}
                                     rows={item.rows}
-                                    subtitle={"dOOO"}
                                 >
                                     <LazyLoadImage
                                         className={`lazy-load-image ${item.designation}`}
