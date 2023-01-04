@@ -119,7 +119,7 @@ const ClinicSection = () => {
                             className='image-list'
                             variant='quilted'
                             cols={3}
-                            rowHeight={isMd ? 300 : 160}
+                            rowHeight={isMd ? 350 : 160}
                             gap={4}
                             sx={{ overflowY: 'hidden', marginBottom: 0 }}
                         >
@@ -128,12 +128,13 @@ const ClinicSection = () => {
                                     key={i}
                                     cols={item.cols}
                                     rows={item.rows}
+                                    subtitle={"dOOO"}
                                 >
                                     <LazyLoadImage
                                         className={`lazy-load-image ${item.designation}`}
                                         height={'100%'}
                                         width={'100%'}
-                                        src={item.src}
+                                        src={item.srcThumbnail}
                                         alt={item.designation}
                                         effect='blur'
                                         visibleByDefault={true}
@@ -144,13 +145,14 @@ const ClinicSection = () => {
                         </ImageList>
                         {viewerIsOpen && (
                             <Lightbox
-                                mainSrc={clinic.pictures[currentImage].src}
-                                nextSrc={clinic.pictures[(currentImage + 1) % clinic.pictures.length].src}
-                                prevSrc={clinic.pictures[(currentImage + clinic.pictures.length - 1) % clinic.pictures.length].src}
+                                mainSrc={clinic.pictures[currentImage].srcOriginal}
+                                nextSrc={clinic.pictures[(currentImage + 1) % clinic.pictures.length].srcOriginal}
+                                prevSrc={clinic.pictures[(currentImage + clinic.pictures.length - 1) % clinic.pictures.length].srcOriginal}
                                 onCloseRequest={() => closeLightbox()}
                                 onMovePrevRequest={() => setCurrentImage((currentImage + clinic.pictures.length - 1) % clinic.pictures.length)}
                                 onMoveNextRequest={() => setCurrentImage((currentImage + 1) % clinic.pictures.length)}
                                 reactModalStyle={{ overlay: { zIndex: 1500 } }}
+                                imageCaption={`Autor: ${clinic.pictures[currentImage].author}`}
                             />
                         )}
                     </Box>
