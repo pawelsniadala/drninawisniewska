@@ -37,6 +37,7 @@ import PricesGynecologyPartials from './partials/prices/PricesGynecologyPartials
 import PricesOrthopedicsPartials from './partials/prices/PricesOrthopedicsPartials';
 import PricesVascularSurgeryPartials from './partials/prices/PricesVascularSurgeryPartials';
 import PricesClinicalDietitianPartials from './partials/prices/PricesClinicalDietitianPartials';
+import SpecialOfferView from './SpecialOfferView';
 import TeamView from './TeamView';
 import TeamNinaWisniewskaPartial from './partials/team/TeamNinaWisniewskaPartial';
 import TeamJustynaFilipekPartial from './partials/team/TeamJustynaFilipekPartial';
@@ -71,6 +72,7 @@ import TechnologySonoQueenPartial from './partials/technology/TechnologySonoQuee
 import TechnologyDermalight500Partial from './partials/technology/TechnologyDermalight500Partial';
 import TechnologyDermalight1000UvaUvb311nmPartial from './partials/technology/TechnologyDermalight1000UvaUvb311nmPartial';
 import ContactView from './ContactView';
+import Modal from '../components/Modal';
 import Toast from '../components/Toast';
 
 const Root = () => (
@@ -111,6 +113,7 @@ const Root = () => (
                         <Route path='/prices/vascular-surgery' element={<PricesVascularSurgeryPartials />} />
                         <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartials />} />
                     </Route>
+                    <Route path='/special-offer' element={<SpecialOfferView title='Promocje' />} />
                     <Route path='/team' element={<TeamView title='Zespół' />} />
                     <Route path='/team/nina-wisniewska' element={<TeamNinaWisniewskaPartial title='Nina Wiśniewska' />} />
                     <Route path='/team/justyna-filipek' element={<TeamJustynaFilipekPartial title='Justyna Filipek' />} />
@@ -147,6 +150,7 @@ const Root = () => (
                     <Route path='/contact' element={<ContactView title='Kontakt' />} />
                 </Routes>
             </main>
+            <Modal />
             <Toast />
             <FooterSection />
             <ScrollArrow />

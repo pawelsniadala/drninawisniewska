@@ -20,6 +20,7 @@ import InstagramSvg from '../assets/svg/InstagramSvg';
 import ClinicSvg from '../assets/svg/ClinicSvg';
 import ServicesSvg from '../assets/svg/ServicesSvg';
 import PricesSvg from '../assets/svg/PricesSvg';
+import SpecialOfferSvg from '../assets/svg/SpecialOfferSvg';
 import TeamSvg from '../assets/svg/TeamSvg';
 import TechnologySvg from '../assets/svg/TechnologySvg';
 import ContactSvg from '../assets/svg/ContactSvg';
@@ -126,6 +127,21 @@ const HeaderSection = () => {
                                 <PricesSvg width='16px' height='16px' />
                             </ListItemIcon>
                             <ListItemText className='list-item-text' primary='Cennik' />
+                        </ListItemButton>
+                    </NavLink>
+                </ListItem>
+                <ListItem className='list-item'>
+                    <NavLink
+                        className='nav-link'
+                        activeclassname='active'
+                        aria-current='page'
+                        to='/special-offer'
+                    >
+                        <ListItemButton className='list-item-button'>
+                            <ListItemIcon className='list-item-icon'>
+                                <SpecialOfferSvg width='16px' height='16px' />
+                            </ListItemIcon>
+                            <ListItemText className='list-item-text' primary='Promocje' />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
@@ -354,6 +370,16 @@ const HeaderSection = () => {
                                         to='/prices'
                                     >
                                         Cennik
+                                    </NavLink>
+                                </li>
+                                <li className='nav-item'>
+                                    <NavLink
+                                        className='nav-link'
+                                        activeclassname='active'
+                                        aria-current='page'
+                                        to='/special-offer'
+                                    >
+                                        Promocje
                                     </NavLink>
                                 </li>
                                 <li className='nav-item'>

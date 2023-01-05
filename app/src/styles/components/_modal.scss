@@ -1,0 +1,105 @@
+@media (min-width: 1200px) {
+    .modal-xl {
+        max-width: 1203px;
+    }
+}
+
+.modal-content {
+    border: none;
+    border-radius: 8px;
+
+    .modal-body {
+        display: grid;
+        grid-template-columns: 60% 1fr;
+        padding: 0;
+
+        @media (max-width: 992px) {
+            grid-template-columns: 1fr;
+        }
+
+        .image-wrapper {
+            .modal-image {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+
+                @media (max-width: 992px) {
+                    border-top-right-radius: 8px;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+
+        .content-wrapper {
+            .modal-header {
+                padding: 20px 20px 15px 20px;
+                align-items: start;
+                border: none;
+
+                .modal-title {
+                    margin: 0;
+                    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+                    font-weight: 400;
+                    color: rgba(0, 0, 0, 0.7);
+                    font-size: 1.25rem;
+                    line-height: 1;
+                    letter-spacing: 0.00938em;
+                    text-align: left;
+                    margin-bottom: 0.35em;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 1;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                .modal-date {
+                    margin: 0;
+                    font-family: "Roboto","Helvetica","Arial",sans-serif;
+                    font-weight: 400;
+                    font-size: 0.855rem;
+                    line-height: 1;
+                    letter-spacing: 0.01071em;
+                    color: rgba(0, 0, 0, 0.45);
+                    display: block;
+                    margin-bottom: 0.35em;
+                }
+            }
+
+            .description-wrapper {
+                padding: 0px 20px 15px 20px;
+                height: 570px;
+                overflow: auto;
+
+                @media (max-width: 1199.98px) {
+                    height: 328px;
+                }
+
+                @media (max-width: 992px) {
+                    overflow: hidden;
+                    height: auto;
+                }
+
+                .modal-description-1,
+                .modal-description-2,
+                .modal-description-3,
+                .modal-description-4 {
+                    font-size: 15.5px;
+                    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+                    color: #535353;
+                    font-weight: 300;
+                    margin-bottom: 10px;
+                    letter-spacing: 0.00538em;
+                    line-height: 1.6;
+
+                    &.heading {
+                        margin-top: 16px;
+                    }
+                }
+            }
+
+            .modal-footer {
+                border: none;
+            }
+        }
+    }
+}
