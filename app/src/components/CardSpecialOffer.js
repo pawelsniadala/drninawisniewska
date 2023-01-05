@@ -20,7 +20,6 @@ const CardSpecialOffer = ({
     cardDescription3,
     cardDescription4
 }) => {
-
     const completeModal = () => {
         const exampleModal = document.getElementById('exampleModal');
 
@@ -28,7 +27,9 @@ const CardSpecialOffer = ({
             const button = event.relatedTarget;
 
             const title = button.getAttribute('data-bs-title');
+            const titleMobile = button.getAttribute('data-bs-title-mobile');
             const date = button.getAttribute('data-bs-date');
+            const dateMobile = button.getAttribute('data-bs-date-mobile');
             const description1 = button.getAttribute('data-bs-description-1');
             const description2 = button.getAttribute('data-bs-description-2');
             const description3 = button.getAttribute('data-bs-description-3');
@@ -36,7 +37,9 @@ const CardSpecialOffer = ({
             const image = button.getAttribute('data-bs-image');
 
             const modalTitle = exampleModal.querySelector('.modal-title');
+            const modalTitleMobile = exampleModal.querySelector('.modal-title-mobile');
             const modalDate = exampleModal.querySelector('.modal-date');
+            const modalDateMobile = exampleModal.querySelector('.modal-date-mobile');
             const modalDescription1 = exampleModal.querySelector('.modal-description-1');
             const modalDescription2 = exampleModal.querySelector('.modal-description-2');
             const modalDescription3 = exampleModal.querySelector('.modal-description-3');
@@ -44,7 +47,9 @@ const CardSpecialOffer = ({
             const modalImage = exampleModal.querySelector('.modal-image');
 
             modalTitle.textContent = `${title}`;
+            modalTitleMobile.textContent = `${titleMobile}`;
             modalDate.textContent = `${date}`;
+            modalDateMobile.textContent = `${dateMobile}`;
             modalDescription1.textContent = `${description1}`;
             modalDescription2.textContent = `${description2}`;
             modalDescription3.textContent = `${description3}`;
@@ -63,7 +68,9 @@ const CardSpecialOffer = ({
             data-bs-toggle='modal'
             data-bs-target='#exampleModal'
             data-bs-title={cardTitle}
+            data-bs-title-mobile={cardTitle}
             data-bs-date={cardDate}
+            data-bs-date-mobile={cardDate}
             data-bs-description-1={cardDescription1}
             data-bs-description-2={cardDescription2}
             data-bs-description-3={cardDescription3}
