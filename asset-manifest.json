@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/drninawisniewska/static/css/main.b4a24de3.css",
-    "main.js": "/drninawisniewska/static/js/main.3b5f727e.js",
+    "main.js": "/drninawisniewska/static/js/main.dff11776.js",
     "static/js/410.5b7ce3c3.chunk.js": "/drninawisniewska/static/js/410.5b7ce3c3.chunk.js",
     "static/js/787.c1112931.chunk.js": "/drninawisniewska/static/js/787.c1112931.chunk.js",
     "static/media/logo.png": "/drninawisniewska/static/media/logo.0f4d75b81275f4b8f550.png",
@@ -108,12 +108,12 @@
     "static/media/slick.woff": "/drninawisniewska/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/drninawisniewska/index.html",
     "main.b4a24de3.css.map": "/drninawisniewska/static/css/main.b4a24de3.css.map",
-    "main.3b5f727e.js.map": "/drninawisniewska/static/js/main.3b5f727e.js.map",
+    "main.dff11776.js.map": "/drninawisniewska/static/js/main.dff11776.js.map",
     "410.5b7ce3c3.chunk.js.map": "/drninawisniewska/static/js/410.5b7ce3c3.chunk.js.map",
     "787.c1112931.chunk.js.map": "/drninawisniewska/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4a24de3.css",
-    "static/js/main.3b5f727e.js"
+    "static/js/main.dff11776.js"
   ]
 }
