@@ -7,7 +7,7 @@ import Box from '@mui/material/Box';
 
 const Modal = () => {
     return (
-        <Box className='modal fade' id='exampleModal' tabIndex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+        <Box className='modal' id='exampleModal' tabIndex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
             <Box className='modal-dialog modal-dialog-centered modal-xl'>
                 <Box className='modal-content'>
                     <Box className='modal-body'>
