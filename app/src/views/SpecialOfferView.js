@@ -83,15 +83,12 @@ const SpecialOfferView = () => {
                                 specialOffer.map((item, index) => (
                                     <CardSpecialOffer
                                         key={index}
-                                        cardAvatar={item.avatar}
                                         cardTitle={item.title}
                                         cardDate={item.date}
                                         cardDescription1={item.description1}
                                         cardDescription2={item.description2}
                                         cardDescription3={item.description3}
                                         cardDescription4={item.description4}
-                                        cardPrice={item.prices}
-                                        cardSpecialist={item.specialists}
                                         cardImage={item.image}
                                         cardImageVisible={false}
                                     />

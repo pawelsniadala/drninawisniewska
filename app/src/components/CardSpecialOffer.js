@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-// import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Box from '@mui/material/Box';
@@ -8,18 +7,11 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
-
 import CardHeader from '@mui/material/CardHeader';
-// import MoreVertIcon from '@mui/icons-material/MoreVert';
-// import { red } from '@mui/material/colors';
-
 import CardMedia from '@mui/material/CardMedia';
-// import AvatarGroup from '@mui/material/AvatarGroup';
-// import Avatar from '@mui/material/Avatar';
 
 const CardSpecialOffer = ({
     cardImage,
-    // cardAvatar,
     cardImageVisible,
     cardTitle,
     cardDate,
@@ -68,8 +60,8 @@ const CardSpecialOffer = ({
     return (
         <Box
             className='card-special-offer'
-            data-bs-toggle="modal"
-            data-bs-target="#exampleModal"
+            data-bs-toggle='modal'
+            data-bs-target='#exampleModal'
             data-bs-title={cardTitle}
             data-bs-date={cardDate}
             data-bs-description-1={cardDescription1}
@@ -81,11 +73,6 @@ const CardSpecialOffer = ({
             <Card className='card'>
                 <CardHeader
                     className='card-header'
-                    // avatar={
-                    // <Avatar sx={{ bgcolor: '#f8f8f8' }} aria-label="recipe" src={cardAvatar}>
-                    //     R
-                    // </Avatar>
-                    // }
                     title={cardTitle}
                     subheader={cardDate}
                 />
@@ -101,46 +88,18 @@ const CardSpecialOffer = ({
                     />
                 </CardMedia>
                 <CardContent className='card-content'>
-                    {/* <Typography
-                        variant={'h6'}
-                        className='card-title'
-                    >
-                        {cardTitle}
-                    </Typography> */}
                     <Typography className='card-description'>
                         {cardDescription1}
                     </Typography>
-                    {/* {cardSpecialist && (
-                        <AvatarGroup className='card-avatar-group' max={7}>
-                            {cardSpecialist.map((item, index) => (
-                                <Avatar
-                                    className='card-avatar'
-                                    key={index}
-                                    src={item}
-                                />
-                            ))}
-                        </AvatarGroup>
-                    )} */}
                 </CardContent>
                 <CardActions className='card-actions'>
                     <Button
                         className='card-link'
-                        // component={Link}
-                        // to={cardPath}
                         variant='outline'
                         size='small'
                     >
                         Zobacz więcej
                     </Button>
-                    {/* <Button
-                        className='card-link'
-                        component={Link}
-                        to={cardPrice}
-                        variant='outline'
-                        size='small'
-                    >
-                        Cennik
-                    </Button> */}
                 </CardActions>
             </Card>
         </Box>
