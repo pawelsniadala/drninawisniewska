@@ -25,7 +25,7 @@ const Modal = () => {
                                 height={1}
                                 width={1}
                                 src=''
-                                alt='...'
+                                alt=''
                                 effect='blur'
                                 visibleByDefault='false'
                             />

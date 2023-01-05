@@ -31,7 +31,8 @@ const CardSpecialOfferProposed = ({
             const description2 = button.getAttribute('data-bs-description-2');
             const description3 = button.getAttribute('data-bs-description-3');
             const description4 = button.getAttribute('data-bs-description-4');
-            const image = button.getAttribute('data-bs-image');
+            const imageSrc = button.getAttribute('data-bs-image-src');
+            const imageAlt = button.getAttribute('data-bs-image-alt');
 
             const modalTitle = exampleModal.querySelector('.modal-title');
             const modalTitleMobile = exampleModal.querySelector('.modal-title-mobile');
@@ -41,7 +42,8 @@ const CardSpecialOfferProposed = ({
             const modalDescription2 = exampleModal.querySelector('.modal-description-2');
             const modalDescription3 = exampleModal.querySelector('.modal-description-3');
             const modalDescription4 = exampleModal.querySelector('.modal-description-4');
-            const modalImage = exampleModal.querySelector('.modal-image');
+            const modalImageSrc = exampleModal.querySelector('.modal-image');
+            const modalImageAlt = exampleModal.querySelector('.modal-image');
 
             modalTitle.textContent = `${title}`;
             modalTitleMobile.textContent = `${titleMobile}`;
@@ -51,7 +53,8 @@ const CardSpecialOfferProposed = ({
             modalDescription2.textContent = `${description2}`;
             modalDescription3.textContent = `${description3}`;
             modalDescription4.textContent = `${description4}`;
-            modalImage.src = `${image}`;
+            modalImageSrc.src = `${imageSrc}`;
+            modalImageAlt.alt = `${imageAlt}`;
         })
     }
 
@@ -72,7 +75,8 @@ const CardSpecialOfferProposed = ({
             data-bs-description-2={cardDescription2}
             data-bs-description-3={cardDescription3}
             data-bs-description-4={cardDescription4}
-            data-bs-image={cardImage}
+            data-bs-image-src={cardImage}
+            data-bs-image-alt={cardTitle}
             display={'block'}
             width={1}
             height={1}
