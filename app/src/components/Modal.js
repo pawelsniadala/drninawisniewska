@@ -10,12 +10,12 @@ const Modal = () => {
         <Box className='modal' id='exampleModal' tabIndex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
             <Box className='modal-dialog modal-dialog-centered modal-xl'>
                 <Box className='modal-content'>
-                    <Box className="modal-header-mobile">
+                    <Box className='modal-header-mobile'>
                         <Box>
                             <Box className='modal-title-mobile' id='exampleModalLabel'></Box>
                             <Box className='modal-date-mobile' id='exampleModalLabel'></Box>
                         </Box>
-                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type='button' className='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
                     </Box>
                     <Box className='modal-body'>
                         <Box className='image-wrapper'>

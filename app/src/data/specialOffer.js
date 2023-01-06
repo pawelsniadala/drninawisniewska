@@ -58,5 +58,5 @@ export const specialOffer = [
     { ...article4 },
     { ...article3 },
     { ...article2 },
-    { ...article1 },
+    { ...article1 }
 ];
