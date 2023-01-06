@@ -1,0 +1,33 @@
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+
+    .pagination {
+        margin-top: 20px;
+
+        button {
+            color: #535353;
+            box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
+            background-color: #fff;
+            transition: background-color 0.3s;
+
+            svg {
+                color: #535353;
+            }
+
+            span span {
+                background-color: transparent;
+            }
+        }
+
+        .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+            background-image: linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%);
+            color: #fff;
+        }
+
+        .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root:hover {
+            background-color: #f8f8f8;
+            transition: background-color 0.3s;
+        }
+    }
+}

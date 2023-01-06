@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import Container from '../components/Container';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import Pagination from '@mui/material/Pagination';
 
+import Container from '../components/Container';
 import Page from '../components/Page';
 import CardSpecialOffer from '../components/CardSpecialOffer';
 import CardSpecialOfferProposed from '../components/CardSpecialOfferProposed';
@@ -35,6 +36,21 @@ const SpecialOfferView = () => {
     }
 
     const { width } = useWindowDimensions();
+
+    const itemsPerPage = 40;
+
+    const [ page, setPage ] = useState(1);
+
+    const pageCount = Math.ceil(specialOffer.length / itemsPerPage);
+    const currentData = specialOffer.slice(
+        (page - 1) * itemsPerPage,
+        page * itemsPerPage
+    );
+
+    const handleChange = (_, value) => {
+        setPage(value);
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+    };
 
     return (
         <Box className='contact-view'>
@@ -80,7 +96,7 @@ const SpecialOfferView = () => {
                     <Container className='body-wrapper'>
                         <Box className='card-wrapper special-offer'>
                             {width >= 991.98 ? (
-                                specialOffer.map((item, index) => (
+                                currentData.map((item, index) => (
                                     <CardSpecialOffer
                                         key={index}
                                         cardTitle={item.title}
@@ -94,7 +110,7 @@ const SpecialOfferView = () => {
                                     />
                                 ))
                             ) : (
-                                specialOffer.map((item, index) => (
+                                currentData.map((item, index) => (
                                     <CardSpecialOfferProposed
                                         key={index}
                                         cardTitle={item.title}
@@ -108,6 +124,16 @@ const SpecialOfferView = () => {
                                 ))
                             )}
                         </Box>
+                        {pageCount > 1 && (
+                            <Box className='pagination-wrapper'>
+                                <Pagination
+                                    className='pagination'
+                                    count={pageCount}
+                                    page={page}
+                                    onChange={handleChange}
+                                />
+                            </Box>
+                        )}
                     </Container>
                 </Box>
             </Box>
