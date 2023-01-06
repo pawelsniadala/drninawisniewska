@@ -7,7 +7,7 @@ export const article1 = {
     image: specialOffer1,
     title: 'Halloweenowy dzień z medycyną estetyczną',
     date: '25 października 2022',
-    description1: 'Zapraszamy na zabiegi z zakresu medycyny estetycznej: botox, kwas hialuronowy, mezoterapia, stymulatory tkankowe, laser Alma Harmony, laser frakcyjny CO2, SonoQueen',
+    description1: 'Zapraszamy na zabiegi z zakresu medycyny estetycznej: botox, kwas hialuronowy, mezoterapia, stymulatory tkankowe, laser Alma Harmony, laser frakcyjny CO2, SonoQueen.',
     description2: 'Zapisz się już dziś i razem z nami pozbądź się niechcących zmarszczek. 💀🎃👻',
     description3: '❗️Uwaga: Zostały ostatnie wolne miejsca na 31 października u Dr Olgi Lenartowicz. 🧡',
     description4: ''
@@ -27,7 +27,7 @@ export const article3 = {
     image: specialOffer3,
     title: 'Życzenia świąteczne',
     date: '23 grudnia 2022',
-    description1: 'Zdrowych, spokojnych Świąt Bożego Narodzenia, spędzonych w gronie najbliższych 🎄🎁⛄️ życzy cały zespół Kliniki dr Nina Wiśniewska 🎅🏻',
+    description1: 'Zdrowych, spokojnych Świąt Bożego Narodzenia, spędzonych w gronie najbliższych 🎄🎁⛄️ życzy cały zespół Kliniki dr Nina Wiśniewska. 🎅🏻',
     description2: '',
     description3: '',
     description4: ''
