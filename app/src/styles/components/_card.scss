@@ -598,6 +598,8 @@
 
             .card-image {
                 object-fit: cover;
+                transform: scale(1);
+                transition: transform 0.3s;
             }
         }
 
@@ -618,6 +620,15 @@
                 -webkit-box-orient: vertical;
                 overflow: hidden;
                 text-overflow: ellipsis;
+            }
+        }
+
+        &:hover {
+            .card-media {
+                .card-image {
+                    transform: scale(1.05);
+                    transition: transform 0.3s;
+                }
             }
         }
     }
