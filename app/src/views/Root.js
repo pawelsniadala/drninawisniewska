@@ -82,7 +82,7 @@ const Root = () => (
             <main>
                 <Routes>
                     <Route exact path='/' element={<HomeView main />} />
-                    <Route exact path='/drninawisniewska/' element={<HomeView main />} />
+                    <Route exact path='https://drninawisniewska.pl' element={<HomeView main />} />
                     <Route path='/clinic' element={<ClinicView title='Klinika' />} />
                     <Route exact path='/services' element={<ServicesView title='Specjalizacje' />} />
                     <Route path='/services/dermatology' element={<ServicesDermatologyPartial title='Dermatologia' />} />
