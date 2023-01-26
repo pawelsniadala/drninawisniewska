@@ -213,7 +213,7 @@ const FooterSection = () => {
                         </Typography>
                         <Typography
                             component='a'
-                            href='/dermalight-1000-uva-uvb-311nm'
+                            href='/technology/dermalight-1000-uva-uvb-311nm'
                             className='footer-text link'
                         >
                             Dermalight 1000 UVA UVB 311nm
