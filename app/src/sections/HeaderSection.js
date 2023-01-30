@@ -77,7 +77,7 @@ const HeaderSection = () => {
                         activeclassname='active'
                         to='/'
                     >
-                        <img alt='logo' height='51' src={require('../assets/header/logo.png')} />
+                        <img alt='Dermatologia i Medycyna estetyczna dr Nina Wiśniewska' height='51' src={require('../assets/header/logo.png')} />
                         <Typography className='brand-text'>
                             Dermatologia<br/>i Medycyna estetyczna<br/>dr Nina Wiśniewska
                         </Typography>
@@ -308,9 +308,9 @@ const HeaderSection = () => {
                         to='/'
                     >
                         {width <= 991.98 ? (
-                            <img alt='logo' height='51' src={require('../assets/header/logo.png')} />
+                            <img alt='Dermatologia i Medycyna estetyczna dr Nina Wiśniewska' height='51' src={require('../assets/header/logo.png')} />
                         ) : (
-                            <img alt='logo' height='60' src={require('../assets/header/logo.png')} />
+                            <img alt='Dermatologia i Medycyna estetyczna dr Nina Wiśniewska' height='60' src={require('../assets/header/logo.png')} />
                         )}
                         <Typography className='brand-text'>
                             Dermatologia<br/>i Medycyna estetyczna<br/>dr Nina Wiśniewska
