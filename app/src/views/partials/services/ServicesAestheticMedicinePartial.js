@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Helmet } from 'react-helmet';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -48,6 +49,15 @@ const ServicesAestheticMedicinePartial = () => {
             <Box className='view-wrapper'>
                 <Box className='view-header services-aesthetic-medicine'>
                     <Container className='header-wrapper'>
+                        <Helmet>
+                            <meta property='og:title' content={aestheticMedicine.title} />
+                            <meta property='og:description' content={aestheticMedicine.description} />
+                            <meta property='og:image' content={aestheticMedicine.image} />
+                            <meta property='og:image:secure_url' content={aestheticMedicine.image} />
+                            <meta property='og:image:type' content='image/jpeg' />
+                            <meta property='og:image:width' content='900' />
+                            <meta property='og:image:height' content='600' />
+                        </Helmet>
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb back'
