@@ -2,6 +2,7 @@ import specialOffer1 from '../assets/specialOffer/specialOffer1.jpg';
 import specialOffer2 from '../assets/specialOffer/specialOffer2.jpg';
 import specialOffer3 from '../assets/specialOffer/specialOffer3.jpg';
 import specialOffer4 from '../assets/specialOffer/specialOffer4.jpg';
+import specialOffer5 from '../assets/specialOffer/specialOffer5.jpg';
 
 export const article1 = {
     image: specialOffer1,
@@ -43,18 +44,18 @@ export const article4 = {
     description4: 'Na wizycie omówimy aktualny stan cery, porozmawiamy o obecnej pielęgnacji i wyeliminujemy jej ewentualne błędy. Zasugerujemy o co warto poszerzyć domową rutynę a czego lepiej w niej unikać. Ułożymy także spersonalizowany plan zabiegowy dostosowany do indywidualnych potrzeb i oczekiwań. 🤗',
 };
 
-// export const article5 = {
-//     image: specialOffer5,
-//     title: '',
-//     date: '',
-//     description1: '',
-//     description2: '',
-//     description3: '',
-//     description4: ''
-// };
+export const article5 = {
+    image: specialOffer5,
+    title: 'Walentynkowa oferta specjalna',
+    date: '1 lutego 2023',
+    description1: 'Podaj hasło: VALENTYNKI! ❤️ Zapraszamy do nas na tydzień zakochanych! Tylko od 13 do 17 lutego trwa wyjątkowa promocja na wybrane zabiegi z naszej oferty z okazji walentynek. To idealna sposobność by sprawić swojej drugiej połówce voucher prezentowy na wymarzony zabieg. 🥰',
+    description2: 'Zapraszamy do kontaktu z nami po szczegóły promocji. Zapisy ruszają dzisiaj! Nie zapomnij podać hasła! Liczba miejsc ograniczona. 👨‍👩‍👧‍👦',
+    description3: 'Zabiegi objęte promocją: 🔶 Nucleofill 850 zł zamiast 1100 zł, 🔶 Plasmoo 899 zł zamiast 1099 zł, 🔶 Pakiet 4 masaży 269 zł zamiast 319 zł, 🔶 Pakiet jędrny brzuch 5 zabiegów Accent +5 zabiegów Icoone (okolica brzucha) 2199 zł zamiast 2999 zł.',
+    description4: '',
+};
 
 export const specialOffer = [
-    // { ...article5 },
+    { ...article5 },
     { ...article4 },
     { ...article3 },
     { ...article2 },
