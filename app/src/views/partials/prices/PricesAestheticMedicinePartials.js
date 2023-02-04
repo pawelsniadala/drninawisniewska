@@ -454,7 +454,9 @@ const Table8 = () => {
     const rows = [
         createData('Twarz', 800),
         createData('Twarz, szyja lub dekolt', 1100),
-        createData('Skóra głowy', 800)
+        createData('Skóra głowy', 800),
+        createData('Plasmoo', 1100),
+        createData('Fibryna', 700)
     ];
 
     return (

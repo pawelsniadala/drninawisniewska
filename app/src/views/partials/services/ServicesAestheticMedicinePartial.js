@@ -89,7 +89,7 @@ const ServicesAestheticMedicinePartial = () => {
                                     Toksyna botulinowa
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    <strong>Toksyna botulinowa</strong>, produkowana przez bakterie Clostridium Botulinum, znana jest powszechnie  pod  nazwami handlowymi jak <strong>Botox®</strong> czy <strong>Azzalure®</strong>. To jedna z najbardziej popularnych metod <strong>redukcji zmarszczek mimicznych</strong>, które pojawiają się w związku z  powtarzającymi się skurczami mięśni twarzy. Zabieg  pozwala  szybko spłycić  zmarszczki  mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy  nadmierna kurczliwość.
+                                    <strong>Toksyna botulinowa</strong> to jedna z najbardziej popularnych metod <strong>redukcji zmarszczek mimicznych</strong>, które pojawiają się w związku z  powtarzającymi się skurczami mięśni twarzy. Zabieg  pozwala  szybko spłycić  zmarszczki  mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy  nadmierna kurczliwość.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
                                     <LazyLoadImage
@@ -154,13 +154,13 @@ const ServicesAestheticMedicinePartial = () => {
 
                             <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header'>
-                                    Alluzience®
+                                    ABO Liquid
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Nasza Klinika dysponuje również <strong>pierwszym na polskim rynku</strong> płynnym neuromodulatorem Alluzience®. Preparat nazywany "botoksem PREMIUM" to płynny neuromodulator BoNT-A.
+                                    Nasza Klinika dysponuje również <strong>pierwszym na polskim rynku</strong> płynnym neuromodulatorem. Preparat nazywany "botoksem PREMIUM" to płynny neuromodulator BoNT-A.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    <strong>Alluzience® ABO Liquid od innych preparatów toksyny botulinowej odróżnia między innymi</strong>:
+                                    <strong>ABO Liquid od innych preparatów toksyny botulinowej odróżnia między innymi</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[

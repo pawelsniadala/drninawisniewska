@@ -20,7 +20,6 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Page from '../components/Page';
 import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
 import PricesAestheticMedicinePartials from './partials/prices/PricesAestheticMedicinePartials';
-import PricesHematologyPartials from './partials/prices/PricesHematologyPartials';
 import PricesCosmetologyPartials from './partials/prices/PricesCosmetologyPartials';
 import PricesPhysioterapyPartials from './partials/prices/PricesPhysioterapyPartials';
 import PricesCosmeticSurgeryPartials from './partials/prices/PricesCosmeticSurgeryPartials';
@@ -31,6 +30,7 @@ import PricesGynecologyPartials from './partials/prices/PricesGynecologyPartials
 import PricesOrthopedicsPartials from './partials/prices/PricesOrthopedicsPartials';
 import PricesVascularSurgeryPartials from './partials/prices/PricesVascularSurgeryPartials';
 import PricesClinicalDietitianPartials from './partials/prices/PricesClinicalDietitianPartials';
+import PricesRheumatologyPartial from './partials/prices/PricesRheumatologyPartial';
 
 const PricesView = () => {
     const location = useLocation();
@@ -47,10 +47,6 @@ const PricesView = () => {
                 case '/prices/aesthetic-medicine':
                     return (
                         'prices-aesthetic-medicine'
-                    );
-                case '/prices/hematology':
-                    return (
-                        'prices-hematology'
                     );
                 case '/prices/cosmetology':
                     return (
@@ -92,6 +88,10 @@ const PricesView = () => {
                     return (
                         'prices-clinical-dietitian'
                     );
+                case '/prices/rheumatology':
+                    return (
+                        'prices-rheumatology'
+                    );
                 default:
             }
         }
@@ -108,10 +108,6 @@ const PricesView = () => {
             case 'prices-aesthetic-medicine':
                 return (
                     <PricesAestheticMedicinePartials />
-                );
-            case 'prices-hematology':
-                return (
-                    <PricesHematologyPartials />
                 );
             case 'prices-cosmetology':
                 return (
@@ -152,6 +148,10 @@ const PricesView = () => {
             case 'prices-clinical-dietitian':
                 return (
                     <PricesClinicalDietitianPartials />
+                );
+            case 'prices-rheumatology':
+                return (
+                    <PricesRheumatologyPartial />
                 );
             default:
         }
@@ -251,22 +251,6 @@ const PricesView = () => {
                                                 onClick={() => setTab('prices-aesthetic-medicine')}
                                             >
                                                 <ListItemText className='list-item-text' primary='Medycyna estetyczna' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/hematology'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-hematology'}
-                                                onClick={() => setTab('prices-hematology')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Hematologia' />
                                                 <ListItemIcon className='list-item-icon'>
                                                     <KeyboardArrowRightIcon />
                                                 </ListItemIcon>
@@ -432,6 +416,22 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
+                                            <ListItemButton
+                                                component={Link}
+                                                to='/prices/rheumatology'
+                                                className='list-item-button'
+                                                aria-current='page'
+                                                selected={pricesTab === 'prices-rheumatology'}
+                                                onClick={() => setTab('prices-rheumatology')}
+                                            >
+                                                <ListItemText className='list-item-text' primary='Reumatologia' />
+                                                <ListItemIcon className='list-item-icon'>
+                                                    <KeyboardArrowRightIcon />
+                                                </ListItemIcon>
+                                            </ListItemButton>
+                                        </ListItem>
                                     </List>
                                 ) : (
                                     <Tabs
@@ -532,11 +532,11 @@ const PricesView = () => {
                                             onClick={() => setTab('prices-clinical-dietitian')}
                                         />
                                         <Tab
-                                            label='Hematologia'
+                                            label='Reumatologia'
                                             component={Link}
-                                            to={`/prices/hematology`}
-                                            value={`/prices/hematology`}
-                                            onClick={() => setTab('prices-hematology')}
+                                            to={`/prices/rheumatology`}
+                                            value={`/prices/rheumatology`}
+                                            onClick={() => setTab('prices-rheumatology')}
                                         />
                                     </Tabs>
                                 )}

@@ -137,7 +137,7 @@ const TechnologyView = () => {
                         </Box>
                         <Box className='clinic-services-wrapper' marginBottom={3}>
                             <Typography className='paragraph'>
-                                Możecie Państwo liczyć na profesjonalne usługi z zakresu medycyny estetycznej pod nadzorem lekarza. Dodatkowo oferujemy usługi takich specjalistów jak: ortopeda, hematolog, chirurg naczyniowy, fizjoterapeuta, dietetyk kliczniczny oraz ginekolog-endokrynolog.
+                                Możecie Państwo liczyć na profesjonalne usługi z zakresu medycyny estetycznej pod nadzorem lekarza. Dodatkowo oferujemy usługi takich specjalistów jak: ortopeda, reumatolog, chirurg naczyniowy, fizjoterapeuta, dietetyk kliczniczny oraz ginekolog-endokrynolog.
                             </Typography>
                             <Box className='services-item-wrapper'>
                                 <Grid container spacing={1} sx={{ marginTop: 0 }}>
@@ -164,7 +164,7 @@ const TechnologyView = () => {
                                         'Ortopedia',
                                         'Chirurgia naczyniowa',
                                         'Dietetyka Kliniczna',
-                                        'Hematologia'
+                                        'Reumatologia'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

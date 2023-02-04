@@ -122,10 +122,10 @@ const FooterSection = () => {
                         </Typography>
                         <Typography
                             component='a'
-                            href='/services/hematology'
+                            href='/services/rheumatology'
                             className='footer-text link'
                         >
-                            Hematologia
+                            Reumatologia
                         </Typography>
                     </Box>
                 </Box>

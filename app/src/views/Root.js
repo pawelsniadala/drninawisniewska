@@ -12,7 +12,6 @@ import ClinicView from './ClinicView';
 import ServicesView from './ServicesView';
 import ServicesDermatologyPartial from './partials/services/ServicesDermatologyPartial';
 import ServicesAestheticMedicinePartial from './partials/services/ServicesAestheticMedicinePartial';
-import ServicesHematologyPartial from './partials/services/ServicesHematologyPartial';
 import ServicesCosmetologyPartial from './partials/services/ServicesCosmetologyPartial';
 import ServicesPhysioterapyPartial from './partials/services/ServicesPhysioterapyPartial';
 import ServicesCosmeticSurgeryPartial from './partials/services/ServicesCosmeticSurgeryPartial';
@@ -23,10 +22,10 @@ import ServicesGynecologyPartial from './partials/services/ServicesGynecologyPar
 import ServicesOrthopedicsPartial from './partials/services/ServicesOrthopedicsPartial';
 import ServicesVascularSurgeryPartial from './partials/services/ServicesVascularSurgeryPartial';
 import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
+import ServicesRheumatologyPartial from './partials/services/ServicesRheumatologyPartial';
 import PricesView from './PricesView';
 import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
 import PricesAestheticMedicinePartials from './partials/prices/PricesAestheticMedicinePartials';
-import PricesHematologyPartials from './partials/prices/PricesHematologyPartials';
 import PricesCosmetologyPartials from './partials/prices/PricesCosmetologyPartials';
 import PricesPhysioterapyPartials from './partials/prices/PricesPhysioterapyPartials';
 import PricesCosmeticSurgeryPartials from './partials/prices/PricesCosmeticSurgeryPartials';
@@ -37,6 +36,7 @@ import PricesGynecologyPartials from './partials/prices/PricesGynecologyPartials
 import PricesOrthopedicsPartials from './partials/prices/PricesOrthopedicsPartials';
 import PricesVascularSurgeryPartials from './partials/prices/PricesVascularSurgeryPartials';
 import PricesClinicalDietitianPartials from './partials/prices/PricesClinicalDietitianPartials';
+import PricesRheumatologyPartial from './partials/prices/PricesRheumatologyPartial';
 import SpecialOfferView from './SpecialOfferView';
 import TeamView from './TeamView';
 import TeamNinaWisniewskaPartial from './partials/team/TeamNinaWisniewskaPartial';
@@ -55,6 +55,7 @@ import TeamOlgaLenartowiczWarakomskaPartial from './partials/team/TeamOlgaLenart
 import TeamKatarzynaZbronskaPartial from './partials/team/TeamKatarzynaZbronskaPartial';
 import TeamJoannaOjrzenskaPartial from './partials/team/TeamJoannaOjrzenskaPartial';
 import TeamAleksandraGorczynskaPartial from './partials/team/TeamAleksandraGorczynskaPartial';
+import TeamAgataSkwerekSzewczykPartial from './partials/team/TeamAgataSkwerekSzewczykPartial';
 import TeamKamilStepkowskiPartial from './partials/team/TeamKamilStepkowskiPartial';
 import TeamKatarzynaRychlikPartial from './partials/team/TeamKatarzynaRychlikPartial';
 import TeamPatrykKrokwinskiPartial from './partials/team/TeamPatrykKrokwinskiPartial';
@@ -87,7 +88,6 @@ const Root = () => (
                     <Route exact path='/services' element={<ServicesView title='Specjalizacje' />} />
                     <Route path='/services/dermatology' element={<ServicesDermatologyPartial title='Dermatologia' />} />
                     <Route path='/services/aesthetic-medicine' element={<ServicesAestheticMedicinePartial title='Medycyna estetyczna' />} />
-                    <Route path='/services/hematology' element={<ServicesHematologyPartial title='Hematologia' />} />
                     <Route path='/services/cosmetology' element={<ServicesCosmetologyPartial title='Kosmetologia' />} />
                     <Route path='/services/physioterapy' element={<ServicesPhysioterapyPartial title='Fizjoterapia' />} />
                     <Route path='/services/cosmetic-surgery' element={<ServicesCosmeticSurgeryPartial title='Chirurgia plastyczna' />} />
@@ -98,10 +98,10 @@ const Root = () => (
                     <Route path='/services/orthopedics' element={<ServicesOrthopedicsPartial title='Ortopedia' />} />
                     <Route path='/services/vascular-surgery' element={<ServicesVascularSurgeryPartial title='Chirurgia naczyniowa' />} />
                     <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial title='Dietetyka Kliniczna' />} />
+                    <Route path='/services/rheumatology' element={<ServicesRheumatologyPartial title='Reumatologia' />} />
                     <Route path='/prices' element={<PricesView title='Cennik' />}>
                         <Route path='/prices' element={<PricesDermatologyPartials />} />
                         <Route path='/prices/aesthetic-medicine' element={<PricesAestheticMedicinePartials />} />
-                        <Route path='/prices/hematology' element={<PricesHematologyPartials />} />
                         <Route path='/prices/cosmetology' element={<PricesCosmetologyPartials />} />
                         <Route path='/prices/physioterapy' element={<PricesPhysioterapyPartials />} />
                         <Route path='/prices/cosmetic-surgery' element={<PricesCosmeticSurgeryPartials />} />
@@ -112,6 +112,7 @@ const Root = () => (
                         <Route path='/prices/orthopedics' element={<PricesOrthopedicsPartials />} />
                         <Route path='/prices/vascular-surgery' element={<PricesVascularSurgeryPartials />} />
                         <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartials />} />
+                        <Route path='/prices/rheumatology' element={<PricesRheumatologyPartial />} />
                     </Route>
                     <Route path='/special-offer' element={<SpecialOfferView title='Promocje' />} />
                     <Route path='/team' element={<TeamView title='Zespół' />} />
@@ -131,6 +132,7 @@ const Root = () => (
                     <Route path='/team/katarzyna-zbronska' element={<TeamKatarzynaZbronskaPartial title='Katarzyna Zbrońska' />} />
                     <Route path='/team/joanna-ojrzenska' element={<TeamJoannaOjrzenskaPartial title='Joanna Ojrzeńska' />} />
                     <Route path='/team/aleksandra-gorczynska' element={<TeamAleksandraGorczynskaPartial title='Aleksandra Górczyńska' />} />
+                    <Route path='/team/agata-skwerek-szewczyk' element={<TeamAgataSkwerekSzewczykPartial title='Agata Skwerek Szewczyk' />} />
                     <Route path='/team/kamil-stepkowski' element={<TeamKamilStepkowskiPartial title='Kamil Stępkowski' />} />
                     <Route path='/team/katarzyna-rychlik' element={<TeamKatarzynaRychlikPartial title='Katarzyna Rychlik' />} />
                     <Route path='/team/patryk-krokwinski' element={<TeamPatrykKrokwinskiPartial title='Patryk Krokwiński' />} />

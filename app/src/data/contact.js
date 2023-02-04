@@ -26,6 +26,7 @@ export const contact = [
     {
         designation: 'hours',
         label: 'Godziny otwarcia',
-        value: 'od poniedziałku do soboty: 10:00 - 18:00'
+        value: 'od poniedziałku do piątku: 10:00 - 18:00',
+        value2: 'w sobotę: 10:00 - 15:00'
     }
 ];

@@ -15,6 +15,7 @@ import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarako
 import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
 import joannaOjrzenskaImage from '../assets/team/joannaOjrzenska/joannaOjrzenskaImage.jpg';
 import aleksandraGorczynskaImage from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImage.jpg';
+import agataSkwerekSzewczykImage from '../assets/team/agataSkwerekSzewczyk/agataSkwerekSzewczykImage.jpg';
 import katarzynaRychlikImage from  '../assets/team/katarzynaRychlik/katarzynaRychlikImage.jpg';
 import patrykKrokwinskiImage from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImage.jpg';
 
@@ -242,6 +243,20 @@ export const aleksandraGorczynska = {
     services: ['cosmetology']
 };
 
+export const agataSkwerekSzewczyk = {
+    designation: 'agataSkwerekSzewczyk',
+    name: 'Agata Skwerek Szewczyk',
+    speciality: 'Reumatolog',
+    summary: false,
+    education: 'Specjalista Chorób Wewnętrznych i Reumatologii. Absolwentka Warszawskiego Uniwersytetu Medycznego i Wydziału Zarządzania Uniwersytetu Warszawskiego. W 2016 roku zdałam egzamin specjalizacyjny w zakresie Chorób Wewnętrznych.',
+    experience: 'Od 2011 pracuję jako lekarz, obecnie starszy asystent w Klinice Chorób Wewnętrznych i Endokrynologii Centralnego Szpitala Klinicznego Warszawskiego Uniwersytetu Medycznego przy ul. Banacha. Jestem współautorem wielu publikacji w zakresie zaburzeń gospodarki wapniowo-fosforanowej. Od 2019 r. jestem również specjalistą Reumatologiem. Specjalizację odbywałam w Klinice Wczesnego Zapalenia Stawów Narodowego Instytutu Reumatologii i Geriatrii w Warszawie. Prywatnie żona i mama 2 wspaniałych chłopców.',
+    interested: false,
+    image: agataSkwerekSzewczykImage,
+    background: false,
+    path: '/team/agata-skwerek-szewczyk',
+    services: ['rheumatology']
+};
+
 export const kamilStepkowski = {
     designation: 'kamilStepkowski',
     name: 'lek. med. Kamil Stępkowski',
@@ -301,6 +316,7 @@ export const team = [
     { ...katarzynaZbronska },
     { ...joannaOjrzenska },
     { ...aleksandraGorczynska },
+    { ...agataSkwerekSzewczyk },
     { ...kamilStepkowski },
     { ...katarzynaRychlik },
     { ...patrykKrokwinski }

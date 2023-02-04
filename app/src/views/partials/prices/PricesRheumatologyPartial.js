@@ -37,7 +37,8 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Brak informacji', false)
+        createData('Konsultacja reumatologiczna', 220),
+        createData('Konsultacja internistyczna', 220)
     ];
 
     return (
@@ -70,7 +71,7 @@ const Table1 = () => {
     );
 }
 
-const PricesHematologyPartials = () => {
+const PricesRheumatologyPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -82,4 +83,4 @@ const PricesHematologyPartials = () => {
     );
 };
 
-export default PricesHematologyPartials;
+export default PricesRheumatologyPartial;

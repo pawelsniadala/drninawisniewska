@@ -201,7 +201,12 @@ const ContactView = () => {
                                             <ListItemText
                                                 className='list-item-text'
                                                 primary={item.label}
-                                                secondary={item.value}
+                                                secondary={
+                                                    <>
+                                                        <Box>{item.value}</Box>
+                                                        <Box>{item.value2}</Box>
+                                                    </>
+                                                }
                                             />
                                         </Box>
                                     </Box>

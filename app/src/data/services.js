@@ -1,6 +1,5 @@
 import servicesDermatology from '../assets/services/servicesDermatology.jpg';
 import servicesAestheticMedicine from '../assets/services/servicesAestheticMedicine.jpg';
-import servicesHematology from '../assets/services/servicesHematology.jpg';
 
 import servicesCosmetology from '../assets/services/servicesCosmetology.jpg';
 import servicesCosmetologyPeeling from '../assets/services/cosmetology/servicesCosmetologyPeeling.jpg';
@@ -20,6 +19,7 @@ import servicesGynecology from '../assets/services/servicesGynecology.jpg';
 import servicesOrthopedics from '../assets/services/servicesOrthopedics.jpg';
 import servicesVasularSurgery from '../assets/services/servicesVasularSurgery.jpg';
 import servicesClinicalDietitian from '../assets/services/servicesClinicalDietitian.jpg';
+import servicesRheumatology from '../assets/services/servicesRheumatology.jpg'
 
 import ninaWisniewskaImageSmall from '../assets/team/ninaWisniewska/ninaWisniewskaImageSmall.jpg';
 import justynaFilipekImageSmall from '../assets/team/justynaFilipek/justynaFilipekImageSmall.jpg';
@@ -38,6 +38,7 @@ import olgaLenartowiczWarakomskaImageSmall from '../assets/team/olgaLenartowiczW
 import paulinaTataraImageSmall from '../assets/team/paulinaTatara/paulinaTataraImageSmall.jpg';
 import joannaOjrzenskaImageSmall from '../assets/team/joannaOjrzenska/joannaOjrzenskaImageSmall.jpg';
 import aleksandraGorczynskaImageSmall from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImageSmall.jpg';
+import agataSkwerekSzewczykImageSmall from '../assets/team/agataSkwerekSzewczyk/agataSkwerekSzewczykImageSmall.jpg';
 import katarzynaRychlikImageSmall from  '../assets/team/katarzynaRychlik/katarzynaRychlikImageSmall.jpg';
 import patrykKrokwinskiImageSmall from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImageSmall.jpg';
 
@@ -61,7 +62,7 @@ export const dermatology = {
 export const aestheticMedicine = {
     image: servicesAestheticMedicine,
     title: 'Medycyna estetyczna',
-    description: 'Toksyna botulinowa, produkowana przez bakterie Clostridium Botulinum, znana jest powszechnie pod nazwami handlowymi jak Botox® czy Azzalure®. To jedna z najbardziej popularnych metod redukcji zmarszczek mimicznych, które pojawiają się w związku z powtarzającymi się skurczami mięśni twarzy. Zabieg pozwala szybko spłycić zmarszczki mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy nadmierna kurczliwość.',
+    description: 'Toksyna botulinowa to jedna z najbardziej popularnych metod redukcji zmarszczek mimicznych, które pojawiają się w związku z powtarzającymi się skurczami mięśni twarzy. Zabieg pozwala szybko spłycić zmarszczki mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy nadmierna kurczliwość.',
     path: '/services/aesthetic-medicine',
     prices: '/prices/aesthetic-medicine',
     specialists: [
@@ -190,13 +191,15 @@ export const clinicalDietitian = {
     ]
 };
 
-export const hematology = {
-    image: servicesHematology,
-    title: 'Hematologia',
-    description: 'Dziedzina kliniczna medycyny zajmująca się diagnostyką i leczeniem nowotworowych i nienowotworowych chorób krwi i układu krwiotwórczego, a także zaburzeń krwi występujących w pierwotnych schorzeniach innych narządów; również dziedzina naukowa zajmująca się badaniami krwi i układu krwiotwórczego w stanach zdrowia i choroby.',
-    path: '/services/hematology',
-    prices: '/prices/hematology',
-    // specialists: []
+export const rheumatology = {
+    image: servicesRheumatology,
+    title: 'Reumatologia',
+    description: 'Dziedzina medycyny zajmująca się różnego typu schorzeniami związanymi ze stanami zwyrodnieniowymi i zapalnymi tkanki łącznej, kości i stawów.',
+    path: '/services/rheumatology',
+    prices: '/prices/rheumatology',
+    specialists: [
+        agataSkwerekSzewczykImageSmall
+    ]
 };
 
 export const services = [
@@ -212,5 +215,5 @@ export const services = [
     { ...orthopedics },
     { ...vasularSurgery },
     { ...clinicalDietitian },
-    { ...hematology }
+    { ...rheumatology }
 ];

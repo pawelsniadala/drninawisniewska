@@ -1,44 +1,46 @@
-// import React, { useState, useEffect } from 'react';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
-// import CardTeam2 from '../../../components/CardTeam2';
-// import CardTeamProposed2 from '../../../components/CardTeamProposed2';
+import CardTeam2 from '../../../components/CardTeam2';
+import CardTeamProposed2 from '../../../components/CardTeamProposed2';
 import CardProposed from '../../../components/CardProposed';
+import ListBulleted from '../../../components/ListBulleted';
 
-import { services, hematology } from '../../../data/services';
-// import { team } from '../../../data/team';
+import { services, rheumatology } from '../../../data/services';
+import { team } from '../../../data/team';
 
-const ServicesHematologyPartial = () => {
-    // function getWindowDimensions() {
-    //     const { innerWidth: width } = window;
-    //     return { width };
-    // }
+const ServicesRheumatologyPartial = () => {
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
 
-    // function useWindowDimensions() {
-    //     const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
+    function useWindowDimensions() {
+        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
 
-    //     useEffect(() => {
-    //         function handleResize() {
-    //             setWindowDimensions(getWindowDimensions());
-    //         }
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
 
-    //         window.addEventListener('resize', handleResize);
-    //         return () => window.removeEventListener('resize', handleResize);
-    //     }, []);
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
 
-    //     return windowDimensions;
-    // }
+        return windowDimensions;
+    }
 
-    // const { width } = useWindowDimensions();
+    const { width } = useWindowDimensions();
+
 
     return (
         <Box className='contact-view'>
@@ -66,13 +68,13 @@ const ServicesHematologyPartial = () => {
                                     Specjalizacje
                                 </Link>
                                 <Typography color='text.primary'>
-                                    Hematologia
+                                    Reumatologia
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Hematologia
+                            Reumatologia
                             </Typography>
                         </Box>
                     </Container>
@@ -83,13 +85,13 @@ const ServicesHematologyPartial = () => {
 
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
-                                    Strona w budowie.
+                                    <strong>Reumatologia</strong> zajmuje się różnego typu schorzeniami związanymi ze stanami zwyrodnieniowymi i zapalnymi tkanki łącznej, kości i stawów.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
                                     <LazyLoadImage
                                         height={'100%'}
                                         width={'100%'}
-                                        src={hematology.image}
+                                        src={rheumatology.image}
                                         alt='Remote working'
                                         effect='blur'
                                         style={{
@@ -101,15 +103,48 @@ const ServicesHematologyPartial = () => {
                                         }}
                                     />
                                 </Box>
+                                <Typography className='paragraph heading'>
+                                    <strong>Najczęstsze problemy z jakimi możesz zgłosić się do naszej Kliniki</strong>:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'reumatoidalne zapalenie stawów,',
+                                        'łuszczycowe zapalenie stawów,',
+                                        'gorączka reumatyczna,',
+                                        'zesztywniające zapalenie stawów kręgosłupa,',
+                                        'tocznia rumieniowatego układowego',
+                                        'twardzina układowa',
+                                        'zapalenie skórno-mięśniowe,',
+                                        'zapalenie wielomięśniowe,',
+                                        'przewlekłe niezakrzepowe zapalenie naczyń,',
+                                        'osteoporoza,',
+                                        'sarkoidoza.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
                             </Box>
 
-                            {/* <Box marginBottom={3}>
+                            <Box marginBottom={3}>
+                                <Typography className='paragraph heading'>
+                                    <strong>Kiedy udać się do reumatologa?</strong>
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Choroby reumatyczne dotykają ludzi w każdym wieku. Jasnym sygnałem, że powinniśmy zgłosić się właśnie do reumatologa jest poranna sztywność i zaczerwienienie stawów, problemy z utrzymaniem przedmiotów w palcach, ze schylaniem się i podnoszeniem przedmiotów, opuchlizna i zniekształcenie stawów. Dodatkowymi objawami mogącymi sugerować chorobę reumatologiczną są silne bóle w okolicy stawów, ścięgien, kości lub mięśni (szczególnie jeśli dolegliwości bólowe są intensywne, trwają przez dłuższy czas i nawracają pomimo leczenia lekami przeciwzapalnymi), stan podgorączkowy lub gorączka, obrzęk, wysypka, zaczerwienienie skóry.
+                                </Typography>
+                            </Box>
+
+                            <Box marginBottom={3}>
                                 <Typography variant={'h5'} className='header alternative'>
                                     Specjaliści
                                 </Typography>
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
-                                        team.filter(item => item.services.includes('hematology')).map((item, index) => (
+                                        team.filter(item => item.services.includes('rheumatology')).map((item, index) => (
                                             <CardTeam2
                                                 key={index}
                                                 cardImage={item.image}
@@ -123,7 +158,7 @@ const ServicesHematologyPartial = () => {
                                             />
                                         ))
                                     ) : (
-                                        team.filter(item => item.services.includes('hematology')).map((item, index) => (
+                                        team.filter(item => item.services.includes('rheumatology')).map((item, index) => (
                                             <CardTeamProposed2
                                                 key={index}
                                                 cardTitle={item.name}
@@ -135,12 +170,12 @@ const ServicesHematologyPartial = () => {
                                         ))
                                     )}
                                 </Box>
-                            </Box> */}
+                            </Box>
 
                         </Box>
                         <Box className='proposed-services'>
                             <Box className='card-wrapper services-proposed'>
-                                {services.length ? services.filter(item => item.title !== 'Hematologia').map((item, index) => (
+                                {services.length ? services.filter(item => item.title !== 'Reumatologia').map((item, index) => (
                                     <CardProposed
                                         key={index}
                                         cardTitle={item.title}
@@ -160,4 +195,4 @@ const ServicesHematologyPartial = () => {
     );
 }
 
-export default Page(ServicesHematologyPartial);
+export default Page(ServicesRheumatologyPartial);

@@ -358,7 +358,6 @@ const Table10 = () => {
     }
 
     const rows = [
-        createData('Górna warga', 190, '-'),
         createData('Broda', 190, 560),
         createData('Wąsik', 190, 560),
         createData('Szyja, policzki', 250, '-'),
