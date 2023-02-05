@@ -245,7 +245,7 @@ export const aleksandraGorczynska = {
 
 export const agataSkwerekSzewczyk = {
     designation: 'agataSkwerekSzewczyk',
-    name: 'Agata Skwerek Szewczyk',
+    name: 'lek. med. Agata Skwerek Szewczyk',
     speciality: 'Reumatolog',
     summary: false,
     education: 'Specjalista Chorób Wewnętrznych i Reumatologii. Absolwentka Warszawskiego Uniwersytetu Medycznego i Wydziału Zarządzania Uniwersytetu Warszawskiego. W 2016 roku zdałam egzamin specjalizacyjny w zakresie Chorób Wewnętrznych.',
