@@ -50,12 +50,12 @@
                                     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 
                                     &:hover {
-                                        background-color: #f8f8f8;
+                                        background-color: #f9f9f9;
                                         color: #535353;
                                     }
 
                                     &.Mui-selected {
-                                        background-color: #f8f8f8;
+                                        background-color: #f9f9f9;
                                         color: #d29a3e;
 
                                         .list-item-icon {
