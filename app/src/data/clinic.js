@@ -53,8 +53,8 @@ export const clinic = {
             suffix: '+'
         },
         {
-            title: 7120,
-            subtitle: '7120 wykonanych zabiegów w 2021 roku',
+            title: 7125,
+            subtitle: '7125 wykonanych zabiegów w 2022 roku',
             suffix: ''
         },
         {
