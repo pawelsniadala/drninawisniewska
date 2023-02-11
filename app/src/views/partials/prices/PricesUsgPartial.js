@@ -37,19 +37,17 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja - lek. med. Konrad Kochan', 200),
-        createData('Plastyka powiek górnych', 5000),
-        createData('Plastyka powiek dolnych', 8000),
-        createData('Korekta odstających uszu', 6000),
-        createData('Usunięcie kępek żółtych jednostronne', 1500),
-        createData('Usunięcie kępek żółtych dwustronne', 3000),
-        createData('Plastyka blizn', 'od 1500'),
-        createData('Podniesienie górnej wargi', 5000),
-        createData('Usuwanie dużych zmian nowotworowych z przeszczepem skóry', 700),
-        createData('Usunięcie zmian skórnych twarzy', 'od 500'),
-        createData('Usunięcie zmian skórnych z ciała', 'od 500'),
-        createData('Chirurgiczne usunięcie kaszaka, tłuszczaka, włókniaka', '600 - 1500'),
-        createData('Nowotwory skóry i tkanek podskórnych', '600 - 3000')
+        createData('Jama brzuszna', 150),
+        createData('Tarczyca', 150),
+        createData('Piersi', 150),
+        createData('Ślinianki', 150),
+        createData('Węzły chłonne', 150),
+        createData('Prostata', 150),
+        createData('Jądra', 150),
+        createData('Układ moczowy', 150),
+        createData('Doppler tętnic szyjnych', 150),
+        createData('Doppler kończyn dolnych (jedna noga)', 170),
+        createData('Doppler kończyn dolnych (dwie nogi)', 250)
     ];
 
     return (
@@ -82,7 +80,7 @@ const Table1 = () => {
     );
 }
 
-const PricesCosmeticSurgeryPartials = () => {
+const PricesUsgPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -94,4 +92,4 @@ const PricesCosmeticSurgeryPartials = () => {
     );
 }
 
-export default PricesCosmeticSurgeryPartials;
+export default PricesUsgPartial;

@@ -37,12 +37,19 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja - dr Wojciech Kaszewski (pierwsza wizyta)', 200),
-        createData('Konsultacja - dr Wojciech Kaszewski (kolejna wizyta)', 170),
-        createData('iniekcja (preparat pacjenta)', 150),
-        createData('USG barku', 200),
-        createData('USG ręki', 200),
-        createData('USG kolana', 200)
+        createData('Konsultacja - lek. med. Konrad Kochan', 200),
+        createData('Plastyka powiek górnych', 5000),
+        createData('Plastyka powiek dolnych', 8000),
+        createData('Korekta odstających uszu', 6000),
+        createData('Usunięcie kępek żółtych jednostronne', 1500),
+        createData('Usunięcie kępek żółtych dwustronne', 3000),
+        createData('Plastyka blizn', 'od 1500'),
+        createData('Podniesienie górnej wargi', 5000),
+        createData('Usuwanie dużych zmian nowotworowych z przeszczepem skóry', 700),
+        createData('Usunięcie zmian skórnych twarzy', 'od 500'),
+        createData('Usunięcie zmian skórnych z ciała', 'od 500'),
+        createData('Chirurgiczne usunięcie kaszaka, tłuszczaka, włókniaka', '600 - 1500'),
+        createData('Nowotwory skóry i tkanek podskórnych', '600 - 3000')
     ];
 
     return (
@@ -50,7 +57,7 @@ const Table1 = () => {
             <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell>
+                    <StyledTableCell className='featured'>
                         Nazwa
                     </StyledTableCell>
                     <StyledTableCell align='right'>
@@ -60,7 +67,7 @@ const Table1 = () => {
                 </TableHead>
                 <TableBody>
                     {rows.map((row) => (
-                        <StyledTableRow key={row.name}>
+                        <StyledTableRow key={row.name} className='caption'>
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
@@ -75,7 +82,7 @@ const Table1 = () => {
     );
 }
 
-const PricesOrthopedicsPartials = () => {
+const PricesCosmeticSurgeryPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -85,6 +92,6 @@ const PricesOrthopedicsPartials = () => {
             <Table1 />
         </Box>
     );
-};
+}
 
-export default PricesOrthopedicsPartials;
+export default PricesCosmeticSurgeryPartial;

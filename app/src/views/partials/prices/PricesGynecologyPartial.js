@@ -92,7 +92,7 @@ const Table1 = () => {
     );
 }
 
-const PricesGynecologyPartials = () => {
+const PricesGynecologyPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -104,4 +104,4 @@ const PricesGynecologyPartials = () => {
     );
 }
 
-export default PricesGynecologyPartials;
+export default PricesGynecologyPartial;

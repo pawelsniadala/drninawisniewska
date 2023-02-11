@@ -37,17 +37,11 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Jama brzuszna', 150),
-        createData('Tarczyca', 150),
-        createData('Piersi', 150),
-        createData('Ślinianki', 150),
-        createData('Węzły chłonne', 150),
-        createData('Prostata', 150),
-        createData('Jądra', 150),
-        createData('Układ moczowy', 150),
-        createData('Doppler tętnic szyjnych', 150),
-        createData('Doppler kończyn dolnych (jedna noga)', 170),
-        createData('Doppler kończyn dolnych (dwie nogi)', 250)
+        createData('Konsultacja dr n. med. Tomasz Matuszewski', 200),
+        createData('Płatkowe testy kontaktowe', 350),
+        createData('Testy skórne', 150),
+        createData('Odczulanie', 60),
+        createData('Konsultacja pediatryczna', 200),
     ];
 
     return (
@@ -80,7 +74,7 @@ const Table1 = () => {
     );
 }
 
-const PricesUsgPartials = () => {
+const PricesAllergologyPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -92,4 +86,4 @@ const PricesUsgPartials = () => {
     );
 }
 
-export default PricesUsgPartials;
+export default PricesAllergologyPartial;

@@ -18,18 +18,18 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Page from '../components/Page';
-import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
-import PricesAestheticMedicinePartials from './partials/prices/PricesAestheticMedicinePartials';
-import PricesCosmetologyPartials from './partials/prices/PricesCosmetologyPartials';
-import PricesPhysioterapyPartials from './partials/prices/PricesPhysioterapyPartials';
-import PricesCosmeticSurgeryPartials from './partials/prices/PricesCosmeticSurgeryPartials';
-import PricesAllergologyPartials from './partials/prices/PricesAllergologyPartials';
-import PricesUsgPartials from './partials/prices/PricesUsgPartials';
-import PricesEndocrinologyPartials from './partials/prices/PricesEndocrinologyPartials';
-import PricesGynecologyPartials from './partials/prices/PricesGynecologyPartials';
-import PricesOrthopedicsPartials from './partials/prices/PricesOrthopedicsPartials';
-import PricesVascularSurgeryPartials from './partials/prices/PricesVascularSurgeryPartials';
-import PricesClinicalDietitianPartials from './partials/prices/PricesClinicalDietitianPartials';
+import PricesDermatologyPartial from './partials/prices/PricesDermatologyPartial';
+import PricesAestheticMedicinePartial from './partials/prices/PricesAestheticMedicinePartial';
+import PricesCosmetologyPartial from './partials/prices/PricesCosmetologyPartial';
+import PricesPhysioterapyPartial from './partials/prices/PricesPhysioterapyPartial';
+import PricesCosmeticSurgeryPartial from './partials/prices/PricesCosmeticSurgeryPartial';
+import PricesAllergologyPartial from './partials/prices/PricesAllergologyPartial';
+import PricesUsgPartial from './partials/prices/PricesUsgPartial';
+import PricesEndocrinologyPartial from './partials/prices/PricesEndocrinologyPartial';
+import PricesGynecologyPartial from './partials/prices/PricesGynecologyPartial';
+import PricesOrthopedicsPartial from './partials/prices/PricesOrthopedicsPartial';
+import PricesVascularSurgeryPartial from './partials/prices/PricesVascularSurgeryPartial';
+import PricesClinicalDietitianPartial from './partials/prices/PricesClinicalDietitianPartial';
 import PricesRheumatologyPartial from './partials/prices/PricesRheumatologyPartial';
 
 const PricesView = () => {
@@ -103,51 +103,51 @@ const PricesView = () => {
         switch(photoTab) {
             case 'prices-dermatology':
                 return (
-                    <PricesDermatologyPartials />
+                    <PricesDermatologyPartial />
                 );
             case 'prices-aesthetic-medicine':
                 return (
-                    <PricesAestheticMedicinePartials />
+                    <PricesAestheticMedicinePartial />
                 );
             case 'prices-cosmetology':
                 return (
-                    <PricesCosmetologyPartials />
+                    <PricesCosmetologyPartial />
                 );
             case 'prices-physioterapy':
                 return (
-                    <PricesPhysioterapyPartials />
+                    <PricesPhysioterapyPartial />
                 );
             case 'prices-cosmetic-surgery':
                 return (
-                    <PricesCosmeticSurgeryPartials />
+                    <PricesCosmeticSurgeryPartial />
                 );
             case 'prices-allergology':
                 return (
-                    <PricesAllergologyPartials />
+                    <PricesAllergologyPartial />
                 );
             case 'prices-usg':
                 return (
-                    <PricesUsgPartials />
+                    <PricesUsgPartial />
                 );
             case 'prices-endocrinology':
                 return (
-                    <PricesEndocrinologyPartials />
+                    <PricesEndocrinologyPartial />
                 );
             case 'prices-gynecology':
                 return (
-                    <PricesGynecologyPartials />
+                    <PricesGynecologyPartial />
                 );
             case 'prices-orthopedics':
                 return (
-                    <PricesOrthopedicsPartials />
+                    <PricesOrthopedicsPartial />
                 );
             case 'prices-vascular-surgery':
                 return (
-                    <PricesVascularSurgeryPartials />
+                    <PricesVascularSurgeryPartial />
                 );
             case 'prices-clinical-dietitian':
                 return (
-                    <PricesClinicalDietitianPartials />
+                    <PricesClinicalDietitianPartial />
                 );
             case 'prices-rheumatology':
                 return (

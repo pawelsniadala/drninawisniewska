@@ -24,18 +24,18 @@ import ServicesVascularSurgeryPartial from './partials/services/ServicesVascular
 import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
 import ServicesRheumatologyPartial from './partials/services/ServicesRheumatologyPartial';
 import PricesView from './PricesView';
-import PricesDermatologyPartials from './partials/prices/PricesDermatologyPartials';
-import PricesAestheticMedicinePartials from './partials/prices/PricesAestheticMedicinePartials';
-import PricesCosmetologyPartials from './partials/prices/PricesCosmetologyPartials';
-import PricesPhysioterapyPartials from './partials/prices/PricesPhysioterapyPartials';
-import PricesCosmeticSurgeryPartials from './partials/prices/PricesCosmeticSurgeryPartials';
-import PricesAllergologyPartials from './partials/prices/PricesAllergologyPartials';
-import PricesUsgPartials from './partials/prices/PricesUsgPartials';
-import PricesEndocrinologyPartials from './partials/prices/PricesEndocrinologyPartials';
-import PricesGynecologyPartials from './partials/prices/PricesGynecologyPartials';
-import PricesOrthopedicsPartials from './partials/prices/PricesOrthopedicsPartials';
-import PricesVascularSurgeryPartials from './partials/prices/PricesVascularSurgeryPartials';
-import PricesClinicalDietitianPartials from './partials/prices/PricesClinicalDietitianPartials';
+import PricesDermatologyPartial from './partials/prices/PricesDermatologyPartial';
+import PricesAestheticMedicinePartial from './partials/prices/PricesAestheticMedicinePartial';
+import PricesCosmetologyPartial from './partials/prices/PricesCosmetologyPartial';
+import PricesPhysioterapyPartial from './partials/prices/PricesPhysioterapyPartial';
+import PricesCosmeticSurgeryPartial from './partials/prices/PricesCosmeticSurgeryPartial';
+import PricesAllergologyPartial from './partials/prices/PricesAllergologyPartial';
+import PricesUsgPartial from './partials/prices/PricesUsgPartial';
+import PricesEndocrinologyPartial from './partials/prices/PricesEndocrinologyPartial';
+import PricesGynecologyPartial from './partials/prices/PricesGynecologyPartial';
+import PricesOrthopedicsPartial from './partials/prices/PricesOrthopedicsPartial';
+import PricesVascularSurgeryPartial from './partials/prices/PricesVascularSurgeryPartial';
+import PricesClinicalDietitianPartial from './partials/prices/PricesClinicalDietitianPartial';
 import PricesRheumatologyPartial from './partials/prices/PricesRheumatologyPartial';
 import SpecialOfferView from './SpecialOfferView';
 import TeamView from './TeamView';
@@ -100,18 +100,18 @@ const Root = () => (
                     <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial title='Dietetyka Kliniczna' />} />
                     <Route path='/services/rheumatology' element={<ServicesRheumatologyPartial title='Reumatologia' />} />
                     <Route path='/prices' element={<PricesView title='Cennik' />}>
-                        <Route path='/prices' element={<PricesDermatologyPartials />} />
-                        <Route path='/prices/aesthetic-medicine' element={<PricesAestheticMedicinePartials />} />
-                        <Route path='/prices/cosmetology' element={<PricesCosmetologyPartials />} />
-                        <Route path='/prices/physioterapy' element={<PricesPhysioterapyPartials />} />
-                        <Route path='/prices/cosmetic-surgery' element={<PricesCosmeticSurgeryPartials />} />
-                        <Route path='/prices/allergology' element={<PricesAllergologyPartials />} />
-                        <Route path='/prices/usg' element={<PricesUsgPartials />} />
-                        <Route path='/prices/endocrinology' element={<PricesEndocrinologyPartials />} />
-                        <Route path='/prices/gynecology' element={<PricesGynecologyPartials />} />
-                        <Route path='/prices/orthopedics' element={<PricesOrthopedicsPartials />} />
-                        <Route path='/prices/vascular-surgery' element={<PricesVascularSurgeryPartials />} />
-                        <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartials />} />
+                        <Route path='/prices' element={<PricesDermatologyPartial />} />
+                        <Route path='/prices/aesthetic-medicine' element={<PricesAestheticMedicinePartial />} />
+                        <Route path='/prices/cosmetology' element={<PricesCosmetologyPartial />} />
+                        <Route path='/prices/physioterapy' element={<PricesPhysioterapyPartial />} />
+                        <Route path='/prices/cosmetic-surgery' element={<PricesCosmeticSurgeryPartial />} />
+                        <Route path='/prices/allergology' element={<PricesAllergologyPartial />} />
+                        <Route path='/prices/usg' element={<PricesUsgPartial />} />
+                        <Route path='/prices/endocrinology' element={<PricesEndocrinologyPartial />} />
+                        <Route path='/prices/gynecology' element={<PricesGynecologyPartial />} />
+                        <Route path='/prices/orthopedics' element={<PricesOrthopedicsPartial />} />
+                        <Route path='/prices/vascular-surgery' element={<PricesVascularSurgeryPartial />} />
+                        <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartial />} />
                         <Route path='/prices/rheumatology' element={<PricesRheumatologyPartial />} />
                     </Route>
                     <Route path='/special-offer' element={<SpecialOfferView title='Promocje' />} />

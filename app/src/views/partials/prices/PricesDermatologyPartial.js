@@ -144,7 +144,7 @@ const Table2 = () => {
     );
 }
 
-const PricesDermatologyPartials = () => {
+const PricesDermatologyPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -157,4 +157,4 @@ const PricesDermatologyPartials = () => {
     );
 }
 
-export default PricesDermatologyPartials;
+export default PricesDermatologyPartial;

@@ -37,8 +37,16 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja - mgr Joanna Ojrzeńska (pierwsza wizyta)', 150),
-        createData('Wizyta kontrolna', 100)
+        createData('Konsultacja - mgr Milena Juźwiak (30min)', 100),
+        createData('Terapia metodą PNF (30/60min)', '80/130'),
+        createData('Kinesotaping', 'od 35'),
+        createData('Masaż limfatyczny ręczny (1h)', 230),
+        createData('Masaż leczniczy całego kręgosłupa (30min)', 80),
+        createData('Masaż leczniczy częściowy (20min)', 50),
+        createData('Masaż klasyczny całego ciała (90min)', 230),
+        createData('Masaż relaksacyjny (60min)', 140),
+        createData('Ćwiczenia indywidualne (30min)', 80),
+        createData('Rehabilitacja ortopedyczna metoda Cyriax', 150)
     ];
 
     return (
@@ -46,7 +54,7 @@ const Table1 = () => {
             <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell>
+                    <StyledTableCell className='featured'>
                         Nazwa
                     </StyledTableCell>
                     <StyledTableCell align='right'>
@@ -56,7 +64,7 @@ const Table1 = () => {
                 </TableHead>
                 <TableBody>
                     {rows.map((row) => (
-                        <StyledTableRow key={row.name}>
+                        <StyledTableRow key={row.name} className='caption'>
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
@@ -71,7 +79,7 @@ const Table1 = () => {
     );
 }
 
-const PricesClinicalDietitianPartials = () => {
+const PricesPhysioterapyPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -81,6 +89,6 @@ const PricesClinicalDietitianPartials = () => {
             <Table1 />
         </Box>
     );
-};
+}
 
-export default PricesClinicalDietitianPartials;
+export default PricesPhysioterapyPartial;

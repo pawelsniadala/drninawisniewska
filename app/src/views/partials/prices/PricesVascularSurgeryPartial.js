@@ -9,6 +9,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TableContainer from '@mui/material/TableContainer';
 import Paper from '@mui/material/Paper';
+import InfoIcon from '@mui/icons-material/Info';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 
 const StyledTableCell = styled(TableCell)(() => ({
     [`&.${tableCellClasses.head}`]: {
@@ -27,21 +30,38 @@ const StyledTableCell = styled(TableCell)(() => ({
 
 const StyledTableRow = styled(TableRow)(() => ({
     '&:last-child td, &:last-child th': {
-        border: 0
+        border: 0,
     }
 }));
 
+const tooltip = (title) => (
+    <Tooltip title={title}>
+        <IconButton
+            sx={{
+                height: '12px',
+                width: '12px',
+                marginLeft: '8px',
+                color: '#008AC9'
+            }}
+        >
+        <InfoIcon fontSize='small' />
+        </IconButton>
+    </Tooltip>
+);
+
 const Table1 = () => {
-    function createData(name, price) {
-        return { name, price };
+    function createData(name, price, tooltip) {
+        return { name, price, tooltip };
     }
 
     const rows = [
-        createData('Konsultacja dr n. med. Tomasz Matuszewski', 200),
-        createData('Płatkowe testy kontaktowe', 350),
-        createData('Testy skórne', 150),
-        createData('Odczulanie', 60),
-        createData('Konsultacja pediatryczna', 200),
+        createData('Konsultacja - dr Kamil Stępkowski', 200, false),
+        createData('USG doppler tętnic szyjnych', 170, false),
+        createData('USG doppler kończyn dolnych (jedna noga)', 170, false),
+        createData('USG doppler kończyn dolnych (dwie nogi)', 250, false),
+        createData('Skleroterapia', 800, false),
+        createData('Miniflebektomia', '1000 - 1800', false),
+        createData('Laserowe usuwanie żylaków', 'od 3700', 'Dokładną cenę ustala lekarz.')
     ];
 
     return (
@@ -49,7 +69,7 @@ const Table1 = () => {
             <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
-                    <StyledTableCell className='featured'>
+                    <StyledTableCell>
                         Nazwa
                     </StyledTableCell>
                     <StyledTableCell align='right'>
@@ -59,12 +79,13 @@ const Table1 = () => {
                 </TableHead>
                 <TableBody>
                     {rows.map((row) => (
-                        <StyledTableRow key={row.name} className='caption'>
+                        <StyledTableRow key={row.name}>
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
                             <StyledTableCell align='right'>
                                 {row.price}
+                                {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
                         </StyledTableRow>
                     ))}
@@ -74,7 +95,7 @@ const Table1 = () => {
     );
 }
 
-const PricesAllergologyPartials = () => {
+const PricesVascularSurgeryPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -84,6 +105,6 @@ const PricesAllergologyPartials = () => {
             <Table1 />
         </Box>
     );
-}
+};
 
-export default PricesAllergologyPartials;
+export default PricesVascularSurgeryPartial;

@@ -90,7 +90,7 @@ const Table1 = () => {
     );
 }
 
-const PricesEndocrinologyPartials = () => {
+const PricesEndocrinologyPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -102,4 +102,4 @@ const PricesEndocrinologyPartials = () => {
     );
 }
 
-export default PricesEndocrinologyPartials;
+export default PricesEndocrinologyPartial;
