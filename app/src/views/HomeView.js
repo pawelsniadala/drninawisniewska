@@ -1,3 +1,7 @@
+import React from 'react';
+
+import Box from '@mui/material/Box';
+
 import Page from '../components/Page';
 import HeroSection from '../sections/HeroSection';
 import ClinicSection from '../sections/ClinicSection';
@@ -8,14 +12,14 @@ import TechnologySection from '../sections/TechnologySection';
 
 const HomeView = () => {
     return (
-        <div className='home-view'>
+        <Box className='home-view'>
             <HeroSection />
             <ClinicSection />
             <ServicesSection />
             <PriceSection />
             <TeamSection />
             <TechnologySection />
-        </div>
+        </Box>
     );
 }
 

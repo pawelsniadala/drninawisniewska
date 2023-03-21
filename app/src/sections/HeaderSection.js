@@ -156,7 +156,7 @@ const HeaderSection = () => {
                             <ListItemIcon className='list-item-icon'>
                                 <TeamSvg width='17px' height='17px' />
                             </ListItemIcon>
-                            <ListItemText className='list-item-text' primary='Zespół' />
+                            <ListItemText className='list-item-text' primary='Specjaliści' />
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
@@ -389,7 +389,7 @@ const HeaderSection = () => {
                                         aria-current='page'
                                         to='/team'
                                     >
-                                        Zespół
+                                        Specjaliści
                                     </NavLink>
                                 </li>
                                 <li className='nav-item'>

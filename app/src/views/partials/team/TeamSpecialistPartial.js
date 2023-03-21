@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
@@ -15,20 +15,113 @@ import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardTeamProposed2 from '../../../components/CardTeamProposed2';
 
-import { team, katarzynaMysliwiecCzajka } from '../../../data/team';
+import {
+    team,
+    ninaWisniewska,
+    justynaFilipek,
+    paulinaBudna,
+    konradKochan,
+    wojciechKaszewski,
+    klaudiaMalottki,
+    katarzynaMysliwiecCzajka,
+    justynaKloniecka,
+    aldonaMaciag,
+    milenaJuzwiak,
+    paulinaTatara,
+    tomaszMatuszewski,
+    olgaLenartowiczWarakomska,
+    katarzynaZbronska,
+    joannaOjrzenska,
+    aleksandraGorczynska,
+    agataSkwerekSzewczyk,
+    kamilStepkowski,
+    katarzynaRychlik,
+    patrykKrokwinski
+} from '../../../data/team';
 
-const TeamKatarzynaMysliwiecCzajkaPartial = () => {
-    const shuffleArray = (array) => {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
+const TeamSpecialistPartial = () => {
+    const {
+        specialization,
+        specialist
+    } = useParams();
+
+    const setSpecialization = () => {
+        switch(specialization) {
+            case 'dermatology':
+                return 'Dermatologia';
+            case 'aesthetic-medicine':
+                return 'Medycyna estetyczna';
+            case 'cosmetology':
+                return 'Kosmetologia';
+            case 'physioterapy':
+                return 'Fizjoterapia';
+            case 'cosmetic-surgery':
+                return 'Chirurgia plastyczna';
+            case 'allergology':
+                return 'Alergologia';
+            case 'usg':
+                return 'USG';
+            case 'endocrinology':
+                return 'Endokrynologia';
+            case 'gynecology':
+                return 'Ginekologia';
+            case 'orthopedics':
+                return 'Ortopedia';
+            case 'vascular-surgery':
+                return 'Chirurgia naczyniowa';
+            case 'clinical-dietitian':
+                return 'Dietetyka Kliniczna';
+            case 'rheumatology':
+                return 'Reumatologia';
+            default:
         }
     }
 
-    const teamCopy = [ ...team ];
-    const katarzynaMysliwiecCzajkaCopy = [{ ...katarzynaMysliwiecCzajka }];
-
-    shuffleArray(teamCopy);
+    const setSpecialist = () => {
+        switch(specialist) {
+            case 'nina-wisniewska':
+                return [{ ...ninaWisniewska }];
+            case 'justyna-filipek':
+                return [{ ...justynaFilipek }];
+            case 'paulina-budna':
+                return [{ ...paulinaBudna }];
+            case 'konrad-kochan':
+                return [{ ...konradKochan }];
+            case 'wojciech-kaszewski':
+                return [{ ...wojciechKaszewski }];
+            case 'klaudia-malottki':
+                return [{ ...klaudiaMalottki }];
+            case 'katarzyna-mysliwiec-czajka':
+                return [{ ...katarzynaMysliwiecCzajka }];
+            case 'justyna-kloniecka':
+                return [{ ...justynaKloniecka }];
+            case 'aldona-maciag':
+                return [{ ...aldonaMaciag }];
+            case 'milena-juzwiak':
+                return [{ ...milenaJuzwiak }];
+            case 'paulina-tatara':
+                return [{ ...paulinaTatara }];
+            case 'tomasz-matuszewski':
+                return [{ ...tomaszMatuszewski }];
+            case 'olga-lenartowicz-warakomska':
+                return [{ ...olgaLenartowiczWarakomska }];
+            case 'katarzyna-zbronska':
+                return [{ ...katarzynaZbronska }];
+            case 'joanna-ojrzenska':
+                return [{ ...joannaOjrzenska }];
+            case 'aleksandra-gorczynska':
+                return [{ ...aleksandraGorczynska }];
+            case 'agata-skwerek-szewczyk':
+                return [{ ...agataSkwerekSzewczyk }];
+            case 'kamil-stepkowski':
+                return [{ ...kamilStepkowski }];
+            case 'katarzyna-rychlik':
+                return [{ ...katarzynaRychlik }];
+            case 'patryk-krokwinski':
+                return [{ ...patrykKrokwinski }];
+            default:
+        }
+    }
 
     return (
         <Box className='team-view'>
@@ -41,7 +134,7 @@ const TeamKatarzynaMysliwiecCzajkaPartial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/team' aria-current='page'>
-                                    <Box>Zespół</Box>
+                                    <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -53,10 +146,10 @@ const TeamKatarzynaMysliwiecCzajkaPartial = () => {
                                     Home
                                 </Link>
                                 <Link to='/team' aria-current='page'>
-                                    Zespół
+                                    Specjaliści
                                 </Link>
                                 <Typography color='text.primary'>
-                                    {katarzynaMysliwiecCzajka.name}
+                                    {setSpecialist()[0].name}
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
@@ -70,9 +163,9 @@ const TeamKatarzynaMysliwiecCzajkaPartial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper team'>
                         <Box className='team-navigation'>
-                            <Box className='navigation-wrapper'>
+                            <Box className='navigation-wrapper specialist'>
                                 <Tabs
-                                    // value={location.pathname}
+                                    value={specialization === 'dermatology' ? `/team` : `/team/${specialization}`}
                                     variant='scrollable'
                                     scrollButtons='auto'
                                     aria-label='scrollable auto tabs example'
@@ -84,18 +177,17 @@ const TeamKatarzynaMysliwiecCzajkaPartial = () => {
                                     }}
                                 >
                                     <Tab
-                                        label='Dermatologia'
+                                        label={setSpecialization()}
                                         component={Link}
-                                        to={`/team/dermatology`}
-                                        value={`/team/dermatology`}
-                                        // onClick={() => setTab('team-dermatology')}
+                                        to={specialization === 'dermatology' ? `/team` : `/team/${specialization}`}
+                                        value={specialization === 'dermatology' ? `/team` : `/team/${specialization}`}
                                     />
                                 </Tabs>
                             </Box>
                         </Box>
                         <Box className='team-description'>
                             <Box className='team-details'>
-                                {katarzynaMysliwiecCzajkaCopy.map((item, index) => (
+                                {setSpecialist().map((item, index) => (
                                     <Box key={index}>
                                         <Card className='card-introduction'>
                                             {item.background ? (
@@ -174,8 +266,8 @@ const TeamKatarzynaMysliwiecCzajkaPartial = () => {
                             <Box className='team-proposed'>
                                 <Box className='card-wrapper team-proposed'>
                                     {team
-                                        .filter(item => item.services.includes('dermatology'))
-                                        .filter(item => item.designation !== 'katarzynaMysliwiecCzajka')
+                                        .filter(item => item.specialization.includes(specialization))
+                                        .filter(item => item.specialist !== specialist)
                                         .map((item, index) => (
                                             <CardTeamProposed2
                                                 key={index}
@@ -183,7 +275,7 @@ const TeamKatarzynaMysliwiecCzajkaPartial = () => {
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={item.path}
+                                                cardPath={`/team/${specialization}/${item.specialist}`}
                                             />
                                         ))
                                     }
@@ -197,4 +289,4 @@ const TeamKatarzynaMysliwiecCzajkaPartial = () => {
     );
 }
 
-export default Page(TeamKatarzynaMysliwiecCzajkaPartial);
+export default Page(TeamSpecialistPartial);

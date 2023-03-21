@@ -43,7 +43,7 @@ const TeamSection = () => {
                     sectionTitle='Zespół'
                     sectionHeader='Zaufaj profesjonalistom'
                     sectionSubheader='Nasz zespół składa się ze specjalistów o bardzo szerokim spektrum kompetencji'
-                    sectionLinkText='Zobacz cały zespół'
+                    sectionLinkText='Zobacz naszych specjalistów'
                     sectionLinkPath='/team'
                 />
                 <Box className='section-body'>
@@ -64,7 +64,7 @@ const TeamSection = () => {
                                         cardName={item.name}
                                         cardSpeciality={item.speciality}
                                         cardDescription={item.experience ? item.experience : item.education}
-                                        cardPath={item.path}
+                                        cardPath={`/team/${item.specialization[0]}/${item.specialist}`}
                                         cardServices={item.services}
                                     />
                                 </Box>
@@ -77,7 +77,7 @@ const TeamSection = () => {
                                     cardSpeciality={item.speciality}
                                     cardExperience={item.experience ? item.experience : item.education ? <><br/><br/></> : <><br/><br/></> }
                                     cardImage={item.image}
-                                    cardPath={item.path}
+                                    cardPath={`/team/${item.specialization[0]}/${item.specialist}`}
                                 />
                             ))
                         )}

@@ -29,8 +29,8 @@ export const ninaWisniewska = {
     interested: false,
     image: ninaWisniewskaImage,
     background: false,
-    path: '/team/nina-wisniewska',
-    services: ['dermatology', 'aestheticMedicine']
+    specialization: ['dermatology', 'aesthetic-medicine'],
+    specialist: 'nina-wisniewska'
 };
 
 export const justynaFilipek = {
@@ -43,8 +43,8 @@ export const justynaFilipek = {
     interested: false,
     image: justynaFilipekImage,
     background: false,
-    path: '/team/justyna-filipek',
-    services: ['gynecology', 'endocrinology', 'usg']
+    specialization: ['gynecology', 'endocrinology', 'usg'],
+    specialist: 'justyna-filipek'
 };
 
 export const paulinaBudna = {
@@ -57,8 +57,8 @@ export const paulinaBudna = {
     interested: false,
     image: paulinaBudnaImage,
     background: false,
-    path: '/team/paulina-budna',
-    services: ['cosmetology']
+    specialization: ['cosmetology'],
+    specialist: 'paulina-budna'
 };
 
 export const konradKochan = {
@@ -71,8 +71,8 @@ export const konradKochan = {
     interested: false,
     image: konradKochanImage,
     background: false,
-    path: '/team/konrad-kochan',
-    services: ['aestheticMedicine', 'cosmeticSurgery']
+    specialization: ['aesthetic-medicine', 'cosmetic-surgery'],
+    specialist: 'konrad-kochan'
 };
 
 export const wojciechKaszewski = {
@@ -85,8 +85,8 @@ export const wojciechKaszewski = {
     interested: false,
     image: wojciechKaszewskiImage,
     background: false,
-    path: '/team/wojciech-kaszewski',
-    services: ['orthopedics']
+    specialization: ['orthopedics'],
+    specialist: 'wojciech-kaszewski'
 };
 
 export const klaudiaMalottki = {
@@ -99,8 +99,8 @@ export const klaudiaMalottki = {
     interested: false,
     image: klaudiaMalottkiImage,
     background: false,
-    path: '/team/klaudia-malottki',
-    services: ['aestheticMedicine']
+    specialization: ['aesthetic-medicine'],
+    specialist: 'klaudia-malottki'
 };
 
 export const katarzynaMysliwiecCzajka = {
@@ -113,8 +113,8 @@ export const katarzynaMysliwiecCzajka = {
     interested: false,
     image: katarzynaMysliwiecCzajkaImage,
     background: false,
-    path: '/team/katarzyna-mysliwiec-czajka',
-    services: ['dermatology']
+    specialization: ['dermatology'],
+    specialist: 'katarzyna-mysliwiec-czajka'
 };
 
 export const justynaKloniecka = {
@@ -127,8 +127,8 @@ export const justynaKloniecka = {
     interested: false,
     image: justynaKlonieckaImage,
     background: false,
-    path: '/team/justyna-kloniecka',
-    services: ['dermatology']
+    specialization: ['dermatology'],
+    specialist: 'justyna-kloniecka'
 };
 
 export const aldonaMaciag = {
@@ -141,8 +141,8 @@ export const aldonaMaciag = {
     interested: false,
     image: aldonaMaciagImage,
     background: false,
-    path: '/team/aldona-maciag',
-    services: ['dermatology']
+    specialization: ['dermatology'],
+    specialist: 'aldona-maciag'
 };
 
 export const milenaJuzwiak = {
@@ -155,8 +155,8 @@ export const milenaJuzwiak = {
     interested: false,
     image: milenaJuzwiakImage,
     background: false,
-    path: '/team/milena-juzwiak',
-    services: ['physioterapy']
+    specialization: ['physioterapy'],
+    specialist: 'milena-juzwiak'
 };
 
 export const paulinaTatara = {
@@ -169,8 +169,8 @@ export const paulinaTatara = {
     interested: 'Jestem miłośniczką kryminałów i wyzwań, przede wszystkim sportowych. Sport uczy mnie konsekwencji w dążeniu do celu. Na swoim koncie mam ukończenie zawodów triathlonowych na dystansie pełnego Ironmana.',
     image: paulinaTataraImage,
     background: false,
-    path: '/team/paulina-tatara',
-    services: ['dermatology', 'aestheticMedicine']
+    specialization: ['dermatology', 'aesthetic-medicine'],
+    specialist: 'paulina-tatara'
 };
 
 export const tomaszMatuszewski = {
@@ -183,8 +183,8 @@ export const tomaszMatuszewski = {
     interested: 'Interesuję się kulinariami, enoturystyką.',
     image: tomaszMatuszewskiImage,
     background: false,
-    path: '/team/tomasz-matuszewski',
-    services: ['allergology']
+    specialization: ['allergology'],
+    specialist: 'tomasz-matuszewski'
 };
 
 export const olgaLenartowiczWarakomska = {
@@ -197,8 +197,8 @@ export const olgaLenartowiczWarakomska = {
     interested: 'W wolnej chwili jeżdżę na rowerze, na snowboardzie, żegluję, podróżuję i czytam książki.',
     image: olgaLenartowiczWarakomskaImage,
     background: false,
-    path: '/team/olga-lenartowicz-warakomska',
-    services: ['aestheticMedicine']
+    specialization: ['aesthetic-medicine'],
+    specialist: 'olga-lenartowicz-warakomska'
 };
 
 export const katarzynaZbronska = {
@@ -211,8 +211,8 @@ export const katarzynaZbronska = {
     interested: false,
     image: katarzynaZbronskaImage,
     background: false,
-    path: '/team/katarzyna-zbronska',
-    services: ['dermatology']
+    specialization: ['dermatology'],
+    specialist: 'katarzyna-zbronska'
 };
 
 export const joannaOjrzenska = {
@@ -225,8 +225,8 @@ export const joannaOjrzenska = {
     interested: false,
     image: joannaOjrzenskaImage,
     background: false,
-    path: '/team/joanna-ojrzenska',
-    services: ['clinicalDietitian']
+    specialization: ['clinical-dietitian'],
+    specialist: 'joanna-ojrzenska'
 };
 
 export const aleksandraGorczynska = {
@@ -239,8 +239,8 @@ export const aleksandraGorczynska = {
     interested: 'interesuję się kulturą oraz kuchnią azjatycką.',
     image: aleksandraGorczynskaImage,
     background: false,
-    path: '/team/aleksandra-gorczynska',
-    services: ['cosmetology']
+    specialization: ['cosmetology'],
+    specialist: 'aleksandra-gorczynska'
 };
 
 export const agataSkwerekSzewczyk = {
@@ -253,8 +253,8 @@ export const agataSkwerekSzewczyk = {
     interested: false,
     image: agataSkwerekSzewczykImage,
     background: false,
-    path: '/team/agata-skwerek-szewczyk',
-    services: ['rheumatology']
+    specialization: ['rheumatology'],
+    specialist: 'agata-skwerek-szewczyk'
 };
 
 export const kamilStepkowski = {
@@ -267,8 +267,8 @@ export const kamilStepkowski = {
     interested: false,
     image: kamilStepkowskiImage,
     background: false,
-    path: '/team/kamil-stepkowski',
-    services: ['vascularSurgery']
+    specialization: ['vascular-surgery'],
+    specialist: 'kamil-stepkowski'
 };
 
 export const katarzynaRychlik = {
@@ -281,8 +281,8 @@ export const katarzynaRychlik = {
     interested: false,
     image: katarzynaRychlikImage,
     background: false,
-    path: '/team/katarzyna-rychlik',
-    services: ['dermatology']
+    specialization: ['dermatology'],
+    specialist: 'katarzyna-rychlik'
 };
 
 export const patrykKrokwinski = {
@@ -295,8 +295,8 @@ export const patrykKrokwinski = {
     interested: false,
     image: patrykKrokwinskiImage,
     background: false,
-    path: '/team/patryk-krokwinski',
-    services: ['usg']
+    specialization: ['usg'],
+    specialist: 'patryk-krokwinski'
 };
 
 export const team = [

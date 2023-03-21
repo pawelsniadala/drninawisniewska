@@ -126,7 +126,7 @@ const ServicesClinicalDietitianPartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
-                                        team.filter(item => item.services.includes('clinicalDietitian')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('clinical-dietitian')).map((item, index) => (
                                             <CardTeam2
                                                 key={index}
                                                 cardImage={item.image}
@@ -135,19 +135,18 @@ const ServicesClinicalDietitianPartial = () => {
                                                 cardName={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardDescription={item.experience ? item.experience : item.education}
-                                                cardPath={item.path}
-                                                cardServices={item.services}
+                                                cardPath={`/team/clinical-dietitian/${item.specialist}`}
                                             />
                                         ))
                                     ) : (
-                                        team.filter(item => item.services.includes('clinicalDietitian')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('clinical-dietitian')).map((item, index) => (
                                             <CardTeamProposed2
                                                 key={index}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={item.path}
+                                                cardPath={`/team/clinical-dietitian/${item.specialist}`}
                                             />
                                         ))
                                     )}

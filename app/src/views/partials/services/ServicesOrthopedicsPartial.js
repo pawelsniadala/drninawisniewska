@@ -135,7 +135,7 @@ const ServicesOrthopedicsPartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
-                                        team.filter(item => item.services.includes('orthopedics')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('orthopedics')).map((item, index) => (
                                             <CardTeam2
                                                 key={index}
                                                 cardImage={item.image}
@@ -144,19 +144,18 @@ const ServicesOrthopedicsPartial = () => {
                                                 cardName={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardDescription={item.experience ? item.experience : item.education}
-                                                cardPath={item.path}
-                                                cardServices={item.services}
+                                                cardPath={`/team/orthopedics/${item.specialist}`}
                                             />
                                         ))
                                     ) : (
-                                        team.filter(item => item.services.includes('orthopedics')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('orthopedics')).map((item, index) => (
                                             <CardTeamProposed2
                                                 key={index}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={item.path}
+                                                cardPath={`/team/orthopedics/${item.specialist}`}
                                             />
                                         ))
                                     )}

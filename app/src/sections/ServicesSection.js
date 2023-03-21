@@ -95,7 +95,7 @@ const ServicesSection = () => {
         <Box
             component='section'
             className='service-section'
-            sx={{ backgroundColor: '#f5f5f5', borderTop: 'rgba(224, 224, 224, 0.5)'}}
+            sx={{ backgroundColor: '#f5f5f5', borderTop: 'rgba(224, 224, 224, 0.5)' }}
         >
             <Container>
                 <SectionHeader

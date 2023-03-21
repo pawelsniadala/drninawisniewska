@@ -40,24 +40,16 @@ const PriceSection = () => {
                 data-jarallax
                 data-speed="0.2"
                 position={'relative'}
-                minHeight={{ xs: 'calc(90vh - 75px)', sm: 650, md: 650 }} // 'calc(80vh - 75px)'
-                // minHeight={{ xs: '100vh', sm: 650, md: 650 }}
-                // sx={{ height: 'calc(100vh)' }}
+                minHeight={{ xs: 'calc(90vh - 75px)', sm: 650, md: 650 }}
                 sx={{ paddingBottom: '1.25rem', paddingTop: '1.25rem' }}
                 display={'flex'}
-                // alignItems={ isMd ? 'center' : 'flex-start'}
                 alignItems={'center'}
-                // marginTop={-13}
-                // paddingTop={13}
-                // paddingBottom={5}
-                id="agency__portfolio-item--js-scroll"
             >
                 <Box
                     className={'jarallax-img'}
                     sx={{
                         position: 'absolute',
                         objectFit: 'cover',
-                        /* support for plugin https://github.com/bfred-it/object-fit-images */
                         fontFamily: 'object-fit: cover;',
                         top: 0,
                         left: 0,
@@ -67,11 +59,7 @@ const PriceSection = () => {
                         backgroundRepeat: 'no-repeat',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center center',
-                        // backgroundImage: 'url(https://assets.maccarianagency.com/backgrounds/img52.jpg)'
-                        backgroundImage: `url(${isMd ? pricesJpg1 : pricesJpg2})`,
-                        // display: 'flex',
-                        // alignItems: 'center',
-                        // justifyContent: 'center',
+                        backgroundImage: `url(${isMd ? pricesJpg1 : pricesJpg2})`
                     }}
                 />
                 <Box
@@ -83,19 +71,14 @@ const PriceSection = () => {
                         bottom: 0,
                         width: 1,
                         height: 1,
-                        // background: alpha('#161c2d', 0.3),
                         background: alpha('#161c2d', 0.25),
                         zIndex: 1,
-                        // backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.15))'
                     }}
                 />
                 <Container
                     sx={{
                         position: "relative",
                         zIndex: 2,
-                        // display: 'flex',
-                        // justifyContent: 'center',
-                        // alignItems: 'center',
                         padding: 0,
                     }}
                 >

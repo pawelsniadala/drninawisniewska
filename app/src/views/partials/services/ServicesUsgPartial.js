@@ -142,7 +142,7 @@ const ServicesUsgPartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
-                                        team.filter(item => item.services.includes('usg')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('usg')).map((item, index) => (
                                             <CardTeam2
                                                 key={index}
                                                 cardImage={item.image}
@@ -151,19 +151,18 @@ const ServicesUsgPartial = () => {
                                                 cardName={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardDescription={item.experience ? item.experience : item.education}
-                                                cardPath={item.path}
-                                                cardServices={item.services}
+                                                cardPath={`/team/usg/${item.specialist}`}
                                             />
                                         ))
                                     ) : (
-                                        team.filter(item => item.services.includes('usg')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('usg')).map((item, index) => (
                                             <CardTeamProposed2
                                                 key={index}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={item.path}
+                                                cardPath={`/team/usg/${item.specialist}`}
                                             />
                                         ))
                                     )}
@@ -176,7 +175,7 @@ const ServicesUsgPartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper technology page'>
                                     {width >= 991.98 ? (
-                                        technology.filter(item => item.services.includes('usg')).map((item, index) => (
+                                        technology.filter(item => item.specialization.includes('usg')).map((item, index) => (
                                             <CardTechnology
                                                 key={index}
                                                 cardImage={item.imageMedium}
@@ -186,7 +185,7 @@ const ServicesUsgPartial = () => {
                                             />
                                         ))
                                     ) : (
-                                        technology.filter(item => item.services.includes('usg')).map((item, index) => (
+                                        technology.filter(item => item.specialization.includes('usg')).map((item, index) => (
                                             <CardProposed
                                                 key={index}
                                                 cardTitle={item.title}

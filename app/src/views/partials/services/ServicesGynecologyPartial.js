@@ -131,7 +131,7 @@ const ServicesGynecologyPartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
-                                        team.filter(item => item.services.includes('gynecology')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('gynecology')).map((item, index) => (
                                             <CardTeam2
                                                 key={index}
                                                 cardImage={item.image}
@@ -140,19 +140,18 @@ const ServicesGynecologyPartial = () => {
                                                 cardName={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardDescription={item.experience ? item.experience : item.education}
-                                                cardPath={item.path}
-                                                cardServices={item.services}
+                                                cardPath={`/team/gynecology/${item.specialist}`}
                                             />
                                         ))
                                     ) : (
-                                        team.filter(item => item.services.includes('gynecology')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('gynecology')).map((item, index) => (
                                             <CardTeamProposed2
                                                 key={index}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={item.path}
+                                                cardPath={`/team/gynecology/${item.specialist}`}
                                             />
                                         ))
                                     )}

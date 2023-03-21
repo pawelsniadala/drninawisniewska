@@ -54,7 +54,7 @@ export const vectus = {
     imageLarge: vectusImageLarge,
     path: '/technology/vectus',
     badge: false,
-    services: ['cosmetology']
+    specialization: ['cosmetology']
 };
 
 export const icooneLaserMed2 = {
@@ -66,7 +66,7 @@ export const icooneLaserMed2 = {
     imageLarge: icooneLaserMed2ImageLarge,
     path: '/technology/icoone-laser-med2',
     badge: 'Nowość',
-    services: ['cosmetology']
+    specialization: ['cosmetology']
 };
 
 export const almaHarmonyXlPro = {
@@ -77,7 +77,7 @@ export const almaHarmonyXlPro = {
     imageSmall: almaHarmonyXlProImageSmall,
     path: '/technology/alma-harmony-xl-pro',
     badge: 'Nowość',
-    services: ['aestheticMedicine']
+    specialization: ['aesthetic-medicine']
 };
 
 export const fonsSvrFractionLaserCo2 = {
@@ -89,7 +89,7 @@ export const fonsSvrFractionLaserCo2 = {
     imageLarge: fonsSvrFractionLaserCo2ImageLarge,
     path: '/technology/fons-svr-fraction-laser-co2',
     badge: false,
-    services: ['aestheticMedicine']
+    specialization: ['aesthetic-medicine']
 };
 
 export const almaAccentUltraVShape = {
@@ -101,7 +101,7 @@ export const almaAccentUltraVShape = {
     imageLarge: false,
     path: '/technology/alma-accent-ultra-v-shape',
     badge: false,
-    services: ['cosmetology']
+    specialization: ['cosmetology']
 };
 
 export const biolitecLeonardoMini = {
@@ -113,7 +113,7 @@ export const biolitecLeonardoMini = {
     imageLarge: biolitecLeonardoMiniImageLarge,
     path: '/technology/biolitec-leonardo-mini',
     badge: false,
-    services: ['vascularSurgery']
+    specialization: ['vascular-surgery']
 };
 
 export const hettichArthrexAcp = {
@@ -125,7 +125,7 @@ export const hettichArthrexAcp = {
     imageLarge: hettichArthrexAcpImageLarge,
     path: '/technology/hettich-arthrex-acp',
     badge: false,
-    services: ['aestheticMedicine']
+    specialization: ['aesthetic-medicine']
 };
 
 export const fotoFinderDermoscopeVexia = {
@@ -137,7 +137,7 @@ export const fotoFinderDermoscopeVexia = {
     imageLarge: fotoFinderDermoscopeVexiaImageLarge,
     path: '/technology/foto-finder-dermoscope-vexia',
     badge: false,
-    services: ['dermatology']
+    specialization: ['dermatology']
 };
 
 export const philipsUltrasonografAffiniti50 = {
@@ -149,7 +149,7 @@ export const philipsUltrasonografAffiniti50 = {
     imageLarge: philipsUltrasonografAffiniti50ImageLarge,
     path: '/technology/philips-ultrasonograf-affiniti-50',
     badge: false,
-    services: ['usg']
+    specialization: ['usg']
 };
 
 export const sonoQueen = {
@@ -161,7 +161,7 @@ export const sonoQueen = {
     imageLarge: sonoQueenImageLarge,
     path: '/technology/sono-queen',
     badge: false,
-    services: ['aestheticMedicine']
+    specialization: ['aesthetic-medicine']
 };
 
 export const dermalight500 = {
@@ -173,7 +173,7 @@ export const dermalight500 = {
     imageLarge: false,
     path: '/technology/dermalight-500',
     badge: false,
-    services: ['dermatology']
+    specialization: ['dermatology']
 };
 
 export const dermalight1000UvaUvb311nm = {
@@ -185,7 +185,7 @@ export const dermalight1000UvaUvb311nm = {
     imageLarge: false,
     path: '/technology/dermalight-1000-uva-uvb-311nm',
     badge: false,
-    services: ['dermatology']
+    specialization: ['dermatology']
 };
 
 export const technology = [

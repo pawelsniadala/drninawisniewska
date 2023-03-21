@@ -497,7 +497,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
-                                        team.filter(item => item.services.includes('aestheticMedicine')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('aesthetic-medicine')).map((item, index) => (
                                             <CardTeam2
                                                 key={index}
                                                 cardImage={item.image}
@@ -506,19 +506,18 @@ const ServicesAestheticMedicinePartial = () => {
                                                 cardName={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardDescription={item.experience ? item.experience : item.education}
-                                                cardPath={item.path}
-                                                cardServices={item.services}
+                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
                                             />
                                         ))
                                     ) : (
-                                        team.filter(item => item.services.includes('aestheticMedicine')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('aesthetic-medicine')).map((item, index) => (
                                             <CardTeamProposed2
                                                 key={index}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={item.path}
+                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
                                             />
                                         ))
                                     )}
@@ -531,7 +530,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper technology page'>
                                     {width >= 991.98 ? (
-                                        technology.filter(item => item.services.includes('aestheticMedicine')).map((item, index) => (
+                                        technology.filter(item => item.specialization.includes('aesthetic-medicine')).map((item, index) => (
                                             <CardTechnology
                                                 key={index}
                                                 cardImage={item.imageMedium}
@@ -541,7 +540,7 @@ const ServicesAestheticMedicinePartial = () => {
                                             />
                                         ))
                                     ) : (
-                                        technology.filter(item => item.services.includes('aestheticMedicine')).map((item, index) => (
+                                        technology.filter(item => item.specialization.includes('aesthetic-medicine')).map((item, index) => (
                                             <CardProposed
                                                 key={index}
                                                 cardTitle={item.title}
