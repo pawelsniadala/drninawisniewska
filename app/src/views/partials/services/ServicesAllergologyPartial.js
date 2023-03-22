@@ -18,8 +18,8 @@ import Paper from '@mui/material/Paper';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
-import CardTeam2 from '../../../components/CardTeam2';
-import CardTeamProposed2 from '../../../components/CardTeamProposed2';
+import CardTeam from '../../../components/CardTeam';
+import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
@@ -481,7 +481,7 @@ const ServicesAllergologyPartial = () => {
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
                                         team.filter(item => item.specialization.includes('allergology')).map((item, index) => (
-                                            <CardTeam2
+                                            <CardTeam
                                                 key={index}
                                                 cardImage={item.image}
                                                 cardBackground={item.background}
@@ -494,7 +494,7 @@ const ServicesAllergologyPartial = () => {
                                         ))
                                     ) : (
                                         team.filter(item => item.specialization.includes('allergology')).map((item, index) => (
-                                            <CardTeamProposed2
+                                            <CardTeamProposed
                                                 key={index}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}
@@ -508,6 +508,11 @@ const ServicesAllergologyPartial = () => {
                             </Box>
                         </Box>
                         <Box className='proposed-services'>
+                            <Box className='header-wrapper'>
+                                <Typography className='header'>
+                                    Pozostałe specjalizacje
+                                </Typography>
+                            </Box>
                             <Box className='card-wrapper services-proposed'>
                                 {services.length ? services.filter(item => item.title !== 'Alergologia').map((item, index) => (
                                     <CardProposed

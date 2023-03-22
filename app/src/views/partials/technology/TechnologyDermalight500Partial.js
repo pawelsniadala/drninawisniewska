@@ -69,6 +69,11 @@ const TechnologyDermalight500Partial = () => {
                             </Box>
                         </Box>
                         <Box className='proposed-technology'>
+                            <Box className='header-wrapper'>
+                                <Typography className='header'>
+                                    Pozostały sprzęt
+                                </Typography>
+                            </Box>
                             <Box className='card-wrapper technology-proposed'>
                                 {technology.filter(item => item.designation !== 'dermalight500').map((item, index) => (
                                     <CardProposed

@@ -53,7 +53,7 @@ export const vectus = {
     imageMedium: vectusImageMedium,
     imageLarge: vectusImageLarge,
     path: '/technology/vectus',
-    badge: false,
+    badge: { content: 'Bestseller', mode: 'warning' },
     specialization: ['cosmetology']
 };
 
@@ -65,7 +65,7 @@ export const icooneLaserMed2 = {
     imageMedium: icooneLaserMed2ImageMedium,
     imageLarge: icooneLaserMed2ImageLarge,
     path: '/technology/icoone-laser-med2',
-    badge: 'Nowość',
+    badge: { content: 'Nowość', mode: 'success' },
     specialization: ['cosmetology']
 };
 
@@ -76,7 +76,7 @@ export const almaHarmonyXlPro = {
     imageMedium: almaHarmonyXlProImageMedium,
     imageSmall: almaHarmonyXlProImageSmall,
     path: '/technology/alma-harmony-xl-pro',
-    badge: 'Nowość',
+    badge: { content: 'Nowość', mode: 'success' },
     specialization: ['aesthetic-medicine']
 };
 
@@ -88,7 +88,7 @@ export const fonsSvrFractionLaserCo2 = {
     imageMedium: fonsSvrFractionLaserCo2ImageMedium,
     imageLarge: fonsSvrFractionLaserCo2ImageLarge,
     path: '/technology/fons-svr-fraction-laser-co2',
-    badge: false,
+    badge: { content: false, mode: null },
     specialization: ['aesthetic-medicine']
 };
 
@@ -100,7 +100,7 @@ export const almaAccentUltraVShape = {
     imageMedium: almaAccentUltraVShapeImageMedium,
     imageLarge: false,
     path: '/technology/alma-accent-ultra-v-shape',
-    badge: false,
+    badge: { content: false, mode: null },
     specialization: ['cosmetology']
 };
 
@@ -112,7 +112,7 @@ export const biolitecLeonardoMini = {
     imageMedium: biolitecLeonardoMiniImageMedium,
     imageLarge: biolitecLeonardoMiniImageLarge,
     path: '/technology/biolitec-leonardo-mini',
-    badge: false,
+    badge: { content: false, mode: null },
     specialization: ['vascular-surgery']
 };
 
@@ -124,7 +124,7 @@ export const hettichArthrexAcp = {
     imageMedium: hettichArthrexAcpImageMedium,
     imageLarge: hettichArthrexAcpImageLarge,
     path: '/technology/hettich-arthrex-acp',
-    badge: false,
+    badge: { content: false, mode: null },
     specialization: ['aesthetic-medicine']
 };
 
@@ -136,7 +136,7 @@ export const fotoFinderDermoscopeVexia = {
     imageMedium: fotoFinderDermoscopeVexiaImageMedium,
     imageLarge: fotoFinderDermoscopeVexiaImageLarge,
     path: '/technology/foto-finder-dermoscope-vexia',
-    badge: false,
+    badge: { content: false, mode: null },
     specialization: ['dermatology']
 };
 
@@ -148,7 +148,7 @@ export const philipsUltrasonografAffiniti50 = {
     imageMedium: philipsUltrasonografAffiniti50ImageMedium,
     imageLarge: philipsUltrasonografAffiniti50ImageLarge,
     path: '/technology/philips-ultrasonograf-affiniti-50',
-    badge: false,
+    badge: { content: false, mode: null },
     specialization: ['usg']
 };
 
@@ -160,7 +160,7 @@ export const sonoQueen = {
     imageMedium: sonoQueenImageMedium,
     imageLarge: sonoQueenImageLarge,
     path: '/technology/sono-queen',
-    badge: false,
+    badge: { content: false, mode: null },
     specialization: ['aesthetic-medicine']
 };
 
@@ -172,7 +172,7 @@ export const dermalight500 = {
     imageMedium: dermalight500ImageMedium,
     imageLarge: false,
     path: '/technology/dermalight-500',
-    badge: false,
+    badge: { content: false, mode: null },
     specialization: ['dermatology']
 };
 
@@ -184,7 +184,7 @@ export const dermalight1000UvaUvb311nm = {
     imageMedium: dermalight1000UvaUvb311nmImageMedium,
     imageLarge: false,
     path: '/technology/dermalight-1000-uva-uvb-311nm',
-    badge: false,
+    badge: { content: false, mode: null },
     specialization: ['dermatology']
 };
 

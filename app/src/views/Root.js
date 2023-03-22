@@ -64,9 +64,9 @@ const Root = () => (
             <HeaderSection />
             <main>
                 <Routes>
-                    <Route exact path='/' element={<HomeView main />} />
+                    <Route exact path='/' element={<HomeView />} />
                     <Route exact path='/drninawisniewska/' element={<HomeView main />} />
-                    <Route exact path='https://drninawisniewska.pl' element={<HomeView main />} />
+                    <Route exact path='https://drninawisniewska.pl' element={<HomeView />} />
                     <Route path='/clinic' element={<ClinicView />} />
                     <Route exact path='/services' element={<ServicesView />} />
                     <Route path='/services/dermatology' element={<ServicesDermatologyPartial />} />

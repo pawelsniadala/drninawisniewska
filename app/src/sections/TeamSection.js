@@ -4,8 +4,8 @@ import Box from '@mui/material/Box';
 
 import Container from '../components/Container';
 import SectionHeader from '../components/SectionHeader';
-import CardTeam2 from '../components/CardTeam2';
-import CardTeamProposed2 from '../components/CardTeamProposed2';
+import CardTeam from '../components/CardTeam';
+import CardTeamProposed from '../components/CardTeamProposed';
 
 import { team } from '../data/team';
 
@@ -57,7 +57,7 @@ const TeamSection = () => {
                                     data-aos-offset={100}
                                     data-aos-duration={600}
                                 >
-                                    <CardTeam2
+                                    <CardTeam
                                         cardImage={item.image}
                                         cardBackground={item.background}
                                         cardTitle={item.title}
@@ -71,7 +71,7 @@ const TeamSection = () => {
                             ))
                         ) : (
                             team.slice(0, 4).map((item, index) => (
-                                <CardTeamProposed2
+                                <CardTeamProposed
                                     key={index}
                                     cardTitle={item.name}
                                     cardSpeciality={item.speciality}

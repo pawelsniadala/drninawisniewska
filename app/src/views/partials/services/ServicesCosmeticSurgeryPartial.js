@@ -9,8 +9,8 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
-import CardTeam2 from '../../../components/CardTeam2';
-import CardTeamProposed2 from '../../../components/CardTeamProposed2';
+import CardTeam from '../../../components/CardTeam';
+import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
 
 import { services, cosmeticSurgery } from '../../../data/services';
@@ -134,7 +134,7 @@ const ServicesCosmeticSurgeryPartial = () => {
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
                                         team.filter(item => item.specialization.includes('cosmetic-surgery')).map((item, index) => (
-                                            <CardTeam2
+                                            <CardTeam
                                                 key={index}
                                                 cardImage={item.image}
                                                 cardBackground={item.background}
@@ -147,7 +147,7 @@ const ServicesCosmeticSurgeryPartial = () => {
                                         ))
                                     ) : (
                                         team.filter(item => item.specialization.includes('cosmetic-surgery')).map((item, index) => (
-                                            <CardTeamProposed2
+                                            <CardTeamProposed
                                                 key={index}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}
@@ -161,6 +161,11 @@ const ServicesCosmeticSurgeryPartial = () => {
                             </Box>
                         </Box>
                         <Box className='proposed-services'>
+                            <Box className='header-wrapper'>
+                                <Typography className='header'>
+                                    Pozostałe specjalizacje
+                                </Typography>
+                            </Box>
                             <Box className='card-wrapper services-proposed'>
                                 {services.length ? services.filter(item => item.title !== 'Chirurgia plastyczna').map((item, index) => (
                                     <CardProposed

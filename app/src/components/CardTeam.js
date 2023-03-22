@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
-import { Avatar, CardActions } from '@mui/material';
-import { Stack } from '@mui/material';
-import { Chip } from '@mui/material';
-import { Divider } from '@mui/material';
+import CardContent from '@mui/material/CardContent';
 
 const CardTeam = ({
     cardPath,
@@ -15,9 +13,7 @@ const CardTeam = ({
     cardBackground,
     cardTitle,
     cardName,
-    cardSpeciality,
-    cardDescription,
-    cardServices
+    cardSpeciality
 }) => {
     return (
         <Box
@@ -26,38 +22,40 @@ const CardTeam = ({
             to={cardPath}
         >
             <Card className='card'>
-                <Box sx={{ p: '15px', display: 'flex', justifyContent: 'start', gap: '15px' }}>
-                    <Avatar
-                        className='avatar'
-                        variant='rounded'
-                        src={cardImage}
+                {cardBackground ? (
+                    <Box
+                        className='card-background'
+                        component={LazyLoadImage}
+                        height={1}
+                        width={1}
+                        src={cardBackground}
+                        alt={cardTitle}
+                        effect='blur'
                     />
-                    <Stack spacing={0.5}>
-                        <Typography className='card-title'>
-                            {cardName}
-                        </Typography>
-                        <Typography className='card-speciality'>
-                            {cardSpeciality}
-                        </Typography>
-                        <Typography className='card-description'>
-                            {cardDescription}
-                        </Typography>
-                    </Stack>
+                ) : (
+                    <Box className='card-background-color' />
+                )}
+                <Box className='card-image-background'>
+                    <Box
+                        className='card-image'
+                        component={LazyLoadImage}
+                        src={cardImage}
+                        alt={cardTitle}
+                        effect='blur'
+                    />
                 </Box>
-                <Box style={{ paddingLeft: '15px', paddingRight: '15px' }}>
-                    <Divider />
-                </Box>
-                <CardActions className='card-actions'>
-                    <Box className='link-wrapper'>
-                        {cardServices && cardServices.map((item, index) => (
-                            <Box key={index}>
-                                <Link className='link' to={item.path}>
-                                    <Chip className='chip' label={item.text} size='small' />
-                                </Link>
-                            </Box>
-                        ))}
-                    </Box>
-                </CardActions>
+                <CardContent className='card-content'>
+                    <Typography
+                        className='card-name'
+                        title={cardName}>
+                        {cardName}
+                    </Typography>
+                    <Typography
+                        className='card-speciality'
+                        title={cardSpeciality}>
+                        {cardSpeciality}
+                    </Typography>
+                </CardContent>
             </Card>
         </Box>
     );

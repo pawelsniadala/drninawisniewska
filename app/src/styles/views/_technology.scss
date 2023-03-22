@@ -59,6 +59,18 @@
                 .proposed-technology {
                     grid-column: span 1;
 
+                    .header-wrapper {
+                        .header {
+                            font-size: 15.5px;
+                            font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+                            color: #535353;
+                            font-weight: 400;
+                            margin-bottom: 15px;
+                            letter-spacing: 0.00538em;
+                            line-height: 1.6;
+                        }
+                    }
+
                     @media (max-width: 991.98px) {
                         display: none;
                     }

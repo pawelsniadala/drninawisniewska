@@ -7,6 +7,11 @@ import clinic3Original from '../assets/clinic/clinic3Original.jpg';
 import clinic4Thumbnail from '../assets/clinic/clinic4Thumbnail.jpg';
 import clinic4Original from '../assets/clinic/clinic4Original.jpg';
 
+import clinic5Original from '../assets/clinic/clinic5Original.jpg';
+import clinic5Thumbnail from '../assets/clinic/clinic5Thumbnail.jpg';
+import clinic6Original from '../assets/clinic/clinic6Original.jpg';
+import clinic6Thumbnail from '../assets/clinic/clinic6Thumbnail.jpg';
+
 export const clinic = {
     pictures: [
         {
@@ -29,8 +34,8 @@ export const clinic = {
         },
         {
             designation: 'clinic3',
-            srcThumbnail: clinic3Thumbnail,
-            srcOriginal: clinic3Original,
+            srcThumbnail: clinic5Thumbnail,
+            srcOriginal: clinic5Original,
             author: "Karol Dądera",
             rows: 1,
             cols: 1,
@@ -40,6 +45,24 @@ export const clinic = {
             designation: 'clinic4',
             srcThumbnail: clinic4Thumbnail,
             srcOriginal: clinic4Original,
+            author: "Karol Dądera",
+            rows: 1,
+            cols: 2,
+            order: 4
+        },
+        {
+            designation: 'clinic5',
+            srcThumbnail: clinic3Thumbnail,
+            srcOriginal: clinic3Original,
+            author: "Karol Dądera",
+            rows: 1,
+            cols: 2,
+            order: 4
+        },
+        {
+            designation: 'clinic6',
+            srcThumbnail: clinic6Thumbnail,
+            srcOriginal: clinic6Original,
             author: "Karol Dądera",
             rows: 1,
             cols: 2,

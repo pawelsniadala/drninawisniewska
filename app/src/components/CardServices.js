@@ -22,11 +22,7 @@ const CardServices = ({
     cardPrice
 }) => {
     return (
-        <Box
-            className='card-services'
-            component={Link}
-            to={cardPath}
-        >
+        <Box className='card-services'>
             <Card className='card'>
                 <CardMedia className='card-media'>
                     <Box
@@ -81,6 +77,7 @@ const CardServices = ({
                         Cennik
                     </Button>
                 </CardActions>
+                <Link to={cardPath} className='stretched-link' />
             </Card>
         </Box>
     );

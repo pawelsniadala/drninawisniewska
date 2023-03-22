@@ -23,6 +23,8 @@ const PageTitle = ({ children }) => {
                 return `Fizjoterapia - ${companyName}`;
             case '/services/cosmetic-surgery':
                 return `Chirurgia plastyczna - ${companyName}`;
+            case '/services/allergology':
+                return `Alergologia - ${companyName}`;
             case '/services/usg':
                 return `USG - ${companyName}`;
             case '/services/endocrinology':
@@ -38,6 +40,30 @@ const PageTitle = ({ children }) => {
             case '/services/rheumatology':
                 return `Reumatologia - ${companyName}`;
             case '/prices':
+                return `Cennik - ${companyName}`;
+            case '/prices/aesthetic-medicine':
+                return `Cennik - ${companyName}`;
+            case '/prices/cosmetology':
+                return `Cennik - ${companyName}`;
+            case '/prices/physioterapy':
+                return `Cennik - ${companyName}`;
+            case '/prices/cosmetic-surgery':
+                return `Cennik - ${companyName}`;
+            case '/prices/allergology':
+                return `Cennik - ${companyName}`;
+            case '/prices/usg':
+                return `Cennik - ${companyName}`;
+            case '/prices/endocrinology':
+                return `Cennik - ${companyName}`;
+            case '/prices/gynecology':
+                return `Cennik - ${companyName}`;
+            case '/prices/orthopedics':
+                return `Cennik - ${companyName}`;
+            case '/prices/vascular-surgery':
+                return `Cennik - ${companyName}`;
+            case '/prices/clinical-dietitian':
+                return `Cennik - ${companyName}`;
+            case '/prices/rheumatology':
                 return `Cennik - ${companyName}`;
             case '/special-offer':
                 return `Promocje - ${companyName}`;

@@ -166,6 +166,11 @@ const TechnologyDermalight1000UvaUvb311nmPartial = () => {
                             </Box>
                         </Box>
                         <Box className='proposed-technology'>
+                            <Box className='header-wrapper'>
+                                <Typography className='header'>
+                                    Pozostały sprzęt
+                                </Typography>
+                            </Box>
                             <Box className='card-wrapper technology-proposed'>
                                 {technology.filter(item => item.designation !== 'dermalight1000UvaUvb311nm').map((item, index) => (
                                     <CardProposed

@@ -19,6 +19,23 @@ import SectionHeader from '../components/SectionHeader';
 
 import { clinic } from '../data/clinic';
 
+const LazyLoadImageComponent = ({
+    src,
+    alt,
+}) => {
+    return (
+        <Box className='box'>
+            <LazyLoadImage
+                src={src}
+                alt={alt}
+                height={'100%'}
+                width={'100%'}
+                effect='blur'
+            />
+        </Box>
+    );
+}
+
 const ClinicSection = () => {
     const theme = useTheme();
 
@@ -114,7 +131,7 @@ const ClinicSection = () => {
                             )
                         }
                     />
-                    <Box>
+                    {/* <Box>
                         <ImageList
                             className='image-list'
                             variant='quilted'
@@ -154,7 +171,33 @@ const ClinicSection = () => {
                                 imageCaption={`Autor: ${clinic.pictures[currentImage].author}`}
                             />
                         )}
+                    </Box> */}
+
+
+                    <Box className='photos-wrapper'>
+                        <ul>
+                            {clinic.pictures.map((item, index) => (
+                                <li key={index}>
+                                    {/* <Box
+                                        className='nav-link'
+                                        activeclassname='active'
+                                        aria-current='page'
+                                        // to={item.path}
+                                    > */}
+                                        <LazyLoadImageComponent
+                                            src={item.srcOriginal}
+                                            alt={item.designation}
+                                            title={item.designation}
+                                        />
+                                    {/* </Box> */}
+                                </li>
+                            ))}
+                        </ul>
                     </Box>
+
+
+
+
                 </Box>
                 <Box sx={{ paddingTop: '32px' }} className='statistics-wrapper'>
                     <Grid container spacing={2}>

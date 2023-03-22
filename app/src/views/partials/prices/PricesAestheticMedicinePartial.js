@@ -35,7 +35,7 @@ const StyledTableRow = styled(TableRow)(() => ({
 }));
 
 const badge = (title) => (
-    <span className='badge margin'>
+    <span className='badge success margin'>
         {title}
     </span>
 );

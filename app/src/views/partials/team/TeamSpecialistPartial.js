@@ -13,7 +13,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
-import CardTeamProposed2 from '../../../components/CardTeamProposed2';
+import CardTeamProposed from '../../../components/CardTeamProposed';
 
 import {
     team,
@@ -269,7 +269,7 @@ const TeamSpecialistPartial = () => {
                                         .filter(item => item.specialization.includes(specialization))
                                         .filter(item => item.specialist !== specialist)
                                         .map((item, index) => (
-                                            <CardTeamProposed2
+                                            <CardTeamProposed
                                                 key={index}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}

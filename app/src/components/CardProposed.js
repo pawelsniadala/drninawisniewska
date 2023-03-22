@@ -18,15 +18,9 @@ const CardProposed = ({
     return (
         <Box
             className='card-proposed'
-            component={Link}
-            to={cardPath}
             display={'block'}
             width={1}
             height={1}
-            sx={{
-                textDecoration: 'none',
-                transition: 'all .2s ease-in-out',
-            }}
         >
             <Card className='card'>
                 <CardMedia className='card-media'>
@@ -57,6 +51,7 @@ const CardProposed = ({
                         Zobacz więcej
                     </Button>
                 </CardContent>
+                <Link to={cardPath} className='stretched-link' />
             </Card>
         </Box>
     );

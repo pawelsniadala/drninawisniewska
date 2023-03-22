@@ -58,7 +58,7 @@ const TeamView = () => {
     const renderTabContent = (teamTab) => {
         switch(teamTab) {
             case 'team-dermatology':
-                return <TeamSpecializationPartial specialization={'dermatology'} />;
+                return <TeamSpecializationPartial specialization='dermatology' />;
             case 'team-aesthetic-medicine':
                 return <TeamSpecializationPartial specialization={specialization} />;
             case 'team-cosmetology':

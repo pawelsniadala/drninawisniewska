@@ -7,18 +7,14 @@ import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-
-const badge = (title) => (
-    <span className='badge'>
-        {title}
-    </span>
-);
+import Badge from './Badge';
 
 const CardTechnology = ({
     cardImage,
     cardTitle,
     cardPath,
-    cardBadge,
+    cardBadgeContent,
+    cardBadgeMode
 }) => {
     return (
         <Box
@@ -40,13 +36,16 @@ const CardTechnology = ({
                 </CardMedia>
                 <CardContent className='card-content'>
                     <Typography
-                        variant={'h6'}
+                        variant='h6'
                         className='card-title'
                     >
                         {cardTitle}
                     </Typography>
-                    {cardBadge && (
-                        badge(cardBadge)
+                    {cardBadgeContent && (
+                        <Badge
+                            badgeContent={cardBadgeContent}
+                            badgeMode={cardBadgeMode}
+                        />
                     )}
                 </CardContent>
             </Card>

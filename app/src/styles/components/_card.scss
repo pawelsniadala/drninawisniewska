@@ -76,7 +76,6 @@
         .card-actions {
             display: flex;
             justify-content: flex-start;
-            // justify-content: space-between;
             gap: 15px;
             padding: 0 20px 15px 20px;
 
@@ -90,11 +89,18 @@
                 font-size: 0.8025rem;
                 font-weight: 400;
                 width: fit-content;
+                z-index: 1;
 
                 span span {
                     background-color: transparent !important;
                 }
             }
+        }
+
+        .stretched-link {
+            display: block;
+            height: 100%;
+            z-index: 0;
         }
     }
 }
@@ -313,7 +319,7 @@
     }
 }
 
-.card-team-2 {
+.card-team {
     text-decoration: none;
     height: 100%;
     width: 100%;
@@ -444,138 +450,6 @@
             padding-top: 0;
             padding-bottom: 22px;
             gap: 10px
-        }
-    }
-}
-
-.card-team {
-    text-decoration: none;
-
-    .card {
-        height: 100%;
-        width: 100%;
-        border: none;
-        background-color: #fff;
-        box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
-        border-radius: 8px;
-
-        @media (hover: hover) {
-            &:hover {
-                box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
-                transition: all 0.3s ease-in-out;
-            }
-        }
-
-        .avatar {
-            width: 120px;
-            height: 120px;
-            background-color: #e6e6e6;
-            border-radius: 8px;
-        }
-
-        .card-title {
-            margin: 0;
-            letter-spacing: 0.00938em;
-            line-height: 1.1;
-            margin-bottom: 0.45em;
-            font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-            font-size: 1rem;
-            font-size: 1.07rem;
-            color: rgba(0, 0, 0, 0.7);
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-
-        }
-
-        .card-speciality {
-            margin: 0;
-            font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-            line-height: 1.1;
-            letter-spacing: 0.00938em;
-            text-align: left;
-            margin-bottom: 0.65em;
-            font-size: 14.5px;
-            font-weight: 400;
-            color: #606060;
-            color: rgba(0, 0, 0, 0.7);
-            display: -webkit-box;
-            -webkit-line-clamp: 1;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .card-description {
-            margin: 0;
-            font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-            line-height: 1.6;
-            text-align: left;
-            font-size: 0.855rem;
-            letter-spacing: 0.01071em;
-            font-weight: 300;
-            color: #606060;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-    }
-
-    .card-actions {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 10px 15px 10px 15px;
-
-        @media (max-width: 991.98px) {
-            justify-content: center;
-        }
-
-        .link-wrapper {
-            margin-left: 135px;
-            display: flex;
-            gap: 10px;
-
-            @media (max-width: 991.98px) {
-                margin-left: 0;
-            }
-
-            .link {
-                text-decoration: none;
-
-                .chip {
-                    cursor: pointer;
-                    color: rgba(0, 0, 0, 0.7);
-                    background-color: rgba(0, 0, 0, 0.015);
-                    border: 1px solid rgba(0, 0, 0, 0.06);
-                    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-                    border-radius: 20px;
-
-                    &:hover {
-                        background-color: rgba(0, 0, 0, 0.035);
-                    }
-                }
-            }
-        }
-
-        .card-link {
-            padding: 0;
-            line-height: 1;
-            justify-content: flex-start;
-            background-color: transparent;
-            color: #d6a44d;
-            border-color: none;
-            font-size: 0.8025rem;
-            font-weight: 400;
-            width: fit-content;
-
-            span span {
-                background-color: transparent !important;
-            }
         }
     }
 }
@@ -715,16 +589,23 @@
                 font-size: 10.5px;
                 font-weight: 400;
                 width: fit-content;
+                z-index: 1;
 
                 span span {
                     background-color: transparent !important;
                 }
             }
+
+            .stretched-link {
+                display: block;
+                height: 100%;
+                z-index: 0;
+            }
         }
     }
 }
 
-.card-team-proposed-2 {
+.card-team-proposed {
     .card {
         display: grid;
         grid-template-columns: 120px 1fr;
@@ -816,91 +697,17 @@
                 font-size: 10.5px;
                 font-weight: 400;
                 width: fit-content;
+                z-index: 1;
 
                 span span {
                     background-color: transparent !important;
                 }
             }
-        }
-    }
-}
 
-.card-team-proposed {
-    text-decoration: none;
-
-    .card {
-        height: 100%;
-        width: 100%;
-        border: none;
-        background-color: #fff;
-        box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
-        border-radius: 8px;
-
-        @media (hover: hover) {
-            &:hover {
-                box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
-                transition: all 0.3s ease-in-out;
-            }
-        }
-
-        .card-content {
-            display: flex;
-            justify-content: flex-start;
-            gap: 10px;
-            padding: 10px;
-
-            .avatar {
-                width: 100px;
-                height: 100px;
-                background-color: #e6e6e6;
-            }
-
-            .card-title {
-                margin: 0;
-                letter-spacing: 0.00938em;
-                line-height: 1.1;
-                font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-                font-size: 1rem;
-                color: rgba(0, 0, 0, 0.7);
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                // margin-bottom: 0.25em;
-                margin-bottom: 5px;
-            }
-
-            .card-speciality {
-                margin: 0;
-                font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-                letter-spacing: 0.00938em;
-                text-align: left;
-                font-size: 12.5px;
-                line-height: 14px;
-                font-weight: 400;
-                color: #606060;
-                display: -webkit-box;
-                -webkit-line-clamp: 1;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                margin-bottom: 0.35em;
-            }
-
-            .card-description {
-                margin: 0;
-                font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-                letter-spacing: 0.00938em;
-                text-align: left;
-                font-size: 12.5px;
-                font-weight: 300;
-                color: #606060;
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
-                text-overflow: ellipsis;
+            .stretched-link {
+                display: block;
+                height: 100%;
+                z-index: 0;
             }
         }
     }

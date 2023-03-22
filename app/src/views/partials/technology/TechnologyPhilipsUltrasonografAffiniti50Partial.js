@@ -81,6 +81,11 @@ const TechnologyPhilipsUltrasonografAffiniti50Partial = () => {
                             </Box>
                         </Box>
                         <Box className='proposed-technology'>
+                            <Box className='header-wrapper'>
+                                <Typography className='header'>
+                                    Pozostały sprzęt
+                                </Typography>
+                            </Box>
                             <Box className='card-wrapper technology-proposed'>
                                 {technology.filter(item => item.designation !== 'philipsUltrasonografAffiniti50').map((item, index) => (
                                     <CardProposed

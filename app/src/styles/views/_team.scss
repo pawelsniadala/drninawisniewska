@@ -47,63 +47,12 @@
                         .Mui-selected {
                             color: #D29A3E !important;
                         }
-
-                        // &.specialist {
-                        //     background-color: transparent;        
-                        //     padding: 0;
-                        //     border-radius: 8px;
-
-                        //     // box-shadow: 1px 2px 6px rgb(0 0 0 / 4%);
-                        //     box-shadow: none;                  
-    
-                        //     .MuiTabs-root {
-                        //         a {
-                        //             text-transform: none;
-                        //             font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
-                        //             font-weight: 400;
-                        //             font-size: 1rem;
-                        //             letter-spacing: 0.00938em;
-                        //             border-radius: 8px;
-                        //             // padding: 16px;
-                        //             padding: 13.5px 0;
-                        //             color: rgba(0, 0, 0, 0.7);
-
-
-                        //             font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-                        //             font-weight: 400;
-                        //             color: #d29a3e;
-                        //             font-size: 1.25rem;
-                        //             // line-height: 1.5;
-                        //             letter-spacing: 0.00938em;
-                        //             text-align: left;
-                        //             // margin-bottom: 0.35em;
-    
-                        //             &:hover {
-                        //                 color: rgba(0, 0, 0, 0.7);
-                        //             }
-    
-                        //             span span span {
-                        //                 background-color: transparent !important;
-                        //             }
-                        //         }
-    
-                        //         .MuiButtonBase-root {
-                        //             span span span {
-                        //                 background-color: transparent !important;
-                        //             }
-                        //         }
-                        //     }
-    
-                        //     .css-1h9z7r5-MuiButtonBase-root-MuiTab-root.Mui-selected {
-                        //         color: #D29A3E;
-                        //     }
-    
-                        //     .Mui-selected {
-                        //         color: #D29A3E !important;
-                        //     }
-                        // }
                     }
                 }
+
+                .MuiTabs-flexContainer:first-child {
+                    padding-left: 0;
+                  }
 
                 .team-description {
                     display: grid;

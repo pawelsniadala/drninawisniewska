@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 
 import Box from '@mui/material/Box';
 
-import CardTeam2 from '../../../components/CardTeam2';
-import CardTeamProposed2 from '../../../components/CardTeamProposed2';
+import CardTeam from '../../../components/CardTeam';
+import CardTeamProposed from '../../../components/CardTeamProposed';
 
 import { team } from '../../../data/team';
 
@@ -38,7 +38,7 @@ const TeamSpecializationPartial = ({ specialization }) => {
         <Box className='card-wrapper team view'>
             {width >= 991.98 ? (
                 team.filter(item => item.specialization.includes(specialization)).map((item, index) => (
-                    <CardTeam2
+                    <CardTeam
                         key={index}
                         cardImage={item.image}
                         cardBackground={item.background}
@@ -51,7 +51,7 @@ const TeamSpecializationPartial = ({ specialization }) => {
                 ))
             ) : (
                 team.filter(item => item.specialization.includes(specialization)).map((item, index) => (
-                    <CardTeamProposed2
+                    <CardTeamProposed
                         key={index}
                         cardTitle={item.name}
                         cardSpeciality={item.speciality}
