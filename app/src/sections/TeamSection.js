@@ -50,6 +50,7 @@ const TeamSection = () => {
                 <Box className='section-body'>
                     {width >= 991.98 ? (
                         <Swiper
+                            className="mySwiper"
                             slidesPerView={4}
                             spaceBetween={20}
                             pagination={{
@@ -58,32 +59,25 @@ const TeamSection = () => {
                             autoplay={{
                                 delay: 4000,
                                 disableOnInteraction: false,
+                                pauseOnMouseEnter: true,
                             }}
-                            modules={[Autoplay, Pagination]}
-                            className="mySwiper"
+                            modules={[
+                                Autoplay,
+                                Pagination
+                            ]}
                         >
                             {team.slice(0, 7).map((item, index) => (
-                                <SwiperSlide>
-                                    <Box
-                                        key={index}
-                                        width={1}
-                                        height={1}
-                                        sx={{
-                                            textDecoration: 'none',
-                                            transition: 'all .2s ease-in-out'
-                                        }}
-                                    >
-                                        <CardTeam
-                                            cardImage={item.image}
-                                            cardBackground={item.background}
-                                            cardTitle={item.title}
-                                            cardName={item.name}
-                                            cardSpeciality={item.speciality}
-                                            cardDescription={item.experience ? item.experience : item.education}
-                                            cardPath={`/team/${item.specialization[0]}/${item.specialist}`}
-                                            cardServices={item.services}
-                                        />
-                                    </Box>
+                                <SwiperSlide key={index}>
+                                    <CardTeam
+                                        cardImage={item.image}
+                                        cardBackground={item.background}
+                                        cardTitle={item.title}
+                                        cardName={item.name}
+                                        cardSpeciality={item.speciality}
+                                        cardDescription={item.experience ? item.experience : item.education}
+                                        cardPath={`/team/${item.specialization[0]}/${item.specialist}`}
+                                        cardServices={item.services}
+                                    />
                                 </SwiperSlide>
                             ))}
                         </Swiper>

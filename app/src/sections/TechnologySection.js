@@ -46,7 +46,7 @@ const TechnologySection = () => {
                 />
                 <Box className='section-body'>
                     <Box className='card-wrapper technology section'>
-                        {technology.slice(0, width >= 991.98 ? 4 : width <= 539.98 ? 4 : 6).map((item, index) => (
+                        {technology.slice(0, width >= 991.98 ? 4 : width <= 539.98 ? 4 : 3).map((item, index) => (
                             <Box
                                 key={index}
                                 data-aos={'fade-up'}

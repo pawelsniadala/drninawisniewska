@@ -143,29 +143,29 @@ const PageTitle = ({ children }) => {
                 return `Joanna Ojrzeńska - ${companyName}`;
             case '/technology':
                 return `Technologia - ${companyName}`;
-            case '/team/technology/vectus':
+            case '/technology/vectus':
                 return `Vectus - ${companyName}`;
-            case '/team/technology/alma-harmony-xl-pro':
+            case '/technology/alma-harmony-xl-pro':
                 return `Alma Harmony XL Pro - ${companyName}`;
-            case '/team/technology/icoone-laser-med2':
+            case '/technology/icoone-laser-med2':
                 return `Icoone Laser Med 2 - ${companyName}`;
-            case '/team/technology/fons-svr-fraction-laser-co2':
+            case '/technology/fons-svr-fraction-laser-co2':
                 return `Fons SVR Laser Frakcyjny CO2 - ${companyName}`;
-            case '/team/technology/alma-accent-ultra-v-shape':
+            case '/technology/alma-accent-ultra-v-shape':
                 return `Alma Accent Ultra V Shape - ${companyName}`;
-            case '/team/technology/biolitec-leonardo-mini':
+            case '/technology/biolitec-leonardo-mini':
                 return `Biolitec Leonardo Mini - ${companyName}`;
-            case '/team/technology/hettich-arthrex-acp':
+            case '/technology/hettich-arthrex-acp':
                 return `Hettich Arthrex ACP - ${companyName}`;
-            case '/team/technology/foto-finder-dermoscope-vexia':
+            case '/technology/foto-finder-dermoscope-vexia':
                 return `FotoFinder Dermoscope Vexia - ${companyName}`;
-            case '/team/technology/philips-ultrasonograf-affiniti-50':
+            case '/technology/philips-ultrasonograf-affiniti-50':
                 return `Philips Ultrasonograf Affiniti 50 - ${companyName}`;
-            case '/team/technology/sono-queen':
+            case '/technology/sono-queen':
                 return `SonoQueen - ${companyName}`;
-            case '/team/technology/dermalight-500':
+            case '/technology/dermalight-500':
                 return `Dermalight 500 - ${companyName}`;
-            case '/team/technology/dermalight-1000-uva-uvb-311nm':
+            case '/technology/dermalight-1000-uva-uvb-311nm':
                 return `Dermalight 1000 UVA UVB 311nm - ${companyName}`;
             case '/contact':
                 return `Kontakt - ${companyName}`;

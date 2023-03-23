@@ -50,6 +50,7 @@ const ServicesSection = () => {
                 <Box className='section-body'>
                     {width >= 991.98 ? (
                         <Swiper
+                            className="mySwiper"
                             slidesPerView={3}
                             spaceBetween={20}
                             pagination={{
@@ -57,34 +58,26 @@ const ServicesSection = () => {
                             }}
                             autoplay={{
                                 delay: 4000,
-                                disableOnInteraction: false
+                                disableOnInteraction: false,
+                                pauseOnMouseEnter: true,
                             }}
-                            modules={[Autoplay, Pagination]}
-                            className="mySwiper"
+                            modules={[
+                                Autoplay,
+                                Pagination
+                            ]}
                         >
                             {services.slice(0, 6).map((item, index) => (
-                                <SwiperSlide>
-                                    <Box
-                                        key={index}
-                                        width={1}
-                                        height={1}
-                                        sx={{
-                                            textDecoration: 'none',
-                                            transition: 'all .2s ease-in-out'
-                                        }}
-                                    >
-                                        <CardServices
-                                            key={index}
-                                            cardTitle={item.title}
-                                            cardDescription={item.description}
-                                            cardPath={item.path}
-                                            cardPathSpecialist={item.pathSpecialist}
-                                            cardPathPrices={item.pathPrices}
-                                            cardSpecialist={item.specialists}
-                                            cardImage={item.image}
-                                            cardImageVisible={true}
-                                        />
-                                    </Box>
+                                <SwiperSlide key={index}>
+                                    <CardServices
+                                        cardTitle={item.title}
+                                        cardDescription={item.description}
+                                        cardPath={item.path}
+                                        cardPathSpecialist={item.pathSpecialist}
+                                        cardPathPrices={item.pathPrices}
+                                        cardSpecialist={item.specialists}
+                                        cardImage={item.image}
+                                        cardImageVisible={true}
+                                    />
                                 </SwiperSlide>
                             ))}
                         </Swiper>
