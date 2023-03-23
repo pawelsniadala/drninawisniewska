@@ -75,6 +75,48 @@ export const konradKochan = {
     specialist: 'konrad-kochan'
 };
 
+export const agataSkwerekSzewczyk = {
+    designation: 'agataSkwerekSzewczyk',
+    name: 'lek. med. Agata Skwerek Szewczyk',
+    speciality: 'Reumatolog',
+    summary: false,
+    education: 'Specjalista Chorób Wewnętrznych i Reumatologii. Absolwentka Warszawskiego Uniwersytetu Medycznego i Wydziału Zarządzania Uniwersytetu Warszawskiego. W 2016 roku zdałam egzamin specjalizacyjny w zakresie Chorób Wewnętrznych.',
+    experience: 'Od 2011 pracuję jako lekarz, obecnie starszy asystent w Klinice Chorób Wewnętrznych i Endokrynologii Centralnego Szpitala Klinicznego Warszawskiego Uniwersytetu Medycznego przy ul. Banacha. Jestem współautorem wielu publikacji w zakresie zaburzeń gospodarki wapniowo-fosforanowej. Od 2019 r. jestem również specjalistą Reumatologiem. Specjalizację odbywałam w Klinice Wczesnego Zapalenia Stawów Narodowego Instytutu Reumatologii i Geriatrii w Warszawie. Prywatnie żona i mama 2 wspaniałych chłopców.',
+    interested: false,
+    image: agataSkwerekSzewczykImage,
+    background: false,
+    specialization: ['rheumatology'],
+    specialist: 'agata-skwerek-szewczyk'
+};
+
+export const aldonaMaciag = {
+    designation: 'aldonaMaciag',
+    name: 'lek. med. Aldona Maciąg',
+    speciality: 'Dermatolog',
+    summary: false,
+    education: 'Absolwentka II Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego, ponadto odbywała praktyki w Klinice Dermatologii Uniwersytetu w Kolonii. Pracuje jako młodszy asystent w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie. Jest członkinią Sekcji Dermatologii Onkologicznej Polskiego Towarzystwa Dermatologicznego. Stale podnosi swoje kwalifikacje zawodowe aktywnie uczestnicząc w polskich i zagranicznych konferencjach i szkoleniach.',
+    experience: 'Szczególnym obszarem jej zainteresowań jest dermatologia onkologiczna i dermatochirurgia. Największą satysfakcję przynosi jej wczesne wykrywanie i skuteczne leczenie nowotworów skóry z optymalnym efektem estetycznym.',
+    interested: false,
+    image: aldonaMaciagImage,
+    background: false,
+    specialization: ['dermatology'],
+    specialist: 'aldona-maciag'
+};
+
+export const justynaKloniecka = {
+    designation: 'justynaKloniecka',
+    name: 'lek. med. Justyna Kłoniecka',
+    speciality: 'Dermatolog',
+    summary: false,
+    education: 'Absolwentka Wydziału Wojskowo - Lekarskiego Uniwersytetu Medycznego w Łodzi oraz Akademii Wojsk Lądowych we Wrocławiu. Szkolenie specjalizacyjne z dermatologii i wenerologii odbywa w Klinice Dermatologicznej CSK MON Wojskowego Instytutu Medycznego w Warszawie.',
+    experience: 'Zajmuje się diagnostyką i leczeniem chorób skóry, włosów i paznokci oraz chorób przenoszonych drogą płciową. Stale podnosi swoje kwalifikacje uczestnicząc w licznych kursach i konferencjach związanych z dermatologią kliniczną. W swojej codziennej pracy zawodowej ceni holistyczne i indywidualne podejście do każdego pacjenta w myśl zasady "Salus aegroti suprema lex" dobro chorego najwyższym prawem.',
+    interested: false,
+    image: justynaKlonieckaImage,
+    background: false,
+    specialization: ['dermatology'],
+    specialist: 'justyna-kloniecka'
+};
+
 export const wojciechKaszewski = {
     designation: 'wojciechKaszewski',
     name: 'dr n. med. Wojciech Kaszewski',
@@ -115,34 +157,6 @@ export const katarzynaMysliwiecCzajka = {
     background: false,
     specialization: ['dermatology'],
     specialist: 'katarzyna-mysliwiec-czajka'
-};
-
-export const justynaKloniecka = {
-    designation: 'justynaKloniecka',
-    name: 'lek. med. Justyna Kłoniecka',
-    speciality: 'Dermatolog',
-    summary: false,
-    education: 'Absolwentka Wydziału Wojskowo - Lekarskiego Uniwersytetu Medycznego w Łodzi oraz Akademii Wojsk Lądowych we Wrocławiu. Szkolenie specjalizacyjne z dermatologii i wenerologii odbywa w Klinice Dermatologicznej CSK MON Wojskowego Instytutu Medycznego w Warszawie.',
-    experience: 'Zajmuje się diagnostyką i leczeniem chorób skóry, włosów i paznokci oraz chorób przenoszonych drogą płciową. Stale podnosi swoje kwalifikacje uczestnicząc w licznych kursach i konferencjach związanych z dermatologią kliniczną. W swojej codziennej pracy zawodowej ceni holistyczne i indywidualne podejście do każdego pacjenta w myśl zasady "Salus aegroti suprema lex" dobro chorego najwyższym prawem.',
-    interested: false,
-    image: justynaKlonieckaImage,
-    background: false,
-    specialization: ['dermatology'],
-    specialist: 'justyna-kloniecka'
-};
-
-export const aldonaMaciag = {
-    designation: 'aldonaMaciag',
-    name: 'lek. med. Aldona Maciąg',
-    speciality: 'Dermatolog',
-    summary: false,
-    education: 'Absolwentka II Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego, ponadto odbywała praktyki w Klinice Dermatologii Uniwersytetu w Kolonii. Pracuje jako młodszy asystent w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie. Jest członkinią Sekcji Dermatologii Onkologicznej Polskiego Towarzystwa Dermatologicznego. Stale podnosi swoje kwalifikacje zawodowe aktywnie uczestnicząc w polskich i zagranicznych konferencjach i szkoleniach.',
-    experience: 'Szczególnym obszarem jej zainteresowań jest dermatologia onkologiczna i dermatochirurgia. Największą satysfakcję przynosi jej wczesne wykrywanie i skuteczne leczenie nowotworów skóry z optymalnym efektem estetycznym.',
-    interested: false,
-    image: aldonaMaciagImage,
-    background: false,
-    specialization: ['dermatology'],
-    specialist: 'aldona-maciag'
 };
 
 export const milenaJuzwiak = {
@@ -243,19 +257,7 @@ export const aleksandraGorczynska = {
     specialist: 'aleksandra-gorczynska'
 };
 
-export const agataSkwerekSzewczyk = {
-    designation: 'agataSkwerekSzewczyk',
-    name: 'lek. med. Agata Skwerek Szewczyk',
-    speciality: 'Reumatolog',
-    summary: false,
-    education: 'Specjalista Chorób Wewnętrznych i Reumatologii. Absolwentka Warszawskiego Uniwersytetu Medycznego i Wydziału Zarządzania Uniwersytetu Warszawskiego. W 2016 roku zdałam egzamin specjalizacyjny w zakresie Chorób Wewnętrznych.',
-    experience: 'Od 2011 pracuję jako lekarz, obecnie starszy asystent w Klinice Chorób Wewnętrznych i Endokrynologii Centralnego Szpitala Klinicznego Warszawskiego Uniwersytetu Medycznego przy ul. Banacha. Jestem współautorem wielu publikacji w zakresie zaburzeń gospodarki wapniowo-fosforanowej. Od 2019 r. jestem również specjalistą Reumatologiem. Specjalizację odbywałam w Klinice Wczesnego Zapalenia Stawów Narodowego Instytutu Reumatologii i Geriatrii w Warszawie. Prywatnie żona i mama 2 wspaniałych chłopców.',
-    interested: false,
-    image: agataSkwerekSzewczykImage,
-    background: false,
-    specialization: ['rheumatology'],
-    specialist: 'agata-skwerek-szewczyk'
-};
+
 
 export const kamilStepkowski = {
     designation: 'kamilStepkowski',
@@ -304,11 +306,12 @@ export const team = [
     { ...justynaFilipek },
     { ...paulinaBudna },
     { ...konradKochan },
+    { ...agataSkwerekSzewczyk },
+    { ...aldonaMaciag },
+    { ...justynaKloniecka },
     { ...wojciechKaszewski },
     { ...klaudiaMalottki },
     { ...katarzynaMysliwiecCzajka },
-    { ...justynaKloniecka },
-    { ...aldonaMaciag },
     { ...milenaJuzwiak },
     { ...paulinaTatara },
     { ...tomaszMatuszewski },
@@ -316,7 +319,6 @@ export const team = [
     { ...katarzynaZbronska },
     { ...joannaOjrzenska },
     { ...aleksandraGorczynska },
-    { ...agataSkwerekSzewczyk },
     { ...kamilStepkowski },
     { ...katarzynaRychlik },
     { ...patrykKrokwinski }

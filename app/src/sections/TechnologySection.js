@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import Box from '@mui/material/Box';
 
@@ -9,6 +9,27 @@ import CardTechnology from '../components/CardTechnology';
 import { technology } from '../data/technology';
 
 const TechnologySection = () => {
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    function useWindowDimensions() {
+        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
     return (
         <Box
             component='section'
@@ -25,7 +46,7 @@ const TechnologySection = () => {
                 />
                 <Box className='section-body'>
                     <Box className='card-wrapper technology section'>
-                        {technology.slice(0, 4).map((item, index) => (
+                        {technology.slice(0, width >= 991.98 ? 4 : width <= 539.98 ? 4 : 6).map((item, index) => (
                             <Box
                                 key={index}
                                 data-aos={'fade-up'}

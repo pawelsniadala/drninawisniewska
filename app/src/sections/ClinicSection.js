@@ -150,7 +150,7 @@ const ClinicSection = () => {
                                         marginBottom: '0.25em'
                                     }}
                                 >
-                                    <Box>
+                                    <span>
                                         <VisibilitySensor
                                             onChange={(isVisible) => setViewPortVisibility(isVisible)}
                                             delayedCall
@@ -162,7 +162,7 @@ const ClinicSection = () => {
                                                 suffix={item.suffix}
                                             />
                                         </VisibilitySensor>
-                                    </Box>
+                                    </span>
                                 </Typography>
                                 <Typography
                                     variant='h6'

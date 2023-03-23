@@ -19,7 +19,8 @@ const CardServices = ({
     cardDescription,
     cardSpecialist,
     cardPath,
-    cardPrice
+    cardPathSpecialist,
+    cardPathPrices
 }) => {
     return (
         <Box className='card-services'>
@@ -61,16 +62,16 @@ const CardServices = ({
                     <Button
                         className='card-link'
                         component={Link}
-                        to={cardPath}
+                        to={cardPathSpecialist}
                         variant='outline'
                         size='small'
                     >
-                        Zobacz więcej
+                        Specjaliści
                     </Button>
                     <Button
                         className='card-link'
                         component={Link}
-                        to={cardPrice}
+                        to={cardPathPrices}
                         variant='outline'
                         size='small'
                     >

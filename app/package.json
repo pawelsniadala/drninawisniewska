@@ -31,6 +31,7 @@
         "react-visibility-sensor": "^5.1.1",
         "sass": "^1.54.4",
         "slick-carousel": "^1.8.1",
+        "swiper": "^9.1.1",
         "web-vitals": "^2.1.4",
         "yup": "^0.32.11"
     },
@@ -44,20 +45,20 @@
     },
     "eslintConfig": {
         "extends": [
-        "react-app",
-        "react-app/jest"
+            "react-app",
+            "react-app/jest"
         ]
     },
     "browserslist": {
         "production": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
         ],
         "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
         ]
     },
     "homepage": "https://pawelsniadala.github.io/drninawisniewska"

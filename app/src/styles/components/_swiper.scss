@@ -1,0 +1,17 @@
+.swiper-wrapper {
+    padding-bottom: 44px !important;
+}
+
+.swiper-pagination-bullet {
+    width: 5px !important;
+    height: 5px !important;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #d29a3e !important;
+}

@@ -86,7 +86,8 @@ const ServicesView = () => {
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardPath={item.path}
-                                        cardPrice={item.prices}
+                                        cardPathSpecialist={item.pathSpecialist}
+                                        cardPathPrices={item.pathPrices}
                                         cardSpecialist={item.specialists}
                                         cardImage={item.image}
                                         cardImageVisible={false}
