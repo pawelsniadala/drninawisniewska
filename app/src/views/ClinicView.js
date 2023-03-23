@@ -1,16 +1,13 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import Lightbox from 'react-image-lightbox';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import PhotoSwipeDynamicCaption from 'https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
 
-import { useTheme } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Page from '../components/Page';
@@ -20,24 +17,23 @@ import ListBulleted from '../components/ListBulleted';
 import { clinic } from '../data/clinic';
 
 const TechnologyView = () => {
-    const theme = useTheme();
+    useEffect(() => {
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('photoswipe'),
+            padding: {
+                top: 50,
+                bottom: 50
+            }
+        });
 
-    const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-        defaultMatches: true,
-    });
+        const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+            type: 'below'
+        });
 
-    const [ currentImage, setCurrentImage ] = useState(0);
-    const [ viewerIsOpen, setViewerIsOpen ] = useState(false);
-
-    const openLightbox = (index) => {
-        setCurrentImage(index);
-        setViewerIsOpen(true);
-    };
-
-    const closeLightbox = () => {
-        setCurrentImage(0);
-        setViewerIsOpen(false);
-    };
+        lightbox.init(captionPlugin);
+    }, []);
 
     return (
         <Box className='contact-view'>
@@ -94,46 +90,32 @@ const TechnologyView = () => {
                                 </Typography>
                             </Box>
                         </Box>
-                        <Box className='clinic-gallery-wrapper'>
-                            <ImageList
-                                className='image-list'
-                                variant='quilted'
-                                cols={3}
-                                rowHeight={isMd ? 350 : 160}
-                                gap={4}
-                                sx={{ overflowY: 'hidden' }}
-                            >
+                        <Box className='photos-wrapper'>
+                            <Box className="pswp-gallery" id='my-gallery'>
                                 {clinic.pictures.map((item, index) => (
-                                    <ImageListItem
-                                        key={index}
-                                        cols={item.cols}
-                                        rows={item.rows}
-                                        className='image-list-item'
+                                    <a key={`my-gallery-${index}`}
+                                        href={item.original.src}
+                                        data-pswp-width={item.original.width}
+                                        data-pswp-height={item.original.height}
+                                        data-cropped='true'
+                                        target="_blank"
+                                        rel="noreferrer"
                                     >
-                                        <LazyLoadImage
-                                            className={`lazy-load-image ${item.designation}`}
-                                            height={'100%'}
-                                            width={'100%'}
-                                            src={item.srcThumbnail}
-                                            alt={item.designation}
-                                            effect='blur'
-                                            onClick={() => openLightbox(index)}
-                                        />
-                                    </ImageListItem>
+                                        <Box className='box'>
+                                            <LazyLoadImage
+                                                src={item.thumbnail.src}
+                                                alt={item.designation}
+                                                height='100%'
+                                                width='100%'
+                                                effect='blur'
+                                            />
+                                            <span className="pswp-caption-content">
+                                                Autor: {item.author}
+                                            </span>
+                                        </Box>
+                                    </a>
                                 ))}
-                            </ImageList>
-                            {viewerIsOpen && (
-                                <Lightbox
-                                    mainSrc={clinic.pictures[currentImage].srcOriginal}
-                                    nextSrc={clinic.pictures[(currentImage + 1) % clinic.pictures.length].srcOriginal}
-                                    prevSrc={clinic.pictures[(currentImage + clinic.pictures.length - 1) % clinic.pictures.length].srcOriginal}
-                                    onCloseRequest={() => closeLightbox()}
-                                    onMovePrevRequest={() => setCurrentImage((currentImage + clinic.pictures.length - 1) % clinic.pictures.length)}
-                                    onMoveNextRequest={() => setCurrentImage((currentImage + 1) % clinic.pictures.length)}
-                                    reactModalStyle={{ overlay: { zIndex: 1500 } }}
-                                    imageCaption={`Autor: ${clinic.pictures[currentImage].author}`}
-                                />
-                            )}
+                            </Box>
                         </Box>
                         <Box className='clinic-services-wrapper' marginBottom={3}>
                             <Typography className='paragraph'>

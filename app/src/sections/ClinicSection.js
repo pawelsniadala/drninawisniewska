@@ -3,15 +3,12 @@ import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import PhotoSwipeDynamicCaption from 'https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
 
-import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import Lightbox from 'react-image-lightbox';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import Container from '../components/Container';
@@ -19,29 +16,24 @@ import SectionHeader from '../components/SectionHeader';
 
 import { clinic } from '../data/clinic';
 
-const LazyLoadImageComponent = ({
-    src,
-    alt,
-}) => {
-    return (
-        <Box className='box'>
-            <LazyLoadImage
-                src={src}
-                alt={alt}
-                height={'100%'}
-                width={'100%'}
-                effect='blur'
-            />
-        </Box>
-    );
-}
-
 const ClinicSection = () => {
-    const theme = useTheme();
+    useEffect(() => {
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('photoswipe'),
+            padding: {
+                top: 50,
+                bottom: 50
+            }
+        });
 
-    const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-        defaultMatches: true,
-    });
+        const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+            type: 'below'
+        });
+
+        lightbox.init(captionPlugin);
+    }, []);
 
     const [ viewPortEntered, setViewPortEntered ] = useState(false);
 
@@ -51,19 +43,6 @@ const ClinicSection = () => {
         }
 
         setViewPortEntered(isVisible);
-    };
-
-    const [ currentImage, setCurrentImage ] = useState(0);
-    const [ viewerIsOpen, setViewerIsOpen ] = useState(false);
-
-    const openLightbox = (index) => {
-        setCurrentImage(index);
-        setViewerIsOpen(true);
-    };
-
-    const closeLightbox = () => {
-        setCurrentImage(0);
-        setViewerIsOpen(false);
     };
 
     function getWindowDimensions() {
@@ -92,114 +71,69 @@ const ClinicSection = () => {
         <Box
             component='section'
             className='clinic-section'
-            sx={{
-                backgroundColor: '#fff',
-            }}
         >
             <Container>
-                <Box>
-                    <SectionHeader
-                        sectionTitle='Klinka'
-                        sectionHeader='Kilka słów o naszej klinice'
-                        sectionSubheader='Dowiedz się więcej o naszej klinice'
-                        sectionLinkText='Zobacz pełny opis'
-                        sectionLinkPath='/clinic'
-                        sectionWrapperClass='clinic'
-                        sectionDescription={
-                            width >= 991.98 ? (
-                                <Box
-                                    className='description'
-                                    data-aos={'fade-in'}
-                                >
-                                    <Box>
-                                        <Typography className='paragraph'>
-                                            W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, łojotokowego zapalenia skóry, egzemy i innych chorób.
-                                        </Typography>
-                                    </Box>
-                                    <Box>
-                                        <Typography className='paragraph'>
-                                            Dodatkowym atutem jest lampa do fototerapii UVB 311 nm i PUVA - bath przeznaczona dla pacjentów z łuszczycą, AZS, wypryskiem, a także możliwość wykonania płatkowych testów kontaktowych. <Link className='link' to={'/clinic'}>Zobacz więcej <ArrowForwardIcon fontSize='14px'/></Link>
-                                        </Typography>
-                                    </Box>
-                                </Box>
-                            ) : (
+                <SectionHeader
+                    sectionTitle='Klinka'
+                    sectionHeader='Kilka słów o naszej klinice'
+                    sectionSubheader='Dowiedz się więcej o naszej klinice'
+                    sectionLinkText='Zobacz pełny opis'
+                    sectionLinkPath='/clinic'
+                    sectionWrapperClass='clinic'
+                    sectionDescription={
+                        width >= 991.98 ? (
+                            <Box
+                                className='description'
+                                data-aos={'fade-in'}
+                            >
                                 <Box>
-                                    <Typography className='paragraph' data-aos={'fade-right'} sx={{ textAlign: 'center' }}>
-                                        W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, egzemy i innych chorób.
+                                    <Typography className='paragraph'>
+                                        W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, łojotokowego zapalenia skóry, egzemy i innych chorób.
                                     </Typography>
                                 </Box>
-                            )
-                        }
-                    />
-                    {/* <Box>
-                        <ImageList
-                            className='image-list'
-                            variant='quilted'
-                            cols={3}
-                            rowHeight={isMd ? 350 : 160}
-                            gap={4}
-                            sx={{ overflowY: 'hidden', marginBottom: 0 }}
-                        >
-                            {clinic.pictures.map((item, i) => (
-                                <ImageListItem
-                                    key={i}
-                                    cols={item.cols}
-                                    rows={item.rows}
-                                >
+                                <Box>
+                                    <Typography className='paragraph'>
+                                        Dodatkowym atutem jest lampa do fototerapii UVB 311 nm i PUVA - bath przeznaczona dla pacjentów z łuszczycą, AZS, wypryskiem, a także możliwość wykonania płatkowych testów kontaktowych. <Link className='link' to={'/clinic'}>Zobacz więcej <ArrowForwardIcon fontSize='14px'/></Link>
+                                    </Typography>
+                                </Box>
+                            </Box>
+                        ) : (
+                            <Box>
+                                <Typography className='paragraph' data-aos={'fade-right'} sx={{ textAlign: 'center' }}>
+                                    W Klinice dr Niny Wiśniewskiej znajdziecie Państwo pomoc w zakresie leczenia trądzika, trądzika różowatego, łuszczycy, atopowego zapalenie skóry, egzemy i innych chorób.
+                                </Typography>
+                            </Box>
+                        )
+                    }
+                />
+                <Box className='photos-wrapper'>
+                    <Box className="pswp-gallery" id='my-gallery'>
+                        {clinic.pictures.map((item, index) => (
+                            <a key={`my-gallery-${index}`}
+                                href={item.original.src}
+                                data-pswp-width={item.original.width}
+                                data-pswp-height={item.original.height}
+                                data-cropped='true'
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <Box className='box'>
                                     <LazyLoadImage
-                                        className={`lazy-load-image ${item.designation}`}
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={item.srcThumbnail}
+                                        src={item.thumbnail.src}
                                         alt={item.designation}
+                                        height='100%'
+                                        width='100%'
                                         effect='blur'
-                                        visibleByDefault={true}
-                                        onClick={() => openLightbox(i)}
                                     />
-                                </ImageListItem>
-                            ))}
-                        </ImageList>
-                        {viewerIsOpen && (
-                            <Lightbox
-                                mainSrc={clinic.pictures[currentImage].srcOriginal}
-                                nextSrc={clinic.pictures[(currentImage + 1) % clinic.pictures.length].srcOriginal}
-                                prevSrc={clinic.pictures[(currentImage + clinic.pictures.length - 1) % clinic.pictures.length].srcOriginal}
-                                onCloseRequest={() => closeLightbox()}
-                                onMovePrevRequest={() => setCurrentImage((currentImage + clinic.pictures.length - 1) % clinic.pictures.length)}
-                                onMoveNextRequest={() => setCurrentImage((currentImage + 1) % clinic.pictures.length)}
-                                reactModalStyle={{ overlay: { zIndex: 1500 } }}
-                                imageCaption={`Autor: ${clinic.pictures[currentImage].author}`}
-                            />
-                        )}
-                    </Box> */}
-
-
-                    <Box className='photos-wrapper'>
-                        <ul>
-                            {clinic.pictures.map((item, index) => (
-                                <li key={index}>
-                                    {/* <Box
-                                        className='nav-link'
-                                        activeclassname='active'
-                                        aria-current='page'
-                                        // to={item.path}
-                                    > */}
-                                        <LazyLoadImageComponent
-                                            src={item.srcOriginal}
-                                            alt={item.designation}
-                                            title={item.designation}
-                                        />
-                                    {/* </Box> */}
-                                </li>
-                            ))}
-                        </ul>
+                                    <span className="pswp-caption-content">
+                                        Autor: {item.author}
+                                    </span>
+                                </Box>
+                            </a>
+                        ))}
                     </Box>
-
-
-
-
                 </Box>
-                <Box sx={{ paddingTop: '32px' }} className='statistics-wrapper'>
+                <Box className='statistics-wrapper'>
                     <Grid container spacing={2}>
                         {clinic.statistics.map((item, i) => (
                             <Grid key={i} item xs={12} md={4} >

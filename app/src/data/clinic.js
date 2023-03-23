@@ -6,7 +6,6 @@ import clinic3Thumbnail from '../assets/clinic/clinic3Thumbnail.jpg';
 import clinic3Original from '../assets/clinic/clinic3Original.jpg';
 import clinic4Thumbnail from '../assets/clinic/clinic4Thumbnail.jpg';
 import clinic4Original from '../assets/clinic/clinic4Original.jpg';
-
 import clinic5Original from '../assets/clinic/clinic5Original.jpg';
 import clinic5Thumbnail from '../assets/clinic/clinic5Thumbnail.jpg';
 import clinic6Original from '../assets/clinic/clinic6Original.jpg';
@@ -16,57 +15,75 @@ export const clinic = {
     pictures: [
         {
             designation: 'clinic1',
-            srcThumbnail: clinic1Thumbnail,
-            srcOriginal: clinic1Original,
-            author: "Karol Dądera",
-            rows: 1,
-            cols: 2,
-            order: 1
+            author: 'Karol Dądera',
+            original: {
+                src: clinic1Original,
+                width: 2560,
+                height: 1660
+            },
+            thumbnail: {
+                src: clinic1Thumbnail
+            }
         },
         {
             designation: 'clinic2',
-            srcThumbnail: clinic2Thumbnail,
-            srcOriginal: clinic2Original,
-            author: "Karol Dądera",
-            rows: 1,
-            cols: 1,
-            order: 2
+            author: 'Karol Dądera',
+            original: {
+                src: clinic2Original,
+                width: 2560,
+                height: 1660
+            },
+            thumbnail: {
+                src: clinic2Thumbnail
+            }
         },
         {
             designation: 'clinic3',
-            srcThumbnail: clinic5Thumbnail,
-            srcOriginal: clinic5Original,
-            author: "Karol Dądera",
-            rows: 1,
-            cols: 1,
-            order: 3
+            author: 'Karol Dądera',
+            original: {
+                src: clinic3Original,
+                width: 2560,
+                height: 1660
+            },
+            thumbnail: {
+                src: clinic3Thumbnail
+            }
         },
         {
             designation: 'clinic4',
-            srcThumbnail: clinic4Thumbnail,
-            srcOriginal: clinic4Original,
-            author: "Karol Dądera",
-            rows: 1,
-            cols: 2,
-            order: 4
+            author: 'Karol Dądera',
+            original: {
+                src: clinic4Original,
+                width: 2560,
+                height: 1660
+            },
+            thumbnail: {
+                src: clinic4Thumbnail
+            }
         },
         {
             designation: 'clinic5',
-            srcThumbnail: clinic3Thumbnail,
-            srcOriginal: clinic3Original,
-            author: "Karol Dądera",
-            rows: 1,
-            cols: 2,
-            order: 4
+            author: 'Karol Dądera',
+            original: {
+                src: clinic5Original,
+                width: 2560,
+                height: 1660
+            },
+            thumbnail: {
+                src: clinic5Thumbnail
+            }
         },
         {
             designation: 'clinic6',
-            srcThumbnail: clinic6Thumbnail,
-            srcOriginal: clinic6Original,
-            author: "Karol Dądera",
-            rows: 1,
-            cols: 2,
-            order: 4
+            author: 'Karol Dądera',
+            original: {
+                src: clinic6Original,
+                width: 2560,
+                height: 1660
+            },
+            thumbnail: {
+                src: clinic6Thumbnail
+            }
         }
     ],
     statistics: [
