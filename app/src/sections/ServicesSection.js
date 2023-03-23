@@ -53,6 +53,7 @@ const ServicesSection = () => {
                             className="mySwiper"
                             slidesPerView={3}
                             spaceBetween={20}
+                            speed={500}
                             pagination={{
                                 clickable: true
                             }}

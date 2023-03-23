@@ -53,6 +53,7 @@ const TeamSection = () => {
                             className="mySwiper"
                             slidesPerView={4}
                             spaceBetween={20}
+                            speed={500}
                             pagination={{
                                 clickable: true,
                             }}
