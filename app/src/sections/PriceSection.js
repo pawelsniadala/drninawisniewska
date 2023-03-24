@@ -40,7 +40,7 @@ const PriceSection = () => {
                 data-jarallax
                 data-speed="0.2"
                 position={'relative'}
-                minHeight={{ xs: 'calc(90vh - 75px)', sm: 650, md: 650 }}
+                minHeight={{ xs: 'calc(90vh - 75px)', sm: 650, md: 790 }}
                 sx={{ paddingBottom: '1.25rem', paddingTop: '1.25rem' }}
                 display={'flex'}
                 alignItems={'center'}

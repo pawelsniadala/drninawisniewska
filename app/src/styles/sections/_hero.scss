@@ -1,63 +1,163 @@
+.hero-section {
+    .carousel {
+        .carousel-item {
+            height: 790px;
 
-.carousel-item {
-    .carousel-caption {
-        padding-bottom: 0;
-    }
-}
-
-@mixin bd-bg-overlay($color, $opacity) {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    content: '';
-    z-index: 0;
-    background: none repeat $color;
-    opacity: $opacity;
-}
-
-@mixin bd-relative-zindex {
-    position: relative;
-    z-index: 999;
-}
-
-.jumbotron {
-    .photo-wrapper {
-        position: relative;
-        background: url('../../assets/hero/hero4.jpg') 65% 50% no-repeat;
-        background-size: cover;
-
-        &::after {
-            @include bd-bg-overlay(rgb(0, 0, 0), .15);
-        }
-
-        .content-wrapper {
-            text-align: center;
-            @include bd-relative-zindex;
-            height: calc(100vh - 75px);
-
-            @media (max-width: 539.98px) {
-                height: calc(90vh - 75px);
+            .carousel-image {
+                height: calc(100vh - 118px) !important;
+                object-fit: cover !important;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+                width: 100% !important;
+                height: 790px !important;
+                filter: brightness(0.85) !important;
             }
 
-            .company-wrapper {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                z-index: 2;
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                width: 100%;
-                padding: 0;
+            &:nth-child(1) {
+                .carousel-image {
+                    object-position: 50% 45% !important;
+                    filter: brightness(0.90) !important;
+                }
+            }
+
+            &:nth-child(2) {
+                .carousel-image {
+                    object-position: 50% 77% !important;
+                }
+            }
+
+            &:nth-child(3) {
+                .carousel-image {
+                    object-position: 50% 60% !important;
+                }
+            }
+
+            &:nth-child(4) {
+                .carousel-image {
+                    object-position: 50% 45% !important;
+                }
+            }
+
+            .carousel-caption {
+                padding-bottom: 0;
+
+                .carousel-header {
+                    margin: 0;
+                    margin-bottom: 0.35em;
+                    color: #fff;
+                    font-family: Lato,sans-serif;
+                    font-size: 35px;
+                    line-height: 1.208em;
+                    letter-spacing: .045em;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, .15);
+                }
+
+                .carousel-subheader {
+                    line-height: 1.6;
+                    letter-spacing: 0.0075em;
+                    color: #fff;
+                    font-size: 21px;
+                    font-weight: 400;
+                    font-family: Raleway,sans-serif;
+                    text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, .15);
+                }
+            }
+        }
+    }
+
+    @mixin bd-bg-overlay($color, $opacity) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: '';
+        z-index: 0;
+        background: none repeat $color;
+        opacity: $opacity;
+    }
+
+    @mixin bd-relative-zindex {
+        position: relative;
+        z-index: 999;
+    }
+
+    .jumbotron {
+        .photo-wrapper {
+            position: relative;
+            background: url('../../assets/hero/hero4.jpg') 65% 50% no-repeat;
+            background-size: cover;
+
+            &::after {
+                @include bd-bg-overlay(rgb(0, 0, 0), .15);
+            }
+
+            .content-wrapper {
                 text-align: center;
-                background: 0 0;
-                border: 0;
-                flex-direction: column;
-                padding-bottom: 1.25rem;
+                @include bd-relative-zindex;
+                // height: calc(100vh - 75px);
+
+                @media (min-width: 540px) {
+                    height: 833px;
+                }
+
+                @media (max-width: 539.98px) {
+                    height: calc(90vh - 75px); // TODO
+                }
+
+                .description-wrapper {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    z-index: 2;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    width: 100%;
+                    padding: 0;
+                    text-align: center;
+                    background: 0 0;
+                    border: 0;
+                    flex-direction: column;
+                    padding-bottom: 1.25rem;
+
+                    .jumbotron-header {
+                        text-align: center;
+                        margin-bottom: 0.35em;
+                        color: #fff;
+                        font-family: Lato,sans-serif;
+                        font-size: 35px;
+                        line-height: 1.208em;
+                        letter-spacing: .045em;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, .15);
+
+                        @media (max-width: 539.98px) {
+                            font-size: 24px;
+                        }
+                    }
+
+                    .jumbotron-subheader {
+                        line-height: 1.6;
+                        letter-spacing: 0.0075em;
+                        text-align: center;
+                        color: #fff;
+                        font-size: 21px;
+                        font-weight: 400;
+                        font-family: Raleway,sans-serif;
+                        text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, .15);
+
+                        @media (max-width: 539.98px) {
+                            display: none;
+                            // font-size: 19px;
+                        }
+                    }
+                }
             }
         }
     }

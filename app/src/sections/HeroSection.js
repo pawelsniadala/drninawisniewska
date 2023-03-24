@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -33,12 +33,34 @@ const HeroSection = () => {
         jarallaxInit();
     });
 
+    function getWindowDimensions() {
+        const { innerWidth: width } = window;
+        return { width };
+    }
+
+    function useWindowDimensions() {
+        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowDimensions(getWindowDimensions());
+            }
+
+            window.addEventListener('resize', handleResize);
+            return () => window.removeEventListener('resize', handleResize);
+        }, []);
+
+        return windowDimensions;
+    }
+
+    const { width } = useWindowDimensions();
+
     return (
         <Box
             component='section'
             className='hero-section'
         >
-            {isMd ? (
+            {width >= 991.98 ? (
                 <Box
                     id='carouselExampleIndicators'
                     className='carousel slide'
@@ -51,52 +73,31 @@ const HeroSection = () => {
                         <li data-bs-target='#carouselExampleIndicators' data-bs-slide-to='3'></li>
                     </ol>
                     <Box className='carousel-inner'>
-                        <Box className='carousel-item active' data-bs-interval='5000' style={{ height: '670px' }}>
+                        <Box className='carousel-item active' data-bs-interval='5000'>
                             <LazyLoadImage
+                                className='carousel-image'
                                 width={'100%'}
                                 src={require('../assets/hero/hero1.jpg')}
-                                alt='...'
+                                alt='Zadbaj o zdrową skórę'
                                 effect='blur'
-                                style={{
-                                    objectFit: 'cover',
-                                    backgroundRepeat: 'no-repeat',
-                                    backgroundSize: 'cover',
-                                    height: '670px',
-                                    objectPosition: '50% 45%',
-                                    filter: 'brightness(0.95)',
-                                }}
                             />
                             <Box className='carousel-caption d-none d-md-block' sx={{ bottom: '1.25rem' }}>
                                 <Container>
                                     <Typography
+                                        className='carousel-header'
                                         variant='h4'
                                         align={'left'}
                                         data-aos={'fade-in'}
                                         data-aos-delay={'100'}
-                                        gutterBottom
-                                        sx={{
-                                            fontFamily: 'Lato,sans-serif',
-                                            fontSize: '30px',
-                                            lineHeight: '1.208em',
-                                            letterSpacing: '.045em',
-                                            textTransform: 'uppercase',
-                                            fontWeight: '500',
-                                            color: '#fff'
-                                        }}
                                     >
                                         Zadbaj o zdrową skórę
                                     </Typography>
                                     <Typography
                                         variant='h6'
+                                        className='carousel-subheader'
                                         align={'left'}
                                         data-aos={'fade-in'}
                                         data-aos-delay={'100'}
-                                        sx={{
-                                            fontSize: '18px',
-                                            fontWeight: '400',
-                                            color: '#fff',
-                                            fontFamily: 'Raleway, sans-serif',
-                                        }}
                                     >
                                         Zapoznaj się z treścią naszych specjalizacji
                                     </Typography>
@@ -110,7 +111,6 @@ const HeroSection = () => {
                                         <Box
                                             className='link-contained-more'
                                             width='auto'
-
                                         >
                                             <Button
                                                 component={Link}
@@ -127,47 +127,25 @@ const HeroSection = () => {
                                 </Container>
                             </Box>
                         </Box>
-                        <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
+                        <Box className='carousel-item' data-bs-interval='5000'>
                             <img
+                                className='carousel-image'
                                 src={require('../assets/hero/hero2.jpg')}
-                                alt='...'
-                                style={{
-                                    objectFit: 'cover',
-                                    backgroundRepeat: 'no-repeat',
-                                    backgroundSize: 'cover',
-                                    width: '100%',
-                                    height: '670px',
-                                    objectPosition: '50% 77%',
-                                    filter: 'brightness(0.85)',
-                                }}
+                                alt='Dermatologia'
                             />
                             <Box className='carousel-caption d-none d-md-block' sx={{ bottom: '1.25rem' }}>
                                 <Container>
                                     <Typography
+                                        className='carousel-header'
                                         variant='h4'
                                         align={'right'}
-                                        gutterBottom
-                                        sx={{
-                                            fontFamily: 'Lato,sans-serif',
-                                            fontSize: '30px',
-                                            lineHeight: '1.208em',
-                                            letterSpacing: '.045em',
-                                            textTransform: 'uppercase',
-                                            fontWeight: '500',
-                                            color: '#fff',
-                                        }}
                                     >
                                         Dermatologia
                                     </Typography>
                                     <Typography
                                         variant='h6'
+                                        className='carousel-subheader'
                                         align={'right'}
-                                        sx={{
-                                            fontSize: '18px',
-                                            fontWeight: '400',
-                                            color: '#fff',
-                                            fontFamily: 'Raleway, sans-serif',
-                                        }}
                                     >
                                         Zapoznaj się z cennikiem naszych usług
                                     </Typography>
@@ -196,47 +174,25 @@ const HeroSection = () => {
                                 </Container>
                             </Box>
                         </Box>
-                        <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
+                        <Box className='carousel-item' data-bs-interval='5000'>
                             <img
+                                className='carousel-image'
                                 src={require('../assets/hero/hero3.jpg')}
-                                alt='...'
-                                style={{
-                                    objectFit: 'cover',
-                                    backgroundRepeat: 'no-repeat',
-                                    backgroundSize: 'cover',
-                                    width: '100%',
-                                    height: '670px',
-                                    objectPosition: '50% 60%',
-                                    filter: 'brightness(0.85)',
-                                }}
+                                alt='Medycyna estetyczna'
                             />
                             <Box className='carousel-caption d-none d-md-block' sx={{ top: '1.25rem' }}>
                                 <Container>
                                     <Typography
+                                        className='carousel-header'
                                         variant='h4'
                                         align={'right'}
-                                        gutterBottom
-                                        sx={{
-                                            fontFamily: 'Lato,sans-serif',
-                                            fontSize: '30px',
-                                            lineHeight: '1.208em',
-                                            letterSpacing: '.045em',
-                                            textTransform: 'uppercase',
-                                            fontWeight: '500',
-                                            color: '#fff',
-                                        }}
                                     >
                                         Medycyna estetyczna
                                     </Typography>
                                     <Typography
                                         variant='h6'
+                                        className='carousel-subheader'
                                         align={'right'}
-                                        sx={{
-                                            fontSize: '18px',
-                                            fontWeight: '400',
-                                            color: '#fff',
-                                            fontFamily: 'Raleway, sans-serif',
-                                        }}
                                     >
                                         Korzystamy z najnowszych technologii medycznych
                                     </Typography>
@@ -265,47 +221,25 @@ const HeroSection = () => {
                                 </Container>
                             </Box>
                         </Box>
-                        <Box className='carousel-item' data-bs-interval='5000' style={{ height: '670px' }}>
+                        <Box className='carousel-item' data-bs-interval='5000'>
                             <img
+                                className='carousel-image'
                                 src={require('../assets/hero/hero4.jpg')}
-                                alt='...'
-                                style={{
-                                    objectFit: 'cover',
-                                    backgroundRepeat: 'no-repeat',
-                                    backgroundSize: 'cover',
-                                    width: '100%',
-                                    height: '670px',
-                                    objectPosition: '50% 45%',
-                                    filter: 'brightness(0.85)',
-                                }}
+                                alt='Kosmetologia'
                             />
                             <Box className='carousel-caption d-none d-md-block' sx={{ top: '1.25rem' }}>
                                 <Container>
                                     <Typography
+                                        className='carousel-header'
                                         variant='h4'
                                         align={'left'}
-                                        gutterBottom
-                                        sx={{
-                                            fontFamily: 'Lato,sans-serif',
-                                            fontSize: '30px',
-                                            lineHeight: '1.208em',
-                                            letterSpacing: '.045em',
-                                            textTransform: 'uppercase',
-                                            fontWeight: '500',
-                                            color: '#fff',
-                                        }}
                                     >
                                         Kosmetologia
                                     </Typography>
                                     <Typography
                                         variant='h6'
+                                        className='carousel-subheader'
                                         align={'left'}
-                                        sx={{
-                                            fontSize: '18px',
-                                            fontWeight: '400',
-                                            color: '#fff',
-                                            fontFamily: 'Raleway, sans-serif',
-                                        }}
                                     >
                                         Nasz zespół składa się z wysokiej klasy specjalistów
                                     </Typography>
@@ -356,37 +290,23 @@ const HeroSection = () => {
                 <Box className='jumbotron'>
                     <Box className='photo-wrapper'>
                         <Box className='content-wrapper'>
-                            <Box className='company-wrapper'>
+                            <Box className='description-wrapper'>
                                 <Container>
                                     <Typography
                                         variant='h4'
+                                        className='jumbotron-header'
                                         align={'center'}
                                         data-aos={'fade-in'}
                                         data-aos-delay={'100'}
-                                        gutterBottom
-                                        sx={{
-                                            fontFamily: 'Lato,sans-serif',
-                                            fontSize: '25px',
-                                            lineHeight: '1.208em',
-                                            letterSpacing: '.045em',
-                                            textTransform: 'uppercase',
-                                            fontWeight: '500',
-                                            color: '#fff'
-                                        }}
                                     >
                                         Zadbaj o zdrową skórę
                                     </Typography>
                                     <Typography
                                         variant='h6'
+                                        className='jumbotron-subheader'
                                         align={'center'}
                                         data-aos={'fade-in'}
                                         data-aos-delay={'100'}
-                                        sx={{
-                                            fontSize: '18px',
-                                            fontWeight: '400',
-                                            color: '#fff',
-                                            fontFamily: 'Raleway, sans-serif',
-                                        }}
                                     >
                                         Zapoznaj się z treścią naszych usług
                                     </Typography>

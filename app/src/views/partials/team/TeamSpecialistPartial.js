@@ -10,6 +10,8 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import Alert from '@mui/material/Alert';
+import InfoIcon from '@mui/icons-material/Info';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
@@ -122,6 +124,22 @@ const TeamSpecialistPartial = () => {
             default:
         }
     }
+
+    const teamProposed = () => (
+        team
+            .filter(item => item.specialization.includes(specialization))
+            .filter(item => item.specialist !== specialist)
+            .map((item, index) => (
+                <CardTeamProposed
+                    key={index}
+                    cardTitle={item.name}
+                    cardSpeciality={item.speciality}
+                    cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                    cardImage={item.image}
+                    cardPath={`/team/${specialization}/${item.specialist}`}
+                />
+            ))
+    );
 
     return (
         <Box className='team-view'>
@@ -265,20 +283,15 @@ const TeamSpecialistPartial = () => {
                             </Box>
                             <Box className='team-proposed'>
                                 <Box className='card-wrapper team-proposed'>
-                                    {team
-                                        .filter(item => item.specialization.includes(specialization))
-                                        .filter(item => item.specialist !== specialist)
-                                        .map((item, index) => (
-                                            <CardTeamProposed
-                                                key={index}
-                                                cardTitle={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
-                                                cardImage={item.image}
-                                                cardPath={`/team/${specialization}/${item.specialist}`}
-                                            />
-                                        ))
-                                    }
+                                    {teamProposed().length > 0 ? teamProposed() : (
+                                        <Alert
+                                            icon={<InfoIcon fontSize='small' />}
+                                            className='alert-info'
+                                            severity="info"
+                                        >
+                                            Brak podobnych specjalistów
+                                        </Alert>
+                                    )}
                                 </Box>
                             </Box>
                         </Box>

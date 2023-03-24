@@ -141,6 +141,10 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/clinical-dietitian/joanna-ojrzenska':
                 return `Joanna Ojrzeńska - ${companyName}`;
+            case '/team/rheumatology':
+                return `Specjaliści - ${companyName}`;
+            case '/team/rheumatology/agata-skwerek-szewczyk':
+                return `Agata Skwerek Szewczyk - ${companyName}`;
             case '/technology':
                 return `Technologia - ${companyName}`;
             case '/technology/vectus':
