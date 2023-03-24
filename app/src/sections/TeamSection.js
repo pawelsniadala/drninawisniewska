@@ -41,7 +41,7 @@ const TeamSection = () => {
         >
             <Container className='team-container'>
                 <SectionHeader
-                    sectionTitle='Zespół'
+                    sectionTitle='Specjaliści'
                     sectionHeader='Zaufaj profesjonalistom'
                     sectionSubheader='Nasz zespół składa się ze specjalistów o bardzo szerokim spektrum kompetencji'
                     sectionLinkText='Zobacz naszych specjalistów'

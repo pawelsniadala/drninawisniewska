@@ -4,7 +4,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import CountUp from 'react-countup';
 import VisibilitySensor from 'react-visibility-sensor';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import PhotoSwipeDynamicCaption from 'https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
+import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin';
 
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';

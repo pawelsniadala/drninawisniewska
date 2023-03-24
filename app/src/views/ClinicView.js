@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import PhotoSwipeDynamicCaption from 'https://unpkg.com/photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.esm.js';
+import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin';
 
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
