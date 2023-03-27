@@ -125,21 +125,9 @@ const TeamSpecialistPartial = () => {
         }
     }
 
-    const teamProposed = () => (
-        team
-            .filter(item => item.specialization.includes(specialization))
-            .filter(item => item.specialist !== specialist)
-            .map((item, index) => (
-                <CardTeamProposed
-                    key={index}
-                    cardTitle={item.name}
-                    cardSpeciality={item.speciality}
-                    cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
-                    cardImage={item.image}
-                    cardPath={`/team/${specialization}/${item.specialist}`}
-                />
-            ))
-    );
+    const teamProposed = team
+        .filter(item => item.specialization.includes(specialization))
+        .filter(item => item.specialist !== specialist);
 
     return (
         <Box className='team-view'>
@@ -283,11 +271,20 @@ const TeamSpecialistPartial = () => {
                             </Box>
                             <Box className='team-proposed'>
                                 <Box className='card-wrapper team-proposed'>
-                                    {teamProposed().length > 0 ? teamProposed() : (
+                                    {teamProposed.length > 0 ? teamProposed.map((item, index) => (
+                                        <CardTeamProposed
+                                            key={index}
+                                            cardTitle={item.name}
+                                            cardSpeciality={item.speciality}
+                                            cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                            cardImage={item.image}
+                                            cardPath={`/team/${specialization}/${item.specialist}`}
+                                        />
+                                    )) : (
                                         <Alert
-                                            icon={<InfoIcon fontSize='small' />}
                                             className='alert-info'
                                             severity="info"
+                                            icon={<InfoIcon fontSize='small' />}
                                         >
                                             Brak podobnych specjalistów
                                         </Alert>
