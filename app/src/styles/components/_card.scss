@@ -499,11 +499,13 @@
             }
         }
 
-        &:hover {
-            .card-media {
-                .card-image {
-                    transform: scale(1.05);
-                    transition: transform 0.3s;
+        @media (hover: hover) {
+            &:hover {
+                .card-media {
+                    .card-image {
+                        transform: scale(1.05);
+                        transition: transform 0.3s;
+                    }
                 }
             }
         }
