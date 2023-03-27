@@ -91,6 +91,11 @@ const HeaderSection = () => {
                         activeclassname='active'
                         aria-current='page'
                         to='/clinic'
+                        onClick={(e) => {
+                            if (window.location.pathname.includes('/clinic')) {
+                                e.preventDefault();
+                            }
+                        }}
                     >
                         <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
@@ -106,6 +111,11 @@ const HeaderSection = () => {
                         activeclassname='active'
                         aria-current='page'
                         to='/services'
+                        onClick={(e) => {
+                            if (window.location.pathname.includes('/services')) {
+                                e.preventDefault();
+                            }
+                        }}
                     >
                         <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
@@ -121,6 +131,11 @@ const HeaderSection = () => {
                         activeclassname='active'
                         aria-current='page'
                         to='/prices'
+                        onClick={(e) => {
+                            if (window.location.pathname.includes('/prices')) {
+                                e.preventDefault();
+                            }
+                        }}
                     >
                         <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
@@ -136,6 +151,11 @@ const HeaderSection = () => {
                         activeclassname='active'
                         aria-current='page'
                         to='/special-offer'
+                        onClick={(e) => {
+                            if (window.location.pathname.includes('/special-offer')) {
+                                e.preventDefault();
+                            }
+                        }}
                     >
                         <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
@@ -151,6 +171,11 @@ const HeaderSection = () => {
                         activeclassname='active'
                         aria-current='page'
                         to='/team'
+                        onClick={(e) => {
+                            if (window.location.pathname.includes('/team')) {
+                                e.preventDefault();
+                            }
+                        }}
                     >
                         <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
@@ -166,6 +191,11 @@ const HeaderSection = () => {
                         activeclassname='active'
                         aria-current='page'
                         to='/technology'
+                        onClick={(e) => {
+                            if (window.location.pathname.includes('/technology')) {
+                                e.preventDefault();
+                            }
+                        }}
                     >
                         <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
@@ -181,6 +211,11 @@ const HeaderSection = () => {
                         activeclassname='active'
                         aria-current='page'
                         to='/contact'
+                        onClick={(e) => {
+                            if (window.location.pathname.includes('/contact')) {
+                                e.preventDefault();
+                            }
+                        }}
                     >
                         <ListItemButton className='list-item-button'>
                             <ListItemIcon className='list-item-icon'>
@@ -348,6 +383,11 @@ const HeaderSection = () => {
                                         activeclassname='active'
                                         aria-current='page'
                                         to='/clinic'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/clinic')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                     >
                                         Klinika
                                     </NavLink>
@@ -358,6 +398,11 @@ const HeaderSection = () => {
                                         activeclassname='active'
                                         aria-current='page'
                                         to='/services'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/services')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                     >
                                         Specjalizacje
                                     </NavLink>
@@ -368,6 +413,11 @@ const HeaderSection = () => {
                                         activeclassname='active'
                                         aria-current='page'
                                         to='/prices'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/prices')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                     >
                                         Cennik
                                     </NavLink>
@@ -378,6 +428,11 @@ const HeaderSection = () => {
                                         activeclassname='active'
                                         aria-current='page'
                                         to='/special-offer'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/special-offer')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                     >
                                         Promocje
                                     </NavLink>
@@ -388,6 +443,11 @@ const HeaderSection = () => {
                                         activeclassname='active'
                                         aria-current='page'
                                         to='/team'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/team')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                     >
                                         Specjaliści
                                     </NavLink>
@@ -398,6 +458,11 @@ const HeaderSection = () => {
                                         activeclassname='active'
                                         aria-current='page'
                                         to='/technology'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/technology')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                     >
                                         Technologia
                                     </NavLink>
@@ -408,6 +473,11 @@ const HeaderSection = () => {
                                         activeclassname='active'
                                         aria-current='page'
                                         to='/contact'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/contact')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
                                     >
                                         Kontakt
                                     </NavLink>
