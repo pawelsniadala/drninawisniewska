@@ -54,8 +54,12 @@
                     border-top-left-radius: 8px;
 
                     .box {
-                        border-top-left-radius: 8px;
                         height: 425px;
+                        border-top-left-radius: 8px;
+
+                        span img {
+                            border-top-left-radius: 8px;
+                        }
                     }
                 }
 
@@ -71,6 +75,10 @@
 
                     .box {
                         border-top-right-radius: 8px;
+
+                        span img {
+                            border-top-right-radius: 8px;
+                        }
                     }
                 }
 
@@ -80,8 +88,12 @@
                     border-bottom-right-radius: 8px;
 
                     .box {
-                        border-bottom-right-radius: 8px;
                         height: 425px;
+                        border-bottom-right-radius: 8px;
+
+                        span img {
+                            border-bottom-right-radius: 8px;
+                        }
                     }
                 }
 
@@ -92,6 +104,10 @@
 
                     .box {
                         border-bottom-left-radius: 8px;
+
+                        span img {
+                            border-bottom-left-radius: 8px;
+                        }
                     }
                 }
 
@@ -165,19 +181,30 @@
                         border-top-right-radius: 8px;
 
                         .box {
-                            border-top-right-radius: 8px;
                             height: 200px;
+                            border-top-right-radius: 8px;
+
+                            span img {
+                                border-top-right-radius: 8px;
+                            }
                         }
                     }
 
                     &:nth-child(2) {
                         grid-column: 1 / 2;
                         grid-row: 2 / 3;
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
 
                         .box {
+                            height: 140px;
                             border-top-right-radius: 0;
                             border-bottom-right-radius: 0;
-                            height: 140px;
+
+                            span img {
+                                border-top-right-radius: 0;
+                                border-bottom-right-radius: 0;
+                            }
                         }
                     }
 
@@ -196,9 +223,14 @@
                         border-bottom-right-radius: 0;
 
                         .box {
+                            height: 140px;
                             border-top-right-radius: 0;
                             border-bottom-right-radius: 0;
-                            height: 140px;
+
+                            span img {
+                                border-top-right-radius: 0;
+                                border-bottom-right-radius: 0;
+                            }
                         }
                     }
 
@@ -208,8 +240,12 @@
                         border-bottom-right-radius: 8px;
 
                         .box {
-                            border-bottom-right-radius: 8px;
                             height: 200px;
+                            border-bottom-right-radius: 8px;
+
+                            span img {
+                                border-bottom-right-radius: 8px;
+                            }
                         }
                     }
 
