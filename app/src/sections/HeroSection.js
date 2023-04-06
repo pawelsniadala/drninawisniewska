@@ -289,7 +289,7 @@ const HeroSection = () => {
             ) : (
                 <Box className='jumbotron'>
                     <Box className='photo-wrapper'>
-                        <Box className='content-wrapper'>
+                        <Box className='content-wrapper' minHeight={{ xs: 590, sm: 650, md: 790 }}>
                             <Box className='description-wrapper'>
                                 <Container>
                                     <Typography
@@ -297,7 +297,7 @@ const HeroSection = () => {
                                         className='jumbotron-header'
                                         align={'center'}
                                         data-aos={'fade-in'}
-                                        data-aos-delay={'100'}
+                                        data-aos-delay={'0'}
                                     >
                                         Zadbaj o zdrową skórę
                                     </Typography>
@@ -306,7 +306,7 @@ const HeroSection = () => {
                                         className='jumbotron-subheader'
                                         align={'center'}
                                         data-aos={'fade-in'}
-                                        data-aos-delay={'100'}
+                                        data-aos-delay={'0'}
                                     >
                                         Zapoznaj się z treścią naszych usług
                                     </Typography>
@@ -319,7 +319,7 @@ const HeroSection = () => {
                                             className='link-contained-more'
                                             width='auto'
                                             data-aos={'fade-in'}
-                                            data-aos-delay={'100'}
+                                            data-aos-delay={'0'}
                                         >
                                             <Button
                                                 component={Link}

@@ -33,7 +33,7 @@
 
         .photo-wrapper {
             position: relative;
-            background: url('../../assets/prices/prices2.jpg') 50% 50% no-repeat;
+            background: url('../../assets/prices/prices2.jpg') 52% 50% no-repeat;
             background-size: cover;
 
             &::after {
@@ -58,7 +58,6 @@
                     background: 0 0;
                     border: 0;
                     flex-direction: column;
-                    padding-bottom: 1.25rem;
 
                     .jumbotron-header {
                         text-align: center;

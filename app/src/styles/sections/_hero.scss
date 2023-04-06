@@ -99,15 +99,6 @@
             .content-wrapper {
                 text-align: center;
                 @include bd-relative-zindex;
-                // height: calc(100vh - 75px);
-
-                @media (min-width: 540px) {
-                    height: 833px;
-                }
-
-                @media (max-width: 539.98px) {
-                    height: calc(90vh - 75px); // TODO
-                }
 
                 .description-wrapper {
                     position: absolute;
@@ -123,7 +114,6 @@
                     background: 0 0;
                     border: 0;
                     flex-direction: column;
-                    padding-bottom: 1.25rem;
 
                     .jumbotron-header {
                         text-align: center;

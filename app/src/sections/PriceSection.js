@@ -32,7 +32,7 @@ const PriceSection = () => {
                 data-jarallax
                 data-speed="0.2"
                 position={'relative'}
-                minHeight={{ xs: 'calc(90vh - 75px)', sm: 650, md: 790 }}
+                minHeight={{ xs: 590, sm: 650, md: 790 }}
                 sx={{ paddingBottom: '1.25rem', paddingTop: '1.25rem' }}
                 display={'flex'}
                 alignItems={'center'}
@@ -88,7 +88,7 @@ const PriceSection = () => {
                 <Box className='photo-wrapper'>
                     <Box
                         className='content-wrapper'
-                        minHeight={{ xs: 'calc(90vh - 75px)', sm: 650, md: 790 }}
+                        minHeight={{ xs: 590, sm: 650, md: 790 }}
                     >
                         <Box className='description-wrapper'>
                             <Container>
