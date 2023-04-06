@@ -213,7 +213,7 @@
                                     .box {
                                         border-top-right-radius: 0;
                                         border-bottom-right-radius: 0;
-                                        height: 200px;
+                                        height: 140px;
                                     }
                                 }
 
@@ -234,7 +234,7 @@
                                     .box {
                                         border-top-right-radius: 0;
                                         border-bottom-right-radius: 0;
-                                        height: 200px;
+                                        height: 140px;
                                     }
                                 }
 
@@ -261,7 +261,7 @@
 
                         @media (max-width: 539.98px) {
                             grid-template-columns: repeat(2, 1fr);
-                            grid-template-rows: repeat(3, 1fr);
+                            grid-template-rows: (1fr 140px 1fr);
                         }
                     }
                 }

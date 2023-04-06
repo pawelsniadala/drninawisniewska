@@ -1,21 +1,13 @@
 import React, { useEffect } from 'react';
 
-import { useTheme } from '@mui/material/styles';
 import { alpha } from '@mui/material/styles';
 import Box from '@mui/material/Box';
-import useMediaQuery from '@mui/material/useMediaQuery';
 
 import Container from '../components/Container';
 import SectionHeader from '../components/SectionHeader';
 import pricesJpg1 from '../assets/prices/prices1.jpg';
-import pricesJpg2 from '../assets/prices/prices2.jpg';
 
 const PriceSection = () => {
-    const theme = useTheme();
-    const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-        defaultMatches: true,
-    });
-
     useEffect(() => {
         const jarallaxInit = async () => {
         const jarallaxElems = document.querySelectorAll('.jarallax');
@@ -36,7 +28,7 @@ const PriceSection = () => {
             className='price-section'
         >
             <Box
-                className={'jarallax'}
+                className='jarallax'
                 data-jarallax
                 data-speed="0.2"
                 position={'relative'}
@@ -59,7 +51,7 @@ const PriceSection = () => {
                         backgroundRepeat: 'no-repeat',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center center',
-                        backgroundImage: `url(${isMd ? pricesJpg1 : pricesJpg2})`
+                        backgroundImage: `url(${pricesJpg1})`
                     }}
                 />
                 <Box
@@ -91,6 +83,27 @@ const PriceSection = () => {
                         sectionWrapperClass='prices'
                     />
                 </Container>
+            </Box>
+            <Box className='jumbotron'>
+                <Box className='photo-wrapper'>
+                    <Box
+                        className='content-wrapper'
+                        minHeight={{ xs: 'calc(90vh - 75px)', sm: 650, md: 790 }}
+                    >
+                        <Box className='description-wrapper'>
+                            <Container>
+                                <SectionHeader
+                                    sectionTitle='Cennik'
+                                    sectionHeader='Aktualne ceny naszych usług'
+                                    sectionSubheader='Zapoznaj się z cennikiem naszych usług'
+                                    sectionLinkText='Zobacz cennik usług'
+                                    sectionLinkPath='/prices'
+                                    sectionWrapperClass='prices'
+                                />
+                            </Container>
+                        </Box>
+                    </Box>
+                </Box>
             </Box>
         </Box>
     );

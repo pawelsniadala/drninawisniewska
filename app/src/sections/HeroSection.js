@@ -314,13 +314,12 @@ const HeroSection = () => {
                                         display='flex'
                                         justifyContent={'center'}
                                         marginTop={2}
-                                        data-aos={'fade-in'}
-                                        data-aos-delay={'100'}
                                     >
                                         <Box
                                             className='link-contained-more'
                                             width='auto'
-
+                                            data-aos={'fade-in'}
+                                            data-aos-delay={'100'}
                                         >
                                             <Button
                                                 component={Link}
