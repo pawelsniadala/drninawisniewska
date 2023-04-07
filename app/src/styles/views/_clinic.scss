@@ -208,15 +208,16 @@
 
                             @media (max-width: 539.98px) {
                                 .box {
-                                    height: 140px;
+                                    height: 170px;
                                 }
+
                                 &:nth-child(1) {
                                     grid-column: 1 / 3;
                                     grid-row: 1 / 2;
                                     border-top-right-radius: 8px;
 
                                     .box {
-                                        height: 200px;
+                                        height: 170px;
                                         border-top-right-radius: 8px;
 
                                         span img {
@@ -232,7 +233,7 @@
                                     border-bottom-right-radius: 0;
 
                                     .box {
-                                        height: 140px;
+                                        height: 170px;
                                         border-top-right-radius: 0;
                                         border-bottom-right-radius: 0;
 
@@ -258,7 +259,7 @@
                                     border-bottom-right-radius: 0;
 
                                     .box {
-                                        height: 140px;
+                                        height: 170px;
                                         border-top-right-radius: 0;
                                         border-bottom-right-radius: 0;
 
@@ -275,7 +276,7 @@
                                     border-bottom-right-radius: 8px;
 
                                     .box {
-                                        height: 200px;
+                                        height: 170px;
                                         border-bottom-right-radius: 8px;
 
                                         span img {
@@ -296,7 +297,7 @@
 
                         @media (max-width: 539.98px) {
                             grid-template-columns: repeat(2, 1fr);
-                            grid-template-rows: (1fr 140px 1fr);
+                            grid-template-rows: repeat(3, 170px);
                         }
                     }
                 }

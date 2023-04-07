@@ -37,7 +37,7 @@
             background-size: cover;
 
             &::after {
-                @include bd-bg-overlay(rgb(0, 0, 0), .22);
+                @include bd-bg-overlay(rgb(0, 0, 0), .2);
             }
 
             .content-wrapper {

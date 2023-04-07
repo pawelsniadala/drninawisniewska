@@ -297,7 +297,7 @@ const HeroSection = () => {
                                         className='jumbotron-header'
                                         align={'center'}
                                         data-aos={'fade-in'}
-                                        data-aos-delay={'0'}
+                                        data-aos-delay={'100'}
                                     >
                                         Zadbaj o zdrową skórę
                                     </Typography>
@@ -306,7 +306,7 @@ const HeroSection = () => {
                                         className='jumbotron-subheader'
                                         align={'center'}
                                         data-aos={'fade-in'}
-                                        data-aos-delay={'0'}
+                                        data-aos-delay={'100'}
                                     >
                                         Zapoznaj się z treścią naszych usług
                                     </Typography>
@@ -318,8 +318,6 @@ const HeroSection = () => {
                                         <Box
                                             className='link-contained-more'
                                             width='auto'
-                                            data-aos={'fade-in'}
-                                            data-aos-delay={'0'}
                                         >
                                             <Button
                                                 component={Link}
