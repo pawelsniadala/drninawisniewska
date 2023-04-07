@@ -36,14 +36,22 @@ const ContactView = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_9g7vvpa', 'template_m31cx8e', form.current, 'Jiq_tSM15t4_c67cj')
-            .then((result) => {
-                console.log(result.text);
-                showToast();
-                e.target.reset();
-            }, (error) => {
-                console.log(error.text);
-            });
+        const emailService = process.env.REACT_APP_EMAILJS_SERVICE;
+        const emailTemplate = process.env.REACT_APP_EMAILJS_TEMPLATE;
+        const emailPublicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+        emailjs.sendForm(
+            emailService,
+            emailTemplate,
+            form.current,
+            emailPublicKey
+        ).then((result) => {
+            console.log(result.text);
+            showToast();
+            e.target.reset();
+        }, (error) => {
+            console.log(error.text);
+        });
     };
 
     const showToast = () => {
