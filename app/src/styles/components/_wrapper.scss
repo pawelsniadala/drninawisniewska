@@ -52,7 +52,7 @@ main {
             grid-template-columns: 1fr 1fr;
 
             grid-template-areas:
-                "technology services"
+                "services technology"
                 "business contact";
 
             .technology {
@@ -83,7 +83,6 @@ main {
     &.services {
         display: grid;
         gap: 20px;
-        // margin-bottom: 20px;
         grid-template-columns: 1fr 1fr 1fr;
 
         @media (max-width: 1199.98px) and (min-width: 992px) {
@@ -109,7 +108,6 @@ main {
     &.special-offer {
         display: grid;
         gap: 20px;
-        // margin-bottom: 20px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
 
         @media (max-width: 1199.98px) and (min-width: 992px) {

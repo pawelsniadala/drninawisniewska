@@ -51,7 +51,7 @@ export const article5 = {
     description1: 'Podaj hasło: VALENTYNKI! ❤️ Zapraszamy do nas na tydzień zakochanych! Tylko od 13 do 17 lutego trwa wyjątkowa promocja na wybrane zabiegi z naszej oferty z okazji walentynek. To idealna sposobność by sprawić swojej drugiej połówce voucher prezentowy na wymarzony zabieg. 🥰',
     description2: 'Zapraszamy do kontaktu z nami po szczegóły promocji. Zapisy ruszają dzisiaj! Nie zapomnij podać hasła! Liczba miejsc ograniczona. 👨‍👩‍👧‍👦',
     description3: 'Zabiegi objęte promocją: 🔶 Nucleofill 850 zł zamiast 1100 zł, 🔶 Plasmoo 899 zł zamiast 1099 zł, 🔶 Pakiet 4 masaży 269 zł zamiast 319 zł, 🔶 Pakiet jędrny brzuch 5 zabiegów Accent +5 zabiegów Icoone (okolica brzucha) 2199 zł zamiast 2999 zł.',
-    description4: '',
+    description4: ''
 };
 
 export const specialOffer = [
