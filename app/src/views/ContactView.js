@@ -55,27 +55,21 @@ const ContactView = () => {
     };
 
     const showToast = () => {
-        new bootstrap.Toast(document.getElementById('successToast')).show();
+        new bootstrap.Toast(
+            document.getElementById('successToast')
+        ).show();
     }
 
     const renderIcon = (designation) => {
         switch(designation) {
             case 'phone':
-                return (
-                    <PhoneSvg width='20px' height='20px' color='#fff'/>
-                );
+                return <PhoneSvg width='20px' height='20px' color='#fff'/>;
             case 'email':
-                return (
-                    <EmailSvg width='20px' height='20px' color='#fff' />
-                );
+                return <EmailSvg width='20px' height='20px' color='#fff' />
             case 'address':
-                return (
-                    <FmdGoodIcon />
-                );
+                return <FmdGoodIcon />;
             case 'hours':
-                return (
-                    <AccessTimeIcon />
-                );
+                return <AccessTimeIcon />;
             default:
         }
     }
