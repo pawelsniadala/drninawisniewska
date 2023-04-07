@@ -117,7 +117,7 @@ const TechnologyView = () => {
                                 ))}
                             </Box>
                         </Box>
-                        <Box className='clinic-services-wrapper' marginBottom={3}>
+                        <Box className='clinic-services-wrapper'>
                             <Typography className='paragraph'>
                                 Możecie Państwo liczyć na profesjonalne usługi z zakresu medycyny estetycznej pod nadzorem lekarza. Dodatkowo oferujemy usługi takich specjalistów jak: ortopeda, reumatolog, chirurg naczyniowy, fizjoterapeuta, dietetyk kliczniczny oraz ginekolog-endokrynolog.
                             </Typography>
