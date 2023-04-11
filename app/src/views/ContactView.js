@@ -24,6 +24,11 @@ import PhoneSvg from '../assets/svg/PhoneSvg';
 import EmailSvg from '../assets/svg/EmailSvg';
 
 import { contact } from '../data/contact';
+import {
+    emailService,
+    emailTemplate,
+    emailPublicKey
+} from '../config';
 
 const ContactView = () => {
     const form = useRef();
@@ -35,10 +40,6 @@ const ContactView = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-
-        const emailService = process.env.REACT_APP_EMAILJS_SERVICE;
-        const emailTemplate = process.env.REACT_APP_EMAILJS_TEMPLATE;
-        const emailPublicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
         emailjs.sendForm(
             emailService,
