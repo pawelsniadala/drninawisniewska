@@ -219,7 +219,7 @@ const ServicesVascularSurgeryPartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper technology page'>
                                     {width >= 991.98 ? (
-                                        technology.filter(item => item.specialization.includes('vascularSurgery')).map((item, index) => (
+                                        technology.filter(item => item.specialization.includes('vascular-surgery')).map((item, index) => (
                                             <CardTechnology
                                                 key={index}
                                                 cardImage={item.imageMedium}
@@ -229,7 +229,7 @@ const ServicesVascularSurgeryPartial = () => {
                                             />
                                         ))
                                     ) : (
-                                        technology.filter(item => item.specialization.includes('vascularSurgery')).map((item, index) => (
+                                        technology.filter(item => item.specialization.includes('vascular-surgery')).map((item, index) => (
                                             <CardProposed
                                                 key={index}
                                                 cardTitle={item.title}
