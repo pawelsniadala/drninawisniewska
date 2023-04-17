@@ -1,5 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
+import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 const Toast = () => (
     <Box className='toast-container position-fixed top-0 end-0'>
@@ -12,13 +13,16 @@ const Toast = () => (
         >
             <Box className='d-flex'>
                 <Box className='toast-body'>
-                    Twoja wiadomość została wysłana.
+                    <CheckCircleOutlineIcon />
+                    <Box className='toast-text'>
+                        Twoja wiadomość została wysłana
+                    </Box>
                 </Box>
-                <button type='button'
+                {/* <button type='button'
                     className='btn-close btn-close-white me-2 m-auto'
                     data-bs-dismiss='toast'
-                    aria-label='Close'>
-                </button>
+                    aria-label='Close'
+                /> */}
             </Box>
         </Box>
     </Box>

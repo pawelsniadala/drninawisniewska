@@ -1,9 +1,10 @@
 .form-label {
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 0.3rem;
-    color: rgba(0, 0, 0, 0.7);
-
+    color: rgba(0, 0, 0, 0.6);
+    // color: #535353;
 }
 
 .form-control {
@@ -21,4 +22,18 @@ textarea {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
     appearance: textfield;
+}
+
+.required {
+    color: rgba(220, 53, 69, .85);
+}
+
+.error {
+    display: flex;
+    align-items: center;
+    margin-top: 0.35rem;
+    font-size: 0.875rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.01071em;
+    color: rgba(220, 53, 69, .85);
 }

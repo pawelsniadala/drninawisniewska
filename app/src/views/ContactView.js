@@ -1,4 +1,6 @@
-import React, { useRef } from 'react';
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import * as bootstrap from 'bootstrap';
@@ -24,6 +26,8 @@ import PhoneSvg from '../assets/svg/PhoneSvg';
 import EmailSvg from '../assets/svg/EmailSvg';
 
 import { contact } from '../data/contact';
+import { contactSchema } from '../models/schema/contactSchema';
+import { contactModel } from '../models/contactModel';
 import {
     emailService,
     emailTemplate,
@@ -31,29 +35,38 @@ import {
 } from '../config';
 
 const ContactView = () => {
-    const form = useRef();
     const theme = useTheme();
 
     const isSm = useMediaQuery(theme.breakpoints.up('sm'), {
-        defaultMatches: true,
+        defaultMatches: true
     });
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    const {
+        reset,
+        register,
+        handleSubmit,
+        formState: { errors }
+    } = useForm({
+        resolver: yupResolver(contactSchema),
+        defaultValues: contactModel
+    });
 
+    const sendEmail = () => {
         emailjs.sendForm(
             emailService,
             emailTemplate,
-            form.current,
+            '#contact-form',
             emailPublicKey
         ).then((result) => {
             console.log(result.text);
             showToast();
-            e.target.reset();
+            setTimeout(() => {
+                reset();
+            }, 1000);
         }, (error) => {
             console.log(error.text);
         });
-    };
+    }
 
     const showToast = () => {
         new bootstrap.Toast(
@@ -118,41 +131,42 @@ const ContactView = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper contact'>
                         <Box className='contact-form-wrapper'>
-                            <form ref={form} onSubmit={sendEmail}>
+                            <form id='contact-form' noValidate onSubmit={handleSubmit(sendEmail)}>
                                 <Box className='mb-3'>
                                     <label htmlFor='name' className='form-label'>
                                         Imię i nazwisko
-                                        <span className='text-danger'>&nbsp;*</span>
+                                        <span className='required'>&nbsp;*</span>
                                     </label>
-                                    <input type='text' className='form-control' name='name' minLength='2' required />
+                                    <input type='text' className='form-control' {...register('name')} />
+                                    {errors.name && <span className='error'>{errors.name.message}</span>}
                                 </Box>
                                 <Box className='row'>
                                     <Box className='col-sm-12 col-md-6 mb-3'>
                                         <label htmlFor='email' className='form-label'>
                                             Adres e-mail
-                                            <span className='text-danger'>&nbsp;*</span>
+                                            <span className='required'>&nbsp;*</span>
                                         </label>
-                                        <input type='email' className='form-control' name='email' required />
+                                        <input type='text' className='form-control' {...register('email')} />
+                                        {errors.email && <span className='error'>{errors.email.message}</span>}
                                     </Box>
                                     <Box className='col-sm-12 col-md-6 mb-3'>
                                         <label htmlFor='phone' className='form-label'>
                                             Numer telefonu
-                                            <span className='text-danger'>&nbsp;*</span>
+                                            <span className='required'>&nbsp;*</span>
                                         </label>
-                                        <input type='tel' className='form-control' name='phone' required />
+                                        <input type='tel' className='form-control' {...register('phone')} />
+                                        {errors.phone && <span className='error'>{errors.phone.message}</span>}
                                     </Box>
                                 </Box>
                                 <Box>
                                     <label htmlFor='message' className='form-label'>
                                         Wiadomość
-                                        <span className='text-danger'>&nbsp;*</span>
+                                        <span className='required'>&nbsp;*</span>
                                     </label>
-                                    <textarea className='form-control' name='message' rows={isSm ? '6' : '4'} required></textarea>
+                                    <textarea className='form-control' {...register('message')} rows={isSm ? '6' : '4'} />
+                                    {errors.message && <span className='error'>{errors.message.message}</span>}
                                 </Box>
-                                <Box
-                                    className='link-contained-submit'
-                                    width='auto'
-                                >
+                                <Box className='link-contained-submit' width='auto'>
                                     <Button
                                         variant='contained'
                                         color='primary'
