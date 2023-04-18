@@ -11,6 +11,8 @@ const PageTitle = ({ children }) => {
                 return companyName;
             case '/clinic':
                 return `Klinika - ${companyName}`;
+            case '/clinic/regulation':
+                return `Regulamin organizacyjny - ${companyName}`;
             case '/services':
                 return `Specjalizacje - ${companyName}`;
             case '/services/dermatology':

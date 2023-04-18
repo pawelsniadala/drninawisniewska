@@ -33,6 +33,13 @@ const FooterSection = () => {
                         >
                             ul. Fryderyka Chopina 13/U2,<br />07-200 Wyszków
                         </Typography>
+                        <Typography
+                            component='a'
+                            href='/clinic/regulation'
+                            className='footer-text link'
+                        >
+                            Regulamin organizacyjny
+                        </Typography>
                     </Box>
                 </Box>
                 <Box className='services'>

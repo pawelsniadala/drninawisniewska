@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import Box from '@mui/material/Box';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -9,7 +10,7 @@ import 'react-image-lightbox/style.css';
 import 'photoswipe/style.css';
 import 'photoswipe-dynamic-caption-plugin/photoswipe-dynamic-caption-plugin.css';
 import 'swiper/css';
-import "swiper/css/pagination";
+import 'swiper/css/pagination';
 import 'aos/dist/aos.css';
 import '../styles/app.scss';
 import AOS from 'aos';
@@ -26,9 +27,9 @@ const MainTemplate = ({ children }) => {
     }, []);
 
     return (
-        <div className='app'>
+        <Box className='app'>
             {children}
-        </div>
+        </Box>
     );
 }
 

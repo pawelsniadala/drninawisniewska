@@ -9,6 +9,7 @@ import HeaderSection from '../sections/HeaderSection';
 import FooterSection from '../sections/FooterSection';
 import HomeView from './HomeView';
 import ClinicView from './ClinicView';
+import ClinicRegulationPartial from './partials/clinic/ClinicRegulationPartial';
 import ServicesView from './ServicesView';
 import ServicesDermatologyPartial from './partials/services/ServicesDermatologyPartial';
 import ServicesAestheticMedicinePartial from './partials/services/ServicesAestheticMedicinePartial';
@@ -68,6 +69,7 @@ const Root = () => (
                     <Route exact path='/drninawisniewska/' element={<HomeView main />} />
                     <Route exact path='https://drninawisniewska.pl' element={<HomeView />} />
                     <Route path='/clinic' element={<ClinicView />} />
+                    <Route path='/clinic/regulation' element={<ClinicRegulationPartial />} />
                     <Route exact path='/services' element={<ServicesView />} />
                     <Route path='/services/dermatology' element={<ServicesDermatologyPartial />} />
                     <Route path='/services/aesthetic-medicine' element={<ServicesAestheticMedicinePartial />} />
