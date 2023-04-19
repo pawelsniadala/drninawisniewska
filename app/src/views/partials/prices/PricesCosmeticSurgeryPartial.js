@@ -39,12 +39,9 @@ const Table1 = () => {
     const rows = [
         createData('Konsultacja - lek. med. Konrad Kochan', 200),
         createData('Plastyka powiek górnych', 5000),
-        createData('Plastyka powiek dolnych', 8000),
-        createData('Korekta odstających uszu', 6000),
         createData('Usunięcie kępek żółtych jednostronne', 1500),
         createData('Usunięcie kępek żółtych dwustronne', 3000),
         createData('Plastyka blizn', 'od 1500'),
-        createData('Podniesienie górnej wargi', 5000),
         createData('Usuwanie dużych zmian nowotworowych z przeszczepem skóry', 700),
         createData('Usunięcie zmian skórnych twarzy', 'od 500'),
         createData('Usunięcie zmian skórnych z ciała', 'od 500'),

@@ -332,6 +332,9 @@ const Table5 = () => {
         createData('Juvenus', 1100),
         createData('Pluryal Silk', 1200),
         createData('Profhilo', 1200),
+        createData('Pluryal Densify', 1200),
+        createData('Pluryal Bioclassic', 1100),
+        createData('Sunekos Performa', 500),
         createData('Kolagen (4 okolice)', 1200),
         createData('Kolagen (cała twarz)', 700)
     ];
