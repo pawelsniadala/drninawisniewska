@@ -1,8 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import PhotoSwipeLightbox from 'photoswipe/lightbox';
-import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin';
-
 
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
@@ -13,24 +10,6 @@ import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 
 const ClinicRegulationPartial = () => {
-    useEffect(() => {
-        const lightbox = new PhotoSwipeLightbox({
-            gallery: '#my-gallery',
-            children: 'a',
-            pswpModule: () => import('photoswipe'),
-            padding: {
-                top: 50,
-                bottom: 50
-            }
-        });
-
-        const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
-            type: 'below'
-        });
-
-        lightbox.init(captionPlugin);
-    }, []);
-
     return (
         <Box className='regulations-view'>
             <Box className='view-wrapper'>
@@ -84,7 +63,7 @@ const ClinicRegulationPartial = () => {
                             <p>§1</p>
                             <h4 style={{ fontWeight: 400 }}>Podstawy prawne</h4>
                             <ol style={{ fontWeight: 300 }}>
-                                <li>Niniejszy regulamin został przyjęty dla podmiotu wykonującego działalność leczniczą prowadzącego działalność gospodarczą pod firmą Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska, NIP: 7621897504, REGON: 145231566.</li>
+                                <li>Niniejszy regulamin został przyjęty dla podmiotu wykonującego działalność leczniczą prowadzącego działalność gospodarczą pod firmą <strong>Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska</strong>, NIP: 7621897504, REGON: 145231566.</li>
                                 <li>Adres siedziby podmiotu leczniczego: ul. Fryderyka Chopina 13 lok. U2, 07-200 Wyszków.</li>
                                 <li>Podstawą prawną regulaminu jest art. 24 w zw. Z art. 23 ustawy z dnia 15 kwietnia 2011 r. o działalności leczniczej.</li>
                                 <li>Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska jest wpisana do Rejestru Podmiotów Wykonujących Działalność Leczniczą, prowadzonego przez Wojewodę Mazowieckiego pod numerem księgi rejestrowej 000000225938.</li>
@@ -123,19 +102,32 @@ const ClinicRegulationPartial = () => {
                             <p>W ramach podmiotu leczniczego powołane są:</p>
                             <ol style={{ fontWeight: 300 }}>
                                 <li>Zakład: Dermatologia i Medycyna Estetyczna</li>
-                                <li>Jednostka: 01 Poradnia Dermatologiczna</li>
+                                <li>Jednostka:
+                                    <ol type="1">
+                                        <li>01 Poradnia Dermatologiczna</li>
+                                        <li>02 Poradnia Endokrynologiczna</li>
+                                        <li>03 Poradnia Ginekologiczna</li>
+                                        <li>04 Poradnia Kardiologiczna</li>
+                                        <li>05 Poradnia Reumatologiczna</li>
+                                        <li>06 Poradnia Alergologiczna</li>
+                                        <li>07 Poradnia Chirurgii Naczyniowej</li>
+                                        <li>08 Poradnia Ortopedyczna</li>
+                                        <li>09 Poradnia Chirurgii Plastycznej</li>
+                                    </ol>
+                                </li>
                                 <li>Komórki:
                                     <ol type="1">
-                                    <li>001 Gabinet Dermatologiczny (1200)</li>
-                                    <li>002 Gabinet Diagnostyczno-Zabiegowy (9450)</li>
-                                    <li>003 Gabinet Endokrynologiczny (1030)</li>
-                                    <li>004 Gabinet Ginekologiczny (1452)</li>
-                                    <li>005 Gabinet Kardiologiczny (1100)</li>
-                                    <li>006 Gabinet Hematologiczny (1070)</li>
-                                    <li>007 Gabinet Alergologiczny (1010)</li>
-                                    <li>008 Gabinet Chirurgii Naczyniowej) (1530)</li>
-                                    <li>009 Gabinet Ortopedyczny (1580)</li>
-                                    <li>010 Gabinet Chirurgii Plastycznej (1550)</li>
+                                        <li>001 Gabinet Dermatologiczny (1200)</li>
+                                        <li>002 Gabinet Diagnostyczno-Zabiegowy (9450)</li>
+                                        <li>003 Gabinet Endokrynologiczny (1030)</li>
+                                        <li>004 Gabinet Ginekologiczny (1452)</li>
+                                        <li>005 Gabinet Kardiologiczny (1100)</li>
+                                        <li>006 Gabinet Hematologiczny (1070)</li>
+                                        <li>007 Gabinet Alergologiczny (1010)</li>
+                                        <li>008 Gabinet Chirurgii Naczyniowej) (1530)</li>
+                                        <li>009 Gabinet Ortopedyczny (1580)</li>
+                                        <li>010 Gabinet Chirurgii Plastycznej (1550)</li>
+                                        <li>011 Gabinet Reumatologiczny (1280)</li>
                                     </ol>
                                 </li>
                             </ol>
@@ -174,7 +166,7 @@ const ClinicRegulationPartial = () => {
                                 <li>Bezpośrednio przed planowaną wizytą pacjent jest zobowiązany potwierdzić swoją tożsamość, okazując dowód osobisty lub inny dokument ze zdjęciem w recepcji miejsca udzielania świadczeń zdrowotnych.</li>
                                 <li>W recepcji miejsca udzielania świadczeń zdrowotnych pacjent może uzyskać informacje na temat świadczeń dostępnych w podmiocie leczniczym, czasu oczekiwania, form i terminów zapisu, wymaganych dokumentów, wyników badań niezbędnych podczas wizyty, zasad udostępniania dokumentacji medycznej oraz organizacji pracy podmiotu leczniczego.</li>
                                 <li>Świadczenia zdrowotne udzielane są odpłatnie przez osoby posiadające odpowiednie umiejętności oraz uprawnienia.</li>
-                                <li>Ceny za udzielane świadczenia zdrowotne są określone na podstawie cennika znajdującego się w miejscu udzielania świadczeń zdrowotnych oraz na stronie www.drninawisniewska.pl w zakładce „cennik”.</li>
+                                <li>Ceny za udzielane świadczenia zdrowotne są określone na podstawie cennika znajdującego się w miejscu udzielania świadczeń zdrowotnych oraz na stronie www.drninawisniewska.pl w zakładce "Cennik".</li>
                             </ol>
                         </div>
 
