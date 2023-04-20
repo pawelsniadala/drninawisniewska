@@ -14,7 +14,7 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TableContainer from '@mui/material/TableContainer';
-import Paper from '@mui/material/Paper';
+// import Paper from '@mui/material/Paper';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
@@ -28,18 +28,20 @@ import { team } from '../../../data/team';
 
 const StyledTableCell = styled(TableCell)(() => ({
     [`&.${tableCellClasses.head}`]: {
-        borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
+        borderBottom: '1px solid rgba(224, 224, 224, 0.65)',
         padding: '12px 16px',
         lineHeight: 1.25,
         whiteSpace: 'nowrap',
-        color: '#535353'
+        color: '#535353',
+        background: 'transparent'
     },
     [`&.${tableCellClasses.body}`]: {
-        borderBottom: '1px solid rgba(224, 224, 224, 0.6)',
+        borderBottom: '1px solid rgba(224, 224, 224, 0.65)',
         padding: '12px 16px',
         lineHeight: 1.25,
         fontWeight: 300,
-        color: '#535353'
+        color: '#535353',
+        background: 'transparent'
     }
 }));
 
@@ -70,7 +72,7 @@ const Table1 = () => {
     ];
 
     return (
-        <TableContainer className='table-container' component={Paper} >
+        <TableContainer className='table-container'>
             <Table className='table' size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
@@ -138,7 +140,7 @@ const Table2 = () => {
     ];
 
     return (
-        <TableContainer className='table-container' component={Paper} >
+        <TableContainer className='table-container'>
             <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>
@@ -205,7 +207,7 @@ const Table3 = () => {
     ];
 
     return (
-        <TableContainer className='table-container' component={Paper} >
+        <TableContainer className='table-container'>
             <Table size='small' aria-label='customized table'>
                 <TableHead>
                     <TableRow>

@@ -259,7 +259,8 @@ const ServicesCosmetologyPartial = () => {
                                                 cardImage={item.imageMedium}
                                                 cardTitle={item.title}
                                                 cardPath={item.path}
-                                                cardBadge={item.badge}
+                                                cardBadgeContent={item.badge.content}
+                                                cardBadgeMode={item.badge.mode}
                                             />
                                         ))
                                     ) : (
