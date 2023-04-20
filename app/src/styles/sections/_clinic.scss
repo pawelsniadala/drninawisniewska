@@ -269,6 +269,25 @@
     .statistics-wrapper {
         padding-top: 32px;
 
+        .counter {
+            display: flex;
+            justify-content: center;
+            font-family: 'Roboto', sans-serif;
+            font-size: 35px;
+            letter-spacing: .045em;
+            line-height: 1.208em;
+            margin-bottom: .25em;
+            color: rgba(0, 0, 0, 0.65);
+        }
+
+        .description {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+            color: #535353;
+        }
+
         @media (max-width: 991.98px) {
             display: none;
         }

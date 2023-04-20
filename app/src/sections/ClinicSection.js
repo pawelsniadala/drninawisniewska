@@ -139,16 +139,7 @@ const ClinicSection = () => {
                             <Grid key={i} item xs={12} md={4} >
                                 <Typography
                                     variant='h4'
-                                    sx={{
-                                        display: 'flex',
-                                        justifyContent:'center',
-                                        fontFamily: 'Roboto, Helvetica, Arial, sans-serif',
-                                        fontSize: '35px',
-                                        letterSpacing: '.045em',
-                                        color: 'rgba(0, 0, 0, 0.65)',
-                                        lineHeight: '1.208em',
-                                        marginBottom: '0.25em'
-                                    }}
+                                    className='counter'
                                 >
                                     <span>
                                         <VisibilitySensor
@@ -166,13 +157,7 @@ const ClinicSection = () => {
                                 </Typography>
                                 <Typography
                                     variant='h6'
-                                    align={'center'}
-                                    sx={{
-                                        fontFamily: 'Roboto, sans-serif',
-                                        fontSize: '18px',
-                                        fontWeight: '300',
-                                        color: '#535353'
-                                    }}
+                                    className='description'
                                 >
                                     {item.subtitle}
                                 </Typography>
