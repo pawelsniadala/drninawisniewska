@@ -69,7 +69,10 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseOne'
                                     >
-                                        <Typography>§ 1. Podstawy prawne</Typography>
+                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                            <Typography>§ 1.</Typography>
+                                            <Typography>Podstawy prawne</Typography>
+                                        </Box>
                                     </button>
                                 </h2>
                                 <Box
@@ -104,7 +107,10 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseTwo'
                                     >
-                                        <Typography>§ 2. Cele i zadania</Typography>
+                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                            <Typography>§ 2.</Typography>
+                                            <Typography>Cele i zadania</Typography>
+                                        </Box>
                                     </button>
                                 </h2>
                                 <Box
@@ -141,9 +147,10 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseThree'
                                     >
-                                        <Typography>
-                                            § 3. Struktura organizacyjna
-                                        </Typography>
+                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                            <Typography>§ 3.</Typography>
+                                            <Typography>Struktura organizacyjna</Typography>
+                                        </Box>
                                     </button>
                                 </h2>
                                 <Box
@@ -185,9 +192,10 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseFour'
                                     >
-                                        <Typography>
-                                            § 4. Rodzaj działalności leczniczej oraz zakres udzielanych świadczeń zdrowotnych
-                                        </Typography>
+                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                            <Typography>§ 4.</Typography>
+                                            <Typography>Rodzaj działalności leczniczej oraz zakres udzielanych świadczeń zdrowotnych</Typography>
+                                        </Box>
                                     </button>
                                 </h2>
                                 <Box
@@ -213,9 +221,10 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseFive'
                                     >
-                                        <Typography>
-                                            § 5. Miejsce udzielania świadczeń zdrowotnych
-                                        </Typography>
+                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                            <Typography>§ 5.</Typography>
+                                            <Typography>Miejsce udzielania świadczeń zdrowotnych</Typography>
+                                        </Box>
                                     </button>
                                 </h2>
                                 <Box
@@ -241,9 +250,10 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseSix'
                                     >
-                                        <Typography>
-                                            § 6. Organizacja i przebieg procesu udzielania świadczeń zdrowotnych
-                                        </Typography>
+                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                            <Typography>§ 6.</Typography>
+                                            <Typography>Organizacja i przebieg procesu udzielania świadczeń zdrowotnych</Typography>
+                                        </Box>
                                     </button>
                                 </h2>
                                 <Box
@@ -279,9 +289,10 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseSeven'
                                     >
-                                        <Typography>
-                                            § 7. Sposób kierowania
-                                        </Typography>
+                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                            <Typography>§ 7.</Typography>
+                                            <Typography>Sposób kierowania</Typography>
+                                        </Box>
                                     </button>
                                 </h2>
                                 <Box
@@ -316,9 +327,10 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseEight'
                                     >
-                                        <Typography>
-                                            § 8. Udostępnianie dokumentacji medycznej
-                                        </Typography>
+                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                            <Typography>§ 8.</Typography>
+                                            <Typography>Udostępnianie dokumentacji medycznej</Typography>
+                                        </Box>
                                     </button>
                                 </h2>
                                 <Box
@@ -359,9 +371,10 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseNine'
                                     >
-                                        <Typography>
-                                            § 9. Przepisy końcowe
-                                        </Typography>
+                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                            <Typography>§ 9.</Typography>
+                                            <Typography>Przepisy końcowe</Typography>
+                                        </Box>
                                     </button>
                                 </h2>
                                 <Box
