@@ -67,8 +67,10 @@ const ServicesSection = () => {
                                 Pagination
                             ]}
                         >
-                            {services.slice(0, 6).map((item, index) => (
-                                <SwiperSlide key={index}>
+                            {services.slice(0, 6).map((item) => (
+                                <SwiperSlide
+                                    key={item.id}
+                                >
                                     <CardServices
                                         cardTitle={item.title}
                                         cardDescription={item.description}
@@ -84,9 +86,9 @@ const ServicesSection = () => {
                         </Swiper>
                     ) : (
                         <Box className='card-wrapper services'>
-                            {services.slice(0, width <= 539.98 ? 4 : 6).map((item, index) => (
+                            {services.slice(0, width <= 539.98 ? 4 : 6).map((item) => (
                                 <CardProposed
-                                    key={index}
+                                    key={item.id}
                                     cardTitle={item.title}
                                     cardDescription={item.description}
                                     cardImage={item.image}

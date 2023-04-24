@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 
 import Tabs, { tabsClasses } from '@mui/material/Tabs';
@@ -86,6 +86,14 @@ const TeamView = () => {
             default:
         }
     }
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'instant'
+        });
+    }, []);
 
     return (
         <Box className='contact-view'>

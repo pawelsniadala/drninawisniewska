@@ -8,9 +8,23 @@ import CardTeamProposed from '../../../components/CardTeamProposed';
 import { team } from '../../../data/team';
 
 const TeamSpecializationPartial = ({ specialization }) => {
+    const [ data, setData ] = useState([]);
+
     useEffect(() => {
-        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
-    }, []);
+        const fetchData = async () => {
+            const filtered = team.filter(item => item.specialization.includes(specialization));
+            setData(filtered);
+        };
+        fetchData();
+    }, [specialization]);
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'instant'
+        });
+    }, [specialization]);
 
     function getWindowDimensions() {
         const { innerWidth: width } = window;
@@ -37,9 +51,9 @@ const TeamSpecializationPartial = ({ specialization }) => {
     return (
         <Box className='card-wrapper team view'>
             {width >= 991.98 ? (
-                team.filter(item => item.specialization.includes(specialization)).map((item, index) => (
+                data.map((item) => (
                     <CardTeam
-                        key={index}
+                        key={item.id}
                         cardImage={item.image}
                         cardBackground={item.background}
                         cardTitle={item.title}
@@ -50,9 +64,9 @@ const TeamSpecializationPartial = ({ specialization }) => {
                     />
                 ))
             ) : (
-                team.filter(item => item.specialization.includes(specialization)).map((item, index) => (
+                data.map((item) => (
                     <CardTeamProposed
-                        key={index}
+                        key={item.id}
                         cardTitle={item.name}
                         cardSpeciality={item.speciality}
                         cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></>}

@@ -126,9 +126,9 @@ const TechnologyHettichArthrexAcpPartial = () => {
                                 </Typography>
                             </Box>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'hettichArthrexAcp').map((item, index) => (
+                                {technology.filter(item => item.designation !== 'hettichArthrexAcp').map((item) => (
                                     <CardProposed
-                                        key={index}
+                                        key={item.id}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardImage={item.imageSmall}

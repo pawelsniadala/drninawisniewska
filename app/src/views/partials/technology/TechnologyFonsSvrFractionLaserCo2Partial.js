@@ -161,9 +161,9 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                 </Typography>
                             </Box>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'fonsSvrLaserFrakcyjnyCo2').map((item, index) => (
+                                {technology.filter(item => item.designation !== 'fonsSvrLaserFrakcyjnyCo2').map((item) => (
                                     <CardProposed
-                                        key={index}
+                                        key={item.id}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardImage={item.imageSmall}

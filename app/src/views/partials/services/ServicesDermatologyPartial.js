@@ -227,9 +227,9 @@ const ServicesDermatologyPartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
-                                        team.filter(item => item.specialization.includes('dermatology')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('dermatology')).map((item) => (
                                             <CardTeam
-                                                key={index}
+                                                key={item.id}
                                                 cardImage={item.image}
                                                 cardBackground={item.background}
                                                 cardTitle={item.title}
@@ -240,9 +240,9 @@ const ServicesDermatologyPartial = () => {
                                             />
                                         ))
                                     ) : (
-                                        team.filter(item => item.specialization.includes('dermatology')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('dermatology')).map((item) => (
                                             <CardTeamProposed
-                                                key={index}
+                                                key={item.id}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
@@ -260,9 +260,9 @@ const ServicesDermatologyPartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper technology page'>
                                     {width >= 991.98 ? (
-                                        technology.filter(item => item.specialization.includes('dermatology')).map((item, index) => (
+                                        technology.filter(item => item.specialization.includes('dermatology')).map((item) => (
                                             <CardTechnology
-                                                key={index}
+                                                key={item.id}
                                                 cardImage={item.imageMedium}
                                                 cardTitle={item.title}
                                                 cardPath={item.path}
@@ -271,9 +271,9 @@ const ServicesDermatologyPartial = () => {
                                             />
                                         ))
                                     ) : (
-                                        technology.filter(item => item.specialization.includes('dermatology')).map((item, index) => (
+                                        technology.filter(item => item.specialization.includes('dermatology')).map((item) => (
                                             <CardProposed
-                                                key={index}
+                                                key={item.id}
                                                 cardTitle={item.title}
                                                 cardDescription={item.description}
                                                 cardImage={item.imageSmall}
@@ -291,9 +291,9 @@ const ServicesDermatologyPartial = () => {
                                 </Typography>
                             </Box>
                             <Box className='card-wrapper services-proposed'>
-                                {services.length ? services.filter(item => item.title !== 'Dermatologia').map((item, index) => (
+                                {services.length ? services.filter(item => item.title !== 'Dermatologia').map((item) => (
                                     <CardProposed
-                                        key={index}
+                                        key={item.id}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardImage={item.image}

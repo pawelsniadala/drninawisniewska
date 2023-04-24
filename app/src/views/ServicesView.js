@@ -80,9 +80,9 @@ const ServicesView = () => {
                     <Container className='body-wrapper'>
                         <Box className='card-wrapper services'>
                             {width >= 991.98 ? (
-                                services.map((item, index) => (
+                                services.map((item) => (
                                     <CardServices
-                                        key={index}
+                                        key={item.id}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardPath={item.path}
@@ -94,9 +94,9 @@ const ServicesView = () => {
                                     />
                                 ))
                             ) : (
-                                services.map((item, index) => (
+                                services.map((item) => (
                                     <CardProposed
-                                        key={index}
+                                        key={item.id}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardImage={item.image}

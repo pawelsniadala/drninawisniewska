@@ -482,9 +482,9 @@ const ServicesAllergologyPartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
-                                        team.filter(item => item.specialization.includes('allergology')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('allergology')).map((item) => (
                                             <CardTeam
-                                                key={index}
+                                                key={item.id}
                                                 cardImage={item.image}
                                                 cardBackground={item.background}
                                                 cardTitle={item.title}
@@ -495,9 +495,9 @@ const ServicesAllergologyPartial = () => {
                                             />
                                         ))
                                     ) : (
-                                        team.filter(item => item.specialization.includes('allergology')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('allergology')).map((item) => (
                                             <CardTeamProposed
-                                                key={index}
+                                                key={item.id}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
@@ -516,9 +516,9 @@ const ServicesAllergologyPartial = () => {
                                 </Typography>
                             </Box>
                             <Box className='card-wrapper services-proposed'>
-                                {services.length ? services.filter(item => item.title !== 'Alergologia').map((item, index) => (
+                                {services.length ? services.filter(item => item.title !== 'Alergologia').map((item) => (
                                     <CardProposed
-                                        key={index}
+                                        key={item.id}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardImage={item.image}

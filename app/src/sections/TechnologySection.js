@@ -48,14 +48,13 @@ const TechnologySection = () => {
                     <Box className='card-wrapper technology section'>
                         {technology.slice(0, width >= 991.98 ? 4 : width <= 539.98 ? 4 : 3).map((item, index) => (
                             <Box
-                                key={index}
+                                key={item.id}
                                 data-aos={'fade-up'}
                                 data-aos-delay={index * 100}
                                 data-aos-offset={100}
                                 data-aos-duration={600}
                             >
                                 <CardTechnology
-                                    key={index}
                                     cardMode='section'
                                     cardImage={item.imageMedium}
                                     cardTitle={item.title}

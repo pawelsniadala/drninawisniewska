@@ -133,9 +133,9 @@ const ServicesCosmeticSurgeryPartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
-                                        team.filter(item => item.specialization.includes('cosmetic-surgery')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('cosmetic-surgery')).map((item) => (
                                             <CardTeam
-                                                key={index}
+                                                key={item.id}
                                                 cardImage={item.image}
                                                 cardBackground={item.background}
                                                 cardTitle={item.title}
@@ -146,9 +146,9 @@ const ServicesCosmeticSurgeryPartial = () => {
                                             />
                                         ))
                                     ) : (
-                                        team.filter(item => item.specialization.includes('cosmetic-surgery')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('cosmetic-surgery')).map((item) => (
                                             <CardTeamProposed
-                                                key={index}
+                                                key={item.id}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
@@ -167,9 +167,9 @@ const ServicesCosmeticSurgeryPartial = () => {
                                 </Typography>
                             </Box>
                             <Box className='card-wrapper services-proposed'>
-                                {services.length ? services.filter(item => item.title !== 'Chirurgia plastyczna').map((item, index) => (
+                                {services.length ? services.filter(item => item.title !== 'Chirurgia plastyczna').map((item) => (
                                     <CardProposed
-                                        key={index}
+                                        key={item.id}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardImage={item.image}

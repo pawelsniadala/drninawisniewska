@@ -271,9 +271,9 @@ const TeamSpecialistPartial = () => {
                             </Box>
                             <Box className='team-proposed'>
                                 <Box className='card-wrapper team-proposed'>
-                                    {teamProposed.length > 0 ? teamProposed.map((item, index) => (
+                                    {teamProposed.length > 0 ? teamProposed.map((item) => (
                                         <CardTeamProposed
-                                            key={index}
+                                            key={item.id}
                                             cardTitle={item.name}
                                             cardSpeciality={item.speciality}
                                             cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }

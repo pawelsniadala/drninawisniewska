@@ -132,9 +132,9 @@ const ServicesEndocrinologyPartial = () => {
                                 </Typography>
                                 <Box className='card-wrapper team page'>
                                     {width >= 991.98 ? (
-                                        team.filter(item => item.specialization.includes('endocrinology')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('endocrinology')).map((item) => (
                                             <CardTeam
-                                                key={index}
+                                                key={item.id}
                                                 cardImage={item.image}
                                                 cardBackground={item.background}
                                                 cardTitle={item.title}
@@ -145,9 +145,9 @@ const ServicesEndocrinologyPartial = () => {
                                             />
                                         ))
                                     ) : (
-                                        team.filter(item => item.specialization.includes('endocrinology')).map((item, index) => (
+                                        team.filter(item => item.specialization.includes('endocrinology')).map((item) => (
                                             <CardTeamProposed
-                                                key={index}
+                                                key={item.id}
                                                 cardTitle={item.name}
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
@@ -167,9 +167,9 @@ const ServicesEndocrinologyPartial = () => {
                                 </Typography>
                             </Box>
                             <Box className='card-wrapper services-proposed'>
-                                {services.length ? services.filter(item => item.title !== 'Endokrynologia').map((item, index) => (
+                                {services.length ? services.filter(item => item.title !== 'Endokrynologia').map((item) => (
                                     <CardProposed
-                                        key={index}
+                                        key={item.id}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardImage={item.image}

@@ -67,8 +67,10 @@ const TeamSection = () => {
                                 Pagination
                             ]}
                         >
-                            {team.slice(0, 7).map((item, index) => (
-                                <SwiperSlide key={index}>
+                            {team.slice(0, 7).map((item) => (
+                                <SwiperSlide
+                                    key={item.id}
+                                >
                                     <CardTeam
                                         cardImage={item.image}
                                         cardBackground={item.background}
@@ -84,9 +86,9 @@ const TeamSection = () => {
                         </Swiper>
                     ) : (
                         <Box className='card-wrapper team section'>
-                            {team.slice(0, width <= 539.98 ? 4 : 6).map((item, index) => (
+                            {team.slice(0, width <= 539.98 ? 4 : 6).map((item) => (
                                 <CardTeamProposed
-                                    key={index}
+                                    key={item.id}
                                     cardTitle={item.name}
                                     cardSpeciality={item.speciality}
                                     cardExperience={item.experience ? item.experience : item.education ? <><br/><br/></> : <><br/><br/></> }

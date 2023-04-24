@@ -160,9 +160,9 @@ const TechnologyAlmaHarmonyXlProPartial = () => {
                                 </Typography>
                             </Box>
                             <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'almaHarmonyXlPro').map((item, index) => (
+                                {technology.filter(item => item.designation !== 'almaHarmonyXlPro').map((item) => (
                                     <CardProposed
-                                        key={index}
+                                        key={item.id}
                                         cardTitle={item.title}
                                         cardDescription={item.description}
                                         cardImage={item.imageSmall}
