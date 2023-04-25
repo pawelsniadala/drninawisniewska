@@ -41,7 +41,7 @@ const CardTeam = ({
                         component={LazyLoadImage}
                         src={cardImage}
                         alt={cardTitle}
-                        effect='blur'
+                        effect='none'
                     />
                 </Box>
                 <CardContent className='card-content'>
