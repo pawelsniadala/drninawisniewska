@@ -83,7 +83,7 @@ const ClinicRegulationPartial = () => {
                                     <Box className='accordion-body'>
                                         <ol style={{ fontWeight: 300 }}>
                                             <li>Niniejszy regulamin został przyjęty dla podmiotu wykonującego działalność leczniczą prowadzącego działalność gospodarczą pod firmą <strong>Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska</strong>, NIP: 7621897504, REGON: 145231566.</li>
-                                            <li>Adres siedziby podmiotu leczniczego: ul. Fryderyka Chopina 13 lok. U2, 07-200 Wyszków.</li>
+                                            <li>Adres siedziby podmiotu leczniczego: ul. Bluszczańska 14/46 00-712 Warszawa.</li>
                                             <li>Podstawą prawną regulaminu jest art. 24 w zw. Z art. 23 ustawy z dnia 15 kwietnia 2011 r. o działalności leczniczej.</li>
                                             <li>Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska jest wpisana do Rejestru Podmiotów Wykonujących Działalność Leczniczą, prowadzonego przez Wojewodę Mazowieckiego pod numerem księgi rejestrowej 000000225938.</li>
                                             <li>Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska działa na podstawie obowiązujących aktów prawnych, w tym w szczególności:
