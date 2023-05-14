@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -9,10 +9,8 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
-import CardTeam from '../../../components/CardTeam';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
-import CardTechnology from '../../../components/CardTechnology';
 import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
 
@@ -21,32 +19,10 @@ import { team } from '../../../data/team';
 import { technology } from '../../../data/technology';
 
 const ServicesUsgPartial = () => {
-    function getWindowDimensions() {
-        const { innerWidth: width } = window;
-        return { width };
-    }
-
-    function useWindowDimensions() {
-        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
-
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
-
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-
-        return windowDimensions;
-    }
-
-    const { width } = useWindowDimensions();
-
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
-                <Box className='view-header services-dermatology'>
+                <Box className='view-header services-usg'>
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
@@ -84,11 +60,11 @@ const ServicesUsgPartial = () => {
                     <Container className='body-wrapper services'>
                         <Box className='service-description'>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography className='paragraph'>
                                     <strong>USG</strong> to specjalistyczne nieinwazyjne badanie obrazowe tkanek miękkich w czasie rzeczywistym wykorzystujące fale ultradźwiękowe.
                                 </Typography>
-                                <Box marginBottom={3} marginTop={3}>
+                                <Box className='box-image'>
                                     <Image
                                         imageSrc={usg.images[0].src}
                                         imageAlt={usg.images[0].alt}
@@ -127,88 +103,63 @@ const ServicesUsgPartial = () => {
                                     Nie wykonujemy badania USG układu kostno-stawowego.
                                 </Typography>
                             </Box>
-
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header alternative'>
-                                    Specjaliści
-                                </Typography>
-                                <Box className='card-wrapper team page'>
-                                    {width >= 991.98 ? (
-                                        team.filter(item => item.specialization.includes('usg')).map((item) => (
-                                            <CardTeam
-                                                key={item.id}
-                                                cardImage={item.image}
-                                                cardBackground={item.background}
-                                                cardTitle={item.title}
-                                                cardName={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardDescription={item.experience ? item.experience : item.education}
-                                                cardPath={`/team/usg/${item.specialist}`}
-                                            />
-                                        ))
-                                    ) : (
-                                        team.filter(item => item.specialization.includes('usg')).map((item) => (
-                                            <CardTeamProposed
-                                                key={item.id}
-                                                cardTitle={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
-                                                cardImage={item.image}
-                                                cardPath={`/team/usg/${item.specialist}`}
-                                            />
-                                        ))
-                                    )}
-                                </Box>
-                            </Box>
-
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header alternative'>
-                                    Sprzęt
-                                </Typography>
-                                <Box className='card-wrapper technology page'>
-                                    {width >= 991.98 ? (
-                                        technology.filter(item => item.specialization.includes('usg')).map((item) => (
-                                            <CardTechnology
-                                                key={item.id}
-                                                cardImage={item.imageMedium}
-                                                cardTitle={item.title}
-                                                cardPath={item.path}
-                                                cardBadgeContent={item.badge.content}
-                                                cardBadgeMode={item.badge.mode}
-                                            />
-                                        ))
-                                    ) : (
-                                        technology.filter(item => item.specialization.includes('usg')).map((item) => (
-                                            <CardProposed
-                                                key={item.id}
-                                                cardTitle={item.title}
-                                                cardDescription={item.description}
-                                                cardImage={item.imageSmall}
-                                                cardPath={item.path}
-                                            />
-                                        ))
-                                    )}
-                                </Box>
-                            </Box>
                         </Box>
-                        <Box className='proposed-services'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostałe specjalizacje
-                                </Typography>
+
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Specjaliści
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {team.filter(item => item.specialization.includes('usg')).map((item) => (
+                                        <CardTeamProposed
+                                            key={item.id}
+                                            cardTitle={item.name}
+                                            cardSpeciality={item.speciality}
+                                            cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                            cardImage={item.image}
+                                            cardPath={`/team/usg/${item.specialist}`}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
-                            <Box className='card-wrapper services-proposed'>
-                                {services.length ? services.filter(item => item.title !== 'USG').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.image}
-                                        cardPath={item.path}
-                                    />
-                                )) : (
-                                    <Box>Brak danych</Box>
-                                )}
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Technologia
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {technology.filter(item => item.specialization.includes('usg')).map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.imageSmall}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
+                            </Box>
+                            <Box className='box-proposed specialization'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostałe specjalizacje
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {services.filter(item => item.title !== 'USG').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.image}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>

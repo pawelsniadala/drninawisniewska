@@ -222,7 +222,6 @@ export const allergology = {
 
 export const usg = {
     id: '008b2d0b-fa95-404e-a4f0-0fb9975b851d',
-    // image: servicesUsg,
     title: 'USG',
     description: 'USG to specjalistyczne nieinwazyjne badanie obrazowe tkanek miękkich w czasie rzeczywistym wykorzystujące fale ultradźwiękowe. Przyjmujemy dzieci w każdym wieku. Nie wykonujemy badania USG układu kostno-stawowego.',
     path: '/services/usg',

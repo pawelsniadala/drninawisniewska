@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
@@ -10,7 +10,6 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
-import CardTeam from '../../../components/CardTeam';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
@@ -19,33 +18,10 @@ import { services, rheumatology } from '../../../data/services';
 import { team } from '../../../data/team';
 
 const ServicesRheumatologyPartial = () => {
-    function getWindowDimensions() {
-        const { innerWidth: width } = window;
-        return { width };
-    }
-
-    function useWindowDimensions() {
-        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
-
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
-
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-
-        return windowDimensions;
-    }
-
-    const { width } = useWindowDimensions();
-
-
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
-                <Box className='view-header services-dermatology'>
+                <Box className='view-header services-rheumatology'>
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
@@ -83,11 +59,11 @@ const ServicesRheumatologyPartial = () => {
                     <Container className='body-wrapper services'>
                         <Box className='service-description'>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography className='paragraph'>
                                     <strong>Reumatologia</strong> zajmuje się różnego typu schorzeniami związanymi ze stanami zwyrodnieniowymi i zapalnymi tkanki łącznej, kości i stawów.
                                 </Typography>
-                                <Box marginBottom={3} marginTop={3}>
+                                <Box className='box-image'>
                                     <LazyLoadImage
                                         height={'100%'}
                                         width={'100%'}
@@ -129,7 +105,7 @@ const ServicesRheumatologyPartial = () => {
                                 </Grid>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography className='paragraph heading'>
                                     <strong>Kiedy udać się do reumatologa?</strong>
                                 </Typography>
@@ -137,59 +113,45 @@ const ServicesRheumatologyPartial = () => {
                                     Choroby reumatyczne dotykają ludzi w każdym wieku. Jasnym sygnałem, że powinniśmy zgłosić się właśnie do reumatologa jest poranna sztywność i zaczerwienienie stawów, problemy z utrzymaniem przedmiotów w palcach, ze schylaniem się i podnoszeniem przedmiotów, opuchlizna i zniekształcenie stawów. Dodatkowymi objawami mogącymi sugerować chorobę reumatologiczną są silne bóle w okolicy stawów, ścięgien, kości lub mięśni (szczególnie jeśli dolegliwości bólowe są intensywne, trwają przez dłuższy czas i nawracają pomimo leczenia lekami przeciwzapalnymi), stan podgorączkowy lub gorączka, obrzęk, wysypka, zaczerwienienie skóry.
                                 </Typography>
                             </Box>
+                        </Box>
 
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header alternative'>
-                                    Specjaliści
-                                </Typography>
-                                <Box className='card-wrapper team page'>
-                                    {width >= 991.98 ? (
-                                        team.filter(item => item.specialization.includes('rheumatology')).map((item) => (
-                                            <CardTeam
-                                                key={item.id}
-                                                cardImage={item.image}
-                                                cardBackground={item.background}
-                                                cardTitle={item.title}
-                                                cardName={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardDescription={item.experience ? item.experience : item.education}
-                                                cardPath={`/team/rheumatology/${item.specialist}`}
-                                            />
-                                        ))
-                                    ) : (
-                                        team.filter(item => item.specialization.includes('rheumatology')).map((item) => (
-                                            <CardTeamProposed
-                                                key={item.id}
-                                                cardTitle={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
-                                                cardImage={item.image}
-                                                cardPath={`/team/rheumatology/${item.specialist}`}
-                                            />
-                                        ))
-                                    )}
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Specjaliści
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {team.filter(item => item.specialization.includes('rheumatology')).map((item) => (
+                                        <CardTeamProposed
+                                            key={item.id}
+                                            cardTitle={item.name}
+                                            cardSpeciality={item.speciality}
+                                            cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                            cardImage={item.image}
+                                            cardPath={`/team/rheumatology/${item.specialist}`}
+                                        />
+                                    ))}
                                 </Box>
                             </Box>
-
-                        </Box>
-                        <Box className='proposed-services'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostałe specjalizacje
-                                </Typography>
-                            </Box>
-                            <Box className='card-wrapper services-proposed'>
-                                {services.length ? services.filter(item => item.title !== 'Reumatologia').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.image}
-                                        cardPath={item.path}
-                                    />
-                                )) : (
-                                    <Box>Brak danych</Box>
-                                )}
+                            <Box className='box-proposed specialization'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostałe specjalizacje
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {services.filter(item => item.title !== 'Reumatologia').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.image}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>

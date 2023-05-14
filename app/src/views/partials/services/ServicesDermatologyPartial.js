@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -9,10 +9,8 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
-import CardTeam from '../../../components/CardTeam';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
-import CardTechnology from '../../../components/CardTechnology';
 import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
 
@@ -21,28 +19,6 @@ import { team } from '../../../data/team';
 import { technology } from '../../../data/technology';
 
 const ServicesDermatologyPartial = () => {
-    function getWindowDimensions() {
-        const { innerWidth: width } = window;
-        return { width };
-    }
-
-    function useWindowDimensions() {
-        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
-
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
-
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-
-        return windowDimensions;
-    }
-
-    const { width } = useWindowDimensions();
-
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -84,11 +60,11 @@ const ServicesDermatologyPartial = () => {
                     <Container className='body-wrapper services'>
                         <Box className='service-description'>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography className='paragraph'>
                                     <strong>Dermatologia</strong> to dziedzina medycyny zajmująca się chorobami skóry, włosów i paznokci oraz chorobami wenerycznymi (choroby przenoszone drogą płciową). 
                                 </Typography>
-                                <Box marginBottom={3} marginTop={3}>
+                                <Box className='box-image'>
                                     <Image
                                         imageSrc={dermatology.images[0].src}
                                         imageAlt={dermatology.images[0].alt}
@@ -127,7 +103,7 @@ const ServicesDermatologyPartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Badanie znamion barwnikowych
                                 </Typography>
@@ -148,7 +124,7 @@ const ServicesDermatologyPartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Fototerapia chorób skóry
                                 </Typography>
@@ -160,7 +136,7 @@ const ServicesDermatologyPartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Usunięcie zmian skórnych elektrochirurgiczne
                                 </Typography>
@@ -212,88 +188,63 @@ const ServicesDermatologyPartial = () => {
                                     <strong>Każdy rodzaj zmiany musi być uprzednio zakwalifikowany do zabiegu przez lekarza w naszej Klinice</strong>.
                                 </Typography>
                             </Box>
-
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header alternative'>
-                                    Specjaliści
-                                </Typography>
-                                <Box className='card-wrapper team page'>
-                                    {width >= 991.98 ? (
-                                        team.filter(item => item.specialization.includes('dermatology')).map((item) => (
-                                            <CardTeam
-                                                key={item.id}
-                                                cardImage={item.image}
-                                                cardBackground={item.background}
-                                                cardTitle={item.title}
-                                                cardName={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardDescription={item.experience ? item.experience : item.education}
-                                                cardPath={`/team/dermatology/${item.specialist}`}
-                                            />
-                                        ))
-                                    ) : (
-                                        team.filter(item => item.specialization.includes('dermatology')).map((item) => (
-                                            <CardTeamProposed
-                                                key={item.id}
-                                                cardTitle={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
-                                                cardImage={item.image}
-                                                cardPath={`/team/dermatology/${item.specialist}`}
-                                            />
-                                        ))
-                                    )}
-                                </Box>
-                            </Box>
-
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header alternative'>
-                                    Sprzęt
-                                </Typography>
-                                <Box className='card-wrapper technology page'>
-                                    {width >= 991.98 ? (
-                                        technology.filter(item => item.specialization.includes('dermatology')).map((item) => (
-                                            <CardTechnology
-                                                key={item.id}
-                                                cardImage={item.imageMedium}
-                                                cardTitle={item.title}
-                                                cardPath={item.path}
-                                                cardBadgeContent={item.badge.content}
-                                                cardBadgeMode={item.badge.mode}
-                                            />
-                                        ))
-                                    ) : (
-                                        technology.filter(item => item.specialization.includes('dermatology')).map((item) => (
-                                            <CardProposed
-                                                key={item.id}
-                                                cardTitle={item.title}
-                                                cardDescription={item.description}
-                                                cardImage={item.imageSmall}
-                                                cardPath={item.path}
-                                            />
-                                        ))
-                                    )}
-                                </Box>
-                            </Box>
                         </Box>
-                        <Box className='proposed-services'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostałe specjalizacje
-                                </Typography>
+
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Specjaliści
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {team.filter(item => item.specialization.includes('dermatology')).map((item) => (
+                                        <CardTeamProposed
+                                            key={item.id}
+                                            cardTitle={item.name}
+                                            cardSpeciality={item.speciality}
+                                            cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                            cardImage={item.image}
+                                            cardPath={`/team/dermatology/${item.specialist}`}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
-                            <Box className='card-wrapper services-proposed'>
-                                {services.length ? services.filter(item => item.title !== 'Dermatologia').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.image}
-                                        cardPath={item.path}
-                                    />
-                                )) : (
-                                    <Box>Brak danych</Box>
-                                )}
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Technologia
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {technology.filter(item => item.specialization.includes('dermatology')).map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.imageSmall}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
+                            </Box>
+                            <Box className='box-proposed specialization'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostałe specjalizacje
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {services.filter(item => item.title !== 'Dermatologia').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.image}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>

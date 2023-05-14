@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -9,10 +9,8 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
-import CardTeam from '../../../components/CardTeam';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
-import CardTechnology from '../../../components/CardTechnology';
 import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
 
@@ -21,28 +19,6 @@ import { team } from '../../../data/team';
 import { technology } from '../../../data/technology';
 
 const ServicesAestheticMedicinePartial = () => {
-    function getWindowDimensions() {
-        const { innerWidth: width } = window;
-        return { width };
-    }
-
-    function useWindowDimensions() {
-        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
-
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
-
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-
-        return windowDimensions;
-    }
-
-    const { width } = useWindowDimensions();
-
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -84,14 +60,14 @@ const ServicesAestheticMedicinePartial = () => {
                     <Container className='body-wrapper services'>
                         <Box className='service-description'>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Toksyna botulinowa
                                 </Typography>
                                 <Typography className='paragraph'>
                                     <strong>Toksyna botulinowa</strong> to jedna z najbardziej popularnych metod <strong>redukcji zmarszczek mimicznych</strong>, które pojawiają się w związku z  powtarzającymi się skurczami mięśni twarzy. Zabieg  pozwala  szybko spłycić  zmarszczki  mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy  nadmierna kurczliwość.
                                 </Typography>
-                                <Box marginBottom={3} marginTop={3}>
+                                <Box className='box-image'>
                                     <Image
                                         imageSrc={aestheticMedicine.images[0].src}
                                         imageAlt={aestheticMedicine.images[0].alt}
@@ -144,7 +120,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Grid>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     ABO Liquid
                                 </Typography>
@@ -172,7 +148,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Osocze bogatopłytkowe
                                 </Typography>
@@ -214,7 +190,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Mezoterapia igłowa
                                 </Typography>
@@ -255,7 +231,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Biostymulator tkankowy Juvenus
                                 </Typography>
@@ -294,7 +270,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Grid>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Biostymulator tkankowy Pluryal Silk
                                 </Typography>
@@ -331,7 +307,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Nucleofill
                                 </Typography>
@@ -384,7 +360,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Skinboosters
                                 </Typography>
@@ -418,14 +394,14 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Grid>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Kolagen
                                 </Typography>
                                 <Typography className='paragraph'>
                                     <strong>Kolagen</strong> to najważniejsze <strong>włókno podporowe skóry</strong>, które sprawia, że jest ona gładka, napięta i odpowiednio nawilżona. Można porównać go do <strong>rusztowania skóry</strong>. Wraz z upływem czasu staje się on coraz słabszy i mniej stabilny. Delikatna, pozbawiona sprężystości i gęstości skóra łatwo ulega "sile grawitacji" w wyniku czego powieki opadają, a owal twarzy zniekształca się poprzez pojawienie się "chomików" i "obwisłych" podbródków. Możemy temu <strong>przeciwdziałać</strong>. Najlepszym sposobem w walce z utratą kolagenu jest uzupełnianie jego niedoborów i zniwelowanie efektów jego ubytku.
                                 </Typography>
-                                <Box marginBottom={3} marginTop={3}>
+                                <Box className='box-image'>
                                     <Image
                                         imageSrc={aestheticMedicine.images[1].src}
                                         imageAlt={aestheticMedicine.images[1].alt}
@@ -445,7 +421,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Nici rewitalizujące i liftingujące
                                 </Typography>
@@ -491,89 +467,63 @@ const ServicesAestheticMedicinePartial = () => {
                                     Nasza Klinika oferuje oba typy nici.
                                 </Typography>
                             </Box>
-
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header alternative'>
-                                    Specjaliści
-                                </Typography>
-                                <Box className='card-wrapper team page'>
-                                    {width >= 991.98 ? (
-                                        team.filter(item => item.specialization.includes('aesthetic-medicine')).map((item) => (
-                                            <CardTeam
-                                                key={item.id}
-                                                cardImage={item.image}
-                                                cardBackground={item.background}
-                                                cardTitle={item.title}
-                                                cardName={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardDescription={item.experience ? item.experience : item.education}
-                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
-                                            />
-                                        ))
-                                    ) : (
-                                        team.filter(item => item.specialization.includes('aesthetic-medicine')).map((item) => (
-                                            <CardTeamProposed
-                                                key={item.id}
-                                                cardTitle={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
-                                                cardImage={item.image}
-                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
-                                            />
-                                        ))
-                                    )}
-                                </Box>
-                            </Box>
-
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header alternative'>
-                                    Sprzęt
-                                </Typography>
-                                <Box className='card-wrapper technology page'>
-                                    {width >= 991.98 ? (
-                                        technology.filter(item => item.specialization.includes('aesthetic-medicine')).map((item) => (
-                                            <CardTechnology
-                                                key={item.id}
-                                                cardImage={item.imageMedium}
-                                                cardTitle={item.title}
-                                                cardPath={item.path}
-                                                cardBadgeContent={item.badge.content}
-                                                cardBadgeMode={item.badge.mode}
-                                            />
-                                        ))
-                                    ) : (
-                                        technology.filter(item => item.specialization.includes('aesthetic-medicine')).map((item) => (
-                                            <CardProposed
-                                                key={item.id}
-                                                cardTitle={item.title}
-                                                cardDescription={item.description}
-                                                cardImage={item.imageSmall}
-                                                cardPath={item.path}
-                                            />
-                                        ))
-                                    )}
-                                </Box>
-                            </Box>
                         </Box>
 
-                        <Box className='proposed-services'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostałe specjalizacje
-                                </Typography>
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Specjaliści
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {team.filter(item => item.specialization.includes('aesthetic-medicine')).map((item) => (
+                                        <CardTeamProposed
+                                            key={item.id}
+                                            cardTitle={item.name}
+                                            cardSpeciality={item.speciality}
+                                            cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                            cardImage={item.image}
+                                            cardPath={`/team/aesthetic-medicine/${item.specialist}`}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
-                            <Box className='card-wrapper services-proposed'>
-                                {services.length ? services.filter(item => item.title !== 'Medycyna estetyczna').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.image}
-                                        cardPath={item.path}
-                                    />
-                                )) : (
-                                    <Box>Brak danych</Box>
-                                )}
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Technologia
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {technology.filter(item => item.specialization.includes('aesthetic-medicine')).map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.imageSmall}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
+                            </Box>
+                            <Box className='box-proposed specialization'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostałe specjalizacje
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {services.filter(item => item.title !== 'Medycyna estetyczna').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.image}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>
