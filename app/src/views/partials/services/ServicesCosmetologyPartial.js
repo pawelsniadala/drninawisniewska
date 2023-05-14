@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -15,6 +14,7 @@ import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
 import CardTechnology from '../../../components/CardTechnology';
 import ListBulleted from '../../../components/ListBulleted';
+import Image from '../../../components/Image';
 
 import { services, cosmetology } from '../../../data/services';
 import { technology } from '../../../data/technology';
@@ -92,19 +92,11 @@ const ServicesCosmetologyPartial = () => {
                                     Peelingi chemiczne to <strong>kondycjonujące</strong> i <strong>rewitalizujące</strong> skórę zabiegi dermokosmetyczne. W zależności od zastosowanego preparatu zabiegi oferują <strong>różne efekty terapeutyczne</strong>; tj. oczyszczające i przeciwtrądzikowe, regenerujące i przeciwzmarszczkowe, rozjaśniające i redukujące przebarwienia.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={cosmetology.servicesCosmetologyPeeling}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '400px'
-                                        }}
+                                    <Image
+                                        imageSrc={cosmetology.images[0].src}
+                                        imageAlt={cosmetology.images[0].alt}
+                                        imageAuthor={cosmetology.images[0].author}
+                                        imageHref={cosmetology.images[0].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph'>

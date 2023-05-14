@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -14,6 +13,7 @@ import CardTeam from '../../../components/CardTeam';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
+import Image from '../../../components/Image';
 
 import { services, physioterapy } from '../../../data/services';
 import { team } from '../../../data/team';
@@ -90,19 +90,11 @@ const ServicesPhysioterapyPartial = () => {
                                     <strong>Medycyna ortopedyczna</strong> według <strong>Cyriaxa</strong> jest kompleksowym systemem terapii oraz diagnostyki zaburzeń narządu ruchu. Opiera się na badaniu klinicznym, które za pomocą testów i wywiadu doprowadza fizjoterapeutę do postawienia odpowiedniej <strong>diagnozy</strong> uszkodzonej tkanki w układzie ruchu.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={physioterapy.image}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '400px'
-                                        }}
+                                    <Image
+                                        imageSrc={physioterapy.images[0].src}
+                                        imageAlt={physioterapy.images[0].alt}
+                                        imageAuthor={physioterapy.images[0].author}
+                                        imageHref={physioterapy.images[0].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph'>
@@ -118,19 +110,11 @@ const ServicesPhysioterapyPartial = () => {
                                     <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={physioterapy.servicesPhysioterapyMassage}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '400px'
-                                        }}
+                                    <Image
+                                        imageSrc={physioterapy.images[1].src}
+                                        imageAlt={physioterapy.images[1].alt}
+                                        imageAuthor={physioterapy.images[1].author}
+                                        imageHref={physioterapy.images[1].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph heading'>
@@ -161,19 +145,11 @@ const ServicesPhysioterapyPartial = () => {
                                     <strong>Kinesiotaping</strong> czyli <strong>plastrowanie dynamiczne</strong>. Technika fizjoterapeutyczna polegająca na naklejaniu na ciało zgodnie z określonymi zasadami specjalnych taśm. Powodują one regulację napięcia mięśniowego w miejscu aplikacji, zmniejszając ból, ograniczając nadwrażliwość na dotyk, zwiększając zakres ruchu i siłę mięśni oraz zmniejszyć obrzęki w miejscu aplikacji.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={physioterapy.servicesPhysioterapyElasticTherapeuticTape}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '400px'
-                                        }}
+                                    <Image
+                                        imageSrc={physioterapy.images[2].src}
+                                        imageAlt={physioterapy.images[2].alt}
+                                        imageAuthor={physioterapy.images[2].author}
+                                        imageHref={physioterapy.images[2].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph'>

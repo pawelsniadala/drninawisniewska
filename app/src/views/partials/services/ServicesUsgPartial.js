@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -15,6 +14,7 @@ import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
 import CardTechnology from '../../../components/CardTechnology';
 import ListBulleted from '../../../components/ListBulleted';
+import Image from '../../../components/Image';
 
 import { services, usg } from '../../../data/services';
 import { team } from '../../../data/team';
@@ -86,22 +86,14 @@ const ServicesUsgPartial = () => {
 
                             <Box marginBottom={3}>
                                 <Typography className='paragraph'>
-                                    <strong>USG</strong> - specjalistyczne nieinwazyjne badanie obrazowe tkanek miękkich w czasie rzeczywistym wykorzystujące fale ultradźwiękowe.
+                                    <strong>USG</strong> to specjalistyczne nieinwazyjne badanie obrazowe tkanek miękkich w czasie rzeczywistym wykorzystujące fale ultradźwiękowe.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={usg.image}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '400px'
-                                        }}
+                                    <Image
+                                        imageSrc={usg.images[0].src}
+                                        imageAlt={usg.images[0].alt}
+                                        imageAuthor={usg.images[0].author}
+                                        imageHref={usg.images[0].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph heading'>

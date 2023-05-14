@@ -1,0 +1,42 @@
+.image {
+    .lazy-load-image {
+        height: 100%;
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .description {
+        padding-top: .75rem;
+
+        &.hide {
+            display: none;
+        }
+
+        .source {
+            color: #606060;
+            font-size: .85rem;
+            font-family: "Roboto", sans-serif;
+            font-weight: 300;
+
+            .dot-divider {
+                padding: 0 4px;
+            }
+
+            .author {
+                font-weight: 300;
+                color: #606060;
+                font-size: .85rem;
+
+                &.link {
+                    text-decoration: none;
+
+                    &:hover {
+                        color: #535353;
+                    }
+                }
+            }
+        }
+    }
+}

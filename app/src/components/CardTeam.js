@@ -30,7 +30,7 @@ const CardTeam = ({
                         width={1}
                         src={cardBackground}
                         alt={cardTitle}
-                        effect='blur'
+                        effect='none'
                     />
                 ) : (
                     <Box className='card-background-color' />

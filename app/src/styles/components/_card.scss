@@ -344,10 +344,16 @@
             }
         }
 
-        .card-background {
+        span {
+            background-color: #e3e3e3;
             height: 130px;
-            object-fit: cover;
-            object-position: center;
+
+            .card-background {
+                height: 130px;
+                object-fit: cover;
+                object-position: center;
+                filter: brightness(.95);
+            }
         }
 
         .card-background-color {

@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import { styled } from '@mui/material/styles';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
@@ -14,7 +13,6 @@ import TableCell, { tableCellClasses } from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TableContainer from '@mui/material/TableContainer';
-// import Paper from '@mui/material/Paper';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
@@ -22,6 +20,7 @@ import CardTeam from '../../../components/CardTeam';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
+import Image from '../../../components/Image';
 
 import { services, allergology } from '../../../data/services';
 import { team } from '../../../data/team';
@@ -329,19 +328,11 @@ const ServicesAllergologyPartial = () => {
                                     Badanie przeprowadza się na wewnętrznej części przedramienia lub skórze pleców. Przebieg testów polega na naniesieniu kropli różnych zawiesin z alergenami z zestawu przesiewowego zawierającego takie substancje uczulające jak <strong>rośliny wiatropylne</strong>, <strong>trawy</strong>, <strong>pleśnie</strong>, <strong>sierść zwierząt</strong>, <strong>jad owadów</strong> czy <strong>roztocza kurzu domowego</strong>.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={allergology.image}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '400px',
-                                        }}
+                                    <Image
+                                        imageSrc={allergology.images[0].src}
+                                        imageAlt={allergology.images[0].alt}
+                                        imageAuthor={allergology.images[0].author}
+                                        imageHref={allergology.images[0].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph'>
@@ -362,6 +353,14 @@ const ServicesAllergologyPartial = () => {
                                 <Typography className='paragraph'>
                                     Każdy zestaw testów TRUE TEST składa się z trzech paneli po 12 płatków, które <strong>zawierają 35 substancji testujących</strong>.
                                 </Typography>
+                                <Box marginBottom={3} marginTop={3}>
+                                    <Image
+                                        imageSrc={allergology.images[1].src}
+                                        imageAlt={allergology.images[1].alt}
+                                        imageAuthor={allergology.images[1].author}
+                                        imageHref={allergology.images[1].href}
+                                    />
+                                </Box>
                                 <Typography className='paragraph'>
                                     Aby odczyt był najdokładniejszy plastry należy usunąć po upływie 48 godzin. Reakcje należy ocenić po usunięciu plastra i ponownie po 1-2 dniach, ponieważ w tym czasie ustępują łagodne podrażnienia skóry i rozwijają się w pełni reakcje alergiczne. Odczytu dokonujemy przy użyciu wzorca dołączonego do każdego testu. Siarczan neomycyny i parafenylenodiamina powodują czasami reakcje, które ujawniają się dopiero po 4-5 dniach od aplikacji testu. Pacjenci powinni być o tym poinformowani. Należy zweryfikować opóźnioną reakcję podczas dodatkowej wizyty u lekarza.
                                 </Typography>
@@ -471,6 +470,14 @@ const ServicesAllergologyPartial = () => {
                                 <Typography className='paragraph'>
                                     Odczulanie ma na celu zmniejszyć wrażliwość organizmu na dany czynnik alergizujący, co w następstwie redukuje uciążliwe objawy alergii. Polega ono na podawaniu coraz to większych stężeń alergenu w szczepionce co stopniowo zmniejsza wrażliwość organizmu na hapteny uczulające. Dawka wyciągu alergennego wynosi od 5 do 20 μg podanego w iniekcji podskórnej.
                                 </Typography>
+                                <Box marginBottom={3} marginTop={3}>
+                                    <Image
+                                        imageSrc={allergology.images[2].src}
+                                        imageAlt={allergology.images[2].alt}
+                                        imageAuthor={allergology.images[2].author}
+                                        imageHref={allergology.images[2].href}
+                                    />
+                                </Box>
                                 <Typography className='paragraph'>
                                     Odczulanie jest procesem czasochłonnym. Zajmuje od 3 do 5 lat. Immunoterapia swoista jest szczególnie skuteczna w przypadku alergii na jad owadów bąkoskrzydłych, pyłki roślinne oraz roztocza kurzu domowego. Odczulania nie stosuje się w przypadku alergii pokarmowych.
                                 </Typography>

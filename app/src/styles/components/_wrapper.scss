@@ -5,13 +5,13 @@ html, body, #root, .app {
 }
 
 body {
-    overflow-x: hidden;
+    // overflow-x: hidden;
     background-color: #f5f5f5;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
+// body::-webkit-scrollbar {
+    // display: none;
+// }
 
 main {
     flex: 1 1;

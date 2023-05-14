@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -15,6 +14,7 @@ import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
 import CardTechnology from '../../../components/CardTechnology';
 import ListBulleted from '../../../components/ListBulleted';
+import Image from '../../../components/Image';
 
 import { services, aestheticMedicine } from '../../../data/services';
 import { team } from '../../../data/team';
@@ -92,19 +92,11 @@ const ServicesAestheticMedicinePartial = () => {
                                     <strong>Toksyna botulinowa</strong> to jedna z najbardziej popularnych metod <strong>redukcji zmarszczek mimicznych</strong>, które pojawiają się w związku z  powtarzającymi się skurczami mięśni twarzy. Zabieg  pozwala  szybko spłycić  zmarszczki  mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy  nadmierna kurczliwość.
                                 </Typography>
                                 <Box marginBottom={3} marginTop={3}>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={aestheticMedicine.image}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '400px',
-                                        }}
+                                    <Image
+                                        imageSrc={aestheticMedicine.images[0].src}
+                                        imageAlt={aestheticMedicine.images[0].alt}
+                                        imageAuthor={aestheticMedicine.images[0].author}
+                                        imageHref={aestheticMedicine.images[0].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph heading'>
@@ -433,12 +425,21 @@ const ServicesAestheticMedicinePartial = () => {
                                 <Typography className='paragraph'>
                                     <strong>Kolagen</strong> to najważniejsze <strong>włókno podporowe skóry</strong>, które sprawia, że jest ona gładka, napięta i odpowiednio nawilżona. Można porównać go do <strong>rusztowania skóry</strong>. Wraz z upływem czasu staje się on coraz słabszy i mniej stabilny. Delikatna, pozbawiona sprężystości i gęstości skóra łatwo ulega "sile grawitacji" w wyniku czego powieki opadają, a owal twarzy zniekształca się poprzez pojawienie się "chomików" i "obwisłych" podbródków. Możemy temu <strong>przeciwdziałać</strong>. Najlepszym sposobem w walce z utratą kolagenu jest uzupełnianie jego niedoborów i zniwelowanie efektów jego ubytku.
                                 </Typography>
+                                <Box marginBottom={3} marginTop={3}>
+                                    <Image
+                                        imageSrc={aestheticMedicine.images[1].src}
+                                        imageAlt={aestheticMedicine.images[1].alt}
+                                        imageAuthor={aestheticMedicine.images[1].author}
+                                        imageHref={aestheticMedicine.images[1].href}
+                                    />
+                                </Box>
                                 <Typography className='paragraph'>
                                     Zabieg LINERASE może być bezpiecznie stosowany bez względu na wiek, nawet u bardzo młodych osób. Cerom dojrzałym dla odzyskania <strong>utraconej jędrności i gęstości skóry</strong>, leczniczo w celu <strong>redukcji rozstępów</strong>, czy też <strong>blizn</strong> w każdym wieku.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     <strong>Wysoki profil bezpieczeństwa</strong> i <strong>delikatność</strong> produktu LINERASE pozwala na jego zastosowanie w każdej, nawet najdelikatniejszej okolicy twarzy, jak i całego ciała. Szczególnie zalecany jest do stosowania w okolicy oczu, ust, dekolcie, szyi, brzucha i powierzchni rąk.
                                 </Typography>
+
                                 <Typography className='paragraph'>
                                     Biomateriał LINERASE stanowi nową kategorię stymulatora do <strong>rekonstrukcji i odbudowy tkanek</strong>. Tworząc optymalne warunki fizjologiczne do wytwarzania nowego kolagenu, terapia LINERASE wykazała wysoką skuteczność w: regeneracji i odbudowie ubytków skórnych, leczeniu blizn, rozstępów, spłyceniu drobnych zmarszczek, redukcji wiotkości skóry oraz poprawie elastyczności, sprężystości i gęstości skóry twarzy oraz całego ciała.
                                 </Typography>
@@ -554,6 +555,7 @@ const ServicesAestheticMedicinePartial = () => {
                                 </Box>
                             </Box>
                         </Box>
+
                         <Box className='proposed-services'>
                             <Box className='header-wrapper'>
                                 <Typography className='header'>
