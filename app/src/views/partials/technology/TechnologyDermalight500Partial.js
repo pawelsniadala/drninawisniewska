@@ -53,7 +53,7 @@ const TechnologyDermalight500Partial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper technology'>
                         <Box className='technology-description'>
-                            <Box marginBottom={3}>
+                            <Box className='box-technology'>
                                 <Typography className='paragraph'>
                                     Urządzeniem Dermalight 500 służy do fototerapii <strong>PUVA-bath</strong>. Metoda ta najczęściej wykorzystywana jest w terapii dłoni oraz stóp. PUVA stosuje się przy podobnych dermatozach jak przy UVB, np. przy <strong>łuszczycy krostkowej dłoni i stóp</strong>, <strong>atopowym zapaleniu skóry</strong> czy <strong>wyprysku dłoni</strong>.
                                 </Typography>
@@ -68,22 +68,25 @@ const TechnologyDermalight500Partial = () => {
                                 </Typography>
                             </Box>
                         </Box>
-                        <Box className='proposed-technology'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostały sprzęt
-                                </Typography>
-                            </Box>
-                            <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'dermalight500').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.imageSmall}
-                                        cardPath={item.path}
-                                    />
-                                ))}
+
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed technology'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostały sprzęt
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {technology.filter(item => item.designation !== 'dermalight500').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.imageSmall}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>

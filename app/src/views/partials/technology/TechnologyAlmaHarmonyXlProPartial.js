@@ -55,7 +55,7 @@ const TechnologyAlmaHarmonyXlProPartial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper technology'>
                         <Box className='technology-description'>
-                            <Box marginBottom={3}>
+                            <Box className='box-technology'>
                                 <Typography className='paragraph'>
                                     <strong>Harmony XL Pro</strong> to platforma laserowa najnowszej generacji, produkt izraelskiej firmy Alma Lasers. Obsługuje różne typy zaawansowanych technologii laserowych i innych źródeł światła. Harmony PRO oferuje <strong>rozwiązanie na większość problemów estetycznych</strong> i <strong>dermatologicznych</strong>.
                                 </Typography>
@@ -153,22 +153,25 @@ const TechnologyAlmaHarmonyXlProPartial = () => {
                                 </Grid>
                             </Box>
                         </Box>
-                        <Box className='proposed-technology'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostały sprzęt
-                                </Typography>
-                            </Box>
-                            <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'almaHarmonyXlPro').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.imageSmall}
-                                        cardPath={item.path}
-                                    />
-                                ))}
+
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed technology'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostały sprzęt
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {technology.filter(item => item.designation !== 'almaHarmonyXlPro').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.imageSmall}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>

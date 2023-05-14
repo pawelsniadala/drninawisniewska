@@ -57,11 +57,11 @@ const TechnologyVectusPartial = () => {
                     <Container className='body-wrapper technology'>
                         <Box className='technology-description'>
 
-                            <Box marginBottom={3}>
+                            <Box className='box-technology'>
                                 <Typography className='paragraph'>
                                     <strong>Vectus™</strong> to produkt amerykańskiej firmy <strong>Polmar</strong>, która stworzyła pierwszą na świecie technologię laserowego usuwania owłosienia, do dziś chronioną patentem. Vectus™ jest owocem trwających kilkanaście lat doświadczeń i badań nad udoskonaleniem systemu lasera diodowego. Wykorzystano w nim wiele nowatorskich rozwiązań decydujących o wyjątkowej skuteczności, bezpieczeństwie i komforcie pacjenta.
                                 </Typography>
-                                <Box marginBottom={3} marginTop={3}>
+                                <Box className='box-image'>
                                     <LazyLoadImage
                                         height={'100%'}
                                         width={'100%'}
@@ -170,22 +170,25 @@ const TechnologyVectusPartial = () => {
                                 </Typography>
                             </Box>
                         </Box>
-                        <Box className='proposed-technology'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostały sprzęt
-                                </Typography>
-                            </Box>
-                            <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'vectus').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.imageSmall}
-                                        cardPath={item.path}
-                                    />
-                                ))}
+
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed technology'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostały sprzęt
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {technology.filter(item => item.designation !== 'vectus').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.imageSmall}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>

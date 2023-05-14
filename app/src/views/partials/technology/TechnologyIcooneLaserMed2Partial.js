@@ -56,11 +56,11 @@ const TechnologyIcooneLaserMed2Partial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper technology'>
                         <Box className='technology-description'>
-                            <Box marginBottom={3}>
+                            <Box className='box-technology'>
                                 <Typography className='paragraph'>
                                     <strong>Projekt Icoone<sup>®</sup> </strong> jest inspirowany intuicją <strong>profesora Jean-Claude'a Guimberteau</strong>, specjalisty w dziedzinie chirurgii rekonstrukcyjnej, który poświęcił wiele lat na obserwację skóry w zakresie struktury tkanki łącznej. Guimberteau wykazał, że <strong>skóra musi być pojmowana jako żywa</strong>, <strong>ciągła materia</strong>, a tkanka podskórna składa się z sieci <strong>mikrowakuoli</strong>, które tworzą funkcjonalną jednostkę struktury tkanki. Ta nowa wizja całkowicie zastępuje tradycyjną koncepcję tkanki warstwowej, a tym samym narzuca potrzebę nowego sposobu leczenia skóry.
                                 </Typography>
-                                <Box marginBottom={3} marginTop={3}>
+                                <Box className='box-image'>
                                     <LazyLoadImage
                                         height={'100%'}
                                         width={'100%'}
@@ -145,22 +145,25 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                 </Grid>
                             </Box>
                         </Box>
-                        <Box className='proposed-technology'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostały sprzęt
-                                </Typography>
-                            </Box>
-                            <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'icooneLaserMed2').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.imageSmall}
-                                        cardPath={item.path}
-                                    />
-                                ))}
+
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed technology'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostały sprzęt
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {technology.filter(item => item.designation !== 'icooneLaserMed2').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.imageSmall}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>

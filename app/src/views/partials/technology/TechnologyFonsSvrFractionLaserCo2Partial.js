@@ -56,11 +56,11 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper technology'>
                         <Box className='technology-description'>
-                            <Box marginBottom={3}>
+                            <Box className='box-technology'>
                                 <Typography className='paragraph'>
                                     <strong>Laser frakcyjny FONS SVR™</strong> jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci <strong>likwidacji blizn potrądzikowych</strong>, <strong>poprawy jakości skóry</strong> i <strong>wytworzenia nowych struktur kolagenu</strong>.
                                 </Typography>
-                                <Box marginBottom={3} marginTop={3}>
+                                <Box className='box-image'>
                                     <LazyLoadImage
                                         height={'100%'}
                                         width={'100%'}
@@ -154,22 +154,24 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                 </Grid>
                             </Box>
                         </Box>
-                        <Box className='proposed-technology'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostały sprzęt
-                                </Typography>
-                            </Box>
-                            <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'fonsSvrLaserFrakcyjnyCo2').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.imageSmall}
-                                        cardPath={item.path}
-                                    />
-                                ))}
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed technology'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostały sprzęt
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {technology.filter(item => item.designation !== 'fonsSvrLaserFrakcyjnyCo2').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.imageSmall}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>

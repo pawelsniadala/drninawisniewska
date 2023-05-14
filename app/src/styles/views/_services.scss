@@ -3,10 +3,8 @@
         .body-wrapper {
             &.services {
                 display: grid;
-                // gap: 1.5rem;
                 gap: 3rem;
                 grid-template-columns: repeat(3, 1fr);
-                // overflow: hidden;
 
                 @media (max-width: 991.98px) {
                     grid-template-columns: 1fr;
@@ -150,7 +148,6 @@
                                 display: none;
                             }
                         }
-
                     }
                 }
             }

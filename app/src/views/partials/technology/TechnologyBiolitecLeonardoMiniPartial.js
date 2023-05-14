@@ -56,11 +56,11 @@ const TechnologyBiolitecLeonardoMiniPartial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper technology'>
                         <Box className='technology-description'>
-                            <Box marginBottom={3}>
+                            <Box className='box-technology'>
                                 <Typography className='paragraph'>
                                     Laser Biolitec<sup>®</sup> Leonardo<sup>®</sup> Mini współpracuje z szerokim spektrum specjalnych światłowódów i zestawów aplikacyjnych opracowanych przez Biolitec<sup>®</sup>.
                                 </Typography>
-                                <Box marginBottom={3} marginTop={3}>
+                                <Box className='box-image'>
                                     <LazyLoadImage
                                         height={'100%'}
                                         width={'100%'}
@@ -131,22 +131,25 @@ const TechnologyBiolitecLeonardoMiniPartial = () => {
                                 </Grid>
                             </Box>
                         </Box>
-                        <Box className='proposed-technology'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostały sprzęt
-                                </Typography>
-                            </Box>
-                            <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'biolitecLeonardoMini').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.imageSmall}
-                                        cardPath={item.path}
-                                    />
-                                ))}
+
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed technology'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostały sprzęt
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {technology.filter(item => item.designation !== 'biolitecLeonardoMini').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.imageSmall}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>

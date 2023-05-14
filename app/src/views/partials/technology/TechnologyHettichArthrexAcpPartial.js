@@ -56,11 +56,11 @@ const TechnologyHettichArthrexAcpPartial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper technology'>
                         <Box className='technology-description'>
-                            <Box marginBottom={3}>
+                            <Box className='box-technology'>
                                 <Typography className='paragraph'>
                                     Osocze bogatopłytkowe to zabieg modny i tani. Ale czy działa? to pytanie słyszę prawie codziennie. No właśnie działa czy nie? Odpowiedź jest prosta. Nie każde osocze działa! Wynika to z faktu, że niektórzy pracują na zwykłych, niesterylnych probówkach, bez certyfikatów a ilość odwirowanych płytek krwi jest znikoma. Wybrałam system Arthrex, gdyż nie wymaga żadnych koagulantów, jest to system bezpieczny i o bardzo dużej koncentracji płytek krwi. Z jednego pobrania krwi otrzymuję 6-7 ml osocza co oznacza 3 strzykawki samych płytek krwi z licznymi czynnikami wzrostu. W trakcie jednego zabiegu w cenie 700 możemy ostrzyknąć aż 3-4 okolice (twarz, szyja, dekolt, skóra głowy, rozstępy, blizny).
                                 </Typography>
-                                <Box marginBottom={3} marginTop={3}>
+                                <Box className='box-image'>
                                     <LazyLoadImage
                                         height={'100%'}
                                         width={'100%'}
@@ -119,22 +119,25 @@ const TechnologyHettichArthrexAcpPartial = () => {
                                 </Typography>
                             </Box>
                         </Box>
-                        <Box className='proposed-technology'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostały sprzęt
-                                </Typography>
-                            </Box>
-                            <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'hettichArthrexAcp').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.imageSmall}
-                                        cardPath={item.path}
-                                    />
-                                ))}
+
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed technology'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostały sprzęt
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {technology.filter(item => item.designation !== 'hettichArthrexAcp').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.imageSmall}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>

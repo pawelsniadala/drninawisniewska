@@ -55,11 +55,14 @@ const TechnologyDermalight1000UvaUvb311nmPartial = () => {
                 <Box className='view-body'>
                     <Container className='body-wrapper technology'>
                         <Box className='technology-description'>
-                            <Box marginBottom={3}>
+                            <Box className='box-technology'>
                                 <Typography className='paragraph'>
                                     Na pierwszej wizycie dermatologicznej, lekarz kwalifikuje pacjenta do naświetlań, ustala cały plan fototerapii i dawki według aktualnych wytycznych Polskiego Towarzystwa Dermatologicznego.
                                 </Typography>
-                                <Typography variant={'h5'} className='header alternative'>
+                            </Box>
+
+                            <Box className='box-technology'>
+                                <Typography variant={'h5'} className='header'>
                                     Lampa UVB 311nm
                                 </Typography>
                                 <Typography className='paragraph heading'>
@@ -118,8 +121,8 @@ const TechnologyDermalight1000UvaUvb311nmPartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box marginBottom={3}>
-                                <Typography variant={'h5'} className='header alternative'>
+                            <Box className='box-technology'>
+                                <Typography variant={'h5'} className='header'>
                                     Lampa UVA - metoda PUVA Bath
                                 </Typography>
                                 <Typography className='paragraph'>
@@ -165,22 +168,25 @@ const TechnologyDermalight1000UvaUvb311nmPartial = () => {
                                 </Grid>
                             </Box>
                         </Box>
-                        <Box className='proposed-technology'>
-                            <Box className='header-wrapper'>
-                                <Typography className='header'>
-                                    Pozostały sprzęt
-                                </Typography>
-                            </Box>
-                            <Box className='card-wrapper technology-proposed'>
-                                {technology.filter(item => item.designation !== 'dermalight1000UvaUvb311nm').map((item) => (
-                                    <CardProposed
-                                        key={item.id}
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardImage={item.imageSmall}
-                                        cardPath={item.path}
-                                    />
-                                ))}
+
+                        <Box className='proposed-wrapper'>
+                            <Box className='box-proposed technology'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostały sprzęt
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {technology.filter(item => item.designation !== 'dermalight1000UvaUvb311nm').map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.imageSmall}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
                     </Container>
