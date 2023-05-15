@@ -122,6 +122,33 @@ const ServicesAestheticMedicinePartial = () => {
 
                             <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
+                                    Kolagen
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    <strong>Kolagen</strong> to najważniejsze <strong>włókno podporowe skóry</strong>, które sprawia, że jest ona gładka, napięta i odpowiednio nawilżona. Można porównać go do <strong>rusztowania skóry</strong>. Wraz z upływem czasu staje się on coraz słabszy i mniej stabilny. Delikatna, pozbawiona sprężystości i gęstości skóra łatwo ulega "sile grawitacji" w wyniku czego powieki opadają, a owal twarzy zniekształca się poprzez pojawienie się "chomików" i "obwisłych" podbródków. Możemy temu <strong>przeciwdziałać</strong>. Najlepszym sposobem w walce z utratą kolagenu jest uzupełnianie jego niedoborów i zniwelowanie efektów jego ubytku.
+                                </Typography>
+                                <Box className='box-image'>
+                                    <Image
+                                        imageSrc={aestheticMedicine.images[1].src}
+                                        imageAlt={aestheticMedicine.images[1].alt}
+                                        imageAuthor={aestheticMedicine.images[1].author}
+                                        imageHref={aestheticMedicine.images[1].href}
+                                    />
+                                </Box>
+                                <Typography className='paragraph'>
+                                    Zabieg LINERASE może być bezpiecznie stosowany bez względu na wiek, nawet u bardzo młodych osób. Cerom dojrzałym dla odzyskania <strong>utraconej jędrności i gęstości skóry</strong>, leczniczo w celu <strong>redukcji rozstępów</strong>, czy też <strong>blizn</strong> w każdym wieku.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    <strong>Wysoki profil bezpieczeństwa</strong> i <strong>delikatność</strong> produktu LINERASE pozwala na jego zastosowanie w każdej, nawet najdelikatniejszej okolicy twarzy, jak i całego ciała. Szczególnie zalecany jest do stosowania w okolicy oczu, ust, dekolcie, szyi, brzucha i powierzchni rąk.
+                                </Typography>
+
+                                <Typography className='paragraph'>
+                                    Biomateriał LINERASE stanowi nową kategorię stymulatora do <strong>rekonstrukcji i odbudowy tkanek</strong>. Tworząc optymalne warunki fizjologiczne do wytwarzania nowego kolagenu, terapia LINERASE wykazała wysoką skuteczność w: regeneracji i odbudowie ubytków skórnych, leczeniu blizn, rozstępów, spłyceniu drobnych zmarszczek, redukcji wiotkości skóry oraz poprawie elastyczności, sprężystości i gęstości skóry twarzy oraz całego ciała.
+                                </Typography>
+                            </Box>
+
+                            <Box className='box-service'>
+                                <Typography variant={'h5'} className='header'>
                                     ABO Liquid
                                 </Typography>
                                 <Typography className='paragraph'>
@@ -392,33 +419,6 @@ const ServicesAestheticMedicinePartial = () => {
                                         />
                                     ))}
                                 </Grid>
-                            </Box>
-
-                            <Box className='box-service'>
-                                <Typography variant={'h5'} className='header'>
-                                    Kolagen
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    <strong>Kolagen</strong> to najważniejsze <strong>włókno podporowe skóry</strong>, które sprawia, że jest ona gładka, napięta i odpowiednio nawilżona. Można porównać go do <strong>rusztowania skóry</strong>. Wraz z upływem czasu staje się on coraz słabszy i mniej stabilny. Delikatna, pozbawiona sprężystości i gęstości skóra łatwo ulega "sile grawitacji" w wyniku czego powieki opadają, a owal twarzy zniekształca się poprzez pojawienie się "chomików" i "obwisłych" podbródków. Możemy temu <strong>przeciwdziałać</strong>. Najlepszym sposobem w walce z utratą kolagenu jest uzupełnianie jego niedoborów i zniwelowanie efektów jego ubytku.
-                                </Typography>
-                                <Box className='box-image'>
-                                    <Image
-                                        imageSrc={aestheticMedicine.images[1].src}
-                                        imageAlt={aestheticMedicine.images[1].alt}
-                                        imageAuthor={aestheticMedicine.images[1].author}
-                                        imageHref={aestheticMedicine.images[1].href}
-                                    />
-                                </Box>
-                                <Typography className='paragraph'>
-                                    Zabieg LINERASE może być bezpiecznie stosowany bez względu na wiek, nawet u bardzo młodych osób. Cerom dojrzałym dla odzyskania <strong>utraconej jędrności i gęstości skóry</strong>, leczniczo w celu <strong>redukcji rozstępów</strong>, czy też <strong>blizn</strong> w każdym wieku.
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    <strong>Wysoki profil bezpieczeństwa</strong> i <strong>delikatność</strong> produktu LINERASE pozwala na jego zastosowanie w każdej, nawet najdelikatniejszej okolicy twarzy, jak i całego ciała. Szczególnie zalecany jest do stosowania w okolicy oczu, ust, dekolcie, szyi, brzucha i powierzchni rąk.
-                                </Typography>
-
-                                <Typography className='paragraph'>
-                                    Biomateriał LINERASE stanowi nową kategorię stymulatora do <strong>rekonstrukcji i odbudowy tkanek</strong>. Tworząc optymalne warunki fizjologiczne do wytwarzania nowego kolagenu, terapia LINERASE wykazała wysoką skuteczność w: regeneracji i odbudowie ubytków skórnych, leczeniu blizn, rozstępów, spłyceniu drobnych zmarszczek, redukcji wiotkości skóry oraz poprawie elastyczności, sprężystości i gęstości skóry twarzy oraz całego ciała.
-                                </Typography>
                             </Box>
 
                             <Box className='box-service'>
