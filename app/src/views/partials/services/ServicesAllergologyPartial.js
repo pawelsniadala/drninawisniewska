@@ -373,7 +373,9 @@ const ServicesAllergologyPartial = () => {
                                                 aria-expanded='false'
                                                 aria-controls='collapseOne'
                                             >
-                                                <Typography>Panel 1.1</Typography>
+                                                <Typography className='accordion-heading'>
+                                                    Panel 1.1
+                                                </Typography>
                                             </button>
                                         </h2>
                                         <Box
@@ -396,7 +398,9 @@ const ServicesAllergologyPartial = () => {
                                                 aria-expanded='false'
                                                 aria-controls='collapseTwo'
                                             >
-                                                <Typography>Panel 2.2</Typography>
+                                                <Typography className='accordion-heading'>
+                                                    Panel 2.2
+                                                </Typography>
                                             </button>
                                         </h2>
                                         <Box
@@ -419,7 +423,7 @@ const ServicesAllergologyPartial = () => {
                                                 aria-expanded='false'
                                                 aria-controls='collapseThree'
                                             >
-                                                <Typography>
+                                                <Typography className='accordion-heading'>
                                                     Panel 3.3
                                                 </Typography>
                                             </button>

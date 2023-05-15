@@ -5,6 +5,8 @@
 
 .accordion-body {
     padding: 0 0 12px 0;
+    color: #535353; // TODO
+    font-size: 15.5px; // TODO
 }
 
 .accordion-item {
@@ -18,12 +20,15 @@
 
 .accordion-button {
     padding: 12px 0;
-    text-transform: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    letter-spacing: 0.00938em;
-    color: rgba(0, 0, 0, 0.7);
+
+    .accordion-heading {
+        font-size: 15.5px;
+        text-transform: none;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 0.00938em;
+        color: #535353;
+        transition: color 0.3s ease-in-out;
+    }
 }
 
 .accordion-button:after {
@@ -55,9 +60,12 @@
 }
 
 .accordion-button:not(.collapsed) {
-    color: #D29A3E;
     background-color: transparent;
     box-shadow: none;
+
+    .accordion-heading {
+        color: #D29A3E;
+    }
 }
 
 .accordion-button:focus {

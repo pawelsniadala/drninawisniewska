@@ -69,7 +69,7 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseOne'
                                     >
-                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                        <Box className='accordion-heading' sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
                                             <Typography>§ 1.</Typography>
                                             <Typography>Podstawy prawne</Typography>
                                         </Box>
@@ -107,7 +107,7 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseTwo'
                                     >
-                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                       <Box className='accordion-heading' sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
                                             <Typography>§ 2.</Typography>
                                             <Typography>Cele i zadania</Typography>
                                         </Box>
@@ -147,7 +147,7 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseThree'
                                     >
-                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                       <Box className='accordion-heading' sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
                                             <Typography>§ 3.</Typography>
                                             <Typography>Struktura organizacyjna</Typography>
                                         </Box>
@@ -192,7 +192,7 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseFour'
                                     >
-                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                       <Box className='accordion-heading' sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
                                             <Typography>§ 4.</Typography>
                                             <Typography>Rodzaj działalności leczniczej oraz zakres udzielanych świadczeń zdrowotnych</Typography>
                                         </Box>
@@ -221,7 +221,7 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseFive'
                                     >
-                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                       <Box className='accordion-heading' sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
                                             <Typography>§ 5.</Typography>
                                             <Typography>Miejsce udzielania świadczeń zdrowotnych</Typography>
                                         </Box>
@@ -250,7 +250,7 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseSix'
                                     >
-                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                       <Box className='accordion-heading' sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
                                             <Typography>§ 6.</Typography>
                                             <Typography>Organizacja i przebieg procesu udzielania świadczeń zdrowotnych</Typography>
                                         </Box>
@@ -289,7 +289,7 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseSeven'
                                     >
-                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                       <Box className='accordion-heading' sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
                                             <Typography>§ 7.</Typography>
                                             <Typography>Sposób kierowania</Typography>
                                         </Box>
@@ -327,7 +327,7 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseEight'
                                     >
-                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                       <Box className='accordion-heading' sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
                                             <Typography>§ 8.</Typography>
                                             <Typography>Udostępnianie dokumentacji medycznej</Typography>
                                         </Box>
@@ -371,7 +371,7 @@ const ClinicRegulationPartial = () => {
                                         aria-expanded='false'
                                         aria-controls='collapseNine'
                                     >
-                                        <Box sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
+                                       <Box className='accordion-heading' sx={{ display: 'grid', gridTemplateColumns: '2rem 1fr', marginRight: '.5rem' }}>
                                             <Typography>§ 9.</Typography>
                                             <Typography>Przepisy końcowe</Typography>
                                         </Box>
