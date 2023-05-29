@@ -464,7 +464,7 @@ const ServicesAllergologyPartial = () => {
                                 </Typography>
                             </Box>
                         </Box>
-                        
+
                         <Box className='proposed-wrapper'>
                             <Box className='box-proposed'>
                                 <Box className='header-wrapper'>

@@ -18,6 +18,7 @@ import aleksandraGorczynskaImage from '../assets/team/aleksandraGorczynska/aleks
 import agataSkwerekSzewczykImage from '../assets/team/agataSkwerekSzewczyk/agataSkwerekSzewczykImage.jpg';
 import katarzynaRychlikImage from  '../assets/team/katarzynaRychlik/katarzynaRychlikImage.jpg';
 import patrykKrokwinskiImage from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImage.jpg';
+import michalRadzioImage from  '../assets/team/michalRadzio/michalRadzioImage.jpg';
 
 export const ninaWisniewska = {
     id: '4d6a6ec4-ea93-40b5-9d23-cb7204c6911e',
@@ -299,6 +300,20 @@ export const patrykKrokwinski = {
     specialist: 'patryk-krokwinski'
 };
 
+export const michalRadzio = {
+    id: '19cf6af2-bb99-4c99-8e2f-9c6090c55c8f',
+    name: 'lek. med. Michał Radzio',
+    speciality: 'Specjalista chorób wewnętrznych i kardiologii',
+    summary: false,
+    education: 'Absolwent I Wydziału Lekarskiego Akademii Medycznej w Warszawie.',
+    experience: 'Lek. med. Michał Radzio na co dzień zajmuje się diagnostyką i leczeniem szerokiej gamy schorzeń z zakresu chorób wewnętrznych oraz chorób układu krążenia. Od 1999 roku pracuje na Oddziale Kardiologicznym oraz w Poradni Kardiologicznej przyszpitalnej SPZZOZ w Wyszkowie. Obecnie pełni również funkcję zastępcy ordynatora oddziału Kardiologicznego w Wyszkowie. Prócz konsultacji kardiologicznych świadczy usługi badania echokardiografii przezklatkowej oraz EKG spoczynkowe z opisem.',
+    interested: false,
+    image: michalRadzioImage,
+    background: false,
+    specialization: ['cardiology'],
+    specialist: 'michal-radzio'
+};
+
 export const team = [
     { ...ninaWisniewska },
     { ...justynaFilipek },
@@ -319,5 +334,6 @@ export const team = [
     { ...aleksandraGorczynska },
     { ...kamilStepkowski },
     { ...katarzynaRychlik },
-    { ...patrykKrokwinski }
+    { ...patrykKrokwinski },
+    { ...michalRadzio }
 ];

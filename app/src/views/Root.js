@@ -24,6 +24,7 @@ import ServicesOrthopedicsPartial from './partials/services/ServicesOrthopedicsP
 import ServicesVascularSurgeryPartial from './partials/services/ServicesVascularSurgeryPartial';
 import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
 import ServicesRheumatologyPartial from './partials/services/ServicesRheumatologyPartial';
+import ServicesCardiologyPartial from './partials/services/ServicesCardiologyPartial';
 import PricesView from './PricesView';
 import PricesDermatologyPartial from './partials/prices/PricesDermatologyPartial';
 import PricesAestheticMedicinePartial from './partials/prices/PricesAestheticMedicinePartial';
@@ -38,6 +39,7 @@ import PricesOrthopedicsPartial from './partials/prices/PricesOrthopedicsPartial
 import PricesVascularSurgeryPartial from './partials/prices/PricesVascularSurgeryPartial';
 import PricesClinicalDietitianPartial from './partials/prices/PricesClinicalDietitianPartial';
 import PricesRheumatologyPartial from './partials/prices/PricesRheumatologyPartial';
+import PricesCardiologyPartial from './partials/prices/PricesCardiologyPartial';
 import SpecialOfferView from './SpecialOfferView';
 import TeamView from './TeamView';
 import TeamSpecializationPartial from './partials/team/TeamSpecializationPartial';
@@ -84,6 +86,7 @@ const Root = () => (
                     <Route path='/services/vascular-surgery' element={<ServicesVascularSurgeryPartial />} />
                     <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial />} />
                     <Route path='/services/rheumatology' element={<ServicesRheumatologyPartial />} />
+                    <Route path='/services/cardiology' element={<ServicesCardiologyPartial />} />
                     <Route path='/prices' element={<PricesView />}>
                         <Route path='/prices' element={<PricesDermatologyPartial />} />
                         <Route path='/prices/aesthetic-medicine' element={<PricesAestheticMedicinePartial />} />
@@ -98,6 +101,7 @@ const Root = () => (
                         <Route path='/prices/vascular-surgery' element={<PricesVascularSurgeryPartial />} />
                         <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartial />} />
                         <Route path='/prices/rheumatology' element={<PricesRheumatologyPartial />} />
+                        <Route path='/prices/cardiology' element={<PricesCardiologyPartial />} />
                     </Route>
                     <Route path='/special-offer' element={<SpecialOfferView />} />
                     <Route path='/team' element={<TeamView />}>

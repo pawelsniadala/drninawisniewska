@@ -61,6 +61,10 @@
                         &.heading {
                             margin-top: 16px;
                         }
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
                     }
 
                     .list-item-avatar {

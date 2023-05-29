@@ -35,6 +35,9 @@ import servicesVascularSurgery0 from '../assets/services/vascularSurgery/service
 import servicesClinicalDietitian0 from '../assets/services/clinicalDietitian/servicesClinicalDietitian0.jpg';
 
 
+import servicesCardiology0 from '../assets/services/cardiology/servicesCardiology0.jpg';
+
+
 import servicesRheumatology from '../assets/services/servicesRheumatology.jpg' // TODO
 
 import ninaWisniewskaImageSmall from '../assets/team/ninaWisniewska/ninaWisniewskaImageSmall.jpg';
@@ -57,6 +60,7 @@ import aleksandraGorczynskaImageSmall from '../assets/team/aleksandraGorczynska/
 import agataSkwerekSzewczykImageSmall from '../assets/team/agataSkwerekSzewczyk/agataSkwerekSzewczykImageSmall.jpg';
 import katarzynaRychlikImageSmall from  '../assets/team/katarzynaRychlik/katarzynaRychlikImageSmall.jpg';
 import patrykKrokwinskiImageSmall from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImageSmall.jpg';
+import michalRadzioImageSmall from  '../assets/team/michalRadzio/michalRadzioImageSmall.jpg';
 
 export const dermatology = {
     id: '554e27d9-1d9e-4041-9549-29057bb9792f',
@@ -352,6 +356,27 @@ export const rheumatology = {
     ]
 };
 
+export const cardiology = {
+    id: '0eb413c4-fe60-426b-8df4-32c706b24f37',
+    title: 'Kardiologia',
+    description: 'Kardiologia to dziedzina medycyny zajmująca się schorzeniami i wadami układu sercowo-naczyniowego, ich rozpoznawaniem i leczeniem',
+    path: '/services/cardiology',
+    pathSpecialist: '/team/cardiology',
+    pathPrices: '/prices/cardiology',
+    image: servicesCardiology0,
+    images: [
+        {
+            src: servicesCardiology0,
+            alt: 'Wykres kardiologiczny',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/zblizenie-stetoskop-na-wykresie-cardiogram_3465323.htm#query=cardiology&position=15&from_view=search&track=sph'
+        }
+    ],
+    specialists: [
+        michalRadzioImageSmall
+    ]
+};
+
 export const services = [
     { ...dermatology },
     { ...aestheticMedicine },
@@ -365,5 +390,6 @@ export const services = [
     { ...orthopedics },
     { ...vascularSurgery },
     { ...clinicalDietitian },
-    { ...rheumatology }
+    { ...rheumatology },
+    { ...cardiology },
 ];

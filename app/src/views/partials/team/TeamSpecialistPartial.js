@@ -38,7 +38,8 @@ import {
     agataSkwerekSzewczyk,
     kamilStepkowski,
     katarzynaRychlik,
-    patrykKrokwinski
+    patrykKrokwinski,
+    michalRadzio
 } from '../../../data/team';
 
 const TeamSpecialistPartial = () => {
@@ -75,6 +76,8 @@ const TeamSpecialistPartial = () => {
                 return 'Dietetyka Kliniczna';
             case 'rheumatology':
                 return 'Reumatologia';
+            case 'cardiology':
+                return 'Kardiologia';
             default:
         }
     }
@@ -121,6 +124,8 @@ const TeamSpecialistPartial = () => {
                 return [{ ...katarzynaRychlik }];
             case 'patryk-krokwinski':
                 return [{ ...patrykKrokwinski }];
+            case 'michal-radzio':
+                return [{ ...michalRadzio }];
             default:
         }
     }

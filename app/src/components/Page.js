@@ -13,6 +13,7 @@ const PageTitle = ({ children }) => {
                 return `Klinika - ${companyName}`;
             case '/clinic/regulation':
                 return `Regulamin organizacyjny - ${companyName}`;
+
             case '/services':
                 return `Specjalizacje - ${companyName}`;
             case '/services/dermatology':
@@ -41,6 +42,9 @@ const PageTitle = ({ children }) => {
                 return `Dietetyka Kliniczna - ${companyName}`;
             case '/services/rheumatology':
                 return `Reumatologia - ${companyName}`;
+            case '/services/cardiology':
+                return `Kardiologia - ${companyName}`;
+
             case '/prices':
                 return `Cennik - ${companyName}`;
             case '/prices/aesthetic-medicine':
@@ -67,6 +71,9 @@ const PageTitle = ({ children }) => {
                 return `Cennik - ${companyName}`;
             case '/prices/rheumatology':
                 return `Cennik - ${companyName}`;
+            case '/prices/cardiology':
+                return `Cennik - ${companyName}`;
+
             case '/special-offer':
                 return `Promocje - ${companyName}`;
             case '/team':
@@ -147,6 +154,11 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/rheumatology/agata-skwerek-szewczyk':
                 return `Agata Skwerek Szewczyk - ${companyName}`;
+            case '/team/cardiology':
+                return `Specjaliści - ${companyName}`;
+            case '/team/cardiology/michal-radzio':
+                return `Michał Radzio - ${companyName}`;
+
             case '/technology':
                 return `Technologia - ${companyName}`;
             case '/technology/vectus':
