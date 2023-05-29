@@ -11,7 +11,10 @@ import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 
-import { technology, philipsUltrasonografAffiniti50 } from '../../../data/technology';
+import {
+    technology,
+    philipsUltrasonografAffiniti50
+} from '../../../data/technology';
 
 const TechnologyPhilipsUltrasonografAffiniti50Partial = () => {
     return (

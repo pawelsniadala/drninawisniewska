@@ -12,7 +12,10 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology, dermalight1000UvaUvb311nm } from '../../../data/technology';
+import {
+    technology,
+    dermalight1000UvaUvb311nm
+} from '../../../data/technology';
 
 const TechnologyDermalight1000UvaUvb311nmPartial = () => {
     return (

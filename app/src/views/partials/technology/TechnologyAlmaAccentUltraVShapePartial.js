@@ -12,7 +12,10 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology, almaAccentUltraVShape } from '../../../data/technology';
+import {
+    technology,
+    almaAccentUltraVShape
+} from '../../../data/technology';
 
 const TechnologyAlmaAccentUltraVShapePartial = () => {
     return (

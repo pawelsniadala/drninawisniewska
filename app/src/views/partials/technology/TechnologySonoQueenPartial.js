@@ -12,7 +12,10 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology, sonoQueen } from '../../../data/technology';
+import {
+    technology,
+    sonoQueen
+} from '../../../data/technology';
 
 const TechnologySonoQueenPartial = () => {
     return (

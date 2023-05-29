@@ -13,7 +13,10 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology, hettichArthrexAcp } from '../../../data/technology';
+import {
+    technology,
+    hettichArthrexAcp
+} from '../../../data/technology';
 
 const TechnologyHettichArthrexAcpPartial = () => {
     return (

@@ -13,7 +13,10 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology, icooneLaserMed2 } from '../../../data/technology';
+import {
+    technology,
+    icooneLaserMed2
+} from '../../../data/technology';
 
 const TechnologyIcooneLaserMed2Partial = () => {
     return (

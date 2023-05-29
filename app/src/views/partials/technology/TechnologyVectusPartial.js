@@ -13,7 +13,10 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology, vectus } from '../../../data/technology';
+import {
+    technology,
+    vectus
+} from '../../../data/technology';
 
 const TechnologyVectusPartial = () => {
     return (

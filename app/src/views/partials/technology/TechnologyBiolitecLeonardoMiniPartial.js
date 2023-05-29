@@ -13,7 +13,10 @@ import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 
-import { technology, biolitecLeonardoMini } from '../../../data/technology';
+import {
+    technology,
+    biolitecLeonardoMini
+} from '../../../data/technology';
 
 const TechnologyBiolitecLeonardoMiniPartial = () => {
     return (

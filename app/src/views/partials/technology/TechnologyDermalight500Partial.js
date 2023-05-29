@@ -10,7 +10,10 @@ import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 
-import { technology, dermalight500 } from '../../../data/technology';
+import {
+    technology,
+    dermalight500
+} from '../../../data/technology';
 
 const TechnologyDermalight500Partial = () => {
     return (

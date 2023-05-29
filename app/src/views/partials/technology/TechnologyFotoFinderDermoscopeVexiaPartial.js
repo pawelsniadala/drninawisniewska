@@ -11,7 +11,10 @@ import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 
-import { technology, fotoFinderDermoscopeVexia } from '../../../data/technology';
+import {
+    technology,
+    fotoFinderDermoscopeVexia
+} from '../../../data/technology';
 
 const TechnologyFotoFinderDermoscopeVexiaPartial = () => {
     return (
