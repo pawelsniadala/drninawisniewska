@@ -185,7 +185,7 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                <ListItem className='list-item'>
+                {/* <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
                         activeclassname='active'
@@ -204,7 +204,7 @@ const HeaderSection = () => {
                             <ListItemText className='list-item-text' primary='Technologia' />
                         </ListItemButton>
                     </NavLink>
-                </ListItem>
+                </ListItem> */}
                 <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
@@ -452,7 +452,7 @@ const HeaderSection = () => {
                                         Specjaliści
                                     </NavLink>
                                 </li>
-                                <li className='nav-item'>
+                                {/* <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'
                                         activeclassname='active'
@@ -466,7 +466,7 @@ const HeaderSection = () => {
                                     >
                                         Technologia
                                     </NavLink>
-                                </li>
+                                </li> */}
                                 <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'

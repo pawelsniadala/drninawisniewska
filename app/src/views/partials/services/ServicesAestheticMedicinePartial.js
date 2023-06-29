@@ -489,7 +489,7 @@ const ServicesAestheticMedicinePartial = () => {
                                     ))}
                                 </Box>
                             </Box>
-                            <Box className='box-proposed'>
+                            {/* <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
                                         Technologia
@@ -506,7 +506,7 @@ const ServicesAestheticMedicinePartial = () => {
                                         />
                                     ))}
                                 </Box>
-                            </Box>
+                            </Box> */}
                             <Box className='box-proposed specialization'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>

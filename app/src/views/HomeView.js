@@ -18,7 +18,7 @@ const HomeView = () => {
             <ServicesSection />
             <PriceSection />
             <TeamSection />
-            <TechnologySection />
+            {/* <TechnologySection /> */}
         </Box>
     );
 }

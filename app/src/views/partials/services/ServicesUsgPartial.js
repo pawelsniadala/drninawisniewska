@@ -125,7 +125,7 @@ const ServicesUsgPartial = () => {
                                     ))}
                                 </Box>
                             </Box>
-                            <Box className='box-proposed'>
+                            {/* <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
                                         Technologia
@@ -142,7 +142,7 @@ const ServicesUsgPartial = () => {
                                         />
                                     ))}
                                 </Box>
-                            </Box>
+                            </Box> */}
                             <Box className='box-proposed specialization'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
