@@ -128,7 +128,7 @@ export const wojciechKaszewski = {
     interested: false,
     image: wojciechKaszewskiImage,
     background: false,
-    specialization: ['orthopedics'],
+    specialization: ['orthopedics', 'usg'],
     specialist: 'wojciech-kaszewski'
 };
 
@@ -152,7 +152,7 @@ export const katarzynaMysliwiecCzajka = {
     speciality: 'Dermatolog',
     summary: false,
     education: 'Absolwentka I Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego, który ukończyła otrzymując dyplom z wyróżnieniem.',
-    experience: 'Obecnie pracuje w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie, gdzie specjalizuje się w dziedzinie dermatologii i wenerologii. Stale poszerza swoje kwalifikacje biorąc udział w licznych certyfikowanych kursach, szkoleniach i konferencjach. Zajmuje się diagnostyką oraz leczeniem chorób skóry, włosów i paznokci.',
+    experience: 'Obecnie pracuje w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie, gdzie odbywa staż specjalizacyjny z dermatologii i wenerologii. Stale poszerza swoje kwalifikacje biorąc udział w licznych certyfikowanych kursach, szkoleniach i konferencjach. Zajmuje się diagnostyką oraz leczeniem chorób skóry, włosów i paznokci.',
     interested: false,
     image: katarzynaMysliwiecCzajkaImage,
     background: false,
@@ -268,7 +268,7 @@ export const kamilStepkowski = {
     interested: false,
     image: kamilStepkowskiImage,
     background: false,
-    specialization: ['vascular-surgery'],
+    specialization: ['vascular-surgery', 'usg'],
     specialist: 'kamil-stepkowski'
 };
 

@@ -20,7 +20,7 @@ export const contact = [
     {
         designation: 'address',
         label: 'Adres',
-        value: 'ul. Fryderyka Chopina 13/U2, 07-200 Wyszków',
+        value: 'ul. Fryderyka Chopina 13/U2A, 07-200 Wyszków',
         href: 'https://goo.gl/maps/1a3qFdxNqTNJdahY9'
     },
     {

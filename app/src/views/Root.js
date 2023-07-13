@@ -108,7 +108,7 @@ const Root = () => (
                         <Route path=':specialization' element={<TeamSpecializationPartial />} />
                     </Route>
                     <Route path='team/:specialization/:specialist' element={<TeamSpecialistPartial />} />
-                    {/* <Route path='/technology' element={<TechnologyView />} />
+                    <Route path='/technology' element={<TechnologyView />} />
                     <Route path='/technology/vectus' element={<TechnologyVectusPartial />} />
                     <Route path='/technology/alma-harmony-xl-pro' element={<TechnologyAlmaHarmonyXlProPartial />} />
                     <Route path='/technology/icoone-laser-med2' element={<TechnologyIcooneLaserMed2Partial />} />
@@ -120,7 +120,7 @@ const Root = () => (
                     <Route path='/technology/philips-ultrasonograf-affiniti-50' element={<TechnologyPhilipsUltrasonografAffiniti50Partial />} />
                     <Route path='/technology/sono-queen' element={<TechnologySonoQueenPartial />} />
                     <Route path='/technology/dermalight-500' element={<TechnologyDermalight500Partial />} />
-                    <Route path='/technology/dermalight-1000-uva-uvb-311nm' element={<TechnologyDermalight1000UvaUvb311nmPartial />} /> */}
+                    <Route path='/technology/dermalight-1000-uva-uvb-311nm' element={<TechnologyDermalight1000UvaUvb311nmPartial />} />
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>
             </main>

@@ -99,9 +99,6 @@ const ServicesUsgPartial = () => {
                                 <Typography className='paragraph heading'>
                                     Przyjmujemy dzieci w każdym wieku.
                                 </Typography>
-                                <Typography className='paragraph heading'>
-                                    Nie wykonujemy badania USG układu kostno-stawowego.
-                                </Typography>
                             </Box>
                         </Box>
 

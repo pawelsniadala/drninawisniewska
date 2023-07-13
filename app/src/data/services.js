@@ -123,7 +123,7 @@ export const aestheticMedicine = {
 export const cosmetology = {
     id: '6c9e3a3d-9257-44d4-81af-87523bdccf71',
     title: 'Kosmetologia',
-    description: 'Peelingi chemiczne to kondycjonujące i rewitalizujące skórę zabiegi dermokosmetyczne. W zależności od zastosowanego preparatu zabiegi oferują różne efekty terapeutyczne; tj. oczyszczające i przeciwtrądzikowe, regenerujące i przeciwzmarszczkowe, rozjaśniające i redukujące przebarwienia.',
+    description: 'Kosmetologia to dział dermatologii zajmujący się badaniem, opisywaniem, leczeniem i pielęgnowaniem skóry, włosów i paznokci.',
     path: '/services/cosmetology',
     pathSpecialist: '/team/cosmetology',
     pathPrices: '/prices/cosmetology',
@@ -144,7 +144,6 @@ export const cosmetology = {
 
 export const physioterapy = {
     id: '13076f6e-c4f6-474f-80af-73abe224d7a2',
-
     title: 'Fizjoterapia',
     description: 'Medycyna ortopedyczna według Cyriaxa jest kompleksowym systemem terapii oraz diagnostyki zaburzeń narządu ruchu. Opiera się na badaniu klinicznym, które za pomocą testów i wywiadu doprowadza fizjoterapeutę do postawienia odpowiedniej diagnozy uszkodzonej tkanki w układzie ruchu.',
     path: '/services/physioterapy',
@@ -242,7 +241,9 @@ export const usg = {
     ],
     specialists: [
         justynaFilipekImageSmall,
-        patrykKrokwinskiImageSmall
+        wojciechKaszewskiImageSmall,
+        patrykKrokwinskiImageSmall,
+        kamilStepkowskiImageSmall,
     ]
 };
 
@@ -391,5 +392,5 @@ export const services = [
     { ...vascularSurgery },
     { ...clinicalDietitian },
     { ...rheumatology },
-    { ...cardiology },
+    { ...cardiology }
 ];

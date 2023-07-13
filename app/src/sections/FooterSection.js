@@ -31,7 +31,7 @@ const FooterSection = () => {
                             rel='noreferrer'
                             className='footer-text link'
                         >
-                            ul. Fryderyka Chopina 13/U2,<br />07-200 Wyszków
+                            ul. Fryderyka Chopina 13/U2A,<br />07-200 Wyszków
                         </Typography>
                         <Typography
                             component='a'

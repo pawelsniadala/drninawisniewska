@@ -95,47 +95,47 @@ const Table16 = () => {
     );
 }
 
-const Table15 = () => {
-    function createData(name, price) {
-        return { name, price };
-    }
+// const Table15 = () => {
+//     function createData(name, price) {
+//         return { name, price };
+//     }
 
-    const rows = [
-        createData('Jedna okolica', 600),
-        createData('Dwie okolice', 1000),
-        createData('Trzy okolice', 1200)
-    ];
+//     const rows = [
+//         createData('Jedna okolica', 600),
+//         createData('Dwie okolice', 1000),
+//         createData('Trzy okolice', 1200)
+//     ];
 
-    return (
-        <TableContainer className='table-container' component={Paper}>
-            <Table size='small' aria-label='customized table'>
-                <TableHead>
-                    <TableRow>
-                    <StyledTableCell>
-                        Płynna toksyna ABO Liquid
-                        {badge('Nowość')}
-                    </StyledTableCell>
-                    <StyledTableCell align='right'>
-                        Cena
-                    </StyledTableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {rows.map((row) => (
-                        <StyledTableRow key={row.name}>
-                            <StyledTableCell component='th' scope='row'>
-                                {row.name}
-                            </StyledTableCell>
-                            <StyledTableCell align='right'>
-                                {row.price}
-                            </StyledTableCell>
-                        </StyledTableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
-    );
-};
+//     return (
+//         <TableContainer className='table-container' component={Paper}>
+//             <Table size='small' aria-label='customized table'>
+//                 <TableHead>
+//                     <TableRow>
+//                     <StyledTableCell>
+//                         Płynna toksyna ABO Liquid
+//                         {badge('Nowość')}
+//                     </StyledTableCell>
+//                     <StyledTableCell align='right'>
+//                         Cena
+//                     </StyledTableCell>
+//                     </TableRow>
+//                 </TableHead>
+//                 <TableBody>
+//                     {rows.map((row) => (
+//                         <StyledTableRow key={row.name}>
+//                             <StyledTableCell component='th' scope='row'>
+//                                 {row.name}
+//                             </StyledTableCell>
+//                             <StyledTableCell align='right'>
+//                                 {row.price}
+//                             </StyledTableCell>
+//                         </StyledTableRow>
+//                     ))}
+//                 </TableBody>
+//             </Table>
+//         </TableContainer>
+//     );
+// };
 
 const Table1 = () => {
     function createData(name, price) {
@@ -188,7 +188,7 @@ const Table2 = () => {
         createData('Okolica kurzych łapek - 30 j. toksyny botulinowej', 'Okolica to zmarszczki poprzeczne czoła, zmarszczka między brwiami i zmarszczki wokół oczu. Jeśli na wizycie wykonywana jest toksyna botulinowa na 2 okolice, tj. kurze łapki + czoło/lwia zmarszczka, wówczas do zapłaty jest 900 zł.', 500),
         createData('Okolica kurzych łapek - 60 j. toksyny botulinowej', 'Okolica to zmarszczki poprzeczne czoła, zmarszczka między brwiami i zmarszczki wokół oczu. Jeśli na wizycie wykonywana jest toksyna botulinowa na 2 okolice, tj. kurze łapki + czoło/lwia zmarszczka, wówczas do zapłaty jest 900 zł.', 800),
         createData('Broda',false, 300),
-        createData('Bruksizm', false, 900),
+        createData('Bruksizm', false, 1300),
         createData('Uśmiech dziąsłowy', false, 500),
         createData('Korekta opadającego nosa', false, 300),
         createData('Szyja', false, 900),
@@ -239,6 +239,7 @@ const Table3 = () => {
         createData('Zmarszczki między brwiami (lwia zmarszczka)', 'od 1100'),
         createData('Okolica dolnej powieki (dolina łez)', 'od 1100'),
         createData('Usta - korekta konturu, korekta kształtu, powiększenie', 'od 1100'),
+        createData('Nawilżenie ust', 'od 550'),
         createData('Okolica jarzmowa (kości policzkowe)', 'od 1100'),
         createData('Okolica skroniowa', 'od 1100'),
         createData('Korekta nosa', 'od 1100'),
@@ -329,9 +330,9 @@ const Table5 = () => {
     const rows = [
         createData('Nucleofill', 1100),
         createData('Nucleofill Soft Eyes', 1100),
-        createData('Juvenus', 1100),
+        // createData('Juvenus', 1100),
         createData('Pluryal Silk', 1200),
-        createData('Profhilo', 1200),
+        // createData('Profhilo', 1200),
         createData('Pluryal Densify', 1200),
         createData('Pluryal Bioclassic', 1100),
         createData('Sunekos Performa', 500),
@@ -771,7 +772,7 @@ const PricesAestheticMedicinePartial = () => {
     return (
         <Box display='grid' gap={'15px'}>
             <Table16 />
-            <Table15 />
+            {/* <Table15 /> */}
             <Table1 />
             <Table2 />
             <Table3 />
