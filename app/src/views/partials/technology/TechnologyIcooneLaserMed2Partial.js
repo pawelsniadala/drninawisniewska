@@ -51,7 +51,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Icoone<sup>®</sup> Laser Med 2
+                                Icoone<sup>®</sup> Laser Med 2 / <strong>Masaż próżniowy (Kosmetologia)</strong>
                             </Typography>
                         </Box>
                     </Container>
@@ -61,7 +61,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                         <Box className='technology-description'>
                             <Box className='box-technology'>
                                 <Typography className='paragraph'>
-                                    <strong>Projekt Icoone<sup>®</sup> </strong> jest inspirowany intuicją <strong>profesora Jean-Claude'a Guimberteau</strong>, specjalisty w dziedzinie chirurgii rekonstrukcyjnej, który poświęcił wiele lat na obserwację skóry w zakresie struktury tkanki łącznej. Guimberteau wykazał, że <strong>skóra musi być pojmowana jako żywa</strong>, <strong>ciągła materia</strong>, a tkanka podskórna składa się z sieci <strong>mikrowakuoli</strong>, które tworzą funkcjonalną jednostkę struktury tkanki. Ta nowa wizja całkowicie zastępuje tradycyjną koncepcję tkanki warstwowej, a tym samym narzuca potrzebę nowego sposobu leczenia skóry.
+                                    Masaż próżniowy inspirowany jest intuicją <strong>profesora Jean-Claude'a Guimberteau</strong>, specjalisty w dziedzinie chirurgii rekonstrukcyjnej, który poświęcił wiele lat na obserwację skóry w zakresie struktury tkanki łącznej. Guimberteau wykazał, że <strong>skóra musi być pojmowana jako żywa</strong>, <strong>ciągła materia</strong>, a tkanka podskórna składa się z sieci <strong>mikrowakuoli</strong>, które tworzą funkcjonalną jednostkę struktury tkanki. Ta nowa wizja całkowicie zastępuje tradycyjną koncepcję tkanki warstwowej, a tym samym narzuca potrzebę nowego sposobu leczenia skóry.
                                 </Typography>
                                 <Box className='box-image'>
                                     <LazyLoadImage
@@ -82,7 +82,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                                     />
                                 </Box>
                                 <Typography className='paragraph'>
-                                    <strong>Najnowsza, opatentowana technologia Roboderm<sup>®</sup> zapewnia zaskakujące rezultaty</strong>. Dzięki ekskluzywnemu, rozszerzonemu na skalę międzynarodową patentowi Roboderm<sup>®</sup>, ICOONE<sup>®</sup>oferuje w pełni konfigurowalny zabieg odmładzania skóry i modelowania sylwetki. Roboderm<sup>®</sup>jest unikalną technologią na świecie zdolną do generowania Multi <strong>Mikropęcherzykowej Stymulacji (M.M.S.A.)</strong> za pomocą zestawu mikrootworów obecnych na powierzchni mikrostymulatorów znajdujących się w głowicach zabiegowych ICOONE®. Mikrostymulatory obracają się tam i z powrotem, precyzyjnie i skutecznie stymulując skórę na całej powierzchni, docierając do najmniejszych jej części i generując <strong>do 21 600 mikrostymulacji na minutę</strong>.
+                                    <strong>Najnowsza, opatentowana technologia Roboderm<sup>®</sup> zapewnia zaskakujące rezultaty</strong>. Dzięki ekskluzywnemu, rozszerzonemu na skalę międzynarodową patentowi Roboderm<sup>®</sup>, oferuje w pełni konfigurowalny zabieg odmładzania skóry i modelowania sylwetki. Roboderm<sup>®</sup>jest unikalną technologią na świecie zdolną do generowania Multi <strong>Mikropęcherzykowej Stymulacji (M.M.S.A.)</strong> za pomocą zestawu mikrootworów obecnych na powierzchni mikrostymulatorów znajdujących się w głowicach zabiegowych. Mikrostymulatory obracają się tam i z powrotem, precyzyjnie i skutecznie stymulując skórę na całej powierzchni, docierając do najmniejszych jej części i generując <strong>do 21 600 mikrostymulacji na minutę</strong>.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     Działanie stymulujące odbywa się na <strong>3 powierzchniach jednocześnie</strong>: 2 niezależne, zmotoryzowane mikrostymulatory, które poruszają się jednocześnie na tym samym obszarze, uzupełniając swoje działanie i generując gimnastykę tkankową z efektem ujędrniającym oraz 1 centralna komora umieszczona pomiędzy mikrostymulatorami, która oddziałuje dogłębniej na tkankę tłuszczową.

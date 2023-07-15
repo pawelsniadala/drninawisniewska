@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -51,7 +51,7 @@ const TechnologyBiolitecLeonardoMiniPartial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Biolitec<sup>®</sup> Leonardo<sup>®</sup> Mini
+                                Biolitec<sup>®</sup> Leonardo<sup>®</sup> Mini / <strong>Laserowe usuwanie żylaków (Chirurgia naczyniowa)</strong>
                             </Typography>
                         </Box>
                     </Container>
@@ -61,69 +61,35 @@ const TechnologyBiolitecLeonardoMiniPartial = () => {
                         <Box className='technology-description'>
                             <Box className='box-technology'>
                                 <Typography className='paragraph'>
-                                    Laser Biolitec<sup>®</sup> Leonardo<sup>®</sup> Mini współpracuje z szerokim spektrum specjalnych światłowódów i zestawów aplikacyjnych opracowanych przez Biolitec<sup>®</sup>.
+                                    Żylaki kończyn dolnych są dziś jedną z najbardziej powszechnych chorób. Około 40% kobiet i 20% mężczyzn ma objawy w postaci: zmęczonych, ciężkich nóg oraz obrzęków nóg i żył widocznych przez skórę.
                                 </Typography>
-                                <Box className='box-image'>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={biolitecLeonardoMini.imageLarge}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '400px',
-                                            objectPosition: '50% 30%'
-                                        }}
-                                    />
-                                </Box>
+                                <Typography className='paragraph'>
+                                    Jej główne przyczyny to: wrodzona słabość tkanki łącznej, zmiany hormonalne, a także długotrwałe przebywanie w pozycji siedzącej lub stojącej.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Najprostszą formą leczenia chorób żył jest kompresjoterapia (pończochy lub podkolanówki uciskowe). Jej działanie polega na zmniejszeniu szerokości żyły poprzez wywieranie na nią zewnętrznego ucisku. Przyspiesza to przepływ krwi w żyle. Jednakże gdy żyła się raz rozciągnie, nigdy już nie zmniejszy się do pierwotnego rozmiaru więc kompresjoterapię trzeba stosować przez resztę życia.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Metodami mniej inwazyjnymi są skleroterapia i zabiegi z wykorzystaniem prądu RF.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Zabieg z wykorzystaniem prądu RF polega na wprowadzeniu do żyły cewnika i podgrzaniu jej ścian od wewnątrz za pomocą fal RF. Ściany żyły wraz z przylegającymi tkankami ulegają denaturacji i obkurczeniu, a w ciągu kilku tygodni ściana włóknieje. Jednak sonda RF jest dość gruba i metoda nie nadaje się do wszystkich średnic żył.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Zabieg laserowego usuwania żylaków przeprowadzany jest w warunkach ambulatoryjnych, w znieczuleniu miejscowym. Pod kontrolą USG lekarz wprowadza do chorej żyły przez małe nakłucie cienki światłowód, a następnie naświetla żyłę od wewnątrz światłem lasera. Zabiegowi towarzyszy tylko minimalny ból w trakcie miejscowego podawania znieczulenia wokół żyły. Pacjent może wrócić do normalnej aktywności bezpośrednio po zabiegu. Jest to najbezpieczniejszymi i najskuteczniejszym zabiegiem, zapewniającym wysoki komfort pacjenta w tracie i po zabiegu.
+                                </Typography>
                                 <Typography className='paragraph heading'>
-                                    <strong>Zalety</strong>:
+                                    <strong>Korzyści dla pacjenta wynikające z wyboru zabiegu</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'prosty, ale wszechstronny,',
-                                        'szerokie spektrum małoinwazyjnych metod terapeutycznych,',
-                                        'zastosowania laserowe,',
-                                        'ekonomiczny,',
-                                        'niskie koszty utrzymania i niezawodne diody laserowe,',
-                                        'zastosowanie multidyscyplinarne,',
-                                        'mały rozmiar,',
-                                        'przyjazny dla użytkownika,',
-                                        'poręczny i mobilny,',
-                                        'szybka konfiguracja,',
-                                        'przejrzysty i intuicyjny interfejs użytkownika,',
-                                        'opcjonalne zastosowania,',
-                                        'możliwość zasilania bateryjnego.'
-                                    ].map((item, index) => (
-                                        <ListBulleted
-                                            key={index}
-                                            ListBulletedItem={item}
-                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
-                                        />
-                                    ))}
-                                </Grid>
-                                <Typography className='paragraph'>
-                                    Leonardo<sup>®</sup> Mini współpracuje z szerokim spektrum światłowodów opracowanych przez Biolitec. Zastosowane złącze światłowodu jest przyjazne dla użytkownika oraz posiada zabezpieczenie elektroniczne.
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    Mobilna wersja lasera Leonardo Mini jest idealnym rozwiązaniem do endożylnego usuwania żył i obecnie jest uważany za złoty standard w tego typu zabiegach. Długość fali 1470nm zapewnia odpowiednio płytką penetrację światła w ścianie żyły by nie uszkadzać niepotrzebnie otaczających tkanek, a dwupierścieniowa konstrukcja światłowodu zwiększa skuteczność zamykania małych i dużych żył.
-                                </Typography>
-                                <Typography className='paragraph heading'>
-                                    <strong>Zalety leczenia ELVeS</strong>:
-                                </Typography>
-                                <Grid container spacing={0.5} marginBottom={2}>
-                                    {[
-                                        'maksymalny komfort pacjenta,',
-                                        'mniejszy ból po zabiegu,',
-                                        'mniejszy stan zapalny,',
-                                        'mniejsze ryzyko siniaków,',
-                                        'lepszy efekt kosmetyczny,',
-                                        'szybki powrót do normalnej aktywności,',
-                                        'krótki czas zabiegu.'
+                                        'Najwyższa skuteczność spośród dostępnych metod – ponad 97% po 3 latach od zabiegu.',
+                                        'Natychmiastowe uruchomienie po zabiegu i szybki powrót do normalnej aktywności.',
+                                        'Minimalny ból lub całkowity brak odczuć bólowych w czasie rekonwalescencji.',
+                                        'Maksymalny komfort w czasie zabiegu.',
+                                        'Krótki czas zabiegu.',
+                                        'Brak blizn i małe ryzyko wystąpienia zasinień po zabiegu.',
+                                        'Doskonały wynik medyczny i kosmetyczny.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

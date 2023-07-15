@@ -105,6 +105,7 @@ const SpecialOfferView = () => {
                                         cardDescription2={item.description2}
                                         cardDescription3={item.description3}
                                         cardDescription4={item.description4}
+                                        cardDescription5={item.description5}
                                         cardImage={item.image}
                                         cardImageVisible={false}
                                     />
@@ -119,6 +120,7 @@ const SpecialOfferView = () => {
                                         cardDescription2={item.description2}
                                         cardDescription3={item.description3}
                                         cardDescription4={item.description4}
+                                        cardDescription5={item.description5}
                                         cardImage={item.image}
                                     />
                                 ))

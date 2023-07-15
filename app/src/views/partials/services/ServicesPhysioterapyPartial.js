@@ -14,8 +14,9 @@ import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
 
-import { services, physioterapy } from '../../../data/services';
+import { /*services,*/ physioterapy } from '../../../data/services';
 import { team } from '../../../data/team';
+import { treatment } from '../../../data/treatment';
 
 const ServicesPhysioterapyPartial = () => {
     return (
@@ -60,11 +61,8 @@ const ServicesPhysioterapyPartial = () => {
                         <Box className='service-description'>
 
                             <Box className='box-service'>
-                                <Typography variant={'h5'} className='header'>
-                                    Rehabilitacja
-                                </Typography>
                                 <Typography className='paragraph'>
-                                    <strong>Medycyna ortopedyczna</strong> według <strong>Cyriaxa</strong> jest kompleksowym systemem terapii oraz diagnostyki zaburzeń narządu ruchu. Opiera się na badaniu klinicznym, które za pomocą testów i wywiadu doprowadza fizjoterapeutę do postawienia odpowiedniej <strong>diagnozy</strong> uszkodzonej tkanki w układzie ruchu.
+                                    <strong>Fizjoterapia</strong> to dziedzina medycyny zajmująca się leczeniem i rehabilitacją osób z różnymi schorzeniami, urazami lub dysfunkcjami układu mięśniowo-szkieletowego. Jej celem jest przywrócenie pacjentowi pełnej sprawności fizycznej, zmniejszenie bólu, poprawa zakresu ruchu oraz wzmacnianie mięśni.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
@@ -75,35 +73,18 @@ const ServicesPhysioterapyPartial = () => {
                                     />
                                 </Box>
                                 <Typography className='paragraph'>
-                                    Terapia polega na <strong>głębokim masażu</strong> poprzecznym zastosowanym na uszkodzonej strukturze (mięsień, więzadło, ścięgno), mobilizacji, trakcji stosowanej dla patologii kręgosłupa oraz rozciąganiu torebki stawowej  w przypadku jej uszkodzenia.
+                                    Fizjoterapia obejmuje różnorodne metody i techniki, które są dostosowane do konkretnego przypadku i potrzeb pacjenta:
                                 </Typography>
-                            </Box>
-
-                            <Box className='box-service'>
-                                <Typography variant={'h5'} className='header'>
-                                    Masaż
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
-                                </Typography>
-                                <Box className='box-image'>
-                                    <Image
-                                        imageSrc={physioterapy.images[1].src}
-                                        imageAlt={physioterapy.images[1].alt}
-                                        imageAuthor={physioterapy.images[1].author}
-                                        imageHref={physioterapy.images[1].href}
-                                    />
-                                </Box>
                                 <Typography className='paragraph heading'>
-                                    <strong>Masaż wykorzystywany jest w celu</strong>:
+                                    <strong>Przykładowe formy terapii fizycznej to:</strong>
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'rozluźnienia mięśni,',
-                                        'złagodzenia sztywności, napięcia i bólu mięśni,',
-                                        'zwiększenia elastyczności i wytrzymałości więzadeł,',
-                                        'poprawy ruchomości stawów,',
-                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.'
+                                        'ćwiczenia terapeutyczne',
+                                        'masaż,',
+                                        'elektroterapia,',
+                                        'terapia manualna,',
+                                        'techniki relaksacyjne.',
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -112,25 +93,8 @@ const ServicesPhysioterapyPartial = () => {
                                         />
                                     ))}
                                 </Grid>
-                            </Box>
-
-                            <Box className='box-service'>
-                                <Typography variant={'h5'} className='header'>
-                                    Kinesiotaping
-                                </Typography>
                                 <Typography className='paragraph'>
-                                    <strong>Kinesiotaping</strong> czyli <strong>plastrowanie dynamiczne</strong>. Technika fizjoterapeutyczna polegająca na naklejaniu na ciało zgodnie z określonymi zasadami specjalnych taśm. Powodują one regulację napięcia mięśniowego w miejscu aplikacji, zmniejszając ból, ograniczając nadwrażliwość na dotyk, zwiększając zakres ruchu i siłę mięśni oraz zmniejszyć obrzęki w miejscu aplikacji.
-                                </Typography>
-                                <Box className='box-image'>
-                                    <Image
-                                        imageSrc={physioterapy.images[2].src}
-                                        imageAlt={physioterapy.images[2].alt}
-                                        imageAuthor={physioterapy.images[2].author}
-                                        imageHref={physioterapy.images[2].href}
-                                    />
-                                </Box>
-                                <Typography className='paragraph'>
-                                    Naciągnięcie skóry powoduje zwiększenie przestrzeni pomiędzy skórą właściwą a powięzią, błoną otaczającą mięśnie, wywołując usprawnienie pracy układu limfatycznego. Dzięki większej ilości  przepływającej limfy zastoiny i stany zapalne ulegają zmniejszeniu a krwiaki  zostają zredukowane. Kinesiotaping wywołuje również działanie znieczulające oddziaływując na receptory bólu i czucia głębokiego znajdujące się w skórze.
+                                    Fizjoterapia może być stosowana w różnych dziedzinach medycyny, takich jak ortopedia, neurologia, geriatria, pediatria czy medycyna sportowa. Fizjoterapeuci współpracują z lekarzami i innymi specjalistami, aby zapewnić kompleksową opiekę pacjentom i pomóc im w powrocie do pełnej funkcjonalności i jakości życia.
                                 </Typography>
                             </Box>
                         </Box>
@@ -154,7 +118,25 @@ const ServicesPhysioterapyPartial = () => {
                                     ))}
                                 </Box>
                             </Box>
-                            <Box className='box-proposed specialization'>
+                            {/* <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Zabiegi
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {treatment.filter(item => item.specialization.includes('physioterapy')).map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.image}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
+                            </Box> */}
+                            {/* <Box className='box-proposed specialization'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
                                         Pozostałe specjalizacje
@@ -171,7 +153,7 @@ const ServicesPhysioterapyPartial = () => {
                                         />
                                     ))}
                                 </Box>
-                            </Box>
+                            </Box> */}
                         </Box>
                     </Container>
                 </Box>

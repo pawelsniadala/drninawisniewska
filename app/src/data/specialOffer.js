@@ -3,6 +3,7 @@ import specialOffer2 from '../assets/specialOffer/specialOffer2.jpg';
 import specialOffer3 from '../assets/specialOffer/specialOffer3.jpg';
 import specialOffer4 from '../assets/specialOffer/specialOffer4.jpg';
 import specialOffer5 from '../assets/specialOffer/specialOffer5.jpg';
+import specialOffer6 from '../assets/specialOffer/specialOffer6.jpg';
 
 export const article1 = {
     image: specialOffer1,
@@ -11,17 +12,19 @@ export const article1 = {
     description1: 'Zapraszamy na zabiegi z zakresu medycyny estetycznej: botox, kwas hialuronowy, mezoterapia, stymulatory tkankowe, laser Alma Harmony, laser frakcyjny CO2, SonoQueen.',
     description2: 'Zapisz się już dziś i razem z nami pozbądź się niechcących zmarszczek. 💀🎃👻',
     description3: '❗️Uwaga: Zostały ostatnie wolne miejsca na 31 października u Dr Olgi Lenartowicz. 🧡',
-    description4: ''
+    description4: '',
+    description5: ''
 };
 
 export const article2 = {
     image: specialOffer2,
     title: 'Konsultacje dietetyczne',
     date: '13 grudnia 2022',
-    description1: '🥗 Problem z wagą? Nie wiesz jak odchudzić się bez efektu jojo? A może chcesz zbilansować swoją dietę lub uzupełnić niedobory? 🤨 👉🏻 Dobrym pomysłem będzie udanie się do dietetyka klinicznego. 👩🏼‍⚕️',
+    description1: 'Problem z wagą? 🥗 Nie wiesz jak odchudzić się bez efektu jojo? A może chcesz zbilansować swoją dietę lub uzupełnić niedobory? 🤨 👉🏻 Dobrym pomysłem będzie udanie się do dietetyka klinicznego. 👩🏼‍⚕️',
     description2: 'Tworzenie posiłków 🥙 wydaje nam się prostą codzienną czynnością, jednak czasem potrzebujemy fachowej pomocy. 🤷🏼‍♀️ Dietetyk kliniczny pokaże, że odchudzanie nie musi być męczarnią, a zdrowe odżywianie może być proste i smaczne. 😍 A nasze nieudane próby zrzucenia paru kilo pójdą w zapomnienie! 🤭💚',
     description3: 'Najczęstsze problemy z jakimi możesz zgłosić się do naszej Kliniki: uzupełnienie niedoborów organizmu, chęć odchudzania się w racjonalny sposób, potrzeba wdrożenia specjalistycznej diety ze względu na choroby współistniejące.',
-    description4: 'Niezależnie czy borykasz się z nadwagą, niedoborami lub po prostu zależy Ci na zdrowszym odżywianiu nasz dietetyk mgr Joanna Ojrzeńska udzieli wyczerpującej konsultacji dietetycznej oraz ułoży dietę.'
+    description4: 'Niezależnie czy borykasz się z nadwagą, niedoborami lub po prostu zależy Ci na zdrowszym odżywianiu nasz dietetyk mgr Joanna Ojrzeńska udzieli wyczerpującej konsultacji dietetycznej oraz ułoży dietę.',
+    description5: ''
 };
 
 export const article3 = {
@@ -31,7 +34,8 @@ export const article3 = {
     description1: 'Zdrowych, spokojnych Świąt Bożego Narodzenia, spędzonych w gronie najbliższych 🎄🎁⛄️ życzy cały zespół Kliniki dr Nina Wiśniewska. 🎅🏻',
     description2: '',
     description3: '',
-    description4: ''
+    description4: '',
+    description5: ''
 };
 
 export const article4 = {
@@ -42,6 +46,7 @@ export const article4 = {
     description2: 'Dla niektórych będzie to przeczytanie 100 książek 📚, dla kogoś innego ukończenie kursu gotowania 👨🏻‍🍳, a dla części z nas być może to chęć uporania się z niedoskonałościami skórnymi. 💆🏻‍♀️',
     description3: 'W związku z powyższym informujemy o możliwości przeprowadzenia profesjonalnej konsultacji kosmetologicznej w naszej Klinice. 🌸',
     description4: 'Na wizycie omówimy aktualny stan cery, porozmawiamy o obecnej pielęgnacji i wyeliminujemy jej ewentualne błędy. Zasugerujemy o co warto poszerzyć domową rutynę a czego lepiej w niej unikać. Ułożymy także spersonalizowany plan zabiegowy dostosowany do indywidualnych potrzeb i oczekiwań. 🤗',
+    description5: ''
 };
 
 export const article5 = {
@@ -51,10 +56,23 @@ export const article5 = {
     description1: 'Podaj hasło: VALENTYNKI! ❤️ Zapraszamy do nas na tydzień zakochanych! Tylko od 13 do 17 lutego trwa wyjątkowa promocja na wybrane zabiegi z naszej oferty z okazji walentynek. To idealna sposobność by sprawić swojej drugiej połówce voucher prezentowy na wymarzony zabieg. 🥰',
     description2: 'Zapraszamy do kontaktu z nami po szczegóły promocji. Zapisy ruszają dzisiaj! Nie zapomnij podać hasła! Liczba miejsc ograniczona. 👨‍👩‍👧‍👦',
     description3: 'Zabiegi objęte promocją: 🔶 Nucleofill 850 zł zamiast 1100 zł, 🔶 Plasmoo 899 zł zamiast 1099 zł, 🔶 Pakiet 4 masaży 269 zł zamiast 319 zł, 🔶 Pakiet jędrny brzuch 5 zabiegów Accent +5 zabiegów Icoone (okolica brzucha) 2199 zł zamiast 2999 zł.',
-    description4: ''
+    description4: '',
+    description5: '',
+};
+
+export const article6 = {
+    image: specialOffer6,
+    title: 'Lipcowa oferta specjalna',
+    date: '3 lipca 2023',
+    description1: 'Lato w pełni. 🌞 Czas urlopów, festiwali, wesel… Chcemy zaprezentować się z jak najlepszej strony. Nic dziwnego! A my chcemy Wam to ułatwić! ☺️Z tego powodu przygotowaliśmy dla Was specjalną ofertę promocyjną. 🌺',
+    description2: '💕 Zabiegi wyszczuplające na ciało wykorzystujące masaż próżniowy -30% od cen pakietowych oraz pojedynczych zabiegów.',
+    description3: '💕 Zabiegi modelujące z użyciem ultradźwięków i fali radiowej do pakietu 5 zabiegów - 3 zabiegi GRATIS.',
+    description4: '💕 Do każdego spersonalizowanego zabiegu na twarz - komputerowa analiza stanu skóry GRATIS.',
+    description5: 'Promocja trwa tylko w lipcu! 🌺 Śpiesz się! Zadbaj o kondycję twarzy i ciała. 🤗',
 };
 
 export const specialOffer = [
+    { ...article6 },
     { ...article5 },
     { ...article4 },
     { ...article3 },

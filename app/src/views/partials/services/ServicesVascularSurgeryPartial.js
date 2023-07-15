@@ -14,9 +14,9 @@ import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
 
-import { services, vascularSurgery } from '../../../data/services';
+import { vascularSurgery } from '../../../data/services';
 import { team } from '../../../data/team';
-import { technology } from '../../../data/technology';
+import { treatment } from '../../../data/treatment';
 
 const ServicesVascularSurgeryPartial = () => {
     return (
@@ -96,23 +96,7 @@ const ServicesVascularSurgeryPartial = () => {
                                     W zakres chirurgii naczyniowej nie wchodzi leczenie żylaków odbytu (hemoroidy).
                                 </Typography>
                             </Box>
-
-                            <Box className='box-service'>
-                                <Typography variant={'h5'} className='header'>
-                                    Skleroterapia
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    <strong>Skleroterapia</strong> to <strong>nieinwazyjny zabieg zamykania rozszerzonych naczyń krwionośnych</strong>. Procedura polega na podaniu do problematycznej żyły substancji obliterującej, która powoduje jej zamknięcie.  W  porównaniu z  leczeniem operacyjnym  jest to metoda  bezpieczną i zdecydowanie mniej bolesną.  Zabieg skleroterapii poprzedzony jest dokładną oceną układu żył głównych oraz powierzchniowych przy pomocy badania ultrasonograficznego z dopplerem, które jest wykonywane w naszej Klinice.
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    Zabieg składa się z kilku lub kilkunastu <strong>wstrzyknięć preparatu</strong> do zmienionych naczyń żylnych, a następnie założenia <strong>uciskowych pończoch</strong> lub <strong>rajstop</strong>.
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    Podanie środka obliterującego rozpoczyna proces zamknięcia naczyń. Sam proces zamykania trwa od 3 do 4 tygodni, następnie rozpoczyna się proces wchłaniania naczynia. Wchłanianie trwa od kilku tygodni do kilku miesięcy zależnie od wielkości zamykanego naczynia.
-                                </Typography>
-                            </Box>
-
-                            <Box className='box-service'>
+                            {/* <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Laser ELVeS® Radial®
                                 </Typography>
@@ -145,7 +129,7 @@ const ServicesVascularSurgeryPartial = () => {
                                         />
                                     ))}
                                 </Grid>
-                            </Box>
+                            </Box> */}
                         </Box>
 
                         <Box className='proposed-wrapper'>
@@ -171,29 +155,11 @@ const ServicesVascularSurgeryPartial = () => {
                             {/* <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
-                                        Technologia
+                                        Zabiegi
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {technology.filter(item => item.specialization.includes('vascular-surgery')).map((item) => (
-                                        <CardProposed
-                                            key={item.id}
-                                            cardTitle={item.title}
-                                            cardDescription={item.description}
-                                            cardImage={item.imageSmall}
-                                            cardPath={item.path}
-                                        />
-                                    ))}
-                                </Box>
-                            </Box> */}
-                            <Box className='box-proposed specialization'>
-                                <Box className='header-wrapper'>
-                                    <Typography className='header'>
-                                        Pozostałe specjalizacje
-                                    </Typography>
-                                </Box>
-                                <Box className='card-wrapper'>
-                                    {services.filter(item => item.title !== 'Chirurgia naczyniowa').map((item) => (
+                                    {treatment.filter(item => item.specialization.includes('vascular-surgery')).map((item) => (
                                         <CardProposed
                                             key={item.id}
                                             cardTitle={item.title}
@@ -203,7 +169,7 @@ const ServicesVascularSurgeryPartial = () => {
                                         />
                                     ))}
                                 </Box>
-                            </Box>
+                            </Box> */}
                         </Box>
                     </Container>
                 </Box>

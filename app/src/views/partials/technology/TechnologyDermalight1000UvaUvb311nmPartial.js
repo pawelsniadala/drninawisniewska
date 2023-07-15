@@ -50,7 +50,7 @@ const TechnologyDermalight1000UvaUvb311nmPartial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {dermalight1000UvaUvb311nm.title}
+                                {dermalight1000UvaUvb311nm.title} / <strong>Fototerapia Chorób Skóry - Lampa UVB 311 nm (Dermatologia)</strong>
                             </Typography>
                         </Box>
                     </Container>
@@ -59,14 +59,11 @@ const TechnologyDermalight1000UvaUvb311nmPartial = () => {
                     <Container className='body-wrapper technology'>
                         <Box className='technology-description'>
                             <Box className='box-technology'>
+                                <Typography variant={'h5'} className='header'>
+                                    Lampa UVB 311 nm
+                                </Typography>
                                 <Typography className='paragraph'>
                                     Na pierwszej wizycie dermatologicznej, lekarz kwalifikuje pacjenta do naświetlań, ustala cały plan fototerapii i dawki według aktualnych wytycznych Polskiego Towarzystwa Dermatologicznego.
-                                </Typography>
-                            </Box>
-
-                            <Box className='box-technology'>
-                                <Typography variant={'h5'} className='header'>
-                                    Lampa UVB 311nm
                                 </Typography>
                                 <Typography className='paragraph heading'>
                                     <strong>Wskazania</strong>:
@@ -124,7 +121,7 @@ const TechnologyDermalight1000UvaUvb311nmPartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box className='box-technology'>
+                            {/* <Box className='box-technology'>
                                 <Typography variant={'h5'} className='header'>
                                     Lampa UVA - metoda PUVA Bath
                                 </Typography>
@@ -169,7 +166,7 @@ const TechnologyDermalight1000UvaUvb311nmPartial = () => {
                                         />
                                     ))}
                                 </Grid>
-                            </Box>
+                            </Box> */}
                         </Box>
 
                         <Box className='proposed-wrapper'>

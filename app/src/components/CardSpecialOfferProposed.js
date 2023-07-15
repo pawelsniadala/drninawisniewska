@@ -15,7 +15,8 @@ const CardSpecialOfferProposed = ({
     cardDescription1,
     cardDescription2,
     cardDescription3,
-    cardDescription4
+    cardDescription4,
+    cardDescription5
 }) => {
     const completeModal = () => {
         const exampleModal = document.getElementById('exampleModal');
@@ -31,6 +32,7 @@ const CardSpecialOfferProposed = ({
             const description2 = button.getAttribute('data-bs-description-2');
             const description3 = button.getAttribute('data-bs-description-3');
             const description4 = button.getAttribute('data-bs-description-4');
+            const description5 = button.getAttribute('data-bs-description-5');
             const imageSrc = button.getAttribute('data-bs-image-src');
             const imageAlt = button.getAttribute('data-bs-image-alt');
 
@@ -42,6 +44,7 @@ const CardSpecialOfferProposed = ({
             const modalDescription2 = exampleModal.querySelector('.modal-description-2');
             const modalDescription3 = exampleModal.querySelector('.modal-description-3');
             const modalDescription4 = exampleModal.querySelector('.modal-description-4');
+            const modalDescription5 = exampleModal.querySelector('.modal-description-5');
             const modalImageSrc = exampleModal.querySelector('.modal-image');
             const modalImageAlt = exampleModal.querySelector('.modal-image');
 
@@ -53,6 +56,7 @@ const CardSpecialOfferProposed = ({
             modalDescription2.textContent = `${description2}`;
             modalDescription3.textContent = `${description3}`;
             modalDescription4.textContent = `${description4}`;
+            modalDescription5.textContent = `${description5}`;
             modalImageSrc.src = `${imageSrc}`;
             modalImageAlt.alt = `${imageAlt}`;
         })
@@ -75,6 +79,7 @@ const CardSpecialOfferProposed = ({
             data-bs-description-2={cardDescription2}
             data-bs-description-3={cardDescription3}
             data-bs-description-4={cardDescription4}
+            data-bs-description-5={cardDescription5}
             data-bs-image-src={cardImage}
             data-bs-image-alt={cardTitle}
             display={'block'}

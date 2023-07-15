@@ -14,7 +14,7 @@ import ListBulleted from '../../../components/ListBulleted';
 
 import {
     technology,
-    almaAccentUltraVShape
+    // almaAccentUltraVShape
 } from '../../../data/technology';
 
 const TechnologyAlmaAccentUltraVShapePartial = () => {
@@ -50,7 +50,7 @@ const TechnologyAlmaAccentUltraVShapePartial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {almaAccentUltraVShape.title}
+                            Alma Accent Ultra V Shape / <strong>Ultradźwięki i fala radiowa (Kosmetologia)</strong>
                             </Typography>
                         </Box>
                     </Container>
@@ -60,7 +60,7 @@ const TechnologyAlmaAccentUltraVShapePartial = () => {
                         <Box className='technology-description'>
                             <Box className='box-technology'>
                                 <Typography className='paragraph'>
-                                    <strong>Accent Ultra V</strong> to zabieg, który w bezpieczny, bezbolesny sposób redukuje cellulit i tkankę tłuszczową, niweluje wiotkość skóry oraz modeluje twarz. Accent Ultra V łączy ze sobą dwie technologie, <strong>fale ultradźwiękową</strong> oraz <strong>radiofrekwencję</strong>, intensyfikując w ten sposób efekty terapeuryczne.
+                                    Ultradźwięki połączone z falą radiową to zabieg, który w bezpieczny sposób redukuje cellulit i tkankę tłuszczową, niweluje wiotkość skóry oraz modeluje twarz. Dzięki połączeniu dwóch technologii intensyfikujemy efekty terapeutyczne.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     Ultradźwięki selektywnie niszczą błony komórkowe adipocytów, czyli komórek tłuszczowych. Następnie fala radiowa przyśpiesza metabolizm usprawniając działanie układu limfatycznego oraz usuwanie uwolnionego tłuszczu z organizmu. Radiofrekwencja pobudza również fibroblasty co skutkuje ujędrnieniem skóry w okolicy zabiegowej.
@@ -82,7 +82,9 @@ const TechnologyAlmaAccentUltraVShapePartial = () => {
                                         'ujędrnienie i modelowanie ciała,',
                                         'poprawa owalu twarzy,',
                                         'likwidacja "chomików",',
-                                        'likwidacja drugiego podbródka.'
+                                        'likwidacja drugiego podbródka,',
+                                        'redukcja blizn',
+                                        'redukcja rozstępów.',
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -92,13 +94,7 @@ const TechnologyAlmaAccentUltraVShapePartial = () => {
                                     ))}
                                 </Grid>
                                 <Typography className='paragraph'>
-                                    Urządzenie Accent Ultra V posiada wymienne głowice zapewniające dodatkowe opcje zabiegowe. Głowica <strong>iPixel RF</strong> to rewolucyjna technologia łącząca <strong>mikroplazmę frakcyjną</strong> z <strong>radiofrekwencją</strong>, służąca do niwelowania rozstępów, blizn, zmarszczek, blizn potrądzikowych oraz wiotkiej skóry.
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    Działanie iPixel RF opiera się na <strong>jednoczesnej ablacji</strong> i <strong>koagulacja tkanki</strong>, dzieki czemu dogłębnie przebudowuje skórę. Wiązka lasera tworzy siateczkę mikrouszkodzeń na poziomie skóry właściwej i naskórka, stymulując silną odbudowę włókien kolagenu i elastyny, które są odpowiedzialne za zdrowy i jędrny wygląd skóry. Proces naprawy i regeneracji skóry następuje w ciągu 48-96 godzin od zabiegu.
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    Głowica frakcyjna wyposażona w setki mikroelektrod umożliwia przeprowadzenie terapii zarówno na małych obszarach, jaką jest twarz, jak i na dużych, tj. brzuch, pośladki, uda.
+                                    Urządzenie posiada wymienne głowice zapewniające dodatkowe opcje zabiegowe. Jedna z nich łączy w sobie mikroplazmę frakcyjną z radiofrekwencją, służącą do niwelowania rozstępów, blizn, zmarszczek, blizn potrądzikowych oraz wiotkiej skóry.  Jej działanie opiera się na jednoczesnej ablacji i koagulacji tkanek, dzięki czemu dogłębnie przebudowuje skórę. Na poziomie naskórka i skóry właściwej tworzy się siateczka mikrouszkodzeń, która stymuluje silną odbudowę włókien kolagenowych i elastynowych, odpowiedzialnych za zdrowy i jędrny wygląd skóry.
                                 </Typography>
                             </Box>
                         </Box>

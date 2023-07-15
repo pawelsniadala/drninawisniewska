@@ -43,6 +43,7 @@ const Modal = () => {
                                 <Typography className='modal-description-2' />
                                 <Typography className='modal-description-3' />
                                 <Typography className='modal-description-4' />
+                                <Typography className='modal-description-5' />
                             </Box>
                             <Box className='modal-footer'>
                                 <Box

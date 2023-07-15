@@ -8,7 +8,7 @@ import ClinicSection from '../sections/ClinicSection';
 import ServicesSection from '../sections/ServicesSection';
 import PriceSection from '../sections/PriceSection';
 import TeamSection from '../sections/TeamSection';
-import TechnologySection from '../sections/TechnologySection';
+// import TechnologySection from '../sections/TechnologySection';
 
 const HomeView = () => {
     return (
@@ -18,7 +18,7 @@ const HomeView = () => {
             <ServicesSection />
             <PriceSection />
             <TeamSection />
-            <TechnologySection />
+            {/* <TechnologySection /> */}
         </Box>
     );
 }

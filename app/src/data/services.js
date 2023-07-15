@@ -1,44 +1,50 @@
+// DERMATOLOGIA
 import servicesDermatology0 from '../assets/services/dermatology/servicesDermatology0.jpg';
 
+// MEDYCYNA ESTETYCZNA
 import servicesAestheticMedicine0 from '../assets/services/aestheticMedicine/servicesAestheticMedicine0.jpg';
 import servicesAestheticMedicine1 from '../assets/services/aestheticMedicine/servicesAestheticMedicine1.jpg';
 
+// KOSMETOLOGIA
 import servicesCosmetology0 from '../assets/services/cosmetology/servicesCosmetology0.jpg';
 
+// FIZJOTERAPIA
 import servicesPhysioterapy0 from '../assets/services/physioteraphy/servicesPhysioterapy0.jpg';
-import servicesPhysioterapy1 from '../assets/services/physioteraphy/servicesPhysioterapy1.jpg';
-import servicesPhysioterapy2 from '../assets/services/physioteraphy/servicesPhysioterapy2.jpg';
 
-
+// CHIRURGIA PLASTYCZNA
 import servicesCosmeticSurgery from '../assets/services/servicesCosmeticSurgery.jpg'; // TODO
 import servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore from '../assets/services/cosmeticSurgery/servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore.png'; // TODO
 import servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter from '../assets/services/cosmeticSurgery/servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter.png'; // TODO
 
-
+// ALERGOLOGIA
 import servicesAllergology0 from '../assets/services/allergology/servicesAllergology0.jpg';
 import servicesAllergology1 from '../assets/services/allergology/servicesAllergology1.jpg';
 import servicesAllergology2 from '../assets/services/allergology/servicesAllergology2.jpg';
 
+// USG
 import servicesUsg0 from '../assets/services/usg/servicesUsg0.jpg';
 
-
+// ENDOKRYNOLOGIA
 import servicesEndocrinology0 from '../assets/services/endocrinology/servicesEndocrinology0.jpg';
 
-
+// GINEKOLOGIA
 import servicesGynecology0 from '../assets/services/gynecology/servicesGynecology0.jpg';
 
+// ORTOPEDIA
 import servicesOrthopedics from '../assets/services/servicesOrthopedics.jpg'; // TODO
 
-
+// CHIRURGIA NACZYNIOWA
 import servicesVascularSurgery0 from '../assets/services/vascularSurgery/servicesVascularSurgery0.jpg';
 
+// DIETETYKA KLINICZNA
 import servicesClinicalDietitian0 from '../assets/services/clinicalDietitian/servicesClinicalDietitian0.jpg';
 
-
+// KARDIOLOGIA
 import servicesCardiology0 from '../assets/services/cardiology/servicesCardiology0.jpg';
 
-
+// REUMATOLOGIA
 import servicesRheumatology from '../assets/services/servicesRheumatology.jpg' // TODO
+
 
 import ninaWisniewskaImageSmall from '../assets/team/ninaWisniewska/ninaWisniewskaImageSmall.jpg';
 import justynaFilipekImageSmall from '../assets/team/justynaFilipek/justynaFilipekImageSmall.jpg';
@@ -64,6 +70,7 @@ import michalRadzioImageSmall from  '../assets/team/michalRadzio/michalRadzioIma
 
 export const dermatology = {
     id: '554e27d9-1d9e-4041-9549-29057bb9792f',
+    specialization: 'dermatology',
     title: 'Dermatologia',
     description: 'Dermatologia to dziedzina medycyny zajmująca się chorobami skóry, włosów i paznokci oraz chorobami wenerycznymi. Najczęstsze problemy z jakimi możesz zgłosić się do naszej Kliniki: kontrola znamion barwnikowych, trądzik pospolity, trądzik różowaty, atopowe zapalenie skóry, łojotokowe zapalenie skóry, łuszczyca, pokrzywka, kontaktowe zapalenie skóry, liszaj płaski, łysienie, łupież, grzybice skóry i paznokci, choroby weneryczne.',
     path: '/services/dermatology',
@@ -91,6 +98,7 @@ export const dermatology = {
 
 export const aestheticMedicine = {
     id: 'b32e9f04-f41d-4c0e-9945-33f962567a94',
+    specialization: 'aesthetic-medicine',
     title: 'Medycyna estetyczna',
     description: 'Toksyna botulinowa to jedna z najbardziej popularnych metod redukcji zmarszczek mimicznych, które pojawiają się w związku z powtarzającymi się skurczami mięśni twarzy. Zabieg pozwala szybko spłycić zmarszczki mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy nadmierna kurczliwość.',
     path: '/services/aesthetic-medicine',
@@ -122,6 +130,7 @@ export const aestheticMedicine = {
 
 export const cosmetology = {
     id: '6c9e3a3d-9257-44d4-81af-87523bdccf71',
+    specialization: 'cosmetology',
     title: 'Kosmetologia',
     description: 'Kosmetologia to dział dermatologii zajmujący się badaniem, opisywaniem, leczeniem i pielęgnowaniem skóry, włosów i paznokci.',
     path: '/services/cosmetology',
@@ -144,8 +153,9 @@ export const cosmetology = {
 
 export const physioterapy = {
     id: '13076f6e-c4f6-474f-80af-73abe224d7a2',
+    specialization: 'physioterapy',
     title: 'Fizjoterapia',
-    description: 'Medycyna ortopedyczna według Cyriaxa jest kompleksowym systemem terapii oraz diagnostyki zaburzeń narządu ruchu. Opiera się na badaniu klinicznym, które za pomocą testów i wywiadu doprowadza fizjoterapeutę do postawienia odpowiedniej diagnozy uszkodzonej tkanki w układzie ruchu.',
+    description: 'Fizjoterapia to dziedzina medycyny zajmująca się leczeniem i rehabilitacją osób z różnymi schorzeniami, urazami lub dysfunkcjami układu mięśniowo-szkieletowego. Jej celem jest przywrócenie pacjentowi pełnej sprawności fizycznej, zmniejszenie bólu, poprawa zakresu ruchu oraz wzmacnianie mięśni.',
     path: '/services/physioterapy',
     pathSpecialist: '/team/physioterapy',
     pathPrices: '/prices/physioterapy',
@@ -153,21 +163,9 @@ export const physioterapy = {
     images: [
         {
             src: servicesPhysioterapy0,
-            alt: 'Fizjoterapeuta wykonujący rehabilitację nogi',
+            alt: 'Fizjoterapeuta nakładający elastyczny bandaż medyczny',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/masaz-medyczny-na-nodze-w-centrum-fizjoterapii_1492577.htm#page=12&query=fizjoterapia&position=27&from_view=search&track=sph'
-        },
-        {
-            src: servicesPhysioterapy1,
-            alt: 'Odprężający masaż karku',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-w-salonie-spa_8871855.htm#page=4&query=masa%C5%BC&position=22&from_view=search&track=sph'
-        },
-        {
-            src: servicesPhysioterapy2,
-            alt: 'Plastrowanie dynamiczne nogi',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/mloda-kobieta-w-stroju-sportowym-cwiczaca-cwiczenie-podczas-sesji-fizjoterapeutycznej_18843285.htm#query=Kinesiotaping&position=0&from_view=search&track=sph'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/fizjoterapeutka-nakladajaca-elastyczny-bandaz-medyczny-na-pacjenta-plci-meskiej_21076897.htm#query=fizjoterapia&position=28&from_view=search&track=sph'
         }
     ],
     specialists: [
@@ -177,6 +175,7 @@ export const physioterapy = {
 
 export const cosmeticSurgery = {
     id: '6666dd88-e379-4067-ad87-7667a7664a5b',
+    specialization: 'cosmetic-surgery',
     image: servicesCosmeticSurgery,
     title: 'Chirurgia plastyczna',
     description: 'Plastyka powiek, inaczej blefaroplastyka, to zabieg mający na celu usunięcie nadmiaru skóry wokół oczu. W zakres blefaroplastyki wchodzi zarówno korekta powieki górnej jak i dolnej. Plastyka powiek jest najskuteczniejszą metodą walki z twz. opadającą powieką. Wskazaniami do zabiegu prócz defektu estetycznego są również asymetria oczu, problemy z widocznością, przepukliny tłuszczowe a także wiotkość tkanki wokół oczu.',
@@ -192,6 +191,7 @@ export const cosmeticSurgery = {
 
 export const allergology = {
     id: '7b31d50f-e239-4003-91cc-39e9799c8aa1',
+    specialization: 'allergology',
     image: servicesAllergology0,
     title: 'Alergologia',
     description: 'Testy skórne są jedną z popularniejszej oraz prostszej metody diagnostycznej alergii. Największą zaletą testów skórnych jest ich krótki czas oczekiwania na wyniki. Badanie przeprowadza się na wewnętrznej części przedramienia lub skórze pleców. Przebieg testów polega na naniesieniu kropli różnych zawiesin z alergenami z zestawu przesiewowego zawierającego takie substancje uczulające jak rośliny wiatropylne, trawy, pleśnie, sierść zwierząt, jad owadów czy roztocza kurzu domowego.',
@@ -225,6 +225,7 @@ export const allergology = {
 
 export const usg = {
     id: '008b2d0b-fa95-404e-a4f0-0fb9975b851d',
+    specialization: 'usg',
     title: 'USG',
     description: 'USG to specjalistyczne nieinwazyjne badanie obrazowe tkanek miękkich w czasie rzeczywistym wykorzystujące fale ultradźwiękowe. Przyjmujemy dzieci w każdym wieku. Nie wykonujemy badania USG układu kostno-stawowego.',
     path: '/services/usg',
@@ -249,6 +250,7 @@ export const usg = {
 
 export const endocrinology = {
     id: '6e4202c5-4058-4c82-8c63-51750083b6bf',
+    specialization: 'endocrinology',
     title: 'Endokrynologia',
     description: 'Endokrynologia to dziedzina medycyny zajmująca się zaburzeniami funkcji gruczołów wydzielania wewnętrznego (ich budowy, produkcji oraz uwalniania hormonów). Najczęstsze problemy z jakimi możesz zgłosić się do naszej Kliniki: nadczynność/niedoczynność tarczycy, choroba Hashimoto, choroba Gravesa-Basedowa, choroby przysadki mózgowej, zaburzenia pracy nadnerczy, insulinooporność.',
     path: '/services/endocrinology',
@@ -270,6 +272,7 @@ export const endocrinology = {
 
 export const gynecology = {
     id: '3238968b-8fbb-4b0a-a950-df8a42597e3f',
+    specialization: 'gynecology',
     title: 'Ginekologia',
     description: 'Ginekologia to dziedzina medycyny zajmująca się profilaktyką i leczeniem chorób żeńskiego układu rozrodczego. Najczęstsze problemy z jakimi możesz zgłosić się do naszej Kliniki: zaburzenia miesiączkowania, infekcje dróg rodnych, dobranie antykoncepcji hormonalnej, niepłodność, nowotwory narządów rodnych.',
     path: '/services/gynecology',
@@ -291,6 +294,7 @@ export const gynecology = {
 
 export const orthopedics = {
     id: '5f41b5eb-0997-4e75-82a4-6efc3aa9a05f',
+    specialization: 'orthopedics',
     image: servicesOrthopedics,
     title: 'Ortopedia',
     description: 'Jedna z podstawowych specjalności lekarskich. Skupia się na diagnostyce i leczeniu operacyjnym i zachowawczym schorzeń, wad wrodzonych i nabytych, zapaleń, zakażeń, nowotworów oraz uszkodzeń i zmian pourazowych narządu ruchu: szkieletu (z wyjątkiem kości czaszki), układu więzadłowo-stawowego oraz mięśni, nerwów i naczyń.',
@@ -304,6 +308,7 @@ export const orthopedics = {
 
 export const vascularSurgery = {
     id: 'eb9d40ce-5393-430c-9536-c2ba825852db',
+    specialization: 'vascular-surgery',
     title: 'Chirurgia naczyniowa',
     description: 'Chirurgia naczyniowa to dziedzina medycyny zajmująca się diagnozowaniem i nieinwazyjnym lub inwazyjnym operacyjnym leczeniem chorób związanych z nieprawidłowym funkcjonowaniem naczyń krwionośnych i limfatycznych.',
     path: '/services/vascular-surgery',
@@ -325,6 +330,7 @@ export const vascularSurgery = {
 
 export const clinicalDietitian = {
     id: 'a24eafcd-33f0-4f90-97fe-f342bd00f3b7',
+    specialization: 'clinical-dietitian',
     title: 'Dietetyka Kliniczna',
     description: 'Dietetyka to nauka medyczna zajmująca się prawidłowym odżywianiem, zarówno osób zdrowych, jak i chorych. Najczęstsze problemy z jakimi możesz zgłosić się do naszej Kliniki: uzupełnienie niedoborów organizmu, chęć odchudzania się w racjonalny sposób, potrzeba wdrożenia specjalistycznej diety ze względu na choroby współistniejące.',
     path: '/services/clinical-dietitian',
@@ -346,6 +352,7 @@ export const clinicalDietitian = {
 
 export const rheumatology = {
     id: '5e727446-cd71-4238-b7dd-fc6abd853f73',
+    specialization: 'rheumatology',
     image: servicesRheumatology,
     title: 'Reumatologia',
     description: 'Dziedzina medycyny zajmująca się różnego typu schorzeniami związanymi ze stanami zwyrodnieniowymi i zapalnymi tkanki łącznej, kości i stawów.',
@@ -359,6 +366,7 @@ export const rheumatology = {
 
 export const cardiology = {
     id: '0eb413c4-fe60-426b-8df4-32c706b24f37',
+    specialization: 'rheumatology',
     title: 'Kardiologia',
     description: 'Kardiologia to dziedzina medycyny zajmująca się schorzeniami i wadami układu sercowo-naczyniowego, ich rozpoznawaniem i leczeniem',
     path: '/services/cardiology',

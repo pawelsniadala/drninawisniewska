@@ -22,6 +22,7 @@ import michalRadzioImage from  '../assets/team/michalRadzio/michalRadzioImage.jp
 
 export const ninaWisniewska = {
     id: '4d6a6ec4-ea93-40b5-9d23-cb7204c6911e',
+    specialist: 'nina-wisniewska',
     name: 'dr n. med. Nina Wiśniewska',
     speciality: 'Specjalista w zakresie Dermatologii i Wenerologii, lekarz medycyny estetycznej',
     summary: 'Urodziłam się w Wyszkowie i dlatego to miejsce jest szczególnie mi bliskie. Od kilku lat przyjmuję tu jako dermatolog pomagając Państwu w zakresie chorób skóry i to dzięki Państwa inicjatywie poszerzam swoją działalność. Zajmuję się kompleksowo leczeniem wszystkich chorób skóry. Przypadki wymagające szczegółowej diagnostyki kieruję do Kliniki Dermatologicznej WIM MON przy ulicy Szaserów 128 w Warszawie, gdzie pełnię funkcję starszego asystenta. W zakresie medycyny estetycznej stale podnoszę swoje kwalifikacje, uczestnicząc w licznych szkoleniach i kongresach, m.in. w zakresie laseroterapii oraz zabiegów z zastosowaniem wypełniaczy. W swojej pracy stawiam głównie na naturalność.',
@@ -31,11 +32,12 @@ export const ninaWisniewska = {
     image: ninaWisniewskaImage,
     background: false,
     specialization: ['dermatology', 'aesthetic-medicine'],
-    specialist: 'nina-wisniewska'
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'wideodermatoskopia']
 };
 
 export const justynaFilipek = {
     id: 'bbe4cefe-d33a-467a-aa8e-48fcf9965952',
+    specialist: 'justyna-filipek',
     name: 'lek. med. Justyna Filipek',
     speciality: 'Ginekolog, endokrynolog',
     summary: false,
@@ -45,11 +47,12 @@ export const justynaFilipek = {
     image: justynaFilipekImage,
     background: false,
     specialization: ['gynecology', 'endocrinology', 'usg'],
-    specialist: 'justyna-filipek'
+    treatment: ['']
 };
 
 export const paulinaBudna = {
     id: '96ecd64c-5904-4205-b97a-48b7f8b4b4ff',
+    specialist: 'paulina-budna',
     name: 'mgr Paulina Budna',
     speciality: 'Kosmetolog',
     summary: false,
@@ -59,11 +62,12 @@ export const paulinaBudna = {
     image: paulinaBudnaImage,
     background: false,
     specialization: ['cosmetology'],
-    specialist: 'paulina-budna'
+    treatment: ['']
 };
 
 export const konradKochan = {
     id: 'c8b0fa10-c635-402e-9a5d-8cc5b7dc8d7a',
+    specialist: 'konrad-kochan',
     name: 'lek. med. Konrad Kochan',
     speciality: 'Specjalista chirurgii plastycznej, certyfikowany lekarz medycyny estetycznej',
     summary: false,
@@ -73,11 +77,12 @@ export const konradKochan = {
     image: konradKochanImage,
     background: false,
     specialization: ['aesthetic-medicine', 'cosmetic-surgery'],
-    specialist: 'konrad-kochan'
+    treatment: ['']
 };
 
 export const agataSkwerekSzewczyk = {
     id: '6fb054ca-430a-488d-8c43-31bf5f58911c',
+    specialist: 'agata-skwerek-szewczyk',
     name: 'lek. med. Agata Skwerek Szewczyk',
     speciality: 'Reumatolog',
     summary: false,
@@ -87,11 +92,12 @@ export const agataSkwerekSzewczyk = {
     image: agataSkwerekSzewczykImage,
     background: false,
     specialization: ['rheumatology'],
-    specialist: 'agata-skwerek-szewczyk'
+    treatment: ['']
 };
 
 export const aldonaMaciag = {
     id: 'c7a059ad-ba38-4f23-8e86-6cae2c0d7990',
+    specialist: 'aldona-maciag',
     name: 'lek. med. Aldona Maciąg',
     speciality: 'Dermatolog',
     summary: false,
@@ -101,11 +107,12 @@ export const aldonaMaciag = {
     image: aldonaMaciagImage,
     background: false,
     specialization: ['dermatology'],
-    specialist: 'aldona-maciag'
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'wideodermatoskopia']
 };
 
 export const justynaKloniecka = {
     id: 'e6b6ea1e-7dfe-46b3-a533-7bb87816d799',
+    specialist: 'justyna-kloniecka',
     name: 'lek. med. Justyna Kłoniecka',
     speciality: 'Dermatolog',
     summary: false,
@@ -115,11 +122,12 @@ export const justynaKloniecka = {
     image: justynaKlonieckaImage,
     background: false,
     specialization: ['dermatology'],
-    specialist: 'justyna-kloniecka'
+    treatment: ['']
 };
 
 export const wojciechKaszewski = {
     id: 'ac4ca38b-526a-49ee-adad-5f81e0347623',
+    specialist: 'wojciech-kaszewski',
     name: 'dr n. med. Wojciech Kaszewski',
     speciality: 'Ortopeda',
     summary: false,
@@ -129,11 +137,12 @@ export const wojciechKaszewski = {
     image: wojciechKaszewskiImage,
     background: false,
     specialization: ['orthopedics', 'usg'],
-    specialist: 'wojciech-kaszewski'
+    treatment: ['']
 };
 
 export const klaudiaMalottki = {
     id: '9d4116c1-c755-46f8-85d5-65c8377abd21',
+    specialist: 'klaudia-malottki',
     name: 'lek. dent. Klaudia Malottki',
     speciality: 'Dyplomowany lekarz medycyny estetycznej',
     summary: 'Proporcje, symetria i detale to coś co często nie pozwala mi zmrużyć oka. Uwielbiam poprawiać urodę i wydobywać z niej jak najwiecej, ale najważniejsze jest dla mnie żeby nie zaburzyć naturalnego piękna każdego pacjenta. W codziennej pracy narzędziem bez którego nie wyobrażam sobie zabiegów jest kredka zaplanowanie i sposób przekazania tego pacjentom jest drogą do porozumienia.',
@@ -143,11 +152,12 @@ export const klaudiaMalottki = {
     image: klaudiaMalottkiImage,
     background: false,
     specialization: ['aesthetic-medicine'],
-    specialist: 'klaudia-malottki'
+    treatment: ['']
 };
 
 export const katarzynaMysliwiecCzajka = {
     id: 'katarzynaMysliwiecCzajka',
+    specialist: 'katarzyna-mysliwiec-czajka',
     name: 'lek. med. Katarzyna Myśliwiec-Czajka',
     speciality: 'Dermatolog',
     summary: false,
@@ -157,11 +167,12 @@ export const katarzynaMysliwiecCzajka = {
     image: katarzynaMysliwiecCzajkaImage,
     background: false,
     specialization: ['dermatology'],
-    specialist: 'katarzyna-mysliwiec-czajka'
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'wideodermatoskopia']
 };
 
 export const milenaJuzwiak = {
     id: '39323729-937c-403a-b16b-a8e964965288',
+    specialist: 'milena-juzwiak',
     name: 'mgr Milena Juźwiak',
     speciality: 'Fizjoterapeuta',
     summary: false,
@@ -171,11 +182,12 @@ export const milenaJuzwiak = {
     image: milenaJuzwiakImage,
     background: false,
     specialization: ['physioterapy'],
-    specialist: 'milena-juzwiak'
+    treatment: ['rehabilitacja', 'masaz', 'kinesiotaping']
 };
 
 export const paulinaTatara = {
     id: '3b2ca017-a5cd-4d1d-a8dd-6a4dc84b21a2',
+    specialist: 'paulina-tatara',
     name: 'lek. med. Paulina Tatara',
     speciality: 'Dermatolog, Lekarz medycyny estetycznej',
     summary: 'Od zawsze chciałam, by mój zawód polegał na niesieniu pomocy innym. Będąc dermatologiem mogę wspierać pacjentów w dążeniu do samoakceptacji i w budowaniu pewności siebie. Oprócz leczenia, lubię także edukować. Wychodzę z założenia, że dobre zdrowie zaczyna się od wiedzy. Realizuję swoje poczucie estetyki i empatii kształcąc się na kursach i szkoleniach z zakresu medycyny estetycznej. Uważam, że mniej znaczy więcej, a zabiegi z zakresu medycyny estetycznej powinny podkreślać atuty, nie zmieniać. Naturalne piękno po prostu potrzebuje czasami kropki nad i a nie zmiany całego wersu.',
@@ -185,11 +197,12 @@ export const paulinaTatara = {
     image: paulinaTataraImage,
     background: false,
     specialization: ['dermatology', 'aesthetic-medicine'],
-    specialist: 'paulina-tatara'
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'wideodermatoskopia']
 };
 
 export const tomaszMatuszewski = {
     id: '51afb769-17b6-4f91-815e-46b7a9d2090e',
+    specialist: 'tomasz-matuszewski',
     name: 'dr n. med. Tomasz Matuszewski',
     speciality: 'Alergolog, pediatra',
     summary: false,
@@ -199,11 +212,12 @@ export const tomaszMatuszewski = {
     image: tomaszMatuszewskiImage,
     background: false,
     specialization: ['allergology'],
-    specialist: 'tomasz-matuszewski'
+    treatment: ['']
 };
 
 export const olgaLenartowiczWarakomska = {
     id: 'eea454b7-6f22-401b-93b7-c29b166751d9',
+    specialist: 'olga-lenartowicz-warakomska',
     name: 'lek. dent. Olga Lenartowicz-Warakomska',
     speciality: 'Stomatolog, Specjalista medycyny estetycznej',
     summary: false,
@@ -213,11 +227,12 @@ export const olgaLenartowiczWarakomska = {
     image: olgaLenartowiczWarakomskaImage,
     background: false,
     specialization: ['aesthetic-medicine'],
-    specialist: 'olga-lenartowicz-warakomska'
+    treatment: ['']
 };
 
 export const katarzynaZbronska = {
     id: 'e48dc37a-0c66-4749-986c-f180849dc44c',
+    specialist: 'katarzyna-zbronska',
     name: 'lek. med. Katarzyna Zbrońska',
     speciality: 'Dermatolog, trycholog',
     summary: false,
@@ -227,11 +242,12 @@ export const katarzynaZbronska = {
     image: katarzynaZbronskaImage,
     background: false,
     specialization: ['dermatology'],
-    specialist: 'katarzyna-zbronska'
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'wideodermatoskopia']
 };
 
 export const joannaOjrzenska = {
     id: '45cfadf1-1d6c-42be-96e2-b8ddd6469a10',
+    specialist: 'joanna-ojrzenska',
     name: 'mgr Joanna Ojrzeńska',
     speciality: 'Dietetyk kliniczny',
     summary: false,
@@ -241,11 +257,12 @@ export const joannaOjrzenska = {
     image: joannaOjrzenskaImage,
     background: false,
     specialization: ['clinical-dietitian'],
-    specialist: 'joanna-ojrzenska'
+    treatment: ['']
 };
 
 export const aleksandraGorczynska = {
     id: '99ecc02d-c4dc-44f4-b8f1-a79a435ee6c2',
+    specialist: 'aleksandra-gorczynska',
     name: 'mgr Aleksandra Górczyńska',
     speciality: 'Kosmetolog',
     summary: false,
@@ -255,11 +272,12 @@ export const aleksandraGorczynska = {
     image: aleksandraGorczynskaImage,
     background: false,
     specialization: ['cosmetology'],
-    specialist: 'aleksandra-gorczynska'
+    treatment: ['']
 };
 
 export const kamilStepkowski = {
     id: '0b01251b-90a9-4279-b7ee-afd83274a03e',
+    specialist: 'kamil-stepkowski',
     name: 'lek. med. Kamil Stępkowski',
     speciality: 'Chirurg naczyniowy',
     summary: false,
@@ -269,11 +287,12 @@ export const kamilStepkowski = {
     image: kamilStepkowskiImage,
     background: false,
     specialization: ['vascular-surgery', 'usg'],
-    specialist: 'kamil-stepkowski'
+    treatment: ['laserowe-usuwanie-zylakow', 'skleroterapia']
 };
 
 export const katarzynaRychlik = {
     id: 'e78f0fef-0597-4ef4-b741-a576b0a86342',
+    specialist: 'katarzyna-rychlik',
     name: 'lek. med. Katarzyna Rychlik',
     speciality: 'Dermatolog',
     summary: false,
@@ -283,11 +302,12 @@ export const katarzynaRychlik = {
     image: katarzynaRychlikImage,
     background: false,
     specialization: ['dermatology'],
-    specialist: 'katarzyna-rychlik'
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'wideodermatoskopia']
 };
 
 export const patrykKrokwinski = {
     id: '0316f09f-7c5f-46df-a1cb-48289205050e',
+    specialist: 'patryk-krokwinski',
     name: 'lek. med. Patryk Krokwiński',
     speciality: 'Radiolog',
     summary: false,
@@ -297,11 +317,12 @@ export const patrykKrokwinski = {
     image: patrykKrokwinskiImage,
     background: false,
     specialization: ['usg'],
-    specialist: 'patryk-krokwinski'
+    treatment: ['']
 };
 
 export const michalRadzio = {
     id: '19cf6af2-bb99-4c99-8e2f-9c6090c55c8f',
+    specialist: 'michal-radzio',
     name: 'lek. med. Michał Radzio',
     speciality: 'Specjalista chorób wewnętrznych i kardiologii',
     summary: false,
@@ -311,7 +332,7 @@ export const michalRadzio = {
     image: michalRadzioImage,
     background: false,
     specialization: ['cardiology'],
-    specialist: 'michal-radzio'
+    treatment: ['']
 };
 
 export const team = [

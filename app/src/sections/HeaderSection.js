@@ -22,7 +22,7 @@ import ServicesSvg from '../assets/svg/ServicesSvg';
 import PricesSvg from '../assets/svg/PricesSvg';
 import SpecialOfferSvg from '../assets/svg/SpecialOfferSvg';
 import TeamSvg from '../assets/svg/TeamSvg';
-import TechnologySvg from '../assets/svg/TechnologySvg';
+// import TechnologySvg from '../assets/svg/TechnologySvg';
 import ContactSvg from '../assets/svg/ContactSvg';
 
 const HeaderSection = () => {
@@ -125,6 +125,26 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
+                {/* <ListItem className='list-item'>
+                    <NavLink
+                        className='nav-link'
+                        activeclassname='active'
+                        aria-current='page'
+                        to='/treatment'
+                        onClick={(e) => {
+                            if (window.location.pathname.includes('/treatment')) {
+                                e.preventDefault();
+                            }
+                        }}
+                    >
+                        <ListItemButton className='list-item-button'>
+                            <ListItemIcon className='list-item-icon'>
+                                <ServicesSvg width='17px' height='17px' />
+                            </ListItemIcon>
+                            <ListItemText className='list-item-text' primary='Zabiegi' />
+                        </ListItemButton>
+                    </NavLink>
+                </ListItem> */}
                 <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
@@ -185,7 +205,7 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem>
-                <ListItem className='list-item'>
+                {/* <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
                         activeclassname='active'
@@ -204,7 +224,7 @@ const HeaderSection = () => {
                             <ListItemText className='list-item-text' primary='Technologia' />
                         </ListItemButton>
                     </NavLink>
-                </ListItem>
+                </ListItem> */}
                 <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
@@ -407,6 +427,21 @@ const HeaderSection = () => {
                                         Specjalizacje
                                     </NavLink>
                                 </li>
+                                {/* <li className='nav-item'>
+                                    <NavLink
+                                        className='nav-link'
+                                        activeclassname='active'
+                                        aria-current='page'
+                                        to='/treatment'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/treatment')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
+                                    >
+                                        Zabiegi
+                                    </NavLink>
+                                </li> */}
                                 <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'
@@ -452,7 +487,7 @@ const HeaderSection = () => {
                                         Specjaliści
                                     </NavLink>
                                 </li>
-                                <li className='nav-item'>
+                                {/* <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'
                                         activeclassname='active'
@@ -466,7 +501,7 @@ const HeaderSection = () => {
                                     >
                                         Technologia
                                     </NavLink>
-                                </li>
+                                </li> */}
                                 <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'

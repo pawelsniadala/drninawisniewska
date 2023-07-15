@@ -16,7 +16,7 @@ import Image from '../../../components/Image';
 
 import { services, usg } from '../../../data/services';
 import { team } from '../../../data/team';
-import { technology } from '../../../data/technology';
+// import { technology } from '../../../data/technology';
 
 const ServicesUsgPartial = () => {
     return (

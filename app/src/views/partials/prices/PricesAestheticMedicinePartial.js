@@ -34,11 +34,11 @@ const StyledTableRow = styled(TableRow)(() => ({
     }
 }));
 
-const badge = (title) => (
-    <span className='badge success margin'>
-        {title}
-    </span>
-);
+// const badge = (title) => (
+//     <span className='badge success margin'>
+//         {title}
+//     </span>
+// );
 
 const tooltip = (title) => (
     <Tooltip title={title}>
