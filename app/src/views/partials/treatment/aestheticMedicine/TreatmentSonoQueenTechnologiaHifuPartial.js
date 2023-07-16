@@ -12,13 +12,13 @@ import Container from '../../../../components/Container';
 import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
-// import Image from '../../../../components/Image';
+import Image from '../../../../components/Image';
 
-import { treatment, /* laserFrakcyjny */ } from '../../../../data/treatment';
+import { treatment, sonoQueenTechnologiaHifu } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
-const TreatmentLaserFrakcyjnyPartial = () => {
+const TreatmentSonoQueenTechnologiaHifuPartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -48,13 +48,13 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                                     Medycyna estetyczna
                                 </Link>
                                 <Typography>
-                                    Laser frakcyjny
+                                    SonoQueen technologia HIFU
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Laser frakcyjny
+                                SonoQueen technologia HIFU
                             </Typography>
                         </Box>
                     </Container>
@@ -64,38 +64,42 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Laser frakcyjny</strong> jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci <strong>likwidacji blizn potrądzikowych</strong>, <strong>poprawy jakości skóry</strong> i <strong>wytworzenia nowych struktur kolagenu</strong>.
+                                    <strong>SonoQueen</strong> to nowoczesna technologia wykorzystująca moc HIFU. Najnowsza generacja <strong>technologii HIFU</strong> (High Intensity Focused Ultrasound) to <strong>sfokusowane ultradźwięki o wysokiej częstotliwości</strong> do <strong>bezinwazyjnego</strong>, <strong>niechirurgicznego liftingu</strong> twarzy i ciała.
                                 </Typography>
-                                {/* <Box className='box-image'>
+                                <Box className='box-image'>
                                     <Image
-                                        imageSrc={laserFrakcyjny.images[0].src}
-                                        imageAlt={laserFrakcyjny.images[0].alt}
-                                        imageAuthor={laserFrakcyjny.images[0].author}
-                                        imageHref={laserFrakcyjny.images[0].href}
+                                        imageSrc={sonoQueenTechnologiaHifu.images[0].src}
+                                        imageAlt={sonoQueenTechnologiaHifu.images[0].alt}
+                                        imageAuthor={sonoQueenTechnologiaHifu.images[0].author}
+                                        imageHref={sonoQueenTechnologiaHifu.images[0].href}
                                     />
-                                </Box> */}
+                                </Box>
                                 <Typography className='paragraph'>
-                                    W porównaniu z tradycyjnymi laserami CO<sub>2</sub>, frakcjonowanie ablacyjne laserami Fons pozwala osiągnąć <strong>dużą głębokość penetracji w skórze</strong>, dając efektywne procedury zabiegowe. Dzięki wysokiej mocy i wszechstronności może być wykorzystywany w wielu wskazaniach. Wygodę i precyzję działania zapewnia siedmioprzegubowe ramię.
+                                    Precyzyjna i skoncentrowana wiązka fali ultradźwiękowej pozwala dotrzeć do 3 warstw - skóry właściwej, tkanki tłuszczowej i powięzi mięśniowej (SMAS), osiągając temperaturę ok. 60°C-70°C wywołuje tym samym punkty termicznej koagulacji. Rozpoczyna to <strong>proces kolagenogenezy</strong>, <strong>regeneracji zwiotczałych włókien kolagenowych</strong> i <strong>obkurczenia tkanek</strong>, dając efekt wielowymiarowego ujędrnienia. Dzięki temu uzyskujemy spektakularny i trwały efekt napięcia aktywowany w głębokiej warstwie skóry.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Ogromną zaletą jest <strong>bezkontaktowa praca</strong> lasera gwarantująca całkowitą czystość pola operacyjnego. Bardzo ważna jest także istotna redukcja krwawienia oraz natychmiastowa koagulacja. W trakcie wykonywania zabiegu uzyskujemy tysiące mikroskopijnych uszkodzeń tkanki, natomiast pozostałe obszary pozostają nienaruszone i to właśnie one przyspieszają odnowę zniszczonych stref skóry. Dzięki temu okres rekonwalescencji jest zredukowany do minimum przy jedoczesnym zachowaniu wysokiej efektywności terapii.
+                                    SonoQueen wyposażone jest w komplet specjalnych kartridży umożliwiających <strong>precyzyjne działanie na różnych głębokościach tkanki</strong> - od 2,0 mm do 4,5 mm na twarzy i 6 mm na ciele.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    <strong>Możliwości zabiegowe</strong>:
+                                    <strong>Wskazania:</strong>
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'resurfacing skóry,',
-                                        'lifting i ujędrnianie skóry,',
-                                        'usuwanie blizn (potrądzikowych, pourazowych, oparzeniowych),',
-                                        'likwidacja rozstępów,',
-                                        'redukcja trądziku,',
-                                        'usuwanie przebarwień,',
-                                        'usuwanie zmarszczek,',
-                                        'poprawa jakości skóry',
-                                        'skuteczne efekty w niwelowaniu fotostarzenia się skóry,',
-                                        'zabiegi chirurgiczne z wykorzystaniem punktowej głowicy lasera frakcyjnego',
-                                        'ginekologia estetyczna.'
+                                        'lifting twarzy, szyi oraz dekoltu,',
+                                        'wygładzenie płytkich i głębokich zmarszczek,',
+                                        'wyszczuplanie ciała,',
+                                        'rozświetlenie skóry,',
+                                        'opadające powieki,',
+                                        'ujędrnienie wiotkiej skóry w różnych partiach ciała,',
+                                        'lifting twarzy i ujędrnianie ciała,',
+                                        'napięcie delikatnej skóry w okolicach oczu,',
+                                        'ujędrnienie skóry w okolicy ramion,',
+                                        'lifting wiotkiej skóry na brzuchu,',
+                                        'uniesienie i ujędrnienie pośladków,',
+                                        'wygładzenie skóry w okolicach ud i kolan,',
+                                        'redukcja tzw. "drugiego podbródka",',
+                                        'wygładzenie zmarszczek,',
+                                        'spowolnienie procesu starzenia skóry.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -105,28 +109,8 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                                     ))}
                                 </Grid>
                                 <Typography className='paragraph'>
-                                    Efekty po zabiegu laserem frakcyjnym są widoczne stopniowo po około 4 tygodniach od zabiegu. Zmiany można zaobserwować już po jednym naświetlaniu, jednak, aby osiągnąć lepsze rezultaty należy wykonać 2-4 zabiegi.
+                                    Zabieg Sonoqueen jest <strong>bezbolesny</strong> dla pacjenta i <strong>nie wymaga okresu rekonwalescencji</strong>. Seria zabiegowa wynosi od 1 do 3 zabiegów w odstępach co 3-4 miesiące, ale w większości przypadków wystarcza jeden. Pierwsze efekty widoczne są bezpośrednio po zabiegu, a pełnym efektem niechirurgicznego liftingu pacjent może cieszyć się już po 3 miesiącach.
                                 </Typography>
-                                <Typography className='paragraph heading'>
-                                    <strong>Jak przygotować się do zabiegu?</strong>
-                                </Typography>
-                                <Grid container spacing={0.5} marginBottom={2}>
-                                    {[
-                                        'Po terapii doustnymi retinoidami lub izotretynoiną należy odczekać okres 6 miesięcy od momentu odstawienia.',
-                                        'Należy odstawić leki zioła fototoksyczne i fotouczulające (dziurawiec, pokrzywa, nagietek, herbaty odchudzające typu "figura", zioła chińskie) na 3 tygodnie przed zabiegiem.',
-                                        'Po kuracji antybiotykami należy odczekać ok. 2 tygodnie od momentu odstawienia leków.',
-                                        'Tydzień przed zabiegiem nie wykonywać depilacji w okolicy zabiegowej.',
-                                        'Obszar zabiegowy nie może być podrażniony ani przesuszony.',
-                                        'Na 4 tygodnie przed zabiegiem nie należy opalać skóry.',
-                                        'Na 2 tygodnie przed zabiegiem nie należy stosować kremów z retinoidami, innych preparatów złuszczających (peelingi, kwasy owocowe, witamina A) oraz kosmetyków brązujących, samoopalaczy.'
-                                    ].map((item, index) => (
-                                        <ListBulleted
-                                            key={index}
-                                            ListBulletedItem={item}
-                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
-                                        />
-                                    ))}
-                                </Grid>
                             </Box>
                         </Box>
 
@@ -139,7 +123,7 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team
-                                        .filter(item => item.treatment.includes('laser-frakcyjny'))
+                                        .filter(item => item.treatment.includes('sonoqueen-technologia-hifu'))
                                         .map((item) => (
                                             <CardTeamProposed
                                                 key={item.id}
@@ -183,7 +167,7 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                                 <Box className='card-wrapper'>
                                     {treatment
                                         .filter(item => item.specialization.includes('aesthetic-medicine'))
-                                        .filter(item => item.treatment !== 'laser-frakcyjny')
+                                        .filter(item => item.treatment !== 'sonoqueen-technologia-hifu')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -204,4 +188,4 @@ const TreatmentLaserFrakcyjnyPartial = () => {
     );
 }
 
-export default Page(TreatmentLaserFrakcyjnyPartial);
+export default Page(TreatmentSonoQueenTechnologiaHifuPartial);

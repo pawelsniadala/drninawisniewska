@@ -77,7 +77,7 @@ export const konradKochan = {
     image: konradKochanImage,
     background: false,
     specialization: ['aesthetic-medicine', 'cosmetic-surgery'],
-    treatment: ['']
+    treatment: ['plastyka-powiek']
 };
 
 export const agataSkwerekSzewczyk = {
@@ -152,7 +152,7 @@ export const klaudiaMalottki = {
     image: klaudiaMalottkiImage,
     background: false,
     specialization: ['aesthetic-medicine'],
-    treatment: ['toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'nici-rewitalizujace-i-liftingujace', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
+    treatment: ['toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'nici-rewitalizujace-i-liftingujace', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien', 'sonoqueen-technologia-hifu']
 };
 
 export const katarzynaMysliwiecCzajka = {
@@ -227,7 +227,7 @@ export const olgaLenartowiczWarakomska = {
     image: olgaLenartowiczWarakomskaImage,
     background: false,
     specialization: ['aesthetic-medicine'],
-    treatment: ['toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
+    treatment: ['toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien', 'sonoqueen-technologia-hifu']
 };
 
 export const katarzynaZbronska = {
@@ -242,7 +242,7 @@ export const katarzynaZbronska = {
     image: katarzynaZbronskaImage,
     background: false,
     specialization: ['dermatology'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien', 'sonoqueen-technologia-hifu']
 };
 
 export const joannaOjrzenska = {
@@ -332,7 +332,7 @@ export const michalRadzio = {
     image: michalRadzioImage,
     background: false,
     specialization: ['cardiology'],
-    treatment: ['']
+    treatment: ['echo-serca']
 };
 
 export const team = [

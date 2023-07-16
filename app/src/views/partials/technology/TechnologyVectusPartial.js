@@ -51,7 +51,7 @@ const TechnologyVectusPartial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Vectus™ / <strong>Epilacja laserowa (Kosmetologia) [przeniesione]</strong>
+                                Vectus™
                             </Typography>
                         </Box>
                     </Container>

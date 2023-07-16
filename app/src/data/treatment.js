@@ -7,10 +7,11 @@ import usuniecieZmianSkornychElektrochirurgiczneImage0 from '../assets/treatment
 import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/toksynaBotulinowa0.jpg';
 import stymulatoryTkankoweImage0 from '../assets/treatment/aestheticMedicine/stymulatoryTkankowe/stymulatoryTkankowe0.jpg';
 import osoczeBogatopłytkoweImage0 from '../assets/treatment/aestheticMedicine/osoczeBogatopłytkowe/osoczeBogatopłytkowe0.jpg';
-import mezoterapiaIglowaImage0 from '../assets/treatment/aestheticMedicine/mezoterapiaIglowa/mezoterapiaIglowa0.jpg';
-// import niciRewitalizujaceILiftingujaceImage0 from '../assets/treatment/aestheticMedicine/niciRewitalizujaceILiftingujace/niciRewitalizujaceILiftingujace0.jpg';
 // import laserFrakcyjnyImage0 from '../assets/treatment/aestheticMedicine/laserFrakcyjny/laserFrakcyjny0.jpg';
+// import niciRewitalizujaceILiftingujaceImage0 from '../assets/treatment/aestheticMedicine/niciRewitalizujaceILiftingujace/niciRewitalizujaceILiftingujace0.jpg';
+import mezoterapiaIglowaImage0 from '../assets/treatment/aestheticMedicine/mezoterapiaIglowa/mezoterapiaIglowa0.jpg';
 import zamykanieNaczynekILikwidacjaPrzebarwienImage0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/zamykanieNaczynekILikwidacjaPrzebarwien0.jpg';
+import sonoQueenTechnologiaHifuImage0 from '../assets/treatment/aestheticMedicine/sonoQueenTechnologiaHifu/sonoQueenTechnologiaHifu0.jpg';
 
 // KOSMETOLOGIA
 import peelingMedycznyImage0 from '../assets/treatment/cosmetology/peelingMedyczny/peelingMedyczny0.jpg';
@@ -148,19 +149,19 @@ export const osoczeBogatopłytkowe = {
     specialization: ['aesthetic-medicine']
 };
 
-export const mezoterapiaIglowa = {
-    id: 'ddddb0c3-be44-4056-936a-64fb7bb06fc4',
-    treatment: 'mezoterapia-iglowa',
-    title: 'Mezoterapia igłowa',
-    description: 'Mezoterapia igłowa to przede wszystkim głębokie nawilżenie skóry. Zabieg polega na bezpośrednim podaniu małych dawek substancji biologicznie czynnej śródskórnie lub podskórnie w miejsca, które chcemy poddać zabiegowi. Mezoterapia igłowa pobudza również mikrokrążenie, co stymuluje komórki do produkcji nowych włókien kolagenowych. W efekcie uzyskujemy odświeżoną, napiętą skórę.',
-    path: '/treatment/aesthetic-medicine/mezoterapia-iglowa',
-    image: mezoterapiaIglowaImage0,
+export const laserFrakcyjny = {
+    id: '6351da55-b909-441e-a2a9-23442405dacb',
+    treatment: 'laser-frakcyjny',
+    title: 'Laser frakcyjny',
+    description: 'Laser frakcyjny jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci likwidacji blizn potrądzikowych, poprawy jakości skóry i wytworzenia nowych struktur kolagenu.',
+    path: '/treatment/aesthetic-medicine/laser-frakcyjny',
+    image: null,
     images: [
         {
-            src: mezoterapiaIglowaImage0,
-            alt: 'Mezoterapia igłowa',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-poddawana-zabiegowi-preparacji-skory-glowy-pod-wysokim-katem_26388252.htm#query=Mezoterapia%20ig%C5%82owa&position=6&from_view=search&track=ais'
+            src: null,
+            alt: '',
+            author: '',
+            href: ''
         }
     ],
     specialization: ['aesthetic-medicine']
@@ -184,19 +185,19 @@ export const niciRewitalizujaceILiftingujace = {
     specialization: ['aesthetic-medicine']
 };
 
-export const laserFrakcyjny = {
-    id: '6351da55-b909-441e-a2a9-23442405dacb',
-    treatment: 'laser-frakcyjny',
-    title: 'Laser frakcyjny',
-    description: 'Laser frakcyjny jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci likwidacji blizn potrądzikowych, poprawy jakości skóry i wytworzenia nowych struktur kolagenu.',
-    path: '/treatment/aesthetic-medicine/laser-frakcyjny',
-    image: null,
+export const mezoterapiaIglowa = {
+    id: 'ddddb0c3-be44-4056-936a-64fb7bb06fc4',
+    treatment: 'mezoterapia-iglowa',
+    title: 'Mezoterapia igłowa',
+    description: 'Mezoterapia igłowa to przede wszystkim głębokie nawilżenie skóry. Zabieg polega na bezpośrednim podaniu małych dawek substancji biologicznie czynnej śródskórnie lub podskórnie w miejsca, które chcemy poddać zabiegowi. Mezoterapia igłowa pobudza również mikrokrążenie, co stymuluje komórki do produkcji nowych włókien kolagenowych. W efekcie uzyskujemy odświeżoną, napiętą skórę.',
+    path: '/treatment/aesthetic-medicine/mezoterapia-iglowa',
+    image: mezoterapiaIglowaImage0,
     images: [
         {
-            src: null,
-            alt: '',
-            author: '',
-            href: ''
+            src: mezoterapiaIglowaImage0,
+            alt: 'Mezoterapia igłowa',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-poddawana-zabiegowi-preparacji-skory-glowy-pod-wysokim-katem_26388252.htm#query=Mezoterapia%20ig%C5%82owa&position=6&from_view=search&track=ais'
         }
     ],
     specialization: ['aesthetic-medicine']
@@ -219,6 +220,25 @@ export const zamykanieNaczynekILikwidacjaPrzebarwien = {
     ],
     specialization: ['aesthetic-medicine']
 };
+
+export const sonoQueenTechnologiaHifu = {
+    id: '6dbc65da-d98d-448c-9a3c-184a2923e0db',
+    treatment: 'sonoqueen-technologia-hifu',
+    title: 'SonoQueen technologia HIFU',
+    description: 'SonoQueen to nowoczesna technologia wykorzystująca moc HIFU. Najnowsza generacja technologii HIFU (High Intensity Focused Ultrasound) to sfokusowane ultradźwięki o wysokiej częstotliwości do bezinwazyjnego, niechirurgicznego liftingu twarzy i ciała.',
+    path: '/treatment/aesthetic-medicine/sonoqueen-technologia-hifu',
+    image: sonoQueenTechnologiaHifuImage0,
+    images: [
+        {
+            src: sonoQueenTechnologiaHifuImage0,
+            alt: 'Zabieg liftingu twarzy',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-lezy-na-kanapie-w-procedurze-czyszczenia-twarzy_14481187.htm#page=14&query=kosmotolog%20zabieg&position=15&from_view=search&track=ais'
+        }
+    ],
+    specialization: ['aesthetic-medicine']
+};
+
 
 // KOSMETOLOGIA
 export const peelingMedyczny = {
@@ -351,6 +371,23 @@ export const kinesiotaping = {
 
 
 // CHIRURGIA PLASTYCZNA
+export const plastykaPowiek = {
+    id: 'e7f2520e-2e6e-4a08-bead-72ea02cd3842',
+    treatment: 'plastyka-powiek',
+    title: 'Plastyka powiek',
+    description: 'Plastyka powiek, inaczej blefaroplastyka, to zabieg mający na celu usunięcie nadmiaru skóry wokół oczu. W zakres blefaroplastyki wchodzi zarówno korekta powieki górnej jak i dolnej. Plastyka powiek jest najskuteczniejszą metodą walki z twz. opadającą powieką. Wskazaniami do zabiegu prócz defektu estetycznego są również asymetria oczu, problemy z widocznością, przepukliny tłuszczowe a także wiotkość tkanki wokół oczu.',
+    path: '/treatment/cosmetic-surgery/plastyka-powiek',
+    image: null,
+    images: [
+        {
+            src: null,
+            alt: '',
+            author: '',
+            href: ''
+        }
+    ],
+    specialization: ['cosmetic-surgery']
+};
 
 
 // ALERGOLOGIA
@@ -447,6 +484,26 @@ export const laseroweUsuwanieZylakow = {
     specialization: ['vascular-surgery']
 };
 
+
+// KARDIOLOGIA
+export const echoSerca = {
+    id: '69d011cf-bd77-4910-95e2-6ba2234a0f21',
+    treatment: 'echo-serca',
+    title: 'ECHO serca',
+    description: 'ECHO serca, czyli echokardiografia, to bezpieczne i nieinwazyjne badanie obrazowe serca, które wykorzystuje fale dźwiękowe o wysokiej częstotliwości do tworzenia obrazów struktur serca. Zabieg ten przeprowadza się za pomocą urządzenia zwanych echokardiografami, które emitują fale dźwiękowe przez specjalną sondę umieszczoną na klatce piersiowej pacjenta.',
+    path: '/treatment/cardiology/echo-serca',
+    image: null,
+    images: [
+        {
+            src: null,
+            alt: '',
+            author: '',
+            href: ''
+        }
+    ],
+    specialization: ['cardiology']
+};
+
 export const treatment = [
     // DERMATOLOGIA
     { ...badanieZnamionBarwnikowych },
@@ -457,10 +514,11 @@ export const treatment = [
     { ...toksynaBotulinowa },
     { ...stymulatoryTkankowe },
     { ...osoczeBogatopłytkowe },
-    { ...mezoterapiaIglowa },
-    { ...niciRewitalizujaceILiftingujace },
     { ...laserFrakcyjny },
+    { ...niciRewitalizujaceILiftingujace },
+    { ...mezoterapiaIglowa },
     { ...zamykanieNaczynekILikwidacjaPrzebarwien },
+    { ...sonoQueenTechnologiaHifu },
 
     // KOSMETOLOGIA
     { ...peelingMedyczny },
@@ -474,7 +532,7 @@ export const treatment = [
     { ...kinesiotaping },
 
     // CHIRURGIA PLASTYCZNA
-
+    { ...plastykaPowiek },
 
     // ALERGOLOGIA
     { ...testySkorne },
@@ -483,5 +541,8 @@ export const treatment = [
 
     // CHIRURGIA NACZYNIOWA
     { ...skleroterapia },
-    { ...laseroweUsuwanieZylakow }
+    { ...laseroweUsuwanieZylakow },
+
+    // KARDIOLOGIA
+    { ...echoSerca }
 ];

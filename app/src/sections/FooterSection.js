@@ -136,94 +136,101 @@ const FooterSection = () => {
                         </Typography>
                     </Box>
                 </Box>
-                <Box className='technology'>
+                <Box className='treatment'>
                     <Typography variant='h6' className='footer-heading'>
-                        Technologia
+                        Zabiegi
                     </Typography>
-                    <Box className='technology-wrapper'>
+                    <Box className='treatment-wrapper'>
+                        {/* DERMATOLOGIA */}
                         <Typography
                             component='a'
-                            href='/technology/vectus'
+                            href='/treatment/dermatology/fototerapia-chorob-skory'
                             className='footer-text link'
                         >
-                            Vectus
+                            Fototerapia chorób skóry
+                        </Typography>
+                        {/* MEDYCYNA ESTETYCZNA */}
+                        <Typography
+                            component='a'
+                            href='/treatment/aesthetic-medicine/osocze-bogatopłytkowe'
+                            className='footer-text link'
+                        >
+                            Osocze bogatopłytkowe
                         </Typography>
                         <Typography
                             component='a'
-                            href='/technology/alma-harmony-xl-pro'
+                            href='/treatment/aesthetic-medicine/mezoterapia-iglowa'
                             className='footer-text link'
                         >
-                            Alma Harmony XL Pro
+                            Mezoterapia igłowa
+                        </Typography>
+                        {/* KOSMETOLOGIA */}
+                        <Typography
+                            component='a'
+                            href='/treatment/cosmetology/peeling-medyczny'
+                            className='footer-text link'
+                        >
+                            Peeling medyczny
                         </Typography>
                         <Typography
                             component='a'
-                            href='/technology/icoone-laser-med2'
+                            href='/treatment/cosmetology/epilacja-laserowa'
                             className='footer-text link'
                         >
-                            Icoone Laser Med 2
+                            Epilacja laserowa
                         </Typography>
                         <Typography
                             component='a'
-                            href='/technology/fons-svr-fraction-laser-co2'
+                            href='/treatment/cosmetology/masaz-prozniowy'
                             className='footer-text link'
                         >
-                            Fons SVR Laser Frakcyjny CO<sub>2</sub>
+                            Masaż próżniowy
+                        </Typography>
+                        {/* FIZJOTERAPIA */}
+                        <Typography
+                            component='a'
+                            href='/treatment/physioterapy/rehabilitacja'
+                            className='footer-text link'
+                        >
+                            Rehabilitacja
                         </Typography>
                         <Typography
                             component='a'
-                            href='/technology/alma-accent-ultra-v-shape'
+                            href='/treatment/physioterapy/kinesiotaping'
                             className='footer-text link'
                         >
-                            Alma Accent Ultra V Shape
+                            Kinesiotaping
+                        </Typography>
+                        {/* CHIRURGIA PLASTYCZNA */}
+                        <Typography
+                            component='a'
+                            href='/treatment/cosmetic-surgery/plastyka-powiek'
+                            className='footer-text link'
+                        >
+                            Plastyka powiek
+                        </Typography>
+                        {/* ALERGOLOGIA */}
+                        <Typography
+                            component='a'
+                            href='/treatment/allergology/testy-skorne'
+                            className='footer-text link'
+                        >
+                            Testy skórne
                         </Typography>
                         <Typography
                             component='a'
-                            href='/technology/biolitec-leonardo-mini'
+                            href='/treatment/allergology/odczulanie'
                             className='footer-text link'
                         >
-                            Biolitec Leonardo Mini
+                            Odczulanie
                         </Typography>
+                        {/* CHIRURGIA NACZYNIOWA */}
                         <Typography
                             component='a'
-                            href='/technology/hettich-arthrex-acp'
+                            href='/treatment/vascular-surgery/skleroterapia'
                             className='footer-text link'
                         >
-                            Hettich Arthrex ACP
-                        </Typography>
-                        <Typography
-                            component='a'
-                            href='/technology/foto-finder-dermoscope-vexia'
-                            className='footer-text link'
-                        >
-                            FotoFinder Dermoscope Vexia
-                        </Typography>
-                        <Typography
-                            component='a'
-                            href='/technology/philips-ultrasonograf-affiniti-50'
-                            className='footer-text link'
-                        >
-                            Philips Ultrasonograf Affiniti 50
-                        </Typography>
-                        <Typography
-                            component='a'
-                            href='/technology/sono-queen'
-                            className='footer-text link'
-                        >
-                            SonoQueen
-                        </Typography>
-                        <Typography
-                            component='a'
-                            href='/technology/dermalight-500'
-                            className='footer-text link'
-                        >
-                            Dermalight 500
-                        </Typography>
-                        <Typography
-                            component='a'
-                            href='/technology/dermalight-1000-uva-uvb-311nm'
-                            className='footer-text link'
-                        >
-                            Dermalight 1000 UVA UVB 311nm
+                            Skleroterapia
                         </Typography>
                     </Box>
                 </Box>

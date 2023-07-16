@@ -488,7 +488,7 @@ const HeaderSection = () => {
                                         Specjaliści
                                     </NavLink>
                                 </li>
-                                <li className='nav-item'>
+                                {/* <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'
                                         activeclassname='active'
@@ -502,7 +502,7 @@ const HeaderSection = () => {
                                     >
                                         Technologia
                                     </NavLink>
-                                </li>
+                                </li> */}
                                 <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'

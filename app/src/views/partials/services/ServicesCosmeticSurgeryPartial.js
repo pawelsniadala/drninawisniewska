@@ -125,7 +125,7 @@ const ServicesCosmeticSurgeryPartial = () => {
                                     ))}
                                 </Box>
                             </Box>
-                            <Box className='box-proposed specialization'>
+                            <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
                                         Powiązane specjalizacje

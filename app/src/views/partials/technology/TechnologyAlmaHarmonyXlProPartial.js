@@ -50,7 +50,7 @@ const TechnologyAlmaHarmonyXlProPartial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {almaHarmonyXlPro.title} <strong>Zamykanie naczynek i likwidacja przebarwień (Medycyna estetyczna) [preniesione]</strong>
+                                {almaHarmonyXlPro.title}
                             </Typography>
                         </Box>
                     </Container>

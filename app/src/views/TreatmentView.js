@@ -46,8 +46,8 @@ const TreatmentView = () => {
                 //     return 'treatment-clinical-dietitian';
                 // case '/treatment/rheumatology':
                 //     return 'treatment-rheumatology';
-                // case '/treatment/cardiology':
-                //     return 'treatment-cardiology';
+                case '/treatment/cardiology':
+                    return 'treatment-cardiology';
                 default:
             }
         }
@@ -86,8 +86,8 @@ const TreatmentView = () => {
             //     return <TreatmentSpecializationPartial specialization={specialization} />;
             // case 'treatment-rheumatology':
             //     return <TreatmentSpecializationPartial specialization={specialization} />;
-            // case 'treatment-cardiology':
-            //     return <TreatmentSpecializationPartial specialization={specialization} />;
+            case 'treatment-cardiology':
+                return <TreatmentSpecializationPartial specialization={specialization} />;
             default:
         }
     }
@@ -247,13 +247,13 @@ const TreatmentView = () => {
                                         value={`/treatment/rheumatology`}
                                         onClick={() => setTab('treatment-rheumatology')}
                                     /> */}
-                                    {/* <Tab
+                                    <Tab
                                         label='Kardiologia'
                                         component={Link}
                                         to={`/treatment/cardiology`}
                                         value={`/treatment/cardiology`}
                                         onClick={() => setTab('treatment-cardiology')}
-                                    /> */}
+                                    />
                                 </Tabs>
                             </Box>
                         </Box>

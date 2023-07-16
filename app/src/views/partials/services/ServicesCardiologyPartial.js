@@ -16,7 +16,7 @@ import Image from '../../../components/Image';
 
 import { services, cardiology } from '../../../data/services';
 import { team } from '../../../data/team';
-// import { technology } from '../../../data/technology';
+import { treatment } from '../../../data/treatment';
 
 const ServicesCardiologyPartial = () => {
     return (
@@ -125,25 +125,25 @@ const ServicesCardiologyPartial = () => {
                                     ))}
                                 </Box>
                             </Box>
-                            {/* <Box className='box-proposed'>
+                            <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
-                                        Technologia
+                                        Zabiegi
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {technology.filter(item => item.specialization.includes('cardiology')).map((item) => (
+                                    {treatment.filter(item => item.specialization.includes('cardiology')).map((item) => (
                                         <CardProposed
                                             key={item.id}
                                             cardTitle={item.title}
                                             cardDescription={item.description}
-                                            cardImage={item.imageSmall}
+                                            cardImage={item.image}
                                             cardPath={item.path}
                                         />
                                     ))}
                                 </Box>
-                            </Box> */}
-                            <Box className='box-proposed specialization'>
+                            </Box>
+                            <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
                                         Powiązane specjalizacje

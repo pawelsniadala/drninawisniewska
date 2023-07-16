@@ -396,7 +396,7 @@ export const rheumatology = {
 
 export const cardiology = {
     id: '0eb413c4-fe60-426b-8df4-32c706b24f37',
-    specialization: 'rheumatology',
+    specialization: 'cardiology',
     title: 'Kardiologia',
     description: 'Kardiologia to dziedzina medycyny zajmująca się schorzeniami i wadami układu sercowo-naczyniowego, ich rozpoznawaniem i leczeniem',
     path: '/services/cardiology',

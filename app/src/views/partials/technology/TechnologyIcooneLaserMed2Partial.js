@@ -51,7 +51,7 @@ const TechnologyIcooneLaserMed2Partial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Icoone<sup>®</sup> Laser Med 2 / <strong>Masaż próżniowy (Kosmetologia) [przeniesione]</strong>
+                                Icoone<sup>®</sup> Laser Med 2
                             </Typography>
                         </Box>
                     </Container>

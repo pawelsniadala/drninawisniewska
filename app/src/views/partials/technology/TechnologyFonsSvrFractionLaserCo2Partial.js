@@ -51,7 +51,7 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Fons SVR™ Laser Frakcyjny CO<sub>2</sub> <strong>Laser frakcyjny (Medycyna estetyczna) [przeniesione]</strong>
+                                Fons SVR™ Laser Frakcyjny CO<sub>2</sub>
                             </Typography>
                         </Box>
                     </Container>

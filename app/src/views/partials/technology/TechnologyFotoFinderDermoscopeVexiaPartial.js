@@ -49,7 +49,7 @@ const TechnologyFotoFinderDermoscopeVexiaPartial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {fotoFinderDermoscopeVexia.title} / <strong>Wideodermatoskopia (Dermatologia) [przeniesione]</strong>
+                                {fotoFinderDermoscopeVexia.title}
                             </Typography>
                         </Box>
                     </Container>
