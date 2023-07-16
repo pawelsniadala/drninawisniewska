@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Grid from '@mui/material/Grid';
+// import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -11,14 +11,14 @@ import Page from '../../../../components/Page';
 import Container from '../../../../components/Container';
 import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
-import ListBulleted from '../../../../components/ListBulleted';
+// import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
 
-import { treatment, masaz } from '../../../../data/treatment';
+import { treatment, testySkorne } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
-const TreatmentMasazPartial = () => {
+const TreatmentTestySkornePartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -29,8 +29,8 @@ const TreatmentMasazPartial = () => {
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    <Box>Fizjoterapia</Box>
+                                <Link to='/treatment/allergology' aria-current='page'>
+                                    <Box>Alergologia</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -44,17 +44,17 @@ const TreatmentMasazPartial = () => {
                                 <Typography>
                                     Zabiegi
                                 </Typography>
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    Fizjoterapia
+                                <Link to='/treatment/allergology' aria-current='page'>
+                                    Alergologia
                                 </Link>
                                 <Typography>
-                                    Masaż
+                                    Testy skórne
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Masaż
+                                Testy skórne
                             </Typography>
                         </Box>
                     </Container>
@@ -64,34 +64,25 @@ const TreatmentMasazPartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
+                                    <strong>Testy skórne</strong> są jedną z popularniejszej oraz prostszej metody diagnostycznej alergii. Największą zaletą testów skórnych jest ich <strong>krótki czas oczekiwania na wyniki</strong>.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Badanie przeprowadza się na wewnętrznej części przedramienia lub skórze pleców. Przebieg testów polega na naniesieniu kropli różnych zawiesin z alergenami z zestawu przesiewowego zawierającego takie substancje uczulające jak <strong>rośliny wiatropylne</strong>, <strong>trawy</strong>, <strong>pleśnie</strong>, <strong>sierść zwierząt</strong>, <strong>jad owadów</strong> czy <strong>roztocza kurzu domowego</strong>.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
-                                        imageSrc={masaz.images[0].src}
-                                        imageAlt={masaz.images[0].alt}
-                                        imageAuthor={masaz.images[0].author}
-                                        imageHref={masaz.images[0].href}
+                                        imageSrc={testySkorne.images[0].src}
+                                        imageAlt={testySkorne.images[0].alt}
+                                        imageAuthor={testySkorne.images[0].author}
+                                        imageHref={testySkorne.images[0].href}
                                     />
                                 </Box>
-                                <Typography className='paragraph heading'>
-                                    <strong>Masaż wykorzystywany jest w celu</strong>:
+                                <Typography className='paragraph'>
+                                    Jednorazowo wykonuje się do 20 alergenów oraz 2 próby kontrolne. Następnie każdą kroplę alergenu należy delikatnie nakłuć (bez wywołania krwawienia) by zawarte antygeny przedostały się do powierzchniowych warstw skóry.
                                 </Typography>
-                                <Grid container spacing={0.5} marginBottom={2}>
-                                    {[
-                                        'rozluźnienia mięśni,',
-                                        'złagodzenia sztywności, napięcia i bólu mięśni,',
-                                        'zwiększenia elastyczności i wytrzymałości więzadeł,',
-                                        'poprawy ruchomości stawów,',
-                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.'
-                                    ].map((item, index) => (
-                                        <ListBulleted
-                                            key={index}
-                                            ListBulletedItem={item}
-                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
-                                        />
-                                    ))}
-                                </Grid>
+                                <Typography className='paragraph'>
+                                    Alergenowe testy skórne powinny być wykonywane w momencie kiedy nie występują objawy alergii, ponieważ na tydzień przed planowanymi testami należy odstawić leki przeciwalergiczne, które mogą zaburzyć wyniki testów. W miejscu aplikacji alergenów nie należy stosować maści zewnętrznych zawierających glikokortykosteroidy lub inhibitory kalcyneuryny.
+                                </Typography>
                             </Box>
                         </Box>
 
@@ -104,7 +95,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team
-                                        .filter(item => item.treatment.includes('masaz'))
+                                        .filter(item => item.treatment.includes('testy-skorne'))
                                         .map((item) => (
                                             <CardTeamProposed
                                                 key={item.id}
@@ -112,7 +103,7 @@ const TreatmentMasazPartial = () => {
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={`/team/physioterapy/${item.specialist}`}
+                                                cardPath={`/team/allergology/${item.specialist}`}
                                             />
                                         ))
                                     }
@@ -126,7 +117,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {services
-                                        .filter(item => item.specialization === 'physioterapy')
+                                        .filter(item => item.specialization === 'allergology')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -147,8 +138,8 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {treatment
-                                        .filter(item => item.specialization.includes('physioterapy'))
-                                        .filter(item => item.treatment !== 'masaz')
+                                        .filter(item => item.specialization.includes('allergology'))
+                                        .filter(item => item.treatment !== 'testy-skorne')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -169,4 +160,4 @@ const TreatmentMasazPartial = () => {
     );
 }
 
-export default Page(TreatmentMasazPartial);
+export default Page(TreatmentTestySkornePartial);

@@ -14,11 +14,11 @@ import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
 
-import { treatment, masaz } from '../../../../data/treatment';
+import { treatment, masazProzniowy } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
-const TreatmentMasazPartial = () => {
+const TreatmentMasazProzniowyPartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -29,8 +29,8 @@ const TreatmentMasazPartial = () => {
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    <Box>Fizjoterapia</Box>
+                                <Link to='/treatment/cosmetology' aria-current='page'>
+                                    <Box>Kosmetologia</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -44,17 +44,17 @@ const TreatmentMasazPartial = () => {
                                 <Typography>
                                     Zabiegi
                                 </Typography>
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    Fizjoterapia
+                                <Link to='/treatment/cosmetology' aria-current='page'>
+                                    Kosmetologia
                                 </Link>
                                 <Typography>
-                                    Masaż
+                                    Masaż próżniowy
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Masaż
+                                Masaż próżniowy
                             </Typography>
                         </Box>
                     </Container>
@@ -64,26 +64,73 @@ const TreatmentMasazPartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
+                                    Masaż próżniowy inspirowany jest intuicją <strong>profesora Jean-Claude'a Guimberteau</strong>, specjalisty w dziedzinie chirurgii rekonstrukcyjnej, który poświęcił wiele lat na obserwację skóry w zakresie struktury tkanki łącznej. Guimberteau wykazał, że <strong>skóra musi być pojmowana jako żywa</strong>, <strong>ciągła materia</strong>, a tkanka podskórna składa się z sieci <strong>mikrowakuoli</strong>, które tworzą funkcjonalną jednostkę struktury tkanki. Ta nowa wizja całkowicie zastępuje tradycyjną koncepcję tkanki warstwowej, a tym samym narzuca potrzebę nowego sposobu leczenia skóry.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
-                                        imageSrc={masaz.images[0].src}
-                                        imageAlt={masaz.images[0].alt}
-                                        imageAuthor={masaz.images[0].author}
-                                        imageHref={masaz.images[0].href}
+                                        imageSrc={masazProzniowy.images[0].src}
+                                        imageAlt={masazProzniowy.images[0].alt}
+                                        imageAuthor={masazProzniowy.images[0].author}
+                                        imageHref={masazProzniowy.images[0].href}
                                     />
                                 </Box>
+                                <Typography className='paragraph'>
+                                    <strong>Najnowsza, opatentowana technologia Roboderm<sup>®</sup> zapewnia zaskakujące rezultaty</strong>. Dzięki ekskluzywnemu, rozszerzonemu na skalę międzynarodową patentowi Roboderm<sup>®</sup>, oferuje w pełni konfigurowalny zabieg odmładzania skóry i modelowania sylwetki. Roboderm<sup>®</sup>jest unikalną technologią na świecie zdolną do generowania Multi <strong>Mikropęcherzykowej Stymulacji (M.M.S.A.)</strong> za pomocą zestawu mikrootworów obecnych na powierzchni mikrostymulatorów znajdujących się w głowicach zabiegowych. Mikrostymulatory obracają się tam i z powrotem, precyzyjnie i skutecznie stymulując skórę na całej powierzchni, docierając do najmniejszych jej części i generując <strong>do 21 600 mikrostymulacji na minutę</strong>.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Działanie stymulujące odbywa się na <strong>3 powierzchniach jednocześnie</strong>: 2 niezależne, zmotoryzowane mikrostymulatory, które poruszają się jednocześnie na tym samym obszarze, uzupełniając swoje działanie i generując gimnastykę tkankową z efektem ujędrniającym oraz 1 centralna komora umieszczona pomiędzy mikrostymulatorami, która oddziałuje dogłębniej na tkankę tłuszczową.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Technologia Roboderm<sup>®</sup>umożliwia <strong>potrojenie powierzchni stymulacji</strong>, uzyskując głębszą i bardziej efektywną stymulację skóry. Dzięki takiemu mechanizmowi działania ciało jest pobudzane na poziomie naskórka, skóry właściwej, tkanki podskórnej oraz tkanki mięśniowej.
+                                </Typography>
                                 <Typography className='paragraph heading'>
-                                    <strong>Masaż wykorzystywany jest w celu</strong>:
+                                    <strong>Wpływ na tkanki</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'rozluźnienia mięśni,',
-                                        'złagodzenia sztywności, napięcia i bólu mięśni,',
-                                        'zwiększenia elastyczności i wytrzymałości więzadeł,',
-                                        'poprawy ruchomości stawów,',
-                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.'
+                                        'w naturalny sposób rozkłada komórki tłuszczowe do glicerolu i wolnych kwasów tłuszczowych,',
+                                        'redukuje cellulit poprzez zmniejszenie objętości adipocytów,',
+                                        'przyśpiesza metabolizm komórkowy oraz metabolizm całego ustroju.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph heading'>
+                                    <strong>Zalety</strong>:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'nie niszczy błony komórek tłuszczowych, a jedynie redukuje w sposób znaczny i kontrolowany ich zawartość i objętość,',
+                                        'mocne działanie na głęboko zlokalizowany tłuszcz,',
+                                        'nie uszkadza sąsiednich tkanek i naczyń krwionośnych,',
+                                        'zabieg jest bezbolesny.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph heading'>
+                                    <strong>Wskazania</strong>:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'problemy naczyniowe i obrzęki,',
+                                        'nadanie promiennego, zdrowego wyglądu skóry twarzy,',
+                                        'walka z głęboko zlokalizowanym tłuszczem,',
+                                        'kobiety po porodach,',
+                                        'problemy z zaparciami,',
+                                        'nadmiernie wiotka skóra,',
+                                        'walka z cellulitem lub nadwagą,',
+                                        'blizny pooperacyjne i pooparzeniowe,',
+                                        'po liposukcji oraz zabiegach chirurgicznych,',
+                                        'bóle mięśni, pleców i karku.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -104,7 +151,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team
-                                        .filter(item => item.treatment.includes('masaz'))
+                                        .filter(item => item.treatment.includes('masaz-prozniowy'))
                                         .map((item) => (
                                             <CardTeamProposed
                                                 key={item.id}
@@ -112,7 +159,7 @@ const TreatmentMasazPartial = () => {
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={`/team/physioterapy/${item.specialist}`}
+                                                cardPath={`/team/cosmetology/${item.specialist}`}
                                             />
                                         ))
                                     }
@@ -126,7 +173,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {services
-                                        .filter(item => item.specialization === 'physioterapy')
+                                        .filter(item => item.specialization === 'cosmetology')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -147,8 +194,8 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {treatment
-                                        .filter(item => item.specialization.includes('physioterapy'))
-                                        .filter(item => item.treatment !== 'masaz')
+                                        .filter(item => item.specialization.includes('cosmetology'))
+                                        .filter(item => item.treatment !== 'masaz-prozniowy')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -169,4 +216,4 @@ const TreatmentMasazPartial = () => {
     );
 }
 
-export default Page(TreatmentMasazPartial);
+export default Page(TreatmentMasazProzniowyPartial);

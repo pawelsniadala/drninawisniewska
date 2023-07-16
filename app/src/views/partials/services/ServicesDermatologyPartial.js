@@ -14,7 +14,7 @@ import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
 
-import { dermatology } from '../../../data/services';
+import { services, dermatology } from '../../../data/services';
 import { team } from '../../../data/team';
 import { treatment } from '../../../data/treatment';
 
@@ -124,7 +124,7 @@ const ServicesDermatologyPartial = () => {
                                     ))}
                                 </Box>
                             </Box>
-                            {/* <Box className='box-proposed'>
+                            <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
                                         Zabiegi
@@ -141,7 +141,25 @@ const ServicesDermatologyPartial = () => {
                                         />
                                     ))}
                                 </Box>
-                            </Box> */}
+                            </Box>
+                            <Box className='box-proposed specialization'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Powiązane specjalizacje
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {services.filter(item => item.relatedSpecializations.includes('dermatology')).map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.image}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                </Box>
+                            </Box>
                         </Box>
                     </Container>
                 </Box>

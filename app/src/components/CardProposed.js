@@ -24,15 +24,21 @@ const CardProposed = ({
         >
             <Card className='card'>
                 <CardMedia className='card-media'>
-                    <Box
-                        className='card-image'
-                        component={LazyLoadImage}
-                        height={1}
-                        width={1}
-                        src={cardImage}
-                        alt={cardTitle}
-                        effect='none'
-                    />
+                    {cardImage ? (
+                        <Box
+                            className='card-image'
+                            component={LazyLoadImage}
+                            height={1}
+                            width={1}
+                            src={cardImage}
+                            alt={cardTitle}
+                            effect='none'
+                        />
+                    ) : (
+                        <Box
+                            className='card-image'
+                        />
+                    )}
                 </CardMedia>
                 <CardContent className='card-content'>
                     <Typography className='card-title'>

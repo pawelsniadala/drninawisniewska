@@ -14,7 +14,7 @@ import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
 
-import { /*services,*/ physioterapy } from '../../../data/services';
+import { services, physioterapy } from '../../../data/services';
 import { team } from '../../../data/team';
 import { treatment } from '../../../data/treatment';
 
@@ -118,7 +118,7 @@ const ServicesPhysioterapyPartial = () => {
                                     ))}
                                 </Box>
                             </Box>
-                            {/* <Box className='box-proposed'>
+                            <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
                                         Zabiegi
@@ -135,15 +135,15 @@ const ServicesPhysioterapyPartial = () => {
                                         />
                                     ))}
                                 </Box>
-                            </Box> */}
-                            {/* <Box className='box-proposed specialization'>
+                            </Box>
+                            <Box className='box-proposed specialization'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
-                                        Pozostałe specjalizacje
+                                        Powiązane specjalizacje
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {services.filter(item => item.title !== 'Fizjoterapia').map((item) => (
+                                    {services.filter(item => item.relatedSpecializations.includes('physioterapy')).map((item) => (
                                         <CardProposed
                                             key={item.id}
                                             cardTitle={item.title}
@@ -153,7 +153,7 @@ const ServicesPhysioterapyPartial = () => {
                                         />
                                     ))}
                                 </Box>
-                            </Box> */}
+                            </Box>
                         </Box>
                     </Container>
                 </Box>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -8,29 +7,30 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
-import Page from '../../../components/Page';
-import Container from '../../../components/Container';
-import CardProposed from '../../../components/CardProposed';
-import ListBulleted from '../../../components/ListBulleted';
+import Page from '../../../../components/Page';
+import Container from '../../../../components/Container';
+import CardTeamProposed from '../../../../components/CardTeamProposed';
+import CardProposed from '../../../../components/CardProposed';
+import ListBulleted from '../../../../components/ListBulleted';
+import Image from '../../../../components/Image';
 
-import {
-    technology,
-    vectus
-} from '../../../data/technology';
+import { treatment, epilacjaLaserowa } from '../../../../data/treatment';
+import { team } from '../../../../data/team';
+import { services } from '../../../../data/services';
 
-const TechnologyVectusPartial = () => {
+const TreatmentEpilacjaLaserowaPartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
-                <Box className='view-header technology'>
+                <Box className='view-header services-dermatology'>
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/technology' aria-current='page'>
-                                    <Box>Technologia</Box>
+                                <Link to='/treatment/cosmetology' aria-current='page'>
+                                    <Box>Kosmetologia</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -41,44 +41,37 @@ const TechnologyVectusPartial = () => {
                                 <Link to='/' aria-current='page'>
                                     Home
                                 </Link>
-                                <Link to='/technology' aria-current='page'>
-                                Technologia
+                                <Typography>
+                                    Zabiegi
+                                </Typography>
+                                <Link to='/treatment/cosmetology' aria-current='page'>
+                                    Kosmetologia
                                 </Link>
-                                <Typography color='text.primary'>
-                                    Vectus
+                                <Typography>
+                                    Epilacja laserowa
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Vectus™ / <strong>Epilacja laserowa (Kosmetologia) [przeniesione]</strong>
+                                Epilacja laserowa
                             </Typography>
                         </Box>
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper technology'>
-                        <Box className='technology-description'>
-
-                            <Box className='box-technology'>
+                    <Container className='body-wrapper services'>
+                        <Box className='service-description'>
+                            <Box className='box-service'>
                                 <Typography className='paragraph'>
                                     Laser diodowy to produkt amerykańskiej firmy, która stworzyła pierwszą na świecie technologię laserowego usuwania owłosienia, do dziś chronioną patentem. Urządzenie jest owocem trwających kilkanaście lat doświadczeń i badań nad udoskonaleniem systemu lasera diodowego. Wykorzystano w nim wiele nowatorskich rozwiązań decydujących o wyjątkowej skuteczności, bezpieczeństwie i komforcie pacjenta.
                                 </Typography>
                                 <Box className='box-image'>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={vectus.imageLarge}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '400px',
-                                            objectPosition: '50% 67%'
-                                        }}
+                                    <Image
+                                        imageSrc={epilacjaLaserowa.images[0].src}
+                                        imageAlt={epilacjaLaserowa.images[0].alt}
+                                        imageAuthor={epilacjaLaserowa.images[0].author}
+                                        imageHref={epilacjaLaserowa.images[0].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph'>
@@ -175,22 +168,69 @@ const TechnologyVectusPartial = () => {
                         </Box>
 
                         <Box className='proposed-wrapper'>
-                            <Box className='box-proposed technology'>
+                            <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
-                                        Pozostały sprzęt
+                                        Specjaliści
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {technology.filter(item => item.designation !== 'vectus').map((item) => (
-                                        <CardProposed
-                                            key={item.id}
-                                            cardTitle={item.title}
-                                            cardDescription={item.description}
-                                            cardImage={item.imageSmall}
-                                            cardPath={item.path}
-                                        />
-                                    ))}
+                                    {team
+                                        .filter(item => item.treatment.includes('epilacja-laserowa'))
+                                        .map((item) => (
+                                            <CardTeamProposed
+                                                key={item.id}
+                                                cardTitle={item.name}
+                                                cardSpeciality={item.speciality}
+                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                                cardImage={item.image}
+                                                cardPath={`/team/cosmetology/${item.specialist}`}
+                                            />
+                                        ))
+                                    }
+                                </Box>
+                            </Box>
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Specjalizacja
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {services
+                                        .filter(item => item.specialization === 'cosmetology')
+                                        .map((item) => (
+                                            <CardProposed
+                                                key={item.id}
+                                                cardTitle={item.title}
+                                                cardDescription={item.description}
+                                                cardImage={item.image}
+                                                cardPath={item.path}
+                                            />
+                                        ))
+                                    }
+                                </Box>
+                            </Box>
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostałe zabiegi
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {treatment
+                                        .filter(item => item.specialization.includes('cosmetology'))
+                                        .filter(item => item.treatment !== 'epilacja-laserowa')
+                                        .map((item) => (
+                                            <CardProposed
+                                                key={item.id}
+                                                cardTitle={item.title}
+                                                cardDescription={item.description}
+                                                cardImage={item.image}
+                                                cardPath={item.path}
+                                            />
+                                        ))
+                                    }
                                 </Box>
                             </Box>
                         </Box>
@@ -201,4 +241,4 @@ const TechnologyVectusPartial = () => {
     );
 }
 
-export default Page(TechnologyVectusPartial);
+export default Page(TreatmentEpilacjaLaserowaPartial);

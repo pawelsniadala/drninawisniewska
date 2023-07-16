@@ -51,7 +51,7 @@ const TechnologyBiolitecLeonardoMiniPartial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Biolitec<sup>®</sup> Leonardo<sup>®</sup> Mini / <strong>Laserowe usuwanie żylaków (Chirurgia naczyniowa)</strong>
+                                Biolitec<sup>®</sup> Leonardo<sup>®</sup> Mini / <strong>Laserowe usuwanie żylaków (Chirurgia naczyniowa) [przeniesione]</strong>
                             </Typography>
                         </Box>
                     </Container>

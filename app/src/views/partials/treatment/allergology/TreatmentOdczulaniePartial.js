@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Grid from '@mui/material/Grid';
+// import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -11,14 +11,14 @@ import Page from '../../../../components/Page';
 import Container from '../../../../components/Container';
 import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
-import ListBulleted from '../../../../components/ListBulleted';
+// import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
 
-import { treatment, masaz } from '../../../../data/treatment';
+import { treatment, odczulanie } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
-const TreatmentMasazPartial = () => {
+const TreatmentOdczulaniePartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -29,8 +29,8 @@ const TreatmentMasazPartial = () => {
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    <Box>Fizjoterapia</Box>
+                                <Link to='/treatment/allergology' aria-current='page'>
+                                    <Box>Alergologia</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -44,17 +44,17 @@ const TreatmentMasazPartial = () => {
                                 <Typography>
                                     Zabiegi
                                 </Typography>
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    Fizjoterapia
+                                <Link to='/treatment/allergology' aria-current='page'>
+                                    Alergologia
                                 </Link>
                                 <Typography>
-                                    Masaż
+                                    Odczulanie
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Masaż
+                                Odczulanie
                             </Typography>
                         </Box>
                     </Container>
@@ -64,34 +64,22 @@ const TreatmentMasazPartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
+                                    <strong>Immunoterapia swoista</strong>, czyli odczulanie, to jedyna <strong>przyczynowa</strong> metoda leczenia alergii.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Odczulanie ma na celu zmniejszyć wrażliwość organizmu na dany czynnik alergizujący, co w następstwie redukuje uciążliwe objawy alergii. Polega ono na podawaniu coraz to większych stężeń alergenu w szczepionce co stopniowo zmniejsza wrażliwość organizmu na hapteny uczulające. Dawka wyciągu alergennego wynosi od 5 do 20 μg podanego w iniekcji podskórnej.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
-                                        imageSrc={masaz.images[0].src}
-                                        imageAlt={masaz.images[0].alt}
-                                        imageAuthor={masaz.images[0].author}
-                                        imageHref={masaz.images[0].href}
+                                        imageSrc={odczulanie.images[0].src}
+                                        imageAlt={odczulanie.images[0].alt}
+                                        imageAuthor={odczulanie.images[0].author}
+                                        imageHref={odczulanie.images[0].href}
                                     />
                                 </Box>
-                                <Typography className='paragraph heading'>
-                                    <strong>Masaż wykorzystywany jest w celu</strong>:
+                                <Typography className='paragraph'>
+                                    Odczulanie jest procesem czasochłonnym. Zajmuje od 3 do 5 lat. Immunoterapia swoista jest szczególnie skuteczna w przypadku alergii na jad owadów bąkoskrzydłych, pyłki roślinne oraz roztocza kurzu domowego. Odczulania nie stosuje się w przypadku alergii pokarmowych.
                                 </Typography>
-                                <Grid container spacing={0.5} marginBottom={2}>
-                                    {[
-                                        'rozluźnienia mięśni,',
-                                        'złagodzenia sztywności, napięcia i bólu mięśni,',
-                                        'zwiększenia elastyczności i wytrzymałości więzadeł,',
-                                        'poprawy ruchomości stawów,',
-                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.'
-                                    ].map((item, index) => (
-                                        <ListBulleted
-                                            key={index}
-                                            ListBulletedItem={item}
-                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
-                                        />
-                                    ))}
-                                </Grid>
                             </Box>
                         </Box>
 
@@ -104,7 +92,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team
-                                        .filter(item => item.treatment.includes('masaz'))
+                                        .filter(item => item.treatment.includes('odczulanie'))
                                         .map((item) => (
                                             <CardTeamProposed
                                                 key={item.id}
@@ -112,7 +100,7 @@ const TreatmentMasazPartial = () => {
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={`/team/physioterapy/${item.specialist}`}
+                                                cardPath={`/team/allergology/${item.specialist}`}
                                             />
                                         ))
                                     }
@@ -126,7 +114,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {services
-                                        .filter(item => item.specialization === 'physioterapy')
+                                        .filter(item => item.specialization === 'allergology')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -147,8 +135,8 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {treatment
-                                        .filter(item => item.specialization.includes('physioterapy'))
-                                        .filter(item => item.treatment !== 'masaz')
+                                        .filter(item => item.specialization.includes('allergology'))
+                                        .filter(item => item.treatment !== 'odczulanie')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -169,4 +157,4 @@ const TreatmentMasazPartial = () => {
     );
 }
 
-export default Page(TreatmentMasazPartial);
+export default Page(TreatmentOdczulaniePartial);

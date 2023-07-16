@@ -7,29 +7,30 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
-import Page from '../../../components/Page';
-import Container from '../../../components/Container';
-import CardProposed from '../../../components/CardProposed';
-import ListBulleted from '../../../components/ListBulleted';
+import Page from '../../../../components/Page';
+import Container from '../../../../components/Container';
+import CardTeamProposed from '../../../../components/CardTeamProposed';
+import CardProposed from '../../../../components/CardProposed';
+import ListBulleted from '../../../../components/ListBulleted';
+import Image from '../../../../components/Image';
 
-import {
-    technology,
-    almaHarmonyXlPro
-} from '../../../data/technology';
+import { treatment, zamykanieNaczynekILikwidacjaPrzebarwien } from '../../../../data/treatment';
+import { team } from '../../../../data/team';
+import { services } from '../../../../data/services';
 
-const TechnologyAlmaHarmonyXlProPartial = () => {
+const TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
-                <Box className='view-header technology'>
+                <Box className='view-header services-dermatology'>
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
                             <Breadcrumbs
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/technology' aria-current='page'>
-                                    <Box>Technologia</Box>
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    <Box>Medycyna estetyczna</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -40,40 +41,42 @@ const TechnologyAlmaHarmonyXlProPartial = () => {
                                 <Link to='/' aria-current='page'>
                                     Home
                                 </Link>
-                                <Link to='/technology' aria-current='page'>
-                                    Technologia
+                                <Typography>
+                                    Zabiegi
+                                </Typography>
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    Medycyna estetyczna
                                 </Link>
-                                <Typography color='text.primary'>
-                                    Alma Harmony XL Pro
+                                <Typography>
+                                    Zamykanie naczynek i likwidacja przebarwień
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {almaHarmonyXlPro.title} <strong>Zamykanie naczynek i likwidacja przebarwień (Medycyna estetyczna) [preniesione]</strong>
+                                Zamykanie naczynek i likwidacja przebarwień
                             </Typography>
                         </Box>
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper technology'>
-                        <Box className='technology-description'>
-                            <Box className='box-technology'>
+                    <Container className='body-wrapper services'>
+                        <Box className='service-description'>
+                            <Box className='box-service'>
                                 <Typography className='paragraph'>
                                     Platforma laserowa, którą posiadamy w naszej Klinice, to  produkt izraelskiej firmy Alma Lasers. Obsługuje różne typy zaawansowanych technologii laserowych i innych źródeł światła. Oferuje rozwiązanie na większość problemów estetycznych i dermatologicznych.
                                 </Typography>
+                                <Box className='box-image'>
+                                    <Image
+                                        imageSrc={zamykanieNaczynekILikwidacjaPrzebarwien.images[0].src}
+                                        imageAlt={zamykanieNaczynekILikwidacjaPrzebarwien.images[0].alt}
+                                        imageAuthor={zamykanieNaczynekILikwidacjaPrzebarwien.images[0].author}
+                                        imageHref={zamykanieNaczynekILikwidacjaPrzebarwien.images[0].href}
+                                    />
+                                </Box>
                                 <Typography className='paragraph'>
                                     To wszechstronne narzędzie, które umożliwia łączenie różnych typów laserów i technologii podczas jednej procedury zabiegowej. To użytkownik komponuje zabieg dostosowany do potrzeb pacjenta, wybierając spośród ponad 30 głowic. Techniki łączone zdecydowanie zwiększają skuteczność zabiegów.
                                 </Typography>
-                                {/* <Typography className='paragraph heading'>
-                                    <strong>Co go wyróżnia?</strong>
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    Alma Harmony XL PRO to multiaplikacyjna platforma laserowa najnowszej generacji. Obsługuje różne typy laserów i innych źródeł światła takich jak: laser Er: YAG 2940 nm, Er: Glass 1540 nm, Q-Switch 1064nm i 532 nm, Nd:YAG 1064 nm, światło podczerwone NIR, IPL, UV, LED, ultradźwięki Impact i Dye Vl.
-                                </Typography> */}
-                                {/* <Typography className='paragraph heading'>
-                                    <strong>Wskazania</strong>
-                                </Typography> */}
                                 <Typography className='paragraph'>
                                     Laser ma ponad 65 wskazań potwierdzonych certyfikatem FDA. <strong>Do najważniejszych należą</strong>:
                                 </Typography>
@@ -127,7 +130,7 @@ const TechnologyAlmaHarmonyXlProPartial = () => {
                                     ))}
                                 </Grid>
                                 <Typography className='paragraph heading'>
-                                    <strong>Jak przygotować się do zabiegu nieablacyjnego odmładzania skóry?</strong>
+                                    <strong>Jak przygotować się do zabiegu?</strong>
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -150,22 +153,69 @@ const TechnologyAlmaHarmonyXlProPartial = () => {
                         </Box>
 
                         <Box className='proposed-wrapper'>
-                            <Box className='box-proposed technology'>
+                            <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
-                                        Pozostały sprzęt
+                                        Specjaliści
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {technology.filter(item => item.designation !== 'almaHarmonyXlPro').map((item) => (
-                                        <CardProposed
-                                            key={item.id}
-                                            cardTitle={item.title}
-                                            cardDescription={item.description}
-                                            cardImage={item.imageSmall}
-                                            cardPath={item.path}
-                                        />
-                                    ))}
+                                    {team
+                                        .filter(item => item.treatment.includes('zamykanie-naczynek-i-likwidacja-przebarwien'))
+                                        .map((item) => (
+                                            <CardTeamProposed
+                                                key={item.id}
+                                                cardTitle={item.name}
+                                                cardSpeciality={item.speciality}
+                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                                cardImage={item.image}
+                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
+                                            />
+                                        ))
+                                    }
+                                </Box>
+                            </Box>
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Specjalizacja
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {services
+                                        .filter(item => item.specialization === 'aesthetic-medicine')
+                                        .map((item) => (
+                                            <CardProposed
+                                                key={item.id}
+                                                cardTitle={item.title}
+                                                cardDescription={item.description}
+                                                cardImage={item.image}
+                                                cardPath={item.path}
+                                            />
+                                        ))
+                                    }
+                                </Box>
+                            </Box>
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Pozostałe zabiegi
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {treatment
+                                        .filter(item => item.specialization.includes('aesthetic-medicine'))
+                                        .filter(item => item.treatment !== 'zamykanie-naczynek-i-likwidacja-przebarwien')
+                                        .map((item) => (
+                                            <CardProposed
+                                                key={item.id}
+                                                cardTitle={item.title}
+                                                cardDescription={item.description}
+                                                cardImage={item.image}
+                                                cardPath={item.path}
+                                            />
+                                        ))
+                                    }
                                 </Box>
                             </Box>
                         </Box>
@@ -176,4 +226,4 @@ const TechnologyAlmaHarmonyXlProPartial = () => {
     );
 }
 
-export default Page(TechnologyAlmaHarmonyXlProPartial);
+export default Page(TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial);

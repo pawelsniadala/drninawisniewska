@@ -14,11 +14,11 @@ import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
 
-import { treatment, masaz } from '../../../../data/treatment';
+import { treatment, osoczeBogatopłytkowe } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
-const TreatmentMasazPartial = () => {
+const TreatmentOsoczeBogatopłytkowePartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -29,8 +29,8 @@ const TreatmentMasazPartial = () => {
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    <Box>Fizjoterapia</Box>
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    <Box>Medycyna estetyczna</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -44,17 +44,17 @@ const TreatmentMasazPartial = () => {
                                 <Typography>
                                     Zabiegi
                                 </Typography>
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    Fizjoterapia
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    Medycyna estetyczna
                                 </Link>
                                 <Typography>
-                                    Masaż
+                                    Osocze bogatopłytkowe
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Masaż
+                                Osocze bogatopłytkowe
                             </Typography>
                         </Box>
                     </Container>
@@ -64,26 +64,38 @@ const TreatmentMasazPartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
+                                    <strong>Osocze bogatopłytkowe</strong> uzyskuje się z <strong>krwi własnej pacjenta</strong> poprzez podwójne odwirowanie substancji, które stanowią elementy morfotyczne krwi. Podczas odwirowywania krwi pobranej <strong>bezpośrednio przed zabiegiem</strong> zostają oddzielone krwinki czerwone oraz białe od płytek krwi. Osocze bogatopłytkowe uzyskuje się z standardowego poboru krwi. Po odwirowaniu zyskuje się <strong>płynny składnik</strong> krwi o niezwykłych i <strong>pożądanych</strong> przez nas <strong>właściwościach</strong>. Aby wprowadzić go pod skórę pacjenta wykorzystuje się <strong>mezoterapię</strong>, czyli ostrzykiwanie za pomocą bardzo cienkich igieł. Najczęściej ostrzykiwaniu osoczem poddawane są policzki, linia żuchwy, czoło, powieki oraz okolice oczu. Jednak osocze bogatopłytkowe przynosi również świetne rezultaty w poprawie wyglądu skóry szyi i dekoltu, ramion i dłoni oraz owłosionej skóry głowy.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
-                                        imageSrc={masaz.images[0].src}
-                                        imageAlt={masaz.images[0].alt}
-                                        imageAuthor={masaz.images[0].author}
-                                        imageHref={masaz.images[0].href}
+                                        imageSrc={osoczeBogatopłytkowe.images[0].src}
+                                        imageAlt={osoczeBogatopłytkowe.images[0].alt}
+                                        imageAuthor={osoczeBogatopłytkowe.images[0].author}
+                                        imageHref={osoczeBogatopłytkowe.images[0].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph heading'>
-                                    <strong>Masaż wykorzystywany jest w celu</strong>:
+                                    <strong>Wskazania</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'rozluźnienia mięśni,',
-                                        'złagodzenia sztywności, napięcia i bólu mięśni,',
-                                        'zwiększenia elastyczności i wytrzymałości więzadeł,',
-                                        'poprawy ruchomości stawów,',
-                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.'
+                                        'rewitalizacja skóry twarzy,',
+                                        'skóra zmęczona, bez napięcia,',
+                                        'niejednolity kolor,',
+                                        'skóra wysuszona, wiotka, pozbawiona blask,',
+                                        'oznaki starzenia się skóry,',
+                                        'fałdy,',
+                                        'zmarszczki,',
+                                        'zapadnięta skóra,',
+                                        'zmniejszona gęstość skóry,',
+                                        'przebyte zabiegi medycyny estetycznej,',
+                                        'regeneracja skóry,',
+                                        'przyspieszenie gojenia,',
+                                        'łysienie androgenowe i inne,',
+                                        'rozstępy,',
+                                        'blizny zanikowe,',
+                                        'blizny po cięciu cesarskim,',
+                                        'blizny potrądzikowe.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -92,6 +104,9 @@ const TreatmentMasazPartial = () => {
                                         />
                                     ))}
                                 </Grid>
+                                <Typography className='paragraph'>
+                                    <strong>Przeciwwskazania</strong>: nadwrażliwość na substancje preparatu, infekcje w polu zabiegowym, miastenia rzekomoporaźna, zespół Lamberta-Eatona, stwardnienie boczne zanikowe, wszelkie zaburzenia przewodnictwa nerwowo-mięśniowego.
+                                </Typography>
                             </Box>
                         </Box>
 
@@ -104,7 +119,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team
-                                        .filter(item => item.treatment.includes('masaz'))
+                                        .filter(item => item.treatment.includes('osocze-bogatopłytkowe'))
                                         .map((item) => (
                                             <CardTeamProposed
                                                 key={item.id}
@@ -112,7 +127,7 @@ const TreatmentMasazPartial = () => {
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={`/team/physioterapy/${item.specialist}`}
+                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
                                             />
                                         ))
                                     }
@@ -126,7 +141,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {services
-                                        .filter(item => item.specialization === 'physioterapy')
+                                        .filter(item => item.specialization === 'aesthetic-medicine')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -147,8 +162,8 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {treatment
-                                        .filter(item => item.specialization.includes('physioterapy'))
-                                        .filter(item => item.treatment !== 'masaz')
+                                        .filter(item => item.specialization.includes('aesthetic-medicine'))
+                                        .filter(item => item.treatment !== 'osocze-bogatopłytkowe')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -169,4 +184,4 @@ const TreatmentMasazPartial = () => {
     );
 }
 
-export default Page(TreatmentMasazPartial);
+export default Page(TreatmentOsoczeBogatopłytkowePartial);

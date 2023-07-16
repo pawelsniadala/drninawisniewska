@@ -29,7 +29,7 @@ const TreatmentRehabilitacjaPartial = () => {
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/treatment/vascular-surgery' aria-current='page'>
+                                <Link to='/treatment/physioterapy' aria-current='page'>
                                     <Box>Fizjoterapia</Box>
                                 </Link>
                             </Breadcrumbs>
@@ -44,7 +44,7 @@ const TreatmentRehabilitacjaPartial = () => {
                                 <Typography>
                                     Zabiegi
                                 </Typography>
-                                <Link to='/treatment/vascular-surgery' aria-current='page'>
+                                <Link to='/treatment/physioterapy' aria-current='page'>
                                     Fizjoterapia
                                 </Link>
                                 <Typography>

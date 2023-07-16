@@ -14,11 +14,11 @@ import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
 
-import { treatment, masaz } from '../../../../data/treatment';
+import { treatment, ultradzwiekiIFalaRadiowa } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
-const TreatmentMasazPartial = () => {
+const TreatmentUltradzwiekiIFalaRadiowaPartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -29,8 +29,8 @@ const TreatmentMasazPartial = () => {
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    <Box>Fizjoterapia</Box>
+                                <Link to='/treatment/cosmetology' aria-current='page'>
+                                    <Box>Kosmetologia</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -44,17 +44,17 @@ const TreatmentMasazPartial = () => {
                                 <Typography>
                                     Zabiegi
                                 </Typography>
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    Fizjoterapia
+                                <Link to='/treatment/cosmetology' aria-current='page'>
+                                    Kosmetologia
                                 </Link>
                                 <Typography>
-                                    Masaż
+                                    Ultradzwieki i fala radiowa
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Masaż
+                                Ultradzwieki i fala radiowa
                             </Typography>
                         </Box>
                     </Container>
@@ -64,26 +64,39 @@ const TreatmentMasazPartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
+                                    Ultradźwięki połączone z falą radiową to zabieg, który w bezpieczny sposób redukuje cellulit i tkankę tłuszczową, niweluje wiotkość skóry oraz modeluje twarz. Dzięki połączeniu dwóch technologii intensyfikujemy efekty terapeutyczne.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
-                                        imageSrc={masaz.images[0].src}
-                                        imageAlt={masaz.images[0].alt}
-                                        imageAuthor={masaz.images[0].author}
-                                        imageHref={masaz.images[0].href}
+                                        imageSrc={ultradzwiekiIFalaRadiowa.images[0].src}
+                                        imageAlt={ultradzwiekiIFalaRadiowa.images[0].alt}
+                                        imageAuthor={ultradzwiekiIFalaRadiowa.images[0].author}
+                                        imageHref={ultradzwiekiIFalaRadiowa.images[0].href}
                                     />
                                 </Box>
+                                <Typography className='paragraph'>
+                                    Ultradźwięki selektywnie niszczą błony komórkowe adipocytów, czyli komórek tłuszczowych. Następnie fala radiowa przyśpiesza metabolizm usprawniając działanie układu limfatycznego oraz usuwanie uwolnionego tłuszczu z organizmu. Radiofrekwencja pobudza również fibroblasty co skutkuje ujędrnieniem skóry w okolicy zabiegowej.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Zabieg ten jest <strong>alternatywą dla procedur chirurgicznych</strong>. Można przeprowadzać go w każdej okolicy ciała lub twarzy, bez pominięcia szyi, brzucha, pośladków czy ud. Już po jednorazowej procedurze kondycja skóra ulega widocznej poprawie. By osiągnąć trwałe rezultaty zalecana jest seria 5 zabiegów w odstępach dwutygodniowych.
+                                </Typography>
                                 <Typography className='paragraph heading'>
-                                    <strong>Masaż wykorzystywany jest w celu</strong>:
+                                    <strong>Wskazania</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'rozluźnienia mięśni,',
-                                        'złagodzenia sztywności, napięcia i bólu mięśni,',
-                                        'zwiększenia elastyczności i wytrzymałości więzadeł,',
-                                        'poprawy ruchomości stawów,',
-                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.'
+                                        'niszczenie komórek tłuszczowych,',
+                                        'cellulit,',
+                                        'redukcja blizn i rozstępów,',
+                                        'nierówności po liposukcji,',
+                                        'redukcja zmarszczek,',
+                                        'termiczny lifting skóry,',
+                                        'ujędrnienie i modelowanie ciała,',
+                                        'poprawa owalu twarzy,',
+                                        'likwidacja "chomików",',
+                                        'likwidacja drugiego podbródka,',
+                                        'redukcja blizn',
+                                        'redukcja rozstępów.',
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -104,7 +117,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team
-                                        .filter(item => item.treatment.includes('masaz'))
+                                        .filter(item => item.treatment.includes('ultradzwieki-i-fala-radiowa'))
                                         .map((item) => (
                                             <CardTeamProposed
                                                 key={item.id}
@@ -112,7 +125,7 @@ const TreatmentMasazPartial = () => {
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={`/team/physioterapy/${item.specialist}`}
+                                                cardPath={`/team/cosmetology/${item.specialist}`}
                                             />
                                         ))
                                     }
@@ -126,7 +139,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {services
-                                        .filter(item => item.specialization === 'physioterapy')
+                                        .filter(item => item.specialization === 'cosmetology')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -147,8 +160,8 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {treatment
-                                        .filter(item => item.specialization.includes('physioterapy'))
-                                        .filter(item => item.treatment !== 'masaz')
+                                        .filter(item => item.specialization.includes('cosmetology'))
+                                        .filter(item => item.treatment !== 'ultradzwieki-i-fala-radiowa')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -169,4 +182,4 @@ const TreatmentMasazPartial = () => {
     );
 }
 
-export default Page(TreatmentMasazPartial);
+export default Page(TreatmentUltradzwiekiIFalaRadiowaPartial);

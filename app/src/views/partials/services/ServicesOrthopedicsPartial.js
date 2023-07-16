@@ -61,7 +61,7 @@ const ServicesOrthopedicsPartial = () => {
 
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Ortopedia</strong> - dziedzina medycyny zajmująca się leczeniem chorób, zniekształceń i zwyrodnień kości, stawów i układu mięśniowo-szkieletowego.
+                                    <strong>Ortopedia</strong> to dziedzina medycyny zajmująca się diagnozowaniem, leczeniem i rehabilitacją schorzeń, urazów i zaburzeń układu mięśniowo-szkieletowego. Układ mięśniowo-szkieletowy obejmuje kości, stawy, mięśnie, więzadła i ścięgna, a ortopedia skupia się na ich funkcjonowaniu, ruchomości i zdrowiu.
                                 </Typography>
                                 <Box className='box-image'>
                                     <LazyLoadImage
@@ -130,11 +130,11 @@ const ServicesOrthopedicsPartial = () => {
                             <Box className='box-proposed specialization'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
-                                        Pozostałe specjalizacje
+                                        Powiązane specjalizacje
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {services.filter(item => item.title !== 'Ortopedia').map((item) => (
+                                    {services.filter(item => item.relatedSpecializations.includes('orthopedics')).map((item) => (
                                         <CardProposed
                                             key={item.id}
                                             cardTitle={item.title}

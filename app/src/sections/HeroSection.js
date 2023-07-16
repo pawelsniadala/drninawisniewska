@@ -207,14 +207,14 @@ const HeroSection = () => {
                                         >
                                             <Button
                                                 component={Link}
-                                                to={`/technology`}
+                                                to={`/treatment`}
                                                 variant='contained'
                                                 color='primary'
                                                 size='large'
                                                 fullWidth={isMd ? false : true}
                                                 endIcon={<ArrowForwardIcon />}
                                             >
-                                                Zobacz nasz sprzęt
+                                                Zobacz nasze zabiegi
                                             </Button>
                                         </Box>
                                     </Box>

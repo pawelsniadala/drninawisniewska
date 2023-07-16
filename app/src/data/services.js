@@ -3,7 +3,6 @@ import servicesDermatology0 from '../assets/services/dermatology/servicesDermato
 
 // MEDYCYNA ESTETYCZNA
 import servicesAestheticMedicine0 from '../assets/services/aestheticMedicine/servicesAestheticMedicine0.jpg';
-import servicesAestheticMedicine1 from '../assets/services/aestheticMedicine/servicesAestheticMedicine1.jpg';
 
 // KOSMETOLOGIA
 import servicesCosmetology0 from '../assets/services/cosmetology/servicesCosmetology0.jpg';
@@ -18,8 +17,6 @@ import servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter from '../assets/se
 
 // ALERGOLOGIA
 import servicesAllergology0 from '../assets/services/allergology/servicesAllergology0.jpg';
-import servicesAllergology1 from '../assets/services/allergology/servicesAllergology1.jpg';
-import servicesAllergology2 from '../assets/services/allergology/servicesAllergology2.jpg';
 
 // USG
 import servicesUsg0 from '../assets/services/usg/servicesUsg0.jpg';
@@ -93,6 +90,11 @@ export const dermatology = {
         paulinaTataraImageSmall,
         katarzynaZbronskaImageSmall,
         katarzynaRychlikImageSmall
+    ],
+    relatedSpecializations: [
+        'aesthetic-medicine',
+        'cosmetology',
+        'allergology'
     ]
 };
 
@@ -108,15 +110,9 @@ export const aestheticMedicine = {
     images: [
         {
             src: servicesAestheticMedicine0,
-            alt: 'Zabieg redukcji zmarszczek',
+            alt: 'Zabieg w okolicy ust',
             author: 'Freepik',
             href: 'https://pl.freepik.com/darmowe-zdjecie/piekna-mloda-kobieta-dostaje-botox-kosmetyczny-zastrzyk-w-jej-twarzy_1624934.htm#query=Medycyna%20estetyczna&position=30&from_view=search&track=ais'
-        },
-        {
-            src: servicesAestheticMedicine1,
-            alt: 'Zabieg kolagenowy w okolicy ust',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/zblizenie-na-kobiete-podczas-zabiegu-wypelniania-ust_23668908.htm#page=3&query=Medycyna%20estetyczna&position=4&from_view=search&track=ais'
         }
     ],
     specialists: [
@@ -125,6 +121,11 @@ export const aestheticMedicine = {
         klaudiaMalottkiImageSmall,
         paulinaTataraImageSmall,
         olgaLenartowiczWarakomskaImageSmall
+    ],
+    relatedSpecializations: [
+        'dermatology',
+        'cosmetology',
+        'cosmetic-surgery'
     ]
 };
 
@@ -132,7 +133,7 @@ export const cosmetology = {
     id: '6c9e3a3d-9257-44d4-81af-87523bdccf71',
     specialization: 'cosmetology',
     title: 'Kosmetologia',
-    description: 'Kosmetologia to dział dermatologii zajmujący się badaniem, opisywaniem, leczeniem i pielęgnowaniem skóry, włosów i paznokci.',
+    description: 'Kosmetologia to dziedzina naukowa i praktyczna, która zajmuje się pielęgnacją skóry, włosów, paznokci oraz ogólnym poprawianiem wyglądu i zdrowia skóry. Kosmetolodzy, specjaliści w dziedzinie kosmetologii, stosują różne techniki, metody i produkty w celu zapewnienia zdrowia, piękna i dobrej kondycji skóry.',
     path: '/services/cosmetology',
     pathSpecialist: '/team/cosmetology',
     pathPrices: '/prices/cosmetology',
@@ -149,6 +150,11 @@ export const cosmetology = {
         paulinaBudnaImageSmall,
         aleksandraGorczynskaImageSmall
     ],
+    relatedSpecializations: [
+        'dermatology',
+        'cosmetology',
+        'aesthetic-medicine'
+    ]
 };
 
 export const physioterapy = {
@@ -171,6 +177,10 @@ export const physioterapy = {
     specialists: [
         milenaJuzwiakImageSmall
     ],
+    relatedSpecializations: [
+        'orthopedics',
+        'rheumatology'
+    ]
 };
 
 export const cosmeticSurgery = {
@@ -185,6 +195,9 @@ export const cosmeticSurgery = {
     specialists: [
         konradKochanImageSmall
     ],
+    relatedSpecializations: [
+        'aesthetic-medicine'
+    ],
     servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore: servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore,
     servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter: servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter
 };
@@ -194,7 +207,7 @@ export const allergology = {
     specialization: 'allergology',
     image: servicesAllergology0,
     title: 'Alergologia',
-    description: 'Testy skórne są jedną z popularniejszej oraz prostszej metody diagnostycznej alergii. Największą zaletą testów skórnych jest ich krótki czas oczekiwania na wyniki. Badanie przeprowadza się na wewnętrznej części przedramienia lub skórze pleców. Przebieg testów polega na naniesieniu kropli różnych zawiesin z alergenami z zestawu przesiewowego zawierającego takie substancje uczulające jak rośliny wiatropylne, trawy, pleśnie, sierść zwierząt, jad owadów czy roztocza kurzu domowego.',
+    description: 'Alergologia to dziedzina medycyny zajmująca się diagnozowaniem, leczeniem i profilaktyką alergii. Alergia to nadwrażliwość immunologiczna organizmu na substancje zwane alergenami, które normalnie nie wywołują reakcji u większości osób. Alergeny mogą być pochodzenia pokarmowego, środowiskowego (pyłki roślin, roztocza, grzyby), kontaktowego (metale, lateks, kosmetyki), leków, a także mogą występować w powietrzu (aerozole, pyły, dymy).',
     path: '/services/allergology',
     pathSpecialist: '/team/allergology',
     pathPrices: '/prices/allergology',
@@ -203,24 +216,15 @@ export const allergology = {
             src: servicesAllergology0,
             alt: 'Test reakcji alergicznej skóry na przedramieniu',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/test-reakcji-alergicznej-skory-na-ramieniu-osoby_19672574.htm#page=3&query=testy%20sk%C3%B3ry&position=15&from_view=search&track=ais#page=3&query=t&from_query=undefined&position=1&from_view=search&track=ais#position=15&page=3&query=testy%20sk%C3%B3ry'
-        },
-        {
-            src: servicesAllergology1,
-            alt: 'Płatkowy test kontaktowy skóry pleców',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/reakcja-alergiczna-skory-na-plecach-osoby_19672630.htm#query=testy%20sk%C3%B3ry&position=45&from_view=search&track=ais'
-        },
-        {
-            src: servicesAllergology2,
-            alt: 'Odczulanie skóry na przedramieniu',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/test-reakcji-alergicznej-skory-na-ramieniu-osoby_19672578.htm#from_view=detail_serie#position=2'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/test-reakcji-alergicznej-skory-na-ramieniu-osoby_19672579.htm#query=test%20reakcji%20alergicznej%20sk%C3%B3ry&position=3&from_view=search&track=ais'
         }
     ],
     specialists: [
         tomaszMatuszewskiImageSmall
-    ]
+    ],
+    relatedSpecializations: [
+        'dermatology'
+    ],
 };
 
 export const usg = {
@@ -245,7 +249,11 @@ export const usg = {
         wojciechKaszewskiImageSmall,
         patrykKrokwinskiImageSmall,
         kamilStepkowskiImageSmall,
-    ]
+    ],
+    relatedSpecializations: [
+        'endocrinology',
+        'gynecology'
+    ],
 };
 
 export const endocrinology = {
@@ -267,7 +275,11 @@ export const endocrinology = {
     ],
     specialists: [
         justynaFilipekImageSmall
-    ]
+    ],
+    relatedSpecializations: [
+        'usg',
+        'gynecology'
+    ],
 };
 
 export const gynecology = {
@@ -289,7 +301,11 @@ export const gynecology = {
     ],
     specialists: [
         justynaFilipekImageSmall
-    ]
+    ],
+    relatedSpecializations: [
+        'usg',
+        'endocrinology'
+    ],
 };
 
 export const orthopedics = {
@@ -297,13 +313,17 @@ export const orthopedics = {
     specialization: 'orthopedics',
     image: servicesOrthopedics,
     title: 'Ortopedia',
-    description: 'Jedna z podstawowych specjalności lekarskich. Skupia się na diagnostyce i leczeniu operacyjnym i zachowawczym schorzeń, wad wrodzonych i nabytych, zapaleń, zakażeń, nowotworów oraz uszkodzeń i zmian pourazowych narządu ruchu: szkieletu (z wyjątkiem kości czaszki), układu więzadłowo-stawowego oraz mięśni, nerwów i naczyń.',
+    description: 'Ortopedia to dziedzina medycyny zajmująca się diagnozowaniem, leczeniem i rehabilitacją schorzeń, urazów i zaburzeń układu mięśniowo-szkieletowego. Układ mięśniowo-szkieletowy obejmuje kości, stawy, mięśnie, więzadła i ścięgna, a ortopedia skupia się na ich funkcjonowaniu, ruchomości i zdrowiu.',
     path: '/services/orthopedics',
     pathSpecialist: '/team/orthopedics',
     pathPrices: '/prices/orthopedics',
     specialists: [
         wojciechKaszewskiImageSmall
-    ]
+    ],
+    relatedSpecializations: [
+        'physioterapy',
+        'rheumatology'
+    ],
 };
 
 export const vascularSurgery = {
@@ -325,7 +345,10 @@ export const vascularSurgery = {
     ],
     specialists: [
         kamilStepkowskiImageSmall
-    ]
+    ],
+    relatedSpecializations: [
+        'cardiology'
+    ],
 };
 
 export const clinicalDietitian = {
@@ -347,7 +370,10 @@ export const clinicalDietitian = {
     ],
     specialists: [
         joannaOjrzenskaImageSmall
-    ]
+    ],
+    relatedSpecializations: [
+        'rheumatology'
+    ],
 };
 
 export const rheumatology = {
@@ -361,7 +387,11 @@ export const rheumatology = {
     pathPrices: '/prices/rheumatology',
     specialists: [
         agataSkwerekSzewczykImageSmall
-    ]
+    ],
+    relatedSpecializations: [
+        'physioterapy',
+        'orthopedics'
+    ],
 };
 
 export const cardiology = {
@@ -376,13 +406,17 @@ export const cardiology = {
     images: [
         {
             src: servicesCardiology0,
-            alt: 'Wykres kardiologiczny',
+            alt: 'Kardiolog mierzy ciśnienie krwi',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/zblizenie-stetoskop-na-wykresie-cardiogram_3465323.htm#query=cardiology&position=15&from_view=search&track=sph'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/mlody-meski-psycholog-z-pacjentem-mierzy-cisnienie-krwi_6190120.htm#page=5&query=badanie%20serca&position=24&from_view=search&track=ais'
         }
     ],
     specialists: [
         michalRadzioImageSmall
+    ],
+    relatedSpecializations: [
+        'vascular-surgery',
+        'clinical-dietitian'
     ]
 };
 

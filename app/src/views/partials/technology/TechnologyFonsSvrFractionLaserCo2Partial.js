@@ -51,7 +51,7 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Fons SVR™ Laser Frakcyjny CO<sub>2</sub>
+                                Fons SVR™ Laser Frakcyjny CO<sub>2</sub> <strong>Laser frakcyjny (Medycyna estetyczna) [przeniesione]</strong>
                             </Typography>
                         </Box>
                     </Container>
@@ -61,7 +61,7 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                         <Box className='technology-description'>
                             <Box className='box-technology'>
                                 <Typography className='paragraph'>
-                                    <strong>Laser frakcyjny FONS SVR™</strong> jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci <strong>likwidacji blizn potrądzikowych</strong>, <strong>poprawy jakości skóry</strong> i <strong>wytworzenia nowych struktur kolagenu</strong>.
+                                    <strong>Laser frakcyjny</strong> jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci <strong>likwidacji blizn potrądzikowych</strong>, <strong>poprawy jakości skóry</strong> i <strong>wytworzenia nowych struktur kolagenu</strong>.
                                 </Typography>
                                 <Box className='box-image'>
                                     <LazyLoadImage
@@ -88,7 +88,7 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                     Ogromną zaletą jest <strong>bezkontaktowa praca</strong> lasera gwarantująca całkowitą czystość pola operacyjnego. Bardzo ważna jest także istotna redukcja krwawienia oraz natychmiastowa koagulacja. W trakcie wykonywania zabiegu uzyskujemy tysiące mikroskopijnych uszkodzeń tkanki, natomiast pozostałe obszary pozostają nienaruszone i to właśnie one przyspieszają odnowę zniszczonych stref skóry. Dzięki temu okres rekonwalescencji jest zredukowany do minimum przy jedoczesnym zachowaniu wysokiej efektywności terapii.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    <strong>Zalety lasera FONS SVR™</strong>:
+                                    <strong>Zalety lasera frakcyjnegoO</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -122,7 +122,7 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                         'usuwanie zmarszczek,',
                                         'poprawa jakości skóry',
                                         'skuteczne efekty w niwelowaniu fotostarzenia się skóry,',
-                                        'zabiegi chirurgiczne z wykorzystaniem punktowej głowicy lasera CO\u2082,',
+                                        'zabiegi chirurgiczne z wykorzystaniem punktowej głowicy lasera frakcyjnego',
                                         'ginekologia estetyczna.'
                                     ].map((item, index) => (
                                         <ListBulleted
@@ -133,7 +133,7 @@ const TechnologyFonsSvrFractionLaserCo2Partial = () => {
                                     ))}
                                 </Grid>
                                 <Typography className='paragraph'>
-                                    Efekty po zabiegu laserem frakcyjnym CO2 są widoczne stopniowo po około 4 tygodniach od zabiegu. Zmiany można zaobserwować już po jednym naświetlaniu, jednak, aby osiągnąć lepsze rezultaty należy wykonać 2-4 zabiegi.
+                                    Efekty po zabiegu laserem frakcyjnym są widoczne stopniowo po około 4 tygodniach od zabiegu. Zmiany można zaobserwować już po jednym naświetlaniu, jednak, aby osiągnąć lepsze rezultaty należy wykonać 2-4 zabiegi.
                                 </Typography>
                                 <Typography className='paragraph heading'>
                                     <strong>Jak przygotować się do zabiegu nieablacyjnego odmładzania skóry?</strong>

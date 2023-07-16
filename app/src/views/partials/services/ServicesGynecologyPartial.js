@@ -118,11 +118,11 @@ const ServicesGynecologyPartial = () => {
                             <Box className='box-proposed specialization'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
-                                        Pozostałe specjalizacje
+                                        Powiązane specjalizacje
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {services.filter(item => item.title !== 'Ginekologia').map((item) => (
+                                    {services.filter(item => item.relatedSpecializations.includes('gynecology')).map((item) => (
                                         <CardProposed
                                             key={item.id}
                                             cardTitle={item.title}

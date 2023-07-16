@@ -12,13 +12,13 @@ import Container from '../../../../components/Container';
 import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
-import Image from '../../../../components/Image';
+// import Image from '../../../../components/Image';
 
-import { treatment, masaz } from '../../../../data/treatment';
+import { treatment, /* niciRewitalizujaceILiftingujace */ } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
-const TreatmentMasazPartial = () => {
+const TreatmentNiciRewitalizujaceILiftingujacePartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -29,8 +29,8 @@ const TreatmentMasazPartial = () => {
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    <Box>Fizjoterapia</Box>
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    <Box>Medycyna estetyczna</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -44,17 +44,17 @@ const TreatmentMasazPartial = () => {
                                 <Typography>
                                     Zabiegi
                                 </Typography>
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    Fizjoterapia
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    Medycyna estetyczna
                                 </Link>
                                 <Typography>
-                                    Masaż
+                                    Nici rewitalizujące i liftingujące
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Masaż
+                                Nici rewitalizujące i liftingujące
                             </Typography>
                         </Box>
                     </Container>
@@ -64,26 +64,25 @@ const TreatmentMasazPartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
+                                    <strong>Nici liftingujące</strong> służą do <strong>usuwania skutków starzenia grawitacyjnego</strong>. Zmiany na skórze spowodowane są utratą sprężystości, zmniejszeniem napięcia mięśni i przemieszczaniem się podskórnej tkanki tłuszczowej. Nici liftingujące są mniej kłopotliwą i inwazyjną alternatywą dla chirurgicznego liftingu.
                                 </Typography>
-                                <Box className='box-image'>
+                                {/* <Box className='box-image'>
                                     <Image
-                                        imageSrc={masaz.images[0].src}
-                                        imageAlt={masaz.images[0].alt}
-                                        imageAuthor={masaz.images[0].author}
-                                        imageHref={masaz.images[0].href}
+                                        imageSrc={niciRewitalizujaceILiftingujace.images[0].src}
+                                        imageAlt={niciRewitalizujaceILiftingujace.images[0].alt}
+                                        imageAuthor={niciRewitalizujaceILiftingujace.images[0].author}
+                                        imageHref={niciRewitalizujaceILiftingujace.images[0].href}
                                     />
-                                </Box>
-                                <Typography className='paragraph heading'>
-                                    <strong>Masaż wykorzystywany jest w celu</strong>:
+                                </Box> */}
+                             <Typography className='paragraph heading'>
+                                    <strong>Efekty pozabiegowe</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'rozluźnienia mięśni,',
-                                        'złagodzenia sztywności, napięcia i bólu mięśni,',
-                                        'zwiększenia elastyczności i wytrzymałości więzadeł,',
-                                        'poprawy ruchomości stawów,',
-                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.'
+                                        'poprawa owalu twarzy - likwidacja tzw. "chomików" podwójnego podbródka,',
+                                        'usuwanie asymetrii łuków brwiowych, opadającej powieki,',
+                                        'spłycenie zmarszczek,',
+                                        'modelowanie ciała - opadające ramiona, pośladki, biust.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -92,6 +91,27 @@ const TreatmentMasazPartial = () => {
                                         />
                                     ))}
                                 </Grid>
+                                <Typography className='paragraph heading'>
+                                    Potocznie nićmi liftingującymi nazywany jest każdy rodzaj nitek służących do podwieszania skóry. W nomenklaturze medycznej nici liftingujące dzielą się na:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'nici rewitalizujące (rozpuszczalne),',
+                                        'nici liftingujące właściwe (nierozpuszczalne).'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph'>
+                                    Nici rewitalizujące to nici polidioksanowe (PDO). Wykonane są z tego samego tworzywa co szwy chirurgiczne stosowane w operacjach. Nici nazywane przez lekarzy liftingującymi to inaczej nici haczykowate. Są dużo grubsze od nici PDO, a umieszczone na nich w różnych kierunkach haczyki mają za zadanie unosić obwisłą skórę. Stosowane są zwłaszcza u pacjentek w dojrzałym wieku i dają efekt porównywalny do liftingu chirurgicznego. W reakcji na obecność ciała obcego skóra zaczyna stymulować produkcję kolagenu.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Nasza Klinika oferuje oba typy nici.
+                                </Typography>
                             </Box>
                         </Box>
 
@@ -104,7 +124,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team
-                                        .filter(item => item.treatment.includes('masaz'))
+                                        .filter(item => item.treatment.includes('nici-rewitalizujace-i-liftingujace'))
                                         .map((item) => (
                                             <CardTeamProposed
                                                 key={item.id}
@@ -112,7 +132,7 @@ const TreatmentMasazPartial = () => {
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={`/team/physioterapy/${item.specialist}`}
+                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
                                             />
                                         ))
                                     }
@@ -126,7 +146,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {services
-                                        .filter(item => item.specialization === 'physioterapy')
+                                        .filter(item => item.specialization === 'aesthetic-medicine')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -147,8 +167,8 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {treatment
-                                        .filter(item => item.specialization.includes('physioterapy'))
-                                        .filter(item => item.treatment !== 'masaz')
+                                        .filter(item => item.specialization.includes('aesthetic-medicine'))
+                                        .filter(item => item.treatment !== 'nici-rewitalizujace-i-liftingujace')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -169,4 +189,4 @@ const TreatmentMasazPartial = () => {
     );
 }
 
-export default Page(TreatmentMasazPartial);
+export default Page(TreatmentNiciRewitalizujaceILiftingujacePartial);

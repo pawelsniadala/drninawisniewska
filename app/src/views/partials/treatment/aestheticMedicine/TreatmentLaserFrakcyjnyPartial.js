@@ -14,11 +14,11 @@ import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
 
-import { treatment, masaz } from '../../../../data/treatment';
+import { treatment, /* laserFrakcyjny */ } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
-const TreatmentMasazPartial = () => {
+const TreatmentLaserFrakcyjnyPartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -29,8 +29,8 @@ const TreatmentMasazPartial = () => {
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    <Box>Fizjoterapia</Box>
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    <Box>Medycyna estetyczna</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -44,17 +44,17 @@ const TreatmentMasazPartial = () => {
                                 <Typography>
                                     Zabiegi
                                 </Typography>
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    Fizjoterapia
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    Medycyna estetyczna
                                 </Link>
                                 <Typography>
-                                    Masaż
+                                    Laser frakcyjny
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Masaż
+                                Laser frakcyjny
                             </Typography>
                         </Box>
                     </Container>
@@ -64,26 +64,61 @@ const TreatmentMasazPartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
+                                    <strong>Laser frakcyjny</strong> jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci <strong>likwidacji blizn potrądzikowych</strong>, <strong>poprawy jakości skóry</strong> i <strong>wytworzenia nowych struktur kolagenu</strong>.
                                 </Typography>
-                                <Box className='box-image'>
+                                {/* <Box className='box-image'>
                                     <Image
-                                        imageSrc={masaz.images[0].src}
-                                        imageAlt={masaz.images[0].alt}
-                                        imageAuthor={masaz.images[0].author}
-                                        imageHref={masaz.images[0].href}
+                                        imageSrc={laserFrakcyjny.images[0].src}
+                                        imageAlt={laserFrakcyjny.images[0].alt}
+                                        imageAuthor={laserFrakcyjny.images[0].author}
+                                        imageHref={laserFrakcyjny.images[0].href}
                                     />
-                                </Box>
+                                </Box> */}
+                                <Typography className='paragraph'>
+                                    W porównaniu z tradycyjnymi laserami CO<sub>2</sub>, frakcjonowanie ablacyjne laserami Fons pozwala osiągnąć <strong>dużą głębokość penetracji w skórze</strong>, dając efektywne procedury zabiegowe. Dzięki wysokiej mocy i wszechstronności może być wykorzystywany w wielu wskazaniach. Wygodę i precyzję działania zapewnia siedmioprzegubowe ramię.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Ogromną zaletą jest <strong>bezkontaktowa praca</strong> lasera gwarantująca całkowitą czystość pola operacyjnego. Bardzo ważna jest także istotna redukcja krwawienia oraz natychmiastowa koagulacja. W trakcie wykonywania zabiegu uzyskujemy tysiące mikroskopijnych uszkodzeń tkanki, natomiast pozostałe obszary pozostają nienaruszone i to właśnie one przyspieszają odnowę zniszczonych stref skóry. Dzięki temu okres rekonwalescencji jest zredukowany do minimum przy jedoczesnym zachowaniu wysokiej efektywności terapii.
+                                </Typography>
                                 <Typography className='paragraph heading'>
-                                    <strong>Masaż wykorzystywany jest w celu</strong>:
+                                    <strong>Możliwości zabiegowe</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'rozluźnienia mięśni,',
-                                        'złagodzenia sztywności, napięcia i bólu mięśni,',
-                                        'zwiększenia elastyczności i wytrzymałości więzadeł,',
-                                        'poprawy ruchomości stawów,',
-                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.'
+                                        'resurfacing skóry,',
+                                        'lifting i ujędrnianie skóry,',
+                                        'usuwanie blizn (potrądzikowych, pourazowych, oparzeniowych),',
+                                        'likwidacja rozstępów,',
+                                        'redukcja trądziku,',
+                                        'usuwanie przebarwień,',
+                                        'usuwanie zmarszczek,',
+                                        'poprawa jakości skóry',
+                                        'skuteczne efekty w niwelowaniu fotostarzenia się skóry,',
+                                        'zabiegi chirurgiczne z wykorzystaniem punktowej głowicy lasera frakcyjnego',
+                                        'ginekologia estetyczna.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph'>
+                                    Efekty po zabiegu laserem frakcyjnym są widoczne stopniowo po około 4 tygodniach od zabiegu. Zmiany można zaobserwować już po jednym naświetlaniu, jednak, aby osiągnąć lepsze rezultaty należy wykonać 2-4 zabiegi.
+                                </Typography>
+                                <Typography className='paragraph heading'>
+                                    <strong>Jak przygotować się do zabiegu?</strong>
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'Po terapii doustnymi retinoidami lub izotretynoiną należy odczekać okres 6 miesięcy od momentu odstawienia.',
+                                        'Należy odstawić leki zioła fototoksyczne i fotouczulające (dziurawiec, pokrzywa, nagietek, herbaty odchudzające typu "figura", zioła chińskie) na 3 tygodnie przed zabiegiem.',
+                                        'Po kuracji antybiotykami należy odczekać ok. 2 tygodnie od momentu odstawienia leków.',
+                                        'Tydzień przed zabiegiem nie wykonywać depilacji w okolicy zabiegowej.',
+                                        'Obszar zabiegowy nie może być podrażniony ani przesuszony.',
+                                        'Na 4 tygodnie przed zabiegiem nie należy opalać skóry.',
+                                        'Na 2 tygodnie przed zabiegiem nie należy stosować kremów z retinoidami, innych preparatów złuszczających (peelingi, kwasy owocowe, witamina A) oraz kosmetyków brązujących, samoopalaczy.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -104,7 +139,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team
-                                        .filter(item => item.treatment.includes('masaz'))
+                                        .filter(item => item.treatment.includes('laser-frakcyjny'))
                                         .map((item) => (
                                             <CardTeamProposed
                                                 key={item.id}
@@ -112,7 +147,7 @@ const TreatmentMasazPartial = () => {
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={`/team/physioterapy/${item.specialist}`}
+                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
                                             />
                                         ))
                                     }
@@ -126,7 +161,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {services
-                                        .filter(item => item.specialization === 'physioterapy')
+                                        .filter(item => item.specialization === 'aesthetic-medicine')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -147,8 +182,8 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {treatment
-                                        .filter(item => item.specialization.includes('physioterapy'))
-                                        .filter(item => item.treatment !== 'masaz')
+                                        .filter(item => item.specialization.includes('aesthetic-medicine'))
+                                        .filter(item => item.treatment !== 'laser-frakcyjny')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -169,4 +204,4 @@ const TreatmentMasazPartial = () => {
     );
 }
 
-export default Page(TreatmentMasazPartial);
+export default Page(TreatmentLaserFrakcyjnyPartial);

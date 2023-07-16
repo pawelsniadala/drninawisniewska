@@ -48,7 +48,7 @@ const TechnologyDermalight500Partial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {dermalight500.title} / <strong>Fototerapia Chorob Skory - Lampa PUVA do naświetlań (Dermatologia)</strong>
+                                {dermalight500.title} / <strong>Fototerapia Chorob Skory - Lampa PUVA do naświetlań (Dermatologia) [przeniesione]</strong>
                             </Typography>
                         </Box>
                     </Container>

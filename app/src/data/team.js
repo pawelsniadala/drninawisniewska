@@ -32,7 +32,7 @@ export const ninaWisniewska = {
     image: ninaWisniewskaImage,
     background: false,
     specialization: ['dermatology', 'aesthetic-medicine'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'wideodermatoskopia']
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'toksyna-botulinowa', 'mezoterapia-iglowa']
 };
 
 export const justynaFilipek = {
@@ -62,7 +62,7 @@ export const paulinaBudna = {
     image: paulinaBudnaImage,
     background: false,
     specialization: ['cosmetology'],
-    treatment: ['']
+    treatment: ['peeling-medyczny', 'epilacja-laserowa', 'masaz-prozniowy', 'ultradzwieki-i-fala-radiowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
 };
 
 export const konradKochan = {
@@ -107,7 +107,7 @@ export const aldonaMaciag = {
     image: aldonaMaciagImage,
     background: false,
     specialization: ['dermatology'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'wideodermatoskopia']
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne']
 };
 
 export const justynaKloniecka = {
@@ -152,7 +152,7 @@ export const klaudiaMalottki = {
     image: klaudiaMalottkiImage,
     background: false,
     specialization: ['aesthetic-medicine'],
-    treatment: ['']
+    treatment: ['toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'nici-rewitalizujace-i-liftingujace', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
 };
 
 export const katarzynaMysliwiecCzajka = {
@@ -167,7 +167,7 @@ export const katarzynaMysliwiecCzajka = {
     image: katarzynaMysliwiecCzajkaImage,
     background: false,
     specialization: ['dermatology'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'wideodermatoskopia']
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne']
 };
 
 export const milenaJuzwiak = {
@@ -197,7 +197,7 @@ export const paulinaTatara = {
     image: paulinaTataraImage,
     background: false,
     specialization: ['dermatology', 'aesthetic-medicine'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'wideodermatoskopia']
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'toksyna-botulinowa', 'stymulatory-tkankowe', 'mezoterapia-iglowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
 };
 
 export const tomaszMatuszewski = {
@@ -212,7 +212,7 @@ export const tomaszMatuszewski = {
     image: tomaszMatuszewskiImage,
     background: false,
     specialization: ['allergology'],
-    treatment: ['']
+    treatment: ['testy-skorne', 'platkowe-testy-kontaktowe', 'odczulanie']
 };
 
 export const olgaLenartowiczWarakomska = {
@@ -227,7 +227,7 @@ export const olgaLenartowiczWarakomska = {
     image: olgaLenartowiczWarakomskaImage,
     background: false,
     specialization: ['aesthetic-medicine'],
-    treatment: ['']
+    treatment: ['toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
 };
 
 export const katarzynaZbronska = {
@@ -242,7 +242,7 @@ export const katarzynaZbronska = {
     image: katarzynaZbronskaImage,
     background: false,
     specialization: ['dermatology'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'wideodermatoskopia']
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
 };
 
 export const joannaOjrzenska = {
@@ -272,7 +272,7 @@ export const aleksandraGorczynska = {
     image: aleksandraGorczynskaImage,
     background: false,
     specialization: ['cosmetology'],
-    treatment: ['']
+    treatment: ['peeling-medyczny', 'epilacja-laserowa', 'masaz-prozniowy', 'ultradzwieki-i-fala-radiowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
 };
 
 export const kamilStepkowski = {
@@ -297,12 +297,12 @@ export const katarzynaRychlik = {
     speciality: 'Dermatolog',
     summary: false,
     education: 'Absolwentka I Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego.',
-    experience: 'Obecnie pracuje w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie, gdzie specjalizuje się w dziedzinie dermatologii i wenerologii. Zajmuje się diagnostyką oraz leczeniem chorób skóry, włosów i paznokci. Stale podnosi swoje kwalifikacji zawodowe aktywnie uczestnicząc w licznych konferencjach i szkoleniach.',
+    experience: 'Obecnie pracuje w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie, gdzie odbywa staż specjalizacyjny z dermatologii i wenerologii. Zajmuje się diagnostyką oraz leczeniem chorób skóry, włosów i paznokci. Stale podnosi swoje kwalifikacji zawodowe aktywnie uczestnicząc w licznych konferencjach i szkoleniach.',
     interested: false,
     image: katarzynaRychlikImage,
     background: false,
     specialization: ['dermatology'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'wideodermatoskopia']
+    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory']
 };
 
 export const patrykKrokwinski = {

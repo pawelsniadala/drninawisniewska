@@ -25,20 +25,43 @@ import ServicesVascularSurgeryPartial from './partials/services/ServicesVascular
 import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
 import ServicesRheumatologyPartial from './partials/services/ServicesRheumatologyPartial';
 import ServicesCardiologyPartial from './partials/services/ServicesCardiologyPartial';
-
 import TreatmentView from './TreatmentView';
 
+// DERMATOLOGIA
 import TreatmentSpecializationPartial from './partials/treatment/TreatmentSpecializationPartial';
 import TreatmentBadanieZnamionBarwnikowychPartial from './partials/treatment/dermatology/TreatmentBadanieZnamionBarwnikowychPartial';
 import TreatmentFototerapiaChorobSkoryPartial from './partials/treatment/dermatology/TreatmentFototerapiaChorobSkoryPartial';
 import TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial from './partials/treatment/dermatology/TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial';
 
+// MEDYCYNA ESTETYCZNA
+import TreatmentToksynaBotulinowaPartial from './partials/treatment/aestheticMedicine/TreatmentToksynaBotulinowaPartial';
+import TreatmentStymulatoryTkankowePartial from './partials/treatment/aestheticMedicine/TreatmentStymulatoryTkankowePartial';
+import TreatmentOsoczeBogatopłytkowePartial from './partials/treatment/aestheticMedicine/TreatmentOsoczeBogatopłytkowePartial';
+import TreatmentMezoterapiaIglowaPartial from './partials/treatment/aestheticMedicine/TreatmentMezoterapiaIglowaPartial';
+import TreatmentNiciRewitalizujaceILiftingujacePartial from './partials/treatment/aestheticMedicine/TreatmentNiciRewitalizujaceILiftingujacePartial';
+import TreatmentLaserFrakcyjnyPartial from './partials/treatment/aestheticMedicine/TreatmentLaserFrakcyjnyPartial';
+import TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial from './partials/treatment/aestheticMedicine/TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial';
+
+// KOSMETOLOGIA
+import TreatmentPeelingMedycznyPartial from './partials/treatment/cosmetology/TreatmentPeelingMedycznyPartial';
+import TreatmentEpilacjaLaserowaPartial from './partials/treatment/cosmetology/TreatmentEpilacjaLaserowaPartial';
+import TreatmentMasazProzniowyPartial from './partials/treatment/cosmetology/TreatmentMasazProzniowyPartial';
+import TreatmentUltradzwiekiIFalaRadiowaPartial from './partials/treatment/cosmetology/TreatmentUltradzwiekiIFalaRadiowaPartial';
+
+// FIZJOTERAPIA
 import TreatmentRehabilitacjaPartial from './partials/treatment/physioterapy/TreatmentRehabilitacjaPartial';
 import TreatmentMasazPartial from './partials/treatment/physioterapy/TreatmentMasazPartial';
 import TreatmentKinesiotapingPartial from './partials/treatment/physioterapy/TreatmentKinesiotapingPartial';
 
+// ALERGOLOGIA
+import TreatmentTestySkornePartial from './partials/treatment/allergology/TreatmentTestySkornePartial';
+import TreatmentPlatkoweTestyKontaktowePartial from './partials/treatment/allergology/TreatmentPlatkoweTestyKontaktowePartial';
+import TreatmentOdczulaniePartial from './partials/treatment/allergology/TreatmentOdczulaniePartial';
+
+// CHIRURGIA NACZYNIOWA
 import TreatmentSkleroterapiaPartial from './partials/treatment/vascularSurgery/TreatmentSkleroterapiaPartial';
 import TreatmentLaseroweUsuwanieZylakowPartial from './partials/treatment/vascularSurgery/TreatmentLaseroweUsuwanieZylakowPartial';
+
 
 import PricesView from './PricesView';
 import PricesDermatologyPartial from './partials/prices/PricesDermatologyPartial';
@@ -59,19 +82,19 @@ import SpecialOfferView from './SpecialOfferView';
 import TeamView from './TeamView';
 import TeamSpecializationPartial from './partials/team/TeamSpecializationPartial';
 import TeamSpecialistPartial from './partials/team/TeamSpecialistPartial';
-// import TechnologyView from './TechnologyView';
-// import TechnologyVectusPartial from './partials/technology/TechnologyVectusPartial';
-// import TechnologyAlmaHarmonyXlProPartial from './partials/technology/TechnologyAlmaHarmonyXlProPartial';
-// import TechnologyIcooneLaserMed2Partial from './partials/technology/TechnologyIcooneLaserMed2Partial';
-// import TechnologyFonsSvrFractionLaserCo2Partial from './partials/technology/TechnologyFonsSvrFractionLaserCo2Partial';
-// import TechnologyAlmaAccentUltraVShapePartial from './partials/technology/TechnologyAlmaAccentUltraVShapePartial';
-// import TechnologyFotoFinderDermoscopeVexiaPartial from './partials/technology/TechnologyFotoFinderDermoscopeVexiaPartial';
-// import TechnologyBiolitecLeonardoMiniPartial from './partials/technology/TechnologyBiolitecLeonardoMiniPartial';
-// import TechnologyHettichArthrexAcpPartial from './partials/technology/TechnologyHettichArthrexAcpPartial';
-// import TechnologyPhilipsUltrasonografAffiniti50Partial from './partials/technology/TechnologyPhilipsUltrasonografAffiniti50Partial';
-// import TechnologySonoQueenPartial from './partials/technology/TechnologySonoQueenPartial';
-// import TechnologyDermalight500Partial from './partials/technology/TechnologyDermalight500Partial';
-// import TechnologyDermalight1000UvaUvb311nmPartial from './partials/technology/TechnologyDermalight1000UvaUvb311nmPartial';
+import TechnologyView from './TechnologyView';
+import TechnologyVectusPartial from './partials/technology/TechnologyVectusPartial';
+import TechnologyAlmaHarmonyXlProPartial from './partials/technology/TechnologyAlmaHarmonyXlProPartial';
+import TechnologyIcooneLaserMed2Partial from './partials/technology/TechnologyIcooneLaserMed2Partial';
+import TechnologyFonsSvrFractionLaserCo2Partial from './partials/technology/TechnologyFonsSvrFractionLaserCo2Partial';
+import TechnologyAlmaAccentUltraVShapePartial from './partials/technology/TechnologyAlmaAccentUltraVShapePartial';
+import TechnologyFotoFinderDermoscopeVexiaPartial from './partials/technology/TechnologyFotoFinderDermoscopeVexiaPartial';
+import TechnologyBiolitecLeonardoMiniPartial from './partials/technology/TechnologyBiolitecLeonardoMiniPartial';
+import TechnologyHettichArthrexAcpPartial from './partials/technology/TechnologyHettichArthrexAcpPartial';
+import TechnologyPhilipsUltrasonografAffiniti50Partial from './partials/technology/TechnologyPhilipsUltrasonografAffiniti50Partial';
+import TechnologySonoQueenPartial from './partials/technology/TechnologySonoQueenPartial';
+import TechnologyDermalight500Partial from './partials/technology/TechnologyDermalight500Partial';
+import TechnologyDermalight1000UvaUvb311nmPartial from './partials/technology/TechnologyDermalight1000UvaUvb311nmPartial';
 import ContactView from './ContactView';
 import Modal from '../components/Modal';
 import Toast from '../components/Toast';
@@ -106,14 +129,37 @@ const Root = () => (
                     <Route path='/treatment' element={<TreatmentView />}>
                         <Route path=':specialization' element={<TreatmentSpecializationPartial />} />
                     </Route>
+                    {/* DERMATOLOGIA */}
                     <Route path='/treatment/dermatology/badanie-znamion-barwnikowych' element={<TreatmentBadanieZnamionBarwnikowychPartial />} />
                     <Route path='/treatment/dermatology/fototerapia-chorob-skory' element={<TreatmentFototerapiaChorobSkoryPartial />} />
                     <Route path='/treatment/dermatology/usuniecie-zmian-skornych-elektrochirurgiczne' element={<TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial />} />
 
+                    {/* MEDYCYNA ESTETYCZNA */}
+                    <Route path='/treatment/aesthetic-medicine/toksyna-botulinowa' element={<TreatmentToksynaBotulinowaPartial />} />
+                    <Route path='/treatment/aesthetic-medicine/stymulatory-tkankowe' element={<TreatmentStymulatoryTkankowePartial />} />
+                    <Route path='/treatment/aesthetic-medicine/osocze-bogatopłytkowe' element={<TreatmentOsoczeBogatopłytkowePartial />} />
+                    <Route path='/treatment/aesthetic-medicine/mezoterapia-iglowa' element={<TreatmentMezoterapiaIglowaPartial />} />
+                    <Route path='/treatment/aesthetic-medicine/nici-rewitalizujace-i-liftingujace' element={<TreatmentNiciRewitalizujaceILiftingujacePartial />} />
+                    <Route path='/treatment/aesthetic-medicine/laser-frakcyjny' element={<TreatmentLaserFrakcyjnyPartial />} />
+                    <Route path='/treatment/aesthetic-medicine/zamykanie-naczynek-i-likwidacja-przebarwien' element={<TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial />} />
+
+                    {/* KOSMETOLOGIA */}
+                    <Route path='/treatment/cosmetology/peeling-medyczny' element={<TreatmentPeelingMedycznyPartial />} />
+                    <Route path='/treatment/cosmetology/epilacja-laserowa' element={<TreatmentEpilacjaLaserowaPartial />} />
+                    <Route path='/treatment/cosmetology/masaz-prozniowy' element={<TreatmentMasazProzniowyPartial />} />
+                    <Route path='/treatment/cosmetology/ultradzwieki-i-fala-radiowa' element={<TreatmentUltradzwiekiIFalaRadiowaPartial />} />
+
+                    {/* FIZJOTERAPIA */}
                     <Route path='/treatment/physioterapy/rehabilitacja' element={<TreatmentRehabilitacjaPartial />} />
                     <Route path='/treatment/physioterapy/masaz' element={<TreatmentMasazPartial />} />
                     <Route path='/treatment/physioterapy/kinesiotaping' element={<TreatmentKinesiotapingPartial />} />
 
+                    {/* ALERGOLOGIA */}
+                    <Route path='/treatment/allergology/testy-skorne' element={<TreatmentTestySkornePartial />} />
+                    <Route path='/treatment/allergology/platkowe-testy-kontaktowe' element={<TreatmentPlatkoweTestyKontaktowePartial />} />
+                    <Route path='/treatment/allergology/odczulanie' element={<TreatmentOdczulaniePartial />} />
+
+                    {/* CHIRURGIA NACZYNIOWA */}
                     <Route path='/treatment/vascular-surgery/skleroterapia' element={<TreatmentSkleroterapiaPartial />} />
                     <Route path='/treatment/vascular-surgery/laserowe-usuwanie-zylakow' element={<TreatmentLaseroweUsuwanieZylakowPartial />} />
 
@@ -138,7 +184,7 @@ const Root = () => (
                         <Route path=':specialization' element={<TeamSpecializationPartial />} />
                     </Route>
                     <Route path='team/:specialization/:specialist' element={<TeamSpecialistPartial />} />
-                    {/* <Route path='/technology' element={<TechnologyView />} />
+                    <Route path='/technology' element={<TechnologyView />} />
                     <Route path='/technology/vectus' element={<TechnologyVectusPartial />} />
                     <Route path='/technology/alma-harmony-xl-pro' element={<TechnologyAlmaHarmonyXlProPartial />} />
                     <Route path='/technology/icoone-laser-med2' element={<TechnologyIcooneLaserMed2Partial />} />
@@ -150,7 +196,7 @@ const Root = () => (
                     <Route path='/technology/philips-ultrasonograf-affiniti-50' element={<TechnologyPhilipsUltrasonografAffiniti50Partial />} />
                     <Route path='/technology/sono-queen' element={<TechnologySonoQueenPartial />} />
                     <Route path='/technology/dermalight-500' element={<TechnologyDermalight500Partial />} />
-                    <Route path='/technology/dermalight-1000-uva-uvb-311nm' element={<TechnologyDermalight1000UvaUvb311nmPartial />} /> */}
+                    <Route path='/technology/dermalight-1000-uva-uvb-311nm' element={<TechnologyDermalight1000UvaUvb311nmPartial />} />
                     <Route path='/contact' element={<ContactView />} />
                 </Routes>
             </main>

@@ -14,11 +14,11 @@ import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
 
-import { treatment, masaz } from '../../../../data/treatment';
+import { treatment, mezoterapiaIglowa } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
-const TreatmentMasazPartial = () => {
+const TreatmentMezoterapiaIglowaPartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -29,8 +29,8 @@ const TreatmentMasazPartial = () => {
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    <Box>Fizjoterapia</Box>
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    <Box>Medycyna estetyczna</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -44,17 +44,17 @@ const TreatmentMasazPartial = () => {
                                 <Typography>
                                     Zabiegi
                                 </Typography>
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    Fizjoterapia
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    Medycyna estetyczna
                                 </Link>
                                 <Typography>
-                                    Masaż
+                                    Mezoterapia igłowa
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Masaż
+                                Mezoterapia igłowa
                             </Typography>
                         </Box>
                     </Container>
@@ -64,26 +64,37 @@ const TreatmentMasazPartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
+                                    <strong>Mezoterapia igłowa</strong> to przede wszystkim <strong>głębokie nawilżenie skóry</strong>. Zabieg polega na bezpośrednim podaniu małych dawek substancji biologicznie czynnej śródskórnie lub podskórnie w miejsca, które chcemy poddać zabiegowi. Mezoterapia igłowa <strong>pobudza</strong> również <strong>mikrokrążenie</strong>, co <strong>stymuluje komórki</strong> do <strong>produkcji nowych włókien kolagenowych</strong>. W efekcie uzyskujemy odświeżoną, napiętą skórę.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
-                                        imageSrc={masaz.images[0].src}
-                                        imageAlt={masaz.images[0].alt}
-                                        imageAuthor={masaz.images[0].author}
-                                        imageHref={masaz.images[0].href}
+                                        imageSrc={mezoterapiaIglowa.images[0].src}
+                                        imageAlt={mezoterapiaIglowa.images[0].alt}
+                                        imageAuthor={mezoterapiaIglowa.images[0].author}
+                                        imageHref={mezoterapiaIglowa.images[0].href}
                                     />
                                 </Box>
+                                <Typography className='paragraph'>
+                                    Mezoterapia igłowa wykorzystuje dwa różne mechanizmy działania. Pierwszym z nich jest  <strong>ogniskowe gojenie się skóry i jej samoregeneracja po licznych nakłuciach, do których dochodzi w trakcie zabiegu</strong>. Drugim zaś jest efekt <strong>działania substancji wstrzykiwanych w skórę</strong>. Wprowadzany lek bądź inna substancja aktywna nadaje zabiegowi dodatkowych ukierunkowanych właściwości.
+                                </Typography>
                                 <Typography className='paragraph heading'>
-                                    <strong>Masaż wykorzystywany jest w celu</strong>:
+                                    <strong>Wskazania</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'rozluźnienia mięśni,',
-                                        'złagodzenia sztywności, napięcia i bólu mięśni,',
-                                        'zwiększenia elastyczności i wytrzymałości więzadeł,',
-                                        'poprawy ruchomości stawów,',
-                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.'
+                                        'spadek nawilżenia skóry,',
+                                        'profilaktyka przeciwstarzeniowa skóry,',
+                                        'objawy starzenia się skóry,',
+                                        'fotostarzenie,',
+                                        'drobne linie oraz zmarszczki,',
+                                        'utrata jędrności, elastyczności, blasku skóry,',
+                                        'cienie i zmarszczki wokół oczu,',
+                                        'przebarwienia,',
+                                        'łojotok,',
+                                        'rozszerzone pory,',
+                                        'osłabione włosy,',
+                                        'wypadanie włosów i łysienie,',
+                                        'cellulit.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -92,6 +103,9 @@ const TreatmentMasazPartial = () => {
                                         />
                                     ))}
                                 </Grid>
+                                <Typography className='paragraph'>
+                                    <strong>Przeciwwskazania</strong>: ciąża i laktacja, aktywne infekcje wirusowe lub bakteryjne, nadciśnienie tętnicze, choroby autoimmunologiczne, stany zapalne, uczulenie na stosowane substancje, zażywanie antykoagulantów, zażywanie doustnych kortykosteroidów, poważna egzema, łuszczyca, niestabilna cukrzyca, czynna choroba nowotworowa oraz okres do 5 lat od wyleczenia.
+                                </Typography>
                             </Box>
                         </Box>
 
@@ -104,7 +118,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team
-                                        .filter(item => item.treatment.includes('masaz'))
+                                        .filter(item => item.treatment.includes('mezoterapia-iglowa'))
                                         .map((item) => (
                                             <CardTeamProposed
                                                 key={item.id}
@@ -112,7 +126,7 @@ const TreatmentMasazPartial = () => {
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={`/team/physioterapy/${item.specialist}`}
+                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
                                             />
                                         ))
                                     }
@@ -126,7 +140,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {services
-                                        .filter(item => item.specialization === 'physioterapy')
+                                        .filter(item => item.specialization === 'aesthetic-medicine')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -147,8 +161,8 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {treatment
-                                        .filter(item => item.specialization.includes('physioterapy'))
-                                        .filter(item => item.treatment !== 'masaz')
+                                        .filter(item => item.specialization.includes('aesthetic-medicine'))
+                                        .filter(item => item.treatment !== 'mezoterapia-iglowa')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -169,4 +183,4 @@ const TreatmentMasazPartial = () => {
     );
 }
 
-export default Page(TreatmentMasazPartial);
+export default Page(TreatmentMezoterapiaIglowaPartial);

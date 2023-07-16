@@ -50,7 +50,7 @@ const TechnologyAlmaAccentUltraVShapePartial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                            Alma Accent Ultra V Shape / <strong>Ultradźwięki i fala radiowa (Kosmetologia)</strong>
+                                Alma Accent Ultra V Shape / <strong>Ultradźwięki i fala radiowa (Kosmetologia) [przeniesione]</strong>
                             </Typography>
                         </Box>
                     </Container>

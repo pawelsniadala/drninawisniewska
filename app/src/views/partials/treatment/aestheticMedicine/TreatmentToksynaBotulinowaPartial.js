@@ -14,11 +14,11 @@ import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
 
-import { treatment, masaz } from '../../../../data/treatment';
+import { treatment, toksynaBotulinowa } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
-const TreatmentMasazPartial = () => {
+const TreatmentToksynaBotulinowaPartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -29,8 +29,8 @@ const TreatmentMasazPartial = () => {
                                 className='breadcrumb back'
                                 aria-label='breadcrumb'
                             >
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    <Box>Fizjoterapia</Box>
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    <Box>Medycyna estetyczna</Box>
                                 </Link>
                             </Breadcrumbs>
                             <Breadcrumbs
@@ -44,17 +44,17 @@ const TreatmentMasazPartial = () => {
                                 <Typography>
                                     Zabiegi
                                 </Typography>
-                                <Link to='/treatment/physioterapy' aria-current='page'>
-                                    Fizjoterapia
+                                <Link to='/treatment/aesthetic-medicine' aria-current='page'>
+                                    Medycyna estetyczna
                                 </Link>
                                 <Typography>
-                                    Masaż
+                                    Toksyna botulinowa
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                Masaż
+                                Toksyna botulinowa
                             </Typography>
                         </Box>
                     </Container>
@@ -64,26 +64,51 @@ const TreatmentMasazPartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
+                                    <strong>Toksyna botulinowa</strong> to jedna z najbardziej popularnych metod <strong>redukcji zmarszczek mimicznych</strong>, które pojawiają się w związku z  powtarzającymi się skurczami mięśni twarzy. Zabieg  pozwala  szybko spłycić  zmarszczki  mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy  nadmierna kurczliwość.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
-                                        imageSrc={masaz.images[0].src}
-                                        imageAlt={masaz.images[0].alt}
-                                        imageAuthor={masaz.images[0].author}
-                                        imageHref={masaz.images[0].href}
+                                        imageSrc={toksynaBotulinowa.images[0].src}
+                                        imageAlt={toksynaBotulinowa.images[0].alt}
+                                        imageAuthor={toksynaBotulinowa.images[0].author}
+                                        imageHref={toksynaBotulinowa.images[0].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph heading'>
-                                    <strong>Masaż wykorzystywany jest w celu</strong>:
+                                    <strong>Toksynę botulinową warto wykorzystać w celu</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'rozluźnienia mięśni,',
-                                        'złagodzenia sztywności, napięcia i bólu mięśni,',
-                                        'zwiększenia elastyczności i wytrzymałości więzadeł,',
-                                        'poprawy ruchomości stawów,',
-                                        'wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.'
+                                        'redukcji zmarszczek - zmarszczki poprzeczne czoła, zmarszczka między brwiami, zmarszczki wokół oczu,',
+                                        'redukcji zmarszczek dolnej części twarzy - "bruzdy marionetki", na szyi czy brodzie,',
+                                        'korekcji opadającego nosa,',
+                                        'leczenia nadpotliwości pach i dłoni,',
+                                        'leczenie bruksizmu - patologiczne tarcie zębów żuchwy o zęby szczęki, nasilające się nocą,',
+                                        'korekty opadającego kącika ust oraz opadającej powieki.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph'>
+                                    Toksyna botulinowa powoduje zahamowanie uwalniania acetylocholiny - neuroprzekaźnika odpowiedzialnego za przekaźnictwo impulsów między nerwami a mięśniami. Blokuje więc tzw. synapsy nerwowo-mięśniowe, uniemożliwiając skurcz porażonego mięśnia.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Pierwsze efekty jej działania pojawiają się już po kilku dniach od podania, a <strong>pełen efekt jest widoczny do 2 tygodni</strong>. Należy pamiętać że efekt działania może pojawiać się niesymetrycznie - dlatego ważne jest aby poczekać na efekt końcowy. Efekt przeciwzmarszczkowy utrzymuje się średnio przez 3 do 7 miesięcy i jest uzależniony od indywidualnych cech organizmu.
+                                </Typography>
+                                <Typography className='paragraph heading'>
+                                    <strong>Zalecenia pozabiegowe</strong>:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'w ciągu pierwszych 4 godzin po zabiegu nie kłaść się ani nie pochylać głowy,',
+                                        'nie masować miejsc wkłucia,',
+                                        'nie spożywać alkoholu w pierwszej dobie po zabiegu,',
+                                        'nie odbywać podróży samolotem w pierwszej dobie po zabiegu,',
+                                        'nie wykonywać intensywnej aktywności fizycznej w pierwszej dobie po zabiegu.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -104,7 +129,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team
-                                        .filter(item => item.treatment.includes('masaz'))
+                                        .filter(item => item.treatment.includes('toksyna-botulinowa'))
                                         .map((item) => (
                                             <CardTeamProposed
                                                 key={item.id}
@@ -112,7 +137,7 @@ const TreatmentMasazPartial = () => {
                                                 cardSpeciality={item.speciality}
                                                 cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                                 cardImage={item.image}
-                                                cardPath={`/team/physioterapy/${item.specialist}`}
+                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
                                             />
                                         ))
                                     }
@@ -126,7 +151,7 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {services
-                                        .filter(item => item.specialization === 'physioterapy')
+                                        .filter(item => item.specialization === 'aesthetic-medicine')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -147,8 +172,8 @@ const TreatmentMasazPartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {treatment
-                                        .filter(item => item.specialization.includes('physioterapy'))
-                                        .filter(item => item.treatment !== 'masaz')
+                                        .filter(item => item.specialization.includes('aesthetic-medicine'))
+                                        .filter(item => item.treatment !== 'toksyna-botulinowa')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -169,4 +194,4 @@ const TreatmentMasazPartial = () => {
     );
 }
 
-export default Page(TreatmentMasazPartial);
+export default Page(TreatmentToksynaBotulinowaPartial);

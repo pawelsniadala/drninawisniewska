@@ -50,7 +50,7 @@ const TechnologyDermalight1000UvaUvb311nmPartial = () => {
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {dermalight1000UvaUvb311nm.title} / <strong>Fototerapia Chorób Skóry - Lampa UVB 311 nm (Dermatologia)</strong>
+                                {dermalight1000UvaUvb311nm.title} / <strong>Fototerapia Chorób Skóry - Lampa UVB 311 nm (Dermatologia) [przeniesione]</strong>
                             </Typography>
                         </Box>
                     </Container>
