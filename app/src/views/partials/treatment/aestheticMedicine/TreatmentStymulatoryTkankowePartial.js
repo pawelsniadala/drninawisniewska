@@ -64,7 +64,7 @@ const TreatmentStymulatoryTkankowePartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    Stymulatory tkankowe to substancje lub techniki stosowane w medycynie, które mają na celu pobudzanie wzrostu, regeneracji i funkcjonowania tkanek w organizmie ludzkim. Istnieje wiele różnych rodzajów stymulatorów tkankowych, które są stosowane w zależności od konkretnego zastosowania i potrzeb pacjenta.
+                                    Preparaty na bazie polimeryzowanych <strong>polinukleotydów</strong>, tworzących długi łańcuch polinukelotydowy to innowacyjne produkty <strong>biotechnologiczne</strong> do <strong>głębokiego nawilżenia</strong> i odmłodzenia skóry.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
@@ -74,6 +74,56 @@ const TreatmentStymulatoryTkankowePartial = () => {
                                         imageHref={stymulatoryTkankowe.images[0].href}
                                     />
                                 </Box>
+                                <Typography className='paragraph'>
+                                    Czemu zabiegi z polinukleotydami są obecnie tak pożądane? <strong>Polinukleotydy</strong> wnikają do wnętrza komórek i <strong>pobudzają produkcję kolagenu</strong> i <strong>elastyny</strong>. Łańcuchy polinukleotydowe wiążą cząsteczki wody i służą jako wymiatacz wolnych rodników. W ten sposób tworzą idealne środowisko dla wzrostu fibroblastów, przy jednoczesnym wspieraniu ich biochemicznego działania - produkcji kolagenu i elastyny. Dzięki temu skóra staje się <strong>jędrniejsza</strong> i bardziej <strong>nawilżona</strong>. Polinukleotydy łączą się także z receptorami na powierzchni komórek, hamując tworzenie się stanu zapalnego, który wpływa degradacyjnie na kondycje naszej skóry.
+                                </Typography>
+                                <Typography className='paragraph heading'>
+                                    <strong>Efekt zabiegu</strong>:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'poprawa kolorytu,',
+                                        'przywrócenie blasku skórze,',
+                                        'regeneracja delikatnych obszarów.',
+                                        'ujędrniona, elastyczna skóra,',
+                                        'zniwelowane oznaki starzenia,',
+                                        'redukcja zmarszczek,',
+                                        'przywrócenie blasku skórze,',
+                                        'lifting skóry twarzy,',
+                                        'odświeżone spojrzenie,',
+                                        'głębokie nawilżenie skóry,',
+                                        'naturalny efekt odmłodzenia,',
+                                        'niwelowanie blizn i rozstępów.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph heading'>
+                                    <strong>Wskazania</strong>:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'niedotleniona lub odwodniona skóra,',
+                                        'skóra narażona na stres oksydacyjny,',
+                                        'zmęczona skóra, z oznakami starzenia i widocznymi zmarszczkami,',
+                                        'ziemista, pozbawiona blasku cera,',
+                                        'wyraźna utrata jędrności twarzy,',
+                                        'rozstępy i blizny.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph'>
+                                    Zabieg jest stworzony dla wszystkich osób, które zauważą u siebie utratę elastyczności i objawy starzenia, ale także problemy z odpowiednim nawilżeniem skóry. Z zabiegu można skorzystać niezależnie od płci, wieku, a także rodzaju skóry.
+                                </Typography>
                             </Box>
 
                             <Box className='box-service'>
@@ -81,29 +131,28 @@ const TreatmentStymulatoryTkankowePartial = () => {
                                     Kolagen
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    <strong>Kolagen</strong> to najważniejsze <strong>włókno podporowe skóry</strong>, które sprawia, że jest ona gładka, napięta i odpowiednio nawilżona. Można porównać go do <strong>rusztowania skóry</strong>. Wraz z upływem czasu staje się on coraz słabszy i mniej stabilny. Delikatna, pozbawiona sprężystości i gęstości skóra łatwo ulega "sile grawitacji" w wyniku czego powieki opadają, a owal twarzy zniekształca się poprzez pojawienie się "chomików" i "obwisłych" podbródków. Możemy temu <strong>przeciwdziałać</strong>. Najlepszym sposobem w walce z utratą kolagenu jest uzupełnianie jego niedoborów i zniwelowanie efektów jego ubytku.
+                                    <strong>Kolagen</strong> to najważniejsze <strong>włókno podporowe skóry</strong>, które sprawia, że jest ona gładka, napięta i odpowiednio nawilżona. Można porównać go do <strong>rusztowania skóry</strong>. Wraz z upływem czasu staje się on coraz słabszy i mniej stabilny. Delikatna, pozbawiona sprężystości i gęstości skóra łatwo ulega "sile grawitacji" w wyniku czego powieki opadają, a owal twarzy zniekształca się poprzez pojawienie się "chomików" i "obwisłych" podbródków. <strong>Możemy temu przeciwdziałać</strong>. Najlepszym sposobem w walce z utratą kolagenu jest uzupełnianie jego niedoborów i zniwelowanie efektów jego ubytku.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Zabieg LINERASE może być bezpiecznie stosowany bez względu na wiek, nawet u bardzo młodych osób. Cerom dojrzałym dla odzyskania <strong>utraconej jędrności i gęstości skóry</strong>, leczniczo w celu <strong>redukcji rozstępów</strong>, czy też <strong>blizn</strong> w każdym wieku.
+                                    Zabieg może być bezpiecznie stosowany bez względu na wiek, nawet u bardzo młodych osób. Cerom dojrzałym dla odzyskania <strong>utraconej jędrności</strong> i <strong>gęstości skóry</strong>, leczniczo w celu <strong>redukcji rozstępów</strong>, czy też <strong>blizn</strong> w każdym wieku.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    <strong>Wysoki profil bezpieczeństwa</strong> i <strong>delikatność</strong> produktu LINERASE pozwala na jego zastosowanie w każdej, nawet najdelikatniejszej okolicy twarzy, jak i całego ciała. Szczególnie zalecany jest do stosowania w okolicy oczu, ust, dekolcie, szyi, brzucha i powierzchni rąk.
+                                    <strong>Wysoki profil bezpieczeństwa</strong> i <strong>delikatność</strong> produktu pozwala na jego zastosowanie w każdej, nawet najdelikatniejszej okolicy twarzy, jak i całego ciała. Szczególnie zalecany jest do stosowania w okolicy oczu, ust, dekolcie, szyi, brzucha i powierzchni rąk.
                                 </Typography>
-
                                 <Typography className='paragraph'>
-                                    Biomateriał LINERASE stanowi nową kategorię stymulatora do <strong>rekonstrukcji i odbudowy tkanek</strong>. Tworząc optymalne warunki fizjologiczne do wytwarzania nowego kolagenu, terapia LINERASE wykazała wysoką skuteczność w: regeneracji i odbudowie ubytków skórnych, leczeniu blizn, rozstępów, spłyceniu drobnych zmarszczek, redukcji wiotkości skóry oraz poprawie elastyczności, sprężystości i gęstości skóry twarzy oraz całego ciała.
+                                    Biomateriał stanowi nową kategorię stymulatora do <strong>rekonstrukcji</strong> i <strong>odbudowy tkanek</strong>. Tworząc optymalne warunki fizjologiczne do wytwarzania nowego kolagenu, terapia wykazaje wysoką skuteczność w: regeneracji i odbudowie ubytków skórnych, leczeniu blizn, rozstępów, spłyceniu drobnych zmarszczek, redukcji wiotkości skóry oraz poprawie elastyczności, sprężystości i gęstości skóry twarzy oraz całego ciała.
                                 </Typography>
                             </Box>
 
                             <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
-                                    Skinboosters
+                                    Usieciowany kwas hialuronowy
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    Jest to zabieg, który mocno <strong>pobudza fibroblasty</strong> do <strong>produkcji kolagenu typu I</strong> oraz <strong>elastyny</strong>. "Wznowienie" tej produkcji sprawi, że będziemy wyglądali młodziej, skóra będzie bardziej promienna, wygładzona, a drobne zmarszczki wypłaszczone. Na efekty <strong>głębokiej przebudowy skóry</strong> trzeba poczekać, regeneracja wymaga czasu. Pierwsze efekty widać po 3-4 tygodniach. Skinboosters oferuje także <strong>błyskawiczną poprawę wyglądu skóry</strong> - na poziomie naskórka. Z czasem, skóra wygląda po prostu coraz lepiej i zdrowiej.
+                                    Jest to zabieg, który mocno <strong>pobudza fibroblasty</strong> do <strong>produkcji kolagenu typu I</strong> oraz <strong>elastyny</strong>. "Wznowienie" tej produkcji sprawi, że będziemy wyglądali młodziej, skóra będzie bardziej promienna, wygładzona, a drobne zmarszczki wypłaszczone. Na efekty <strong>głębokiej przebudowy skóry</strong> trzeba poczekać, regeneracja wymaga czasu. Pierwsze efekty widać po 3-4 tygodniach. Zabieg oferuje także <strong>błyskawiczną poprawę wyglądu skóry</strong> - na poziomie naskórka. Z czasem, skóra wygląda po prostu coraz lepiej i zdrowiej.
                                 </Typography>
                                 <Typography className='paragraph'>
-                                    <strong>Restylane Skinboosters</strong> to innowacyjny produkt do zabiegu rewitalizującego, odświeżającego, wygładzającego i rozjaśniającego skórę. <strong>Nie jest wypełniaczem</strong>, działa na poziomie skóry właściwej. Jego zadaniem jest stymulacja i odnowa skóry, przywrócenie optymalnego nawilżenia, elastyczności cerze oraz subtelna korekta owalu. Twarz wygląda harmonijnie i naturalnie, jest odświeżona i wypoczęta. Poza głębokim nawilżeniem i stymulacją naturalnej odnowy skóry, produkty Restylane Skinboosters zostały opracowane tak, aby odpowiadać na <strong>indywidualne potrzeby pacjentów</strong>.
+                                    Innowacyjny produkt na bazie usieciowanego kwasu hialuronowego do rewitalizacji, odświeżenia, wygładzenia i rozjaśnienia skóry. <strong>Nie jest to wypełniacz</strong>, działa na poziomie skóry właściwej. Jego zadaniem jest stymulacja i odnowa skóry, przywrócenie optymalnego nawilżenia, elastyczności cerze oraz subtelna korekta owalu. Twarz wygląda harmonijnie i naturalnie, jest odświeżona i wypoczęta.
                                 </Typography>
                                 <Typography className='paragraph'>
                                     By optymalnie i długotrwale nawilżyć skórę, Restylane rekomenduje, aby pierwsza kuracja składała się z 3 zabiegów w odstępach 3-4 tygodniowych.
@@ -189,7 +238,7 @@ const TreatmentStymulatoryTkankowePartial = () => {
                                                 key={item.id}
                                                 cardTitle={item.title}
                                                 cardDescription={item.description}
-                                                cardImage={item.image}
+                                                cardImage={item.images[0].src}
                                                 cardPath={item.path}
                                             />
                                         ))

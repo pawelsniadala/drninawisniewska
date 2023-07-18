@@ -10,10 +10,14 @@ import servicesCosmetology0 from '../assets/services/cosmetology/servicesCosmeto
 // FIZJOTERAPIA
 import servicesPhysioterapy0 from '../assets/services/physioteraphy/servicesPhysioterapy0.jpg';
 
+
 // CHIRURGIA PLASTYCZNA
-import servicesCosmeticSurgery from '../assets/services/servicesCosmeticSurgery.jpg'; // TODO
+// import servicesCosmeticSurgery from '../assets/services/servicesCosmeticSurgery.jpg';
+import servicesCosmeticSurgery0 from '../assets/services/cosmeticSurgery/servicesCosmeticSurgery0.jpg';
+//przeniesc
 import servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore from '../assets/services/cosmeticSurgery/servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore.png'; // TODO
 import servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter from '../assets/services/cosmeticSurgery/servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter.png'; // TODO
+
 
 // ALERGOLOGIA
 import servicesAllergology0 from '../assets/services/allergology/servicesAllergology0.jpg';
@@ -186,12 +190,20 @@ export const physioterapy = {
 export const cosmeticSurgery = {
     id: '6666dd88-e379-4067-ad87-7667a7664a5b',
     specialization: 'cosmetic-surgery',
-    image: servicesCosmeticSurgery,
+    image: servicesCosmeticSurgery0,
     title: 'Chirurgia plastyczna',
     description: 'Plastyka powiek, inaczej blefaroplastyka, to zabieg mający na celu usunięcie nadmiaru skóry wokół oczu. W zakres blefaroplastyki wchodzi zarówno korekta powieki górnej jak i dolnej. Plastyka powiek jest najskuteczniejszą metodą walki z twz. opadającą powieką. Wskazaniami do zabiegu prócz defektu estetycznego są również asymetria oczu, problemy z widocznością, przepukliny tłuszczowe a także wiotkość tkanki wokół oczu.',
     path: '/services/cosmetic-surgery',
     pathSpecialist: '/team/cosmetic-surgery',
     pathPrices: '/prices/cosmetic-surgery',
+    images: [
+        {
+            src: servicesCosmeticSurgery0,
+            alt: 'Przygotowanie pacjenta do zabiegu chirurgii plastycznej',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-przeznaczona-do-operacji-plastycznej_10322612.htm#page=19&query=operacja%20plastyczna%20powiek&position=39&from_view=search&track=ais'
+        }
+    ],
     specialists: [
         konradKochanImageSmall
     ],

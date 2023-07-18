@@ -199,7 +199,7 @@ const TreatmentFototerapiaChorobSkoryPartial = () => {
                                                 key={item.id}
                                                 cardTitle={item.title}
                                                 cardDescription={item.description}
-                                                cardImage={item.image}
+                                                cardImage={item.images[0].src}
                                                 cardPath={item.path}
                                             />
                                         ))

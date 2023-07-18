@@ -31,7 +31,7 @@ const TreatmentSpecializationPartial = ({ specialization }) => {
             {data.map((item) => (
                     <CardProposed
                         key={item.id}
-                        cardImage={item.image}
+                        cardImage={item.images[0].src}
                         cardTitle={item.title}
                         cardDescription={item.description}
                         cardPath={`${specialization}/${item.treatment}`}

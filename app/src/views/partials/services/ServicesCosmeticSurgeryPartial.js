@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+// import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
@@ -11,9 +11,11 @@ import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
+import Image from '../../../components/Image';
 
 import { services, cosmeticSurgery } from '../../../data/services';
 import { team } from '../../../data/team';
+import { treatment } from '../../../data/treatment';
 
 const ServicesCosmeticSurgeryPartial = () => {
     return (
@@ -57,6 +59,23 @@ const ServicesCosmeticSurgeryPartial = () => {
                     <Container className='body-wrapper services'>
                         <Box className='service-description'>
                             <Box className='box-service'>
+                                <Typography className='paragraph'>
+                                    <strong>Chirurgia plastyczna</strong> to dziedzina medycyny, która zajmuje się poprawą wyglądu zewnętrznego ciała poprzez chirurgiczne zabiegi rekonstrukcyjne lub estetyczne.
+                                </Typography>
+                                <Box className='box-image'>
+                                    <Image
+                                        imageSrc={cosmeticSurgery.images[0].src}
+                                        imageAlt={cosmeticSurgery.images[0].alt}
+                                        imageAuthor={cosmeticSurgery.images[0].author}
+                                        imageHref={cosmeticSurgery.images[0].href}
+                                    />
+                                </Box>
+                                <Typography className='paragraph'>
+                                    Zabiegi chirurgii plastycznej mają na celu modyfikowanie, naprawę lub przywracanie wyglądu różnych części ciała w celu poprawy funkcji, proporcji, harmonii estetycznej lub przywrócenia wyglądu po urazach, wrodzonych wadach, chorobach lub procesie starzenia się.
+                                </Typography>
+                            </Box>
+
+                            {/* <Box className='box-service'>
                                 <Typography variant={'h5'} className='header'>
                                     Plastyka powiek
                                 </Typography>
@@ -102,7 +121,7 @@ const ServicesCosmeticSurgeryPartial = () => {
                                 <Typography className='paragraph'>
                                     Zabieg przeprowadzany jest w znieczuleniu miejscowym. Bezpośrednio po zabiegu skóra jest zaczerwieniona i widoczne są delikatne punkty sublimacji. Drugiego dnia po zabiegu może pojawić się lekki obrzęk, który utrzymuje się maksymalnie cztery dni. Drobne strupki  odpadają  po sześciu dniach.
                                 </Typography>
-                            </Box>
+                            </Box> */}
                         </Box>
 
                         <Box className='proposed-wrapper'>
@@ -121,6 +140,24 @@ const ServicesCosmeticSurgeryPartial = () => {
                                             cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                             cardImage={item.image}
                                             cardPath={`/team/cosmetic-surgery/${item.specialist}`}
+                                        />
+                                    ))}
+                                </Box>
+                            </Box>
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Zabiegi
+                                    </Typography>
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {treatment.filter(item => item.specialization.includes('cosmetic-surgery')).map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.images[0].src}
+                                            cardPath={item.path}
                                         />
                                     ))}
                                 </Box>

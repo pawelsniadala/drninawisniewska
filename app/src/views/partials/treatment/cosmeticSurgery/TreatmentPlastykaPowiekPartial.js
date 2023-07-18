@@ -12,9 +12,9 @@ import Container from '../../../../components/Container';
 import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
 // import ListBulleted from '../../../../components/ListBulleted';
-// import Image from '../../../../components/Image';
+import Image from '../../../../components/Image';
 
-import { /* treatment, */ /* plastykaPowiek */ } from '../../../../data/treatment';
+import { /* treatment, */ plastykaPowiek } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
@@ -66,14 +66,14 @@ const TreatmentPlastykaPowiekPartial = () => {
                                 <Typography className='paragraph'>
                                     <strong>Plastyka powiek</strong>, inaczej blefaroplastyka, to zabieg mający na celu usunięcie nadmiaru skóry wokół oczu. W zakres blefaroplastyki wchodzi zarówno <strong>korekta powieki górnej jak i dolnej</strong>.
                                 </Typography>
-                                {/* <Box className='box-image'>
+                                <Box className='box-image'>
                                     <Image
                                         imageSrc={plastykaPowiek.images[0].src}
                                         imageAlt={plastykaPowiek.images[0].alt}
                                         imageAuthor={plastykaPowiek.images[0].author}
                                         imageHref={plastykaPowiek.images[0].href}
                                     />
-                                </Box> */}
+                                </Box>
                                 <Typography className='paragraph'>
                                     Zabieg przeprowadzany jest w znieczuleniu miejscowym. Bezpośrednio po zabiegu skóra jest zaczerwieniona i widoczne są delikatne punkty sublimacji. Drugiego dnia po zabiegu może pojawić się lekki obrzęk, który utrzymuje się maksymalnie cztery dni. Drobne strupki odpadają po sześciu dniach.
                                 </Typography>
@@ -139,7 +139,7 @@ const TreatmentPlastykaPowiekPartial = () => {
                                                 key={item.id}
                                                 cardTitle={item.title}
                                                 cardDescription={item.description}
-                                                cardImage={item.image}
+                                                cardImage={item.images[0].src}
                                                 cardPath={item.path}
                                             />
                                         ))
