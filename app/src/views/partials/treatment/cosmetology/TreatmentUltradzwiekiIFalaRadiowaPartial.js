@@ -60,9 +60,9 @@ const TreatmentUltradzwiekiIFalaRadiowaPartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
-                            <Box className='box-service'>
+                    <Container className='body-wrapper treatment-details'>
+                        <Box className='treatment-description'>
+                            <Box className='box-treatment'>
                                 <Typography className='paragraph'>
                                     Ultradźwięki połączone z falą radiową to zabieg, który w bezpieczny sposób redukuje cellulit i tkankę tłuszczową, niweluje wiotkość skóry oraz modeluje twarz. Dzięki połączeniu dwóch technologii intensyfikujemy efekty terapeutyczne.
                                 </Typography>

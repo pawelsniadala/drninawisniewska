@@ -60,9 +60,9 @@ const TreatmentMasazPartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
-                            <Box className='box-service'>
+                    <Container className='body-wrapper treatment-details'>
+                        <Box className='treatment-description'>
+                            <Box className='box-treatment'>
                                 <Typography className='paragraph'>
                                     <strong>Zespół technik i chwytów</strong> oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia.
                                 </Typography>

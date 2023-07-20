@@ -60,9 +60,9 @@ const TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
-                            <Box className='box-service'>
+                    <Container className='body-wrapper treatment-details'>
+                        <Box className='treatment-description'>
+                            <Box className='box-treatment'>
                                 <Typography className='paragraph'>
                                     <strong>Elektrochirurgia</strong>, inaczej <strong>elektrokoagulacja</strong>, to metoda chirurgiczna polegająca na wykorzystaniu przepływu <strong>prądu elektrycznego o różnej częstotliwości</strong> do usuwania, wycinania lub  wypalania, wszelkich niepożądanych zmian skórnych.
                                 </Typography>

@@ -60,9 +60,9 @@ const TreatmentEchoSercaPartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
-                            <Box className='box-service'>
+                    <Container className='body-wrapper treatment-details'>
+                        <Box className='treatment-description'>
+                            <Box className='box-treatment'>
                                 <Typography className='paragraph'>
                                     <strong>ECHO serca</strong>, czyli echokardiografia, to bezpieczne i nieinwazyjne badanie obrazowe serca, które wykorzystuje fale dźwiękowe o wysokiej częstotliwości do tworzenia obrazów struktur serca. Zabieg ten przeprowadza się za pomocą urządzenia zwanych echokardiografami, które emitują fale dźwiękowe przez specjalną sondę umieszczoną na klatce piersiowej pacjenta.
                                 </Typography>

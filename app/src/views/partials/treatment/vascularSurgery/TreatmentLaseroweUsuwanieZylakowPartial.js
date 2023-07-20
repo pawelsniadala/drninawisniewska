@@ -60,9 +60,9 @@ const TreatmentLaseroweUsuwanieZylakowPartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
-                            <Box className='box-service'>
+                    <Container className='body-wrapper treatment-details'>
+                        <Box className='treatment-description'>
+                            <Box className='box-treatment'>
                                 <Typography className='paragraph'>
                                     Żylaki kończyn dolnych są dziś jedną z najbardziej powszechnych chorób. Około 40% kobiet i 20% mężczyzn ma objawy w postaci: zmęczonych, ciężkich nóg oraz obrzęków nóg i żył widocznych przez skórę. Jej główne przyczyny to: wrodzona słabość tkanki łącznej, zmiany hormonalne, a także długotrwałe przebywanie w pozycji siedzącej lub stojącej.
                                 </Typography>

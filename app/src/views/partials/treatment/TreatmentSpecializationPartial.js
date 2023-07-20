@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import Box from '@mui/material/Box';
 
-// import CardTreatment from '../../../components/CardTreatment';
 import CardProposed from '../../../components/CardProposed';
 
 import { treatment } from '../../../data/treatment';
@@ -29,22 +28,14 @@ const TreatmentSpecializationPartial = ({ specialization }) => {
     return (
         <Box className='card-wrapper treatment view'>
             {data.map((item) => (
-                    <CardProposed
-                        key={item.id}
-                        cardImage={item.images[0].src}
-                        cardTitle={item.title}
-                        cardDescription={item.description}
-                        cardPath={`${specialization}/${item.treatment}`}
-                    />
-                    // <CardTreatment
-                    //     key={item.id}
-                    //     cardImage={item.image}
-                    //     cardTitle={item.title}
-                    //     cardDescription={item.description}
-                    //     cardPath={`${specialization}/${item.treatment}`}
-                    // />
-                ))
-            }
+                <CardProposed
+                    key={item.id}
+                    cardImage={item.images[0].src}
+                    cardTitle={item.title}
+                    cardDescription={item.description}
+                    cardPath={`${specialization}/${item.treatment}`}
+                />
+            ))}
         </Box>
     );
 }

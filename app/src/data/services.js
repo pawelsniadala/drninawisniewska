@@ -10,14 +10,8 @@ import servicesCosmetology0 from '../assets/services/cosmetology/servicesCosmeto
 // FIZJOTERAPIA
 import servicesPhysioterapy0 from '../assets/services/physioteraphy/servicesPhysioterapy0.jpg';
 
-
 // CHIRURGIA PLASTYCZNA
-// import servicesCosmeticSurgery from '../assets/services/servicesCosmeticSurgery.jpg';
 import servicesCosmeticSurgery0 from '../assets/services/cosmeticSurgery/servicesCosmeticSurgery0.jpg';
-//przeniesc
-import servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore from '../assets/services/cosmeticSurgery/servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore.png'; // TODO
-import servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter from '../assets/services/cosmeticSurgery/servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter.png'; // TODO
-
 
 // ALERGOLOGIA
 import servicesAllergology0 from '../assets/services/allergology/servicesAllergology0.jpg';
@@ -45,7 +39,6 @@ import servicesCardiology0 from '../assets/services/cardiology/servicesCardiolog
 
 // REUMATOLOGIA
 import servicesRheumatology from '../assets/services/servicesRheumatology.jpg' // TODO
-
 
 import ninaWisniewskaImageSmall from '../assets/team/ninaWisniewska/ninaWisniewskaImageSmall.jpg';
 import justynaFilipekImageSmall from '../assets/team/justynaFilipek/justynaFilipekImageSmall.jpg';
@@ -210,8 +203,6 @@ export const cosmeticSurgery = {
     relatedSpecializations: [
         'aesthetic-medicine'
     ],
-    servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore: servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore,
-    servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter: servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter
 };
 
 export const allergology = {

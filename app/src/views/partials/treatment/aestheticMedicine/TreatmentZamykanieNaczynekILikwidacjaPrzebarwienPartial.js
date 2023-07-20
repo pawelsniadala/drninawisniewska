@@ -60,9 +60,9 @@ const TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
-                            <Box className='box-service'>
+                    <Container className='body-wrapper treatment-details'>
+                        <Box className='treatment-description'>
+                            <Box className='box-treatment'>
                                 <Typography className='paragraph'>
                                     Platforma laserowa, którą posiadamy w naszej Klinice, to  produkt izraelskiej firmy Alma Lasers. Obsługuje różne typy zaawansowanych technologii laserowych i innych źródeł światła. Oferuje rozwiązanie na większość problemów estetycznych i dermatologicznych.
                                 </Typography>

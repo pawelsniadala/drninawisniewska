@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 // import Grid from '@mui/material/Grid';
@@ -19,6 +22,24 @@ import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
 const TreatmentPlastykaPowiekPartial = () => {
+    useEffect(() => {
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('photoswipe'),
+            padding: {
+                top: 50,
+                bottom: 50
+            }
+        });
+
+        const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+            type: 'below'
+        });
+
+        lightbox.init(captionPlugin);
+    }, []);
+
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -60,9 +81,9 @@ const TreatmentPlastykaPowiekPartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
-                            <Box className='box-service'>
+                    <Container className='body-wrapper treatment-details'>
+                        <Box className='treatment-description'>
+                            <Box className='box-treatment'>
                                 <Typography className='paragraph'>
                                     <strong>Plastyka powiek</strong>, inaczej blefaroplastyka, to zabieg mający na celu usunięcie nadmiaru skóry wokół oczu. W zakres blefaroplastyki wchodzi zarówno <strong>korekta powieki górnej jak i dolnej</strong>.
                                 </Typography>
@@ -78,8 +99,40 @@ const TreatmentPlastykaPowiekPartial = () => {
                                     Zabieg przeprowadzany jest w znieczuleniu miejscowym. Bezpośrednio po zabiegu skóra jest zaczerwieniona i widoczne są delikatne punkty sublimacji. Drugiego dnia po zabiegu może pojawić się lekki obrzęk, który utrzymuje się maksymalnie cztery dni. Drobne strupki odpadają po sześciu dniach.
                                 </Typography>
                             </Box>
-                        </Box>
 
+                            <Box className='box-treatment'>
+                                <Typography
+                                    variant={'h5'}
+                                    className='header alternative'>
+                                    Efekty zabiegu
+                                </Typography>
+                                <Box className="pswp-gallery" id='my-gallery'>
+                                    {plastykaPowiek.effects.map((item, index) => (
+                                        <a key={`my-gallery-${index}`}
+                                            href={item.original.src}
+                                            data-pswp-width={item.original.width}
+                                            data-pswp-height={item.original.height}
+                                            data-cropped='true'
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <Box className='box'>
+                                                <LazyLoadImage
+                                                    src={item.thumbnail.src}
+                                                    alt={item.designation}
+                                                    height='100%'
+                                                    width='100%'
+                                                    effect='blur'
+                                                />
+                                                <span className="pswp-caption-content">
+                                                    {item.description}
+                                                </span>
+                                            </Box>
+                                        </a>
+                                    ))}
+                                </Box>
+                            </Box>
+                        </Box>
                         <Box className='proposed-wrapper'>
                             <Box className='box-proposed'>
                                 <Box className='header-wrapper'>

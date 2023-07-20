@@ -60,9 +60,9 @@ const TreatmentOdczulaniePartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
-                            <Box className='box-service'>
+                    <Container className='body-wrapper treatment-details'>
+                        <Box className='treatment-description'>
+                            <Box className='box-treatment'>
                                 <Typography className='paragraph'>
                                     <strong>Immunoterapia swoista</strong>, czyli odczulanie, to jedyna <strong>przyczynowa</strong> metoda leczenia alergii.
                                 </Typography>

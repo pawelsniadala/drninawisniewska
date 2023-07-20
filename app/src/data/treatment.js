@@ -24,19 +24,20 @@ import rehabilitacjaImage0 from '../assets/treatment/physioterapy/rehabilitacja/
 import masazImage0 from '../assets/treatment/physioterapy/masaz/masaz0.jpg';
 import kinesiotapingImage0 from '../assets/treatment/physioterapy/kinesiotaping/kinesiotaping0.jpg';
 
-
 // CHIRURGIA PLASTYCZNA
 import plastykaPowiekImage0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/plastykaPowiek0.jpg';
+//efekty
+import effectsPlastykaPowiekLg0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/effects/effectsPlastykaPowiekLg0.png'
 
 // ALERGOLOGIA
 import testySkorneImage0 from '../assets/treatment/allergology/testySkorne/testySkorne0.jpg';
 import platkoweTestyKontaktoweImage0 from '../assets/treatment/allergology/platkoweTestyKontaktowe/platkoweTestyKontaktowe0.jpg';
 import odczulanieImage0 from '../assets/treatment/allergology/odczulanie/odczulanie0.jpg';
 
-
 // CHIRURGIA NACZYNIOWA
 import skleroterapiaImage0 from '../assets/treatment/vascularSurgery/skleroterapia/skleroterapia0.jpg';
 import laseroweUsuwanieZylakowImage0 from '../assets/treatment/vascularSurgery/laseroweUsuwanieZylakow/laseroweUsuwanieZylakow0.jpg';
+
 
 // DERMATOLOGIA
 export const badanieZnamionBarwnikowych = {
@@ -367,6 +368,20 @@ export const plastykaPowiek = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/lekarz-bada-twarz-pacjentki-do-leczenia-kosmetycznego_8896763.htm'
         }
     ],
+    effects: [
+        {
+            designation: 'effectsPlastykaPowiekLg0',
+            description: 'Efekt zabiegu plastki powiek',
+            original: {
+                src: effectsPlastykaPowiekLg0,
+                width: 900,
+                height: 720
+            },
+            thumbnail: {
+                src: effectsPlastykaPowiekLg0
+            }
+        }
+    ],
     specialization: ['cosmetic-surgery']
 };
 
@@ -375,7 +390,6 @@ export const plastykaPowiek = {
 export const testySkorne = {
     id: '198ecbfc-6ee6-4d7f-9310-2a8476008187',
     treatment: 'testy-skorne',
-    // image: testySkorneImage,
     title: 'Testy skórne',
     description: 'Testy skórne są jedną z popularniejszej oraz prostszej metody diagnostycznej alergii. Największą zaletą testów skórnych jest ich krótki czas oczekiwania na wyniki. Badanie przeprowadza się na wewnętrznej części przedramienia lub skórze pleców. Przebieg testów polega na naniesieniu kropli różnych zawiesin z alergenami z zestawu przesiewowego zawierającego takie substancje uczulające jak rośliny wiatropylne, trawy, pleśnie, sierść zwierząt, jad owadów czy roztocza kurzu domowego.',
     path: '/treatment/allergology/testy-skorne',

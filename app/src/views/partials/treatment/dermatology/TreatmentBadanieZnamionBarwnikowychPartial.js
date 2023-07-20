@@ -58,9 +58,9 @@ const TreatmentBadanieZnamionBarwnikowychPartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
-                            <Box className='box-service'>
+                    <Container className='body-wrapper treatment-details'>
+                        <Box className='treatment-description'>
+                            <Box className='box-treatment'>
                                 <Typography className='paragraph'>
                                     Badanie znamion barwnikowych polega na poddaniu zmian skórnych analizie przez dermatologa. W naszej Klinice badanie można przeprowadzić za pomocą <strong>dermatoskopu</strong> lub <strong>wideodermatoskopu</strong>.
                                 </Typography>
@@ -74,7 +74,7 @@ const TreatmentBadanieZnamionBarwnikowychPartial = () => {
                                 </Box>
                             </Box>
 
-                            <Box className='box-service'>
+                            <Box className='box-treatment'>
                                 <Typography variant={'h5'} className='header'>
                                     Wideodermatoskopia
                                 </Typography>

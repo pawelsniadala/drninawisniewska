@@ -60,9 +60,9 @@ const TreatmentFototerapiaChorobSkoryPartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
-                            <Box className='box-service'>
+                    <Container className='body-wrapper treatment-details'>
+                        <Box className='treatment-description'>
+                            <Box className='box-treatment'>
                                 <Typography className='paragraph'>
                                     Fototerapia UV jest skuteczną i wygodną metodą leczenia chorób skórnych <strong>promieniowaniem ultrafioletowym</strong> o określonej terapeutycznej długości fali.
                                 </Typography>
@@ -79,7 +79,7 @@ const TreatmentFototerapiaChorobSkoryPartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box className='box-service'>
+                            <Box className='box-treatment'>
                                 <Typography variant={'h5'} className='header'>
                                     Lampa PUVA do naświetlań
                                 </Typography>
@@ -97,7 +97,7 @@ const TreatmentFototerapiaChorobSkoryPartial = () => {
                                 </Typography>
                             </Box>
 
-                            <Box className='box-service'>
+                            <Box className='box-treatment'>
                                 <Typography variant={'h5'} className='header'>
                                     Lampa UVB 311 nm
                                 </Typography>

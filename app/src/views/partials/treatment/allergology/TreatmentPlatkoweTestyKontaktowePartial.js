@@ -295,9 +295,9 @@ const TreatmentPlatkoweTestyKontaktowePartial = () => {
                     </Container>
                 </Box>
                 <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
-                            <Box className='box-service'>
+                    <Container className='body-wrapper treatment-details'>
+                        <Box className='treatment-description'>
+                            <Box className='box-treatment'>
                                 <Typography className='paragraph'>
                                     Płatkowe testy kontaktowe, znane również jako testy skórne płatkowe lub testy płatkowe na alergeny, są diagnostycznym narzędziem stosowanym w medycynie w celu identyfikacji alergii kontaktowych. Są one wykorzystywane do wykrywania uczuleń skórnych, które mogą powodować reakcje alergiczne, takie jak swędzenie, zaczerwienienie, wysypka, pokrzywka czy łuszczenie się skóry.
                                 </Typography>
