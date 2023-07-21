@@ -8,7 +8,8 @@ const Image = ({
     imageSrc,
     imageAlt,
     imageHref,
-    imageAuthor
+    imageAuthor,
+    noDescription
 }) => {
     const [ imageLoaded, setImageLoaded ] = useState(false);
 
@@ -25,28 +26,30 @@ const Image = ({
                     afterLoad={() => setImageLoaded(true)}
                 />
             </Box>
-            <Box className={`description ${imageLoaded ? 'show' : 'hide'}`}>
-                <Typography className='source'>
-                    {imageAlt}<span className="dot-divider">&bull;</span>{imageHref ? (
-                        <Typography
-                            component='a'
-                            className='author link'
-                            href={imageHref}
-                            target='_blank'
-                            rel='noreferrer'
-                        >
-                            {imageAuthor}
-                        </Typography>
-                    ) : (
-                        <Typography
-                            variant='span'
-                            className='author'
-                        >
-                            {imageAuthor}
-                        </Typography>
-                    )}
-                </Typography>
-            </Box>
+            {!noDescription && (
+                <Box className={`description ${imageLoaded ? 'show' : 'hide'}`}>
+                    <Typography className='source'>
+                        {imageAlt}<span className="dot-divider">&bull;</span>{imageHref ? (
+                            <Typography
+                                component='a'
+                                className='author link'
+                                href={imageHref}
+                                target='_blank'
+                                rel='noreferrer'
+                            >
+                                {imageAuthor}
+                            </Typography>
+                        ) : (
+                            <Typography
+                                variant='span'
+                                className='author'
+                            >
+                                {imageAuthor}
+                            </Typography>
+                        )}
+                    </Typography>
+                </Box>
+            )}
         </Box>
     );
 }

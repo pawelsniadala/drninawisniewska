@@ -54,7 +54,17 @@ export const badanieZnamionBarwnikowych = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/dermatolog-bada-skore-pacjenta-za-pomoca-dermatoskopu_8404892.htm#query=dermatoskop&position=5&from_view=search&track=sph'
         }
     ],
-    specialization: ['dermatology'],
+    specialization: [
+        'dermatology'
+    ],
+    specialist: [
+        'nina-wisniewska',
+        'aldona-maciag',
+        'katarzyna-mysliwiec-czajka',
+        'paulina-tatara',
+        'katarzyna-zbronska',
+        'katarzyna-rychlik'
+    ]
 };
 
 export const fototerapiaChorobSkory = {
@@ -71,7 +81,17 @@ export const fototerapiaChorobSkory = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/pacjent-w-okularach-ochronnych-lezacych-na-leczenie_8403195.htm#query=fototerapia&position=18&from_view=search&track=ais'
         }
     ],
-    specialization: ['dermatology']
+    specialization: [
+        'dermatology'
+    ],
+    specialist: [
+        'nina-wisniewska',
+        'aldona-maciag',
+        'katarzyna-mysliwiec-czajka',
+        'paulina-tatara',
+        'katarzyna-zbronska',
+        'katarzyna-rychlik'
+    ]
 };
 
 export const usuniecieZmianSkornychElektrochirurgiczne = {
@@ -88,7 +108,15 @@ export const usuniecieZmianSkornychElektrochirurgiczne = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/dermatolog-usuwajacy-kret-z-ramienia-kobiety_8896360.htm#query=znamiona%20usuni%C4%99cie&position=33&from_view=search&track=ais'
         }
     ],
-    specialization: ['dermatology']
+    specialization: [
+        'dermatology'
+    ],
+    specialist: [
+        'aldona-maciag',
+        'katarzyna-mysliwiec-czajka',
+        'paulina-tatara',
+        'katarzyna-zbronska'
+    ]
 };
 
 
@@ -107,7 +135,16 @@ export const toksynaBotulinowa = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/pielegnacja-skory-zabieg-kosmetologii-ladnej-kobiety-w-szpitalu-odmladzanie-iniekcje-terapia-profesjonalna-opieka-zdrowotna-plastik-botoks-uroda_10214268.htm#query=Medycyna%20estetyczna&position=19&from_view=search&track=ais'
         }
     ],
-    specialization: ['aesthetic-medicine']
+    specialization: [
+        'aesthetic-medicine'
+    ],
+    specialist: [
+        'nina-wisniewska',
+        'klaudia-malottki',
+        'paulina-tatara',
+        'olga-lenartowicz-warakomska',
+        'katarzyna-zbronska'
+    ]
 };
 
 export const stymulatoryTkankowe = {
@@ -124,7 +161,13 @@ export const stymulatoryTkankowe = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/zblizenie-na-kobiete-podczas-zabiegu-wypelniania-ust_23668908.htm#page=3&query=Medycyna%20estetyczna&position=4&from_view=search&track=ais'
         }
     ],
-    specialization: ['aesthetic-medicine']
+    specialization: ['aesthetic-medicine'],
+    specialist: [
+        'klaudia-malottki',
+        'paulina-tatara',
+        'olga-lenartowicz-warakomska',
+        'katarzyna-zbronska'
+    ]
 };
 
 export const osoczeBogatopłytkowe = {
@@ -141,7 +184,12 @@ export const osoczeBogatopłytkowe = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/kosmetyczka-robi-wypelniacz-wtryskowy-na-klientce-w-salonie_12780811.htm#page=2&query=Beautician%20will%20do%20PRP%20therapy%20for%20the%20face%20against%20wrinkles&position=28&from_view=search&track=ais'
         }
     ],
-    specialization: ['aesthetic-medicine']
+    specialization: ['aesthetic-medicine'],
+    specialist: [
+        'klaudia-malottki',
+        'olga-lenartowicz-warakomska',
+        'katarzyna-zbronska'
+    ]
 };
 
 export const laserFrakcyjny = {
@@ -158,7 +206,17 @@ export const laserFrakcyjny = {
             href: ''
         }
     ],
-    specialization: ['aesthetic-medicine']
+    specialization: [
+        'aesthetic-medicine'
+    ],
+    specialist: [
+        'paulina-budna',
+        'klaudia-malottki',
+        'paulina-tatara',
+        'olga-lenartowicz-warakomska',
+        'katarzyna-zbronska',
+        'aleksandra-gorczynska'
+    ]
 };
 
 export const niciRewitalizujaceILiftingujace = {
@@ -175,7 +233,12 @@ export const niciRewitalizujaceILiftingujace = {
             href: ''
         }
     ],
-    specialization: ['aesthetic-medicine']
+    specialization: [
+        'aesthetic-medicine'
+    ],
+    specialist: [
+        'klaudia-malottki'
+    ]
 };
 
 export const mezoterapiaIglowa = {
@@ -192,7 +255,16 @@ export const mezoterapiaIglowa = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-poddawana-zabiegowi-preparacji-skory-glowy-pod-wysokim-katem_26388252.htm#query=Mezoterapia%20ig%C5%82owa&position=6&from_view=search&track=ais'
         }
     ],
-    specialization: ['aesthetic-medicine']
+    specialization: [
+        'aesthetic-medicine'
+    ],
+    specialist: [
+        'nina-wisniewska',
+        'klaudia-malottki',
+        'paulina-tatara',
+        'olga-lenartowicz-warakomska',
+        'katarzyna-zbronska'
+    ]
 };
 
 export const zamykanieNaczynekILikwidacjaPrzebarwien = {
@@ -209,7 +281,17 @@ export const zamykanieNaczynekILikwidacjaPrzebarwien = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/widok-lekarza-kosmetologa-robi-procedure-przeciw-starzeniu-sie-w-biurze-kosmetologii-zadowolona-kobieta-w-jednorazowym-kapeluszu-lezac-na-kanapie-i-relaksujac-sie_18849917.htm#query=przebarwienia%20zabieg%20laser&position=20&from_view=search&track=ais'
         }
     ],
-    specialization: ['aesthetic-medicine']
+    specialization: [
+        'aesthetic-medicine'
+    ],
+    specialist: [
+        'paulina-budna',
+        'klaudia-malottki',
+        'paulina-tatara',
+        'olga-lenartowicz-warakomska',
+        'katarzyna-zbronska',
+        'aleksandra-gorczynska'
+    ]
 };
 
 export const sonoQueenTechnologiaHifu = {
@@ -226,7 +308,14 @@ export const sonoQueenTechnologiaHifu = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-lezy-na-kanapie-w-procedurze-czyszczenia-twarzy_14481187.htm#page=14&query=kosmotolog%20zabieg&position=15&from_view=search&track=ais'
         }
     ],
-    specialization: ['aesthetic-medicine']
+    specialization: [
+        'aesthetic-medicine'
+    ],
+    specialist: [
+        'klaudia-malottki',
+        'olga-lenartowicz-warakomska',
+        'katarzyna-zbronska'
+    ]
 };
 
 
@@ -245,7 +334,13 @@ export const peelingMedyczny = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/kosmetyczka-pedzelkiem-naklada-biala-maseczke-nawilzajaca-na-twarz-mlodej-klientki-w-gabinecie-kosmetycznym-spa_13340680.htm#page=2&query=Peeling&position=4&from_view=search&track=sph'
         }
     ],
-    specialization: ['cosmetology']
+    specialization: [
+        'cosmetology'
+    ],
+    specialist: [
+        'paulina-budna',
+        'aleksandra-gorczynska'
+    ]
 };
 
 export const epilacjaLaserowa = {
@@ -262,7 +357,13 @@ export const epilacjaLaserowa = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/depilacja-laserowa-terapia-depilacyjna_10025231.htm#from_view=detail_alsolike'
         }
     ],
-    specialization: ['cosmetology']
+    specialization: [
+        'cosmetology'
+    ],
+    specialist: [
+        'paulina-budna',
+        'aleksandra-gorczynska'
+    ]
 };
 
 export const masazProzniowy = {
@@ -279,7 +380,13 @@ export const masazProzniowy = {
             href: 'https://itpestetyka.pl'
         }
     ],
-    specialization: ['cosmetology']
+    specialization: [
+        'cosmetology'
+    ],
+    specialist: [
+        'paulina-budna',
+        'aleksandra-gorczynska'
+    ]
 };
 
 export const ultradzwiekiIFalaRadiowa = {
@@ -296,7 +403,13 @@ export const ultradzwiekiIFalaRadiowa = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-coraz-terapii-antycellulitowej-i-antytluszczowej_8403581.htm#query=celulit%20laserowe&position=40&from_view=search&track=ais'
         }
     ],
-    specialization: ['cosmetology']
+    specialization: [
+        'cosmetology'
+    ],
+    specialist: [
+        'paulina-budna',
+        'aleksandra-gorczynska'
+    ]
 };
 
 
@@ -315,7 +428,10 @@ export const rehabilitacja = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/masaz-medyczny-na-nodze-w-centrum-fizjoterapii_1492577.htm#page=12&query=fizjoterapia&position=27&from_view=search&track=sph'
         },
     ],
-    specialization: ['physioterapy']
+    specialization: ['physioterapy'],
+    specialist: [
+        'milena-juzwiak'
+    ]
 };
 
 export const masaz = {
@@ -332,7 +448,10 @@ export const masaz = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-w-salonie-spa_8871855.htm#page=4&query=masa%C5%BC&position=22&from_view=search&track=sph'
         },
     ],
-    specialization: ['physioterapy']
+    specialization: ['physioterapy'],
+    specialist: [
+        'milena-juzwiak'
+    ]
 };
 
 export const kinesiotaping = {
@@ -349,7 +468,12 @@ export const kinesiotaping = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/mloda-kobieta-w-stroju-sportowym-cwiczaca-cwiczenie-podczas-sesji-fizjoterapeutycznej_18843285.htm#query=Kinesiotaping&position=0&from_view=search&track=sph'
         }
     ],
-    specialization: ['physioterapy']
+    specialization: [
+        'physioterapy'
+    ],
+    specialist: [
+        'milena-juzwiak'
+    ]
 };
 
 
@@ -371,7 +495,7 @@ export const plastykaPowiek = {
     effects: [
         {
             designation: 'effectsPlastykaPowiekLg0',
-            description: 'Efekt zabiegu plastki powiek',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et tempor elit, quis sagittis tellus. Donec iaculis nisi in ipsum dictum ultrices. Nunc accumsan justo vestibulum erat lobortis dignissim. Sed tellus mauris, bibendum nec pellentesque ut, imperdiet id felis.',
             original: {
                 src: effectsPlastykaPowiekLg0,
                 width: 900,
@@ -382,7 +506,12 @@ export const plastykaPowiek = {
             }
         }
     ],
-    specialization: ['cosmetic-surgery']
+    specialization: [
+        'cosmetic-surgery'
+    ],
+    specialist: [
+        'konrad-kochan'
+    ]
 };
 
 
@@ -401,7 +530,12 @@ export const testySkorne = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/test-reakcji-alergicznej-skory-na-ramieniu-osoby_19672574.htm#page=3&query=testy%20sk%C3%B3ry&position=15&from_view=search&track=ais#page=3&query=t&from_query=undefined&position=1&from_view=search&track=ais#position=15&page=3&query=testy%20sk%C3%B3ry'
         },
     ],
-    specialization: ['allergology']
+    specialization: [
+        'allergology'
+    ],
+    specialist: [
+        'tomasz-matuszewski'
+    ]
 };
 
 export const platkoweTestyKontaktowe = {
@@ -418,7 +552,12 @@ export const platkoweTestyKontaktowe = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/reakcja-alergiczna-skory-na-plecach-osoby_19672630.htm#query=testy%20sk%C3%B3ry&position=45&from_view=search&track=ais'
         },
     ],
-    specialization: ['allergology']
+    specialization: [
+        'allergology'
+    ],
+    specialist: [
+        'tomasz-matuszewski'
+    ]
 };
 
 export const odczulanie = {
@@ -435,7 +574,12 @@ export const odczulanie = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/test-reakcji-alergicznej-skory-na-ramieniu-osoby_19672578.htm#from_view=detail_serie#position=2'
         }
     ],
-    specialization: ['allergology']
+    specialization: [
+        'allergology'
+    ],
+    specialist: [
+        'tomasz-matuszewski'
+    ]
 };
 
 
@@ -454,7 +598,12 @@ export const skleroterapia = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/chirurg-robi-zastrzykowi-w-zenskiego-cialo-koncepcja-liposukcji_1624924.htm#page=3&query=zastrzykwnog%C4%99&position=29&from_view=search&track=ais?log-in=email'
         }
     ],
-    specialization: ['vascular-surgery']
+    specialization: [
+        'vascular-surgery'
+    ],
+    specialist: [
+        'kamil-stepkowski'
+    ]
 };
 
 export const laseroweUsuwanieZylakow = {
@@ -471,7 +620,12 @@ export const laseroweUsuwanieZylakow = {
             href: 'https://pl.freepik.com/darmowe-zdjecie/zblizenie-dloni-masuje-nogi_10582355.htm#query=%C5%BCy%C5%82a%20noga&position=0&from_view=search&track=ais'
         }
     ],
-    specialization: ['vascular-surgery']
+    specialization: [
+        'vascular-surgery'
+    ],
+    specialist: [
+        'kamil-stepkowski'
+    ]
 };
 
 
@@ -490,7 +644,12 @@ export const echoSerca = {
             href: ''
         }
     ],
-    specialization: ['cardiology']
+    specialization: [
+        'cardiology'
+    ],
+    specialist: [
+        'michal-radzio'
+    ]
 };
 
 export const treatment = [

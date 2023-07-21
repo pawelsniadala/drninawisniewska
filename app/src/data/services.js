@@ -88,6 +88,15 @@ export const dermatology = {
         katarzynaZbronskaImageSmall,
         katarzynaRychlikImageSmall
     ],
+    specialists2: [
+        'nina-wisniewska',
+        'aldona-maciag',
+        'justyna-kloniecka',
+        'katarzyna-mysliwiec-czajka',
+        'paulina-tatara',
+        'katarzyna-zbronska',
+        'katarzyna-rychlik'
+    ],
     relatedSpecializations: [
         'aesthetic-medicine',
         'cosmetology',
@@ -119,6 +128,13 @@ export const aestheticMedicine = {
         paulinaTataraImageSmall,
         olgaLenartowiczWarakomskaImageSmall
     ],
+    specialists2: [
+        'nina-wisniewska',
+        'konrad-kochan',
+        'klaudia-malottki',
+        'paulina-tatara',
+        'olga-lenartowicz-warakomska'
+    ],
     relatedSpecializations: [
         'dermatology',
         'cosmetology',
@@ -147,6 +163,10 @@ export const cosmetology = {
         paulinaBudnaImageSmall,
         aleksandraGorczynskaImageSmall
     ],
+    specialists2: [
+        'paulina-budna',
+        'aleksandra-gorczynska'
+    ],
     relatedSpecializations: [
         'dermatology',
         'cosmetology',
@@ -174,6 +194,9 @@ export const physioterapy = {
     specialists: [
         milenaJuzwiakImageSmall
     ],
+    specialists2: [
+        'milena-juzwiak'
+    ],
     relatedSpecializations: [
         'orthopedics',
         'rheumatology'
@@ -200,6 +223,9 @@ export const cosmeticSurgery = {
     specialists: [
         konradKochanImageSmall
     ],
+    specialists2: [
+        'konrad-kochan'
+    ],
     relatedSpecializations: [
         'aesthetic-medicine'
     ],
@@ -224,6 +250,9 @@ export const allergology = {
     ],
     specialists: [
         tomaszMatuszewskiImageSmall
+    ],
+    specialists2: [
+        'tomasz-matuszewski'
     ],
     relatedSpecializations: [
         'dermatology'
@@ -253,6 +282,12 @@ export const usg = {
         patrykKrokwinskiImageSmall,
         kamilStepkowskiImageSmall,
     ],
+    specialists2: [
+        'justyna-filipek',
+        'wojciech-kaszewski',
+        'kamil-stepkowski',
+        'patryk-krokwinski'
+    ],
     relatedSpecializations: [
         'endocrinology',
         'gynecology'
@@ -278,6 +313,9 @@ export const endocrinology = {
     ],
     specialists: [
         justynaFilipekImageSmall
+    ],
+    specialists2: [
+        'justyna-filipek'
     ],
     relatedSpecializations: [
         'usg',
@@ -305,6 +343,9 @@ export const gynecology = {
     specialists: [
         justynaFilipekImageSmall
     ],
+    specialists2: [
+        'justyna-filipek'
+    ],
     relatedSpecializations: [
         'usg',
         'endocrinology'
@@ -322,6 +363,9 @@ export const orthopedics = {
     pathPrices: '/prices/orthopedics',
     specialists: [
         wojciechKaszewskiImageSmall
+    ],
+    specialists2: [
+        'wojciech-kaszewski'
     ],
     relatedSpecializations: [
         'physioterapy',
@@ -349,6 +393,9 @@ export const vascularSurgery = {
     specialists: [
         kamilStepkowskiImageSmall
     ],
+    specialists2: [
+        'kamil-stepkowski'
+    ],
     relatedSpecializations: [
         'cardiology'
     ],
@@ -374,6 +421,9 @@ export const clinicalDietitian = {
     specialists: [
         joannaOjrzenskaImageSmall
     ],
+    specialists2: [
+        'joanna-ojrzenska'
+    ],
     relatedSpecializations: [
         'rheumatology'
     ],
@@ -390,6 +440,9 @@ export const rheumatology = {
     pathPrices: '/prices/rheumatology',
     specialists: [
         agataSkwerekSzewczykImageSmall
+    ],
+    specialists2: [
+        'agata-skwerek-szewczyk'
     ],
     relatedSpecializations: [
         'physioterapy',
@@ -416,6 +469,9 @@ export const cardiology = {
     ],
     specialists: [
         michalRadzioImageSmall
+    ],
+    specialists2: [
+        'michal-radzio'
     ],
     relatedSpecializations: [
         'vascular-surgery',

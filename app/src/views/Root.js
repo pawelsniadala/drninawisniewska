@@ -76,9 +76,17 @@ import PricesClinicalDietitianPartial from './partials/prices/PricesClinicalDiet
 import PricesRheumatologyPartial from './partials/prices/PricesRheumatologyPartial';
 import PricesCardiologyPartial from './partials/prices/PricesCardiologyPartial';
 import SpecialOfferView from './SpecialOfferView';
-import TeamView from './TeamView';
-import TeamSpecializationPartial from './partials/team/TeamSpecializationPartial';
-import TeamSpecialistPartial from './partials/team/TeamSpecialistPartial';
+
+
+// import TeamView from './TeamView';
+// import TeamSpecializationPartial from './partials/team/TeamSpecializationPartial';
+// import TeamSpecialistPartial from './partials/team/TeamSpecialistPartial';
+
+import TeamView2 from './TeamView2';
+import SpecialistsListPartial from './partials/team/SpecialistsListPartial';
+import SpecialistsDetailsPartial from './partials/team/SpecialistsDetailsPartial';
+
+
 // import TechnologyView from './TechnologyView';
 // import TechnologyVectusPartial from './partials/technology/TechnologyVectusPartial';
 // import TechnologyAlmaHarmonyXlProPartial from './partials/technology/TechnologyAlmaHarmonyXlProPartial';
@@ -175,10 +183,16 @@ const Root = () => (
                         <Route path='/prices/cardiology' element={<PricesCardiologyPartial />} />
                     </Route>
                     <Route path='/special-offer' element={<SpecialOfferView />} />
-                    <Route path='/team' element={<TeamView />}>
+                    {/* <Route path='/team' element={<TeamView />}>
                         <Route path=':specialization' element={<TeamSpecializationPartial />} />
                     </Route>
-                    <Route path='team/:specialization/:specialist' element={<TeamSpecialistPartial />} />
+                    <Route path='team/:specialization/:specialist' element={<TeamSpecialistPartial />} /> */}
+
+                    <Route path='/team' element={<TeamView2 />}>
+                        <Route path=':specialization' element={<SpecialistsListPartial />} />
+                    </Route>
+                    <Route path='team/:specialization/:specialist' element={<SpecialistsDetailsPartial />} />
+
                     {/* <Route path='/technology' element={<TechnologyView />} />
                     <Route path='/technology/vectus' element={<TechnologyVectusPartial />} />
                     <Route path='/technology/alma-harmony-xl-pro' element={<TechnologyAlmaHarmonyXlProPartial />} />

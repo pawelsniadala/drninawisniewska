@@ -24,15 +24,23 @@ export const ninaWisniewska = {
     id: '4d6a6ec4-ea93-40b5-9d23-cb7204c6911e',
     specialist: 'nina-wisniewska',
     name: 'dr n. med. Nina Wiśniewska',
-    speciality: 'Specjalista w zakresie Dermatologii i Wenerologii, lekarz medycyny estetycznej',
+    speciality: 'Specjalista w zakresie dermatologii i wenerologii, lekarz medycyny estetycznej',
     summary: 'Urodziłam się w Wyszkowie i dlatego to miejsce jest szczególnie mi bliskie. Od kilku lat przyjmuję tu jako dermatolog pomagając Państwu w zakresie chorób skóry i to dzięki Państwa inicjatywie poszerzam swoją działalność. Zajmuję się kompleksowo leczeniem wszystkich chorób skóry. Przypadki wymagające szczegółowej diagnostyki kieruję do Kliniki Dermatologicznej WIM MON przy ulicy Szaserów 128 w Warszawie, gdzie pełnię funkcję starszego asystenta. W zakresie medycyny estetycznej stale podnoszę swoje kwalifikacje, uczestnicząc w licznych szkoleniach i kongresach, m.in. w zakresie laseroterapii oraz zabiegów z zastosowaniem wypełniaczy. W swojej pracy stawiam głównie na naturalność.',
     education: 'Dr n. med. Nina Wiśniewska jest absolwentką I Wydziału Lekarskiego Akademii Medycznej w Warszawie. Na swoim koncie posiada wiele publikacji naukowych oraz wystąpień na konferencjach i sympozjach polskich i zagranicznych. Czynnie bierze udział w wystąpieniach telewizyjnych takich jak "Pytanie na śniadanie", "Dzień Dobry Polsko", "Sekrety lekarzy" i innych. Jej publikacje dostępne są w czasopismach branżowych "Twój Styl", "Flesz", "Party", "Gala" i innych.',
     experience: 'Nagrodzona przez Ministra Zdrowia w 2015 roku za uzyskanie najlepszego wyniku w Polsce z egzaminu PES w zakresie dermatologii i wenerologii. Na co dzień pełni funkcję Starszego Asystenta w Klinice Dermatologicznej Wojskowego Instytutu Medycznego Ministerstwa Obrony Narodowej w Warszawie. Członkini  Polskiego Towarzystwa Dermatologicznego i Farmaekonomicznego. Członkini Polskiego Towarzystwa Medycyny Estetycznej i Anti - Anging.',
     interested: false,
     image: ninaWisniewskaImage,
     background: false,
-    specialization: ['dermatology', 'aesthetic-medicine'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'toksyna-botulinowa', 'mezoterapia-iglowa']
+    specialization: [
+        'dermatology',
+        'aesthetic-medicine'
+    ],
+    treatment: [
+        'badanie-znamion-barwnikowych',
+        'fototerapia-chorob-skory',
+        'toksyna-botulinowa',
+        'mezoterapia-iglowa'
+    ]
 };
 
 export const justynaFilipek = {
@@ -46,7 +54,11 @@ export const justynaFilipek = {
     interested: false,
     image: justynaFilipekImage,
     background: false,
-    specialization: ['gynecology', 'endocrinology', 'usg'],
+    specialization: [
+        'gynecology',
+        'endocrinology',
+        'usg'
+    ],
     treatment: ['']
 };
 
@@ -61,8 +73,17 @@ export const paulinaBudna = {
     interested: false,
     image: paulinaBudnaImage,
     background: false,
-    specialization: ['cosmetology'],
-    treatment: ['peeling-medyczny', 'epilacja-laserowa', 'masaz-prozniowy', 'ultradzwieki-i-fala-radiowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
+    specialization: [
+        'cosmetology'
+    ],
+    treatment: [
+        'peeling-medyczny',
+        'epilacja-laserowa',
+        'masaz-prozniowy',
+        'ultradzwieki-i-fala-radiowa',
+        'laser-frakcyjny',
+        'zamykanie-naczynek-i-likwidacja-przebarwien'
+    ]
 };
 
 export const konradKochan = {
@@ -76,8 +97,13 @@ export const konradKochan = {
     interested: false,
     image: konradKochanImage,
     background: false,
-    specialization: ['aesthetic-medicine', 'cosmetic-surgery'],
-    treatment: ['plastyka-powiek']
+    specialization: [
+        'aesthetic-medicine',
+        'cosmetic-surgery'
+    ],
+    treatment: [
+        'plastyka-powiek'
+    ]
 };
 
 export const agataSkwerekSzewczyk = {
@@ -91,7 +117,9 @@ export const agataSkwerekSzewczyk = {
     interested: false,
     image: agataSkwerekSzewczykImage,
     background: false,
-    specialization: ['rheumatology'],
+    specialization: [
+        'rheumatology'
+    ],
     treatment: ['']
 };
 
@@ -106,8 +134,14 @@ export const aldonaMaciag = {
     interested: false,
     image: aldonaMaciagImage,
     background: false,
-    specialization: ['dermatology'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne']
+    specialization: [
+        'dermatology'
+    ],
+    treatment: [
+        'badanie-znamion-barwnikowych',
+        'fototerapia-chorob-skory',
+        'usuniecie-zmian-skornych-elektrochirurgiczne'
+    ]
 };
 
 export const justynaKloniecka = {
@@ -121,8 +155,14 @@ export const justynaKloniecka = {
     interested: false,
     image: justynaKlonieckaImage,
     background: false,
-    specialization: ['dermatology'],
-    treatment: ['']
+    specialization: [
+        'dermatology'
+    ],
+    treatment: [
+        'badanie-znamion-barwnikowych',
+        'fototerapia-chorob-skory',
+        'usuniecie-zmian-skornych-elektrochirurgiczne'
+    ]
 };
 
 export const wojciechKaszewski = {
@@ -136,7 +176,10 @@ export const wojciechKaszewski = {
     interested: false,
     image: wojciechKaszewskiImage,
     background: false,
-    specialization: ['orthopedics', 'usg'],
+    specialization: [
+        'orthopedics',
+        'usg'
+    ],
     treatment: ['']
 };
 
@@ -151,8 +194,19 @@ export const klaudiaMalottki = {
     interested: false,
     image: klaudiaMalottkiImage,
     background: false,
-    specialization: ['aesthetic-medicine'],
-    treatment: ['toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'nici-rewitalizujace-i-liftingujace', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien', 'sonoqueen-technologia-hifu']
+    specialization: [
+        'aesthetic-medicine'
+    ],
+    treatment: [
+        'toksyna-botulinowa',
+        'stymulatory-tkankowe',
+        'osocze-bogatopłytkowe',
+        'mezoterapia-iglowa',
+        'nici-rewitalizujace-i-liftingujace',
+        'laser-frakcyjny',
+        'zamykanie-naczynek-i-likwidacja-przebarwien',
+        'sonoqueen-technologia-hifu'
+    ]
 };
 
 export const katarzynaMysliwiecCzajka = {
@@ -166,8 +220,14 @@ export const katarzynaMysliwiecCzajka = {
     interested: false,
     image: katarzynaMysliwiecCzajkaImage,
     background: false,
-    specialization: ['dermatology'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne']
+    specialization: [
+        'dermatology'
+    ],
+    treatment: [
+        'badanie-znamion-barwnikowych',
+        'fototerapia-chorob-skory',
+        'usuniecie-zmian-skornych-elektrochirurgiczne'
+    ]
 };
 
 export const milenaJuzwiak = {
@@ -181,23 +241,41 @@ export const milenaJuzwiak = {
     interested: false,
     image: milenaJuzwiakImage,
     background: false,
-    specialization: ['physioterapy'],
-    treatment: ['rehabilitacja', 'masaz', 'kinesiotaping']
+    specialization: [
+        'physioterapy'
+    ],
+    treatment: [
+        'rehabilitacja',
+        'masaz',
+        'kinesiotaping'
+    ]
 };
 
 export const paulinaTatara = {
     id: '3b2ca017-a5cd-4d1d-a8dd-6a4dc84b21a2',
     specialist: 'paulina-tatara',
     name: 'lek. med. Paulina Tatara',
-    speciality: 'Dermatolog, Lekarz medycyny estetycznej',
+    speciality: 'Dermatolog, lekarz medycyny estetycznej',
     summary: 'Od zawsze chciałam, by mój zawód polegał na niesieniu pomocy innym. Będąc dermatologiem mogę wspierać pacjentów w dążeniu do samoakceptacji i w budowaniu pewności siebie. Oprócz leczenia, lubię także edukować. Wychodzę z założenia, że dobre zdrowie zaczyna się od wiedzy. Realizuję swoje poczucie estetyki i empatii kształcąc się na kursach i szkoleniach z zakresu medycyny estetycznej. Uważam, że mniej znaczy więcej, a zabiegi z zakresu medycyny estetycznej powinny podkreślać atuty, nie zmieniać. Naturalne piękno po prostu potrzebuje czasami kropki nad i a nie zmiany całego wersu.',
     education: 'Absolwentka Wydziału Wojskowo-Lekarskiego Uniwersytetu Medycznego w Łodzi. Licencjatka neurobiologii na Uniwersytecie, gdzie uzyskała dyplom ratownika medycznego. Nieustannie poszerza wiedzę, dokształca się i bierze udział w szkoleniach, by sprostać oczekiwaniom pacjentów. Aktualnie jest w trakcie specjalizacji z Dermatologii i Wenerologii w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie. Szerokie, a zarazem bezpośrednio związane z medycyną zainteresowania, pozwoliły jej po ukończeniu studiów medycznych uzyskać tytuł Lidera Lekarskiego Egzaminu Końcowego. W swojej pracy zawodowej obejmowała również etat lekarza polskiego kontyngentu wojskowego PKW Orlik w Estonii.',
     experience: false,
     interested: 'Jestem miłośniczką kryminałów i wyzwań, przede wszystkim sportowych. Sport uczy mnie konsekwencji w dążeniu do celu. Na swoim koncie mam ukończenie zawodów triathlonowych na dystansie pełnego Ironmana.',
     image: paulinaTataraImage,
     background: false,
-    specialization: ['dermatology', 'aesthetic-medicine'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'toksyna-botulinowa', 'stymulatory-tkankowe', 'mezoterapia-iglowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
+    specialization: [
+        'dermatology',
+        'aesthetic-medicine'
+    ],
+    treatment: [
+        'badanie-znamion-barwnikowych',
+        'fototerapia-chorob-skory',
+        'usuniecie-zmian-skornych-elektrochirurgiczne',
+        'toksyna-botulinowa',
+        'stymulatory-tkankowe',
+        'mezoterapia-iglowa',
+        'laser-frakcyjny',
+        'zamykanie-naczynek-i-likwidacja-przebarwien'
+    ]
 };
 
 export const tomaszMatuszewski = {
@@ -211,23 +289,39 @@ export const tomaszMatuszewski = {
     interested: 'Interesuję się kulinariami, enoturystyką.',
     image: tomaszMatuszewskiImage,
     background: false,
-    specialization: ['allergology'],
-    treatment: ['testy-skorne', 'platkowe-testy-kontaktowe', 'odczulanie']
+    specialization: [
+        'allergology'
+    ],
+    treatment: [
+        'testy-skorne',
+        'platkowe-testy-kontaktowe',
+        'odczulanie'
+    ]
 };
 
 export const olgaLenartowiczWarakomska = {
     id: 'eea454b7-6f22-401b-93b7-c29b166751d9',
     specialist: 'olga-lenartowicz-warakomska',
     name: 'lek. dent. Olga Lenartowicz-Warakomska',
-    speciality: 'Stomatolog, Specjalista medycyny estetycznej',
+    speciality: 'Stomatolog, specjalista medycyny estetycznej',
     summary: false,
     education: 'Stomatologia była jej marzeniem od dzieciństwa, zaś w trakcie studiów zauroczyła się medycyna estetyczną. Ukończyła Uniwersytet Medyczny w Lublinie w 2016 roku. Praca w zawodzie przyniosła zainteresowanie chirurgią stomatologiczną, periodontologią i okluzją, a także stomatologią estetyczną oraz medycyną estetyczną. Pasja jaką jest estetyka zaowocowała ukończeniem w 2019 roku studiów podyplomowych z zakresu medycyny estetycznej w Krakowie.',
     experience: 'Leczenie kompleksowe zaawansowanych przypadków chorób oraz łączenie stomatologii z medycyną estetyczną przynosi jej największą satysfakcję. Jest bardzo zaangażowana w swoją pracę. Problem pacjenta stara się zawsze widzieć w jak najszerszej perspektywie, aby podczas leczenia najlepiej wykorzystać wszystkie osiągnięcia nowoczesnej stomatologii oraz medycyny estetycznej. Nieustannie uczestniczy w kursach dokształcających, konferencjach naukowych oraz śledzi prasę specjalistyczną ze wszystkich dziedzin związanych z zainteresowaniami zawodowymi. Jest conkiem Polskiego Towarzystwa Medycyny Estetycznej i Anti-Aging (PTMEIAA) oraz Polskiego, Polskiego Towarzystwa Lekarzy Medycyny Estetycznej POLME, Towarzystwa Stomatologicznego PTS.',
     interested: 'W wolnej chwili jeżdżę na rowerze, na snowboardzie, żegluję, podróżuję i czytam książki.',
     image: olgaLenartowiczWarakomskaImage,
     background: false,
-    specialization: ['aesthetic-medicine'],
-    treatment: ['toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien', 'sonoqueen-technologia-hifu']
+    specialization: [
+        'aesthetic-medicine'
+    ],
+    treatment: [
+        'toksyna-botulinowa',
+        'stymulatory-tkankowe',
+        'osocze-bogatopłytkowe',
+        'mezoterapia-iglowa',
+        'laser-frakcyjny',
+        'zamykanie-naczynek-i-likwidacja-przebarwien',
+        'sonoqueen-technologia-hifu'
+    ]
 };
 
 export const katarzynaZbronska = {
@@ -241,8 +335,21 @@ export const katarzynaZbronska = {
     interested: false,
     image: katarzynaZbronskaImage,
     background: false,
-    specialization: ['dermatology'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory', 'usuniecie-zmian-skornych-elektrochirurgiczne', 'toksyna-botulinowa', 'stymulatory-tkankowe', 'osocze-bogatopłytkowe', 'mezoterapia-iglowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien', 'sonoqueen-technologia-hifu']
+    specialization: [
+        'dermatology'
+    ],
+    treatment: [
+        'badanie-znamion-barwnikowych',
+        'fototerapia-chorob-skory',
+        'usuniecie-zmian-skornych-elektrochirurgiczne',
+        'toksyna-botulinowa',
+        'stymulatory-tkankowe',
+        'osocze-bogatopłytkowe',
+        'mezoterapia-iglowa',
+        'laser-frakcyjny',
+        'zamykanie-naczynek-i-likwidacja-przebarwien',
+        'sonoqueen-technologia-hifu'
+    ]
 };
 
 export const joannaOjrzenska = {
@@ -256,7 +363,9 @@ export const joannaOjrzenska = {
     interested: false,
     image: joannaOjrzenskaImage,
     background: false,
-    specialization: ['clinical-dietitian'],
+    specialization: [
+        'clinical-dietitian'
+    ],
     treatment: ['']
 };
 
@@ -271,8 +380,17 @@ export const aleksandraGorczynska = {
     interested: 'interesuję się kulturą oraz kuchnią azjatycką.',
     image: aleksandraGorczynskaImage,
     background: false,
-    specialization: ['cosmetology'],
-    treatment: ['peeling-medyczny', 'epilacja-laserowa', 'masaz-prozniowy', 'ultradzwieki-i-fala-radiowa', 'laser-frakcyjny', 'zamykanie-naczynek-i-likwidacja-przebarwien']
+    specialization: [
+        'cosmetology'
+    ],
+    treatment: [
+        'peeling-medyczny',
+        'epilacja-laserowa',
+        'masaz-prozniowy',
+        'ultradzwieki-i-fala-radiowa',
+        'laser-frakcyjny',
+        'zamykanie-naczynek-i-likwidacja-przebarwien'
+    ]
 };
 
 export const kamilStepkowski = {
@@ -286,8 +404,14 @@ export const kamilStepkowski = {
     interested: false,
     image: kamilStepkowskiImage,
     background: false,
-    specialization: ['vascular-surgery', 'usg'],
-    treatment: ['laserowe-usuwanie-zylakow', 'skleroterapia']
+    specialization: [
+        'vascular-surgery',
+        'usg'
+    ],
+    treatment: [
+        'laserowe-usuwanie-zylakow',
+        'skleroterapia'
+    ]
 };
 
 export const katarzynaRychlik = {
@@ -301,8 +425,13 @@ export const katarzynaRychlik = {
     interested: false,
     image: katarzynaRychlikImage,
     background: false,
-    specialization: ['dermatology'],
-    treatment: ['badanie-znamion-barwnikowych', 'fototerapia-chorob-skory']
+    specialization: [
+        'dermatology'
+    ],
+    treatment: [
+        'badanie-znamion-barwnikowych',
+        'fototerapia-chorob-skory'
+    ]
 };
 
 export const patrykKrokwinski = {
@@ -316,7 +445,9 @@ export const patrykKrokwinski = {
     interested: false,
     image: patrykKrokwinskiImage,
     background: false,
-    specialization: ['usg'],
+    specialization: [
+        'usg'
+    ],
     treatment: ['']
 };
 
@@ -331,8 +462,12 @@ export const michalRadzio = {
     interested: false,
     image: michalRadzioImage,
     background: false,
-    specialization: ['cardiology'],
-    treatment: ['echo-serca']
+    specialization: [
+        'cardiology'
+    ],
+    treatment: [
+        'echo-serca'
+    ]
 };
 
 export const team = [
