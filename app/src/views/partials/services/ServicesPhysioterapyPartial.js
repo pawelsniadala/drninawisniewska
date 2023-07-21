@@ -62,7 +62,7 @@ const ServicesPhysioterapyPartial = () => {
 
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Fizjoterapia</strong> to dziedzina medycyny zajmująca się leczeniem i rehabilitacją osób z różnymi schorzeniami, urazami lub dysfunkcjami układu mięśniowo-szkieletowego. Jej celem jest przywrócenie pacjentowi pełnej sprawności fizycznej, zmniejszenie bólu, poprawa zakresu ruchu oraz wzmacnianie mięśni.
+                                    <strong>Fizjoterapia</strong> zajmuje się diagnostyką i leczeniem nieinwazyjnych schorzeń występujących w obrębie układu ruchu. Zabiegi fizjoterapeutyczne mają na celu usprawnić narząd ruchu pacjenta, przywrócić sprawność ruchową po urazach stawów czy mięśni, łagodzić dolegliwości bólowe i podnosić ogólną sprawność fizyczną organizmu.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
@@ -73,18 +73,21 @@ const ServicesPhysioterapyPartial = () => {
                                     />
                                 </Box>
                                 <Typography className='paragraph'>
-                                    Fizjoterapia obejmuje różnorodne metody i techniki, które są dostosowane do konkretnego przypadku i potrzeb pacjenta:
+                                    Fizjoterapia może obejmować wiele różnych metod leczenia, zarówno manualnych jak i aparaturowych.
                                 </Typography>
                                 <Typography className='paragraph heading'>
-                                    <strong>Przykładowe formy terapii fizycznej to:</strong>
+                                    <strong>Do technik stosowanych w fizjoterapii zaliczamy:</strong>
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'ćwiczenia terapeutyczne',
-                                        'masaż,',
-                                        'elektroterapia,',
-                                        'terapia manualna,',
-                                        'techniki relaksacyjne.',
+                                        'gimnastykę leczniczą,',
+                                        'masaże terapeutyczne,',
+                                        'elektroterapię,',
+                                        'krioterapię i terapia cieplna,',
+                                        'laseroterapię,',
+                                        'ultrasonoterapię,',
+                                        'kąpiele lecznicze,',
+                                        'kinesiotaping.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -96,6 +99,25 @@ const ServicesPhysioterapyPartial = () => {
                                 <Typography className='paragraph'>
                                     Fizjoterapia może być stosowana w różnych dziedzinach medycyny, takich jak ortopedia, neurologia, geriatria, pediatria czy medycyna sportowa. Fizjoterapeuci współpracują z lekarzami i innymi specjalistami, aby zapewnić kompleksową opiekę pacjentom i pomóc im w powrocie do pełnej funkcjonalności i jakości życia.
                                 </Typography>
+                                <Typography className='paragraph heading'>
+                                    <strong>W naszej Klinice mogą państwo skorzystać z:</strong>
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'masażu leczniczego częściowego lub całych pleców,',
+                                        'masażu limfatycznego,',
+                                        'terapii metodą PNF,',
+                                        'masażu relaksacyjnego,',
+                                        'ćwiczeń indywidualnych,',
+                                        'rehabilitacji ortopedycznej metodą Cyriax.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
                             </Box>
                         </Box>
                         <Box className='proposed-wrapper'>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
@@ -60,7 +59,7 @@ const ServicesCosmeticSurgeryPartial = () => {
                         <Box className='service-description'>
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Chirurgia plastyczna</strong> to dziedzina medycyny, która zajmuje się poprawą wyglądu zewnętrznego ciała poprzez chirurgiczne zabiegi rekonstrukcyjne lub estetyczne.
+                                    <strong>Chirurgia plastyczna</strong> to dziedzina medycyny,  która zajmuje się poprawą defektów estetycznych wrodzonych bądź nabytych w wyglądzie zewnętrznym ludzkiego ciała.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
@@ -71,57 +70,12 @@ const ServicesCosmeticSurgeryPartial = () => {
                                     />
                                 </Box>
                                 <Typography className='paragraph'>
-                                    Zabiegi chirurgii plastycznej mają na celu modyfikowanie, naprawę lub przywracanie wyglądu różnych części ciała w celu poprawy funkcji, proporcji, harmonii estetycznej lub przywrócenia wyglądu po urazach, wrodzonych wadach, chorobach lub procesie starzenia się.
+                                    Zdarza się, że zabiegi plastyczne poza aspektem estetycznym mają także uzasadnienie typowo zdrowotne. Z tego względu chirurgię plastyczną dzielimy na chirurgię czysto estetyczną oraz korekcyjną. Chirurgia plastyczna pozwala na poprawę samopoczucia i samooceny osób, a co za tym idzie podniesienie jakości życia.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                W ramach chirurgii plastycznej wykonywane są różne zabiegi, takie jak powiększenie biustu, plastyka brzucha, korekta powiek, operacja nosa czy lifting twarzy. W naszej Klinice świadczymy usługi blefaroplastyki czyli korekty opadającej powieki.
                                 </Typography>
                             </Box>
-
-                            {/* <Box className='box-service'>
-                                <Typography variant={'h5'} className='header'>
-                                    Plastyka powiek
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    <strong>Plastyka powiek</strong>, inaczej blefaroplastyka, to zabieg mający na celu usunięcie nadmiaru skóry wokół oczu. W zakres blefaroplastyki wchodzi zarówno <strong>korekta powieki górnej jak i dolnej</strong>.
-                                </Typography>
-                                <Typography className='paragraph'>
-                                    Plastyka powiek jest najskuteczniejszą metodą walki z twz. opadającą powieką. Wskazaniami do zabiegu prócz defektu estetycznego są również asymetria oczu, problemy z widocznością, przepukliny tłuszczowe a także wiotkość tkanki wokół oczu.
-                                </Typography>
-                                <Box className='box-image'>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={cosmeticSurgery.servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsBefore}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderTopLeftRadius: 8,
-                                            borderTopRightRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '360px',
-                                            marginBottom: '4px'
-                                        }}
-                                    />
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={cosmeticSurgery.servicesCosmeticSurgeryPlasticSurgeryOfTheEyelidsAfter}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderBottomLeftRadius: 8,
-                                            borderBottomRightRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '360px'
-                                        }}
-                                    />
-                                </Box>
-                                <Typography className='paragraph'>
-                                    Zabieg przeprowadzany jest w znieczuleniu miejscowym. Bezpośrednio po zabiegu skóra jest zaczerwieniona i widoczne są delikatne punkty sublimacji. Drugiego dnia po zabiegu może pojawić się lekki obrzęk, który utrzymuje się maksymalnie cztery dni. Drobne strupki  odpadają  po sześciu dniach.
-                                </Typography>
-                            </Box> */}
                         </Box>
 
                         <Box className='proposed-wrapper'>

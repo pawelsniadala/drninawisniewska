@@ -62,7 +62,7 @@ const ServicesCosmetologyPartial = () => {
 
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Kosmetologia</strong> to dziedzina naukowa i praktyczna, która zajmuje się pielęgnacją skóry, włosów, paznokci oraz ogólnym poprawianiem wyglądu i zdrowia skóry. Kosmetolodzy, specjaliści w dziedzinie kosmetologii, stosują różne techniki, metody i produkty w celu zapewnienia zdrowia, piękna i dobrej kondycji skóry.
+                                    <strong>Kosmetologia</strong> jest dziedziną, która zajmuje się działaniem pielęgnacyjnym, kondycjonującym oraz zwiększającym atrakcyjność ciała i twarzy przy pomocy różnego rodzaju preparatów kosmetycznych, sprzętów aparaturowych oraz manualnych technik terapeutycznych.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
@@ -73,9 +73,36 @@ const ServicesCosmetologyPartial = () => {
                                     />
                                 </Box>
                                 <Typography className='paragraph heading'>
-                                    <strong>Nasza Klinika oferuje</strong>:
+                                    <strong>Kosmetologia zajmuje się</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'analizowaniem kondycji skóry,',
+                                        'personalizacją planów pielęgnacyjnych,',
+                                        'wspomaganiem leczenia cer trądzikowych,',
+                                        'niwelowaniem oznak starzenia,',
+                                        'redukcją przebarwień skórnych,',
+                                        'kondycjonowaniem skóry,',
+                                        'zapobieganiem defektom skórnym,',
+                                        'redukacją celulitu,',
+                                        'modelowaniem sylwetki,',
+                                        'ujędrnianiem twarzy i ciała,',
+                                        'trwałym usuwaniem owłosienia.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph'>
+                                    Kosmetologia to dziedzina interdyscyplinarna, często zahaczająca o wiedzę dermatologiczną, alergologiczną, biologiczną i chemiczną. Kosmetologia jest również ściśle związana z medycyną estetyczną, dietetyką i chirurgią plastyczną.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Nasza Klinika świadczy usługi z zakresu indywidualnych terapii skór problematycznych, terapiach przeciwstarzeniowych, zabiegów na ciało a także depilacji laserowej.
+                                </Typography>
+                                {/* <Grid container spacing={0.5} marginBottom={2}>
                                     {[
                                         'Terapie dla cery trądzikowej i tłustej - preparaty o właściwościach antybakteryjnych, przeciwzapalnych, regulujących wydzielanie sebum, keratolitycznych i komedolitycznych normalizujące fizjologię skóry zwalczając zmiany wypryskowe oraz wyciszając nadreaktywność gruczołów łojowych.',
                                         'Terapie dla cery rumieniowej i naczyniowej - wykazują lekkie właściwości  złuszczające oraz nawilżające, a także obkurczają struktury płytko osadzonych naczyń krwionośnych, dzięki czemu niwelują widoczny rumień oraz teleangiekatazje.',
@@ -90,7 +117,7 @@ const ServicesCosmetologyPartial = () => {
                                             ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
                                         />
                                     ))}
-                                </Grid>
+                                </Grid> */}
                             </Box>
                         </Box>
 

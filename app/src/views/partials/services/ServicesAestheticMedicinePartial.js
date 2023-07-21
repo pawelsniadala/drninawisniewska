@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-// import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -11,7 +11,7 @@ import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
-// import ListBulleted from '../../../components/ListBulleted';
+import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
 
 import { services, aestheticMedicine } from '../../../data/services';
@@ -62,7 +62,7 @@ const ServicesAestheticMedicinePartial = () => {
 
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    Medycyna estetyczna to dziedzina medycyny, która łączy w sobie aspekty medycyny, dermatologii i kosmetologii w celu poprawy wyglądu zewnętrznego, utrzymania młodzieńczego wyglądu i wzmocnienia pewności siebie pacjentów. Jest to gałąź medycyny, która oferuje szeroki zakres procedur i zabiegów niechirurgicznych, które mają na celu odmłodzenie, rewitalizację i poprawę wyglądu skóry i ciała.
+                                    <strong>Medycyna estetyczna</strong> to dziedzina medycyny znajdująca się pomiędzy kosmetologią a chirurgią plastyczną. Zaliczane do niej zabiegi charakteryzują się głębszym i bardziej agresywnym działaniem niż w przypadku kosmetologii przy jednoczesnej małej inwazyjności w zestawianiu z chirurgią plastyczną.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
@@ -72,6 +72,39 @@ const ServicesAestheticMedicinePartial = () => {
                                         imageHref={aestheticMedicine.images[0].href}
                                     />
                                 </Box>
+                                <Typography className='paragraph'>
+                                    Dbałość o wygląd zewnętrzny jest obecnie istotnym aspektem kreowania wizerunku i wspomagania poprawy samooceny. I nie ma w tym absolutnie nic złego! Wiele osób decyduje się na zabiegi z zakresu medycyny estetycznej właśnie w celu poprawy ogólnego samopoczucia, upiększenia swojego naturalnego piękna lub pozbycia się natrętnego problemu.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Medycyna estetyczna oferuje szeroki wachlarz możliwości pozwalający zredukować niedoskonałości o różnym podłożu. Główną odnogą medycyny estetycznej są zabiegi skupiające się wokół poprawy jakości skóry, rewitalizacji i odmłodzenie skóry. Obecny rynek przesycony jest nowoczesną technologią, zmodernizowanymi preparatami i metodami zwalczania naszych niedoskonałości. Daje nam to szerokie opcje redukcji niedoskonałości skóry, dzięki czemu obecna medycyna estetyczna jest nakierowana na szeroką grupę odbiorców w zróżnicowanym wieku.
+                                </Typography>
+                                <Typography className='paragraph heading'>
+                                    <strong>W zakresie medycyny estetycznej najczęściej wyróżniamy</strong>:
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'niwelowanie zmarszczek mimicznych i spłycanie głębokich bruzd,',
+                                        'powiększanie, modelowanie i nawilżanie ust,',
+                                        'korektę owalu twarzy,',
+                                        'wolumetrię twarzy,',
+                                        'mezoterapię,',
+                                        'laseroterapię,',
+                                        'zamykanie rozszerzonych  naczynek,',
+                                        'redukcję blizn i rozstępów,',
+                                        'niwelowanie cieni okolicy oczu,',
+                                        'rewitalizację skóry,',
+                                        'leczenie nadpotliwości dołów pachowych, dłoni i stóp.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph'>
+                                    Wszystkie wyżej wymienione zabiegi z zakresu medycyny estetycznej są dostępne w naszej Klinice.
+                                </Typography>
                             </Box>
 
                         </Box>

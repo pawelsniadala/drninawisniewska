@@ -1,9 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// import { styled } from '@mui/material/styles';
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-// import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -12,7 +11,7 @@ import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
-// import ListBulleted from '../../../components/ListBulleted';
+import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
 
 import { services, allergology } from '../../../data/services';
@@ -63,7 +62,7 @@ const ServicesAllergologyPartial = () => {
 
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Alergologia</strong> to dziedzina medycyny zajmująca się diagnozowaniem, leczeniem i profilaktyką alergii. Alergia to nadwrażliwość immunologiczna organizmu na substancje zwane alergenami, które normalnie nie wywołują reakcji u większości osób. Alergeny mogą być pochodzenia pokarmowego, środowiskowego (pyłki roślin, roztocza, grzyby), kontaktowego (metale, lateks, kosmetyki), leków, a także mogą występować w powietrzu (aerozole, pyły, dymy).
+                                    <strong>Alergologia</strong> to dziedzina medycyny zajmująca się badaniem, rozpoznawaniem schorzeń alergicznych i ich leczeniem. Choroby alergiczne to obszerna grupa jednostek chorobowych, które w swojej etiologii mają wpisane rozwijanie się na tle alergicznym, czyli takim, które wywoływane są przez alergeny. Patologiczna reakcja na alergeny wynika z   nieprawidłowego funkcjonowania układu odpornościowego, który reaguje agresywnie na substancje biologiczne nie stanowiące zagrożenia dla naszego organizmu.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
@@ -73,6 +72,47 @@ const ServicesAllergologyPartial = () => {
                                         imageHref={allergology.images[0].href}
                                     />
                                 </Box>
+                                <Typography className='paragraph heading'>
+                                    <strong>Alergologia obejmuje:</strong>
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'diagnostykę chorób alergicznych,',
+                                        'wdrażanie metod leczenia objawowego oraz przyczynowego,',
+                                        'szerzenie świadomości na temat chorób alergicznych.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
+                                <Typography className='paragraph'>
+                                    Choroby alergiczne to tzw. choroby cywilizacyjne. Oznacza to, że szybka urbanizacja naszego świata na przestrzeni ostatnich lat sprawa że częstotliwość zapadalności na alergie z roku na rok wzrasta. Wpływa na to zanieczyszczenie środowiska, stopień przetworzenia żywności, uprzemysłowienie.
+                                </Typography>
+                                <Typography className='paragraph'>
+                                    Choroby alergiczne dotykają w równym stopniu osoby w każdym wieku. U niemowląt i małych dzieci częściej występują alergie pokarmowe, u dorosłych astma oskrzelowa czy nieżyt nosa.
+                                </Typography>
+                                <Typography className='paragraph heading'>
+                                    <strong>Najczęstsze choroby alergiczne z którymi można się zgłosić do specjalisty to:</strong>
+                                </Typography>
+                                <Grid container spacing={0.5} marginBottom={2}>
+                                    {[
+                                        'alergie pokarmowe,',
+                                        'atopowe zapalenie skóry,',
+                                        'pokrzywka alergiczna,',
+                                        'alergiczny nieżyt nosa,',
+                                        'astma alergiczna,',
+                                        'alergiczne zapalenie spojówek.'
+                                    ].map((item, index) => (
+                                        <ListBulleted
+                                            key={index}
+                                            ListBulletedItem={item}
+                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
+                                        />
+                                    ))}
+                                </Grid>
                             </Box>
                         </Box>
 

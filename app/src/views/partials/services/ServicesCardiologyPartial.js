@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
-// import Grid from '@mui/material/Grid';
+import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
@@ -11,7 +11,7 @@ import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
-// import ListBulleted from '../../../components/ListBulleted';
+import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
 
 import { services, cardiology } from '../../../data/services';
@@ -62,7 +62,7 @@ const ServicesCardiologyPartial = () => {
 
                             <Box className='box-service'>
                                 <Typography className='paragraph'>
-                                    <strong>Kardiologia</strong> to dziedzina medycyny zajmująca się schorzeniami i wadami układu sercowo-naczyniowego, ich rozpoznawaniem i leczeniem.
+                                    <strong>Kardiologia</strong> to dziedzina medycyny, która zajmuje się rozpoznawaniem i leczeniem chorób serca i układu krążenia. Obejmuje wady nabyte bądź wrodzone serca, aorty oraz mniejszych naczyń krwionośnych, schorzenia funkcjonowania mięśnia sercowego i zastawek serca a także patologie naczyń krwionośnych, w tym naczyń wieńcowych.
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
@@ -72,22 +72,25 @@ const ServicesCardiologyPartial = () => {
                                         imageHref={cardiology.images[0].href}
                                     />
                                 </Box>
-                                {/* <Typography className='paragraph heading'>
-                                    <strong>Badania USG na które możesz zgłosić się do naszej Kliniki</strong>:
+                                <Typography className='paragraph heading'>
+                                    <strong>Do najczęstszych chorób kardiologicznych i układu krążenia zalicza się</strong>:
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
-                                        'jama brzuszna,',
-                                        'tarczyca,',
-                                        'piersi,',
-                                        'ślinianki,',
-                                        'węzły chłonne,',
-                                        'prostata,',
-                                        'jądra,',
-                                        'układ moczowy,',
-                                        'doppler tętnic szyjnych,',
-                                        'doppler kończyny dolnej (jedna noga),',
-                                        'doppler kończyn dolnych (dwie nogi).'
+                                        'nadciśnienie tętnicze,',
+                                        'arytmia,',
+                                        'zaburzenia rytmu serca,',
+                                        'choroba wieńcowa,',
+                                        'miażdżyca,',
+                                        'zawał serca,',
+                                        'udar mózgu,',
+                                        'choroby osierdzia,',
+                                        'zapalenia mięśnia sercowego,',
+                                        'kardiomiopatie,',
+                                        'szmery serca,',
+                                        'zatorowość płucna,',
+                                        'dusznica bolesna,',
+                                        'wady serca wrodzone/nabyte.'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -96,12 +99,9 @@ const ServicesCardiologyPartial = () => {
                                         />
                                     ))}
                                 </Grid>
-                                <Typography className='paragraph heading'>
-                                    Przyjmujemy dzieci w każdym wieku.
+                                <Typography className='paragraph'>
+                                    Nasza Klinika oferuje usługi z zakresu kardiologii obejmujące konsultację lekarską kardiologiczną, badanie echokardiografii oraz badanie EKG z opisem. 
                                 </Typography>
-                                <Typography className='paragraph heading'>
-                                    Nie wykonujemy badania USG układu kostno-stawowego.
-                                </Typography> */}
                             </Box>
                         </Box>
 
