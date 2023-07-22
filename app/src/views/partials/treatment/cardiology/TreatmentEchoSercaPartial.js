@@ -12,9 +12,9 @@ import Container from '../../../../components/Container';
 import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
 // import ListBulleted from '../../../../components/ListBulleted';
-// import Image from '../../../../components/Image';
+import Image from '../../../../components/Image';
 
-import { /* treatment, */ /* echoSerca */ } from '../../../../data/treatment';
+import { /* treatment, */ echoSerca } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
@@ -48,13 +48,13 @@ const TreatmentEchoSercaPartial = () => {
                                     Kardiologia
                                 </Link>
                                 <Typography>
-                                    ECHO serca
+                                    Echo serca
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                ECHO serca
+                                Echo serca
                             </Typography>
                         </Box>
                     </Container>
@@ -64,18 +64,18 @@ const TreatmentEchoSercaPartial = () => {
                         <Box className='treatment-description'>
                             <Box className='box-treatment'>
                                 <Typography className='paragraph'>
-                                    <strong>ECHO serca</strong>, czyli echokardiografia, to bezpieczne i nieinwazyjne badanie obrazowe serca, które wykorzystuje fale dźwiękowe o wysokiej częstotliwości do tworzenia obrazów struktur serca. Zabieg ten przeprowadza się za pomocą urządzenia zwanych echokardiografami, które emitują fale dźwiękowe przez specjalną sondę umieszczoną na klatce piersiowej pacjenta.
+                                    <strong>Echo serca</strong>, czyli echokardiografia, to bezpieczne i nieinwazyjne badanie obrazowe serca, które wykorzystuje fale dźwiękowe o wysokiej częstotliwości do tworzenia obrazów struktur serca. Zabieg ten przeprowadza się za pomocą urządzenia zwanych echokardiografami, które emitują fale dźwiękowe przez specjalną sondę umieszczoną na klatce piersiowej pacjenta.
                                 </Typography>
-                                {/* <Box className='box-image'>
+                                <Box className='box-image'>
                                     <Image
                                         imageSrc={echoSerca.images[0].src}
                                         imageAlt={echoSerca.images[0].alt}
                                         imageAuthor={echoSerca.images[0].author}
                                         imageHref={echoSerca.images[0].href}
                                     />
-                                </Box> */}
+                                </Box>
                                 <Typography className='paragraph'>
-                                    Podczas ECHO serca pacjent leży na stole badawczym, a technik medyczny lub lekarz przesuwa sondę po powierzchni klatki piersiowej w różnych pozycjach. Fale dźwiękowe odbijają się od struktur serca, a odbicia są przechwytywane przez sondę i przekształcane w obrazy na monitorze.
+                                    Podczas echo serca pacjent leży na stole badawczym, a technik medyczny lub lekarz przesuwa sondę po powierzchni klatki piersiowej w różnych pozycjach. Fale dźwiękowe odbijają się od struktur serca, a odbicia są przechwytywane przez sondę i przekształcane w obrazy na monitorze.
                                 </Typography>
                             </Box>
                         </Box>

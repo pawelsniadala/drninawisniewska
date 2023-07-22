@@ -76,7 +76,7 @@ export const dermatology = {
             src: servicesDermatology0,
             alt: 'Dermatolog bada skórę pacjenta za pomocą dermatoskopu',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/dermatolog-bada-skore-pacjenta-za-pomoca-dermatoskopu_8404896.htm#query=dermatology&position=0&from_view=search&track=sph'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/dermatolog-bada-skore-pacjenta-za-pomoca-dermatoskopu_8404896.htm'
         }
     ],
     specialists: [
@@ -118,7 +118,7 @@ export const aestheticMedicine = {
             src: servicesAestheticMedicine0,
             alt: 'Zabieg w okolicy ust',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/piekna-mloda-kobieta-dostaje-botox-kosmetyczny-zastrzyk-w-jej-twarzy_1624934.htm#query=Medycyna%20estetyczna&position=30&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/piekna-mloda-kobieta-dostaje-botox-kosmetyczny-zastrzyk-w-jej-twarzy_1624934.htm'
         }
     ],
     specialists: [
@@ -156,7 +156,7 @@ export const cosmetology = {
             src: servicesCosmetology0,
             alt: 'Kosmetolog nakładający maskę na twarz',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kosmetolog-wykonujacy-zabiegi-na-twarz-i-nakladajacy-maske-na-twarz_16934230.htm#query=kosmetologia&position=3&from_view=search&track=sph'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kosmetolog-wykonujacy-zabiegi-na-twarz-i-nakladajacy-maske-na-twarz_16934230.htm'
         }
     ],
     specialists: [
@@ -188,7 +188,7 @@ export const physioterapy = {
             src: servicesPhysioterapy0,
             alt: 'Fizjoterapeuta nakładający elastyczny bandaż medyczny',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/fizjoterapeutka-nakladajaca-elastyczny-bandaz-medyczny-na-pacjenta-plci-meskiej_21076897.htm#query=fizjoterapia&position=28&from_view=search&track=sph'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/fizjoterapeutka-nakladajaca-elastyczny-bandaz-medyczny-na-pacjenta-plci-meskiej_21076897.htm'
         }
     ],
     specialists: [
@@ -217,7 +217,7 @@ export const cosmeticSurgery = {
             src: servicesCosmeticSurgery0,
             alt: 'Przygotowanie pacjenta do zabiegu chirurgii plastycznej',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-przeznaczona-do-operacji-plastycznej_10322612.htm#page=19&query=operacja%20plastyczna%20powiek&position=39&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-przeznaczona-do-operacji-plastycznej_10322612.htm'
         }
     ],
     specialists: [
@@ -245,7 +245,7 @@ export const allergology = {
             src: servicesAllergology0,
             alt: 'Test reakcji alergicznej skóry na przedramieniu',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/test-reakcji-alergicznej-skory-na-ramieniu-osoby_19672579.htm#query=test%20reakcji%20alergicznej%20sk%C3%B3ry&position=3&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/test-reakcji-alergicznej-skory-na-ramieniu-osoby_19672579.htm'
         }
     ],
     specialists: [
@@ -273,7 +273,7 @@ export const usg = {
             src: servicesUsg0,
             alt: 'Badanie USG tarczycy',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/usmiechnieta-pielegniarka-pracujaca-z-pacjentem-podczas-zabiegu_26674414.htm#query=usg%20jamy&position=23&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/usmiechnieta-pielegniarka-pracujaca-z-pacjentem-podczas-zabiegu_26674414.htm'
         }
     ],
     specialists: [
@@ -308,7 +308,7 @@ export const endocrinology = {
             src: servicesEndocrinology0,
             alt: 'Endokrynologiczne badanie tarczycy',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/endokrynolog-badajacy-gardlo-mlodej-kobiety-w-klinice-kobiety-z-badaniem-tarczycy-hormony-endokrynologiczne-i-leczenie-zapalenie-gardla_27156417.htm#query=Endokrynologia%20tarczyca&position=37&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/endokrynolog-badajacy-gardlo-mlodej-kobiety-w-klinice-kobiety-z-badaniem-tarczycy-hormony-endokrynologiczne-i-leczenie-zapalenie-gardla_27156417.htm'
         }
     ],
     specialists: [
@@ -337,7 +337,7 @@ export const gynecology = {
             src: servicesGynecology0,
             alt: 'Konsultacja ginekologiczna',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/endokrynolog-badajacy-gardlo-mlodej-kobiety-w-klinice-kobiety-z-badaniem-tarczycy-hormony-endokrynologiczne-i-leczenie-zapalenie-gardla_27156417.htm#query=Endokrynologia%20tarczyca&position=37&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/endokrynolog-badajacy-gardlo-mlodej-kobiety-w-klinice-kobiety-z-badaniem-tarczycy-hormony-endokrynologiczne-i-leczenie-zapalenie-gardla_27156417.htm'
         }
     ],
     specialists: [
@@ -387,7 +387,7 @@ export const vascularSurgery = {
             src: servicesVascularSurgery0,
             alt: 'Chirurdzy podczas wykonywania zabiegu',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/chirurdzy-noszacy-chirurgiczne-lupy-podczas-wykonywania-operacji_8402445.htm#query=zabieg%20chirurg&position=42&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/chirurdzy-noszacy-chirurgiczne-lupy-podczas-wykonywania-operacji_8402445.htm'
         }
     ],
     specialists: [
@@ -415,7 +415,7 @@ export const clinicalDietitian = {
             src: servicesClinicalDietitian0,
             alt: 'Konsultacja dietetyczna w gabinecie',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/lekarz-w-swoim-gabinecie-mowi-dziewczynie-jak-jesc-i-trzymac-sie-diety_18133353.htm#query=dietetyka&position=23&from_view=search&track=sph'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/lekarz-w-swoim-gabinecie-mowi-dziewczynie-jak-jesc-i-trzymac-sie-diety_18133353.htm'
         }
     ],
     specialists: [
@@ -464,7 +464,7 @@ export const cardiology = {
             src: servicesCardiology0,
             alt: 'Kardiolog mierzy ciśnienie krwi',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/mlody-meski-psycholog-z-pacjentem-mierzy-cisnienie-krwi_6190120.htm#page=5&query=badanie%20serca&position=24&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/mlody-meski-psycholog-z-pacjentem-mierzy-cisnienie-krwi_6190120.htm'
         }
     ],
     specialists: [

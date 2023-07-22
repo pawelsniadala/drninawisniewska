@@ -201,7 +201,7 @@ const SpecialistsDetailsPartial = () => {
                             {setSpecialist().map((item, index) => (
                                 <Box key={index}>
                                     <Box className='box-specialists' style={{ marginTop: '-15px' }}>
-                                        <Typography className='paragraph'>
+                                        <Typography className='paragraph' style={{ fontSize: '17px' }}>
                                             <strong>{item.speciality}</strong>
                                         </Typography>
                                     </Box>

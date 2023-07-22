@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -19,6 +22,24 @@ import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
 const TreatmentEpilacjaLaserowaPartial = () => {
+    useEffect(() => {
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('photoswipe'),
+            padding: {
+                top: 50,
+                bottom: 50
+            }
+        });
+
+        const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+            type: 'below'
+        });
+
+        lightbox.init(captionPlugin);
+    }, []);
+
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -83,7 +104,7 @@ const TreatmentEpilacjaLaserowaPartial = () => {
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
                                         'Zabieg jest bardziej efektywny.',
-                                        'Możemy zastosować wyższe parametry, jednak ciągle bezpieczne dla pacjenta. Zabieg jest bardziej efektywny.',
+                                        'Możemy zastosować wyższe parametry, jednak ciągle bezpieczne dla pacjenta.',
                                         'Wyklucza ryzyko poparzenia.'
                                     ].map((item, index) => (
                                         <ListBulleted
@@ -164,6 +185,39 @@ const TreatmentEpilacjaLaserowaPartial = () => {
                                 <Typography className='paragraph'>
                                     <strong>Przeciwwskazania</strong>: świeża opalenizna, ciąża, laktacja, przerwana ciągłość naskórka, epilepsja, przyjmowanie leków, w tym ziół fotouczulających, terapia retinoidami (witamina A), przyjmowanie leków obniżających krzepliwość krwi, bielactwo, cukrzyca, bliznowce, aktywne infekcje skórne, rozrusznik serca, niedawno przebyte zabiegi chirurgiczne.
                                 </Typography>
+                            </Box>
+
+                            <Box className='box-treatment'>
+                                <Typography
+                                    variant={'h5'}
+                                    className='header alternative'>
+                                    Efekty zabiegu
+                                </Typography>
+                                <Box className="pswp-gallery" id='my-gallery'>
+                                    {epilacjaLaserowa.effects.map((item, index) => (
+                                        <a key={`my-gallery-${index}`}
+                                            href={item.original.src}
+                                            data-pswp-width={item.original.width}
+                                            data-pswp-height={item.original.height}
+                                            data-cropped='true'
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <Box className='box'>
+                                                <LazyLoadImage
+                                                    src={item.thumbnail.src}
+                                                    alt={item.alt}
+                                                    height='100%'
+                                                    width='100%'
+                                                    effect='blur'
+                                                />
+                                                <span className="pswp-caption-content">
+                                                    {item.description}
+                                                </span>
+                                            </Box>
+                                        </a>
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
 

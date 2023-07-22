@@ -2,7 +2,7 @@
 import badanieZnamionBarwnikowychImage0 from '../assets/treatment/dermatology/badanieZnamionBarwnikowych/badanieZnamionBarwnikowych0.jpg';
 import fototerapiaChorobSkoryImage0 from '../assets/treatment/dermatology/fototerapiaChorobSkory/fototerapiaChorobSkory0.jpg';
 import usuniecieZmianSkornychElektrochirurgiczneImage0 from '../assets/treatment/dermatology/usuniecieZmianSkornychElektrochirurgiczne/usuniecieZmianSkornychElektrochirurgiczne0.jpg';
-
+// ---------------------------------------------------
 // MEDYCYNA ESTETYCZNA
 import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/toksynaBotulinowa0.jpg';
 import stymulatoryTkankoweImage0 from '../assets/treatment/aestheticMedicine/stymulatoryTkankowe/stymulatoryTkankowe0.jpg';
@@ -11,32 +11,52 @@ import osoczeBogatopłytkoweImage0 from '../assets/treatment/aestheticMedicine/o
 // import niciRewitalizujaceILiftingujaceImage0 from '../assets/treatment/aestheticMedicine/niciRewitalizujaceILiftingujace/niciRewitalizujaceILiftingujace0.jpg';
 import mezoterapiaIglowaImage0 from '../assets/treatment/aestheticMedicine/mezoterapiaIglowa/mezoterapiaIglowa0.jpg';
 import zamykanieNaczynekILikwidacjaPrzebarwienImage0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/zamykanieNaczynekILikwidacjaPrzebarwien0.jpg';
+    // efekty
+    import effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0.png'
 import sonoQueenTechnologiaHifuImage0 from '../assets/treatment/aestheticMedicine/sonoQueenTechnologiaHifu/sonoQueenTechnologiaHifu0.jpg';
+
+// ---------------------------------------------------
 
 // KOSMETOLOGIA
 import peelingMedycznyImage0 from '../assets/treatment/cosmetology/peelingMedyczny/peelingMedyczny0.jpg';
 import epilacjaLaserowaImage0 from '../assets/treatment/cosmetology/epilacjaLaserowa/epilacjaLaserowa0.jpg';
+    // efekty
+    import effectsEpilacjaLaserowaSm0 from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowaSm0.jpg'
+    import effectsEpilacjaLaserowaLg0 from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowaLg0.jpg'
+
 import masazProzniowyImage0 from '../assets/treatment/cosmetology/masazProzniowy/masazProzniowy0.jpg';
 import ultradzwiekiIFalaRadiowaImage0 from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/ultradzwiekiIFalaRadiowa0.jpg';
+
+// ---------------------------------------------------
 
 // FIZJOTERAPIA
 import rehabilitacjaImage0 from '../assets/treatment/physioterapy/rehabilitacja/rehabilitacja0.jpg';
 import masazImage0 from '../assets/treatment/physioterapy/masaz/masaz0.jpg';
 import kinesiotapingImage0 from '../assets/treatment/physioterapy/kinesiotaping/kinesiotaping0.jpg';
 
+// ---------------------------------------------------
+
 // CHIRURGIA PLASTYCZNA
 import plastykaPowiekImage0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/plastykaPowiek0.jpg';
-//efekty
-import effectsPlastykaPowiekLg0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/effects/effectsPlastykaPowiekLg0.png'
+    //efekty
+    import effectsPlastykaPowiekLg0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/effects/effectsPlastykaPowiekLg0.png'
+
+// ---------------------------------------------------
 
 // ALERGOLOGIA
 import testySkorneImage0 from '../assets/treatment/allergology/testySkorne/testySkorne0.jpg';
 import platkoweTestyKontaktoweImage0 from '../assets/treatment/allergology/platkoweTestyKontaktowe/platkoweTestyKontaktowe0.jpg';
 import odczulanieImage0 from '../assets/treatment/allergology/odczulanie/odczulanie0.jpg';
 
+// ---------------------------------------------------
+
 // CHIRURGIA NACZYNIOWA
 import skleroterapiaImage0 from '../assets/treatment/vascularSurgery/skleroterapia/skleroterapia0.jpg';
 import laseroweUsuwanieZylakowImage0 from '../assets/treatment/vascularSurgery/laseroweUsuwanieZylakow/laseroweUsuwanieZylakow0.jpg';
+
+// ---------------------------------------------------
+// KARDIOLOGIA
+import echoSercaImage0 from '../assets/treatment/cardiology/echoSerca/echoSerca0.jpg';
 
 
 // DERMATOLOGIA
@@ -51,7 +71,7 @@ export const badanieZnamionBarwnikowych = {
             src: badanieZnamionBarwnikowychImage0,
             alt: 'Dermatolog bada skórę pacjenta za pomocą dermatoskopu',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/dermatolog-bada-skore-pacjenta-za-pomoca-dermatoskopu_8404892.htm#query=dermatoskop&position=5&from_view=search&track=sph'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/dermatolog-bada-skore-pacjenta-za-pomoca-dermatoskopu_8404892.htm'
         }
     ],
     specialization: [
@@ -78,7 +98,7 @@ export const fototerapiaChorobSkory = {
             src: fototerapiaChorobSkoryImage0,
             alt: 'Pacjent w okularach ochronnych przygotowany do zabiegu',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/pacjent-w-okularach-ochronnych-lezacych-na-leczenie_8403195.htm#query=fototerapia&position=18&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/pacjent-w-okularach-ochronnych-lezacych-na-leczenie_8403195.htm'
         }
     ],
     specialization: [
@@ -105,7 +125,7 @@ export const usuniecieZmianSkornychElektrochirurgiczne = {
             src: usuniecieZmianSkornychElektrochirurgiczneImage0,
             alt: 'Dermatolog usuwający zmianę skórną z ramienia pacjenta',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/dermatolog-usuwajacy-kret-z-ramienia-kobiety_8896360.htm#query=znamiona%20usuni%C4%99cie&position=33&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/dermatolog-usuwajacy-kret-z-ramienia-kobiety_8896360.htm'
         }
     ],
     specialization: [
@@ -132,7 +152,7 @@ export const toksynaBotulinowa = {
             src: toksynaBotulinowaImage0,
             alt: 'Toksyna botulinowa',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/pielegnacja-skory-zabieg-kosmetologii-ladnej-kobiety-w-szpitalu-odmladzanie-iniekcje-terapia-profesjonalna-opieka-zdrowotna-plastik-botoks-uroda_10214268.htm#query=Medycyna%20estetyczna&position=19&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/pielegnacja-skory-zabieg-kosmetologii-ladnej-kobiety-w-szpitalu-odmladzanie-iniekcje-terapia-profesjonalna-opieka-zdrowotna-plastik-botoks-uroda_10214268.htm'
         }
     ],
     specialization: [
@@ -158,7 +178,7 @@ export const stymulatoryTkankowe = {
             src: stymulatoryTkankoweImage0,
             alt: 'Zabieg kolagenowy w okolicy ust',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/zblizenie-na-kobiete-podczas-zabiegu-wypelniania-ust_23668908.htm#page=3&query=Medycyna%20estetyczna&position=4&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/zblizenie-na-kobiete-podczas-zabiegu-wypelniania-ust_23668908.htm'
         }
     ],
     specialization: ['aesthetic-medicine'],
@@ -181,7 +201,7 @@ export const osoczeBogatopłytkowe = {
             src: osoczeBogatopłytkoweImage0,
             alt: 'Regeneracja skóry na czole pacjenta',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kosmetyczka-robi-wypelniacz-wtryskowy-na-klientce-w-salonie_12780811.htm#page=2&query=Beautician%20will%20do%20PRP%20therapy%20for%20the%20face%20against%20wrinkles&position=28&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kosmetyczka-robi-wypelniacz-wtryskowy-na-klientce-w-salonie_12780811.htm'
         }
     ],
     specialization: ['aesthetic-medicine'],
@@ -252,7 +272,7 @@ export const mezoterapiaIglowa = {
             src: mezoterapiaIglowaImage0,
             alt: 'Mezoterapia igłowa',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-poddawana-zabiegowi-preparacji-skory-glowy-pod-wysokim-katem_26388252.htm#query=Mezoterapia%20ig%C5%82owa&position=6&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-poddawana-zabiegowi-preparacji-skory-glowy-pod-wysokim-katem_26388252.htm'
         }
     ],
     specialization: [
@@ -278,7 +298,21 @@ export const zamykanieNaczynekILikwidacjaPrzebarwien = {
             src: zamykanieNaczynekILikwidacjaPrzebarwienImage0,
             alt: 'Zamykanie naczynek i likwidacja przebarwień',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/widok-lekarza-kosmetologa-robi-procedure-przeciw-starzeniu-sie-w-biurze-kosmetologii-zadowolona-kobieta-w-jednorazowym-kapeluszu-lezac-na-kanapie-i-relaksujac-sie_18849917.htm#query=przebarwienia%20zabieg%20laser&position=20&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/widok-lekarza-kosmetologa-robi-procedure-przeciw-starzeniu-sie-w-biurze-kosmetologii-zadowolona-kobieta-w-jednorazowym-kapeluszu-lezac-na-kanapie-i-relaksujac-sie_18849917.htm'
+        }
+    ],
+    effects: [
+        {
+            alt: 'Efekt zabiegu zamykania naczynek',
+            description: 'Efekt zabiegu zamykania naczynek',
+            original: {
+                src: effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0,
+                width: 800,
+                height: 800
+            },
+            thumbnail: {
+                src: effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0
+            }
         }
     ],
     specialization: [
@@ -305,7 +339,7 @@ export const sonoQueenTechnologiaHifu = {
             src: sonoQueenTechnologiaHifuImage0,
             alt: 'Zabieg liftingu twarzy',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-lezy-na-kanapie-w-procedurze-czyszczenia-twarzy_14481187.htm#page=14&query=kosmotolog%20zabieg&position=15&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-lezy-na-kanapie-w-procedurze-czyszczenia-twarzy_14481187.htm'
         }
     ],
     specialization: [
@@ -331,7 +365,7 @@ export const peelingMedyczny = {
             src: peelingMedycznyImage0,
             alt: 'Kosmetolog nakładający peeling na twarz',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kosmetyczka-pedzelkiem-naklada-biala-maseczke-nawilzajaca-na-twarz-mlodej-klientki-w-gabinecie-kosmetycznym-spa_13340680.htm#page=2&query=Peeling&position=4&from_view=search&track=sph'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kosmetyczka-pedzelkiem-naklada-biala-maseczke-nawilzajaca-na-twarz-mlodej-klientki-w-gabinecie-kosmetycznym-spa_13340680.htm'
         }
     ],
     specialization: [
@@ -354,7 +388,21 @@ export const epilacjaLaserowa = {
             src: epilacjaLaserowaImage0,
             alt: 'Epilacja lasorowa',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/depilacja-laserowa-terapia-depilacyjna_10025231.htm#from_view=detail_alsolike'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/depilacja-laserowa-terapia-depilacyjna_10025231.htm'
+        }
+    ],
+    effects: [
+        {
+            alt: 'Efekt zabiegu epilacji laserowej',
+            description: 'Efekt zabiegu epilacji laserowej',
+            original: {
+                src: effectsEpilacjaLaserowaLg0,
+                width: 2560,
+                height: 2560
+            },
+            thumbnail: {
+                src: effectsEpilacjaLaserowaSm0
+            }
         }
     ],
     specialization: [
@@ -400,7 +448,7 @@ export const ultradzwiekiIFalaRadiowa = {
             src: ultradzwiekiIFalaRadiowaImage0,
             alt: 'Zabieg redukujący celulit',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-coraz-terapii-antycellulitowej-i-antytluszczowej_8403581.htm#query=celulit%20laserowe&position=40&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-coraz-terapii-antycellulitowej-i-antytluszczowej_8403581.htm'
         }
     ],
     specialization: [
@@ -425,7 +473,7 @@ export const rehabilitacja = {
             src: rehabilitacjaImage0,
             alt: 'Fizjoterapeuta wykonujący rehabilitację nogi',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/masaz-medyczny-na-nodze-w-centrum-fizjoterapii_1492577.htm#page=12&query=fizjoterapia&position=27&from_view=search&track=sph'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/masaz-medyczny-na-nodze-w-centrum-fizjoterapii_1492577.htm'
         },
     ],
     specialization: ['physioterapy'],
@@ -445,7 +493,7 @@ export const masaz = {
             src: masazImage0,
             alt: 'Odprężający masaż karku',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-w-salonie-spa_8871855.htm#page=4&query=masa%C5%BC&position=22&from_view=search&track=sph'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-w-salonie-spa_8871855.htm'
         },
     ],
     specialization: ['physioterapy'],
@@ -465,7 +513,7 @@ export const kinesiotaping = {
             src: kinesiotapingImage0,
             alt: 'Plastrowanie dynamiczne nogi',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/mloda-kobieta-w-stroju-sportowym-cwiczaca-cwiczenie-podczas-sesji-fizjoterapeutycznej_18843285.htm#query=Kinesiotaping&position=0&from_view=search&track=sph'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/mloda-kobieta-w-stroju-sportowym-cwiczaca-cwiczenie-podczas-sesji-fizjoterapeutycznej_18843285.htm'
         }
     ],
     specialization: [
@@ -494,8 +542,8 @@ export const plastykaPowiek = {
     ],
     effects: [
         {
-            designation: 'effectsPlastykaPowiekLg0',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et tempor elit, quis sagittis tellus. Donec iaculis nisi in ipsum dictum ultrices. Nunc accumsan justo vestibulum erat lobortis dignissim. Sed tellus mauris, bibendum nec pellentesque ut, imperdiet id felis.',
+            alt: 'Efekt zabiegu plastyki powiek',
+            description: 'Efekt zabiegu plastyki powiek',
             original: {
                 src: effectsPlastykaPowiekLg0,
                 width: 900,
@@ -527,7 +575,7 @@ export const testySkorne = {
             src: testySkorneImage0,
             alt: 'Test reakcji alergicznej skóry na przedramieniu',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/test-reakcji-alergicznej-skory-na-ramieniu-osoby_19672574.htm#page=3&query=testy%20sk%C3%B3ry&position=15&from_view=search&track=ais#page=3&query=t&from_query=undefined&position=1&from_view=search&track=ais#position=15&page=3&query=testy%20sk%C3%B3ry'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/test-reakcji-alergicznej-skory-na-ramieniu-osoby_19672574.htm'
         },
     ],
     specialization: [
@@ -549,7 +597,7 @@ export const platkoweTestyKontaktowe = {
             src: platkoweTestyKontaktoweImage0,
             alt: 'Płatkowy test kontaktowy skóry pleców',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/reakcja-alergiczna-skory-na-plecach-osoby_19672630.htm#query=testy%20sk%C3%B3ry&position=45&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/reakcja-alergiczna-skory-na-plecach-osoby_19672630.htm'
         },
     ],
     specialization: [
@@ -571,7 +619,7 @@ export const odczulanie = {
             src: odczulanieImage0,
             alt: 'Odczulanie skóry na przedramieniu',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/test-reakcji-alergicznej-skory-na-ramieniu-osoby_19672578.htm#from_view=detail_serie#position=2'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/test-reakcji-alergicznej-skory-na-ramieniu-osoby_19672578.htm'
         }
     ],
     specialization: [
@@ -595,7 +643,7 @@ export const skleroterapia = {
             src: skleroterapiaImage0,
             alt: 'Zabieg zamykania rozszerzonych naczyń krwionośnych',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/chirurg-robi-zastrzykowi-w-zenskiego-cialo-koncepcja-liposukcji_1624924.htm#page=3&query=zastrzykwnog%C4%99&position=29&from_view=search&track=ais?log-in=email'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/chirurg-robi-zastrzykowi-w-zenskiego-cialo-koncepcja-liposukcji_1624924.htm'
         }
     ],
     specialization: [
@@ -617,7 +665,7 @@ export const laseroweUsuwanieZylakow = {
             src: laseroweUsuwanieZylakowImage0,
             alt: 'Kobieta masująca nogę',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/zblizenie-dloni-masuje-nogi_10582355.htm#query=%C5%BCy%C5%82a%20noga&position=0&from_view=search&track=ais'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/zblizenie-dloni-masuje-nogi_10582355.htm'
         }
     ],
     specialization: [
@@ -633,15 +681,15 @@ export const laseroweUsuwanieZylakow = {
 export const echoSerca = {
     id: '69d011cf-bd77-4910-95e2-6ba2234a0f21',
     treatment: 'echo-serca',
-    title: 'ECHO serca',
-    description: 'ECHO serca, czyli echokardiografia, to bezpieczne i nieinwazyjne badanie obrazowe serca, które wykorzystuje fale dźwiękowe o wysokiej częstotliwości do tworzenia obrazów struktur serca. Zabieg ten przeprowadza się za pomocą urządzenia zwanych echokardiografami, które emitują fale dźwiękowe przez specjalną sondę umieszczoną na klatce piersiowej pacjenta.',
+    title: 'Echo serca',
+    description: 'Echo serca, czyli echokardiografia, to bezpieczne i nieinwazyjne badanie obrazowe serca, które wykorzystuje fale dźwiękowe o wysokiej częstotliwości do tworzenia obrazów struktur serca. Zabieg ten przeprowadza się za pomocą urządzenia zwanych echokardiografami, które emitują fale dźwiękowe przez specjalną sondę umieszczoną na klatce piersiowej pacjenta.',
     path: '/treatment/cardiology/echo-serca',
     images: [
         {
-            src: null,
-            alt: '',
-            author: '',
-            href: ''
+            src: echoSercaImage0,
+            alt: 'Pacjent w trakcie badania serca',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/czlowiek-z-elektroda-na-ciele_3140810.htm'
         }
     ],
     specialization: [

@@ -207,7 +207,7 @@ const HeroSection = () => {
                                         >
                                             <Button
                                                 component={Link}
-                                                to={`/treatment`}
+                                                to={`/treatment/aesthetic-medicine`}
                                                 variant='contained'
                                                 color='primary'
                                                 size='large'
@@ -254,14 +254,14 @@ const HeroSection = () => {
                                         >
                                             <Button
                                                 component={Link}
-                                                to={`/team`}
+                                                to={`/team/cosmetology`}
                                                 variant='contained'
                                                 color='primary'
                                                 size='large'
                                                 fullWidth={isMd ? false : true}
                                                 endIcon={<ArrowForwardIcon />}
                                             >
-                                                Zobacz nasz zespół
+                                                Zobacz naszych specjalistów
                                             </Button>
                                         </Box>
                                     </Box>
