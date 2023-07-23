@@ -42,17 +42,17 @@ const StyledTableRow = styled(TableRow)(() => ({
 
 const tooltip = (title) => (
     <Tooltip title={title}>
-    <IconButton
-        sx={{
-            height: '12px',
-            width: '12px',
-            marginLeft: '8px',
-            color: '#008AC9'
-        }}
-    >
-      <InfoIcon fontSize='small' />
-    </IconButton>
-  </Tooltip>
+        <IconButton
+            sx={{
+                height: '12px',
+                width: '12px',
+                marginLeft: '8px',
+                color: '#008AC9'
+            }}
+        >
+            <InfoIcon fontSize='small' />
+        </IconButton>
+    </Tooltip>
 );
 
 const Table16 = () => {

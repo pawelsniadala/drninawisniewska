@@ -77,8 +77,11 @@ const TreatmentMezoterapiaIglowaPartial = () => {
                                 <Typography className='paragraph'>
                                     Mezoterapia igłowa wykorzystuje dwa różne mechanizmy działania. Pierwszym z nich jest  <strong>ogniskowe gojenie się skóry i jej samoregeneracja po licznych nakłuciach, do których dochodzi w trakcie zabiegu</strong>. Drugim zaś jest efekt <strong>działania substancji wstrzykiwanych w skórę</strong>. Wprowadzany lek bądź inna substancja aktywna nadaje zabiegowi dodatkowych ukierunkowanych właściwości.
                                 </Typography>
-                                <Typography className='paragraph heading'>
-                                    <strong>Wskazania</strong>:
+                            </Box>
+
+                            <Box className='box-treatment'>
+                                <Typography variant={'h5'} className='header alternative'>
+                                    Wskazania
                                 </Typography>
                                 <Grid container spacing={0.5} marginBottom={2}>
                                     {[
@@ -103,8 +106,14 @@ const TreatmentMezoterapiaIglowaPartial = () => {
                                         />
                                     ))}
                                 </Grid>
+                            </Box>
+
+                            <Box className='box-treatment'>
+                                <Typography variant={'h5'} className='header alternative'>
+                                    Przeciwwskazania
+                                </Typography>
                                 <Typography className='paragraph'>
-                                    <strong>Przeciwwskazania</strong>: ciąża i laktacja, aktywne infekcje wirusowe lub bakteryjne, nadciśnienie tętnicze, choroby autoimmunologiczne, stany zapalne, uczulenie na stosowane substancje, zażywanie antykoagulantów, zażywanie doustnych kortykosteroidów, poważna egzema, łuszczyca, niestabilna cukrzyca, czynna choroba nowotworowa oraz okres do 5 lat od wyleczenia.
+                                    Ciąża i laktacja, aktywne infekcje wirusowe lub bakteryjne, nadciśnienie tętnicze, choroby autoimmunologiczne, stany zapalne, uczulenie na stosowane substancje, zażywanie antykoagulantów, zażywanie doustnych kortykosteroidów, poważna egzema, łuszczyca, niestabilna cukrzyca, czynna choroba nowotworowa oraz okres do 5 lat od wyleczenia.
                                 </Typography>
                             </Box>
                         </Box>

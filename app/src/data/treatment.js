@@ -12,13 +12,18 @@ import osoczeBogatopłytkoweImage0 from '../assets/treatment/aestheticMedicine/o
 import mezoterapiaIglowaImage0 from '../assets/treatment/aestheticMedicine/mezoterapiaIglowa/mezoterapiaIglowa0.jpg';
 import zamykanieNaczynekILikwidacjaPrzebarwienImage0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/zamykanieNaczynekILikwidacjaPrzebarwien0.jpg';
     // efekty
-    import effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0.png'
+    import effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0.png';
+    import effectsZamykanieNaczynekILikwidacjaPrzebarwienSm1 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwienSm1.jpg';
+    import effectsZamykanieNaczynekILikwidacjaPrzebarwienLg1 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwienLg1.jpg';
 import sonoQueenTechnologiaHifuImage0 from '../assets/treatment/aestheticMedicine/sonoQueenTechnologiaHifu/sonoQueenTechnologiaHifu0.jpg';
 
 // ---------------------------------------------------
 
 // KOSMETOLOGIA
 import peelingMedycznyImage0 from '../assets/treatment/cosmetology/peelingMedyczny/peelingMedyczny0.jpg';
+    // efekty
+    import effectsPeelingMedycznySm0 from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedycznySm0.jpg';
+    import effectsPeelingMedycznyLg0 from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedycznyLg0.jpg';
 import epilacjaLaserowaImage0 from '../assets/treatment/cosmetology/epilacjaLaserowa/epilacjaLaserowa0.jpg';
     // efekty
     import effectsEpilacjaLaserowaSm0 from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowaSm0.jpg'
@@ -39,7 +44,8 @@ import kinesiotapingImage0 from '../assets/treatment/physioterapy/kinesiotaping/
 // CHIRURGIA PLASTYCZNA
 import plastykaPowiekImage0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/plastykaPowiek0.jpg';
     //efekty
-    import effectsPlastykaPowiekLg0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/effects/effectsPlastykaPowiekLg0.png'
+    import effectsPlastykaPowiekSm0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/effects/effectsPlastykaPowiekSm0.png';
+    import effectsPlastykaPowiekLg0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/effects/effectsPlastykaPowiekLg0.png';
 
 // ---------------------------------------------------
 
@@ -313,6 +319,18 @@ export const zamykanieNaczynekILikwidacjaPrzebarwien = {
             thumbnail: {
                 src: effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0
             }
+        },
+        {
+            alt: 'Efekt zabiegu zamykania naczynek',
+            description: 'Efekt zabiegu zamykania naczynek',
+            original: {
+                src: effectsZamykanieNaczynekILikwidacjaPrzebarwienLg1,
+                width: 1240,
+                height: 1240
+            },
+            thumbnail: {
+                src: effectsZamykanieNaczynekILikwidacjaPrzebarwienSm1
+            }
         }
     ],
     specialization: [
@@ -366,6 +384,20 @@ export const peelingMedyczny = {
             alt: 'Kosmetolog nakładający peeling na twarz',
             author: 'Freepik',
             href: 'https://pl.freepik.com/darmowe-zdjecie/kosmetyczka-pedzelkiem-naklada-biala-maseczke-nawilzajaca-na-twarz-mlodej-klientki-w-gabinecie-kosmetycznym-spa_13340680.htm'
+        }
+    ],
+    effects: [
+        {
+            alt: 'Efekt zabiegu peelingu medycznego',
+            description: 'Efekt zabiegu peelingu medycznego',
+            original: {
+                src: effectsPeelingMedycznyLg0,
+                width: 2560,
+                height: 3543
+            },
+            thumbnail: {
+                src: effectsPeelingMedycznySm0
+            }
         }
     ],
     specialization: [
@@ -546,11 +578,11 @@ export const plastykaPowiek = {
             description: 'Efekt zabiegu plastyki powiek',
             original: {
                 src: effectsPlastykaPowiekLg0,
-                width: 900,
-                height: 720
+                width: 1665,
+                height: 1424
             },
             thumbnail: {
-                src: effectsPlastykaPowiekLg0
+                src: effectsPlastykaPowiekSm0
             }
         }
     ],

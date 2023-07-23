@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -19,6 +22,24 @@ import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
 const TreatmentPeelingMedycznyPartial = () => {
+    useEffect(() => {
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('photoswipe'),
+            padding: {
+                top: 50,
+                bottom: 50
+            }
+        });
+
+        const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+            type: 'below'
+        });
+
+        lightbox.init(captionPlugin);
+    }, []);
+
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -134,6 +155,37 @@ const TreatmentPeelingMedycznyPartial = () => {
                                 <Typography className='paragraph'>
                                     Przeciwwskazania: stany zapalne skóry, aktywne infekcje bakteryjne lub wirusowe, przerwana ciągłość naskórka, aktywna opryszczka, przyjmowanie retinoidów (a także 6 miesięcy od ostatniej dawki), fototerapia, ciąża lub karmienie piersią, bezpośrednio po depilacji,  choroby autoimmunologiczne, radioterapia, bliznowce lub blizny przerostowe, podrażniona skóra, świeża opalenizna.
                                 </Typography>
+                            </Box>
+
+                            <Box className='box-treatment'>
+                                <Typography variant={'h5'} className='header alternative'>
+                                    Efekty zabiegu
+                                </Typography>
+                                <Box className="pswp-gallery" id='my-gallery'>
+                                    {peelingMedyczny.effects.map((item, index) => (
+                                        <a key={`my-gallery-${index}`}
+                                            href={item.original.src}
+                                            data-pswp-width={item.original.width}
+                                            data-pswp-height={item.original.height}
+                                            data-cropped='true'
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <Box className='box'>
+                                                <LazyLoadImage
+                                                    src={item.thumbnail.src}
+                                                    alt={item.alt}
+                                                    height='100%'
+                                                    width='100%'
+                                                    effect='blur'
+                                                />
+                                                <span className="pswp-caption-content">
+                                                    {item.description}
+                                                </span>
+                                            </Box>
+                                        </a>
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
 

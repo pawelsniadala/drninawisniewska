@@ -74,10 +74,13 @@ const TreatmentOsoczeBogatopłytkowePartial = () => {
                                         imageHref={osoczeBogatopłytkowe.images[0].href}
                                     />
                                 </Box>
-                                <Typography className='paragraph heading'>
-                                    <strong>Wskazania</strong>:
+                            </Box>
+
+                            <Box className='box-treatment'>
+                                <Typography variant={'h5'} className='header alternative'>
+                                    Wskazania
                                 </Typography>
-                                <Grid container spacing={0.5} marginBottom={2}>
+                                <Grid container spacing={0.5}>
                                     {[
                                         'rewitalizacja skóry twarzy,',
                                         'skóra zmęczona, bez napięcia,',
@@ -104,8 +107,14 @@ const TreatmentOsoczeBogatopłytkowePartial = () => {
                                         />
                                     ))}
                                 </Grid>
+                            </Box>
+
+                            <Box className='box-treatment'>
+                                <Typography variant={'h5'} className='header alternative'>
+                                    Przeciwwskazania
+                                </Typography>
                                 <Typography className='paragraph'>
-                                    <strong>Przeciwwskazania</strong>: nadwrażliwość na substancje preparatu, infekcje w polu zabiegowym, miastenia rzekomoporaźna, zespół Lamberta-Eatona, stwardnienie boczne zanikowe, wszelkie zaburzenia przewodnictwa nerwowo-mięśniowego.
+                                    Nadwrażliwość na substancje preparatu, infekcje w polu zabiegowym, miastenia rzekomoporaźna, zespół Lamberta-Eatona, stwardnienie boczne zanikowe, wszelkie zaburzenia przewodnictwa nerwowo-mięśniowego.
                                 </Typography>
                             </Box>
                         </Box>

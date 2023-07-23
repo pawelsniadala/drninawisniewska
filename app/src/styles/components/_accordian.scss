@@ -7,27 +7,61 @@
     padding: 0 0 12px 0;
     color: #535353; // TODO
     font-size: 15.5px; // TODO
+
 }
 
 .accordion-item {
     border: none;
     border-bottom: 1px solid #dadce0;
 
+    &:first-child {
+        .accordion-header {
+            .accordion-button {
+                padding-top: 0;
+            }
+        }
+    }
+
     &:last-child {
         border-bottom: none;
+
+        // .accordion-header {
+        //     .accordion-button {
+        //         &.collapsed {
+        //             padding-bottom: 0;
+        //             transition: padding-bottom 0.5s;
+
+        //         }
+        //     }
+        // }
+
+        .accordion-body {
+            padding-bottom: 0;
+        }
     }
 }
 
 .accordion-button {
     padding: 12px 0;
 
+
+
     .accordion-heading {
+        // font-size: 15.5px;
+        // text-transform: none;
+        // font-family: 'Roboto', sans-serif;
+        // letter-spacing: 0.00938em;
+        // color: #535353;
+        // transition: color 0.3s ease-in-out;
+
+
         font-size: 15.5px;
-        text-transform: none;
-        font-family: 'Roboto', sans-serif;
-        letter-spacing: 0.00938em;
+        font-family: "Roboto", sans-serif;
         color: #535353;
-        transition: color 0.3s ease-in-out;
+        font-weight: 400;
+        // margin-bottom: 10px;
+        letter-spacing: 0.00538em;
+        // line-height: 1.6;
     }
 }
 
@@ -35,9 +69,9 @@
     background-image: url('data:image/svg+xml,\00003csvg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">\00003cpath fill="rgba(0,0,0,.54)" d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z">\00003c/path>\00003c/svg>') !important;
 }
 
-.accordion-button:not(.collapsed):after {
-    filter: invert(61%) sepia(79%) saturate(449%) hue-rotate(357deg) brightness(85%) contrast(81%);
-}
+// .accordion-button:not(.collapsed):after {
+//     filter: invert(61%) sepia(79%) saturate(449%) hue-rotate(357deg) brightness(85%) contrast(81%);
+// }
 
 .accordion-item:first-of-type {
     border-top-left-radius: 0;
@@ -63,9 +97,9 @@
     background-color: transparent;
     box-shadow: none;
 
-    .accordion-heading {
-        color: #D29A3E;
-    }
+    // .accordion-heading {
+    //     color: #D29A3E;
+    // }
 }
 
 .accordion-button:focus {
