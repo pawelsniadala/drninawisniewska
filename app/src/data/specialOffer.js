@@ -4,6 +4,8 @@ import specialOffer3 from '../assets/specialOffer/specialOffer3.jpg';
 import specialOffer4 from '../assets/specialOffer/specialOffer4.jpg';
 import specialOffer5 from '../assets/specialOffer/specialOffer5.jpg';
 import specialOffer6 from '../assets/specialOffer/specialOffer6.jpg';
+import specialOffer7 from '../assets/specialOffer/specialOffer7.jpg';
+import specialOffer8 from '../assets/specialOffer/specialOffer8.jpg';
 
 export const article1 = {
     image: specialOffer1,
@@ -62,6 +64,28 @@ export const article5 = {
 
 export const article6 = {
     image: specialOffer6,
+    title: 'Twoje remedium na ciężkość nóg',
+    date: '26 kwietnia 2023',
+    description1: 'Najczęściej obrzęki pojawiają się w kończynach dolnych po wielogodzinnej pracy w pozycji siedzącej 🪑 lub stojącej, w trakcie ciąży 🤰🏼czy podczas długich podróży. ✈️ Oprócz widocznej opuchlizny towarzyszy nam uczucie ciężkości nóg, ograniczonej ruchomości, a także ogólne zmęczenie i rozdrażnienie.',
+    description2: 'Skąd w ogóle pojawiają się obrzęki łydek? 🤔 Limfa oraz krew z dystalnych części kończyny dolnej musi pokonać bowiem siły grawitacji. Układ limfatyczny oraz żyły wykorzystują więc tzw. “pompę mięśniową” czyli siłę pracy naszych mięśni nóg. W momencie kiedy mięśnie są w stanie spoczynku np przy pracy przy biurku, nie kurczą się. Odpływ limfy zostaje zahamowany. 🔄 Wynikiem tego są właśnie obrzęki nóg. Oczywiście na powstawanie obrzęków mają wpływ także dodatkowe obciążenia organizmu jak np.: zaburzenia układu krążenia, choroby tarczycy, cukrzyca, stany po mastektomii.',
+    description3: 'Co zatem zrobić, aby pozbyć się zastojów limfatycznych? 🤔 Możemy wspomóc krążenie poprzez drenaż limfatyczny.',
+    description4: '🤎 Drenaż limfatyczny, często nazywany masażem limfatycznym, to specjalny rodzaj masażu niwelujący uciążliwe obrzęki. Powolne ruchy z technik głaskania, rozcierania i ugniatania o określonej sile przepychają limfę i udrażniają węzły chłonne. Taki masaż kompresyjny nie tylko likwiduje obrzęki ale także poprawia metabolizm i przyśpiesza usuwanie toksyn z organizmu. 😌',
+    description5: 'Ręczny masaż limfatyczny w naszej Klinice wykonuje nasza fizjoterapeutka mgr Milena Juźwiak. 👩🏻‍⚕️',
+};
+
+export const article7 = {
+    image: specialOffer7,
+    title: 'Poznaj nici liftingujące',
+    date: '29 czerwca 2023',
+    description1: 'Nasza skóra z wiekiem traci swoją pierwotną sprężystość i jędrność. 😔 Ulega towarzyszącej nam grawitacji i upływowi czasu. W efekcie rysy twarzy ulegają zatarciu, a nadmiar wiotkiej skóry zaczyna być widoczny. I tu z pomocą przychodzą nam nici liftingujące. 💙',
+    description2: 'Nici to małoinwazyjna, nowoczesna i skuteczna metoda niwelowania oznak starzenia. 🤩 Tworzą one naturalne „rusztowanie”, które unosi i podtrzymuje tkanki. Pierwsze efekty pozabiegowe widoczne są więc od razu po zabiegu. Ponadto nici indukują proces przebudowy skóry poprzez pobudzenie fibroblastów. ⏱ Po około 10-14 dniach rozpoczyna się proces syntezy nowych włókien kolagenu i elastyny, dzięki czemu skóra zagęszcza się, wzmacnia i napina. 💙',
+    description3: '👉🏻 Nici liftingujące są także mniej kłopotliwą i inwazyjną alternatywą dla chirurgicznego liftingu. Wyróżniamy dwa rodzaje nici: rewitalizujące i liftingujące właściwe (haczykowate). Nasza Klinika oferuje oba typy nici. 😌',
+    description4: 'Wskazania: 🔶 utrata napięcia i jędrności skóry, 🔶 zmarszczki na twarzy, szyi i dekolcie, 🔶 opadające policzki, kąciki ust ikąciki powieki, 🔶 worki pod oczami, 🔶 asymetria brwi, 🔶 asymetria owalu twarzy, 🔶 linie marionetki, 🔶 podwójny podbródek, 🔶 zmiany zanikowe na dłoniach',
+    description5: 'Osiągane efekty pozabiegowe są kwestią indywidualną, uzyskiwane w zależności od uwarunkowań genetycznych, stanu wyjściowego skóry oraz trybu życia prowadzonego przez pacjenta.',
+};
+
+export const article8 = {
+    image: specialOffer8,
     title: 'Lipcowa oferta specjalna',
     date: '3 lipca 2023',
     description1: 'Lato w pełni. 🌞 Czas urlopów, festiwali, wesel… Chcemy zaprezentować się z jak najlepszej strony. Nic dziwnego! A my chcemy Wam to ułatwić! ☺️Z tego powodu przygotowaliśmy dla Was specjalną ofertę promocyjną. 🌺',
@@ -72,6 +96,8 @@ export const article6 = {
 };
 
 export const specialOffer = [
+    { ...article8 },
+    { ...article7 },
     { ...article6 },
     { ...article5 },
     { ...article4 },

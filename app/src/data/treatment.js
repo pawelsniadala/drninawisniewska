@@ -12,9 +12,10 @@ import osoczeBogatopłytkoweImage0 from '../assets/treatment/aestheticMedicine/o
 import mezoterapiaIglowaImage0 from '../assets/treatment/aestheticMedicine/mezoterapiaIglowa/mezoterapiaIglowa0.jpg';
 import zamykanieNaczynekILikwidacjaPrzebarwienImage0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/zamykanieNaczynekILikwidacjaPrzebarwien0.jpg';
     // efekty
-    import effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0.png';
-    import effectsZamykanieNaczynekILikwidacjaPrzebarwienSm1 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwienSm1.jpg';
-    import effectsZamykanieNaczynekILikwidacjaPrzebarwienLg1 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwienLg1.jpg';
+    import effectsZamykanieNaczynekILikwidacjaPrzebarwien0Lg from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien0Lg.png';
+    import effectsZamykanieNaczynekILikwidacjaPrzebarwien0Sm from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien0Sm.png';
+    import effectsZamykanieNaczynekILikwidacjaPrzebarwien1Sm from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien1Sm.jpg';
+    import effectsZamykanieNaczynekILikwidacjaPrzebarwien1Lg from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien1Lg.jpg';
 import sonoQueenTechnologiaHifuImage0 from '../assets/treatment/aestheticMedicine/sonoQueenTechnologiaHifu/sonoQueenTechnologiaHifu0.jpg';
 
 // ---------------------------------------------------
@@ -22,12 +23,16 @@ import sonoQueenTechnologiaHifuImage0 from '../assets/treatment/aestheticMedicin
 // KOSMETOLOGIA
 import peelingMedycznyImage0 from '../assets/treatment/cosmetology/peelingMedyczny/peelingMedyczny0.jpg';
     // efekty
-    import effectsPeelingMedycznySm0 from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedycznySm0.jpg';
-    import effectsPeelingMedycznyLg0 from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedycznyLg0.jpg';
+    import effectsPeelingMedyczny0Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny0Sm.jpg';
+    import effectsPeelingMedyczny0Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny0Lg.jpg';
+    import effectsPeelingMedyczny1Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny1Sm.png';
+    import effectsPeelingMedyczny1Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny1Lg.png';
 import epilacjaLaserowaImage0 from '../assets/treatment/cosmetology/epilacjaLaserowa/epilacjaLaserowa0.jpg';
     // efekty
-    import effectsEpilacjaLaserowaSm0 from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowaSm0.jpg'
-    import effectsEpilacjaLaserowaLg0 from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowaLg0.jpg'
+    import effectsEpilacjaLaserowa0Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa0Sm.jpg';
+    import effectsEpilacjaLaserowa0Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa0Lg.jpg';
+    import effectsEpilacjaLaserowa1Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa1Sm.png';
+    import effectsEpilacjaLaserowa1Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa1Lg.png';
 
 import masazProzniowyImage0 from '../assets/treatment/cosmetology/masazProzniowy/masazProzniowy0.jpg';
 import ultradzwiekiIFalaRadiowaImage0 from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/ultradzwiekiIFalaRadiowa0.jpg';
@@ -312,24 +317,24 @@ export const zamykanieNaczynekILikwidacjaPrzebarwien = {
             alt: 'Efekt zabiegu zamykania naczynek',
             description: 'Efekt zabiegu zamykania naczynek',
             original: {
-                src: effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0,
-                width: 800,
-                height: 800
+                src: effectsZamykanieNaczynekILikwidacjaPrzebarwien0Lg,
+                width: 732,
+                height: 732
             },
             thumbnail: {
-                src: effectsZamykanieNaczynekILikwidacjaPrzebarwienLg0
+                src: effectsZamykanieNaczynekILikwidacjaPrzebarwien0Sm
             }
         },
         {
             alt: 'Efekt zabiegu zamykania naczynek',
             description: 'Efekt zabiegu zamykania naczynek',
             original: {
-                src: effectsZamykanieNaczynekILikwidacjaPrzebarwienLg1,
+                src: effectsZamykanieNaczynekILikwidacjaPrzebarwien1Lg,
                 width: 1240,
                 height: 1240
             },
             thumbnail: {
-                src: effectsZamykanieNaczynekILikwidacjaPrzebarwienSm1
+                src: effectsZamykanieNaczynekILikwidacjaPrzebarwien1Sm
             }
         }
     ],
@@ -391,12 +396,24 @@ export const peelingMedyczny = {
             alt: 'Efekt zabiegu peelingu medycznego',
             description: 'Efekt zabiegu peelingu medycznego',
             original: {
-                src: effectsPeelingMedycznyLg0,
+                src: effectsPeelingMedyczny0Lg,
                 width: 2560,
                 height: 3543
             },
             thumbnail: {
-                src: effectsPeelingMedycznySm0
+                src: effectsPeelingMedyczny0Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu peelingu medycznego',
+            description: 'Efekt zabiegu peelingu medycznego',
+            original: {
+                src: effectsPeelingMedyczny1Lg,
+                width: 1450,
+                height: 1450
+            },
+            thumbnail: {
+                src: effectsPeelingMedyczny1Sm
             }
         }
     ],
@@ -428,12 +445,24 @@ export const epilacjaLaserowa = {
             alt: 'Efekt zabiegu epilacji laserowej',
             description: 'Efekt zabiegu epilacji laserowej',
             original: {
-                src: effectsEpilacjaLaserowaLg0,
+                src: effectsEpilacjaLaserowa0Lg,
                 width: 2560,
                 height: 2560
             },
             thumbnail: {
-                src: effectsEpilacjaLaserowaSm0
+                src: effectsEpilacjaLaserowa0Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu epilacji laserowej',
+            description: 'Efekt zabiegu epilacji laserowej',
+            original: {
+                src: effectsEpilacjaLaserowa1Lg,
+                width: 1650,
+                height: 1650
+            },
+            thumbnail: {
+                src: effectsEpilacjaLaserowa1Sm
             }
         }
     ],
