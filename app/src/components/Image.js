@@ -5,6 +5,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 const Image = ({
+    imageSquare,
     imageSrc,
     imageAlt,
     imageHref,
@@ -15,7 +16,7 @@ const Image = ({
 
     return (
         <Box className='image'>
-            <Box className='lazy-load-image-wrapper'>
+            <Box className={`lazy-load-image-wrapper ${imageSquare && 'square'}`}>
                 <LazyLoadImage
                     className='lazy-load-image'
                     height={'100%'}

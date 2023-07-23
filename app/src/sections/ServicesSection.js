@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from "swiper";
 
 import Box from '@mui/material/Box';
@@ -79,7 +79,7 @@ const ServicesSection = () => {
                                         cardPathPrices={item.pathPrices}
                                         cardSpecialist={item.specialists}
                                         cardImage={item.image}
-                                        cardImageVisible={true}
+                                        // cardImageVisible={true}
                                     />
                                 </SwiperSlide>
                             ))}

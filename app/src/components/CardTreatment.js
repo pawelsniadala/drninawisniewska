@@ -6,21 +6,21 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
+// import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import CardMedia from '@mui/material/CardMedia';
-import AvatarGroup from '@mui/material/AvatarGroup';
-import Avatar from '@mui/material/Avatar';
+// import AvatarGroup from '@mui/material/AvatarGroup';
+// import Avatar from '@mui/material/Avatar';
 
 const CardTreatment = ({
     cardImage,
     cardImageVisible,
     cardTitle,
     cardDescription,
-    cardSpecialist,
+    // cardSpecialist,
     cardPath,
-    cardPathSpecialist,
-    cardPathPrices
+    // cardPathSpecialist,
+    // cardPathPrices
 }) => {
     return (
         <Box className='card-treatment'>
@@ -38,7 +38,7 @@ const CardTreatment = ({
                 </CardMedia>
                 <CardContent className='card-content'>
                     <Typography
-                        variant={'h6'}
+                        // variant={'h6'}
                         className='card-title'
                     >
                         {cardTitle}
@@ -46,7 +46,16 @@ const CardTreatment = ({
                     <Typography className='card-description'>
                         {cardDescription}
                     </Typography>
-                    {cardSpecialist && (
+                    <Button
+                        className='card-link'
+                        component={Link}
+                        to={cardPath}
+                        variant='outline'
+                        size='small'
+                    >
+                        Zobacz więcej
+                    </Button>
+                    {/* {cardSpecialist && (
                         <AvatarGroup className='card-avatar-group' max={7}>
                             {cardSpecialist.map((item, index) => (
                                 <Avatar
@@ -56,9 +65,9 @@ const CardTreatment = ({
                                 />
                             ))}
                         </AvatarGroup>
-                    )}
+                    )} */}
                 </CardContent>
-                <CardActions className='card-actions'>
+                {/* <CardActions className='card-actions'>
                     <Button
                         className='card-link'
                         component={Link}
@@ -77,7 +86,7 @@ const CardTreatment = ({
                     >
                         Cennik
                     </Button>
-                </CardActions>
+                </CardActions> */}
                 <Link to={cardPath} className='stretched-link' />
             </Card>
         </Box>

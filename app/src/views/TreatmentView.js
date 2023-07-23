@@ -10,7 +10,7 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 import Page from '../components/Page';
 import Container from '../components/Container';
-import TreatmentSpecializationPartial from './partials/treatment/TreatmentSpecializationPartial';
+import TreatmentListPartial from './partials/treatment/TreatmentListPartial';
 
 const TreatmentView = () => {
     const location = useLocation();
@@ -61,33 +61,33 @@ const TreatmentView = () => {
 
         switch(treatmentTab) {
             case 'treatment-dermatology':
-                return <TreatmentSpecializationPartial specialization='dermatology' />;
+                return <TreatmentListPartial specialization='dermatology' />;
             case 'treatment-aesthetic-medicine':
-                return <TreatmentSpecializationPartial specialization={specialization} />;
+                return <TreatmentListPartial specialization={specialization} />;
             case 'treatment-cosmetology':
-                return <TreatmentSpecializationPartial specialization={specialization} />;
+                return <TreatmentListPartial specialization={specialization} />;
             case 'treatment-physioterapy':
-                return <TreatmentSpecializationPartial specialization={specialization} />;
+                return <TreatmentListPartial specialization={specialization} />;
             case 'treatment-cosmetic-surgery':
-                return <TreatmentSpecializationPartial specialization={specialization} />;
+                return <TreatmentListPartial specialization={specialization} />;
             case 'treatment-allergology':
-                return <TreatmentSpecializationPartial specialization={specialization} />;
+                return <TreatmentListPartial specialization={specialization} />;
             // case 'treatment-usg':
-            //     return <TreatmentSpecializationPartial specialization={specialization} />;
+            //     return <TreatmentListPartial specialization={specialization} />;
             // case 'treatment-endocrinology':
-            //     return <TreatmentSpecializationPartial specialization={specialization} />;
+            //     return <TreatmentListPartial specialization={specialization} />;
             // case 'treatment-gynecology':
-            //     return <TreatmentSpecializationPartial specialization={specialization} />;
+            //     return <TreatmentListPartial specialization={specialization} />;
             // case 'treatment-orthopedics':
-            //     return <TreatmentSpecializationPartial specialization={specialization} />;
+            //     return <TreatmentListPartial specialization={specialization} />;
             case 'treatment-vascular-surgery':
-                return <TreatmentSpecializationPartial specialization={specialization} />;
+                return <TreatmentListPartial specialization={specialization} />;
             // case 'treatment-clinical-dietitian':
-            //     return <TreatmentSpecializationPartial specialization={specialization} />;
+            //     return <TreatmentListPartial specialization={specialization} />;
             // case 'treatment-rheumatology':
-            //     return <TreatmentSpecializationPartial specialization={specialization} />;
+            //     return <TreatmentListPartial specialization={specialization} />;
             case 'treatment-cardiology':
-                return <TreatmentSpecializationPartial specialization={specialization} />;
+                return <TreatmentListPartial specialization={specialization} />;
             default:
         }
     }

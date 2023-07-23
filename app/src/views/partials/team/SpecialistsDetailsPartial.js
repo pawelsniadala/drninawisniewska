@@ -211,6 +211,7 @@ const SpecialistsDetailsPartial = () => {
                                                 <Image
                                                     imageSrc={item.image}
                                                     imageAlt={item.title}
+                                                    imageSquare
                                                     noDescription
                                                 />
                                             </Box>
@@ -283,6 +284,7 @@ const SpecialistsDetailsPartial = () => {
                                             key={index}
                                             imageSrc={item.image}
                                             imageAlt={item.title}
+                                            imageSquare
                                             noDescription
                                         />
                                     ))}

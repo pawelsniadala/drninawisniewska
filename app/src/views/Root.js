@@ -26,8 +26,8 @@ import ServicesClinicalDietitianPartial from './partials/services/ServicesClinic
 import ServicesRheumatologyPartial from './partials/services/ServicesRheumatologyPartial';
 import ServicesCardiologyPartial from './partials/services/ServicesCardiologyPartial';
 import TreatmentView from './TreatmentView';
+import TreatmentListPartial from './partials/treatment/TreatmentListPartial';
 // DERMATOLOGIA
-import TreatmentSpecializationPartial from './partials/treatment/TreatmentSpecializationPartial';
 import TreatmentBadanieZnamionBarwnikowychPartial from './partials/treatment/dermatology/TreatmentBadanieZnamionBarwnikowychPartial';
 import TreatmentFototerapiaChorobSkoryPartial from './partials/treatment/dermatology/TreatmentFototerapiaChorobSkoryPartial';
 import TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial from './partials/treatment/dermatology/TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial';
@@ -131,7 +131,7 @@ const Root = () => (
                     <Route path='/services/rheumatology' element={<ServicesRheumatologyPartial />} />
                     <Route path='/services/cardiology' element={<ServicesCardiologyPartial />} />
                     <Route path='/treatment' element={<TreatmentView />}>
-                        <Route path=':specialization' element={<TreatmentSpecializationPartial />} />
+                        <Route path=':specialization' element={<TreatmentListPartial />} />
                     </Route>
                     {/* DERMATOLOGIA */}
                     <Route path='/treatment/dermatology/badanie-znamion-barwnikowych' element={<TreatmentBadanieZnamionBarwnikowychPartial />} />
