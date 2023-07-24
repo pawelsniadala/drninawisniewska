@@ -7,13 +7,19 @@ const PageTitle = ({ children }) => {
 
     const setTitle = useCallback(() => {
         switch(pathname) {
+            // HOME
             case '/':
                 return companyName;
+
+
+            // KLINIKA
             case '/clinic':
                 return `Klinika - ${companyName}`;
             case '/clinic/regulation':
                 return `Regulamin organizacyjny - ${companyName}`;
 
+
+            // SPECJALIZACJE
             case '/services':
                 return `Specjalizacje - ${companyName}`;
             case '/services/dermatology':
@@ -45,6 +51,92 @@ const PageTitle = ({ children }) => {
             case '/services/cardiology':
                 return `Kardiologia - ${companyName}`;
 
+
+            // ZABIEGI
+            // dermatologia
+            case '/treatment':
+                return `Zabiegi - ${companyName}`;
+            case '/treatment/dermatology/badanie-znamion-barwnikowych':
+                return `Badanie znamion barwnikowych - ${companyName}`;
+            case '/treatment/dermatology/fototerapia-chorob-skory':
+                return `Fototerapia chorób skóry - ${companyName}`;
+            case '/treatment/dermatology/usuniecie-zmian-skornych-elektrochirurgiczne':
+                return `Usunięcie zmian skórnych elektrochirurgiczne - ${companyName}`;
+
+            // medycyna estetyczna
+            case '/treatment/aesthetic-medicine':
+                return `Zabiegi - ${companyName}`;
+            case '/treatment/aesthetic-medicine/toksyna-botulinowa':
+                return `Toksyna botulinowa - ${companyName}`;
+            case '/treatment/aesthetic-medicine/stymulatory-tkankowe':
+                return `Stymulatory tkankowe - ${companyName}`;
+            case '/treatment/aesthetic-medicine/osocze-bogatopłytkowe':
+                return `Osocze bogatopłytkowe - ${companyName}`;
+            case '/treatment/aesthetic-medicine/laser-frakcyjny':
+                return `Laser frakcyjny - ${companyName}`;
+            case '/treatment/aesthetic-medicine/nici-rewitalizujace-i-liftingujace':
+                return `Nici rewitalizujące i liftingujące - ${companyName}`;
+            case '/treatment/aesthetic-medicine/mezoterapia-iglowa':
+                return `Mezoterapia igłowa - ${companyName}`;
+            case '/treatment/aesthetic-medicine/zamykanie-naczynek-i-likwidacja-przebarwien':
+                return `Zamykanie naczynek i likwidacja przebarwień - ${companyName}`;
+            case '/treatment/aesthetic-medicine/sonoqueen-technologia-hifu':
+                return `SonoQueen technologia HIFU - ${companyName}`;
+
+            // kosmetologia
+            case '/treatment/cosmetology':
+                return `Zabiegi - ${companyName}`;
+            case '/treatment/cosmetology/peeling-medyczny':
+                return `Peeling medyczny - ${companyName}`;
+            case '/treatment/cosmetology/epilacja-laserowa':
+                return `Epilacja laserowa - ${companyName}`;
+            case '/treatment/cosmetology/masaz-prozniowy':
+                return `Masaż próżniowy - ${companyName}`;
+            case '/treatment/cosmetology/ultradzwieki-i-fala-radiowa':
+                return `Ultradzwieki i fala radiowa - ${companyName}`;
+
+            // fizjoterapia
+            case '/treatment/physioterapy':
+                return `Zabiegi - ${companyName}`;
+            case '/treatment/physioterapy/rehabilitacja':
+                return `Rehabilitacja - ${companyName}`;
+            case '/treatment/physioterapy/masaz':
+                return `Masaż - ${companyName}`;
+            case '/treatment/physioterapy/kinesiotaping':
+                return `Kinesiotaping - ${companyName}`;
+
+            // chirurgia plastyczna
+            case '/treatment/cosmetic-surgery':
+                return `Zabiegi - ${companyName}`;
+            case '/treatment/cosmetic-surgery/plastyka-powiek':
+                return `Plastyka powiek - ${companyName}`;
+
+            // alergologia
+            case '/treatment/allergology':
+                return `Zabiegi - ${companyName}`;
+            case '/treatment/allergology/testy-skorne':
+                return `Testy skórne - ${companyName}`;
+            case '/treatment/allergology/platkowe-testy-kontaktowe':
+                return `Płatkowe testy kontaktowe - ${companyName}`;
+            case '/treatment/allergology/odczulanie':
+                return `Odczulanie - ${companyName}`;
+
+            // chirurgia naczyniowa
+            case '/treatment/vascular-surgery':
+                return `Zabiegi - ${companyName}`;
+            case '/treatment/vascular-surgery/skleroterapia':
+                return `Skleroterapia - ${companyName}`;
+            case '/treatment/vascular-surgery/laserowe-usuwanie-zylakow':
+                return `Laserowe usuwanie żylaków - ${companyName}`;
+
+            // kardiologia
+            case '/treatment/cardiology':
+                return `Zabiegi - ${companyName}`;
+            case '/treatment/cardiology/echo-serca':
+                return `Echo serca - ${companyName}`;
+
+
+            // CENNIK
             case '/prices':
                 return `Cennik - ${companyName}`;
             case '/prices/aesthetic-medicine':
@@ -74,8 +166,13 @@ const PageTitle = ({ children }) => {
             case '/prices/cardiology':
                 return `Cennik - ${companyName}`;
 
+
+            // PROMOCJE
             case '/special-offer':
                 return `Promocje - ${companyName}`;
+
+
+            // ZESPÓŁ
             case '/team':
                 return `Specjaliści - ${companyName}`;
             case '/team/dermatology':
@@ -159,6 +256,8 @@ const PageTitle = ({ children }) => {
             case '/team/cardiology/michal-radzio':
                 return `Michał Radzio - ${companyName}`;
 
+
+            // TECHNOLOGIA
             case '/technology':
                 return `Technologia - ${companyName}`;
             case '/technology/vectus':
@@ -185,6 +284,9 @@ const PageTitle = ({ children }) => {
                 return `Dermalight 500 - ${companyName}`;
             case '/technology/dermalight-1000-uva-uvb-311nm':
                 return `Dermalight 1000 UVA UVB 311nm - ${companyName}`;
+
+
+            // KONTAKT
             case '/contact':
                 return `Kontakt - ${companyName}`;
             default:
