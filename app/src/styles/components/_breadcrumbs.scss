@@ -1,7 +1,7 @@
 .MuiBreadcrumbs-root {
     display: flex;
     justify-content: flex-start;
-    padding-bottom: 1rem;
+    // padding-bottom: 1rem;
 
     .MuiBreadcrumbs-li {
         a {
@@ -34,6 +34,26 @@
 }
 
 .breadcrumb {
+    &.back {
+        ol li a {
+            // color: rgba(0, 0, 0, 0.55) !important;
+            // color: #D29A3E !important;
+            // border-radius: 8px;
+            font-weight: 400 !important;
+            // font-family: 'Roboto', sans-serif !important;
+            // margin-left: -1px;
+
+            &:hover {
+                // color: #D29A3E !important;
+            }
+
+            svg {
+                font-size: 14px;
+                margin-right: 3px;
+            }
+        }
+    }
+
     &.nav {
         @media (max-width: 991.98px) {
             display: none;

@@ -36,7 +36,10 @@ main {
 
             .nav-wrapper {
                 display: flex;
-                justify-content: space-between
+                justify-content: space-between;
+                align-items: center;
+
+                padding-bottom: 20px;
             }
         }
     }

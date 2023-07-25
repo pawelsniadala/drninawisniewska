@@ -16,6 +16,7 @@ import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 import Page from '../components/Page';
 import PricesDermatologyPartial from './partials/prices/PricesDermatologyPartial';
@@ -194,14 +195,9 @@ const PricesView = () => {
                 <Box className='view-header prices'>
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
-                            <Breadcrumbs
-                                className='breadcrumb back'
-                                aria-label='breadcrumb'
-                            >
-                                <Link
-                                    to='/'
-                                    aria-current='page'
-                                >
+                            <Breadcrumbs className='breadcrumb back' aria-label='breadcrumb'>
+                                <Link to='/' aria-current='page'>
+                                    <ArrowBackIcon />
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>

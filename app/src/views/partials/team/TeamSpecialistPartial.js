@@ -10,6 +10,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Alert from '@mui/material/Alert';
 import InfoIcon from '@mui/icons-material/Info';
 
@@ -145,6 +146,7 @@ const TeamSpecialistPartial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/team' aria-current='page'>
+                                    <ArrowBackIcon />
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>

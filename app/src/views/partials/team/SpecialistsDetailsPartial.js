@@ -5,6 +5,7 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
@@ -155,14 +156,9 @@ const SpecialistsDetailsPartial = () => {
                 <Box className='view-header services-aesthetic-medicine'>
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
-                            <Breadcrumbs
-                                className='breadcrumb back'
-                                aria-label='breadcrumb'
-                            >
-                                <Link
-                                    to={`${specialization === 'dermatology' ? '/team' : `/team/${specialization}`}`}
-                                    aria-current='page'
-                                >
+                            <Breadcrumbs className='breadcrumb back' aria-label='breadcrumb'>
+                                <Link to={`${specialization === 'dermatology' ? '/team' : `/team/${specialization}`}`} aria-current='page'>
+                                    <ArrowBackIcon />
                                     <Box>{setSpecialization()}</Box>
                                 </Link>
                             </Breadcrumbs>
@@ -200,8 +196,8 @@ const SpecialistsDetailsPartial = () => {
                         <Box className='specialists-description'>
                             {setSpecialist().map((item, index) => (
                                 <Box key={index}>
-                                    <Box className='box-specialists' style={{ marginTop: '-15px' }}>
-                                        <Typography className='paragraph' style={{ fontSize: '17px', color: 'rgba(0, 0, 0, 0.6)' }}>
+                                    <Box className='box-specialists' style={{ marginTop: '-12px' }}>
+                                        <Typography className='paragraph' style={{ fontSize: '17px', color: 'rgba(0, 0, 0, 0.5)' }}>
                                             <strong>{item.speciality}</strong>
                                         </Typography>
                                     </Box>

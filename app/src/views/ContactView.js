@@ -16,6 +16,7 @@ import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import SendIcon from '@mui/icons-material/Send';
@@ -94,14 +95,9 @@ const ContactView = () => {
                 <Box className='view-header'>
                     <Container className='header-wrapper'>
                         <Box className='nav-wrapper'>
-                            <Breadcrumbs
-                                className='breadcrumb back'
-                                aria-label='breadcrumb'
-                            >
-                                <Link
-                                    to='/'
-                                    aria-current='page'
-                                >
+                            <Breadcrumbs className='breadcrumb back' aria-label='breadcrumb'>
+                                <Link to='/' aria-current='page'>
+                                    <ArrowBackIcon />
                                     <Box>Home</Box>
                                 </Link>
                             </Breadcrumbs>

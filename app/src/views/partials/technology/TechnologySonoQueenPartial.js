@@ -29,6 +29,7 @@ const TechnologySonoQueenPartial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/technology' aria-current='page'>
+                                    <ArrowBackIcon />
                                     <Box>Technologia</Box>
                                 </Link>
                             </Breadcrumbs>

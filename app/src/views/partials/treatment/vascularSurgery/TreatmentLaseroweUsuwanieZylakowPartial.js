@@ -6,6 +6,7 @@ import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 import Page from '../../../../components/Page';
 import Container from '../../../../components/Container';
@@ -30,6 +31,7 @@ const TreatmentLaseroweUsuwanieZylakowPartial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/treatment/vascular-surgery' aria-current='page'>
+                                    <ArrowBackIcon />
                                     <Box>Chirurgia naczyniowa</Box>
                                 </Link>
                             </Breadcrumbs>

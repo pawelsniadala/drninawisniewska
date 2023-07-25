@@ -28,6 +28,7 @@ const TechnologyPhilipsUltrasonografAffiniti50Partial = () => {
                                 aria-label='breadcrumb'
                             >
                                 <Link to='/technology' aria-current='page'>
+                                    <ArrowBackIcon />
                                     <Box>Technologia</Box>
                                 </Link>
                             </Breadcrumbs>
