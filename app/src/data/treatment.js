@@ -4,6 +4,20 @@ import fototerapiaChorobSkoryImage0 from '../assets/treatment/dermatology/fotote
 import usuniecieZmianSkornychElektrochirurgiczneImage0 from '../assets/treatment/dermatology/usuniecieZmianSkornychElektrochirurgiczne/usuniecieZmianSkornychElektrochirurgiczne0.jpg';
 // ---------------------------------------------------
 // MEDYCYNA ESTETYCZNA
+import modelowanieUstImage0 from '../assets/treatment/aestheticMedicine/modelowanieUst/modelowanieUst0.jpg';
+    // efekty
+    import effectsModelowanieUst0Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst0Lg.png';
+    import effectsModelowanieUst0Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst0Sm.png';
+    import effectsModelowanieUst1Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst1Lg.png';
+    import effectsModelowanieUst1Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst1Sm.png';
+    import effectsModelowanieUst2Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst2Lg.png';
+    import effectsModelowanieUst2Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst2Sm.png';
+    import effectsModelowanieUst3Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst3Lg.png';
+    import effectsModelowanieUst3Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst3Sm.png';
+    import effectsModelowanieUst4Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst4Lg.png';
+    import effectsModelowanieUst4Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst4Sm.png';
+    import effectsModelowanieUst5Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst5Lg.png';
+    import effectsModelowanieUst5Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst5Sm.png';
 import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/toksynaBotulinowa0.jpg';
 import stymulatoryTkankoweImage0 from '../assets/treatment/aestheticMedicine/stymulatoryTkankowe/stymulatoryTkankowe0.jpg';
 import osoczeBogatopłytkoweImage0 from '../assets/treatment/aestheticMedicine/osoczeBogatopłytkowe/osoczeBogatopłytkowe0.jpg';
@@ -152,6 +166,106 @@ export const usuniecieZmianSkornychElektrochirurgiczne = {
 
 
 // MEDYCYNA ESTETYCZNA
+export const modelowanieUst = {
+    id: 'e38025e7-4e87-4141-a208-853f3dd7ed68',
+    treatment: 'modelowanie-ust',
+    title: 'Modelowanie ust',
+    description: 'Modelowanie i powiększanie czerwieni wargowej z wykorzystaniem kwasu hialuronowego to wciąż jeden z bardziej popularnych zabiegów medycyny estetycznej. Podając preparat z kwasem hialuronowym w strategiczne miejsca jesteśmy w stanie nie tylko uwydatnić i wypełnić usta, ale także zniwelować asymetrię, zredukować dysproporcję między wargą górną a dolną oraz nawilżyć przesuszoną czerwień wargową. Kwas hialuronowy wykazuje bowiem właściwości higroskopijne, czyli wiążące wodę. Dzięki czemu usta natychmiast stają się pełniejsze, mocniej nawilżone i bardziej sprężyste.',
+    path: '/treatment/aesthetic-medicine/modelowanie-ust',
+    images: [
+        {
+            src: modelowanieUstImage0,
+            alt: 'Modelowanie ust',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/zamyka-up-medyczny-botox-zastrzyk-w-wargach-zabieg-na-twarz_8467340.htm'
+        }
+    ],
+    effects: [
+        {
+            alt: 'Efekt zabiegu modelowania ust',
+            description: 'Efekt zabiegu modelowania ust',
+            original: {
+                src: effectsModelowanieUst0Lg,
+                width: 1550,
+                height: 1550
+            },
+            thumbnail: {
+                src: effectsModelowanieUst0Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu modelowania ust',
+            description: 'Efekt modelowania ust',
+            original: {
+                src: effectsModelowanieUst1Lg,
+                width: 800,
+                height: 800
+            },
+            thumbnail: {
+                src: effectsModelowanieUst1Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu modelowania ust',
+            description: 'Efekt modelowania ust',
+            original: {
+                src: effectsModelowanieUst2Lg,
+                width: 1600,
+                height: 1600
+            },
+            thumbnail: {
+                src: effectsModelowanieUst2Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu modelowania ust',
+            description: 'Efekt modelowania ust',
+            original: {
+                src: effectsModelowanieUst3Lg,
+                width: 1600,
+                height: 1600
+            },
+            thumbnail: {
+                src: effectsModelowanieUst3Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu modelowania ust',
+            description: 'Efekt modelowania ust',
+            original: {
+                src: effectsModelowanieUst4Lg,
+                width: 1430,
+                height: 1430
+            },
+            thumbnail: {
+                src: effectsModelowanieUst4Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu modelowania ust',
+            description: 'Efekt modelowania ust',
+            original: {
+                src: effectsModelowanieUst5Lg,
+                width: 1600,
+                height: 1600
+            },
+            thumbnail: {
+                src: effectsModelowanieUst5Sm
+            }
+        },
+    ],
+    specialization: [
+        'aesthetic-medicine'
+    ],
+    specialist: [
+        'nina-wisniewska',
+        'klaudia-malottki',
+        'paulina-tatara',
+        'olga-lenartowicz-warakomska',
+        'katarzyna-zbronska'
+    ]
+};
+
 export const toksynaBotulinowa = {
     id: 'bf052d1e-0735-46aa-95c9-beedd15e7671',
     treatment: 'toksyna-botulinowa',
@@ -768,6 +882,7 @@ export const treatment = [
     { ...usuniecieZmianSkornychElektrochirurgiczne },
 
     // MEDYCYNA ESTETYCZNA
+    { ...modelowanieUst },
     { ...toksynaBotulinowa },
     { ...stymulatoryTkankowe },
     { ...osoczeBogatopłytkowe },

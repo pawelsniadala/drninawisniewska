@@ -38,8 +38,9 @@ export const ninaWisniewska = {
     treatment: [
         'badanie-znamion-barwnikowych',
         'fototerapia-chorob-skory',
+        'modelowanie-ust',
         'toksyna-botulinowa',
-        'mezoterapia-iglowa'
+        'mezoterapia-iglowa',
     ]
 };
 
@@ -198,6 +199,7 @@ export const klaudiaMalottki = {
         'aesthetic-medicine'
     ],
     treatment: [
+        'modelowanie-ust',
         'toksyna-botulinowa',
         'stymulatory-tkankowe',
         'osocze-bogatopłytkowe',
@@ -270,6 +272,7 @@ export const paulinaTatara = {
         'badanie-znamion-barwnikowych',
         'fototerapia-chorob-skory',
         'usuniecie-zmian-skornych-elektrochirurgiczne',
+        'modelowanie-ust',
         'toksyna-botulinowa',
         'stymulatory-tkankowe',
         'mezoterapia-iglowa',
@@ -314,6 +317,7 @@ export const olgaLenartowiczWarakomska = {
         'aesthetic-medicine'
     ],
     treatment: [
+        'modelowanie-ust',
         'toksyna-botulinowa',
         'stymulatory-tkankowe',
         'osocze-bogatopłytkowe',
@@ -342,6 +346,7 @@ export const katarzynaZbronska = {
         'badanie-znamion-barwnikowych',
         'fototerapia-chorob-skory',
         'usuniecie-zmian-skornych-elektrochirurgiczne',
+        'modelowanie-ust',
         'toksyna-botulinowa',
         'stymulatory-tkankowe',
         'osocze-bogatopłytkowe',

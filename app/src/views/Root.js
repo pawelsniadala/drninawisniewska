@@ -25,6 +25,7 @@ import ServicesVascularSurgeryPartial from './partials/services/ServicesVascular
 import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
 import ServicesRheumatologyPartial from './partials/services/ServicesRheumatologyPartial';
 import ServicesCardiologyPartial from './partials/services/ServicesCardiologyPartial';
+// ZABIEGI
 import TreatmentView from './TreatmentView';
 import TreatmentListPartial from './partials/treatment/TreatmentListPartial';
 // DERMATOLOGIA
@@ -32,6 +33,7 @@ import TreatmentBadanieZnamionBarwnikowychPartial from './partials/treatment/der
 import TreatmentFototerapiaChorobSkoryPartial from './partials/treatment/dermatology/TreatmentFototerapiaChorobSkoryPartial';
 import TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial from './partials/treatment/dermatology/TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial';
 // MEDYCYNA ESTETYCZNA
+import TreatmentModelowanieUstPartial from './partials/treatment/aestheticMedicine/TreatmentModelowanieUstPartial';
 import TreatmentToksynaBotulinowaPartial from './partials/treatment/aestheticMedicine/TreatmentToksynaBotulinowaPartial';
 import TreatmentStymulatoryTkankowePartial from './partials/treatment/aestheticMedicine/TreatmentStymulatoryTkankowePartial';
 import TreatmentOsoczeBogatopłytkowePartial from './partials/treatment/aestheticMedicine/TreatmentOsoczeBogatopłytkowePartial';
@@ -138,6 +140,7 @@ const Root = () => (
                     <Route path='/treatment/dermatology/fototerapia-chorob-skory' element={<TreatmentFototerapiaChorobSkoryPartial />} />
                     <Route path='/treatment/dermatology/usuniecie-zmian-skornych-elektrochirurgiczne' element={<TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial />} />
                     {/* MEDYCYNA ESTETYCZNA */}
+                    <Route path='/treatment/aesthetic-medicine/modelowanie-ust' element={<TreatmentModelowanieUstPartial />} />
                     <Route path='/treatment/aesthetic-medicine/toksyna-botulinowa' element={<TreatmentToksynaBotulinowaPartial />} />
                     <Route path='/treatment/aesthetic-medicine/stymulatory-tkankowe' element={<TreatmentStymulatoryTkankowePartial />} />
                     <Route path='/treatment/aesthetic-medicine/osocze-bogatopłytkowe' element={<TreatmentOsoczeBogatopłytkowePartial />} />
