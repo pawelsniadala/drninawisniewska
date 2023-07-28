@@ -66,6 +66,8 @@ const PageTitle = ({ children }) => {
             // medycyna estetyczna
             case '/treatment/aesthetic-medicine':
                 return `Zabiegi - ${companyName}`;
+            case '/treatment/aesthetic-medicine/modelowanie-ust':
+                return `Modelowanie ust - ${companyName}`;
             case '/treatment/aesthetic-medicine/toksyna-botulinowa':
                 return `Toksyna botulinowa - ${companyName}`;
             case '/treatment/aesthetic-medicine/stymulatory-tkankowe':

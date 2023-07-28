@@ -22,6 +22,9 @@ import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksy
 import stymulatoryTkankoweImage0 from '../assets/treatment/aestheticMedicine/stymulatoryTkankowe/stymulatoryTkankowe0.jpg';
 import osoczeBogatopłytkoweImage0 from '../assets/treatment/aestheticMedicine/osoczeBogatopłytkowe/osoczeBogatopłytkowe0.jpg';
 // import laserFrakcyjnyImage0 from '../assets/treatment/aestheticMedicine/laserFrakcyjny/laserFrakcyjny0.jpg';
+    // efekty
+    import effectsLaserFrakcyjny0Lg from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny0Lg.png';
+    import effectsLaserFrakcyjny0Sm from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny0Sm.png';
 // import niciRewitalizujaceILiftingujaceImage0 from '../assets/treatment/aestheticMedicine/niciRewitalizujaceILiftingujace/niciRewitalizujaceILiftingujace0.jpg';
 import mezoterapiaIglowaImage0 from '../assets/treatment/aestheticMedicine/mezoterapiaIglowa/mezoterapiaIglowa0.jpg';
 import zamykanieNaczynekILikwidacjaPrzebarwienImage0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/zamykanieNaczynekILikwidacjaPrzebarwien0.jpg';
@@ -349,6 +352,20 @@ export const laserFrakcyjny = {
             alt: '',
             author: '',
             href: ''
+        }
+    ],
+    effects: [
+        {
+            alt: 'Efekt zabiegu lasera frakcyjnego',
+            description: 'Efekt zabiegu lasera frakcyjnego',
+            original: {
+                src: effectsLaserFrakcyjny0Lg,
+                width: 1220,
+                height: 1220
+            },
+            thumbnail: {
+                src: effectsLaserFrakcyjny0Sm
+            }
         }
     ],
     specialization: [
