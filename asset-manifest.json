@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.1232f17b.css",
-    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.27708b2a.js",
+    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.0288ae64.js",
     "static/js/410.5b7ce3c3.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js",
     "static/js/981.6e541656.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js",
     "static/js/787.c1112931.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js",
@@ -21,18 +21,20 @@
     "static/media/effectsModelowanieUst2Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst2Lg.fc815eca6dbda49477f3.png",
     "static/media/effectsModelowanieUst4Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst4Lg.ac6e387e07bfc72e89f1.png",
     "static/media/effectsPeelingMedyczny1Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPeelingMedyczny1Lg.2ed5f212f3ea29eaf8f5.png",
-    "static/media/effectsLaserFrakcyjny0Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsLaserFrakcyjny0Lg.bcac7425a72377d6e1f4.png",
+    "static/media/effectsLaserFrakcyjny1Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsLaserFrakcyjny1Lg.2bd5f3683db66efbfd8b.png",
+    "static/media/effectsLaserFrakcyjny0Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsLaserFrakcyjny0Lg.d55a1e28e21f4a8ef798.png",
     "static/media/effectsZamykanieNaczynekILikwidacjaPrzebarwien1Lg.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsZamykanieNaczynekILikwidacjaPrzebarwien1Lg.eae1c731d0f0c6d570b5.jpg",
     "static/media/effectsEpilacjaLaserowa1Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsEpilacjaLaserowa1Lg.815d80419d61df2e0213.png",
     "static/media/effectsModelowanieUst1Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst1Lg.2294cd88593e5d1b2818.png",
     "static/media/effectsPeelingMedyczny1Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPeelingMedyczny1Sm.fbee3c41feca71216692.png",
     "static/media/effectsZamykanieNaczynekILikwidacjaPrzebarwien0Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsZamykanieNaczynekILikwidacjaPrzebarwien0Lg.ad4df3bd6e12fc50b5f3.png",
+    "static/media/effectsLaserFrakcyjny1Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsLaserFrakcyjny1Sm.17275afe2badcc7330fe.png",
     "static/media/effectsModelowanieUst3Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst3Sm.1e9d0a4d18346ae6faba.png",
     "static/media/katarzynaMysliwiecCzajkaImage.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/katarzynaMysliwiecCzajkaImage.1db03ee7a09a01b6b943.jpg",
     "static/media/effectsModelowanieUst4Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst4Sm.12a9ac99f7c1463e3f50.png",
+    "static/media/effectsLaserFrakcyjny0Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsLaserFrakcyjny0Sm.668498572b56660a72ea.png",
     "static/media/effectsModelowanieUst5Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst5Sm.fd9113f34a468a99b25d.png",
     "static/media/effectsModelowanieUst2Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst2Sm.1129b96aa677a2e99cdf.png",
-    "static/media/effectsLaserFrakcyjny0Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsLaserFrakcyjny0Sm.43fdfcd7732ac8a0e66e.png",
     "static/media/zamykanieNaczynekILikwidacjaPrzebarwien0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/zamykanieNaczynekILikwidacjaPrzebarwien0.f063f7bd542ae787984b.jpg",
     "static/media/effectsPlastykaPowiekSm0.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPlastykaPowiekSm0.c508b111c7f6e75bbd7f.png",
     "static/media/effectsModelowanieUst0Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst0Sm.5d2c571f1fd0980859fd.png",
@@ -143,13 +145,13 @@
     "static/media/slick.woff": "https://pawelsniadala.github.io/drninawisniewska/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://pawelsniadala.github.io/drninawisniewska/index.html",
     "main.1232f17b.css.map": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.1232f17b.css.map",
-    "main.27708b2a.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.27708b2a.js.map",
+    "main.0288ae64.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.0288ae64.js.map",
     "410.5b7ce3c3.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js.map",
     "981.6e541656.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js.map",
     "787.c1112931.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1232f17b.css",
-    "static/js/main.27708b2a.js"
+    "static/js/main.0288ae64.js"
   ]
 }
