@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.1232f17b.css",
-    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.d6ecc8e0.js",
+    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.a75feca6.js",
     "static/js/410.5b7ce3c3.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js",
     "static/js/981.6e541656.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js",
     "static/js/787.c1112931.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js",
+    "static/media/effectsPeelingMedyczny0Lg.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPeelingMedyczny0Lg.ff86be75fa3930a9ac66.jpg",
     "static/media/clinic3Original.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/clinic3Original.2d1b0cf0342a57093dac.jpg",
     "static/media/effectsEpilacjaLaserowa0Lg.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsEpilacjaLaserowa0Lg.4dec5e61afe3ad792a47.jpg",
     "static/media/clinic1Original.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/clinic1Original.56decfcb70121dc1063b.jpg",
@@ -13,7 +14,6 @@
     "static/media/clinic4Original.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/clinic4Original.3b62c198b31e40cbcd4c.jpg",
     "static/media/clinic5Original.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/clinic5Original.b586ab68994014234a0c.jpg",
     "static/media/effectsPeelingMedyczny2Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPeelingMedyczny2Lg.3cdce53051fe8a84361b.png",
-    "static/media/effectsPeelingMedyczny0Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPeelingMedyczny0Lg.8024f58ff6cb2e424670.png",
     "static/media/effectsModelowanieUst0Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst0Lg.dfc68729554b99fe783e.png",
     "static/media/effectsPlastykaPowiekLg0.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPlastykaPowiekLg0.2bb763e56903c642f996.png",
     "static/media/effectsModelowanieUst3Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst3Lg.0eb544d0350eb71b4a15.png",
@@ -35,7 +35,6 @@
     "static/media/effectsLaserFrakcyjny0Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsLaserFrakcyjny0Sm.f822411f691ba291971a.png",
     "static/media/effectsModelowanieUst2Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst2Sm.1129b96aa677a2e99cdf.png",
     "static/media/zamykanieNaczynekILikwidacjaPrzebarwien0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/zamykanieNaczynekILikwidacjaPrzebarwien0.f063f7bd542ae787984b.jpg",
-    "static/media/effectsPeelingMedyczny0Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPeelingMedyczny0Sm.5a2632a7ac38921889b1.png",
     "static/media/effectsPlastykaPowiekSm0.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPlastykaPowiekSm0.c508b111c7f6e75bbd7f.png",
     "static/media/effectsModelowanieUst0Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst0Sm.5d2c571f1fd0980859fd.png",
     "static/media/effectsModelowanieUst1Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst1Sm.aa3a001276fb1d3c6d3a.png",
@@ -79,6 +78,7 @@
     "static/media/servicesClinicalDietitian0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/servicesClinicalDietitian0.66208f8cbe900bf97d58.jpg",
     "static/media/clinic2Thumbnail.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/clinic2Thumbnail.790bc9b21acd7e2e1af0.jpg",
     "static/media/platkoweTestyKontaktowe0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/platkoweTestyKontaktowe0.930d5c65d4c00658cf74.jpg",
+    "static/media/effectsPeelingMedyczny0Sm.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPeelingMedyczny0Sm.89248502b7f41a4ea524.jpg",
     "static/media/clinic4Thumbnail.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/clinic4Thumbnail.b5f17d2f08e4204a6534.jpg",
     "static/media/servicesGynecology0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/servicesGynecology0.da3c59e8e1f10b38ba7a.jpg",
     "static/media/agataSkwerekSzewczykImage.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/agataSkwerekSzewczykImage.a222e39ee29547e45354.jpg",
@@ -145,13 +145,13 @@
     "static/media/slick.woff": "https://pawelsniadala.github.io/drninawisniewska/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://pawelsniadala.github.io/drninawisniewska/index.html",
     "main.1232f17b.css.map": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.1232f17b.css.map",
-    "main.d6ecc8e0.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.d6ecc8e0.js.map",
+    "main.a75feca6.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.a75feca6.js.map",
     "410.5b7ce3c3.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js.map",
     "981.6e541656.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js.map",
     "787.c1112931.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1232f17b.css",
-    "static/js/main.d6ecc8e0.js"
+    "static/js/main.a75feca6.js"
   ]
 }
