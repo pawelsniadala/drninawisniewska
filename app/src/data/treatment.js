@@ -25,6 +25,8 @@ import osoczeBogatopłytkoweImage0 from '../assets/treatment/aestheticMedicine/o
     // efekty
     import effectsLaserFrakcyjny0Lg from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny0Lg.png';
     import effectsLaserFrakcyjny0Sm from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny0Sm.png';
+    import effectsLaserFrakcyjny1Lg from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny1Lg.png';
+    import effectsLaserFrakcyjny1Sm from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny1Sm.png';
 // import niciRewitalizujaceILiftingujaceImage0 from '../assets/treatment/aestheticMedicine/niciRewitalizujaceILiftingujace/niciRewitalizujaceILiftingujace0.jpg';
 import mezoterapiaIglowaImage0 from '../assets/treatment/aestheticMedicine/mezoterapiaIglowa/mezoterapiaIglowa0.jpg';
 import zamykanieNaczynekILikwidacjaPrzebarwienImage0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/zamykanieNaczynekILikwidacjaPrzebarwien0.jpg';
@@ -365,6 +367,18 @@ export const laserFrakcyjny = {
             },
             thumbnail: {
                 src: effectsLaserFrakcyjny0Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu lasera frakcyjnego',
+            description: 'Efekt zabiegu lasera frakcyjnego',
+            original: {
+                src: effectsLaserFrakcyjny1Lg,
+                width: 1220,
+                height: 1220
+            },
+            thumbnail: {
+                src: effectsLaserFrakcyjny1Sm
             }
         }
     ],
