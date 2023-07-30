@@ -41,7 +41,7 @@
         }
 
         .card-content {
-            padding: 15px 15px;
+            padding: 16px;
 
             .card-title {
                 margin: 0;
@@ -49,7 +49,7 @@
                 line-height: 1.1;
                 font-family: "Roboto", sans-serif;
                 font-size: 1.1rem;
-                color: rgba(0, 0, 0, 0.67);
+                color: rgba(0, 0, 0, 0.7);
                 margin-bottom: 0.5rem;
                 display: -webkit-box;
                 -webkit-line-clamp: 1;
@@ -67,8 +67,6 @@
                 letter-spacing: 0.01071em;
                 font-weight: 300;
                 color: #606060;
-                // margin-bottom: 0.35em;
-                // margin-bottom: 15px;
                 margin-bottom: 0.3rem;
                 display: -webkit-box;
                 -webkit-line-clamp: 3;

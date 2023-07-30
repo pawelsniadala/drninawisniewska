@@ -107,8 +107,6 @@ const CardSpecialOffer = ({
                     <Typography className='card-description'>
                         {cardDescription1}
                     </Typography>
-                </CardContent>
-                <CardActions className='card-actions'>
                     <Button
                         className='card-link'
                         variant='outline'
@@ -116,7 +114,7 @@ const CardSpecialOffer = ({
                     >
                         Zobacz więcej
                     </Button>
-                </CardActions>
+                </CardContent>
             </Card>
         </Box>
     );
