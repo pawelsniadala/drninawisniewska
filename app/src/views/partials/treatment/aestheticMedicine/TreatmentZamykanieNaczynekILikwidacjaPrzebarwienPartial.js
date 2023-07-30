@@ -10,9 +10,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-// import Tooltip from '@mui/material/Tooltip';
-// import InfoIcon from '@mui/icons-material/Info';
-// import IconButton from '@mui/material/IconButton';
 
 import Page from '../../../../components/Page';
 import Container from '../../../../components/Container';
@@ -20,6 +17,7 @@ import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
+import TooltipInfo from '../../../../components/TooltipInfo';
 
 import { treatment, zamykanieNaczynekILikwidacjaPrzebarwien } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
@@ -43,21 +41,6 @@ const TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial = () => {
 
         lightbox.init(captionPlugin);
     }, []);
-
-    // const tooltip = (title) => (
-    //     <Tooltip title={title}>
-    //         <IconButton
-    //             sx={{
-    //                 height: '12px',
-    //                 width: '12px',
-    //                 marginLeft: '8px',
-    //                 color: '#008AC9'
-    //             }}
-    //         >
-    //         <InfoIcon fontSize='small' />
-    //         </IconButton>
-    //     </Tooltip>
-    // );
 
     return (
         <Box className='contact-view'>
@@ -254,6 +237,9 @@ const TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial = () => {
                             <Box className='box-treatment'>
                                 <Typography variant={'h5'} className='header alternative'>
                                     Efekty zabiegu
+                                    <TooltipInfo
+                                        title='Zdjęcia ukazują efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.'
+                                    />
                                 </Typography>
                                 <Box className="pswp-gallery" id='my-gallery'>
                                     {zamykanieNaczynekILikwidacjaPrzebarwien.effects.map((item, index) => (

@@ -17,6 +17,7 @@ import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
 // import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
+import TooltipInfo from '../../../../components/TooltipInfo';
 
 import { /* treatment, */ plastykaPowiek } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
@@ -107,6 +108,9 @@ const TreatmentPlastykaPowiekPartial = () => {
                                     variant={'h5'}
                                     className='header alternative'>
                                     Efekty zabiegu
+                                    <TooltipInfo
+                                        title='Zdjęcia ukazują efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.'
+                                    />
                                 </Typography>
                                 <Box className="pswp-gallery" id='my-gallery'>
                                     {plastykaPowiek.effects.map((item, index) => (
