@@ -1,5 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import PhotoSwipeLightbox from 'photoswipe/lightbox';
+import PhotoSwipeDynamicCaption from 'photoswipe-dynamic-caption-plugin';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -14,12 +17,31 @@ import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
+import TooltipInfo from '../../../../components/TooltipInfo';
 
 import { treatment, toksynaBotulinowa } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
 const TreatmentToksynaBotulinowaPartial = () => {
+    useEffect(() => {
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#my-gallery',
+            children: 'a',
+            pswpModule: () => import('photoswipe'),
+            padding: {
+                top: 50,
+                bottom: 50
+            }
+        });
+
+        const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
+            type: 'below'
+        });
+
+        lightbox.init(captionPlugin);
+    }, []);
+
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -119,6 +141,40 @@ const TreatmentToksynaBotulinowaPartial = () => {
                                         />
                                     ))}
                                 </Grid>
+                            </Box>
+
+                            <Box className='box-treatment'>
+                                <Typography variant={'h5'} className='header alternative'>
+                                    Efekty zabiegu
+                                    <TooltipInfo
+                                        title='Zdjęcia ukazują efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.'
+                                    />
+                                </Typography>
+                                <Box className="pswp-gallery" id='my-gallery'>
+                                    {toksynaBotulinowa.effects.map((item, index) => (
+                                        <a key={`my-gallery-${index}`}
+                                            href={item.original.src}
+                                            data-pswp-width={item.original.width}
+                                            data-pswp-height={item.original.height}
+                                            data-cropped='true'
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <Box className='box'>
+                                                <LazyLoadImage
+                                                    src={item.thumbnail.src}
+                                                    alt={item.alt}
+                                                    height='100%'
+                                                    width='100%'
+                                                    effect='blur'
+                                                />
+                                                <span className="pswp-caption-content">
+                                                    {item.description}
+                                                </span>
+                                            </Box>
+                                        </a>
+                                    ))}
+                                </Box>
                             </Box>
                         </Box>
 

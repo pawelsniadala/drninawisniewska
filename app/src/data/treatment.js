@@ -19,6 +19,11 @@ import modelowanieUstImage0 from '../assets/treatment/aestheticMedicine/modelowa
     import effectsModelowanieUst5Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst5Lg.png';
     import effectsModelowanieUst5Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst5Sm.png';
 import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/toksynaBotulinowa0.jpg';
+    // efekty
+    import effectsToksynaBotulinowa0Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa0Lg.png';
+    import effectsToksynaBotulinowa0Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa0Sm.png';
+    import effectsToksynaBotulinowa1Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa1Lg.png';
+    import effectsToksynaBotulinowa1Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa1Sm.png';
 import stymulatoryTkankoweImage0 from '../assets/treatment/aestheticMedicine/stymulatoryTkankowe/stymulatoryTkankowe0.jpg';
 import osoczeBogatopłytkoweImage0 from '../assets/treatment/aestheticMedicine/osoczeBogatopłytkowe/osoczeBogatopłytkowe0.jpg';
 // import laserFrakcyjnyImage0 from '../assets/treatment/aestheticMedicine/laserFrakcyjny/laserFrakcyjny0.jpg';
@@ -288,6 +293,32 @@ export const toksynaBotulinowa = {
             author: 'Freepik',
             href: 'https://pl.freepik.com/darmowe-zdjecie/pielegnacja-skory-zabieg-kosmetologii-ladnej-kobiety-w-szpitalu-odmladzanie-iniekcje-terapia-profesjonalna-opieka-zdrowotna-plastik-botoks-uroda_10214268.htm'
         }
+    ],
+    effects: [
+        {
+            alt: 'Efekt zabiegu toksyny botulinowej',
+            description: 'Efekt zabiegu toksyny botulinowej',
+            original: {
+                src: effectsToksynaBotulinowa0Lg,
+                width: 1000,
+                height: 1000
+            },
+            thumbnail: {
+                src: effectsToksynaBotulinowa0Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu toksyny botulinowej',
+            description: 'Efekt zabiegu toksyny botulinowej',
+            original: {
+                src: effectsToksynaBotulinowa1Lg,
+                width: 480,
+                height: 620
+            },
+            thumbnail: {
+                src: effectsToksynaBotulinowa1Sm
+            }
+        },
     ],
     specialization: [
         'aesthetic-medicine'
