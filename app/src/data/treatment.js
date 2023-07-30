@@ -42,16 +42,20 @@ import sonoQueenTechnologiaHifuImage0 from '../assets/treatment/aestheticMedicin
 // KOSMETOLOGIA
 import peelingMedycznyImage0 from '../assets/treatment/cosmetology/peelingMedyczny/peelingMedyczny0.jpg';
     // efekty
-    import effectsPeelingMedyczny0Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny0Sm.jpg';
-    import effectsPeelingMedyczny0Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny0Lg.jpg';
-    import effectsPeelingMedyczny1Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny1Sm.png';
-    import effectsPeelingMedyczny1Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny1Lg.png';
+    import effectsPeelingMedyczny0Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny0Sm.png';
+    import effectsPeelingMedyczny0Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny0Lg.png';
+    // import effectsPeelingMedyczny1Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny1Sm.png';
+    // import effectsPeelingMedyczny1Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny1Lg.png';
+    import effectsPeelingMedyczny2Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny2Sm.png';
+    import effectsPeelingMedyczny2Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny2Lg.png';
 import epilacjaLaserowaImage0 from '../assets/treatment/cosmetology/epilacjaLaserowa/epilacjaLaserowa0.jpg';
     // efekty
-    import effectsEpilacjaLaserowa0Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa0Sm.jpg';
-    import effectsEpilacjaLaserowa0Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa0Lg.jpg';
+    import effectsEpilacjaLaserowa0Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa0Sm.png';
+    import effectsEpilacjaLaserowa0Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa0Lg.png';
     import effectsEpilacjaLaserowa1Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa1Sm.png';
     import effectsEpilacjaLaserowa1Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa1Lg.png';
+    import effectsEpilacjaLaserowa2Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa2Sm.png';
+    import effectsEpilacjaLaserowa2Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa2Lg.png';
 
 import masazProzniowyImage0 from '../assets/treatment/cosmetology/masazProzniowy/masazProzniowy0.jpg';
 import ultradzwiekiIFalaRadiowaImage0 from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/ultradzwiekiIFalaRadiowa0.jpg';
@@ -542,25 +546,37 @@ export const peelingMedyczny = {
             description: 'Efekt zabiegu peelingu medycznego',
             original: {
                 src: effectsPeelingMedyczny0Lg,
-                width: 2560,
-                height: 3543
+                width: 1917,
+                height: 2560
             },
             thumbnail: {
                 src: effectsPeelingMedyczny0Sm
             }
         },
+        // {
+        //     alt: 'Efekt zabiegu peelingu medycznego',
+        //     description: 'Efekt zabiegu peelingu medycznego',
+        //     original: {
+        //         src: effectsPeelingMedyczny1Lg,
+        //         width: 1450,
+        //         height: 1450
+        //     },
+        //     thumbnail: {
+        //         src: effectsPeelingMedyczny1Sm
+        //     }
+        // },
         {
             alt: 'Efekt zabiegu peelingu medycznego',
             description: 'Efekt zabiegu peelingu medycznego',
             original: {
-                src: effectsPeelingMedyczny1Lg,
-                width: 1450,
-                height: 1450
+                src: effectsPeelingMedyczny2Lg,
+                width: 2560,
+                height: 1689
             },
             thumbnail: {
-                src: effectsPeelingMedyczny1Sm
+                src: effectsPeelingMedyczny2Sm
             }
-        }
+        },
     ],
     specialization: [
         'cosmetology'
@@ -608,6 +624,18 @@ export const epilacjaLaserowa = {
             },
             thumbnail: {
                 src: effectsEpilacjaLaserowa1Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu epilacji laserowej',
+            description: 'Efekt zabiegu epilacji laserowej',
+            original: {
+                src: effectsEpilacjaLaserowa2Lg,
+                width: 1700,
+                height: 1700
+            },
+            thumbnail: {
+                src: effectsEpilacjaLaserowa2Sm
             }
         }
     ],
