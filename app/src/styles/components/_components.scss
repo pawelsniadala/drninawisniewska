@@ -2,13 +2,18 @@
 @import 'button';
 @import 'input';
 @import 'arrow';
-@import 'scrollArrow';
-@import 'card';
-@import 'cardTreatment';
-@import 'cardTreatmentProposed';
+@import 'scroll-arrow';
+@import 'card-services';
+@import 'card-treatment';
+@import 'card-special-offer';
+@import 'card-special-offer-proposed';
+@import 'card-team';
+@import 'card-team-proposed';
+@import 'card-technology';
+@import 'card-proposed';
 @import 'heading';
 @import 'badge';
-@import 'sectionHeader';
+@import 'section-header';
 @import 'toast';
 @import 'image';
 
@@ -25,4 +30,4 @@
 @import 'swiper';
 
 // pswp-dynamic-caption
-@import 'photoSwipeDynamicCaption';
+@import 'photo-swipe-dynamic-caption';
