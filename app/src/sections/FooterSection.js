@@ -8,6 +8,8 @@ import FacebookSvg from '../assets/svg/FacebookSvg';
 import InstagramSvg from '../assets/svg/InstagramSvg';
 
 const FooterSection = () => {
+    const year = new Date().getFullYear();
+
     return (
         <footer>
             <Container className='section-wrapper footer'>
@@ -289,7 +291,7 @@ const FooterSection = () => {
             <Box className='section-wrapper info'>
                 <Box className='copyright'>
                     <Box>
-                        Copyright © 2023 Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska.
+                        Copyright © {year} Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska.
                     </Box>
                     <Box>
                         All rights reserved.

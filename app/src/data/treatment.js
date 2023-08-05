@@ -64,6 +64,9 @@ import epilacjaLaserowaImage0 from '../assets/treatment/cosmetology/epilacjaLase
 
 import masazProzniowyImage0 from '../assets/treatment/cosmetology/masazProzniowy/masazProzniowy0.jpg';
 import ultradzwiekiIFalaRadiowaImage0 from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/ultradzwiekiIFalaRadiowa0.jpg';
+    // efekty
+    import effectsUltradzwiekiIFalaRadiowa0Lg from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa0Lg.png';
+    import effectsUltradzwiekiIFalaRadiowa0Sm from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa0Sm.png';
 
 // ---------------------------------------------------
 
@@ -714,6 +717,20 @@ export const ultradzwiekiIFalaRadiowa = {
             alt: 'Zabieg redukujący celulit',
             author: 'Freepik',
             href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-coraz-terapii-antycellulitowej-i-antytluszczowej_8403581.htm'
+        }
+    ],
+    effects: [
+        {
+            alt: 'Efekt zabiegu redukcji rozstępów',
+            description: 'Efekt zabiegu redukcji rozstępów',
+            original: {
+                src: effectsUltradzwiekiIFalaRadiowa0Lg,
+                width: 1550,
+                height: 1900
+            },
+            thumbnail: {
+                src: effectsUltradzwiekiIFalaRadiowa0Sm
+            }
         }
     ],
     specialization: [
