@@ -67,6 +67,8 @@ import ultradzwiekiIFalaRadiowaImage0 from '../assets/treatment/cosmetology/ultr
     // efekty
     import effectsUltradzwiekiIFalaRadiowa0Lg from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa0Lg.png';
     import effectsUltradzwiekiIFalaRadiowa0Sm from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa0Sm.png';
+    import effectsUltradzwiekiIFalaRadiowa1Lg from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa1Lg.png';
+    import effectsUltradzwiekiIFalaRadiowa1Sm from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa1Sm.png';
 
 // ---------------------------------------------------
 
@@ -725,11 +727,23 @@ export const ultradzwiekiIFalaRadiowa = {
             description: 'Efekt zabiegu redukcji rozstępów',
             original: {
                 src: effectsUltradzwiekiIFalaRadiowa0Lg,
-                width: 1550,
-                height: 1900
+                width: 1780,
+                height: 1780
             },
             thumbnail: {
                 src: effectsUltradzwiekiIFalaRadiowa0Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu redukcji rozstępów',
+            description: 'Efekt zabiegu redukcji rozstępów',
+            original: {
+                src: effectsUltradzwiekiIFalaRadiowa1Lg,
+                width: 1300,
+                height: 1780
+            },
+            thumbnail: {
+                src: effectsUltradzwiekiIFalaRadiowa1Sm
             }
         }
     ],
