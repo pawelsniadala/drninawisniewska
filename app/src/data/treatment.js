@@ -24,6 +24,8 @@ import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksy
     import effectsToksynaBotulinowa0Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa0Sm.png';
     import effectsToksynaBotulinowa1Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa1Lg.png';
     import effectsToksynaBotulinowa1Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa1Sm.png';
+    import effectsToksynaBotulinowa2Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa2Lg.png';
+    import effectsToksynaBotulinowa2Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa2Sm.png';
 import stymulatoryTkankoweImage0 from '../assets/treatment/aestheticMedicine/stymulatoryTkankowe/stymulatoryTkankowe0.jpg';
 import osoczeBogatopłytkoweImage0 from '../assets/treatment/aestheticMedicine/osoczeBogatopłytkowe/osoczeBogatopłytkowe0.jpg';
 // import laserFrakcyjnyImage0 from '../assets/treatment/aestheticMedicine/laserFrakcyjny/laserFrakcyjny0.jpg';
@@ -322,6 +324,18 @@ export const toksynaBotulinowa = {
             },
             thumbnail: {
                 src: effectsToksynaBotulinowa1Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu toksyny botulinowej',
+            description: 'Efekt zabiegu toksyny botulinowej',
+            original: {
+                src: effectsToksynaBotulinowa2Lg,
+                width: 950,
+                height: 1060
+            },
+            thumbnail: {
+                src: effectsToksynaBotulinowa2Sm
             }
         },
     ],
@@ -740,7 +754,7 @@ export const ultradzwiekiIFalaRadiowa = {
             original: {
                 src: effectsUltradzwiekiIFalaRadiowa1Lg,
                 width: 1300,
-                height: 1780
+                height: 1600
             },
             thumbnail: {
                 src: effectsUltradzwiekiIFalaRadiowa1Sm
