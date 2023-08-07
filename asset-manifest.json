@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.178568a2.css",
-    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.d39aef42.js",
+    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.322e6f35.js",
     "static/js/410.5b7ce3c3.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js",
     "static/js/981.6e541656.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js",
     "static/js/787.c1112931.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js",
@@ -53,9 +53,11 @@
     "static/media/masazProzniowy0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/masazProzniowy0.269a42b465c9c34e38a0.jpg",
     "static/media/effectsUltradzwiekiIFalaRadiowa0Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsUltradzwiekiIFalaRadiowa0Sm.6979ed24d3e9ca5ae81a.png",
     "static/media/effectsEpilacjaLaserowa1Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsEpilacjaLaserowa1Sm.9e030ed9052906a3e918.png",
+    "static/media/niciRewitalizujaceILiftingujace0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/niciRewitalizujaceILiftingujace0.388fddad3a2275d9c045.jpg",
     "static/media/aldonaMaciagImage.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/aldonaMaciagImage.a03a1f270fb07ee4b1e4.jpg",
     "static/media/paulinaBudnaImage.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/paulinaBudnaImage.e2181c1ba583481df317.jpg",
     "static/media/wojciechKaszewskiImage.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/wojciechKaszewskiImage.61c8dcb417c33bc078e5.jpg",
+    "static/media/laserFrakcyjny0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/laserFrakcyjny0.e6fd1bd65f92819f7cee.jpg",
     "static/media/effectsZamykanieNaczynekILikwidacjaPrzebarwien0Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsZamykanieNaczynekILikwidacjaPrzebarwien0Sm.1894e93d9e3052bb0f93.png",
     "static/media/klaudiaMalottkiImage.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/klaudiaMalottkiImage.86a49f94494b51976ae6.jpg",
     "static/media/effectsPeelingMedyczny2Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPeelingMedyczny2Sm.6881cf0c29a3a14c99b3.png",
@@ -126,7 +128,6 @@
     "static/media/epilacjaLaserowa0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/epilacjaLaserowa0.6cedb41f3fb488a59b97.jpg",
     "static/media/milenaJuzwiakImageSmall.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/milenaJuzwiakImageSmall.204e22aa0ac743eb4e8a.jpg",
     "static/media/aldonaMaciagImageSmall.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/aldonaMaciagImageSmall.9f25bb72ae114e1c7dba.jpg",
-    "static/media/badanieZnamionBarwnikowych0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/badanieZnamionBarwnikowych0.09318098a822e25bee86.jpg",
     "static/media/plastykaPowiek0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/plastykaPowiek0.d2627a71eec5b3bb9f2e.jpg",
     "static/media/paulinaBudnaImageSmall.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/paulinaBudnaImageSmall.9394e6e3da73bcca92df.jpg",
     "static/media/skleroterapia0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/skleroterapia0.d7adda89576feb5e517f.jpg",
@@ -138,6 +139,7 @@
     "static/media/usuniecieZmianSkornychElektrochirurgiczne0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/usuniecieZmianSkornychElektrochirurgiczne0.9f24e651e654041cb14b.jpg",
     "static/media/aleksandraGorczynskaImageSmall.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/aleksandraGorczynskaImageSmall.2f4a171d6bf941870a8d.jpg",
     "static/media/ninaWisniewskaImageSmall.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/ninaWisniewskaImageSmall.547ce4cdd3ff5d635b6b.jpg",
+    "static/media/badanieZnamionBarwnikowych0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/badanieZnamionBarwnikowych0.367e62194c40b4755535.jpg",
     "static/media/servicesOrthopedics.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/servicesOrthopedics.c923e8c4b9cf5a657e54.jpg",
     "static/media/katarzynaMysliwiecCzajkaImageSmall.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/katarzynaMysliwiecCzajkaImageSmall.ec6d4f224863e694013f.jpg",
     "static/media/laseroweUsuwanieZylakow0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/laseroweUsuwanieZylakow0.8915af2ab55872dced95.jpg",
@@ -157,13 +159,13 @@
     "static/media/slick.woff": "https://pawelsniadala.github.io/drninawisniewska/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://pawelsniadala.github.io/drninawisniewska/index.html",
     "main.178568a2.css.map": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.178568a2.css.map",
-    "main.d39aef42.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.d39aef42.js.map",
+    "main.322e6f35.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.322e6f35.js.map",
     "410.5b7ce3c3.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js.map",
     "981.6e541656.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js.map",
     "787.c1112931.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.178568a2.css",
-    "static/js/main.d39aef42.js"
+    "static/js/main.322e6f35.js"
   ]
 }
