@@ -16,7 +16,7 @@ import Container from '../../../../components/Container';
 import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
-// import Image from '../../../../components/Image';
+import Image from '../../../../components/Image';
 import TooltipInfo from '../../../../components/TooltipInfo';
 
 import { treatment, laserFrakcyjny } from '../../../../data/treatment';
@@ -90,14 +90,14 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                                 <Typography className='paragraph'>
                                     <strong>Laser frakcyjny</strong> jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci <strong>likwidacji blizn potrądzikowych</strong>, <strong>poprawy jakości skóry</strong> i <strong>wytworzenia nowych struktur kolagenu</strong>.
                                 </Typography>
-                                {/* <Box className='box-image'>
+                                <Box className='box-image'>
                                     <Image
                                         imageSrc={laserFrakcyjny.images[0].src}
                                         imageAlt={laserFrakcyjny.images[0].alt}
                                         imageAuthor={laserFrakcyjny.images[0].author}
                                         imageHref={laserFrakcyjny.images[0].href}
                                     />
-                                </Box> */}
+                                </Box>
                                 <Typography className='paragraph'>
                                     W porównaniu z tradycyjnymi laserami CO<sub>2</sub>, frakcjonowanie ablacyjne laserami Fons pozwala osiągnąć <strong>dużą głębokość penetracji w skórze</strong>, dając efektywne procedury zabiegowe. Dzięki wysokiej mocy i wszechstronności może być wykorzystywany w wielu wskazaniach. Wygodę i precyzję działania zapewnia siedmioprzegubowe ramię.
                                 </Typography>

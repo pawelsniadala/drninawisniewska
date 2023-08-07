@@ -28,13 +28,13 @@ import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksy
     import effectsToksynaBotulinowa2Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa2Sm.png';
 import stymulatoryTkankoweImage0 from '../assets/treatment/aestheticMedicine/stymulatoryTkankowe/stymulatoryTkankowe0.jpg';
 import osoczeBogatopłytkoweImage0 from '../assets/treatment/aestheticMedicine/osoczeBogatopłytkowe/osoczeBogatopłytkowe0.jpg';
-// import laserFrakcyjnyImage0 from '../assets/treatment/aestheticMedicine/laserFrakcyjny/laserFrakcyjny0.jpg';
+import laserFrakcyjnyImage0 from '../assets/treatment/aestheticMedicine/laserFrakcyjny/laserFrakcyjny0.jpg';
     // efekty
     import effectsLaserFrakcyjny0Lg from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny0Lg.png';
     import effectsLaserFrakcyjny0Sm from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny0Sm.png';
     import effectsLaserFrakcyjny1Lg from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny1Lg.png';
     import effectsLaserFrakcyjny1Sm from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny1Sm.png';
-// import niciRewitalizujaceILiftingujaceImage0 from '../assets/treatment/aestheticMedicine/niciRewitalizujaceILiftingujace/niciRewitalizujaceILiftingujace0.jpg';
+import niciRewitalizujaceILiftingujaceImage0 from '../assets/treatment/aestheticMedicine/niciRewitalizujaceILiftingujace/niciRewitalizujaceILiftingujace0.jpg';
 import mezoterapiaIglowaImage0 from '../assets/treatment/aestheticMedicine/mezoterapiaIglowa/mezoterapiaIglowa0.jpg';
 import zamykanieNaczynekILikwidacjaPrzebarwienImage0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/zamykanieNaczynekILikwidacjaPrzebarwien0.jpg';
     // efekty
@@ -117,7 +117,7 @@ export const badanieZnamionBarwnikowych = {
             src: badanieZnamionBarwnikowychImage0,
             alt: 'Dermatolog bada skórę pacjenta za pomocą dermatoskopu',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/dermatolog-bada-skore-pacjenta-za-pomoca-dermatoskopu_8404892.htm'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/dermatolog-bada-skore-pacjenta-za-pomoca-dermatoskopu_8404842.htm'
         }
     ],
     specialization: [
@@ -404,10 +404,10 @@ export const laserFrakcyjny = {
     path: '/treatment/aesthetic-medicine/laser-frakcyjny',
     images: [
         {
-            src: null,
-            alt: '',
-            author: '',
-            href: ''
+            src: laserFrakcyjnyImage0,
+            alt: 'Zabieg usuwania przebarwień na twarzy',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/pacjentka-coraz-procedura-podnoszenia-rf_8896411.htm'
         }
     ],
     effects: [
@@ -457,10 +457,10 @@ export const niciRewitalizujaceILiftingujace = {
     path: '/treatment/aesthetic-medicine/nici-rewitalizujace-i-liftingujace',
     images: [
         {
-            src: null,
-            alt: '',
-            author: '',
-            href: ''
+            src: niciRewitalizujaceILiftingujaceImage0,
+            alt: 'Przygotowanie do zabiegu',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-w-gabinecie-kosmetycznym-na-leczenie_12844715.htm'
         }
     ],
     specialization: [

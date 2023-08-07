@@ -13,9 +13,9 @@ import Container from '../../../../components/Container';
 import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
-// import Image from '../../../../components/Image';
+import Image from '../../../../components/Image';
 
-import { treatment, /* niciRewitalizujaceILiftingujace */ } from '../../../../data/treatment';
+import { treatment, niciRewitalizujaceILiftingujace } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
@@ -68,14 +68,14 @@ const TreatmentNiciRewitalizujaceILiftingujacePartial = () => {
                                 <Typography className='paragraph'>
                                     <strong>Nici liftingujące</strong> służą do <strong>usuwania skutków starzenia grawitacyjnego</strong>. Zmiany na skórze spowodowane są utratą sprężystości, zmniejszeniem napięcia mięśni i przemieszczaniem się podskórnej tkanki tłuszczowej. Nici liftingujące są mniej kłopotliwą i inwazyjną alternatywą dla chirurgicznego liftingu.
                                 </Typography>
-                                {/* <Box className='box-image'>
+                                <Box className='box-image'>
                                     <Image
                                         imageSrc={niciRewitalizujaceILiftingujace.images[0].src}
                                         imageAlt={niciRewitalizujaceILiftingujace.images[0].alt}
                                         imageAuthor={niciRewitalizujaceILiftingujace.images[0].author}
                                         imageHref={niciRewitalizujaceILiftingujace.images[0].href}
                                     />
-                                </Box> */}
+                                </Box>
                              <Typography className='paragraph heading'>
                                     <strong>Efekty pozabiegowe</strong>:
                                 </Typography>
