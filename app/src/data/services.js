@@ -56,7 +56,7 @@ import kamilStepkowskiImageSmall from '../assets/team/kamilStepkowski/kamilStepk
 import olgaLenartowiczWarakomskaImageSmall from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImageSmall.jpg';
 import paulinaTataraImageSmall from '../assets/team/paulinaTatara/paulinaTataraImageSmall.jpg';
 import joannaOjrzenskaImageSmall from '../assets/team/joannaOjrzenska/joannaOjrzenskaImageSmall.jpg';
-import aleksandraGorczynskaImageSmall from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImageSmall.jpg';
+// import aleksandraGorczynskaImageSmall from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImageSmall.jpg';
 import agataSkwerekSzewczykImageSmall from '../assets/team/agataSkwerekSzewczyk/agataSkwerekSzewczykImageSmall.jpg';
 import katarzynaRychlikImageSmall from  '../assets/team/katarzynaRychlik/katarzynaRychlikImageSmall.jpg';
 import patrykKrokwinskiImageSmall from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImageSmall.jpg';
@@ -126,14 +126,16 @@ export const aestheticMedicine = {
         konradKochanImageSmall,
         klaudiaMalottkiImageSmall,
         paulinaTataraImageSmall,
-        olgaLenartowiczWarakomskaImageSmall
+        olgaLenartowiczWarakomskaImageSmall,
+        katarzynaZbronskaImageSmall
     ],
     specialists2: [
         'nina-wisniewska',
         'konrad-kochan',
         'klaudia-malottki',
         'paulina-tatara',
-        'olga-lenartowicz-warakomska'
+        'olga-lenartowicz-warakomska',
+        'katarzyna-zbronska'
     ],
     relatedSpecializations: [
         'dermatology',
@@ -161,7 +163,7 @@ export const cosmetology = {
     ],
     specialists: [
         paulinaBudnaImageSmall,
-        aleksandraGorczynskaImageSmall
+        // aleksandraGorczynskaImageSmall
     ],
     specialists2: [
         'paulina-budna',

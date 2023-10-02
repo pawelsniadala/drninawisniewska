@@ -84,6 +84,9 @@ const ServicesUsgPartial = () => {
                                         'prostata,',
                                         'jądra,',
                                         'układ moczowy,',
+                                        'bark',
+                                        'ręce',
+                                        'kolana',
                                         'doppler tętnic szyjnych,',
                                         'doppler kończyny dolnej (jedna noga),',
                                         'doppler kończyn dolnych (dwie nogi).'

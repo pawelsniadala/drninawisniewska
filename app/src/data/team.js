@@ -14,7 +14,7 @@ import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowski
 import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
 import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
 import joannaOjrzenskaImage from '../assets/team/joannaOjrzenska/joannaOjrzenskaImage.jpg';
-import aleksandraGorczynskaImage from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImage.jpg';
+// import aleksandraGorczynskaImage from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImage.jpg';
 import agataSkwerekSzewczykImage from '../assets/team/agataSkwerekSzewczyk/agataSkwerekSzewczykImage.jpg';
 import katarzynaRychlikImage from  '../assets/team/katarzynaRychlik/katarzynaRychlikImage.jpg';
 import patrykKrokwinskiImage from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImage.jpg';
@@ -340,7 +340,8 @@ export const katarzynaZbronska = {
     image: katarzynaZbronskaImage,
     background: false,
     specialization: [
-        'dermatology'
+        'dermatology',
+        'aesthetic-medicine'
     ],
     treatment: [
         'badanie-znamion-barwnikowych',
@@ -374,29 +375,29 @@ export const joannaOjrzenska = {
     treatment: ['']
 };
 
-export const aleksandraGorczynska = {
-    id: '99ecc02d-c4dc-44f4-b8f1-a79a435ee6c2',
-    specialist: 'aleksandra-gorczynska',
-    name: 'mgr Aleksandra Górczyńska',
-    speciality: 'Kosmetolog',
-    summary: false,
-    education: 'Magister kosmetologii, absolwentka Wydziału Farmaceutycznego z Oddziałem Medycyny Laboratoryjnej Uniwersytetu Medycznego w Białymstoku.',
-    experience: 'W praktyce zawodowej niezwykle ważne jest dla niej utrzymanie prawidłowej kondycji skóry, profilaktyka jej starzenia oraz dobieraniu indywidualnych terapii zabiegowych. Stale rozwija się i dokształca na najlepszych specjalistycznych kursach i szkoleniach. Pracę połączyła ze swoją pasją i zainteresowaniami. Wykonuje zabiegi z zakresu modelowania ciała, epilacji laserowej oraz zabiegi pielęgnacyjne na twarz. Ponadto interesuje się trychologią kosmetyczną kształcąc się w tym kierunku na studiach podyplomowych.',
-    interested: 'interesuję się kulturą oraz kuchnią azjatycką.',
-    image: aleksandraGorczynskaImage,
-    background: false,
-    specialization: [
-        'cosmetology'
-    ],
-    treatment: [
-        'peeling-medyczny',
-        'epilacja-laserowa',
-        'masaz-prozniowy',
-        'ultradzwieki-i-fala-radiowa',
-        'laser-frakcyjny',
-        'zamykanie-naczynek-i-likwidacja-przebarwien'
-    ]
-};
+// export const aleksandraGorczynska = {
+//     id: '99ecc02d-c4dc-44f4-b8f1-a79a435ee6c2',
+//     specialist: 'aleksandra-gorczynska',
+//     name: 'mgr Aleksandra Górczyńska',
+//     speciality: 'Kosmetolog',
+//     summary: false,
+//     education: 'Magister kosmetologii, absolwentka Wydziału Farmaceutycznego z Oddziałem Medycyny Laboratoryjnej Uniwersytetu Medycznego w Białymstoku.',
+//     experience: 'W praktyce zawodowej niezwykle ważne jest dla niej utrzymanie prawidłowej kondycji skóry, profilaktyka jej starzenia oraz dobieraniu indywidualnych terapii zabiegowych. Stale rozwija się i dokształca na najlepszych specjalistycznych kursach i szkoleniach. Pracę połączyła ze swoją pasją i zainteresowaniami. Wykonuje zabiegi z zakresu modelowania ciała, epilacji laserowej oraz zabiegi pielęgnacyjne na twarz. Ponadto interesuje się trychologią kosmetyczną kształcąc się w tym kierunku na studiach podyplomowych.',
+//     interested: 'interesuję się kulturą oraz kuchnią azjatycką.',
+//     image: aleksandraGorczynskaImage,
+//     background: false,
+//     specialization: [
+//         'cosmetology'
+//     ],
+//     treatment: [
+//         'peeling-medyczny',
+//         'epilacja-laserowa',
+//         'masaz-prozniowy',
+//         'ultradzwieki-i-fala-radiowa',
+//         'laser-frakcyjny',
+//         'zamykanie-naczynek-i-likwidacja-przebarwien'
+//     ]
+// };
 
 export const kamilStepkowski = {
     id: '0b01251b-90a9-4279-b7ee-afd83274a03e',
@@ -492,7 +493,7 @@ export const team = [
     { ...olgaLenartowiczWarakomska },
     { ...katarzynaZbronska },
     { ...joannaOjrzenska },
-    { ...aleksandraGorczynska },
+    // { ...aleksandraGorczynska },
     { ...kamilStepkowski },
     { ...katarzynaRychlik },
     { ...patrykKrokwinski },

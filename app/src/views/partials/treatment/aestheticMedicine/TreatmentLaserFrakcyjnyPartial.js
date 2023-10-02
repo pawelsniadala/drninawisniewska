@@ -179,7 +179,8 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                                                     effect='blur'
                                                 />
                                                 <span className="pswp-caption-content">
-                                                    {item.description}
+                                                    {item.description}<br/><br/>
+                                                    {laserFrakcyjny.info}
                                                 </span>
                                             </Box>
                                         </a>

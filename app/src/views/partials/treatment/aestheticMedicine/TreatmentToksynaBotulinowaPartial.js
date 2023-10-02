@@ -169,7 +169,8 @@ const TreatmentToksynaBotulinowaPartial = () => {
                                                     effect='blur'
                                                 />
                                                 <span className="pswp-caption-content">
-                                                    {item.description}
+                                                    {item.description}<br/><br/>
+                                                    {toksynaBotulinowa.info}
                                                 </span>
                                             </Box>
                                         </a>

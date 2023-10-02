@@ -218,7 +218,8 @@ const TreatmentEpilacjaLaserowaPartial = () => {
                                                     effect='blur'
                                                 />
                                                 <span className="pswp-caption-content">
-                                                    {item.description}
+                                                    {item.description}<br/><br/>
+                                                    {epilacjaLaserowa.info}
                                                 </span>
                                             </Box>
                                         </a>

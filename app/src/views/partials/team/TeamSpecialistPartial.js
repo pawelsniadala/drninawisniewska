@@ -35,7 +35,7 @@ import {
     olgaLenartowiczWarakomska,
     katarzynaZbronska,
     joannaOjrzenska,
-    aleksandraGorczynska,
+    // aleksandraGorczynska,
     agataSkwerekSzewczyk,
     kamilStepkowski,
     katarzynaRychlik,
@@ -115,8 +115,8 @@ const TeamSpecialistPartial = () => {
                 return [{ ...katarzynaZbronska }];
             case 'joanna-ojrzenska':
                 return [{ ...joannaOjrzenska }];
-            case 'aleksandra-gorczynska':
-                return [{ ...aleksandraGorczynska }];
+            // case 'aleksandra-gorczynska':
+            //     return [{ ...aleksandraGorczynska }];
             case 'agata-skwerek-szewczyk':
                 return [{ ...agataSkwerekSzewczyk }];
             case 'kamil-stepkowski':
