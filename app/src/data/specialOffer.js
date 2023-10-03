@@ -6,6 +6,7 @@ import specialOffer5 from '../assets/specialOffer/specialOffer5.jpg';
 import specialOffer6 from '../assets/specialOffer/specialOffer6.jpg';
 import specialOffer7 from '../assets/specialOffer/specialOffer7.jpg';
 import specialOffer8 from '../assets/specialOffer/specialOffer8.jpg';
+import specialOffer9 from '../assets/specialOffer/specialOffer9.jpg';
 
 export const article1 = {
     image: specialOffer1,
@@ -95,7 +96,19 @@ export const article8 = {
     description5: 'Promocja trwa tylko w lipcu! 🌺 Śpiesz się! Zadbaj o kondycję twarzy i ciała. 🤗',
 };
 
+export const article9 = {
+    image: specialOffer9,
+    title: 'Specjalna oferta na lasery',
+    date: '2 Października 2023',
+    description1: 'Wraz z początkiem października 🍂 przygotowaliśmy dla Was specjalną ofertę na serię zabiegów z użyciem specjalistycznych laserów na twarz.',
+    description2: '🍁 Zamykanie naczynek, Redukcja przebarwień: Pierwszy zabieg - 800zł, Drugi zabieg - 700zł, Trzeci zabieg - 600zł.',
+    description3: '🍁 Redukcja blizn, Resurfacing skóry: PIerwszy zabieg - 1000zł, Drugi zabieg - 900zł, Trzeci zabieg - 800zł.',
+    description4: '🌻 Promocja dotyczy serii 3 zabiegów na twarz, wykonywanych w odstępach co 4 tyg.',
+    description5: '',
+};
+
 export const specialOffer = [
+    { ...article9 },
     { ...article8 },
     { ...article7 },
     { ...article6 },
