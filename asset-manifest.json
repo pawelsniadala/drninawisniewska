@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.a20d4e9b.css",
-    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.097785bc.js",
+    "main.css": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.46d4116d.css",
+    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.98b017e8.js",
     "static/js/410.5b7ce3c3.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js",
     "static/js/981.6e541656.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js",
     "static/js/787.c1112931.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js",
@@ -157,14 +157,14 @@
     "static/media/slick.ttf": "https://pawelsniadala.github.io/drninawisniewska/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "https://pawelsniadala.github.io/drninawisniewska/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://pawelsniadala.github.io/drninawisniewska/index.html",
-    "main.a20d4e9b.css.map": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.a20d4e9b.css.map",
-    "main.097785bc.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.097785bc.js.map",
+    "main.46d4116d.css.map": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.46d4116d.css.map",
+    "main.98b017e8.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.98b017e8.js.map",
     "410.5b7ce3c3.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js.map",
     "981.6e541656.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js.map",
     "787.c1112931.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a20d4e9b.css",
-    "static/js/main.097785bc.js"
+    "static/css/main.46d4116d.css",
+    "static/js/main.98b017e8.js"
   ]
 }
