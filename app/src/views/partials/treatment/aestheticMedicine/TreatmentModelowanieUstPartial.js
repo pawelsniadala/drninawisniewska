@@ -154,8 +154,8 @@ const TreatmentModelowanieUstPartial = () => {
                                                     effect='blur'
                                                 />
                                                 <span className="pswp-caption-content">
-                                                    {item.description}<br/><br/>
-                                                    {modelowanieUst.info}
+                                                    <span className='description'>{item.description}</span>
+                                                    <span className='info'>{modelowanieUst.info}</span>
                                                 </span>
                                             </Box>
                                         </a>

@@ -131,8 +131,8 @@ const TreatmentPlastykaPowiekPartial = () => {
                                                     effect='blur'
                                                 />
                                                 <span className="pswp-caption-content">
-                                                    {item.description}<br/><br/>
-                                                    {plastykaPowiek.info}
+                                                    <span className='description'>{item.description}</span>
+                                                    <span className='info'>{plastykaPowiek.info}</span>
                                                 </span>
                                             </Box>
                                         </a>

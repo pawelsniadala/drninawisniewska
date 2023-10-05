@@ -616,18 +616,6 @@ export const peelingMedyczny = {
                 src: effectsPeelingMedyczny0Sm
             }
         },
-        // {
-        //     alt: 'Efekt zabiegu peelingu medycznego',
-        //     description: 'Efekt zabiegu peelingu medycznego',
-        //     original: {
-        //         src: effectsPeelingMedyczny1Lg,
-        //         width: 1450,
-        //         height: 1450
-        //     },
-        //     thumbnail: {
-        //         src: effectsPeelingMedyczny1Sm
-        //     }
-        // },
         {
             alt: 'Efekt zabiegu peelingu medycznego',
             description: 'Efekt zabiegu peelingu medycznego',
@@ -661,8 +649,8 @@ export const epilacjaLaserowa = {
         {
             src: epilacjaLaserowaImage0,
             alt: 'Epilacja lasorowa',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/depilacja-laserowa-terapia-depilacyjna_10025231.htm'
+            author: 'ITP S.A.',
+            href: 'https://itpestetyka.pl'
         }
     ],
     effects: [
@@ -747,8 +735,8 @@ export const ultradzwiekiIFalaRadiowa = {
         {
             src: ultradzwiekiIFalaRadiowaImage0,
             alt: 'Zabieg redukujący celulit',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-coraz-terapii-antycellulitowej-i-antytluszczowej_8403581.htm'
+            author: 'ITP S.A.',
+            href: 'https://itpestetyka.pl'
         }
     ],
     effects: [

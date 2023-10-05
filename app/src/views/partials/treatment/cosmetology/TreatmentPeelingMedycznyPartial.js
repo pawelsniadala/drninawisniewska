@@ -186,8 +186,8 @@ const TreatmentPeelingMedycznyPartial = () => {
                                                     effect='blur'
                                                 />
                                                 <span className="pswp-caption-content">
-                                                    {item.description}<br/><br/>
-                                                    {peelingMedyczny.info}
+                                                    <span className='description'>{item.description}</span>
+                                                    <span className='info'>{peelingMedyczny.info}</span>
                                                 </span>
                                             </Box>
                                         </a>

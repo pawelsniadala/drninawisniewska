@@ -260,8 +260,8 @@ const TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial = () => {
                                                     effect='blur'
                                                 />
                                                 <span className="pswp-caption-content">
-                                                    {item.description}<br/><br/>
-                                                    {zamykanieNaczynekILikwidacjaPrzebarwien.info}
+                                                    <span className='description'>{item.description}</span>
+                                                    <span className='info'>{zamykanieNaczynekILikwidacjaPrzebarwien.info}</span>
                                                 </span>
                                             </Box>
                                         </a>

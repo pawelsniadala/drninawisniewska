@@ -160,8 +160,8 @@ const TreatmentUltradzwiekiIFalaRadiowaPartial = () => {
                                                     effect='blur'
                                                 />
                                                 <span className="pswp-caption-content">
-                                                    {item.description}<br/><br/>
-                                                    {ultradzwiekiIFalaRadiowa.info}
+                                                    <span className='description'>{item.description}</span>
+                                                    <span className='info'>{ultradzwiekiIFalaRadiowa.info}</span>
                                                 </span>
                                             </Box>
                                         </a>

@@ -171,7 +171,6 @@ export const cosmetology = {
     ],
     relatedSpecializations: [
         'dermatology',
-        'cosmetology',
         'aesthetic-medicine'
     ]
 };
