@@ -338,7 +338,8 @@ const Table5 = () => {
         createData('Pluryal Bioclassic', 1100),
         createData('Sunekos Performa', 500),
         createData('Kolagen (4 okolice)', 1200),
-        createData('Kolagen (cała twarz)', 700)
+        createData('Kolagen (cała twarz)', 700),
+        createData('Sculptra', 2000)
     ];
 
     return (
