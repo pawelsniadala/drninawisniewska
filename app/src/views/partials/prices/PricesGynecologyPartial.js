@@ -57,7 +57,11 @@ const Table1 = () => {
 
     const rows = [
         createData('Konsultacja ginekologiczna - dr Justyna Filipek', 300, false),
-        createData('Konsultacja ginekologiczno - endokrynologiczna', 350, false),
+        createData('Konsultacja ginekologiczno - endokrynologiczna - dr Justyna Filipek', 350, false),
+        createData('Konsultacja ginekologiczna (30 min) - dr Jadwiga Smolarczyk', 300, false),
+        createData('Konsultacja ginekologiczno - endokrynologiczna (40 min) - dr Jadwiga Smolarczyk', 350, false),
+        createData('Konsultacja ginekologiczno - endokrynologiczna + cytologia - dr Jadwiga Smolarczyk', 400, false),
+        createData('Konsultacja ginekologiczno - endokrynologiczna + cytologia + USG (50 min) - dr Jadwiga Smolarczyk', 450, false),
         createData('Cytologia', 50, false),
         createData('USG - dopłata do wizyty', '50/100', 'Dokładną cenę ustala lekarz.')
     ];

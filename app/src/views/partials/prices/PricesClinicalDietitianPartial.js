@@ -37,8 +37,10 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja - mgr Joanna Ojrzeńska (pierwsza wizyta)', 150),
-        createData('Wizyta kontrolna', 100)
+        createData('Konsultacja (60 min) - mgr Joanna Ojrzeńska (pierwsza wizyta)', 150),
+        createData('Konsultacja kontrolna z planem żywieniowym 7 dni (30 min)', 200),
+        createData('Konsultacja kontrolna bez planu żywieniowego (30 min)', 130),
+        createData('Analiza składu ciała', 50),
     ];
 
     return (

@@ -9,6 +9,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import TableContainer from '@mui/material/TableContainer';
 import Paper from '@mui/material/Paper';
+import InfoIcon from '@mui/icons-material/Info';
+import IconButton from '@mui/material/IconButton';
+import Tooltip from '@mui/material/Tooltip';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     [`&.${tableCellClasses.head}`]: {
@@ -31,13 +34,30 @@ const StyledTableRow = styled(TableRow)(() => ({
     }
 }));
 
+const tooltip = (title) => (
+    <Tooltip title={title}>
+    <IconButton
+        sx={{
+            height: '12px',
+            width: '12px',
+            marginLeft: '8px',
+            color: '#d9ab5a'
+        }}
+    >
+      <InfoIcon fontSize='small' />
+    </IconButton>
+  </Tooltip>
+);
+
 const Table1 = () => {
     function createData(name, price) {
         return { name, price };
     }
 
     const rows = [
-        createData('Konsultacja kosmetologiczna', 100)
+        createData('Konsultacja kosmetologiczna', 100),
+        createData('Konsultacja kosmetologiczna + Beauty Plan', 200),
+        createData('Konsultacja kosmetologiczna + Beauty Plan + komputerowa analiza skóry', 300)
     ];
 
     return (
@@ -260,25 +280,13 @@ const Table5 = () => {
 }
 
 const Table7 = () => {
-    function createData(name, price) {
-        return { name, price };
+    function createData(name, tooltip, price) {
+        return { name, tooltip, price };
     }
 
     const rows = [
-        createData('Kwas salicylowy', 200),
-        createData('Kwas migdałowy', 200),
-        createData('Kwas mlekowy', 200),
-        createData('Melanostop', 180),
-        createData('Modified Jessner', 180),
-        createData('Azelan', 180),
-        createData('TCA soft 15%', 220),
-        createData('TCA 35%', 220),
-        createData('Kwas ferulowy', 200),
-        createData('Kwas laktobionowy', 200),
-        createData('Kwas traneksamowy', 300),
-        createData('Nomelan Cafeico', 350),
-        createData('A.C. Solution', 250),
-        createData('C.R. Complex', 250)
+        createData('Twarz', 'Kwas dobierany jest indywidualnie w zależności od potrzeb i problemu skóry pacjenta', 200),
+        createData('Plecy', 'Kwas dobierany jest indywidualnie w zależności od potrzeb i problemu skóry pacjenta', 250),
     ];
 
     return (
@@ -299,6 +307,7 @@ const Table7 = () => {
                         <StyledTableRow key={row.name}>
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
+                                {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
                             <StyledTableCell align='right'>
                                 {row.price}
