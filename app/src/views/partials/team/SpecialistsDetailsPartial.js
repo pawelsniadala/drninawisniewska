@@ -31,12 +31,13 @@ import {
     olgaLenartowiczWarakomska,
     katarzynaZbronska,
     joannaOjrzenska,
-    // aleksandraGorczynska,
     agataSkwerekSzewczyk,
     kamilStepkowski,
     katarzynaRychlik,
     patrykKrokwinski,
-    michalRadzio
+    michalRadzio,
+    kajaStrojnowskaLapinska,
+    jadwigaDowgialloSmolarczyk
 } from '../../../data/team';
 
 const SpecialistsDetailsPartial = () => {
@@ -75,6 +76,8 @@ const SpecialistsDetailsPartial = () => {
                 return 'Reumatologia';
             case 'cardiology':
                 return 'Kardiologia';
+            case 'psychiatry':
+                return 'Psychiatria';
             default:
         }
     }
@@ -111,8 +114,6 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...katarzynaZbronska }];
             case 'joanna-ojrzenska':
                 return [{ ...joannaOjrzenska }];
-            // case 'aleksandra-gorczynska':
-            //     return [{ ...aleksandraGorczynska }];
             case 'agata-skwerek-szewczyk':
                 return [{ ...agataSkwerekSzewczyk }];
             case 'kamil-stepkowski':
@@ -123,10 +124,13 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...patrykKrokwinski }];
             case 'michal-radzio':
                 return [{ ...michalRadzio }];
+            case 'kaja-strojnowska-lapinska':
+                return [{ ...kajaStrojnowskaLapinska }];
+            case 'jadwiga-dowgiallo-smolarczyk':
+                return [{ ...jadwigaDowgialloSmolarczyk }];
             default:
         }
     }
-
 
     function getWindowDimensions() {
         const { innerWidth: width } = window;

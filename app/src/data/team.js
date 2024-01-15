@@ -14,11 +14,12 @@ import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowski
 import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
 import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
 import joannaOjrzenskaImage from '../assets/team/joannaOjrzenska/joannaOjrzenskaImage.jpg';
-// import aleksandraGorczynskaImage from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImage.jpg';
 import agataSkwerekSzewczykImage from '../assets/team/agataSkwerekSzewczyk/agataSkwerekSzewczykImage.jpg';
 import katarzynaRychlikImage from  '../assets/team/katarzynaRychlik/katarzynaRychlikImage.jpg';
 import patrykKrokwinskiImage from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImage.jpg';
 import michalRadzioImage from  '../assets/team/michalRadzio/michalRadzioImage.jpg';
+import kajaStrojnowskaLapinskaImage from  '../assets/team/kajaStrojnowskaLapinska/kajaStrojnowskaLapinskaImage.jpg';
+import jadwigaDowgialloSmolarczykImage from  '../assets/team/jadwigaDowgialloSmolarczyk/jadwigaDowgialloSmolarczykImage.jpg';
 
 export const ninaWisniewska = {
     id: '4d6a6ec4-ea93-40b5-9d23-cb7204c6911e',
@@ -375,30 +376,6 @@ export const joannaOjrzenska = {
     treatment: ['']
 };
 
-// export const aleksandraGorczynska = {
-//     id: '99ecc02d-c4dc-44f4-b8f1-a79a435ee6c2',
-//     specialist: 'aleksandra-gorczynska',
-//     name: 'mgr Aleksandra Górczyńska',
-//     speciality: 'Kosmetolog',
-//     summary: false,
-//     education: 'Magister kosmetologii, absolwentka Wydziału Farmaceutycznego z Oddziałem Medycyny Laboratoryjnej Uniwersytetu Medycznego w Białymstoku.',
-//     experience: 'W praktyce zawodowej niezwykle ważne jest dla niej utrzymanie prawidłowej kondycji skóry, profilaktyka jej starzenia oraz dobieraniu indywidualnych terapii zabiegowych. Stale rozwija się i dokształca na najlepszych specjalistycznych kursach i szkoleniach. Pracę połączyła ze swoją pasją i zainteresowaniami. Wykonuje zabiegi z zakresu modelowania ciała, epilacji laserowej oraz zabiegi pielęgnacyjne na twarz. Ponadto interesuje się trychologią kosmetyczną kształcąc się w tym kierunku na studiach podyplomowych.',
-//     interested: 'interesuję się kulturą oraz kuchnią azjatycką.',
-//     image: aleksandraGorczynskaImage,
-//     background: false,
-//     specialization: [
-//         'cosmetology'
-//     ],
-//     treatment: [
-//         'peeling-medyczny',
-//         'epilacja-laserowa',
-//         'masaz-prozniowy',
-//         'ultradzwieki-i-fala-radiowa',
-//         'laser-frakcyjny',
-//         'zamykanie-naczynek-i-likwidacja-przebarwien'
-//     ]
-// };
-
 export const kamilStepkowski = {
     id: '0b01251b-90a9-4279-b7ee-afd83274a03e',
     specialist: 'kamil-stepkowski',
@@ -476,6 +453,41 @@ export const michalRadzio = {
     ]
 };
 
+export const kajaStrojnowskaLapinska = {
+    id: 'cef1384b-6491-4af4-b4ef-d7ffb1e2ed31',
+    specialist: 'kaja-strojnowska-lapinska',
+    name: 'lek. Kaja Strojnowska-Łapińska',
+    speciality: 'Psychiatra dzieci i młodzieży',
+    summary: 'Jestem lekarzem w trakcie specjalizacji z psychiatrii dzieci i młodzieży w Klinice Psychiatrii Wieku Rozwojowego Dziecięcego Szpitala Klinicznego Warszawskiego Uniwersytetu Medycznego.',
+    education: 'Ukończyłam II Wydział Lekarski Warszawskiego Uniwersytetu Medycznego. Interesuję się również psychoterapią. Uczestniczyłam w szkoleniu podyplomowym "Psychoterapia poznawczo-behawioralna z elementami terapii psychodynamicznej" w Fundacji Rozwoju Psychiatrii i Psychoterapii oraz w szkoleniu w zakresie terapii poznawczo-behawioralnej w Szkole Terapii Poznawczo-Behawioralnej Centrum CBT-EDU. Umiejętności z zakresu psychoterapii dorosłych zdobywałam również w trakcie stażu na Oddziale Dziennym Mazowieckiego Szpitala Bródnowskiego.',
+    experience: false,
+    interested: false,
+    image: kajaStrojnowskaLapinskaImage,
+    background: false,
+    specialization: [
+        'psychiatry'
+    ],
+    treatment: ['']
+};
+
+export const jadwigaDowgialloSmolarczyk = {
+    id: 'e116795b-e60e-45d9-9fce-d7c835a67e73',
+    specialist: 'jadwiga-dowgiallo-smolarczyk',
+    name: 'dr n. med. Jadwiga Dowgiałło-Smolarczyk',
+    speciality: 'Specjalista ginekologii i endokrynologii ',
+    summary: false,
+    education: 'Jestem absolwentką I Wydziału Lekarskiego Akademii Medycznej w Warszawie. Uzyskałam specjalizację w zakresie położnictwa, ginekologii i endokrynologii. W 2002 roku obroniłam pracę doktorską, otrzymując tytuł doktora nauk medycznych.',
+    experience: 'Doświadczenie zawodowe zawdzięczam pracy w Klinice Położnictwa i Ginekologii Akademii Medycznej i w Klinice Endokrynologii Ginekologicznej Akademii Medycznej w Warszawie. Stale podnoszę kwalifikacje zawodowe w zakresie diagnostyki i leczenia niepłodności, opieki perinatalnej, diagnostyki i leczenia schorzeń ginekologicznych, w tym zaburzeń endokrynologicznych i ultrasonografii ginekologicznej. Uczestniczę regularnie w kursach, warsztatach i konferencjach. Znam biegle język angielski i francuski. Mogę się również porozumieć  po włosku i po rosyjsku.',
+    interested: 'Moje pasje pozazawodowe to narciarstwo i windsurfing. Jestem wielokrotną medalistką Mistrzostw Świata Lekarzy, Mistrzostw Polski Lekarzy i Mistrzostw Polski Amatorów w narciarstwie alpejskim.',
+    image: jadwigaDowgialloSmolarczykImage,
+    background: false,
+    specialization: [
+        'gynecology',
+        'endocrinology'
+    ],
+    treatment: ['']
+};
+
 export const team = [
     { ...ninaWisniewska },
     { ...justynaFilipek },
@@ -493,9 +505,10 @@ export const team = [
     { ...olgaLenartowiczWarakomska },
     { ...katarzynaZbronska },
     { ...joannaOjrzenska },
-    // { ...aleksandraGorczynska },
     { ...kamilStepkowski },
     { ...katarzynaRychlik },
     { ...patrykKrokwinski },
-    { ...michalRadzio }
+    { ...michalRadzio },
+    { ...kajaStrojnowskaLapinska },
+    { ...jadwigaDowgialloSmolarczyk }
 ];

@@ -38,7 +38,10 @@ import servicesClinicalDietitian0 from '../assets/services/clinicalDietitian/ser
 import servicesCardiology0 from '../assets/services/cardiology/servicesCardiology0.jpg';
 
 // REUMATOLOGIA
-import servicesRheumatology from '../assets/services/servicesRheumatology.jpg' // TODO
+import servicesRheumatology from '../assets/services/servicesRheumatology.jpg'; // TODO
+
+// PSYCHIATRIA
+import servicesPsychiatry0 from '../assets/services/psychiatry/servicesPsychiatry0.jpg';
 
 import ninaWisniewskaImageSmall from '../assets/team/ninaWisniewska/ninaWisniewskaImageSmall.jpg';
 import justynaFilipekImageSmall from '../assets/team/justynaFilipek/justynaFilipekImageSmall.jpg';
@@ -56,11 +59,12 @@ import kamilStepkowskiImageSmall from '../assets/team/kamilStepkowski/kamilStepk
 import olgaLenartowiczWarakomskaImageSmall from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImageSmall.jpg';
 import paulinaTataraImageSmall from '../assets/team/paulinaTatara/paulinaTataraImageSmall.jpg';
 import joannaOjrzenskaImageSmall from '../assets/team/joannaOjrzenska/joannaOjrzenskaImageSmall.jpg';
-// import aleksandraGorczynskaImageSmall from '../assets/team/aleksandraGorczynska/aleksandraGorczynskaImageSmall.jpg';
 import agataSkwerekSzewczykImageSmall from '../assets/team/agataSkwerekSzewczyk/agataSkwerekSzewczykImageSmall.jpg';
 import katarzynaRychlikImageSmall from  '../assets/team/katarzynaRychlik/katarzynaRychlikImageSmall.jpg';
 import patrykKrokwinskiImageSmall from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImageSmall.jpg';
 import michalRadzioImageSmall from  '../assets/team/michalRadzio/michalRadzioImageSmall.jpg';
+import kajaStrojnowskaLapinskaImageSmall from  '../assets/team/kajaStrojnowskaLapinska/kajaStrojnowskaLapinskaImageSmall.jpg';
+import jadwigaDowgialloSmolarczykImageSmall from '../assets/team/jadwigaDowgialloSmolarczyk/jadwigaDowgialloSmolarczykImageSmall.jpg'
 
 export const dermatology = {
     id: '554e27d9-1d9e-4041-9549-29057bb9792f',
@@ -313,10 +317,12 @@ export const endocrinology = {
         }
     ],
     specialists: [
-        justynaFilipekImageSmall
+        justynaFilipekImageSmall,
+        jadwigaDowgialloSmolarczykImageSmall
     ],
     specialists2: [
-        'justyna-filipek'
+        'justyna-filipek',
+        'jadwiga-dowgiallo-smolarczyk'
     ],
     relatedSpecializations: [
         'usg',
@@ -342,10 +348,12 @@ export const gynecology = {
         }
     ],
     specialists: [
-        justynaFilipekImageSmall
+        justynaFilipekImageSmall,
+        jadwigaDowgialloSmolarczykImageSmall
     ],
     specialists2: [
-        'justyna-filipek'
+        'justyna-filipek',
+        'jadwiga-dowgiallo-smolarczyk'
     ],
     relatedSpecializations: [
         'usg',
@@ -426,7 +434,8 @@ export const clinicalDietitian = {
         'joanna-ojrzenska'
     ],
     relatedSpecializations: [
-        'rheumatology'
+        'rheumatology',
+        'psychiatry'
     ],
 };
 
@@ -480,6 +489,34 @@ export const cardiology = {
     ]
 };
 
+export const psychiatry = {
+    id: 'cef1384b-6491-4af4-b4ef-d7ffb1e2ed31',
+    specialization: 'psychiatry',
+    title: 'Psychiatria',
+    description: 'Psychiatria to gałąź medycyny zajmująca się badaniem, diagnozowaniem, leczeniem i prewencją zaburzeń psychicznych oraz emocjonalnych. Specjalizacja ta skupia się na zrozumieniu, ocenie i pomocy pacjentom z różnymi schorzeniami psychicznymi, takimi jak depresja, schizofrenia, zaburzenia lękowe, zaburzenia afektywne, zaburzenia jedzenia, zaburzenia osobowości i wiele innych.',
+    path: '/services/psychiatry',
+    pathSpecialist: '/team/psychiatry',
+    pathPrices: '/prices/psychiatry',
+    image: servicesPsychiatry0,
+    images: [
+        {
+            src: servicesPsychiatry0,
+            alt: 'Konsultacja psychiatryczna w gabinecie',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/koncepcja-psychologii-terapii-psychiatrii-zdrowia-psychicznego-i-poradnictwa-szczere-ujecie-nerwowego-skrepowanego-mlodego-mezczyzny-w-okularach-opowiadajacego-doradczyni-w-srednim-wieku-o-swoich-problemach-w-pracy_11201543.htm'
+        }
+    ],
+    specialists: [
+        kajaStrojnowskaLapinskaImageSmall
+    ],
+    specialists2: [
+        'kaja-strojnowska-lapinska'
+    ],
+    relatedSpecializations: [
+        'clinical-dietitian'
+    ]
+};
+
 export const services = [
     { ...dermatology },
     { ...aestheticMedicine },
@@ -494,5 +531,6 @@ export const services = [
     { ...vascularSurgery },
     { ...clinicalDietitian },
     { ...rheumatology },
-    { ...cardiology }
+    { ...cardiology },
+    { ...psychiatry },
 ];

@@ -51,6 +51,8 @@ const TeamView2 = () => {
                     return 'team-rheumatology';
                 case '/team/cardiology':
                     return 'team-cardiology';
+                case '/team/psychiatry':
+                    return 'team-psychiatry';
                 default:
             }
         }
@@ -89,6 +91,8 @@ const TeamView2 = () => {
             case 'team-rheumatology':
                 return <SpecialistsListPartial specialization={specialization} />;
             case 'team-cardiology':
+                return <SpecialistsListPartial specialization={specialization} />;
+            case 'team-psychiatry':
                 return <SpecialistsListPartial specialization={specialization} />;
             default:
         }
@@ -250,6 +254,13 @@ const TeamView2 = () => {
                                         to={`/team/cardiology`}
                                         value={`/team/cardiology`}
                                         onClick={() => setTab('team-cardiology')}
+                                    />
+                                    <Tab
+                                        label='Psychiatria'
+                                        component={Link}
+                                        to={`/team/psychiatry`}
+                                        value={`/team/psychiatry`}
+                                        onClick={() => setTab('team-psychiatry')}
                                     />
                                 </Tabs>
                             </Box>

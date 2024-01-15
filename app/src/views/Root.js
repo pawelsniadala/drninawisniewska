@@ -34,6 +34,7 @@ import ServicesVascularSurgeryPartial from './partials/services/ServicesVascular
 import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
 import ServicesRheumatologyPartial from './partials/services/ServicesRheumatologyPartial';
 import ServicesCardiologyPartial from './partials/services/ServicesCardiologyPartial';
+import ServicesPsychiatryPartial from './partials/services/ServicesPsychiatryPartial';
 
 
 // ZABIEGI
@@ -170,6 +171,7 @@ const Root = () => (
                     <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial />} />
                     <Route path='/services/rheumatology' element={<ServicesRheumatologyPartial />} />
                     <Route path='/services/cardiology' element={<ServicesCardiologyPartial />} />
+                    <Route path='/services/psychiatry' element={<ServicesPsychiatryPartial />} />
 
 
                     {/* ZABIEGI */}

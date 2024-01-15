@@ -53,6 +53,8 @@ const PageTitle = ({ children }) => {
                 return `Reumatologia - ${companyName}`;
             case '/services/cardiology':
                 return `Kardiologia - ${companyName}`;
+            case '/services/psychiatry':
+                return `Psychiatria - ${companyName}`;
 
 
             // ZABIEGI
@@ -252,12 +254,16 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/endocrinology/justyna-filipek':
                 return `Justyna Filipek - ${companyName}`;
+            case '/team/endocrinology/jadwiga-dowgiallo-smolarczyk':
+                return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
 
             // ginekologia
             case '/team/gynecology':
                 return `Specjaliści - ${companyName}`;
             case '/team/gynecology/justyna-filipek':
                 return `Justyna Filipek - ${companyName}`;
+            case '/team/gynecology/jadwiga-dowgiallo-smolarczyk':
+                return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
 
             // ortopedia
             case '/team/orthopedics':
@@ -288,6 +294,12 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/cardiology/michal-radzio':
                 return `Michał Radzio - ${companyName}`;
+
+            // psychiatria
+            case '/team/psychiatry':
+                return `Specjaliści - ${companyName}`;
+            case '/team/cardiology/kaja-strojnowska-lapinska':
+                return `Kaja Strojnowska-Łapińska - ${companyName}`;
 
 
             // TECHNOLOGIA
