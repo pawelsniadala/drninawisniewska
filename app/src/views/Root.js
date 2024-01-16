@@ -100,6 +100,7 @@ import PricesVascularSurgeryPartial from './partials/prices/PricesVascularSurger
 import PricesClinicalDietitianPartial from './partials/prices/PricesClinicalDietitianPartial';
 import PricesRheumatologyPartial from './partials/prices/PricesRheumatologyPartial';
 import PricesCardiologyPartial from './partials/prices/PricesCardiologyPartial';
+import PricesPsychiatryPartial from './partials/prices/PricesPsychiatryPartial';
 
 
 // PROMOCJE
@@ -238,6 +239,7 @@ const Root = () => (
                         <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartial />} />
                         <Route path='/prices/rheumatology' element={<PricesRheumatologyPartial />} />
                         <Route path='/prices/cardiology' element={<PricesCardiologyPartial />} />
+                        <Route path='/prices/psychiatry' element={<PricesPsychiatryPartial />} />
                     </Route>
 
 

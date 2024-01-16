@@ -285,8 +285,8 @@ const Table7 = () => {
     }
 
     const rows = [
-        createData('Twarz', 'Kwas dobierany jest indywidualnie w zależności od potrzeb i problemu skóry pacjenta', 200),
-        createData('Plecy', 'Kwas dobierany jest indywidualnie w zależności od potrzeb i problemu skóry pacjenta', 250),
+        createData('Twarz', 'Kwas dobierany jest indywidualnie w zależności od potrzeb i problemu skóry pacjenta', 'od 200'),
+        createData('Plecy', 'Kwas dobierany jest indywidualnie w zależności od potrzeb i problemu skóry pacjenta', 'od 250'),
     ];
 
     return (

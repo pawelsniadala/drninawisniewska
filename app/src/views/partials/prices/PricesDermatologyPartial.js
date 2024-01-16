@@ -41,7 +41,6 @@ const tooltip = (title) => (
             height: '12px',
             width: '12px',
             marginLeft: '8px',
-            // color: '#008AC9',
             color: '#d9ab5a'
         }}
     >

@@ -36,17 +36,17 @@ const StyledTableRow = styled(TableRow)(() => ({
 
 const tooltip = (title) => (
     <Tooltip title={title}>
-        <IconButton
-            sx={{
-                height: '12px',
-                width: '12px',
-                marginLeft: '8px',
-                color: '#d9ab5a'
-            }}
-        >
-        <InfoIcon fontSize='small' />
-        </IconButton>
-    </Tooltip>
+    <IconButton
+        sx={{
+            height: '12px',
+            width: '12px',
+            marginLeft: '8px',
+            color: '#d9ab5a'
+        }}
+    >
+      <InfoIcon fontSize='small' />
+    </IconButton>
+  </Tooltip>
 );
 
 const Table1 = () => {
@@ -55,14 +55,7 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja ginekologiczna - dr Justyna Filipek', 300, false),
-        createData('Konsultacja ginekologiczno - endokrynologiczna - dr Justyna Filipek', 350, false),
-        createData('Konsultacja ginekologiczna (30 min) - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 300, false),
-        createData('Konsultacja ginekologiczno - endokrynologiczna (40 min) - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 350, false),
-        createData('Konsultacja ginekologiczno - endokrynologiczna + cytologia - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 400, false),
-        createData('Konsultacja ginekologiczno - endokrynologiczna + cytologia + USG (50 min) - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 450, false),
-        createData('Cytologia', 50, false),
-        createData('USG - dopłata do wizyty', '50/100', 'Dokładną cenę ustala lekarz.')
+        createData('Konsultacja (50 min) - lek. Kaja Strojnowska-Łapińska', 400, false),
     ];
 
     return (
@@ -96,7 +89,7 @@ const Table1 = () => {
     );
 }
 
-const PricesGynecologyPartial = () => {
+const PricesPsychiatryPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
     }, []);
@@ -108,4 +101,4 @@ const PricesGynecologyPartial = () => {
     );
 }
 
-export default PricesGynecologyPartial;
+export default PricesPsychiatryPartial;
