@@ -202,7 +202,7 @@ const SpecialistsDetailsPartial = () => {
                                 <Box key={index}>
                                     <Box className='box-specialists' style={{ marginTop: '-12px' }}>
                                         <Typography className='paragraph' style={{ fontSize: '18px' }}>
-                                            <strong>{item.speciality}</strong>
+                                            {item.speciality}
                                         </Typography>
                                     </Box>
                                     {width <= 991.98 && (

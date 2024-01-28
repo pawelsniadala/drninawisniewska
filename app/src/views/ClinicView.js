@@ -128,7 +128,8 @@ const TechnologyView = () => {
                                         'Fizjoterapia',
                                         'Chirurgia plastyczna',
                                         'Alergologia',
-                                        'USG'
+                                        'Ginekologia',
+                                        'Endokrynologia'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}
@@ -139,12 +140,13 @@ const TechnologyView = () => {
                                 </Grid>
                                 <Grid container spacing={1} sx={{ marginTop: 0 }}>
                                     {[
-                                        'Endokrynologia',
-                                        'Ginekologia',
+                                        'USG',
                                         'Ortopedia',
                                         'Chirurgia naczyniowa',
                                         'Dietetyka Kliniczna',
-                                        'Reumatologia'
+                                        'Reumatologia',
+                                        'Kardiologia',
+                                        'Psychiatria'
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

@@ -27,7 +27,7 @@ import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksy
     import effectsToksynaBotulinowa2Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa2Lg.png';
     import effectsToksynaBotulinowa2Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa2Sm.png';
 import stymulatoryTkankoweImage0 from '../assets/treatment/aestheticMedicine/stymulatoryTkankowe/stymulatoryTkankowe0.jpg';
-import osoczeBogatopłytkoweImage0 from '../assets/treatment/aestheticMedicine/osoczeBogatopłytkowe/osoczeBogatopłytkowe0.jpg';
+import osoczeBogatoplytkoweImage0 from '../assets/treatment/aestheticMedicine/osoczeBogatoplytkowe/osoczeBogatoplytkowe0.jpg';
 import laserFrakcyjnyImage0 from '../assets/treatment/aestheticMedicine/laserFrakcyjny/laserFrakcyjny0.jpg';
     // efekty
     import effectsLaserFrakcyjny0Lg from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny0Lg.png';
@@ -380,16 +380,16 @@ export const stymulatoryTkankowe = {
     ]
 };
 
-export const osoczeBogatopłytkowe = {
+export const osoczeBogatoplytkowe = {
     id: '59af0d17-9044-4181-9822-af36bda65dc6',
-    treatment: 'osocze-bogatopłytkowe',
+    treatment: 'osocze-bogatoplytkowe',
     title: 'Osocze bogatopłytkowe',
     description: 'Osocze bogatopłytkowe uzyskuje się z krwi własnej pacjenta poprzez podwójne odwirowanie substancji, które stanowią elementy morfotyczne krwi. Podczas odwirowywania krwi pobranej bezpośrednio przed zabiegiem zostają oddzielone krwinki czerwone oraz białe od płytek krwi. Osocze bogatopłytkowe uzyskuje się z standardowego poboru krwi. Po odwirowaniu zyskuje się płynny składnik krwi o niezwykłych i pożądanych przez nas właściwościach. Aby wprowadzić go pod skórę pacjenta wykorzystuje się mezoterapię, czyli ostrzykiwanie za pomocą bardzo cienkich igieł. Najczęściej ostrzykiwaniu osoczem poddawane są policzki, linia żuchwy, czoło, powieki oraz okolice oczu. Jednak osocze bogatopłytkowe przynosi również świetne rezultaty w poprawie wyglądu skóry szyi i dekoltu, ramion i dłoni oraz owłosionej skóry głowy.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/aesthetic-medicine/osocze-bogatopłytkowe',
+    path: '/treatment/aesthetic-medicine/osocze-bogatoplytkowe',
     images: [
         {
-            src: osoczeBogatopłytkoweImage0,
+            src: osoczeBogatoplytkoweImage0,
             alt: 'Regeneracja skóry na czole pacjenta',
             author: 'Freepik',
             href: 'https://pl.freepik.com/darmowe-zdjecie/kosmetyczka-robi-wypelniacz-wtryskowy-na-klientce-w-salonie_12780811.htm'
@@ -1034,7 +1034,7 @@ export const treatment = [
     { ...modelowanieUst },
     { ...toksynaBotulinowa },
     { ...stymulatoryTkankowe },
-    { ...osoczeBogatopłytkowe },
+    { ...osoczeBogatoplytkowe },
     { ...laserFrakcyjny },
     { ...niciRewitalizujaceILiftingujace },
     { ...mezoterapiaIglowa },

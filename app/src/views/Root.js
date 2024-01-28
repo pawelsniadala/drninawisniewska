@@ -50,7 +50,7 @@ import TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial from './partial
 import TreatmentModelowanieUstPartial from './partials/treatment/aestheticMedicine/TreatmentModelowanieUstPartial';
 import TreatmentToksynaBotulinowaPartial from './partials/treatment/aestheticMedicine/TreatmentToksynaBotulinowaPartial';
 import TreatmentStymulatoryTkankowePartial from './partials/treatment/aestheticMedicine/TreatmentStymulatoryTkankowePartial';
-import TreatmentOsoczeBogatopłytkowePartial from './partials/treatment/aestheticMedicine/TreatmentOsoczeBogatopłytkowePartial';
+import TreatmentOsoczeBogatoplytkowePartial from './partials/treatment/aestheticMedicine/TreatmentOsoczeBogatoplytkowePartial';
 import TreatmentLaserFrakcyjnyPartial from './partials/treatment/aestheticMedicine/TreatmentLaserFrakcyjnyPartial';
 import TreatmentNiciRewitalizujaceILiftingujacePartial from './partials/treatment/aestheticMedicine/TreatmentNiciRewitalizujaceILiftingujacePartial';
 import TreatmentMezoterapiaIglowaPartial from './partials/treatment/aestheticMedicine/TreatmentMezoterapiaIglowaPartial';
@@ -189,7 +189,7 @@ const Root = () => (
                     <Route path='/treatment/aesthetic-medicine/modelowanie-ust' element={<TreatmentModelowanieUstPartial />} />
                     <Route path='/treatment/aesthetic-medicine/toksyna-botulinowa' element={<TreatmentToksynaBotulinowaPartial />} />
                     <Route path='/treatment/aesthetic-medicine/stymulatory-tkankowe' element={<TreatmentStymulatoryTkankowePartial />} />
-                    <Route path='/treatment/aesthetic-medicine/osocze-bogatopłytkowe' element={<TreatmentOsoczeBogatopłytkowePartial />} />
+                    <Route path='/treatment/aesthetic-medicine/osocze-bogatoplytkowe' element={<TreatmentOsoczeBogatoplytkowePartial />} />
                     <Route path='/treatment/aesthetic-medicine/laser-frakcyjny' element={<TreatmentLaserFrakcyjnyPartial />} />
                     <Route path='/treatment/aesthetic-medicine/nici-rewitalizujace-i-liftingujace' element={<TreatmentNiciRewitalizujaceILiftingujacePartial />} />
                     <Route path='/treatment/aesthetic-medicine/mezoterapia-iglowa' element={<TreatmentMezoterapiaIglowaPartial />} />

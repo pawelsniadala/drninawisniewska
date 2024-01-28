@@ -77,7 +77,7 @@ const PageTitle = ({ children }) => {
                 return `Toksyna botulinowa - ${companyName}`;
             case '/treatment/aesthetic-medicine/stymulatory-tkankowe':
                 return `Stymulatory tkankowe - ${companyName}`;
-            case '/treatment/aesthetic-medicine/osocze-bogatopłytkowe':
+            case '/treatment/aesthetic-medicine/osocze-bogatoplytkowe':
                 return `Osocze bogatopłytkowe - ${companyName}`;
             case '/treatment/aesthetic-medicine/laser-frakcyjny':
                 return `Laser frakcyjny - ${companyName}`;
@@ -171,6 +171,8 @@ const PageTitle = ({ children }) => {
             case '/prices/rheumatology':
                 return `Cennik - ${companyName}`;
             case '/prices/cardiology':
+                return `Cennik - ${companyName}`;
+            case '/prices/psychiatry':
                 return `Cennik - ${companyName}`;
 
 
@@ -298,7 +300,7 @@ const PageTitle = ({ children }) => {
             // psychiatria
             case '/team/psychiatry':
                 return `Specjaliści - ${companyName}`;
-            case '/team/cardiology/kaja-strojnowska-lapinska':
+            case '/team/psychiatry/kaja-strojnowska-lapinska':
                 return `Kaja Strojnowska-Łapińska - ${companyName}`;
 
 

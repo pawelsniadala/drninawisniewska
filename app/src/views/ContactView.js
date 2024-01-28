@@ -162,7 +162,7 @@ const ContactView = () => {
                                     <textarea className='form-control' {...register('message')} rows={isSm ? '6' : '4'} />
                                     {errors.message && <span className='error'>{errors.message.message}</span>}
                                 </Box>
-                                <span className='form-info'>Pola oznaczone<span className='required'>&nbsp;*</span>&nbsp;są wymagane</span>
+                                <span className='form-info'>Pola oznaczone<span className='required'>&nbsp;*</span>&nbsp;są wymagane.</span>
                                 <Box className='link-contained-submit' width='auto'>
                                     <Button
                                         variant='contained'

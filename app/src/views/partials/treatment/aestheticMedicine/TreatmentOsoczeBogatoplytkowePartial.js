@@ -15,11 +15,11 @@ import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
 
-import { treatment, osoczeBogatopłytkowe } from '../../../../data/treatment';
+import { treatment, osoczeBogatoplytkowe } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
-const TreatmentOsoczeBogatopłytkowePartial = () => {
+const TreatmentOsoczeBogatoplytkowePartial = () => {
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -70,10 +70,10 @@ const TreatmentOsoczeBogatopłytkowePartial = () => {
                                 </Typography>
                                 <Box className='box-image'>
                                     <Image
-                                        imageSrc={osoczeBogatopłytkowe.images[0].src}
-                                        imageAlt={osoczeBogatopłytkowe.images[0].alt}
-                                        imageAuthor={osoczeBogatopłytkowe.images[0].author}
-                                        imageHref={osoczeBogatopłytkowe.images[0].href}
+                                        imageSrc={osoczeBogatoplytkowe.images[0].src}
+                                        imageAlt={osoczeBogatoplytkowe.images[0].alt}
+                                        imageAuthor={osoczeBogatoplytkowe.images[0].author}
+                                        imageHref={osoczeBogatoplytkowe.images[0].href}
                                     />
                                 </Box>
                             </Box>
@@ -130,7 +130,7 @@ const TreatmentOsoczeBogatopłytkowePartial = () => {
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team
-                                        .filter(item => item.treatment.includes('osocze-bogatopłytkowe'))
+                                        .filter(item => item.treatment.includes('osocze-bogatoplytkowe'))
                                         .map((item) => (
                                             <CardTeamProposed
                                                 key={item.id}
@@ -174,7 +174,7 @@ const TreatmentOsoczeBogatopłytkowePartial = () => {
                                 <Box className='card-wrapper'>
                                     {treatment
                                         .filter(item => item.specialization.includes('aesthetic-medicine'))
-                                        .filter(item => item.treatment !== 'osocze-bogatopłytkowe')
+                                        .filter(item => item.treatment !== 'osocze-bogatoplytkowe')
                                         .map((item) => (
                                             <CardProposed
                                                 key={item.id}
@@ -195,4 +195,4 @@ const TreatmentOsoczeBogatopłytkowePartial = () => {
     );
 }
 
-export default Page(TreatmentOsoczeBogatopłytkowePartial);
+export default Page(TreatmentOsoczeBogatoplytkowePartial);

@@ -136,6 +136,13 @@ const FooterSection = () => {
                         >
                             Reumatologia
                         </Typography>
+                        <Typography
+                            component='a'
+                            href='/services/psychiatry'
+                            className='footer-text link'
+                        >
+                            Psychiatria
+                        </Typography>
                     </Box>
                 </Box>
                 <Box className='treatment'>
@@ -146,6 +153,13 @@ const FooterSection = () => {
                         {/* DERMATOLOGIA */}
                         <Typography
                             component='a'
+                            href='/treatment/dermatology/badanie-znamion-barwnikowych'
+                            className='footer-text link'
+                        >
+                            Badanie znamion barwnikowych
+                        </Typography>
+                        <Typography
+                            component='a'
                             href='/treatment/dermatology/fototerapia-chorob-skory'
                             className='footer-text link'
                         >
@@ -154,7 +168,7 @@ const FooterSection = () => {
                         {/* MEDYCYNA ESTETYCZNA */}
                         <Typography
                             component='a'
-                            href='/treatment/aesthetic-medicine/osocze-bogatopłytkowe'
+                            href='/treatment/aesthetic-medicine/osocze-bogatoplytkowe'
                             className='footer-text link'
                         >
                             Osocze bogatopłytkowe
