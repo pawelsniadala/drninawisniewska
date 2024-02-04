@@ -13,7 +13,8 @@ const PageTitle = ({ children }) => {
             // gh-pages
             case '/drninawisniewska/':
                 return companyName;
-
+            case '/localhost:3001/':
+                return companyName;
 
             // KLINIKA
             case '/clinic':

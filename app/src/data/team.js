@@ -20,6 +20,7 @@ import patrykKrokwinskiImage from  '../assets/team/patrykKrokwinski/patrykKrokwi
 import michalRadzioImage from  '../assets/team/michalRadzio/michalRadzioImage.jpg';
 import kajaStrojnowskaLapinskaImage from  '../assets/team/kajaStrojnowskaLapinska/kajaStrojnowskaLapinskaImage.jpg';
 import jadwigaDowgialloSmolarczykImage from  '../assets/team/jadwigaDowgialloSmolarczyk/jadwigaDowgialloSmolarczykImage.jpg';
+// import teamBackground from '../assets/team/teamBackground.jpg';
 
 export const ninaWisniewska = {
     id: '4d6a6ec4-ea93-40b5-9d23-cb7204c6911e',
