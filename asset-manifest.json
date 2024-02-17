@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://drninawisniewska.pl/static/css/main.13924e45.css",
-    "main.js": "https://drninawisniewska.pl/static/js/main.c002d0c6.js",
+    "main.css": "https://drninawisniewska.pl/static/css/main.1f0194da.css",
+    "main.js": "https://drninawisniewska.pl/static/js/main.da10342f.js",
     "static/js/410.5b7ce3c3.chunk.js": "https://drninawisniewska.pl/static/js/410.5b7ce3c3.chunk.js",
     "static/js/981.6e541656.chunk.js": "https://drninawisniewska.pl/static/js/981.6e541656.chunk.js",
     "static/js/787.c1112931.chunk.js": "https://drninawisniewska.pl/static/js/787.c1112931.chunk.js",
@@ -166,14 +166,14 @@
     "static/media/slick.ttf": "https://drninawisniewska.pl/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "https://drninawisniewska.pl/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://drninawisniewska.pl/index.html",
-    "main.13924e45.css.map": "https://drninawisniewska.pl/static/css/main.13924e45.css.map",
-    "main.c002d0c6.js.map": "https://drninawisniewska.pl/static/js/main.c002d0c6.js.map",
+    "main.1f0194da.css.map": "https://drninawisniewska.pl/static/css/main.1f0194da.css.map",
+    "main.da10342f.js.map": "https://drninawisniewska.pl/static/js/main.da10342f.js.map",
     "410.5b7ce3c3.chunk.js.map": "https://drninawisniewska.pl/static/js/410.5b7ce3c3.chunk.js.map",
     "981.6e541656.chunk.js.map": "https://drninawisniewska.pl/static/js/981.6e541656.chunk.js.map",
     "787.c1112931.chunk.js.map": "https://drninawisniewska.pl/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.13924e45.css",
-    "static/js/main.c002d0c6.js"
+    "static/css/main.1f0194da.css",
+    "static/js/main.da10342f.js"
   ]
 }
