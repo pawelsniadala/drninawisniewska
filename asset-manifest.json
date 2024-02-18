@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.544e662f.css",
-    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.603ed7c1.js",
+    "main.css": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.7b605f88.css",
+    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.8dcb6971.js",
     "static/js/410.5b7ce3c3.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js",
     "static/js/981.6e541656.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js",
     "static/js/787.c1112931.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js",
@@ -16,11 +16,13 @@
     "static/media/effectsPeelingMedyczny0Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPeelingMedyczny0Lg.1cb010dd8cb5495d48c6.png",
     "static/media/effectsModelowanieUst0Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst0Lg.dfc68729554b99fe783e.png",
     "static/media/effectsPlastykaPowiekLg0.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsPlastykaPowiekLg0.2bb763e56903c642f996.png",
+    "static/media/effectsModelowanieUst6Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst6Lg.de922e51ad1742404315.png",
     "static/media/effectsModelowanieUst3Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst3Lg.0eb544d0350eb71b4a15.png",
     "static/media/olgaLenartowiczWarakomskaImage.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/olgaLenartowiczWarakomskaImage.f6998998408dc195a8d5.jpg",
     "static/media/effectsEpilacjaLaserowa0Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsEpilacjaLaserowa0Lg.f79d3c460e6c47ac4218.png",
     "static/media/effectsModelowanieUst5Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst5Lg.ab131c1f7ebdbf5f2490.png",
     "static/media/effectsModelowanieUst2Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst2Lg.fc815eca6dbda49477f3.png",
+    "static/media/effectsModelowanieUst6Sm.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst6Sm.9556fa40a41e24c63d16.png",
     "static/media/effectsModelowanieUst4Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsModelowanieUst4Lg.ac6e387e07bfc72e89f1.png",
     "static/media/effectsUltradzwiekiIFalaRadiowa0Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsUltradzwiekiIFalaRadiowa0Lg.0779cc90607020687634.png",
     "static/media/effectsEpilacjaLaserowa2Lg.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/effectsEpilacjaLaserowa2Lg.27ba3a817d7b1af7c7c7.png",
@@ -170,14 +172,14 @@
     "static/media/slick.ttf": "https://pawelsniadala.github.io/drninawisniewska/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "https://pawelsniadala.github.io/drninawisniewska/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://pawelsniadala.github.io/drninawisniewska/index.html",
-    "main.544e662f.css.map": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.544e662f.css.map",
-    "main.603ed7c1.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.603ed7c1.js.map",
+    "main.7b605f88.css.map": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.7b605f88.css.map",
+    "main.8dcb6971.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.8dcb6971.js.map",
     "410.5b7ce3c3.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js.map",
     "981.6e541656.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js.map",
     "787.c1112931.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.544e662f.css",
-    "static/js/main.603ed7c1.js"
+    "static/css/main.7b605f88.css",
+    "static/js/main.8dcb6971.js"
   ]
 }
