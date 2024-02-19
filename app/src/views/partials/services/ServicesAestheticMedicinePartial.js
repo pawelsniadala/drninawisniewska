@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Fade from '@mui/material/Fade';
+import Button from '@mui/material/Button';
+
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
@@ -19,7 +24,24 @@ import { services, aestheticMedicine } from '../../../data/services';
 import { team } from '../../../data/team';
 import { treatment } from '../../../data/treatment';
 
+
 const ServicesAestheticMedicinePartial = () => {
+    // show specialists
+    const [showMoreSpecialists, setShowMoreSpecialists] = useState(false);
+    const toggleShowMoreSpecialists = () => {
+        setShowMoreSpecialists(prevState => !prevState);
+    };
+    const filteredSpecialists = team.filter(item => item.specialization.includes('aesthetic-medicine'));
+    const displayedSpecialists = showMoreSpecialists ? filteredSpecialists : filteredSpecialists.slice(0, 3);
+
+    // show treatments
+    const [showMoreTreatments, setShowMoreTreatments] = useState(false);
+    const toggleShowMoreTreatments = () => {
+        setShowMoreTreatments(prevState => !prevState);
+    };
+    const filteredTreatments = treatment.filter(item => item.specialization.includes('aesthetic-medicine'));
+    const displayedTreatments = showMoreTreatments ? filteredTreatments : filteredTreatments.slice(0, 3);
+
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -116,7 +138,7 @@ const ServicesAestheticMedicinePartial = () => {
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {team.filter(item => item.specialization.includes('aesthetic-medicine')).map((item) => (
+                                    {displayedSpecialists.map((item) => (
                                         <CardTeamProposed
                                             key={item.id}
                                             cardTitle={item.name}
@@ -126,6 +148,15 @@ const ServicesAestheticMedicinePartial = () => {
                                             cardPath={`/team/aesthetic-medicine/${item.specialist}`}
                                         />
                                     ))}
+                                    <Fade in={filteredSpecialists.length > 3}>
+                                        <Button
+                                            className='show-more-cards'
+                                            onClick={toggleShowMoreSpecialists}
+                                            endIcon={showMoreSpecialists ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                                        >
+                                            {showMoreSpecialists ? 'Pokaż mniej' : 'Pokaż więcej'}
+                                        </Button>
+                                    </Fade>
                                 </Box>
                             </Box>
                             <Box className='box-proposed'>
@@ -135,7 +166,7 @@ const ServicesAestheticMedicinePartial = () => {
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {treatment.filter(item => item.specialization.includes('aesthetic-medicine')).map((item) => (
+                                    {displayedTreatments.map((item) => (
                                         <CardProposed
                                             key={item.id}
                                             cardTitle={item.title}
@@ -144,6 +175,15 @@ const ServicesAestheticMedicinePartial = () => {
                                             cardPath={item.path}
                                         />
                                     ))}
+                                    <Fade in={filteredTreatments.length > 3}>
+                                        <Button
+                                            className='show-more-cards'
+                                            onClick={toggleShowMoreTreatments}
+                                            endIcon={showMoreTreatments ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                                        >
+                                            {showMoreTreatments ? 'Pokaż mniej' : 'Pokaż więcej'}
+                                        </Button>
+                                    </Fade>
                                 </Box>
                             </Box>
                             <Box className='box-proposed'>

@@ -37,18 +37,18 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('USG jamy brzusznej', 150),
-        createData('USG tarczycy', 150),
-        createData('USG piersi', 150),
-        createData('USG ślinianek', 150),
-        createData('USG węzłów chłonnych', 150),
-        createData('USG prostaty', 150),
-        createData('USG jąder', 150),
-        createData('USG układu moczowego', 150),
+        createData('USG jamy brzusznej', 160),
+        createData('USG tarczycy', 160),
+        createData('USG piersi', 160),
+        createData('USG ślinianek', 160),
+        createData('USG węzłów chłonnych', 160),
+        createData('USG prostaty', 160),
+        createData('USG jąder', 160),
+        createData('USG układu moczowego', 160),
         createData('USG barku', 200),
         createData('USG ręki', 200),
         createData('USG kolana', 200),
-        createData('Doppler tętnic szyjnych', 150),
+        createData('Doppler tętnic szyjnych', 170),
         createData('Doppler kończyn dolnych (jedna noga)', 170),
         createData('Doppler kończyn dolnych (dwie nogi)', 250)
     ];

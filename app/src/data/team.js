@@ -20,6 +20,7 @@ import patrykKrokwinskiImage from  '../assets/team/patrykKrokwinski/patrykKrokwi
 import michalRadzioImage from  '../assets/team/michalRadzio/michalRadzioImage.jpg';
 import kajaStrojnowskaLapinskaImage from  '../assets/team/kajaStrojnowskaLapinska/kajaStrojnowskaLapinskaImage.jpg';
 import jadwigaDowgialloSmolarczykImage from  '../assets/team/jadwigaDowgialloSmolarczyk/jadwigaDowgialloSmolarczykImage.jpg';
+import karolinaZegotaImage from '../assets/team/karolinaZegota/karolinaZegotaImage.jpg';
 // import teamBackground from '../assets/team/teamBackground.jpg';
 
 export const ninaWisniewska = {
@@ -29,7 +30,7 @@ export const ninaWisniewska = {
     speciality: 'Specjalista w zakresie dermatologii i wenerologii, lekarz medycyny estetycznej',
     summary: 'Urodziłam się w Wyszkowie i dlatego to miejsce jest szczególnie mi bliskie. Od kilku lat przyjmuję tu jako dermatolog pomagając Państwu w zakresie chorób skóry i to dzięki Państwa inicjatywie poszerzam swoją działalność. Zajmuję się kompleksowo leczeniem wszystkich chorób skóry. Przypadki wymagające szczegółowej diagnostyki kieruję do Kliniki Dermatologicznej WIM MON przy ulicy Szaserów 128 w Warszawie, gdzie pełnię funkcję starszego asystenta. W zakresie medycyny estetycznej stale podnoszę swoje kwalifikacje, uczestnicząc w licznych szkoleniach i kongresach, m.in. w zakresie laseroterapii oraz zabiegów z zastosowaniem wypełniaczy. W swojej pracy stawiam głównie na naturalność.',
     education: 'Dr n. med. Nina Wiśniewska jest absolwentką I Wydziału Lekarskiego Akademii Medycznej w Warszawie. Na swoim koncie posiada wiele publikacji naukowych oraz wystąpień na konferencjach i sympozjach polskich i zagranicznych. Czynnie bierze udział w wystąpieniach telewizyjnych takich jak "Pytanie na śniadanie", "Dzień Dobry Polsko", "Sekrety lekarzy" i innych. Jej publikacje dostępne są w czasopismach branżowych "Twój Styl", "Flesz", "Party", "Gala" i innych.',
-    experience: 'Nagrodzona przez Ministra Zdrowia w 2015 roku za uzyskanie najlepszego wyniku w Polsce z egzaminu PES w zakresie dermatologii i wenerologii. Na co dzień pełni funkcję Starszego Asystenta w Klinice Dermatologicznej Wojskowego Instytutu Medycznego Ministerstwa Obrony Narodowej w Warszawie. Członkini  Polskiego Towarzystwa Dermatologicznego i Farmaekonomicznego. Członkini Polskiego Towarzystwa Medycyny Estetycznej i Anti - Anging.',
+    experience: 'Nagrodzona przez Ministra Zdrowia w 2015 roku za uzyskanie najlepszego wyniku w Polsce z egzaminu PES w zakresie dermatologii i wenerologii. Na co dzień pełni funkcję Starszego Asystenta w Klinice Dermatologicznej Wojskowego Instytutu Medycznego Ministerstwa Obrony Narodowej w Warszawie. Członkini  Polskiego Towarzystwa Dermatologicznego i Farmaekonomicznego. Członkini Polskiego Towarzystwa Medycyny Estetycznej i Anti-Anging.',
     interested: false,
     image: ninaWisniewskaImage,
     background: false,
@@ -43,6 +44,9 @@ export const ninaWisniewska = {
         'modelowanie-ust',
         'toksyna-botulinowa',
         'mezoterapia-iglowa',
+    ],
+    career: [
+        'dermatologist'
     ]
 };
 
@@ -72,7 +76,7 @@ export const paulinaBudna = {
     speciality: 'Kosmetolog',
     summary: false,
     education: 'Absolwentka studiów magisterskich na kierunku kosmetologia. Od początku swojej kariery zawodowej stawia na profesjonalizm oraz indywidualne podejście do pacjenta. Dokłada wszelkich starań, aby każdy kto korzysta z jej usług mógł poczuć się wyjątkowo.',
-    experience: 'Specjalizuje się w wykonywaniu zabiegów pielęgnacyjno - leczniczych, w szczególności dla skór wymagających, tj. skóra trądzikowa, z przebarwieniami, bliznami potrądzikowymi, itp. Ponadto wykonuje zabiegi z zakresu ujędrniania i modelowania sylwetki, a także zabiegi epilacji laserowej. Chętnie uczy się nowych rzeczy. Swoją wiedzę pogłębia uczestnicząc w specjalistycznych szkoleniach i kongresach. Bardzo ceni sobie wzajemną współpracę z lekarzami z dziedziny dermatologii i medycyny estetycznej. Z Kliniką dr Niny Wiśniewskiej związana jest od początku jej istnienia.',
+    experience: 'Specjalizuje się w wykonywaniu zabiegów pielęgnacyjno-leczniczych, w szczególności dla skór wymagających, tj. skóra trądzikowa, z przebarwieniami, bliznami potrądzikowymi, itp. Ponadto wykonuje zabiegi z zakresu ujędrniania i modelowania sylwetki, a także zabiegi epilacji laserowej. Chętnie uczy się nowych rzeczy. Swoją wiedzę pogłębia uczestnicząc w specjalistycznych szkoleniach i kongresach. Bardzo ceni sobie wzajemną współpracę z lekarzami z dziedziny dermatologii i medycyny estetycznej. Z Kliniką dr Niny Wiśniewskiej związana jest od początku jej istnienia.',
     interested: false,
     image: paulinaBudnaImage,
     background: false,
@@ -86,6 +90,9 @@ export const paulinaBudna = {
         'ultradzwieki-i-fala-radiowa',
         'laser-frakcyjny',
         'zamykanie-naczynek-i-likwidacja-przebarwien'
+    ],
+    career: [
+        'cosmetologist'
     ]
 };
 
@@ -144,6 +151,9 @@ export const aldonaMaciag = {
         'badanie-znamion-barwnikowych',
         'fototerapia-chorob-skory',
         'usuniecie-zmian-skornych-elektrochirurgiczne'
+    ],
+    career: [
+        'dermatologist'
     ]
 };
 
@@ -153,7 +163,7 @@ export const justynaKloniecka = {
     name: 'lek. med. Justyna Kłoniecka',
     speciality: 'Dermatolog',
     summary: false,
-    education: 'Absolwentka Wydziału Wojskowo - Lekarskiego Uniwersytetu Medycznego w Łodzi oraz Akademii Wojsk Lądowych we Wrocławiu. Szkolenie specjalizacyjne z dermatologii i wenerologii odbywa w Klinice Dermatologicznej CSK MON Wojskowego Instytutu Medycznego w Warszawie.',
+    education: 'Absolwentka Wydziału Wojskowo-Lekarskiego Uniwersytetu Medycznego w Łodzi oraz Akademii Wojsk Lądowych we Wrocławiu. Szkolenie specjalizacyjne z dermatologii i wenerologii odbywa w Klinice Dermatologicznej CSK MON Wojskowego Instytutu Medycznego w Warszawie.',
     experience: 'Zajmuje się diagnostyką i leczeniem chorób skóry, włosów i paznokci oraz chorób przenoszonych drogą płciową. Stale podnosi swoje kwalifikacje uczestnicząc w licznych kursach i konferencjach związanych z dermatologią kliniczną. W swojej codziennej pracy zawodowej ceni holistyczne i indywidualne podejście do każdego pacjenta w myśl zasady "Salus aegroti suprema lex" dobro chorego najwyższym prawem.',
     interested: false,
     image: justynaKlonieckaImage,
@@ -165,6 +175,9 @@ export const justynaKloniecka = {
         'badanie-znamion-barwnikowych',
         'fototerapia-chorob-skory',
         'usuniecie-zmian-skornych-elektrochirurgiczne'
+    ],
+    career: [
+        'dermatologist'
     ]
 };
 
@@ -230,7 +243,10 @@ export const katarzynaMysliwiecCzajka = {
     treatment: [
         'badanie-znamion-barwnikowych',
         'fototerapia-chorob-skory',
-        'usuniecie-zmian-skornych-elektrochirurgiczne'
+        'usuniecie-zmian-skornych-elektrochirurgiczne',
+    ],
+    career: [
+        'dermatologist'
     ]
 };
 
@@ -280,6 +296,9 @@ export const paulinaTatara = {
         'mezoterapia-iglowa',
         'laser-frakcyjny',
         'zamykanie-naczynek-i-likwidacja-przebarwien'
+    ],
+    career: [
+        'dermatologist'
     ]
 };
 
@@ -337,7 +356,7 @@ export const katarzynaZbronska = {
     speciality: 'Dermatolog, trycholog',
     summary: false,
     education: 'Absolwentka I Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego. Obecnie pracuje w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie. Jest członkiem Sekcji Dermatologii Onkologicznej Polskiego Towarzystwa Dermatologicznego oraz International Trichoscopy Society.',
-    experience: 'Do jej głównych zainteresowań zawodowych należą choroby skóry owłosionej, diagnostyka trichoskopowa i leczenie różnych typów łysienia przy użyciu odpowiednio dobranych technik medycyny regeneracyjnej. Doświadczenie w zakresie medycyny estetycznej zdobywała pod okiem najlepszych specjalistów, a swoje kwalifikacje stale poszerza biorąc udział w licznych kursach, szkoleniach i kongresach. Podczas planowania leczenia stawia na subtelność i naturalne podkreślenie indywidualnych atutów. Poza zabiegami z użyciem toksyny botulinowej, kwasu hialuronowego i laseroterapii, zajmuje się usuwaniem znamion metodą dermatochirurgiczną. Specjalizuje się również w wykonywaniu zabiegów z użyciem osocza bogatopłytkowego oraz technologii HIFU - SonoQueen.',
+    experience: 'Do jej głównych zainteresowań zawodowych należą choroby skóry owłosionej, diagnostyka trichoskopowa i leczenie różnych typów łysienia przy użyciu odpowiednio dobranych technik medycyny regeneracyjnej. Doświadczenie w zakresie medycyny estetycznej zdobywała pod okiem najlepszych specjalistów, a swoje kwalifikacje stale poszerza biorąc udział w licznych kursach, szkoleniach i kongresach. Podczas planowania leczenia stawia na subtelność i naturalne podkreślenie indywidualnych atutów. Poza zabiegami z użyciem toksyny botulinowej, kwasu hialuronowego i laseroterapii, zajmuje się usuwaniem znamion metodą dermatochirurgiczną. Specjalizuje się również w wykonywaniu zabiegów z użyciem osocza bogatopłytkowego oraz technologii HIFU-SonoQueen.',
     interested: false,
     image: katarzynaZbronskaImage,
     background: false,
@@ -357,6 +376,9 @@ export const katarzynaZbronska = {
         'laser-frakcyjny',
         'zamykanie-naczynek-i-likwidacja-przebarwien',
         'sonoqueen-technologia-hifu'
+    ],
+    career: [
+        'dermatologist'
     ]
 };
 
@@ -415,6 +437,9 @@ export const katarzynaRychlik = {
     treatment: [
         'badanie-znamion-barwnikowych',
         'fototerapia-chorob-skory'
+    ],
+    career: [
+        'dermatologist'
     ]
 };
 
@@ -468,7 +493,10 @@ export const kajaStrojnowskaLapinska = {
     specialization: [
         'psychiatry'
     ],
-    treatment: ['']
+    treatment: [''],
+    career: [
+        'psychiatrist'
+    ]
 };
 
 export const jadwigaDowgialloSmolarczyk = {
@@ -487,6 +515,33 @@ export const jadwigaDowgialloSmolarczyk = {
         'endocrinology'
     ],
     treatment: ['']
+};
+
+export const karolinaZegota = {
+    id: '8d18264e-742e-4aa6-9d19-ee70f40aef69',
+    specialist: 'karolina-zegota',
+    name: 'Karolina Zęgota',
+    speciality: 'Kosmetolog',
+    summary: false,
+    education: 'Ukończyła studia licencjackie na kierunku kosmetologia i dalej podąża tą ścieżką edukacji. W swoim zawodzie zdecydowanie kładzie nacisk na samopoczucie pacjenta oraz pomoc mu poprzez holistyczne podejście współpracując z lekarzami. Posiada świetne zdolności komunikacyjne i empatię, które pozwalają jej na zrozumienie i spełnienie potrzeb pacjentów.',
+    experience: 'Specjalizuje się w pracy ze skórą trądzikową oraz profilaktyce przeciwstarzeniowej. Ponadto wykonuje zabiegi z zakresu modelowania sylwetki i depilacji laserowej. Na każdej płaszczyźnie w swoim zawodzie stara się być profesjonalistką ,która kieruje się indywidualnymi potrzebami pacjentów i dostarcza im kompleksową opiekę. Jej głównym celem jest poprawa wyglądu i zdrowia skóry, przy jednoczesnym zapewnieniu komfortu i zaufania pacjenta.',
+    interested: false,
+    image: karolinaZegotaImage,
+    background: false,
+    specialization: [
+        'cosmetology'
+    ],
+    treatment: [
+        'peeling-medyczny',
+        'epilacja-laserowa',
+        'masaz-prozniowy',
+        'ultradzwieki-i-fala-radiowa',
+        'laser-frakcyjny',
+        'zamykanie-naczynek-i-likwidacja-przebarwien'
+    ],
+    career: [
+        'cosmetologist'
+    ]
 };
 
 export const team = [
@@ -511,5 +566,6 @@ export const team = [
     { ...patrykKrokwinski },
     { ...michalRadzio },
     { ...kajaStrojnowskaLapinska },
-    { ...jadwigaDowgialloSmolarczyk }
+    { ...jadwigaDowgialloSmolarczyk },
+    { ...karolinaZegota }
 ];

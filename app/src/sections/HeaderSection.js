@@ -24,6 +24,7 @@ import PricesSvg from '../assets/svg/PricesSvg';
 import SpecialOfferSvg from '../assets/svg/SpecialOfferSvg';
 import TeamSvg from '../assets/svg/TeamSvg';
 // import TechnologySvg from '../assets/svg/TechnologySvg';
+import CareerSvg from '../assets/svg/CareerSvg';
 import ContactSvg from '../assets/svg/ContactSvg';
 
 const HeaderSection = () => {
@@ -223,6 +224,26 @@ const HeaderSection = () => {
                                 <TechnologySvg width='17px' height='17px' />
                             </ListItemIcon>
                             <ListItemText className='list-item-text' primary='Technologia' />
+                        </ListItemButton>
+                    </NavLink>
+                </ListItem> */}
+                {/* <ListItem className='list-item'>
+                    <NavLink
+                        className='nav-link'
+                        activeclassname='active'
+                        aria-current='page'
+                        to='/career'
+                        onClick={(e) => {
+                            if (window.location.pathname.includes('/career')) {
+                                e.preventDefault();
+                            }
+                        }}
+                    >
+                        <ListItemButton className='list-item-button'>
+                            <ListItemIcon className='list-item-icon'>
+                                <CareerSvg width='17px' height='17px' />
+                            </ListItemIcon>
+                            <ListItemText className='list-item-text' primary='Kariera' />
                         </ListItemButton>
                     </NavLink>
                 </ListItem> */}
@@ -501,6 +522,21 @@ const HeaderSection = () => {
                                         }}
                                     >
                                         Technologia
+                                    </NavLink>
+                                </li> */}
+                                {/* <li className='nav-item'>
+                                    <NavLink
+                                        className='nav-link'
+                                        activeclassname='active'
+                                        aria-current='page'
+                                        to='/career'
+                                        onClick={(e) => {
+                                            if (window.location.pathname.includes('/career')) {
+                                                e.preventDefault();
+                                            }
+                                        }}
+                                    >
+                                        Kariera
                                     </NavLink>
                                 </li> */}
                                 <li className='nav-item'>

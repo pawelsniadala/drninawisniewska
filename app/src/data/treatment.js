@@ -18,6 +18,8 @@ import modelowanieUstImage0 from '../assets/treatment/aestheticMedicine/modelowa
     import effectsModelowanieUst4Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst4Sm.png';
     import effectsModelowanieUst5Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst5Lg.png';
     import effectsModelowanieUst5Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst5Sm.png';
+    import effectsModelowanieUst6Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst6Lg.png';
+    import effectsModelowanieUst6Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst6Sm.png';
 import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/toksynaBotulinowa0.jpg';
     // efekty
     import effectsToksynaBotulinowa0Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa0Lg.png';
@@ -131,6 +133,9 @@ export const badanieZnamionBarwnikowych = {
         'paulina-tatara',
         'katarzyna-zbronska',
         'katarzyna-rychlik'
+    ],
+    career: [
+        'dermatologist'
     ]
 };
 
@@ -159,6 +164,9 @@ export const fototerapiaChorobSkory = {
         'paulina-tatara',
         'katarzyna-zbronska',
         'katarzyna-rychlik'
+    ],
+    career: [
+        'dermatologist'
     ]
 };
 
@@ -185,6 +193,9 @@ export const usuniecieZmianSkornychElektrochirurgiczne = {
         'katarzyna-mysliwiec-czajka',
         'paulina-tatara',
         'katarzyna-zbronska'
+    ],
+    career: [
+        'dermatologist'
     ]
 };
 
@@ -234,6 +245,18 @@ export const modelowanieUst = {
             alt: 'Efekt zabiegu modelowania ust',
             description: 'Efekt zabiegu modelowania ust',
             original: {
+                src: effectsModelowanieUst5Lg,
+                width: 1600,
+                height: 1600
+            },
+            thumbnail: {
+                src: effectsModelowanieUst5Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu modelowania ust',
+            description: 'Efekt zabiegu modelowania ust',
+            original: {
                 src: effectsModelowanieUst2Lg,
                 width: 1600,
                 height: 1600
@@ -270,12 +293,12 @@ export const modelowanieUst = {
             alt: 'Efekt zabiegu modelowania ust',
             description: 'Efekt zabiegu modelowania ust',
             original: {
-                src: effectsModelowanieUst5Lg,
-                width: 1600,
-                height: 1600
+                src: effectsModelowanieUst6Lg,
+                width: 1024,
+                height: 1024
             },
             thumbnail: {
-                src: effectsModelowanieUst5Sm
+                src: effectsModelowanieUst6Sm
             }
         },
     ],
@@ -453,7 +476,7 @@ export const laserFrakcyjny = {
         'paulina-tatara',
         'olga-lenartowicz-warakomska',
         'katarzyna-zbronska',
-        'aleksandra-gorczynska'
+        'karolina-zegota'
     ]
 };
 
@@ -557,7 +580,7 @@ export const zamykanieNaczynekILikwidacjaPrzebarwien = {
         'paulina-tatara',
         'olga-lenartowicz-warakomska',
         'katarzyna-zbronska',
-        'aleksandra-gorczynska'
+        'karolina-zegota'
     ]
 };
 
@@ -634,7 +657,10 @@ export const peelingMedyczny = {
     ],
     specialist: [
         'paulina-budna',
-        'aleksandra-gorczynska'
+        'karolina-zegota'
+    ],
+    career: [
+        'cosmetologist'
     ]
 };
 
@@ -696,7 +722,10 @@ export const epilacjaLaserowa = {
     ],
     specialist: [
         'paulina-budna',
-        'aleksandra-gorczynska'
+        'karolina-zegota'
+    ],
+    career: [
+        'cosmetologist'
     ]
 };
 
@@ -720,7 +749,10 @@ export const masazProzniowy = {
     ],
     specialist: [
         'paulina-budna',
-        'aleksandra-gorczynska'
+        'karolina-zegota'
+    ],
+    career: [
+        'cosmetologist'
     ]
 };
 
@@ -770,7 +802,10 @@ export const ultradzwiekiIFalaRadiowa = {
     ],
     specialist: [
         'paulina-budna',
-        'aleksandra-gorczynska'
+        'karolina-zegota'
+    ],
+    career: [
+        'cosmetologist'
     ]
 };
 

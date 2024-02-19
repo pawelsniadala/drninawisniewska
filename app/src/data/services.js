@@ -26,7 +26,7 @@ import servicesEndocrinology0 from '../assets/services/endocrinology/servicesEnd
 import servicesGynecology0 from '../assets/services/gynecology/servicesGynecology0.jpg';
 
 // ORTOPEDIA
-import servicesOrthopedics from '../assets/services/servicesOrthopedics.jpg'; // TODO
+import servicesOrthopedics0 from '../assets/services/orthopedics/servicesOrthopedics0.jpg';
 
 // CHIRURGIA NACZYNIOWA
 import servicesVascularSurgery0 from '../assets/services/vascularSurgery/servicesVascularSurgery0.jpg';
@@ -38,7 +38,7 @@ import servicesClinicalDietitian0 from '../assets/services/clinicalDietitian/ser
 import servicesCardiology0 from '../assets/services/cardiology/servicesCardiology0.jpg';
 
 // REUMATOLOGIA
-import servicesRheumatology from '../assets/services/servicesRheumatology.jpg'; // TODO
+import servicesRheumatology0 from '../assets/services/rheumatology/servicesRheumatology0.jpg';
 
 // PSYCHIATRIA
 import servicesPsychiatry0 from '../assets/services/psychiatry/servicesPsychiatry0.jpg';
@@ -65,12 +65,13 @@ import patrykKrokwinskiImageSmall from  '../assets/team/patrykKrokwinski/patrykK
 import michalRadzioImageSmall from  '../assets/team/michalRadzio/michalRadzioImageSmall.jpg';
 import kajaStrojnowskaLapinskaImageSmall from  '../assets/team/kajaStrojnowskaLapinska/kajaStrojnowskaLapinskaImageSmall.jpg';
 import jadwigaDowgialloSmolarczykImageSmall from '../assets/team/jadwigaDowgialloSmolarczyk/jadwigaDowgialloSmolarczykImageSmall.jpg'
+import karolinaZegotaSmall from '../assets/team/karolinaZegota/karolinaZegotaSmall.jpg';
 
 export const dermatology = {
     id: '554e27d9-1d9e-4041-9549-29057bb9792f',
     specialization: 'dermatology',
     title: 'Dermatologia',
-    description: 'Dermatologia to dziedzina medycyny zajmująca się chorobami skóry, włosów i paznokci oraz chorobami wenerycznymi. Najczęstsze problemy z jakimi możesz zgłosić się do naszej Kliniki: kontrola znamion barwnikowych, trądzik pospolity, trądzik różowaty, atopowe zapalenie skóry, łojotokowe zapalenie skóry, łuszczyca, pokrzywka, kontaktowe zapalenie skóry, liszaj płaski, łysienie, łupież, grzybice skóry i paznokci, choroby weneryczne.',
+    description: 'Dermatologia to dziedzina medycyny, która poświęca uwagę zdrowiu i problemom skóry, włosów, paznokci oraz błon śluzowych. Oferuje diagnozę, leczenie i profilaktykę różnorodnych schorzeń dermatologicznych, od powszechnych trądzików i atopowych zapaleń skóry po bardziej złożone choroby przenoszone drogą płciową i zmiany skórne. Jest to istotna gałąź medycyny, która nie tylko pomaga utrzymać zdrowie skóry, ale także poprawia jakość życia pacjentów',
     path: '/services/dermatology',
     pathSpecialist: '/team',
     pathPrices: '/prices',
@@ -105,7 +106,8 @@ export const dermatology = {
         'aesthetic-medicine',
         'cosmetology',
         'allergology'
-    ]
+    ],
+    career: 'dermatologist'
 };
 
 export const aestheticMedicine = {
@@ -167,16 +169,17 @@ export const cosmetology = {
     ],
     specialists: [
         paulinaBudnaImageSmall,
-        // aleksandraGorczynskaImageSmall
+        karolinaZegotaSmall
     ],
     specialists2: [
         'paulina-budna',
-        'aleksandra-gorczynska'
+        'karolina-zegota'
     ],
     relatedSpecializations: [
         'dermatology',
         'aesthetic-medicine'
-    ]
+    ],
+    career: 'cosmetologist'
 };
 
 export const physioterapy = {
@@ -205,7 +208,7 @@ export const physioterapy = {
     relatedSpecializations: [
         'orthopedics',
         'rheumatology'
-    ]
+    ],
 };
 
 export const cosmeticSurgery = {
@@ -364,12 +367,20 @@ export const gynecology = {
 export const orthopedics = {
     id: '5f41b5eb-0997-4e75-82a4-6efc3aa9a05f',
     specialization: 'orthopedics',
-    image: servicesOrthopedics,
     title: 'Ortopedia',
     description: 'Ortopedia to dziedzina medycyny zajmująca się diagnozowaniem, leczeniem i rehabilitacją schorzeń, urazów i zaburzeń układu mięśniowo-szkieletowego. Układ mięśniowo-szkieletowy obejmuje kości, stawy, mięśnie, więzadła i ścięgna, a ortopedia skupia się na ich funkcjonowaniu, ruchomości i zdrowiu.',
     path: '/services/orthopedics',
     pathSpecialist: '/team/orthopedics',
     pathPrices: '/prices/orthopedics',
+    image: servicesOrthopedics0,
+    images: [
+        {
+            src: servicesOrthopedics0,
+            alt: 'Ortopeda trzymający model kręgosłupa',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/fizjoterapeuta-kregow-trzymajacy-sztuczny-kregoslup_13376886.htm'
+        }
+    ],
     specialists: [
         wojciechKaszewskiImageSmall
     ],
@@ -442,12 +453,20 @@ export const clinicalDietitian = {
 export const rheumatology = {
     id: '5e727446-cd71-4238-b7dd-fc6abd853f73',
     specialization: 'rheumatology',
-    image: servicesRheumatology,
     title: 'Reumatologia',
     description: 'Dziedzina medycyny zajmująca się różnego typu schorzeniami związanymi ze stanami zwyrodnieniowymi i zapalnymi tkanki łącznej, kości i stawów.',
     path: '/services/rheumatology',
     pathSpecialist: '/team/rheumatology',
     pathPrices: '/prices/rheumatology',
+    image: servicesRheumatology0,
+    images: [
+        {
+            src: servicesRheumatology0,
+            alt: 'Lekarz pomagający pacjentowi z problemami pleców',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/mlody-fizjoterapeuta-pomagajacy-pacjentowi-z-problemami-z-plecami_18843354.htm'
+        }
+    ],
     specialists: [
         agataSkwerekSzewczykImageSmall
     ],
@@ -514,7 +533,8 @@ export const psychiatry = {
     ],
     relatedSpecializations: [
         'clinical-dietitian'
-    ]
+    ],
+    career: 'psychiatrist'
 };
 
 export const services = [

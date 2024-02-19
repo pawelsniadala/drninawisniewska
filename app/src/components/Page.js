@@ -223,8 +223,8 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/cosmetology/paulina-budna':
                 return `Paulina Budna - ${companyName}`;
-            case '/team/cosmetology/aleksandra-gorczynska':
-                return `Aleksandra Górczyńska - ${companyName}`;
+            case '/team/cosmetology/karolina-zegota':
+                return `Karolina Zęgota - ${companyName}`;
 
             // fizjoterapia
             case '/team/physioterapy':
@@ -334,9 +334,27 @@ const PageTitle = ({ children }) => {
                 return `Dermalight 1000 UVA UVB 311nm - ${companyName}`;
 
 
-            // KONTAKT
+            // KARIERA
+            case '/career':
+                return `Kariera - ${companyName}`;
+            case '/career/receptionist':
+                return `Recepcjonistka - ${companyName}`;
+            case '/career/hematologist':
+                return `Hematolog - ${companyName}`;
+            case '/career/dermatologist':
+                return `Dermatolog - ${companyName}`;
+            case '/career/urologist':
+                return `Urolog - ${companyName}`;
+            case '/career/psychiatrist':
+                return `Psychiatra - ${companyName}`;
+            case '/career/cosmetologist':
+                return `Kosmetolog - ${companyName}`;
+
+
+             // KONTAKT
             case '/contact':
                 return `Kontakt - ${companyName}`;
+
             default:
         }
     }, [pathname]);

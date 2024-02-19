@@ -100,6 +100,8 @@ const Table2 = () => {
     }
 
     const rows = [
+        createData('Konsultacja trychologiczna', false, 250),
+        createData('Ostrzyknięcie sterydem', false, 200),
         createData('Badanie dermatoskopowe zmian skórnych (całe ciało) ', false, 250),
         createData('Wideodermatoskopia', false, 300),
         createData('Założenie płatkowych testów kontaktowych, zdjęcie, odczyt i lista alergenów (36 Alergenów)', false, 350),
@@ -109,7 +111,7 @@ const Table2 = () => {
         createData('Fototerapia PUVA (dłonie + stopy) - 12 zabiegów', false, 400),
         createData('Wycięcie zmiany barwnikowej (1 zmiana) + badanie histopatologiczne', false, 450),
         createData('Biopsja skóry + badanie histopatologiczne ', false, 300),
-        createData('Usunięcie zmian skórnych elektrochirurgicznie ', false, 300),
+        createData('Usunięcie zmian skórnych elektrochirurgicznie ', false, 'od 300'),
         createData('kolejne na tej samej wizycie', 'Powyżej 10 zmian skórnych cenę ustala lekarz.', 50)
     ];
 

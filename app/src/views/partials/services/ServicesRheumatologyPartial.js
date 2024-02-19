@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -14,6 +13,7 @@ import Container from '../../../components/Container';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
+import Image from '../../../components/Image';
 
 import { services, rheumatology } from '../../../data/services';
 import { team } from '../../../data/team';
@@ -63,19 +63,11 @@ const ServicesRheumatologyPartial = () => {
                                     <strong>Reumatologia</strong> zajmuje się różnego typu schorzeniami związanymi ze stanami zwyrodnieniowymi i zapalnymi tkanki łącznej, kości i stawów.
                                 </Typography>
                                 <Box className='box-image'>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={rheumatology.image}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '400px'
-                                        }}
+                                    <Image
+                                        imageSrc={rheumatology.images[0].src}
+                                        imageAlt={rheumatology.images[0].alt}
+                                        imageAuthor={rheumatology.images[0].author}
+                                        imageHref={rheumatology.images[0].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph heading'>

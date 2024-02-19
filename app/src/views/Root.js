@@ -131,6 +131,9 @@ import SpecialistsDetailsPartial from './partials/team/SpecialistsDetailsPartial
 // import TechnologyDermalight500Partial from './partials/technology/TechnologyDermalight500Partial';
 // import TechnologyDermalight1000UvaUvb311nmPartial from './partials/technology/TechnologyDermalight1000UvaUvb311nmPartial';
 
+// KARIERA
+import CareerView from './CareerView';
+import CareerDetailsPartial from './partials/career/CareerDetailsPartial';
 
 // KONTAKT
 import ContactView from './ContactView';
@@ -273,6 +276,9 @@ const Root = () => (
                     <Route path='/technology/dermalight-500' element={<TechnologyDermalight500Partial />} />
                     <Route path='/technology/dermalight-1000-uva-uvb-311nm' element={<TechnologyDermalight1000UvaUvb311nmPartial />} /> */}
 
+                    {/* KARIERA */}
+                    <Route path='/career' element={<CareerView />} />
+                    <Route path='career/:profession' element={<CareerDetailsPartial />} />
 
                     {/* KONTAKT */}
                     <Route path='/contact' element={<ContactView />} />

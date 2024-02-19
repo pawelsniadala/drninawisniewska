@@ -42,6 +42,34 @@ const FooterSection = () => {
                         >
                             Regulamin organizacyjny
                         </Typography>
+                        {/* <Typography
+                            component='a'
+                            href='/prices'
+                            className='footer-text link'
+                        >
+                            Cennik
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='/special-offer'
+                            className='footer-text link'
+                        >
+                            Promocje
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='/team'
+                            className='footer-text link'
+                        >
+                            Specjaliści
+                        </Typography>
+                        <Typography
+                            component='a'
+                            href='/career'
+                            className='footer-text link'
+                        >
+                            Kariera
+                        </Typography> */}
                     </Box>
                 </Box>
                 <Box className='services'>

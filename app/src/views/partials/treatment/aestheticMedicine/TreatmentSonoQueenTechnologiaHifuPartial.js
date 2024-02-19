@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Fade from '@mui/material/Fade';
+import Button from '@mui/material/Button';
+
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 import Page from '../../../../components/Page';
 import Container from '../../../../components/Container';
@@ -20,6 +25,22 @@ import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
 const TreatmentSonoQueenTechnologiaHifuPartial = () => {
+    // show specialists
+    const [showMoreSpecialists, setShowMoreSpecialists] = useState(false);
+    const toggleShowMoreSpecialists = () => {
+        setShowMoreSpecialists(prevState => !prevState);
+    };
+    const filteredSpecialists = team.filter(item => item.treatment.includes('sonoqueen-technologia-hifu'))
+    const displayedSpecialists = showMoreSpecialists ? filteredSpecialists : filteredSpecialists.slice(0, 3);
+
+    // show treatments
+    const [showMoreTreatments, setShowMoreTreatments] = useState(false);
+    const toggleShowMoreTreatments = () => {
+        setShowMoreTreatments(prevState => !prevState);
+    };
+    const filteredTreatments = treatment.filter(item => item.specialization.includes('aesthetic-medicine')).filter(item => item.treatment !== 'sonoqueen-technologia-hifu');
+    const displayedTreatments = showMoreTreatments ? filteredTreatments : filteredTreatments.slice(0, 3);
+
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -124,19 +145,26 @@ const TreatmentSonoQueenTechnologiaHifuPartial = () => {
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {team
-                                        .filter(item => item.treatment.includes('sonoqueen-technologia-hifu'))
-                                        .map((item) => (
-                                            <CardTeamProposed
-                                                key={item.id}
-                                                cardTitle={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
-                                                cardImage={item.image}
-                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
-                                            />
-                                        ))
-                                    }
+                                    {displayedSpecialists.map((item) => (
+                                        <CardTeamProposed
+                                            key={item.id}
+                                            cardTitle={item.name}
+                                            cardSpeciality={item.speciality}
+                                            cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                            cardImage={item.image}
+                                            cardPath={`/team/aesthetic-medicine/${item.specialist}`}
+                                        />
+                                    ))}
+                                    <Fade in={filteredSpecialists.length > 3}>
+                                        <Button
+                                            className='show-more-cards'
+                                            onClick={toggleShowMoreSpecialists}
+                                            endIcon={showMoreSpecialists ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                                            sx={{ display: filteredSpecialists.length <= 3 && 'none' }}
+                                        >
+                                            {showMoreSpecialists ? 'Pokaż mniej' : 'Pokaż więcej'}
+                                        </Button>
+                                    </Fade>
                                 </Box>
                             </Box>
                             <Box className='box-proposed'>
@@ -167,19 +195,25 @@ const TreatmentSonoQueenTechnologiaHifuPartial = () => {
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {treatment
-                                        .filter(item => item.specialization.includes('aesthetic-medicine'))
-                                        .filter(item => item.treatment !== 'sonoqueen-technologia-hifu')
-                                        .map((item) => (
-                                            <CardProposed
-                                                key={item.id}
-                                                cardTitle={item.title}
-                                                cardDescription={item.description}
-                                                cardImage={item.images[0].src}
-                                                cardPath={item.path}
-                                            />
-                                        ))
-                                    }
+                                    {displayedTreatments.map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.images[0].src}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                    <Fade in={filteredTreatments.length > 3}>
+                                        <Button
+                                            className='show-more-cards'
+                                            onClick={toggleShowMoreTreatments}
+                                            endIcon={showMoreTreatments ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                                            sx={{ display: filteredTreatments.length <= 3 && 'none' }}
+                                        >
+                                            {showMoreTreatments ? 'Pokaż mniej' : 'Pokaż więcej'}
+                                        </Button>
+                                    </Fade>
                                 </Box>
                             </Box>
                         </Box>

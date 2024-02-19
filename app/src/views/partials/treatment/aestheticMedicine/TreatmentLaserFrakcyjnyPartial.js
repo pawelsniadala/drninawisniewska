@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
@@ -8,8 +8,13 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Fade from '@mui/material/Fade';
+import Button from '@mui/material/Button';
+
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 import Page from '../../../../components/Page';
 import Container from '../../../../components/Container';
@@ -17,13 +22,37 @@ import CardTeamProposed from '../../../../components/CardTeamProposed';
 import CardProposed from '../../../../components/CardProposed';
 import ListBulleted from '../../../../components/ListBulleted';
 import Image from '../../../../components/Image';
-import TooltipInfo from '../../../../components/TooltipInfo';
 
 import { treatment, laserFrakcyjny } from '../../../../data/treatment';
 import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
 const TreatmentLaserFrakcyjnyPartial = () => {
+    // show specialists
+    const [showMoreSpecialists, setShowMoreSpecialists] = useState(false);
+    const toggleShowMoreSpecialists = () => {
+        setShowMoreSpecialists(prevState => !prevState);
+    };
+    const filteredSpecialists = team.filter(item => item.treatment.includes('laser-frakcyjny'))
+    const displayedSpecialists = showMoreSpecialists ? filteredSpecialists : filteredSpecialists.slice(0, 3);
+
+    // show treatments
+    const [showMoreTreatments, setShowMoreTreatments] = useState(false);
+    const toggleShowMoreTreatments = () => {
+        setShowMoreTreatments(prevState => !prevState);
+    };
+    const filteredTreatments = treatment.filter(item => item.specialization.includes('aesthetic-medicine')).filter(item => item.treatment !== 'laser-frakcyjny');
+    const displayedTreatments = showMoreTreatments ? filteredTreatments : filteredTreatments.slice(0, 3);
+
+    // show effects
+    const [showMoreEffects, setShowMoreEffects] = useState(false);
+    const toggleShowMoreEffects = () => {
+        setShowMoreEffects(prevState => !prevState);
+    };
+    const filteredEffects = laserFrakcyjny.effects;
+    const displayedEffects = showMoreEffects ? filteredEffects : filteredEffects.slice(0, 3);
+
+    // photoswipe
     useEffect(() => {
         const lightbox = new PhotoSwipeLightbox({
             gallery: '#my-gallery',
@@ -34,11 +63,9 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                 bottom: 50
             }
         });
-
         const captionPlugin = new PhotoSwipeDynamicCaption(lightbox, {
             type: 'below'
         });
-
         lightbox.init(captionPlugin);
     }, []);
 
@@ -156,12 +183,9 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                             <Box className='box-treatment'>
                                 <Typography variant={'h5'} className='header alternative'>
                                     Efekty zabiegu
-                                    <TooltipInfo
-                                        title='Zdjęcia ukazują efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.'
-                                    />
                                 </Typography>
                                 <Box className="pswp-gallery" id='my-gallery'>
-                                    {laserFrakcyjny.effects.map((item, index) => (
+                                    {displayedEffects.map((item, index) => (
                                         <a key={`my-gallery-${index}`}
                                             href={item.original.src}
                                             data-pswp-width={item.original.width}
@@ -185,7 +209,20 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                                             </Box>
                                         </a>
                                     ))}
+                                    <Fade in={filteredEffects.length > 3}>
+                                        <Button
+                                            className='show-more-cards'
+                                            onClick={toggleShowMoreEffects}
+                                            endIcon={showMoreEffects ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                                            sx={{ display: filteredEffects.length <= 3 && 'none' }}
+                                        >
+                                            {showMoreEffects ? 'Pokaż mniej' : 'Pokaż więcej'}
+                                        </Button>
+                                    </Fade>
                                 </Box>
+                                <Typography className='paragraph'>
+                                    Zdjęcia ukazują efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.
+                                </Typography>
                             </Box>
                         </Box>
 
@@ -197,19 +234,26 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {team
-                                        .filter(item => item.treatment.includes('laser-frakcyjny'))
-                                        .map((item) => (
-                                            <CardTeamProposed
-                                                key={item.id}
-                                                cardTitle={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
-                                                cardImage={item.image}
-                                                cardPath={`/team/aesthetic-medicine/${item.specialist}`}
-                                            />
-                                        ))
-                                    }
+                                    {displayedSpecialists.map((item) => (
+                                        <CardTeamProposed
+                                            key={item.id}
+                                            cardTitle={item.name}
+                                            cardSpeciality={item.speciality}
+                                            cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                            cardImage={item.image}
+                                            cardPath={`/team/aesthetic-medicine/${item.specialist}`}
+                                        />
+                                    ))}
+                                    <Fade in={filteredSpecialists.length > 3}>
+                                        <Button
+                                            className='show-more-cards'
+                                            onClick={toggleShowMoreSpecialists}
+                                            endIcon={showMoreSpecialists ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                                            sx={{ display: filteredSpecialists.length <= 3 && 'none' }}
+                                        >
+                                            {showMoreSpecialists ? 'Pokaż mniej' : 'Pokaż więcej'}
+                                        </Button>
+                                    </Fade>
                                 </Box>
                             </Box>
                             <Box className='box-proposed'>
@@ -240,19 +284,25 @@ const TreatmentLaserFrakcyjnyPartial = () => {
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {treatment
-                                        .filter(item => item.specialization.includes('aesthetic-medicine'))
-                                        .filter(item => item.treatment !== 'laser-frakcyjny')
-                                        .map((item) => (
-                                            <CardProposed
-                                                key={item.id}
-                                                cardTitle={item.title}
-                                                cardDescription={item.description}
-                                                cardImage={item.images[0].src}
-                                                cardPath={item.path}
-                                            />
-                                        ))
-                                    }
+                                    {displayedTreatments.map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.images[0].src}
+                                            cardPath={item.path}
+                                        />
+                                    ))}
+                                    <Fade in={filteredTreatments.length > 3}>
+                                        <Button
+                                            className='show-more-cards'
+                                            onClick={toggleShowMoreTreatments}
+                                            endIcon={showMoreTreatments ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                                            sx={{ display: filteredTreatments.length <= 3 && 'none' }}
+                                        >
+                                            {showMoreTreatments ? 'Pokaż mniej' : 'Pokaż więcej'}
+                                        </Button>
+                                    </Fade>
                                 </Box>
                             </Box>
                         </Box>

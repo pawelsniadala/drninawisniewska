@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
@@ -14,6 +13,7 @@ import Container from '../../../components/Container';
 import CardTeamProposed from '../../../components/CardTeamProposed';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
+import Image from '../../../components/Image';
 
 import { services, orthopedics } from '../../../data/services';
 import { team } from '../../../data/team';
@@ -63,19 +63,11 @@ const ServicesOrthopedicsPartial = () => {
                                     <strong>Ortopedia</strong> to dziedzina medycyny zajmująca się diagnozowaniem, leczeniem i rehabilitacją schorzeń, urazów i zaburzeń układu mięśniowo-szkieletowego. Układ mięśniowo-szkieletowy obejmuje kości, stawy, mięśnie, więzadła i ścięgna, a ortopedia skupia się na ich funkcjonowaniu, ruchomości i zdrowiu.
                                 </Typography>
                                 <Box className='box-image'>
-                                    <LazyLoadImage
-                                        height={'100%'}
-                                        width={'100%'}
-                                        src={orthopedics.image}
-                                        alt='Remote working'
-                                        effect='blur'
-                                        style={{
-                                            objectFit: 'cover',
-                                            borderRadius: 8,
-                                            width: '100%',
-                                            height: '100%',
-                                            maxHeight: '400px'
-                                        }}
+                                    <Image
+                                        imageSrc={orthopedics.images[0].src}
+                                        imageAlt={orthopedics.images[0].alt}
+                                        imageAuthor={orthopedics.images[0].author}
+                                        imageHref={orthopedics.images[0].href}
                                     />
                                 </Box>
                                 <Typography className='paragraph heading'>

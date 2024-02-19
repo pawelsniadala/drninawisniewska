@@ -1,16 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Fade from '@mui/material/Fade';
+import Button from '@mui/material/Button';
+
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+// import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardTeamProposed from '../../../components/CardTeamProposed';
+import CardCareerProposed from '../../../components/CardCareerProposed';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
@@ -18,8 +25,17 @@ import Image from '../../../components/Image';
 import { services, cosmetology } from '../../../data/services';
 import { team } from '../../../data/team';
 import { treatment } from '../../../data/treatment';
+import { career } from '../../../data/career';
 
 const ServicesCosmetologyPartial = () => {
+    // show treatments
+    const [showMoreTreatments, setShowMoreTreatments] = useState(false);
+    const toggleShowMoreTreatments = () => {
+        setShowMoreTreatments(prevState => !prevState);
+    };
+    const filteredTreatments = treatment.filter(item => item.specialization.includes('cosmetology'));
+    const displayedTreatments = showMoreTreatments ? filteredTreatments : filteredTreatments.slice(0, 3);
+
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -101,22 +117,6 @@ const ServicesCosmetologyPartial = () => {
                                 <Typography className='paragraph'>
                                     Nasza Klinika świadczy usługi z zakresu indywidualnych terapii skór problematycznych, terapiach przeciwstarzeniowych, zabiegów na ciało a także depilacji laserowej.
                                 </Typography>
-                                {/* <Grid container spacing={0.5} marginBottom={2}>
-                                    {[
-                                        'Terapie dla cery trądzikowej i tłustej - preparaty o właściwościach antybakteryjnych, przeciwzapalnych, regulujących wydzielanie sebum, keratolitycznych i komedolitycznych normalizujące fizjologię skóry zwalczając zmiany wypryskowe oraz wyciszając nadreaktywność gruczołów łojowych.',
-                                        'Terapie dla cery rumieniowej i naczyniowej - wykazują lekkie właściwości  złuszczające oraz nawilżające, a także obkurczają struktury płytko osadzonych naczyń krwionośnych, dzięki czemu niwelują widoczny rumień oraz teleangiekatazje.',
-                                        'Terapie dla cer z przebarwieniami - peelingi o działaniu depigmentującym, którego formuły przyspieszają odnowę naskórka w celu eliminacji powierzchniowo nagromadzonej melaniny, zapewniając widoczną poprawę kolorytu, rozjaśnienie istniejących przebarwień oraz zapobiegając powstawaniu kolejnych.',
-                                        'Terapie dla cer dojrzałych - procedury rewitalizujące skórę z pierwszymi oznakami starzenia i fotostarzenia, są to  peelingi poprawiające jędrność, napięcie oraz zapewniające rozjaśnienie skóry twarzy, szyi i dekoltu.',
-                                        'Terapie na lato - całoroczne procedury bezpieczne także przy wysokim nasłonecznieniu, nie wykazujące właściwości fotouwrażliwiających, co pozwala na korzystanie z  profesjonalnych zabiegów kosmetologicznych również w lato.',
-                                        'Terapie blizn i rozstępów - zabiegi silnie złuszczające mające na celu ujednolicić strukturę oraz koloryt skóry zarówno blizn wypukłych jak i wklęsłych.',
-                                    ].map((item, index) => (
-                                        <ListBulleted
-                                            key={index}
-                                            ListBulletedItem={item}
-                                            ListBulletedStyle={{ backgroundImage: 'linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)' }}
-                                        />
-                                    ))}
-                                </Grid> */}
                             </Box>
                         </Box>
 
@@ -126,6 +126,13 @@ const ServicesCosmetologyPartial = () => {
                                     <Typography className='header'>
                                         Specjaliści
                                     </Typography>
+                                    {/* <Link
+                                        className='show-all-cards'
+                                        to="/team/cosmetology"
+                                    >
+                                        Zobacz wszystkich
+                                        <ArrowForwardIcon />
+                                    </Link> */}
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {team.filter(item => item.specialization.includes('cosmetology')).map((item) => (
@@ -145,9 +152,16 @@ const ServicesCosmetologyPartial = () => {
                                     <Typography className='header'>
                                         Zabiegi
                                     </Typography>
+                                    {/* <Link
+                                        className='show-all-cards'
+                                        to="/treatment/cosmetology"
+                                    >
+                                        Zobacz wszystkie
+                                        <ArrowForwardIcon />
+                                    </Link> */}
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {treatment.filter(item => item.specialization.includes('cosmetology')).map((item) => (
+                                    {displayedTreatments.map((item) => (
                                         <CardProposed
                                             key={item.id}
                                             cardTitle={item.title}
@@ -156,6 +170,15 @@ const ServicesCosmetologyPartial = () => {
                                             cardPath={item.path}
                                         />
                                     ))}
+                                    <Fade in={filteredTreatments.length > 3}>
+                                        <Button
+                                            className='show-more-cards'
+                                            onClick={toggleShowMoreTreatments}
+                                            endIcon={showMoreTreatments ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                                        >
+                                            {showMoreTreatments ? 'Pokaż mniej' : 'Pokaż więcej'}
+                                        </Button>
+                                    </Fade>
                                 </Box>
                             </Box>
                             <Box className='box-proposed'>
@@ -163,6 +186,13 @@ const ServicesCosmetologyPartial = () => {
                                     <Typography className='header'>
                                         Powiązane specjalizacje
                                     </Typography>
+                                    {/* <Link
+                                        className='show-all-cards'
+                                        to="/services"
+                                    >
+                                        Zobacz wszystkie
+                                        <ArrowForwardIcon />
+                                    </Link> */}
                                 </Box>
                                 <Box className='card-wrapper'>
                                     {services.filter(item => item.relatedSpecializations.includes('cosmetology')).map((item) => (
@@ -176,6 +206,32 @@ const ServicesCosmetologyPartial = () => {
                                     ))}
                                 </Box>
                             </Box>
+                            {/* {career.filter(item => item.specialization?.includes('cosmetology')).length > 0 && (
+                                <Box className='box-proposed'>
+                                    <Box className='header-wrapper'>
+                                        <Typography className='header'>
+                                            Oferty pracy
+                                        </Typography>
+                                    </Box>
+                                    <Box className='card-wrapper'>
+                                        {career.filter(item => item.specialization?.includes('cosmetology')).map((item) => (
+                                            <CardCareerProposed
+                                                key={item.id}
+                                                cardTitle={item.title}
+                                                cardLocation={item.location}
+                                                cardDate={item.date}
+                                                cardAgreement={item.agreement}
+                                                cardPosition={item.position}
+                                                cardType={item.type}
+                                                cardPlace={item.place}
+                                                cardPath={item.path}
+                                                cardImage={item.image}
+                                                cardStatus={item.status}
+                                            />
+                                        ))}
+                                    </Box>
+                                </Box>
+                            )} */}
                         </Box>
                     </Container>
                 </Box>

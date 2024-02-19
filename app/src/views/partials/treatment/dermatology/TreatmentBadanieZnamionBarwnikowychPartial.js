@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Fade from '@mui/material/Fade';
+import Button from '@mui/material/Button';
+
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 import Page from '../../../../components/Page';
 import Container from '../../../../components/Container';
@@ -18,6 +23,14 @@ import { team } from '../../../../data/team';
 import { services } from '../../../../data/services';
 
 const TreatmentBadanieZnamionBarwnikowychPartial = () => {
+    // show specialists
+    const [showMoreSpecialists, setShowMoreSpecialists] = useState(false);
+    const toggleShowMoreSpecialists = () => {
+        setShowMoreSpecialists(prevState => !prevState);
+    };
+    const filteredSpecialists = team.filter(item => item.treatment.includes('badanie-znamion-barwnikowych'))
+    const displayedSpecialists = showMoreSpecialists ? filteredSpecialists : filteredSpecialists.slice(0, 3);
+
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -109,19 +122,25 @@ const TreatmentBadanieZnamionBarwnikowychPartial = () => {
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {team
-                                        .filter(item => item.treatment.includes('badanie-znamion-barwnikowych'))
-                                        .map((item) => (
-                                            <CardTeamProposed
-                                                key={item.id}
-                                                cardTitle={item.name}
-                                                cardSpeciality={item.speciality}
-                                                cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
-                                                cardImage={item.image}
-                                                cardPath={`/team/dermatology/${item.specialist}`}
-                                            />
-                                        ))
-                                    }
+                                    {displayedSpecialists.map((item) => (
+                                        <CardTeamProposed
+                                            key={item.id}
+                                            cardTitle={item.name}
+                                            cardSpeciality={item.speciality}
+                                            cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
+                                            cardImage={item.image}
+                                            cardPath={`/team/aesthetic-medicine/${item.specialist}`}
+                                        />
+                                    ))}
+                                    <Fade in={filteredSpecialists.length > 3}>
+                                        <Button
+                                            className='show-more-cards'
+                                            onClick={toggleShowMoreSpecialists}
+                                            endIcon={showMoreSpecialists ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                                        >
+                                            {showMoreSpecialists ? 'Pokaż mniej' : 'Pokaż więcej'}
+                                        </Button>
+                                    </Fade>
                                 </Box>
                             </Box>
                             <Box className='box-proposed'>

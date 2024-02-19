@@ -37,8 +37,7 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja - dr Wojciech Kaszewski (pierwsza wizyta)', 200),
-        createData('Konsultacja - dr Wojciech Kaszewski (kolejna wizyta)', 170),
+        createData('Konsultacja - dr Wojciech Kaszewski', 200),
         createData('Iniekcja (preparat pacjenta)', 150)
     ];
 

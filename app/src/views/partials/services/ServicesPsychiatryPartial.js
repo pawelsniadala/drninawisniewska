@@ -11,12 +11,14 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardTeamProposed from '../../../components/CardTeamProposed';
+import CardCareerProposed from '../../../components/CardCareerProposed';
 import CardProposed from '../../../components/CardProposed';
 // import ListBulleted from '../../../components/ListBulleted';
 import Image from '../../../components/Image';
 
 import { services, psychiatry } from '../../../data/services';
 import { team } from '../../../data/team';
+import { career } from '../../../data/career';
 
 const ServicesPsychiatryPartial = () => {
     return (
@@ -114,6 +116,32 @@ const ServicesPsychiatryPartial = () => {
                                     ))}
                                 </Box>
                             </Box>
+                            {/* {career.filter(item => item.specialization?.includes('psychiatry')).length > 0 && (
+                                <Box className='box-proposed'>
+                                    <Box className='header-wrapper'>
+                                        <Typography className='header'>
+                                            Oferty pracy
+                                        </Typography>
+                                    </Box>
+                                    <Box className='card-wrapper'>
+                                        {career.filter(item => item.specialization?.includes('psychiatry')).map((item) => (
+                                            <CardCareerProposed
+                                                key={item.id}
+                                                cardTitle={item.title}
+                                                cardLocation={item.location}
+                                                cardDate={item.date}
+                                                cardAgreement={item.agreement}
+                                                cardPosition={item.position}
+                                                cardType={item.type}
+                                                cardPlace={item.place}
+                                                cardPath={item.path}
+                                                cardImage={item.image}
+                                                cardStatus={item.status}
+                                            />
+                                        ))}
+                                    </Box>
+                                </Box>
+                            )} */}
                         </Box>
                     </Container>
                 </Box>

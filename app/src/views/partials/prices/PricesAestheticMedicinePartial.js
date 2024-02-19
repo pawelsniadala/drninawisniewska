@@ -139,12 +139,12 @@ const Table16 = () => {
 // };
 
 const Table1 = () => {
-    function createData(name, price) {
-        return { name, price };
+    function createData(name, tooltip, price) {
+        return { name, tooltip, price };
     }
 
     const rows = [
-        createData('Leczenie powikłań po zabiegach z zakresu medycyny estetycznej', 'Od 550')
+        createData('Leczenie powikłań po zabiegach z zakresu medycyny estetycznej', 'Powikłania leczone po zabiegach medycyny estetycznej w innych placówkach.', 'Od 550')
     ];
 
     return (
@@ -165,6 +165,7 @@ const Table1 = () => {
                         <StyledTableRow key={row.name}>
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
+                                {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
                             <StyledTableCell align='right'>
                                 {row.price}
@@ -329,11 +330,8 @@ const Table5 = () => {
     }
 
     const rows = [
-        createData('Nucleofill', 1100),
-        createData('Nucleofill Soft Eyes', 1100),
-        // createData('Juvenus', 1100),
+        createData('PhilArt', 1100),
         createData('Pluryal Silk', 1200),
-        // createData('Profhilo', 1200),
         createData('Pluryal Densify', 1200),
         createData('Pluryal Bioclassic', 1100),
         createData('Sunekos Performa', 500),
