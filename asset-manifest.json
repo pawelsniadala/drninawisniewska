@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.dfdf1d06.css",
-    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.1301a529.js",
+    "main.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.f929464a.js",
     "static/js/410.5b7ce3c3.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js",
     "static/js/981.6e541656.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js",
     "static/js/787.c1112931.chunk.js": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js",
@@ -163,7 +163,6 @@
     "static/media/justynaFilipekImageSmall.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/justynaFilipekImageSmall.a394a5b45dcf2657c5e0.jpg",
     "static/media/modelowanieUst0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/modelowanieUst0.406fa2309fed51fdb743.jpg",
     "static/media/echoSerca0.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/echoSerca0.51abb11219145cc83082.jpg",
-    "static/media/teamBackground.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/teamBackground.c1a37cd1fcb26582bf29.jpg",
     "static/media/logo.png": "https://pawelsniadala.github.io/drninawisniewska/static/media/logo.5306bb40dfd3b8fd0d45.png",
     "static/media/patrykKrokwinskiImageSmall.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/patrykKrokwinskiImageSmall.f0c4e147515c50a54c2c.jpg",
     "static/media/katarzynaRychlikImageSmall.jpg": "https://pawelsniadala.github.io/drninawisniewska/static/media/katarzynaRychlikImageSmall.549b01d18f45ef8ed9e7.jpg",
@@ -174,13 +173,13 @@
     "static/media/slick.woff": "https://pawelsniadala.github.io/drninawisniewska/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "https://pawelsniadala.github.io/drninawisniewska/index.html",
     "main.dfdf1d06.css.map": "https://pawelsniadala.github.io/drninawisniewska/static/css/main.dfdf1d06.css.map",
-    "main.1301a529.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.1301a529.js.map",
+    "main.f929464a.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/main.f929464a.js.map",
     "410.5b7ce3c3.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/410.5b7ce3c3.chunk.js.map",
     "981.6e541656.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/981.6e541656.chunk.js.map",
     "787.c1112931.chunk.js.map": "https://pawelsniadala.github.io/drninawisniewska/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dfdf1d06.css",
-    "static/js/main.1301a529.js"
+    "static/js/main.f929464a.js"
   ]
 }
