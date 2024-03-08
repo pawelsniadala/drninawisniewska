@@ -11,6 +11,11 @@
     border-radius: 8px;
     border: 1px solid rgba(224, 224, 224, 0.6);
 
+    font-size: 15.5px;
+    font-family: 'Roboto', sans-serif;
+    color: #535353;
+    line-height: 1.6;
+
     &:focus {
         box-shadow: none;
         border: 1px solid lighten(#d29a3e, 10%);
@@ -44,4 +49,85 @@ textarea {
 .form-info {
     @extend .error;
     color: rgba(0, 0, 0, 0.6),
+}
+
+// input type search
+.search-wrapper {
+    margin-bottom: 20px;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.04);
+    height: 42px;
+
+    .input-group-text {
+        border: none;
+
+        &.search {
+            padding: 12px 8px 12px 14px;
+            background-color: transparent;
+            border-radius: 8px 0 0 8px;
+
+            svg {
+                fill: rgba(0, 0, 0, 0.4) !important;
+            }
+        }
+
+        &.close {
+            padding: 12px 14px 12px 8px;
+            background-color: transparent;
+            border-radius: 0 8px 8px 0;
+            cursor: pointer;
+
+            svg {
+                fill: rgba(0, 0, 0, 0.4) !important;
+            }
+
+            @media (hover: hover) {
+                &:hover {
+                    svg {
+                        fill: rgba(0, 0, 0, 0.5) !important;
+                    }
+                }
+            }
+        }
+    }
+
+    input[type='search'] {
+        border: none;
+        padding-left: 2px;
+        padding-right: 2px;
+        font-family: "Roboto", sans-serif;
+        font-size: .92rem;
+        letter-spacing: 0.00938em;
+        color: rgba(0, 0, 0, 0.67);
+        background-color: #fff !important;
+        touch-action: manipulation;
+    }
+
+    input::placeholder {
+        // color: rgba(0, 0, 0, 0.45);
+        // color: #a2a2a2 !important;
+        color: rgba(0, 0, 0, 0.4) !important;
+    }
+
+    input::-webkit-search-cancel-button {
+        display: none;
+    }
+}
+
+// input type file
+.file-wrapper {
+    input[type='file'] {
+
+        &::-webkit-file-upload-button {
+            color: #535353;
+            background-color: #ebebeb!important;
+            border-right-color: rgba(224, 224, 224, 0.6) !important;
+        }
+
+        &:focus {
+            color: #535353 !important;
+        }
+    }
 }

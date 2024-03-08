@@ -1,0 +1,108 @@
+.view-wrapper {
+    .view-body {
+        .body-wrapper {
+            &.career-application {
+                display: grid;
+                gap: 2rem;
+                grid-template-columns: repeat(2, 1fr);
+
+                @media (max-width: 991.98px) {
+                    grid-template-columns: 1fr;
+                }
+
+                .career-description {
+                    .box-career {
+                        margin-bottom: 32px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        .stepper-wrapper {
+                            .stepper {
+                                .step {
+                                    &:last-child {
+                                        .step-content {
+                                            border-color: transparent;
+                                        }
+                                    }
+
+                                    .step-label {
+                                        span {
+                                            margin-right: 1px;
+                                        }
+
+                                        span svg {
+                                            color: transparent;
+                                            background: linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%);
+                                            border-radius: 50%;
+                                        }
+
+                                        span span {
+                                            margin: 0;
+                                            font-size: 1rem;
+                                            font-family: "Roboto", sans-serif;
+                                            font-weight: 400;
+                                            color: rgba(0, 0, 0, 0.6);
+                                        }
+                                    }
+
+                                    .step-content {
+                                        border-left: 1px solid #dcdcdc;
+
+                                        p {
+                                            font-size: 15.5px;
+                                            font-family: 'Roboto', sans-serif;
+                                            color: #535353;
+                                            font-weight: 300;
+                                            margin-bottom: 10px;
+                                            letter-spacing: 0.00538em;
+                                            line-height: 1.6;
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+
+                                div span {
+                                    border-color: #dcdcdc;
+                                }
+                            }
+                        }
+                    }
+
+                    .header {
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: 400;
+                        color: #535353;
+                        font-size: 1.25rem;
+                        line-height: 1.5;
+                        letter-spacing: 0.00938em;
+                        text-align: left;
+                        margin-bottom: 16px;
+                    }
+                }
+
+                .application-wrapper {
+                    .box-application {
+                        .header-wrapper {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+
+                            .header {
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 400;
+                                color: #535353;
+                                font-size: 1.25rem;
+                                line-height: 1.5;
+                                letter-spacing: 0.00938em;
+                                text-align: left;
+                                margin-bottom: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

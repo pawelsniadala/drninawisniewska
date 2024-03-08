@@ -66,6 +66,7 @@ import michalRadzioImageSmall from  '../assets/team/michalRadzio/michalRadzioIma
 import kajaStrojnowskaLapinskaImageSmall from  '../assets/team/kajaStrojnowskaLapinska/kajaStrojnowskaLapinskaImageSmall.jpg';
 import jadwigaDowgialloSmolarczykImageSmall from '../assets/team/jadwigaDowgialloSmolarczyk/jadwigaDowgialloSmolarczykImageSmall.jpg'
 import karolinaZegotaSmall from '../assets/team/karolinaZegota/karolinaZegotaSmall.jpg';
+import hannaAndrusevichSmall from '../assets/team/hannaAndrusevich/hannaAndrusevichSmall.jpg';
 
 export const dermatology = {
     id: '554e27d9-1d9e-4041-9549-29057bb9792f',
@@ -286,15 +287,19 @@ export const usg = {
     ],
     specialists: [
         justynaFilipekImageSmall,
+        jadwigaDowgialloSmolarczykImageSmall,
         wojciechKaszewskiImageSmall,
+        hannaAndrusevichSmall,
         patrykKrokwinskiImageSmall,
         kamilStepkowskiImageSmall,
     ],
     specialists2: [
         'justyna-filipek',
+        'jadwiga-dowgiallo-smolarczyk',
         'wojciech-kaszewski',
         'kamil-stepkowski',
-        'patryk-krokwinski'
+        'patryk-krokwinski',
+        'hanna-andrushevich'
     ],
     relatedSpecializations: [
         'endocrinology',
@@ -352,11 +357,13 @@ export const gynecology = {
     ],
     specialists: [
         justynaFilipekImageSmall,
-        jadwigaDowgialloSmolarczykImageSmall
+        jadwigaDowgialloSmolarczykImageSmall,
+        hannaAndrusevichSmall
     ],
     specialists2: [
         'justyna-filipek',
-        'jadwiga-dowgiallo-smolarczyk'
+        'jadwiga-dowgiallo-smolarczyk',
+        'hanna-andrushevich'
     ],
     relatedSpecializations: [
         'usg',

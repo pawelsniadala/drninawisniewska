@@ -21,6 +21,7 @@ import michalRadzioImage from  '../assets/team/michalRadzio/michalRadzioImage.jp
 import kajaStrojnowskaLapinskaImage from  '../assets/team/kajaStrojnowskaLapinska/kajaStrojnowskaLapinskaImage.jpg';
 import jadwigaDowgialloSmolarczykImage from  '../assets/team/jadwigaDowgialloSmolarczyk/jadwigaDowgialloSmolarczykImage.jpg';
 import karolinaZegotaImage from '../assets/team/karolinaZegota/karolinaZegotaImage.jpg';
+import hannaAndrusevichImage from '../assets/team/hannaAndrusevich/hannaAndrusevichImage.jpg';
 // import teamBackground from '../assets/team/teamBackground.jpg';
 
 export const ninaWisniewska = {
@@ -33,7 +34,7 @@ export const ninaWisniewska = {
     experience: 'Nagrodzona przez Ministra Zdrowia w 2015 roku za uzyskanie najlepszego wyniku w Polsce z egzaminu PES w zakresie dermatologii i wenerologii. Na co dzień pełni funkcję Starszego Asystenta w Klinice Dermatologicznej Wojskowego Instytutu Medycznego Ministerstwa Obrony Narodowej w Warszawie. Członkini  Polskiego Towarzystwa Dermatologicznego i Farmaekonomicznego. Członkini Polskiego Towarzystwa Medycyny Estetycznej i Anti-Anging.',
     interested: false,
     image: ninaWisniewskaImage,
-    background: false,
+    background: null,
     specialization: [
         'dermatology',
         'aesthetic-medicine'
@@ -60,7 +61,7 @@ export const justynaFilipek = {
     experience: 'Dr Filipek zajmuje się diagnostyką i leczeniem pacjentek z niepłodnością, zaburzeniami hormonalnymi. Diagnostyką i leczeniem chorób tarczycy, przysadki mózgowej, nadnerczy oraz insulinoopornością.',
     interested: false,
     image: justynaFilipekImage,
-    background: false,
+    background: null,
     specialization: [
         'gynecology',
         'endocrinology',
@@ -79,7 +80,7 @@ export const paulinaBudna = {
     experience: 'Specjalizuje się w wykonywaniu zabiegów pielęgnacyjno-leczniczych, w szczególności dla skór wymagających, tj. skóra trądzikowa, z przebarwieniami, bliznami potrądzikowymi, itp. Ponadto wykonuje zabiegi z zakresu ujędrniania i modelowania sylwetki, a także zabiegi epilacji laserowej. Chętnie uczy się nowych rzeczy. Swoją wiedzę pogłębia uczestnicząc w specjalistycznych szkoleniach i kongresach. Bardzo ceni sobie wzajemną współpracę z lekarzami z dziedziny dermatologii i medycyny estetycznej. Z Kliniką dr Niny Wiśniewskiej związana jest od początku jej istnienia.',
     interested: false,
     image: paulinaBudnaImage,
-    background: false,
+    background: null,
     specialization: [
         'cosmetology'
     ],
@@ -106,7 +107,7 @@ export const konradKochan = {
     experience: 'Jest absolwentem Podyplomowej Szkoły Medycyny Estetycznej Polskiego Towarzystwa Lekarskiego w Warszawie oraz lekarzem American Academy of Aesthetic Medicine. Od 2012 zajmuje się medycyną estetyczną oraz chirurgią plastyczną. Był uczestnikiem wielu kursów i kongresów z zakresu chirurgii plastycznej oraz medycyny estetycznej organizowanych zarówno w kraju jak i za granicą. Był wykładowcą oraz doktorantem I Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego (WUM). Swoje doświadczenie uzupełniał w ramach licznych praktyk, również zagranicznych: w Klinice chirurgii University of Palermo P.Giaccone Hospital, Italy oraz w Paryżu. Jest autorem publikacji i doniesień zjazdowych z zakresu chirurgii plastycznej. Jest członkiem Polskiego Towarzystwa Chirurgii Plastycznej, Rekonstrukcyjnej i Estetycznej oraz Polskiego Towarzystwa Leczenia Oparzeń. Specjalizuje się w zabiegach z zakresu medycyny estetycznej twarzy, chirurgii plastycznej piersi, plastyki brzucha oraz liposukcji i modelowania ciała. Łączy w sobie umiejętności z zakresu medycyny estetycznej i chirurgii plastycznej.',
     interested: false,
     image: konradKochanImage,
-    background: false,
+    background: null,
     specialization: [
         'aesthetic-medicine',
         'cosmetic-surgery'
@@ -126,7 +127,7 @@ export const agataSkwerekSzewczyk = {
     experience: 'Od 2011 pracuję jako lekarz, obecnie starszy asystent w Klinice Chorób Wewnętrznych i Endokrynologii Centralnego Szpitala Klinicznego Warszawskiego Uniwersytetu Medycznego przy ul. Banacha. Jestem współautorem wielu publikacji w zakresie zaburzeń gospodarki wapniowo-fosforanowej. Od 2019 r. jestem również specjalistą Reumatologiem. Specjalizację odbywałam w Klinice Wczesnego Zapalenia Stawów Narodowego Instytutu Reumatologii i Geriatrii w Warszawie. Prywatnie żona i mama 2 wspaniałych chłopców.',
     interested: false,
     image: agataSkwerekSzewczykImage,
-    background: false,
+    background: null,
     specialization: [
         'rheumatology'
     ],
@@ -143,7 +144,7 @@ export const aldonaMaciag = {
     experience: 'Szczególnym obszarem jej zainteresowań jest dermatologia onkologiczna i dermatochirurgia. Największą satysfakcję przynosi jej wczesne wykrywanie i skuteczne leczenie nowotworów skóry z optymalnym efektem estetycznym.',
     interested: false,
     image: aldonaMaciagImage,
-    background: false,
+    background: null,
     specialization: [
         'dermatology'
     ],
@@ -167,7 +168,7 @@ export const justynaKloniecka = {
     experience: 'Zajmuje się diagnostyką i leczeniem chorób skóry, włosów i paznokci oraz chorób przenoszonych drogą płciową. Stale podnosi swoje kwalifikacje uczestnicząc w licznych kursach i konferencjach związanych z dermatologią kliniczną. W swojej codziennej pracy zawodowej ceni holistyczne i indywidualne podejście do każdego pacjenta w myśl zasady "Salus aegroti suprema lex" dobro chorego najwyższym prawem.',
     interested: false,
     image: justynaKlonieckaImage,
-    background: false,
+    background: null,
     specialization: [
         'dermatology'
     ],
@@ -181,24 +182,6 @@ export const justynaKloniecka = {
     ]
 };
 
-export const wojciechKaszewski = {
-    id: 'ac4ca38b-526a-49ee-adad-5f81e0347623',
-    specialist: 'wojciech-kaszewski',
-    name: 'dr n. med. Wojciech Kaszewski',
-    speciality: 'Ortopeda',
-    summary: false,
-    education: 'Ukończył studia na Wydziale Lekarskim Collegium Medicum w Bydgoszczy, Uniwersytetu Mikołaja Kopernika w Toruniu, na kierunku lekarskim. Uzyskał tytuł doktora nauk medycznych na Wydziale Lekarskim Collegium Medicum w Bydgoszczy, UMK w Toruniu w 2016 roku. Ukończył liczne kursy doszkalające z zakresu urazów narządu ruchu ze szczególnym uwzględnieniem chirurgii ręki.',
-    experience: 'Aktualnie pracuje w Wojewódzkim Szpitalu Specjalistycznym we Włocławku, gdzie pełni funkcje ordynatora oddziału. Dodatkowo pracuje jako adiunkt w Wydziale Nauk o Zdrowiu Mazowieckiej Uczelni Publicznej w Płocku. Aktywnie uczestniczy w szkoleniach z zakresu traumatologii i ortopedii narządu ruchu oraz ultrasonografii narządu ruchu. Jest członkiem PTOiTr.',
-    interested: false,
-    image: wojciechKaszewskiImage,
-    background: false,
-    specialization: [
-        'orthopedics',
-        'usg'
-    ],
-    treatment: ['']
-};
-
 export const klaudiaMalottki = {
     id: '9d4116c1-c755-46f8-85d5-65c8377abd21',
     specialist: 'klaudia-malottki',
@@ -209,7 +192,7 @@ export const klaudiaMalottki = {
     experience: 'Z zawodu stomatolog, z zamiłowania poszukiwacz piękna i estetyki zarówno w uśmiechu jak i całej twarzy.',
     interested: false,
     image: klaudiaMalottkiImage,
-    background: false,
+    background: null,
     specialization: [
         'aesthetic-medicine'
     ],
@@ -236,7 +219,7 @@ export const katarzynaMysliwiecCzajka = {
     experience: 'Obecnie pracuje w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie, gdzie odbywa staż specjalizacyjny z dermatologii i wenerologii. Stale poszerza swoje kwalifikacje biorąc udział w licznych certyfikowanych kursach, szkoleniach i konferencjach. Zajmuje się diagnostyką oraz leczeniem chorób skóry, włosów i paznokci.',
     interested: false,
     image: katarzynaMysliwiecCzajkaImage,
-    background: false,
+    background: null,
     specialization: [
         'dermatology'
     ],
@@ -260,7 +243,7 @@ export const milenaJuzwiak = {
     experience: 'Fizjoterapeuta z ponad kilkuletnim doświadczeniem zawodowym. Specjalizuje się w rehabilitacji ortopedycznej, neurologicznej, a także masażu. Jej zainteresowania zawodowe skupiają się na diagnostyce fizjoterapeutycznej, terapii pooperacyjnej, terapii poudarowej oraz profilaktyce zdrowotnej. Z wielką przyjemnością łączy w swojej pracy pasję oraz wiedzę zdobytą na specjalistycznych kongresach i szkoleniach.',
     interested: false,
     image: milenaJuzwiakImage,
-    background: false,
+    background: null,
     specialization: [
         'physioterapy'
     ],
@@ -281,7 +264,7 @@ export const paulinaTatara = {
     experience: false,
     interested: 'Jestem miłośniczką kryminałów i wyzwań, przede wszystkim sportowych. Sport uczy mnie konsekwencji w dążeniu do celu. Na swoim koncie mam ukończenie zawodów triathlonowych na dystansie pełnego Ironmana.',
     image: paulinaTataraImage,
-    background: false,
+    background: null,
     specialization: [
         'dermatology',
         'aesthetic-medicine'
@@ -312,7 +295,7 @@ export const tomaszMatuszewski = {
     experience: 'Przewodniczący Sekcji Obrzęku Wrodzonego przy Polskim Towarzystwie Alergologicznym. Posiada kwalifikacje w diagnostyce i leczeniu chorób alergologicznych u dzieci i dorosłych. Wykonuje testy skórne, prowadzi immunoterapię, zajmuje się między innymi leczeniem pokrzywek, astmy oskrzelowej, atopowego zapalenia skóry. Świadczy porady z zakresu chorób zakaźnych tj, borelioza, choroby pasożytnicze, choroby zakaźne skóry, HCV oraz z zakresu medycyny podróży. Zainteresowania swoje poszerza również w zakresie medycyny estetycznej gdzie zdobywa doświadczenie pod okiem najlepszych specjalistów. Autor i współautor licznych publikacji z dziedziny alergologii czy pediatrii w recenzowanych czasopismach. Aktywny uczestnik kongresów alergologicznych, medycyny podróży.',
     interested: 'Interesuję się kulinariami, enoturystyką.',
     image: tomaszMatuszewskiImage,
-    background: false,
+    background: null,
     specialization: [
         'allergology'
     ],
@@ -333,7 +316,7 @@ export const olgaLenartowiczWarakomska = {
     experience: 'Leczenie kompleksowe zaawansowanych przypadków chorób oraz łączenie stomatologii z medycyną estetyczną przynosi jej największą satysfakcję. Jest bardzo zaangażowana w swoją pracę. Problem pacjenta stara się zawsze widzieć w jak najszerszej perspektywie, aby podczas leczenia najlepiej wykorzystać wszystkie osiągnięcia nowoczesnej stomatologii oraz medycyny estetycznej. Nieustannie uczestniczy w kursach dokształcających, konferencjach naukowych oraz śledzi prasę specjalistyczną ze wszystkich dziedzin związanych z zainteresowaniami zawodowymi. Jest conkiem Polskiego Towarzystwa Medycyny Estetycznej i Anti-Aging (PTMEIAA) oraz Polskiego, Polskiego Towarzystwa Lekarzy Medycyny Estetycznej POLME, Towarzystwa Stomatologicznego PTS.',
     interested: 'W wolnej chwili jeżdżę na rowerze, na snowboardzie, żegluję, podróżuję i czytam książki.',
     image: olgaLenartowiczWarakomskaImage,
-    background: false,
+    background: null,
     specialization: [
         'aesthetic-medicine'
     ],
@@ -359,7 +342,7 @@ export const katarzynaZbronska = {
     experience: 'Do jej głównych zainteresowań zawodowych należą choroby skóry owłosionej, diagnostyka trichoskopowa i leczenie różnych typów łysienia przy użyciu odpowiednio dobranych technik medycyny regeneracyjnej. Doświadczenie w zakresie medycyny estetycznej zdobywała pod okiem najlepszych specjalistów, a swoje kwalifikacje stale poszerza biorąc udział w licznych kursach, szkoleniach i kongresach. Podczas planowania leczenia stawia na subtelność i naturalne podkreślenie indywidualnych atutów. Poza zabiegami z użyciem toksyny botulinowej, kwasu hialuronowego i laseroterapii, zajmuje się usuwaniem znamion metodą dermatochirurgiczną. Specjalizuje się również w wykonywaniu zabiegów z użyciem osocza bogatopłytkowego oraz technologii HIFU-SonoQueen.',
     interested: false,
     image: katarzynaZbronskaImage,
-    background: false,
+    background: null,
     specialization: [
         'dermatology',
         'aesthetic-medicine'
@@ -392,32 +375,11 @@ export const joannaOjrzenska = {
     experience: 'Absolwentka Warszawskiego Uniwersytetu Medycznego. W swoich działaniach skupia się na indywidualnej współpracy z pacjentem oraz rozpowszechnianiu wiedzy na temat zdrowego stylu życia. Pokazuje, że odchudzanie nie musi być męczarnią, a zdrowe odżywianie może być proste i smaczne.',
     interested: false,
     image: joannaOjrzenskaImage,
-    background: false,
+    background: null,
     specialization: [
         'clinical-dietitian'
     ],
     treatment: ['']
-};
-
-export const kamilStepkowski = {
-    id: '0b01251b-90a9-4279-b7ee-afd83274a03e',
-    specialist: 'kamil-stepkowski',
-    name: 'lek. med. Kamil Stępkowski',
-    speciality: 'Chirurg naczyniowy',
-    summary: false,
-    education: 'Absolwent Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego. Pracuje w Klinice Chirurgii Ogólnej, Endokrynologicznej i Chorób Naczyń w Centralnym Szpitalu Klinicznym Uniwersyteckiego Centrum Medycznego Warszawskiego Uniwersytetu Medycznego przy ul. Banacha 1a w Warszawie.',
-    experience: 'Doktor Kamil Stępkowski jest specjalistą chirurgii naczyniowej i ogólnej. Zajmuje się diagnostyką i leczeniem chorób z zakresu chirurgii naczyniowej i ogólnej: choroby żył (zakrzepica, niewydolność żylna, żylaki kończyn dolnych, zespół pozakrzepowy), choroby tętnic (miażdżyca, niedokrwienie kończyn dolnych, niedokrwienie mózgu, zwężenia tętnic szyjnych, tętniaki aorty i innych tętnic), choroby tarczycy i przytarczyc (wole, choroba Gravesa-Basedowa, nowotwory tarczycy, pierwotna nadczynność przytarczyc). Wykonywane zabiegi i operacje: otwarte i wewnątrznaczyniowe metody leczenia niedrożnych tętnic oraz tętniaków aorty, leczenie żylaków kończyn dolnych metodami termicznymi (ablacja RF, laser ELVeS) i nietermicznymi (stripping, miniflebektomia, skleroterapia), wycięcie tarczycy i przytarczyc oraz operacje laparoskopowe.',
-    interested: false,
-    image: kamilStepkowskiImage,
-    background: false,
-    specialization: [
-        'vascular-surgery',
-        'usg'
-    ],
-    treatment: [
-        'laserowe-usuwanie-zylakow',
-        'skleroterapia'
-    ]
 };
 
 export const katarzynaRychlik = {
@@ -430,7 +392,7 @@ export const katarzynaRychlik = {
     experience: 'Obecnie pracuje w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie, gdzie odbywa staż specjalizacyjny z dermatologii i wenerologii. Zajmuje się diagnostyką oraz leczeniem chorób skóry, włosów i paznokci. Stale podnosi swoje kwalifikacji zawodowe aktywnie uczestnicząc w licznych konferencjach i szkoleniach.',
     interested: false,
     image: katarzynaRychlikImage,
-    background: false,
+    background: null,
     specialization: [
         'dermatology'
     ],
@@ -443,23 +405,6 @@ export const katarzynaRychlik = {
     ]
 };
 
-export const patrykKrokwinski = {
-    id: '0316f09f-7c5f-46df-a1cb-48289205050e',
-    specialist: 'patryk-krokwinski',
-    name: 'lek. med. Patryk Krokwiński',
-    speciality: 'Radiolog',
-    summary: false,
-    education: false,
-    experience: false,
-    interested: false,
-    image: patrykKrokwinskiImage,
-    background: false,
-    specialization: [
-        'usg'
-    ],
-    treatment: ['']
-};
-
 export const michalRadzio = {
     id: '19cf6af2-bb99-4c99-8e2f-9c6090c55c8f',
     specialist: 'michal-radzio',
@@ -470,7 +415,7 @@ export const michalRadzio = {
     experience: 'Lek. med. Michał Radzio na co dzień zajmuje się diagnostyką i leczeniem szerokiej gamy schorzeń z zakresu chorób wewnętrznych oraz chorób układu krążenia. Od 1999 roku pracuje na Oddziale Kardiologicznym oraz w Poradni Kardiologicznej przyszpitalnej SPZZOZ w Wyszkowie. Obecnie pełni również funkcję zastępcy ordynatora oddziału Kardiologicznego w Wyszkowie. Prócz konsultacji kardiologicznych świadczy usługi badania echokardiografii przezklatkowej oraz EKG spoczynkowe z opisem.',
     interested: false,
     image: michalRadzioImage,
-    background: false,
+    background: null,
     specialization: [
         'cardiology'
     ],
@@ -489,7 +434,7 @@ export const kajaStrojnowskaLapinska = {
     experience: false,
     interested: false,
     image: kajaStrojnowskaLapinskaImage,
-    background: false,
+    background: null,
     specialization: [
         'psychiatry'
     ],
@@ -509,10 +454,11 @@ export const jadwigaDowgialloSmolarczyk = {
     experience: 'Doświadczenie zawodowe zawdzięczam pracy w Klinice Położnictwa i Ginekologii Akademii Medycznej i w Klinice Endokrynologii Ginekologicznej Akademii Medycznej w Warszawie. Stale podnoszę kwalifikacje zawodowe w zakresie diagnostyki i leczenia niepłodności, opieki perinatalnej, diagnostyki i leczenia schorzeń ginekologicznych, w tym zaburzeń endokrynologicznych i ultrasonografii ginekologicznej. Uczestniczę regularnie w kursach, warsztatach i konferencjach. Znam biegle język angielski i francuski. Mogę się również porozumieć  po włosku i po rosyjsku.',
     interested: 'Moje pasje pozazawodowe to narciarstwo i windsurfing. Jestem wielokrotną medalistką Mistrzostw Świata Lekarzy, Mistrzostw Polski Lekarzy i Mistrzostw Polski Amatorów w narciarstwie alpejskim.',
     image: jadwigaDowgialloSmolarczykImage,
-    background: false,
+    background: null,
     specialization: [
         'gynecology',
-        'endocrinology'
+        'endocrinology',
+        'usg'
     ],
     treatment: ['']
 };
@@ -527,7 +473,7 @@ export const karolinaZegota = {
     experience: 'Specjalizuje się w pracy ze skórą trądzikową oraz profilaktyce przeciwstarzeniowej. Ponadto wykonuje zabiegi z zakresu modelowania sylwetki i depilacji laserowej. Na każdej płaszczyźnie w swoim zawodzie stara się być profesjonalistką ,która kieruje się indywidualnymi potrzebami pacjentów i dostarcza im kompleksową opiekę. Jej głównym celem jest poprawa wyglądu i zdrowia skóry, przy jednoczesnym zapewnieniu komfortu i zaufania pacjenta.',
     interested: false,
     image: karolinaZegotaImage,
-    background: false,
+    background: null,
     specialization: [
         'cosmetology'
     ],
@@ -544,6 +490,80 @@ export const karolinaZegota = {
     ]
 };
 
+export const wojciechKaszewski = {
+    id: 'ac4ca38b-526a-49ee-adad-5f81e0347623',
+    specialist: 'wojciech-kaszewski',
+    name: 'dr n. med. Wojciech Kaszewski',
+    speciality: 'Ortopeda',
+    summary: false,
+    education: 'Ukończył studia na Wydziale Lekarskim Collegium Medicum w Bydgoszczy, Uniwersytetu Mikołaja Kopernika w Toruniu, na kierunku lekarskim. Uzyskał tytuł doktora nauk medycznych na Wydziale Lekarskim Collegium Medicum w Bydgoszczy, UMK w Toruniu w 2016 roku. Ukończył liczne kursy doszkalające z zakresu urazów narządu ruchu ze szczególnym uwzględnieniem chirurgii ręki.',
+    experience: 'Aktualnie pracuje w Wojewódzkim Szpitalu Specjalistycznym we Włocławku, gdzie pełni funkcje ordynatora oddziału. Dodatkowo pracuje jako adiunkt w Wydziale Nauk o Zdrowiu Mazowieckiej Uczelni Publicznej w Płocku. Aktywnie uczestniczy w szkoleniach z zakresu traumatologii i ortopedii narządu ruchu oraz ultrasonografii narządu ruchu. Jest członkiem PTOiTr.',
+    interested: false,
+    image: wojciechKaszewskiImage,
+    background: null,
+    specialization: [
+        'orthopedics',
+        'usg'
+    ],
+    treatment: ['']
+};
+
+export const hannaAndrusevich = {
+    id: '1a71f4bc-6046-406c-aa6f-2a6a88d8c263',
+    specialist: 'hanna-andrushevich',
+    name: 'lek. Hanna Andrusevich',
+    speciality: 'Lekarz w trakcie specjalizacji z ginekologii i położnictwa',
+    summary: 'Obecnie pracuję w poradni przyszpitalnej oraz na Oddziale Ginekologiczno-Położniczym Szpitala w Wyszkowie, gdzie specjalizuję się w zakresie położnictwa oraz ginekologii. W swojej codziennej pracy skupiam się na prowadzeniu ciąży fizjologicznej i patologicznej, diagnostyce ultrasonograficznej oraz diagnostyce i leczeniu w ginekologii. Udzielam porad z zakresu zaburzeń narządu rodnego, antykoncepcji oraz wykonuję badania kontrolne. Poszerzam wiedzę i umiejętności w ginekologii operacyjnej oraz zabiegowej. Opiekuje się także pacjentkami borykającymi się z problemem nietrzymania moczu, z zaburzeniami statyki narządu rodnego. Zawodowo interesuję się kolposkopią, endoskopią i endokrynologią ginekologiczną.',
+    education: 'Absolwentka Grodzieńskiego Uniwersytetu Medycznego, Białoruś. W 2019 uzyskałam nostryfikację dyplomu lekarza na Uniwersytecie Medycznym w Łodzi.',
+    experience: 'Obszary działalności: choroby ginekologiczne, bolesne miesiączkowanie, zaburzenia miesiączkowania, menopauza, endometrioza, mięśniaki macicy, diagnostyka przesiewowa patologii szyjki macicy, ciąże fizjologiczne. Wykonywane zabiegi i badania: USG transvaginalne, USG doraźne ciąży, cytologia szyjki, zakładanie wkładek wewnątrzmacicznych Mirena, Kyleena, Levosert.',
+    interested: false,
+    image: hannaAndrusevichImage,
+    background: null,
+    specialization: [
+        'gynecology',
+        'usg'
+    ],
+    treatment: ['']
+};
+
+export const kamilStepkowski = {
+    id: '0b01251b-90a9-4279-b7ee-afd83274a03e',
+    specialist: 'kamil-stepkowski',
+    name: 'lek. med. Kamil Stępkowski',
+    speciality: 'Chirurg naczyniowy',
+    summary: false,
+    education: 'Absolwent Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego. Pracuje w Klinice Chirurgii Ogólnej, Endokrynologicznej i Chorób Naczyń w Centralnym Szpitalu Klinicznym Uniwersyteckiego Centrum Medycznego Warszawskiego Uniwersytetu Medycznego przy ul. Banacha 1a w Warszawie.',
+    experience: 'Doktor Kamil Stępkowski jest specjalistą chirurgii naczyniowej i ogólnej. Zajmuje się diagnostyką i leczeniem chorób z zakresu chirurgii naczyniowej i ogólnej: choroby żył (zakrzepica, niewydolność żylna, żylaki kończyn dolnych, zespół pozakrzepowy), choroby tętnic (miażdżyca, niedokrwienie kończyn dolnych, niedokrwienie mózgu, zwężenia tętnic szyjnych, tętniaki aorty i innych tętnic), choroby tarczycy i przytarczyc (wole, choroba Gravesa-Basedowa, nowotwory tarczycy, pierwotna nadczynność przytarczyc). Wykonywane zabiegi i operacje: otwarte i wewnątrznaczyniowe metody leczenia niedrożnych tętnic oraz tętniaków aorty, leczenie żylaków kończyn dolnych metodami termicznymi (ablacja RF, laser ELVeS) i nietermicznymi (stripping, miniflebektomia, skleroterapia), wycięcie tarczycy i przytarczyc oraz operacje laparoskopowe.',
+    interested: false,
+    image: kamilStepkowskiImage,
+    background: null,
+    specialization: [
+        'vascular-surgery',
+        'usg'
+    ],
+    treatment: [
+        'laserowe-usuwanie-zylakow',
+        'skleroterapia'
+    ]
+};
+
+export const patrykKrokwinski = {
+    id: '0316f09f-7c5f-46df-a1cb-48289205050e',
+    specialist: 'patryk-krokwinski',
+    name: 'lek. med. Patryk Krokwiński',
+    speciality: 'Radiolog',
+    summary: false,
+    education: false,
+    experience: false,
+    interested: false,
+    image: patrykKrokwinskiImage,
+    background: null,
+    specialization: [
+        'usg'
+    ],
+    treatment: ['']
+};
+
 export const team = [
     { ...ninaWisniewska },
     { ...justynaFilipek },
@@ -552,7 +572,6 @@ export const team = [
     { ...agataSkwerekSzewczyk },
     { ...aldonaMaciag },
     { ...justynaKloniecka },
-    { ...wojciechKaszewski },
     { ...klaudiaMalottki },
     { ...katarzynaMysliwiecCzajka },
     { ...milenaJuzwiak },
@@ -561,11 +580,13 @@ export const team = [
     { ...olgaLenartowiczWarakomska },
     { ...katarzynaZbronska },
     { ...joannaOjrzenska },
-    { ...kamilStepkowski },
     { ...katarzynaRychlik },
-    { ...patrykKrokwinski },
     { ...michalRadzio },
     { ...kajaStrojnowskaLapinska },
     { ...jadwigaDowgialloSmolarczyk },
-    { ...karolinaZegota }
+    { ...karolinaZegota },
+    { ...wojciechKaszewski },
+    { ...hannaAndrusevich },
+    { ...kamilStepkowski },
+    { ...patrykKrokwinski }
 ];

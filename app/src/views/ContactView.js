@@ -15,6 +15,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import ListItemText from '@mui/material/ListItemText';
 import Avatar from '@mui/material/Avatar';
+
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
@@ -37,10 +38,7 @@ import {
 
 const ContactView = () => {
     const theme = useTheme();
-
-    const isSm = useMediaQuery(theme.breakpoints.up('sm'), {
-        defaultMatches: true
-    });
+    const isSm = useMediaQuery(theme.breakpoints.up('sm'), { defaultMatches: true });
 
     const {
         reset,
@@ -52,35 +50,59 @@ const ContactView = () => {
         defaultValues: contactModel
     });
 
-    const sendEmail = () => {
-        emailjs.sendForm(
-            emailService,
-            emailTemplate,
-            '#contact-form',
-            emailPublicKey
-        ).then((result) => {
+    // const sendEmail = () => {
+    //     emailjs.sendForm(
+    //         emailService,
+    //         emailTemplate,
+    //         '#contact-form',
+    //         emailPublicKey
+    //     ).then((result) => {
+    //         console.log(result.text);
+    //         // showToast();
+    //         showToast('success', 'Twoja wiadomość została wysłana');
+    //         setTimeout(() => {
+    //             reset();
+    //         }, 1000);
+    //     }, (error) => {
+    //         console.log(error.text);
+    //         showToast('danger', 'Błąd wysyłania wiadomości');
+    //     });
+    // }
+
+    const sendEmail = async () => {
+        try {
+            const form = document.getElementById('contact-form');
+            const result = await emailjs.sendForm(emailService, emailTemplate, form, emailPublicKey);
             console.log(result.text);
-            showToast();
-            setTimeout(() => {
-                reset();
-            }, 1000);
-        }, (error) => {
+            showToast('success', 'Twoja wiadomość została wysłana');
+            setTimeout(reset, 1000);
+        } catch (error) {
             console.log(error.text);
-        });
+            showToast('danger', 'Błąd wysyłania wiadomości');
+        }
     }
 
-    const showToast = () => {
-        new bootstrap.Toast(
-            document.getElementById('successToast')
-        ).show();
+    // const showToast = () => {
+    //     new bootstrap.Toast(
+    //         document.getElementById('successToast')
+    //     ).show();
+    // }
+    const showToast = (mode, text) => {
+        const toast = new bootstrap.Toast(document.getElementById('dynamicToast'));
+        const toastElement = document.getElementById('dynamicToast');
+        toastElement.classList.remove('success', 'danger');
+        toastElement.classList.add(mode);
+        document.querySelector('.toast-text').innerText = text;
+        toast.show();
     }
 
     const renderIcon = (designation) => {
+        const iconProps = { width: '20px', height: '20px', color: '#fff' };
         switch(designation) {
             case 'phone':
-                return <PhoneSvg width='20px' height='20px' color='#fff'/>;
+                return <PhoneSvg {...iconProps} />;
             case 'email':
-                return <EmailSvg width='20px' height='20px' color='#fff' />
+                return <EmailSvg {...iconProps} />
             case 'address':
                 return <FmdGoodIcon />;
             case 'hours':

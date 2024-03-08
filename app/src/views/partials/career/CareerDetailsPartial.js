@@ -22,6 +22,13 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import PercentIcon from '@mui/icons-material/Percent';
+import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
+import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
+// import InventoryIcon from '@mui/icons-material/Inventory';
+// import StarBorderIcon from '@mui/icons-material/StarBorder';
+import StarIcon from '@mui/icons-material/Star';
+// import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
@@ -45,89 +52,68 @@ import {
 } from '../../../data/career';
 
 const CareerDetailsPartial = () => {
+    // set profession
     const { profession } = useParams();
+    const professionData = {
+        receptionist: [{ ...receptionist }],
+        hematologist: [{ ...hematologist }],
+        dermatologist: [{ ...dermatologist }],
+        urologist: [{ ...urologist }],
+        psychiatrist: [{ ...psychiatrist }],
+        cosmetologist: [{ ...cosmetologist }]
+    };
+    const setProfession = () => professionData[profession] || [];
 
-    const setProfession = () => {
-        switch(profession) {
-            case 'receptionist':
-                return [{ ...receptionist }];
-            case 'hematologist':
-                return [{ ...hematologist }];
-            case 'dermatologist':
-                return [{ ...dermatologist }];
-            case 'urologist':
-                return [{ ...urologist }];
-            case 'psychiatrist':
-                return [{ ...psychiatrist }];
-            case 'cosmetologist':
-                return [{ ...cosmetologist }];
-            default:
-        }
-    }
+    const title = setProfession()[0].title;
+    // const specialization = setProfession()[0].specialization;
 
-    // const setSpecialization = setProfession()[0].specialization;
+    // render icon
+    const iconProps = { width: '20px', height: '20px', color: '#fff' };
+    const iconComponents = {
+        location: <FmdGoodIcon {...iconProps} />,
+        date: <DateRangeIcon {...iconProps} />,
+        agreement: <DescriptionIcon {...iconProps} />,
+        position: <SignalCellularAltIcon {...iconProps} />,
+        type: <TimelapseIcon {...iconProps} />,
+        place: <ApartmentIcon {...iconProps} />
+    };
+    const renderIcon = (designation) => iconComponents[designation] || null;
 
-    function getWindowDimensions() {
+    // show specialists
+    const [showMoreSpecialists, setShowMoreSpecialists] = useState(false);
+    const toggleShowMoreSpecialists = () => setShowMoreSpecialists(prevState => !prevState);
+    const filteredSpecialists = team.filter(item => item.career?.includes(profession));
+    const displayedSpecialists = showMoreSpecialists ? filteredSpecialists : filteredSpecialists.slice(0, 3);
+    // const showAllSpecialists = `/team${specialization !== 'dermatology' ? `/${specialization}` : ''}`;
+
+    // show treatments
+    const [showMoreTreatments, setShowMoreTreatments] = useState(false);
+    const toggleShowMoreTreatments = () => setShowMoreTreatments(prevState => !prevState);
+    const filteredTreatments = treatment.filter(item => item.career?.includes(profession));
+    const displayedTreatments = showMoreTreatments ? filteredTreatments : filteredTreatments.slice(0, 3);
+    // const showAllTreatments = `/treatment${specialization !== 'dermatology' ? `/${specialization}` : ''}`;
+
+    // show offers
+    const [showMoreOffers, setShowMoreOffers] = useState(false);
+    const toggleShowMoreOffers = () => setShowMoreOffers(prevState => !prevState);
+    const filteredOffers = career.filter(item => item.career !== profession)
+    const displayedOffers = showMoreOffers ? filteredOffers : filteredOffers.slice(0, 3);
+
+    // window dimensions
+    const getWindowDimensions = () => {
         const { innerWidth: width } = window;
         return { width };
-    }
-    function useWindowDimensions() {
-        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
+    };
+    const useWindowDimensions = () => {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
         useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
+            const handleResize = () => setWindowDimensions(getWindowDimensions());
             window.addEventListener('resize', handleResize);
             return () => window.removeEventListener('resize', handleResize);
         }, []);
         return windowDimensions;
-    }
+    };
     const { width } = useWindowDimensions();
-
-    const renderIcon = (designation) => {
-        const iconProps = { width: '20px', height: '20px', color: '#fff' };
-        switch(designation) {
-            case 'location':
-                return <FmdGoodIcon {...iconProps} />;
-            case 'date':
-                return <DateRangeIcon {...iconProps} />
-            case 'agreement':
-                return <DescriptionIcon {...iconProps} />;
-            case 'position':
-                return <SignalCellularAltIcon {...iconProps} />;
-            case 'type':
-                return <TimelapseIcon {...iconProps} />
-            case 'place':
-                return <ApartmentIcon {...iconProps} />;
-            default:
-        }
-    }
-
-    // show specialists
-    const [showMoreSpecialists, setShowMoreSpecialists] = useState(false);
-    const toggleShowMoreSpecialists = () => {
-        setShowMoreSpecialists(prevState => !prevState);
-    };
-    const filteredSpecialists = team.filter(item => item.career?.includes(profession));
-    const displayedSpecialists = showMoreSpecialists ? filteredSpecialists : filteredSpecialists.slice(0, 3);
-    // const showAllSpecialists = `/team${setSpecialization !== 'dermatology' ? `/${setSpecialization}` : ''}`;
-
-    // show treatments
-    const [showMoreTreatments, setShowMoreTreatments] = useState(false);
-    const toggleShowMoreTreatments = () => {
-        setShowMoreTreatments(prevState => !prevState);
-    };
-    const filteredTreatments = treatment.filter(item => item.career?.includes(profession));
-    const displayedTreatments = showMoreTreatments ? filteredTreatments : filteredTreatments.slice(0, 3);
-    // const showAllTreatments = `/treatment${setSpecialization !== 'dermatology' ? `/${setSpecialization}` : ''}`;
-
-    // show offers
-    const [showMoreOffers, setShowMoreOffers] = useState(false);
-    const toggleShowMoreOffers = () => {
-        setShowMoreOffers(prevState => !prevState);
-    };
-    const filteredOffers = career.filter(item => item.career !== profession)
-    const displayedOffers = showMoreOffers ? filteredOffers : filteredOffers.slice(0, 3);
 
     return (
         <Box className='team-view'>
@@ -153,13 +139,13 @@ const CareerDetailsPartial = () => {
                                     Kariera
                                 </Link>
                                 <Typography color='text.primary'>
-                                    {setProfession()[0].title}
+                                    {title}
                                 </Typography>
                             </Breadcrumbs>
                         </Box>
                         <Box className='heading-wrapper'>
                             <Typography variant='h4' className='heading-view'>
-                                {setProfession()[0].title}
+                                {title}
                             </Typography>
                         </Box>
                     </Container>
@@ -194,7 +180,9 @@ const CareerDetailsPartial = () => {
                                                                     sx={{
                                                                         backgroundColor: '#ebebeb !important',
                                                                         color: '#D29A3E',
-                                                                        borderRadius: '8px'
+                                                                        borderRadius: '8px',
+                                                                        // border: '1px solid #e7e7e7',
+                                                                        boxShadow: '1px 2px 3px rgba(0, 0, 0, 0.01)'
                                                                     }}
                                                                 >
                                                                     {renderIcon(item.designation)}
@@ -281,8 +269,58 @@ const CareerDetailsPartial = () => {
                                         </Box>
                                     )}
                                     <Box className='box-career'>
+                                        <Typography
+                                            variant={'h5'}
+                                            className='header alternative'
+                                        >
+                                            Benefity
+                                        </Typography>
+                                        <Box className='box-benefits'>
+                                            <Box className='benefit-item'>
+                                                <Box className='benefit-content'>
+                                                    <Box className='benefit-icon'>
+                                                        <PercentIcon width='30px' height='30px' />
+                                                    </Box>
+                                                    <Box className='benefit-description'>
+                                                        zniżki na firmowe produkty i usługi
+                                                    </Box>
+                                                </Box>
+                                            </Box>
+                                            <Box className='benefit-item'>
+                                                <Box className='benefit-content'>
+                                                    <Box className='benefit-icon'>
+                                                        <LocalPizzaIcon width='30px' height='30px' />
+                                                    </Box>
+                                                    <Box className='benefit-description'>
+                                                        spotkania<br/>integracyjne
+                                                    </Box>
+                                                </Box>
+                                            </Box>
+                                            <Box className='benefit-item'>
+                                                <Box className='benefit-content'>
+                                                    <Box className='benefit-icon'>
+                                                        <CardGiftcardIcon width='30px' height='30px' />
+                                                    </Box>
+                                                    <Box className='benefit-description'>
+                                                        paczki<br/>świąteczne
+                                                    </Box>
+                                                </Box>
+                                            </Box>
+                                            <Box className='benefit-item'>
+                                                <Box className='benefit-content'>
+                                                    <Box className='benefit-icon'>
+                                                        <StarIcon width='30px' height='30px' />
+                                                    </Box>
+                                                    <Box className='benefit-description'>
+                                                        vouchery na firmowe produkty
+                                                    </Box>
+                                                </Box>
+                                            </Box>
+                                        </Box>
+                                    </Box>
+                                    <Box className='box-career'>
                                         <Typography className='paragraph'>
-                                            Jeśli jesteś osobą otwartą, komunikatywną, dyspozycyjną i chciałbyś/chciałabyś pracować w prężnie rozwijającej się placówce medycznej, wyślij swoje CV (koniecznie ze zdjęciem) na adres <Typography component='a' href='mailto:info@drninawisniewska.pl' className='link'>info@drninawisniewska.pl</Typography>.
+                                            Jeśli jesteś osobą otwartą, komunikatywną, dyspozycyjną i chciałbyś/chciałabyś pracować w prężnie rozwijającej się placówce medycznej, wyślij swoje CV (koniecznie ze zdjęciem) na adres<br/>Paulina Budna: <Typography component='a' href='mailto:info@drninawisniewska.pl' className='link'>info@drninawisniewska.pl</Typography>.
                                         </Typography>
                                         <Typography className='paragraph'>
                                             Może szukamy właśnie Ciebie. Odezwiemy się do wybranych osób.
@@ -292,6 +330,19 @@ const CareerDetailsPartial = () => {
                             ))}
                         </Box>
                         <Box className='proposed-wrapper'>
+                            {/* <Box className='link-contained-more career'>
+                                <Button
+                                    component={Link}
+                                    to={`/career/${profession}/application`}
+                                    variant='contained'
+                                    color='primary'
+                                    size='large'
+                                    endIcon={<ArrowForwardIcon />}
+                                >
+                                    Aplikuj teraz
+                                </Button>
+                            </Box> */}
+
                             {displayedSpecialists.length > 0 && (
                                 <Box className='box-proposed'>
                                     <Box className='header-wrapper'>
@@ -326,7 +377,6 @@ const CareerDetailsPartial = () => {
                                     </Box>
                                 </Box>
                             )}
-
 
                             {services
                                 .filter(item => item.career === profession)

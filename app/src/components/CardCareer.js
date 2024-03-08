@@ -107,7 +107,6 @@ const CardCareer = ({
                     {/* <Divider className='divider' sx={{ borderStyle: 'dashed', my: 2 }} /> */}
 
                     <Grid item xs={12} className='grid'>
-                        
                         <Box
                             component={ListItem}
                             disableGutters

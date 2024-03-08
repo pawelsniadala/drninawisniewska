@@ -38,7 +38,8 @@ import {
     michalRadzio,
     kajaStrojnowskaLapinska,
     jadwigaDowgialloSmolarczyk,
-    karolinaZegota
+    karolinaZegota,
+    hannaAndrusevich
 } from '../../../data/team';
 
 const SpecialistsDetailsPartial = () => {
@@ -131,6 +132,8 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...jadwigaDowgialloSmolarczyk }];
             case 'karolina-zegota':
                 return [{ ...karolinaZegota }];
+            case 'hanna-andrushevich':
+                return [{ ...hannaAndrusevich }];
             default:
         }
     }

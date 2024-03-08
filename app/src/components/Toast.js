@@ -1,11 +1,11 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import InfoIcon from '@mui/icons-material/Info';
 
-const Toast = () => (
+export const Toast = () => (
     <Box className='toast-container position-fixed top-0 end-0'>
         <Box className='toast align-items-center border-0'
-            id='successToast'
+            id='dynamicToast'
             role='alert'
             aria-live='assertive'
             aria-atomic='true'
@@ -13,10 +13,8 @@ const Toast = () => (
         >
             <Box className='d-flex'>
                 <Box className='toast-body'>
-                    <CheckCircleOutlineIcon />
-                    <Box className='toast-text'>
-                        Twoja wiadomość została wysłana
-                    </Box>
+                    <InfoIcon />
+                    <Box className='toast-text'></Box>
                 </Box>
                 {/* <button type='button'
                     className='btn-close btn-close-white me-2 m-auto'

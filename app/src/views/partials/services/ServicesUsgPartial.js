@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+import Fade from '@mui/material/Fade';
+import Button from '@mui/material/Button';
+
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
@@ -17,9 +22,16 @@ import Image from '../../../components/Image';
 
 import { services, usg } from '../../../data/services';
 import { team } from '../../../data/team';
-// import { technology } from '../../../data/technology';
 
 const ServicesUsgPartial = () => {
+    // show specialists
+    const [showMoreSpecialists, setShowMoreSpecialists] = useState(false);
+    const toggleShowMoreSpecialists = () => {
+        setShowMoreSpecialists(prevState => !prevState);
+    };
+    const filteredSpecialists = team.filter(item => item.specialization.includes('usg'));
+    const displayedSpecialists = showMoreSpecialists ? filteredSpecialists : filteredSpecialists.slice(0, 3);
+
     return (
         <Box className='contact-view'>
             <Box className='view-wrapper'>
@@ -112,7 +124,7 @@ const ServicesUsgPartial = () => {
                                     </Typography>
                                 </Box>
                                 <Box className='card-wrapper'>
-                                    {team.filter(item => item.specialization.includes('usg')).map((item) => (
+                                    {displayedSpecialists.map((item) => (
                                         <CardTeamProposed
                                             key={item.id}
                                             cardTitle={item.name}
@@ -122,26 +134,17 @@ const ServicesUsgPartial = () => {
                                             cardPath={`/team/usg/${item.specialist}`}
                                         />
                                     ))}
+                                    <Fade in={filteredSpecialists.length > 3}>
+                                        <Button
+                                            className='show-more-cards'
+                                            onClick={toggleShowMoreSpecialists}
+                                            endIcon={showMoreSpecialists ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                                        >
+                                            {showMoreSpecialists ? 'Pokaż mniej' : 'Pokaż więcej'}
+                                        </Button>
+                                    </Fade>
                                 </Box>
                             </Box>
-                            {/* <Box className='box-proposed'>
-                                <Box className='header-wrapper'>
-                                    <Typography className='header'>
-                                        Technologia
-                                    </Typography>
-                                </Box>
-                                <Box className='card-wrapper'>
-                                    {technology.filter(item => item.specialization.includes('usg')).map((item) => (
-                                        <CardProposed
-                                            key={item.id}
-                                            cardTitle={item.title}
-                                            cardDescription={item.description}
-                                            cardImage={item.imageSmall}
-                                            cardPath={item.path}
-                                        />
-                                    ))}
-                                </Box>
-                            </Box> */}
                             <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>

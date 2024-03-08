@@ -20,6 +20,8 @@ import modelowanieUstImage0 from '../assets/treatment/aestheticMedicine/modelowa
     import effectsModelowanieUst5Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst5Sm.png';
     import effectsModelowanieUst6Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst6Lg.png';
     import effectsModelowanieUst6Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst6Sm.png';
+    import effectsModelowanieUst7Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst7Lg.jpg';
+    import effectsModelowanieUst7Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst7Sm.jpg';
 import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/toksynaBotulinowa0.jpg';
     // efekty
     import effectsToksynaBotulinowa0Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa0Lg.png';
@@ -44,6 +46,9 @@ import zamykanieNaczynekILikwidacjaPrzebarwienImage0 from '../assets/treatment/a
     import effectsZamykanieNaczynekILikwidacjaPrzebarwien0Sm from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien0Sm.png';
     import effectsZamykanieNaczynekILikwidacjaPrzebarwien1Sm from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien1Sm.jpg';
     import effectsZamykanieNaczynekILikwidacjaPrzebarwien1Lg from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien1Lg.jpg';
+
+    import effectsZamykanieNaczynekILikwidacjaPrzebarwien2Sm from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien2Sm.jpg';
+    import effectsZamykanieNaczynekILikwidacjaPrzebarwien2Lg from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien2Lg.jpg';
 import sonoQueenTechnologiaHifuImage0 from '../assets/treatment/aestheticMedicine/sonoQueenTechnologiaHifu/sonoQueenTechnologiaHifu0.jpg';
 
 // ---------------------------------------------------
@@ -299,6 +304,18 @@ export const modelowanieUst = {
             },
             thumbnail: {
                 src: effectsModelowanieUst6Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu modelowania ust',
+            description: 'Efekt zabiegu modelowania ust',
+            original: {
+                src: effectsModelowanieUst7Lg,
+                width: 1350,
+                height: 1350
+            },
+            thumbnail: {
+                src: effectsModelowanieUst7Sm
             }
         },
     ],
@@ -568,6 +585,18 @@ export const zamykanieNaczynekILikwidacjaPrzebarwien = {
             },
             thumbnail: {
                 src: effectsZamykanieNaczynekILikwidacjaPrzebarwien1Sm
+            }
+        },
+        {
+            alt: 'Efekt zabiegu zamykania naczynek',
+            description: 'Efekt zabiegu zamykania naczynek',
+            original: {
+                src: effectsZamykanieNaczynekILikwidacjaPrzebarwien2Lg,
+                width: 1100,
+                height: 1100
+            },
+            thumbnail: {
+                src: effectsZamykanieNaczynekILikwidacjaPrzebarwien2Sm
             }
         }
     ],

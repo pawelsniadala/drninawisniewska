@@ -206,7 +206,7 @@ const ServicesCosmetologyPartial = () => {
                                     ))}
                                 </Box>
                             </Box>
-                            {/* {career.filter(item => item.specialization?.includes('cosmetology')).length > 0 && (
+                            {career.filter(item => item.specialization?.includes('cosmetology')).length > 0 && (
                                 <Box className='box-proposed'>
                                     <Box className='header-wrapper'>
                                         <Typography className='header'>
@@ -231,7 +231,7 @@ const ServicesCosmetologyPartial = () => {
                                         ))}
                                     </Box>
                                 </Box>
-                            )} */}
+                            )}
                         </Box>
                     </Container>
                 </Box>

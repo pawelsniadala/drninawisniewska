@@ -28,42 +28,36 @@ import CareerSvg from '../assets/svg/CareerSvg';
 import ContactSvg from '../assets/svg/ContactSvg';
 
 const HeaderSection = () => {
-    const [ state, setState ] = useState({
-        left: false
-    });
-
+    const [ state, setState ] = useState({ left: false });
     const toggleDrawer = (anchor, open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
             return;
         }
-
         setState({ ...state, [anchor]: open });
     };
 
     function getWindowDimensions() {
         const { innerWidth: width, innerHeight: height } = window;
-        return {
-            width,
-            height
-        };
+        return { width, height };
     }
-
     function useWindowDimensions() {
         const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
-
         useEffect(() => {
             function handleResize() {
                 setWindowDimensions(getWindowDimensions());
             }
-
             window.addEventListener('resize', handleResize);
             return () => window.removeEventListener('resize', handleResize);
         }, []);
-
         return windowDimensions;
     }
-
     const { width } = useWindowDimensions();
+
+    // const preventActionOnPath = (e, specificPath) => {
+    //     if (window.location.pathname === specificPath) {
+    //         e.preventDefault();
+    //     }
+    // }
 
     const drawerList = (anchor) => (
         <Box
@@ -227,7 +221,7 @@ const HeaderSection = () => {
                         </ListItemButton>
                     </NavLink>
                 </ListItem> */}
-                {/* <ListItem className='list-item'>
+                <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
                         activeclassname='active'
@@ -246,7 +240,7 @@ const HeaderSection = () => {
                             <ListItemText className='list-item-text' primary='Kariera' />
                         </ListItemButton>
                     </NavLink>
-                </ListItem> */}
+                </ListItem>
                 <ListItem className='list-item'>
                     <NavLink
                         className='nav-link'
@@ -524,7 +518,7 @@ const HeaderSection = () => {
                                         Technologia
                                     </NavLink>
                                 </li> */}
-                                {/* <li className='nav-item'>
+                                <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'
                                         activeclassname='active'
@@ -538,7 +532,7 @@ const HeaderSection = () => {
                                     >
                                         Kariera
                                     </NavLink>
-                                </li> */}
+                                </li>
                                 <li className='nav-item'>
                                     <NavLink
                                         className='nav-link'

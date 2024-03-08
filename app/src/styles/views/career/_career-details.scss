@@ -59,6 +59,76 @@
                                 }
                             }
                         }
+
+                        .box-benefits {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr 1fr 1fr;
+                            gap: 15px;
+
+                            @media (max-width: 1199.98px) and (min-width: 992px) {
+                                grid-template-columns: 1fr 1fr 1fr;
+                            }
+
+                            @media (max-width: 991.98px) and (min-width: 768px) {
+                                grid-template-columns: 1fr 1fr 1fr;
+                            }
+
+                            @media (max-width: 767.98px) and (min-width: 540px) {
+                                grid-template-columns: 1fr 1fr 1fr;
+                            }
+
+                            @media (max-width: 539.98px) {
+                                grid-template-columns: 1fr 1fr;
+                            }
+
+                            .benefit-item {
+                                position: relative;
+                                overflow: hidden;
+                                width: 100%; /* Szerokość 100% */
+                                padding-bottom: 100%; /* Ustawienie wysokości jako 100% szerokości */
+                                background-color: #ebebeb;
+                                // background-color: #fff;
+                                border-radius: 8px;
+                                // box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.04);
+                                box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.01);
+                                // border: 1px solid #e7e7e7;
+
+                                .benefit-content {
+                                    position: absolute;
+                                    align-items: center;
+                                    display: grid;
+                                    grid-template-rows: 1fr 1fr;
+                                    gap: 20px;
+                                    height: 100%;
+                                    justify-content: center;
+                                    text-align: center;
+                                    width: 100%;
+
+                                    .benefit-icon {
+                                        display: flex;
+                                        align-items: flex-end;
+                                        justify-content: center;
+                                        height: 100%;
+
+                                        svg {
+                                            color: #D29A3E;
+                                            width: 32px;
+                                            height: 32px;
+                                        }
+                                    }
+
+                                    .benefit-description {
+                                        height: 100%;
+                                        padding: 0 15px;
+                                        color: #535353;
+                                        font-size: 15.5px;
+                                        font-family: "Roboto", sans-serif;
+                                        letter-spacing: 0.00538em;
+                                        font-weight: 300;
+                                    }
+                                }
+                            }
+                        }
                     }
 
                     .box-image {

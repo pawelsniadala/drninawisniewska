@@ -9,18 +9,18 @@
             font-family: 'Source Sans Pro', sans-serif !important;
             font-size: 0.8rem !important;
             font-weight: 300 !important;
-            color: rgba(0, 0, 0, 0.45) !important;
+            color: rgba(0, 0, 0, 0.4) !important;
             display: flex;
             align-items: center;
 
             &:hover {
-                color: rgba(0, 0, 0, 0.55) !important;
+                color: rgba(0, 0, 0, 0.5) !important;
             }
         }
     }
 
     .MuiTypography-root {
-        color: rgba(0, 0, 0, 0.45) !important;
+        color: rgba(0, 0, 0, 0.4) !important;
         font-family: 'Source Sans Pro', sans-serif !important;
         font-size: 0.8rem !important;
         font-weight: 300 !important;
@@ -30,7 +30,7 @@
 .MuiBreadcrumbs-separator {
     margin-left: 3px !important;
     margin-right: 3px !important;
-    color: rgba(0, 0, 0, 0.45) !important;
+    color: rgba(0, 0, 0, 0.4) !important;
 }
 
 .breadcrumb {

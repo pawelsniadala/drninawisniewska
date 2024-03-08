@@ -249,6 +249,12 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/usg/justyna-filipek':
                 return `Justyna Filipek - ${companyName}`;
+            case '/team/usg/jadwiga-dowgiallo-smolarczyk':
+                return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
+            case '/team/usg/hanna-andrushevich':
+                return `Hanna Andrusevich - ${companyName}`;
+            case '/team/usg/kamil-stepkowski':
+                return `Kamil Stępkowski - ${companyName}`;
             case '/team/usg/patryk-krokwinski':
                 return `Patryk Krokwiński - ${companyName}`;
 
@@ -267,6 +273,8 @@ const PageTitle = ({ children }) => {
                 return `Justyna Filipek - ${companyName}`;
             case '/team/gynecology/jadwiga-dowgiallo-smolarczyk':
                 return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
+            case '/team/gynecology/hanna-andrushevich':
+                return `Hanna Andrusevich - ${companyName}`;
 
             // ortopedia
             case '/team/orthopedics':
@@ -337,18 +345,42 @@ const PageTitle = ({ children }) => {
             // KARIERA
             case '/career':
                 return `Kariera - ${companyName}`;
+
+            // recepcjonistka
             case '/career/receptionist':
                 return `Recepcjonistka - ${companyName}`;
+            case '/career/receptionist/application':
+                return `Aplikacja - ${companyName}`;
+
+            // hematolog
             case '/career/hematologist':
                 return `Hematolog - ${companyName}`;
+            case '/career/hematologist/application':
+                return `Aplikacja - ${companyName}`;
+
+            // dermatolog
             case '/career/dermatologist':
                 return `Dermatolog - ${companyName}`;
+            case '/career/dermatologist/application':
+                return `Aplikacja - ${companyName}`;
+
+            // urolog
             case '/career/urologist':
                 return `Urolog - ${companyName}`;
+            case '/career/urologist/application':
+                return `Aplikacja - ${companyName}`;
+
+            // psychiatra
             case '/career/psychiatrist':
                 return `Psychiatra - ${companyName}`;
+            case '/career/psychiatrist/application':
+                return `Aplikacja - ${companyName}`;
+
+            // kosmetolog
             case '/career/cosmetologist':
                 return `Kosmetolog - ${companyName}`;
+            case '/career/cosmetologist/application':
+                return `Aplikacja - ${companyName}`;
 
 
              // KONTAKT

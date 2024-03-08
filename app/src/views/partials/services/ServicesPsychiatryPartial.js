@@ -116,7 +116,7 @@ const ServicesPsychiatryPartial = () => {
                                     ))}
                                 </Box>
                             </Box>
-                            {/* {career.filter(item => item.specialization?.includes('psychiatry')).length > 0 && (
+                            {career.filter(item => item.specialization?.includes('psychiatry')).length > 0 && (
                                 <Box className='box-proposed'>
                                     <Box className='header-wrapper'>
                                         <Typography className='header'>
@@ -141,7 +141,7 @@ const ServicesPsychiatryPartial = () => {
                                         ))}
                                     </Box>
                                 </Box>
-                            )} */}
+                            )}
                         </Box>
                     </Container>
                 </Box>

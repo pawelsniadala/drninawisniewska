@@ -27,6 +27,14 @@
             box-shadow: none;
         }
     }
+
+    &.career {
+        a.MuiButton-root {
+            @media (max-width: 539.98px) {
+                width: 100% !important;
+            }
+        }
+    }
 }
 
 .link-outlined-contact {
@@ -126,10 +134,14 @@
     font-family: "Roboto", sans-serif !important;
     font-weight: 400 !important;
     box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.04) !important;
+    // box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.01) !important;
     border-radius: 8px !important;
     font-size: 11.5px !important;
     letter-spacing: 0.02857em !important;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out !important;
+
+
+    // border: 1px solid #e7e7e7 !important;
 
     span {
         margin-left: 3px !important;

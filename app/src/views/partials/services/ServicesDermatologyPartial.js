@@ -12,7 +12,6 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-// import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import Page from '../../../components/Page';
 import Container from '../../../components/Container';
@@ -144,7 +143,7 @@ const ServicesDermatologyPartial = () => {
                                             cardSpeciality={item.speciality}
                                             cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                             cardImage={item.image}
-                                            cardPath={`/team/aesthetic-medicine/${item.specialist}`}
+                                            cardPath={`/team/dermatology/${item.specialist}`}
                                         />
                                     ))}
                                     <Fade in={filteredSpecialists.length > 3}>
@@ -208,7 +207,7 @@ const ServicesDermatologyPartial = () => {
                                     ))}
                                 </Box>
                             </Box>
-                            {/* {career.filter(item => item.specialization?.includes('dermatology')).length > 0 && (
+                            {career.filter(item => item.specialization?.includes('dermatology')).length > 0 && (
                                 <Box className='box-proposed'>
                                     <Box className='header-wrapper'>
                                         <Typography className='header'>
@@ -233,7 +232,7 @@ const ServicesDermatologyPartial = () => {
                                         ))}
                                     </Box>
                                 </Box>
-                            )} */}
+                            )}
                         </Box>
                     </Container>
                 </Box>

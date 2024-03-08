@@ -134,6 +134,7 @@ import SpecialistsDetailsPartial from './partials/team/SpecialistsDetailsPartial
 // KARIERA
 import CareerView from './CareerView';
 import CareerDetailsPartial from './partials/career/CareerDetailsPartial';
+import CareerApplicationPartial from './partials/career/CareerApplicationPartial';
 
 // KONTAKT
 import ContactView from './ContactView';
@@ -279,6 +280,7 @@ const Root = () => (
                     {/* KARIERA */}
                     <Route path='/career' element={<CareerView />} />
                     <Route path='career/:profession' element={<CareerDetailsPartial />} />
+                    <Route path='career/:profession/application' element={<CareerApplicationPartial />} />
 
                     {/* KONTAKT */}
                     <Route path='/contact' element={<ContactView />} />

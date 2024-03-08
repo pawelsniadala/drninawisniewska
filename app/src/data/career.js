@@ -93,8 +93,8 @@ export const hematologist = {
     title: 'Hematolog',
     status: null,
     location: 'Wyszków, mazowieckie',
-    date: '4 stycznia 2024',
-    agreement: 'umowa o pracę, umowa zlecenie',
+    date: '8 marca 2024',
+    agreement: 'umowa B2B',
     position: 'specjalista (mid/regular)',
     type: 'pełny etat',
     place: 'praca stacjonarna',
@@ -107,12 +107,12 @@ export const hematologist = {
         },
         {
             designation: 'date',
-            label: '4 stycznia 2024',
+            label: '8 marca 2024',
             value: 'data publikacji',
         },
         {
             designation: 'agreement',
-            label: 'umowa o pracę, umowa zlecenie',
+            label: 'umowa B2B',
             value: 'forma zatrudnienia',
         },
         {
@@ -141,13 +141,24 @@ export const hematologist = {
         }
     ],
     duties: [
-        '...'
+        'dbałość o wysokie standardy medyczne w placówce',
+        'profesjonalna opieka medyczna nad Pacjentem',
+        'przestrzeganie procedur',
+        'świadczenia usług w zakresie hematologii',
+        'sumienne prowadzenie dokumentacji medycznej'
     ],
     requirements: [
-        '...'
+        'umiejętności interpersonalne i nastawienie na jakość obsługi Pacjenta',
+        'profesjonalizm i wysoka kultura osobista',
+        'dyplom ukończenia studiów i aktualne PWZ',
+        'ukończona specjalizacja (lub w trakcie specjalizacji)'
     ],
     offer: [
-        '...'
+        'umowa B2B',
+        'nowoczesny sprzęt medyczny oraz rozwiązania informatyczne w obsłudze pacjenta',
+        'możliwość samorealizacji, doskonalenia swoich umiejętności i poszerzania kompetencji zawodowych',
+        'wsparcie kadry zarządzającej oraz wykwalifikowanego personelu',
+        'praca w prężnie rozwijającej się firmie'
     ]
 };
 
@@ -158,8 +169,8 @@ export const dermatologist = {
     title: 'Dermatolog',
     status: null,
     location: 'Wyszków, mazowieckie',
-    date: '4 stycznia 2024',
-    agreement: 'umowa o pracę, umowa zlecenie',
+    date: '8 marca 2024',
+    agreement: 'umowa B2B',
     position: 'specjalista (mid/regular)',
     type: 'pełny etat',
     place: 'praca stacjonarna',
@@ -172,12 +183,12 @@ export const dermatologist = {
         },
         {
             designation: 'date',
-            label: '4 stycznia 2024',
+            label: '8 marca 2024',
             value: 'data publikacji',
         },
         {
             designation: 'agreement',
-            label: 'umowa o pracę, umowa zlecenie',
+            label: 'umowa B2B',
             value: 'forma zatrudnienia',
         },
         {
@@ -206,13 +217,24 @@ export const dermatologist = {
         }
     ],
     duties: [
-        '...'
+        'dbałość o wysokie standardy medyczne w placówce',
+        'profesjonalna opieka medyczna nad pacjentem',
+        'przestrzeganie procedur',
+        'świadczenia usług w zakresie dermatologii',
+        'sumienne prowadzenie dokumentacji medycznej'
     ],
     requirements: [
-        '...'
+        'umiejętności interpersonalne i nastawienie na jakość obsługi pacjenta',
+        'profesjonalizm i wysoka kultura osobista',
+        'dyplom ukończenia studiów i aktualne PWZ',
+        'ukończona specjalizacja (lub w trakcie specjalizacji)'
     ],
     offer: [
-        '...'
+        'umowa B2B',
+        'nowoczesny sprzęt medyczny oraz rozwiązania informatyczne w obsłudze pacjenta',
+        'możliwość samorealizacji, doskonalenia swoich umiejętności i poszerzania kompetencji zawodowych',
+        'wsparcie kadry zarządzającej oraz wykwalifikowanego personelu',
+        'praca w prężnie rozwijającej się firmie'
     ]
 };
 
@@ -223,8 +245,8 @@ export const urologist = {
     title: 'Urolog',
     status: null,
     location: 'Wyszków, mazowieckie',
-    date: '4 stycznia 2024',
-    agreement: 'umowa o pracę, umowa zlecenie',
+    date: '8 marca 2024',
+    agreement: 'umowa B2B',
     position: 'specjalista (mid/regular)',
     type: 'pełny etat',
     place: 'praca stacjonarna',
@@ -237,12 +259,12 @@ export const urologist = {
         },
         {
             designation: 'date',
-            label: '4 stycznia 2024',
+            label: '8 marca 2024',
             value: 'data publikacji',
         },
         {
             designation: 'agreement',
-            label: 'umowa o pracę, umowa zlecenie',
+            label: 'umowa B2B',
             value: 'forma zatrudnienia',
         },
         {
@@ -271,13 +293,24 @@ export const urologist = {
         }
     ],
     duties: [
-        '...'
+        'dbałość o wysokie standardy medyczne w placówce',
+        'profesjonalna opieka medyczna nad pacjentem',
+        'przestrzeganie procedur',
+        'świadczenia usług w zakresie urologii',
+        'sumienne prowadzenie dokumentacji medycznej'
     ],
     requirements: [
-        '...'
+        'umiejętności interpersonalne i nastawienie na jakość obsługi pacjenta',
+        'profesjonalizm i wysoka kultura osobista',
+        'dyplom ukończenia studiów i aktualne PWZ',
+        'ukończona specjalizacja (lub w trakcie specjalizacji)'
     ],
     offer: [
-        '...'
+        'umowa B2B',
+        'nowoczesny sprzęt medyczny oraz rozwiązania informatyczne w obsłudze pacjenta',
+        'możliwość samorealizacji, doskonalenia swoich umiejętności i poszerzania kompetencji zawodowych',
+        'wsparcie kadry zarządzającej oraz wykwalifikowanego personelu',
+        'praca w prężnie rozwijającej się firmie'
     ]
 };
 
@@ -285,11 +318,11 @@ export const psychiatrist = {
     id: '35aee9ed-81dd-49bb-a2b9-baaa233fbdcb',
     career: 'psychiatrist',
     specialization: 'psychiatry',
-    title: 'Psychiatra',
+    title: 'Psychiatra osób dorosłych',
     status: null,
     location: 'Wyszków, mazowieckie',
-    date: '4 stycznia 2024',
-    agreement: 'umowa o pracę, umowa zlecenie',
+    date: '8 marca 2024',
+    agreement: 'umowa B2B',
     position: 'starszy specjalista (senior)',
     type: 'pełny etat',
     place: 'praca stacjonarna',
@@ -302,12 +335,12 @@ export const psychiatrist = {
         },
         {
             designation: 'date',
-            label: '4 stycznia 2024',
+            label: '8 marca 2024',
             value: 'data publikacji',
         },
         {
             designation: 'agreement',
-            label: 'umowa o pracę, umowa zlecenie',
+            label: 'umowa B2B',
             value: 'forma zatrudnienia',
         },
         {
@@ -330,19 +363,29 @@ export const psychiatrist = {
     images: [
         {
             src: careerPsychiatrist0,
-            alt: 'Młoda dziewczyna rozmawia z terapeutą',
+            alt: 'Dziewczyna rozmawia z terapeutą',
             author: 'Freepik',
             href: 'https://pl.freepik.com/darmowe-zdjecie/widok-z-przodu-mloda-dziewczyna-rozmawia-z-terapeuta_37516532.htm'
         }
     ],
     duties: [
-        '...'
+        'dbałość o wysokie standardy medyczne w placówce',
+        'profesjonalna opieka medyczna nad pacjentem',
+        'przestrzeganie procedur',
+        'świadczenia usług w zakresie psychiatrii',
+        'sumienne prowadzenie dokumentacji medycznej'
     ],
     requirements: [
-        '...'
+        'umiejętności interpersonalne i nastawienie na jakość obsługi pacjenta',
+        'profesjonalizm i wysoka kultura osobista',
+        'dyplom ukończenia studiów i aktualne PWZ',
+        'ukończona specjalizacja (lub w trakcie specjalizacji)'
     ],
     offer: [
-        '...'
+        'umowa B2B',
+        'nowoczesne rozwiązania informatyczne w obsłudze pacjenta',
+        'wsparcie kadry zarządzającej oraz wykwalifikowanego personelu',
+        'praca w prężnie rozwijającej się firmie'
     ]
 };
 
@@ -427,10 +470,31 @@ export const cosmetologist = {
 };
 
 export const career = [
-    { ...receptionist },
+    // { ...receptionist },
     { ...hematologist },
     { ...dermatologist },
     { ...urologist },
     { ...psychiatrist },
-    { ...cosmetologist }
+    // { ...cosmetologist }
 ];
+
+export const application = {
+    recruitment: [
+        {
+            label: 'Zbieranie i selekcja aplikacji',
+            description: `Najpierw sprawdzimy Twoją aplikację.`,
+        },
+        {
+            label: 'Spotkanie rekrutacyjne',
+            description: 'Następnie spotkasz się z jednym z naszych rekruterów, aby lepiej się poznać.',
+        },
+        {
+            label: 'Końcowa rozmowa kwalifikacyjna',
+            description: `Jeśli wszystko pójdzie dobrze, zostaniesz zaproszony na końcową rozmowę kwalifikacyjną.`,
+        },
+        {
+            label: 'Formalności',
+            description: `W ostatnim kroku przeprowadzimy Cię przez formalności i weryfikację dokumentów, a także upewnimy się, że wszystko jest gotowe, aby bezproblemowo zacząć współpracę.`,
+        }
+    ]
+};
