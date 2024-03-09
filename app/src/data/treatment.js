@@ -112,6 +112,9 @@ import laseroweUsuwanieZylakowImage0 from '../assets/treatment/vascularSurgery/l
 import echoSercaImage0 from '../assets/treatment/cardiology/echoSerca/echoSerca0.jpg';
 
 
+// PSYCHIATRIA
+import badanieAdos20 from '../assets/treatment/psychiatry/badanieAdos2/badanieAdos20.jpg';
+
 // DERMATOLOGIA
 export const badanieZnamionBarwnikowych = {
     id: '477cd9a2-d88c-4d6e-ab91-4250e8f899f3',
@@ -1088,6 +1091,31 @@ export const echoSerca = {
     ]
 };
 
+
+// PSYCHIATRIA
+export const badanieAdos2 = {
+    id: '69d011cf-bd77-4910-95e2-6ba2234a0f21',
+    treatment: 'badanie-ados-2',
+    title: 'Badanie Ados-2',
+    description: 'Badanie Ados-2 dla dzieci, młodzieży i osób dorosłych. Pomaga wykryć  spektrum autyzmu (Zespół Aspergera,  spektrum autyzmu) u dzieci od 12 miesiąca życia, ale także u młodzieży i u dorosłych.',
+    info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
+    path: '/treatment/psychiatry/badanie-ados-2',
+    images: [
+        {
+            src: badanieAdos20,
+            alt: 'Specjalista przeprowadza terapię chłopcem',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-robi-terapie-mowy-z-malym-blond-chlopcem_18683396.htm'
+        }
+    ],
+    specialization: [
+        'psychiatry'
+    ],
+    specialist: [
+        'kaja-strojnowska-lapinska'
+    ]
+};
+
 export const treatment = [
     // DERMATOLOGIA
     { ...badanieZnamionBarwnikowych },
@@ -1129,5 +1157,8 @@ export const treatment = [
     { ...laseroweUsuwanieZylakow },
 
     // KARDIOLOGIA
-    { ...echoSerca }
+    { ...echoSerca },
+
+    // PSYCHIATRIA
+    { ...badanieAdos2 }
 ];

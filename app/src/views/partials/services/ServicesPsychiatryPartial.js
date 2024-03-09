@@ -18,6 +18,7 @@ import Image from '../../../components/Image';
 
 import { services, psychiatry } from '../../../data/services';
 import { team } from '../../../data/team';
+import { treatment } from '../../../data/treatment';
 import { career } from '../../../data/career';
 
 const ServicesPsychiatryPartial = () => {
@@ -94,6 +95,31 @@ const ServicesPsychiatryPartial = () => {
                                             cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
                                             cardImage={item.image}
                                             cardPath={`/team/psychiatry/${item.specialist}`}
+                                        />
+                                    ))}
+                                </Box>
+                            </Box>
+                            <Box className='box-proposed'>
+                                <Box className='header-wrapper'>
+                                    <Typography className='header'>
+                                        Zabiegi
+                                    </Typography>
+                                    {/* <Link
+                                        className='show-all-cards'
+                                        to="/treatment"
+                                    >
+                                        Zobacz wszystkie
+                                        <ArrowForwardIcon />
+                                    </Link> */}
+                                </Box>
+                                <Box className='card-wrapper'>
+                                    {treatment.filter(item => item.specialization.includes('psychiatry')).map((item) => (
+                                        <CardProposed
+                                            key={item.id}
+                                            cardTitle={item.title}
+                                            cardDescription={item.description}
+                                            cardImage={item.images[0].src}
+                                            cardPath={item.path}
                                         />
                                     ))}
                                 </Box>

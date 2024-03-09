@@ -56,6 +56,7 @@ const Table1 = () => {
 
     const rows = [
         createData('Konsultacja (50 min) - lek. Kaja Strojnowska-Łapińska', 400, false),
+        createData('Badanie Ados-2', 1000, false),
     ];
 
     return (

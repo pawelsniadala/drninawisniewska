@@ -143,6 +143,12 @@ const PageTitle = ({ children }) => {
             case '/treatment/cardiology/echo-serca':
                 return `Echo serca - ${companyName}`;
 
+            // kardiologia
+            case '/treatment/psychiatry':
+                return `Zabiegi - ${companyName}`;
+            case '/treatment/psychiatry/badanie-ados-2':
+                return `Badanie Ados-2 - ${companyName}`;
+
 
             // CENNIK
             case '/prices':

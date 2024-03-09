@@ -49,6 +49,8 @@ const TreatmentView = () => {
                 //     return 'treatment-rheumatology';
                 case '/treatment/cardiology':
                     return 'treatment-cardiology';
+                case '/treatment/psychiatry':
+                    return 'treatment-psychiatry';
                 default:
             }
         }
@@ -88,6 +90,8 @@ const TreatmentView = () => {
             // case 'treatment-rheumatology':
             //     return <TreatmentListPartial specialization={specialization} />;
             case 'treatment-cardiology':
+                return <TreatmentListPartial specialization={specialization} />;
+            case 'treatment-psychiatry':
                 return <TreatmentListPartial specialization={specialization} />;
             default:
         }
@@ -249,6 +253,13 @@ const TreatmentView = () => {
                                         to={`/treatment/cardiology`}
                                         value={`/treatment/cardiology`}
                                         onClick={() => setTab('treatment-cardiology')}
+                                    />
+                                    <Tab
+                                        label='Psychiatria'
+                                        component={Link}
+                                        to={`/treatment/psychiatry`}
+                                        value={`/treatment/psychiatry`}
+                                        onClick={() => setTab('treatment-psychiatry')}
                                     />
                                 </Tabs>
                             </Box>

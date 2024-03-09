@@ -438,7 +438,9 @@ export const kajaStrojnowskaLapinska = {
     specialization: [
         'psychiatry'
     ],
-    treatment: [''],
+    treatment: [
+        'badanieAdos2'
+    ],
     career: [
         'psychiatrist'
     ]

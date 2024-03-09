@@ -323,7 +323,7 @@ export const psychiatrist = {
     location: 'Wyszków, mazowieckie',
     date: '8 marca 2024',
     agreement: 'umowa B2B',
-    position: 'starszy specjalista (senior)',
+    position: 'specjalista (mid/regular)',
     type: 'pełny etat',
     place: 'praca stacjonarna',
     path: '/career/psychiatrist',
@@ -345,7 +345,7 @@ export const psychiatrist = {
         },
         {
             designation: 'position',
-            label: 'starszy specjalista (senior)',
+            label: 'specjalista (mid/regular)',
             value: 'doświadczenie',
         },
         {

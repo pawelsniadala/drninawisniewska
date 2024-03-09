@@ -83,6 +83,8 @@ import TreatmentLaseroweUsuwanieZylakowPartial from './partials/treatment/vascul
 // kardiologia
 import TreatmentEchoSercaPartial from './partials/treatment/cardiology/TreatmentEchoSercaPartial';
 
+// psychiatria
+import TreatmentBadanieAdos2Partial from './partials/treatment/psychiatry/TreatmentBadanieAdos2Partial';
 
 // CENNIK
 import PricesView from './PricesView';
@@ -225,6 +227,9 @@ const Root = () => (
 
                     {/* kardiologia */}
                     <Route path='/treatment/cardiology/echo-serca' element={<TreatmentEchoSercaPartial />} />
+
+                    {/* psychiatria */}
+                    <Route path='/treatment/psychiatry/badanie-ados-2' element={<TreatmentBadanieAdos2Partial />} />
 
 
                     {/* CENNIK */}
