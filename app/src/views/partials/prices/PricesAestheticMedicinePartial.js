@@ -167,7 +167,7 @@ const Table1 = () => {
                                 {row.name}
                                 {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -220,7 +220,7 @@ const Table2 = () => {
                                 {row.name}
                                 {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -270,7 +270,7 @@ const Table3 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -313,7 +313,7 @@ const Table4 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -359,7 +359,7 @@ const Table5 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -399,7 +399,7 @@ const Table6 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -439,7 +439,7 @@ const Table7 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -482,7 +482,7 @@ const Table8 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -522,7 +522,7 @@ const Table9 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -561,7 +561,7 @@ const Table10 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -604,7 +604,7 @@ const Table11 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -657,7 +657,7 @@ const Table12 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -675,8 +675,14 @@ const Table13 = () => {
 
     const rows = [
         createData('Laser frakcyjny cała twarz', 'od 800', false),
-        createData('Redukcja przebarwień cała twarz', '150 (pojedyncze przebarwienie) do 800 (cała twarz)', false),
-        createData('Likwidacja rumienia na twarzy', 'od 600 (policzki) do 800 (cała twarz)', false),
+        // createData('Redukcja przebarwień cała twarz', '150 (pojedyncze przebarwienie) do 800 (cała twarz)', false),
+        createData('Redukcja przebarwień na twarzy (pojedyncze przebarwienie)', 150, false),
+        createData('Redukcja przebarwień na twarzy (cała twarz)', 'od 800', false),
+
+        // createData('Likwidacja rumienia na twarzy', 'od 600 (policzki) do 800 (cała twarz)', false),
+        createData('Likwidacja rumienia na twarzy (policzki)', 'od 600', false),
+        createData('Likwidacja rumienia na twarzy (cała twarz)', 'do 800', false),
+
         createData('Zamykanie naczynek - nos', 'od 200', 'Dokładną cenę ustala lekarz.'),
         createData('Zamykanie naczyń na kończynach dolnych', 'od 200', 'Dokładną cenę ustala lekarz.'),
         createData('Blizny potrądzikowe', 'od 200', 'Dokładną cenę ustala lekarz.'),
@@ -702,7 +708,7 @@ const Table13 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                                 {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
@@ -752,7 +758,7 @@ const Table14 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                                 {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>

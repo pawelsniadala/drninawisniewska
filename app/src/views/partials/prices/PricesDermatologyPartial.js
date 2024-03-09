@@ -83,7 +83,7 @@ const Table1 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -135,7 +135,7 @@ const Table2 = () => {
                                 {row.name}
                                 {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>

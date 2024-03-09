@@ -1103,7 +1103,7 @@ export const badanieAdos2 = {
     images: [
         {
             src: badanieAdos20,
-            alt: 'Specjalista przeprowadza terapię chłopcem',
+            alt: 'Specjalista przeprowadza terapię z chłopcem',
             author: 'Freepik',
             href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-robi-terapie-mowy-z-malym-blond-chlopcem_18683396.htm'
         }
@@ -1113,6 +1113,9 @@ export const badanieAdos2 = {
     ],
     specialist: [
         'kaja-strojnowska-lapinska'
+    ],
+    career: [
+        'psychiatrist'
     ]
 };
 

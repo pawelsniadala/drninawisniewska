@@ -79,7 +79,7 @@ const Table1 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -118,7 +118,8 @@ const Table2 = () => {
                 <TableHead>
                     <TableRow>
                     <StyledTableCell className='featured'>
-                        Accent Ultra V termolifting z ultradźwiękami (ujędrnienie plus redukcja tkanki tłuszczowej)
+                        Accent Ultra V termolifting z ultradźwiękami
+                        {tooltip('ujędrnienie plus redukcja tkanki tłuszczowej')}
                     </StyledTableCell>
                     <StyledTableCell colSpan={2} align='right'>
                         Cena
@@ -128,10 +129,10 @@ const Table2 = () => {
                     <StyledTableCell>
                         Okolica
                     </StyledTableCell>
-                    <StyledTableCell align='right'>
+                    <StyledTableCell align='right' className='nowrap'>
                         1 zabieg
                     </StyledTableCell>
-                    <StyledTableCell align='right'>
+                    <StyledTableCell align='right' className='nowrap'>
                         5 zabiegów
                     </StyledTableCell>
                     </TableRow>
@@ -142,10 +143,10 @@ const Table2 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.fat}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -185,7 +186,7 @@ const Table3 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -225,7 +226,7 @@ const Table4 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -268,7 +269,7 @@ const Table5 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -309,7 +310,7 @@ const Table7 = () => {
                                 {row.name}
                                 {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -350,7 +351,7 @@ const Table9 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -403,10 +404,10 @@ const Table10 = () => {
                     <StyledTableCell>
                         Okolica
                     </StyledTableCell>
-                    <StyledTableCell align='right'>
+                    <StyledTableCell align='right' className='nowrap'>
                         1 zabieg
                     </StyledTableCell>
-                    <StyledTableCell align='right'>
+                    <StyledTableCell align='right' className='nowrap'>
                         4 zabiegi
                     </StyledTableCell>
                     </TableRow>
@@ -417,10 +418,10 @@ const Table10 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.fat}
                             </StyledTableCell>
                         </StyledTableRow>
@@ -460,13 +461,13 @@ const Table11 = () => {
                     <StyledTableCell>
                         Okolica
                     </StyledTableCell>
-                    <StyledTableCell align='right'>
+                    <StyledTableCell align='right' className='nowrap'>
                         1 zabieg
                     </StyledTableCell>
-                    <StyledTableCell align='right'>
+                    <StyledTableCell align='right' className='nowrap'>
                         5 zabiegów
                     </StyledTableCell>
-                    <StyledTableCell align='right'>
+                    <StyledTableCell align='right' className='nowrap'>
                         10 zabiegów
                     </StyledTableCell>
                     </TableRow>
@@ -477,13 +478,13 @@ const Table11 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price2}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price3}
                             </StyledTableCell>
                         </StyledTableRow>

@@ -84,7 +84,7 @@ const Table1 = () => {
                             <StyledTableCell component='th' scope='row'>
                                 {row.name}
                             </StyledTableCell>
-                            <StyledTableCell align='right'>
+                            <StyledTableCell align='right' className='nowrap'>
                                 {row.price}
                                 {row.tooltip && tooltip(row.tooltip)}
                             </StyledTableCell>
