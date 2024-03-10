@@ -1,119 +1,152 @@
 // DERMATOLOGIA
+// badanie znamion barwnikowych
 import badanieZnamionBarwnikowychImage0 from '../assets/treatment/dermatology/badanieZnamionBarwnikowych/badanieZnamionBarwnikowych0.jpg';
-import fototerapiaChorobSkoryImage0 from '../assets/treatment/dermatology/fototerapiaChorobSkory/fototerapiaChorobSkory0.jpg';
-import usuniecieZmianSkornychElektrochirurgiczneImage0 from '../assets/treatment/dermatology/usuniecieZmianSkornychElektrochirurgiczne/usuniecieZmianSkornychElektrochirurgiczne0.jpg';
-// ---------------------------------------------------
-// MEDYCYNA ESTETYCZNA
-import modelowanieUstImage0 from '../assets/treatment/aestheticMedicine/modelowanieUst/modelowanieUst0.jpg';
-    // efekty
-    import effectsModelowanieUst0Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst0Lg.png';
-    import effectsModelowanieUst0Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst0Sm.png';
-    import effectsModelowanieUst1Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst1Lg.png';
-    import effectsModelowanieUst1Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst1Sm.png';
-    import effectsModelowanieUst2Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst2Lg.png';
-    import effectsModelowanieUst2Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst2Sm.png';
-    import effectsModelowanieUst3Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst3Lg.png';
-    import effectsModelowanieUst3Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst3Sm.png';
-    import effectsModelowanieUst4Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst4Lg.png';
-    import effectsModelowanieUst4Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst4Sm.png';
-    import effectsModelowanieUst5Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst5Lg.png';
-    import effectsModelowanieUst5Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst5Sm.png';
-    import effectsModelowanieUst6Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst6Lg.png';
-    import effectsModelowanieUst6Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst6Sm.png';
-    import effectsModelowanieUst7Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst7Lg.jpg';
-    import effectsModelowanieUst7Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst7Sm.jpg';
-import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/toksynaBotulinowa0.jpg';
-    // efekty
-    import effectsToksynaBotulinowa0Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa0Lg.png';
-    import effectsToksynaBotulinowa0Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa0Sm.png';
-    import effectsToksynaBotulinowa1Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa1Lg.png';
-    import effectsToksynaBotulinowa1Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa1Sm.png';
-    import effectsToksynaBotulinowa2Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa2Lg.png';
-    import effectsToksynaBotulinowa2Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa2Sm.png';
-import stymulatoryTkankoweImage0 from '../assets/treatment/aestheticMedicine/stymulatoryTkankowe/stymulatoryTkankowe0.jpg';
-import osoczeBogatoplytkoweImage0 from '../assets/treatment/aestheticMedicine/osoczeBogatoplytkowe/osoczeBogatoplytkowe0.jpg';
-import laserFrakcyjnyImage0 from '../assets/treatment/aestheticMedicine/laserFrakcyjny/laserFrakcyjny0.jpg';
-    // efekty
-    import effectsLaserFrakcyjny0Lg from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny0Lg.png';
-    import effectsLaserFrakcyjny0Sm from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny0Sm.png';
-    import effectsLaserFrakcyjny1Lg from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny1Lg.png';
-    import effectsLaserFrakcyjny1Sm from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny1Sm.png';
-import niciRewitalizujaceILiftingujaceImage0 from '../assets/treatment/aestheticMedicine/niciRewitalizujaceILiftingujace/niciRewitalizujaceILiftingujace0.jpg';
-import mezoterapiaIglowaImage0 from '../assets/treatment/aestheticMedicine/mezoterapiaIglowa/mezoterapiaIglowa0.jpg';
-import zamykanieNaczynekILikwidacjaPrzebarwienImage0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/zamykanieNaczynekILikwidacjaPrzebarwien0.jpg';
-    // efekty
-    import effectsZamykanieNaczynekILikwidacjaPrzebarwien0Lg from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien0Lg.png';
-    import effectsZamykanieNaczynekILikwidacjaPrzebarwien0Sm from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien0Sm.png';
-    import effectsZamykanieNaczynekILikwidacjaPrzebarwien1Sm from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien1Sm.jpg';
-    import effectsZamykanieNaczynekILikwidacjaPrzebarwien1Lg from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien1Lg.jpg';
 
-    import effectsZamykanieNaczynekILikwidacjaPrzebarwien2Sm from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien2Sm.jpg';
-    import effectsZamykanieNaczynekILikwidacjaPrzebarwien2Lg from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien2Lg.jpg';
+// fototerapia chorób skóry
+import fototerapiaChorobSkoryImage0 from '../assets/treatment/dermatology/fototerapiaChorobSkory/fototerapiaChorobSkory0.jpg';
+
+// usunięcie zmian skórnych elektrochirurgiczne
+import usuniecieZmianSkornychElektrochirurgiczneImage0 from '../assets/treatment/dermatology/usuniecieZmianSkornychElektrochirurgiczne/usuniecieZmianSkornychElektrochirurgiczne0.jpg';
+
+// MEDYCYNA ESTETYCZNA
+// modelowanie ust
+import modelowanieUstImage0 from '../assets/treatment/aestheticMedicine/modelowanieUst/modelowanieUst0.jpg';
+import effectsModelowanieUst0Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst0Lg.png';
+import effectsModelowanieUst0Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst0Sm.png';
+import effectsModelowanieUst1Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst1Lg.png';
+import effectsModelowanieUst1Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst1Sm.png';
+import effectsModelowanieUst2Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst2Lg.png';
+import effectsModelowanieUst2Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst2Sm.png';
+import effectsModelowanieUst3Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst3Lg.png';
+import effectsModelowanieUst3Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst3Sm.png';
+import effectsModelowanieUst4Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst4Lg.png';
+import effectsModelowanieUst4Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst4Sm.png';
+import effectsModelowanieUst5Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst5Lg.png';
+import effectsModelowanieUst5Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst5Sm.png';
+import effectsModelowanieUst6Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst6Lg.png';
+import effectsModelowanieUst6Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst6Sm.png';
+import effectsModelowanieUst7Lg from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst7Lg.jpg';
+import effectsModelowanieUst7Sm from '../assets/treatment/aestheticMedicine/modelowanieUst/effects/effectsModelowanieUst7Sm.jpg';
+
+// toksyna botulinowa
+import toksynaBotulinowaImage0 from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/toksynaBotulinowa0.jpg';
+import effectsToksynaBotulinowa0Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa0Lg.png';
+import effectsToksynaBotulinowa0Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa0Sm.png';
+import effectsToksynaBotulinowa1Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa1Lg.png';
+import effectsToksynaBotulinowa1Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa1Sm.png';
+import effectsToksynaBotulinowa2Lg from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa2Lg.png';
+import effectsToksynaBotulinowa2Sm from '../assets/treatment/aestheticMedicine/toksynaBotulinowa/effects/effectsToksynaBotulinowa2Sm.png';
+
+// stymulatory tkankowe
+import stymulatoryTkankoweImage0 from '../assets/treatment/aestheticMedicine/stymulatoryTkankowe/stymulatoryTkankowe0.jpg';
+
+// stymulatory tkankowe
+import osoczeBogatoplytkoweImage0 from '../assets/treatment/aestheticMedicine/osoczeBogatoplytkowe/osoczeBogatoplytkowe0.jpg';
+
+// laser frakcyjny
+import laserFrakcyjnyImage0 from '../assets/treatment/aestheticMedicine/laserFrakcyjny/laserFrakcyjny0.jpg';
+import effectsLaserFrakcyjny0Lg from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny0Lg.png';
+import effectsLaserFrakcyjny0Sm from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny0Sm.png';
+import effectsLaserFrakcyjny1Lg from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny1Lg.png';
+import effectsLaserFrakcyjny1Sm from '../assets/treatment/aestheticMedicine/laserFrakcyjny/effects/effectsLaserFrakcyjny1Sm.png';
+
+// nici rewitalizujące i liftingujące
+import niciRewitalizujaceILiftingujaceImage0 from '../assets/treatment/aestheticMedicine/niciRewitalizujaceILiftingujace/niciRewitalizujaceILiftingujace0.jpg';
+
+// mezoterapia igłowa
+import mezoterapiaIglowaImage0 from '../assets/treatment/aestheticMedicine/mezoterapiaIglowa/mezoterapiaIglowa0.jpg';
+
+// zamykanie naczynek i likwidacja przebarwień
+import zamykanieNaczynekILikwidacjaPrzebarwienImage0 from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/zamykanieNaczynekILikwidacjaPrzebarwien0.jpg';
+import effectsZamykanieNaczynekILikwidacjaPrzebarwien0Lg from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien0Lg.png';
+import effectsZamykanieNaczynekILikwidacjaPrzebarwien0Sm from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien0Sm.png';
+import effectsZamykanieNaczynekILikwidacjaPrzebarwien1Sm from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien1Sm.jpg';
+import effectsZamykanieNaczynekILikwidacjaPrzebarwien1Lg from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien1Lg.jpg';
+import effectsZamykanieNaczynekILikwidacjaPrzebarwien2Sm from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien2Sm.jpg';
+import effectsZamykanieNaczynekILikwidacjaPrzebarwien2Lg from '../assets/treatment/aestheticMedicine/zamykanieNaczynekILikwidacjaPrzebarwien/effects/effectsZamykanieNaczynekILikwidacjaPrzebarwien2Lg.jpg';
+
+// sonoqueen technologia hifu
 import sonoQueenTechnologiaHifuImage0 from '../assets/treatment/aestheticMedicine/sonoQueenTechnologiaHifu/sonoQueenTechnologiaHifu0.jpg';
 
-// ---------------------------------------------------
 
 // KOSMETOLOGIA
+// peeling medyczny
 import peelingMedycznyImage0 from '../assets/treatment/cosmetology/peelingMedyczny/peelingMedyczny0.jpg';
-    // efekty
-    import effectsPeelingMedyczny0Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny0Sm.png';
-    import effectsPeelingMedyczny0Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny0Lg.png';
-    // import effectsPeelingMedyczny1Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny1Sm.png';
-    // import effectsPeelingMedyczny1Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny1Lg.png';
-    import effectsPeelingMedyczny2Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny2Sm.png';
-    import effectsPeelingMedyczny2Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny2Lg.png';
+import effectsPeelingMedyczny0Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny0Sm.png';
+import effectsPeelingMedyczny0Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny0Lg.png';
+// import effectsPeelingMedyczny1Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny1Sm.png';
+// import effectsPeelingMedyczny1Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny1Lg.png';
+import effectsPeelingMedyczny2Sm from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny2Sm.png';
+import effectsPeelingMedyczny2Lg from '../assets/treatment/cosmetology/peelingMedyczny/effects/effectsPeelingMedyczny2Lg.png';
+
+// epilacja laserowa
 import epilacjaLaserowaImage0 from '../assets/treatment/cosmetology/epilacjaLaserowa/epilacjaLaserowa0.jpg';
-    // efekty
-    import effectsEpilacjaLaserowa0Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa0Sm.png';
-    import effectsEpilacjaLaserowa0Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa0Lg.png';
-    import effectsEpilacjaLaserowa1Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa1Sm.png';
-    import effectsEpilacjaLaserowa1Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa1Lg.png';
-    import effectsEpilacjaLaserowa2Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa2Sm.png';
-    import effectsEpilacjaLaserowa2Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa2Lg.png';
+import effectsEpilacjaLaserowa0Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa0Sm.png';
+import effectsEpilacjaLaserowa0Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa0Lg.png';
+import effectsEpilacjaLaserowa1Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa1Sm.png';
+import effectsEpilacjaLaserowa1Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa1Lg.png';
+import effectsEpilacjaLaserowa2Sm from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa2Sm.png';
+import effectsEpilacjaLaserowa2Lg from '../assets/treatment/cosmetology/epilacjaLaserowa/effects/effectsEpilacjaLaserowa2Lg.png';
 
+// masaż próżniowy
 import masazProzniowyImage0 from '../assets/treatment/cosmetology/masazProzniowy/masazProzniowy0.jpg';
-import ultradzwiekiIFalaRadiowaImage0 from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/ultradzwiekiIFalaRadiowa0.jpg';
-    // efekty
-    import effectsUltradzwiekiIFalaRadiowa0Lg from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa0Lg.png';
-    import effectsUltradzwiekiIFalaRadiowa0Sm from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa0Sm.png';
-    import effectsUltradzwiekiIFalaRadiowa1Lg from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa1Lg.png';
-    import effectsUltradzwiekiIFalaRadiowa1Sm from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa1Sm.png';
 
-// ---------------------------------------------------
+// ultradzwieki i fala radiowa
+import ultradzwiekiIFalaRadiowaImage0 from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/ultradzwiekiIFalaRadiowa0.jpg';
+import effectsUltradzwiekiIFalaRadiowa0Lg from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa0Lg.png';
+import effectsUltradzwiekiIFalaRadiowa0Sm from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa0Sm.png';
+import effectsUltradzwiekiIFalaRadiowa1Lg from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa1Lg.png';
+import effectsUltradzwiekiIFalaRadiowa1Sm from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa1Sm.png';
+
 
 // FIZJOTERAPIA
+// rehabilitacja
 import rehabilitacjaImage0 from '../assets/treatment/physioterapy/rehabilitacja/rehabilitacja0.jpg';
+
+// masaż
 import masazImage0 from '../assets/treatment/physioterapy/masaz/masaz0.jpg';
+
+// kinesiotaping
 import kinesiotapingImage0 from '../assets/treatment/physioterapy/kinesiotaping/kinesiotaping0.jpg';
 
-// ---------------------------------------------------
 
 // CHIRURGIA PLASTYCZNA
+// plastyka powiek
 import plastykaPowiekImage0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/plastykaPowiek0.jpg';
-    //efekty
-    import effectsPlastykaPowiekSm0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/effects/effectsPlastykaPowiekSm0.png';
-    import effectsPlastykaPowiekLg0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/effects/effectsPlastykaPowiekLg0.png';
+import effectsPlastykaPowiekSm0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/effects/effectsPlastykaPowiekSm0.png';
+import effectsPlastykaPowiekLg0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/effects/effectsPlastykaPowiekLg0.png';
 
-// ---------------------------------------------------
 
 // ALERGOLOGIA
+// testy skórne
 import testySkorneImage0 from '../assets/treatment/allergology/testySkorne/testySkorne0.jpg';
+
+// platkowe testy kontaktowe
 import platkoweTestyKontaktoweImage0 from '../assets/treatment/allergology/platkoweTestyKontaktowe/platkoweTestyKontaktowe0.jpg';
+
+// odczulanie
 import odczulanieImage0 from '../assets/treatment/allergology/odczulanie/odczulanie0.jpg';
 
-// ---------------------------------------------------
 
 // CHIRURGIA NACZYNIOWA
+// skleroterapia
 import skleroterapiaImage0 from '../assets/treatment/vascularSurgery/skleroterapia/skleroterapia0.jpg';
+
+// laserowe usuwanie żylaków
 import laseroweUsuwanieZylakowImage0 from '../assets/treatment/vascularSurgery/laseroweUsuwanieZylakow/laseroweUsuwanieZylakow0.jpg';
 
-// ---------------------------------------------------
+
 // KARDIOLOGIA
+// echo serca
 import echoSercaImage0 from '../assets/treatment/cardiology/echoSerca/echoSerca0.jpg';
 
 
 // PSYCHIATRIA
+// badanie ados-2
 import badanieAdos20 from '../assets/treatment/psychiatry/badanieAdos2/badanieAdos20.jpg';
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------
+
 
 // DERMATOLOGIA
 export const badanieZnamionBarwnikowych = {
@@ -206,7 +239,6 @@ export const usuniecieZmianSkornychElektrochirurgiczne = {
         'dermatologist'
     ]
 };
-
 
 // MEDYCYNA ESTETYCZNA
 export const modelowanieUst = {
@@ -841,7 +873,6 @@ export const ultradzwiekiIFalaRadiowa = {
     ]
 };
 
-
 // FIZJOTERAPIA
 export const rehabilitacja = {
     id: '05a5105b-d8cc-4198-b2a8-7a89491a691f',
@@ -907,7 +938,6 @@ export const kinesiotaping = {
         'milena-juzwiak'
     ]
 };
-
 
 // CHIRURGIA PLASTYCZNA
 export const plastykaPowiek = {
@@ -1018,7 +1048,6 @@ export const odczulanie = {
     ]
 };
 
-
 // CHIRURGIA NACZYNIOWA
 export const skleroterapia = {
     id: '45ee2498-633a-4e8e-8732-d1308a01cfe8',
@@ -1066,7 +1095,6 @@ export const laseroweUsuwanieZylakow = {
     ]
 };
 
-
 // KARDIOLOGIA
 export const echoSerca = {
     id: '69d011cf-bd77-4910-95e2-6ba2234a0f21',
@@ -1090,7 +1118,6 @@ export const echoSerca = {
         'michal-radzio'
     ]
 };
-
 
 // PSYCHIATRIA
 export const badanieAdos2 = {
