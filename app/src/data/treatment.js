@@ -358,7 +358,7 @@ export const modelowanieUst = {
         'aesthetic-medicine'
     ],
     specialist: [
-        'nina-wisniewska',
+        // 'nina-wisniewska',
         'klaudia-malottki',
         'paulina-tatara',
         'olga-lenartowicz-warakomska',
@@ -423,7 +423,7 @@ export const toksynaBotulinowa = {
         'aesthetic-medicine'
     ],
     specialist: [
-        'nina-wisniewska',
+        // 'nina-wisniewska',
         'klaudia-malottki',
         'paulina-tatara',
         'olga-lenartowicz-warakomska',
@@ -574,7 +574,7 @@ export const mezoterapiaIglowa = {
         'aesthetic-medicine'
     ],
     specialist: [
-        'nina-wisniewska',
+        // 'nina-wisniewska',
         'klaudia-malottki',
         'paulina-tatara',
         'olga-lenartowicz-warakomska',

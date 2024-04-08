@@ -211,7 +211,7 @@ export const dermatologist = {
     images: [
         {
             src: careerDermatologist0,
-            alt: 'Dermatolog badający skórę Pacjentki',
+            alt: 'Dermatolog badający skórę pacjentki',
             author: 'Freepik',
             href: 'https://pl.freepik.com/darmowe-zdjecie/dermatolog-badajacy-skore-pacjentki_8404627.htm'
         }

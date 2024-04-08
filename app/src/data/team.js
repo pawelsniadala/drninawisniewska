@@ -28,7 +28,7 @@ export const ninaWisniewska = {
     id: '4d6a6ec4-ea93-40b5-9d23-cb7204c6911e',
     specialist: 'nina-wisniewska',
     name: 'dr n. med. Nina Wiśniewska',
-    speciality: 'Specjalista w zakresie dermatologii i wenerologii, lekarz medycyny estetycznej',
+    speciality: 'Specjalista w zakresie dermatologii i wenerologii',
     summary: 'Urodziłam się w Wyszkowie i dlatego to miejsce jest szczególnie mi bliskie. Od kilku lat przyjmuję tu jako dermatolog pomagając Państwu w zakresie chorób skóry i to dzięki Państwa inicjatywie poszerzam swoją działalność. Zajmuję się kompleksowo leczeniem wszystkich chorób skóry. Przypadki wymagające szczegółowej diagnostyki kieruję do Kliniki Dermatologicznej WIM MON przy ulicy Szaserów 128 w Warszawie, gdzie pełnię funkcję starszego asystenta. W zakresie medycyny estetycznej stale podnoszę swoje kwalifikacje, uczestnicząc w licznych szkoleniach i kongresach, m.in. w zakresie laseroterapii oraz zabiegów z zastosowaniem wypełniaczy. W swojej pracy stawiam głównie na naturalność.',
     education: 'Dr n. med. Nina Wiśniewska jest absolwentką I Wydziału Lekarskiego Akademii Medycznej w Warszawie. Na swoim koncie posiada wiele publikacji naukowych oraz wystąpień na konferencjach i sympozjach polskich i zagranicznych. Czynnie bierze udział w wystąpieniach telewizyjnych takich jak "Pytanie na śniadanie", "Dzień Dobry Polsko", "Sekrety lekarzy" i innych. Jej publikacje dostępne są w czasopismach branżowych "Twój Styl", "Flesz", "Party", "Gala" i innych.',
     experience: 'Nagrodzona przez Ministra Zdrowia w 2015 roku za uzyskanie najlepszego wyniku w Polsce z egzaminu PES w zakresie dermatologii i wenerologii. Na co dzień pełni funkcję Starszego Asystenta w Klinice Dermatologicznej Wojskowego Instytutu Medycznego Ministerstwa Obrony Narodowej w Warszawie. Członkini  Polskiego Towarzystwa Dermatologicznego i Farmaekonomicznego. Członkini Polskiego Towarzystwa Medycyny Estetycznej i Anti-Anging.',
@@ -37,14 +37,14 @@ export const ninaWisniewska = {
     background: null,
     specialization: [
         'dermatology',
-        'aesthetic-medicine'
+        // 'aesthetic-medicine'
     ],
     treatment: [
         'badanie-znamion-barwnikowych',
         'fototerapia-chorob-skory',
-        'modelowanie-ust',
-        'toksyna-botulinowa',
-        'mezoterapia-iglowa',
+        // 'modelowanie-ust',
+        // 'toksyna-botulinowa',
+        // 'mezoterapia-iglowa',
     ],
     career: [
         'dermatologist'
@@ -513,7 +513,7 @@ export const wojciechKaszewski = {
 export const hannaAndrusevich = {
     id: '1a71f4bc-6046-406c-aa6f-2a6a88d8c263',
     specialist: 'hanna-andrushevich',
-    name: 'lek. Hanna Andrusevich',
+    name: 'lek. med. Hanna Andrusevich',
     speciality: 'Lekarz w trakcie specjalizacji z ginekologii i położnictwa',
     summary: 'Obecnie pracuję w poradni przyszpitalnej oraz na Oddziale Ginekologiczno-Położniczym Szpitala w Wyszkowie, gdzie specjalizuję się w zakresie położnictwa oraz ginekologii. W swojej codziennej pracy skupiam się na prowadzeniu ciąży fizjologicznej i patologicznej, diagnostyce ultrasonograficznej oraz diagnostyce i leczeniu w ginekologii. Udzielam porad z zakresu zaburzeń narządu rodnego, antykoncepcji oraz wykonuję badania kontrolne. Poszerzam wiedzę i umiejętności w ginekologii operacyjnej oraz zabiegowej. Opiekuje się także pacjentkami borykającymi się z problemem nietrzymania moczu, z zaburzeniami statyki narządu rodnego. Zawodowo interesuję się kolposkopią, endoskopią i endokrynologią ginekologiczną.',
     education: 'Absolwentka Grodzieńskiego Uniwersytetu Medycznego, Białoruś. W 2019 uzyskałam nostryfikację dyplomu lekarza na Uniwersytecie Medycznym w Łodzi.',

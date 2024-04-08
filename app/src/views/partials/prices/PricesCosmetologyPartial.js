@@ -56,8 +56,7 @@ const Table1 = () => {
 
     const rows = [
         createData('Konsultacja kosmetologiczna', 100),
-        createData('Konsultacja kosmetologiczna + Beauty Plan', 200),
-        createData('Konsultacja kosmetologiczna + Beauty Plan + komputerowa analiza skóry', 300)
+        createData('Konsultacja kosmetologiczna + Beauty Plan', 200)
     ];
 
     return (

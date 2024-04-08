@@ -60,7 +60,7 @@ const Table1 = () => {
         createData('USG doppler tętnic szyjnych', 170, false),
         createData('USG doppler kończyn dolnych (jedna noga)', 170, false),
         createData('USG doppler kończyn dolnych (dwie nogi)', 250, false),
-        createData('Skleroterapia', 800, false),
+        createData('Skleroterapia', 900, false),
         createData('Miniflebektomia', '1500 - 2000', false),
         createData('Laserowe usuwanie żylaków (ELVeS) - wewnątrzżylne usuwanie żył', 'od 4000', 'Dokładną cenę ustala lekarz.')
     ];

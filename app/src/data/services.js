@@ -129,7 +129,7 @@ export const aestheticMedicine = {
         }
     ],
     specialists: [
-        ninaWisniewskaImageSmall,
+        // ninaWisniewskaImageSmall,
         konradKochanImageSmall,
         klaudiaMalottkiImageSmall,
         paulinaTataraImageSmall,
@@ -137,7 +137,7 @@ export const aestheticMedicine = {
         katarzynaZbronskaImageSmall
     ],
     specialists2: [
-        'nina-wisniewska',
+        // 'nina-wisniewska',
         'konrad-kochan',
         'klaudia-malottki',
         'paulina-tatara',

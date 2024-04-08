@@ -22,12 +22,12 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import PercentIcon from '@mui/icons-material/Percent';
-import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
-import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
+// import PercentIcon from '@mui/icons-material/Percent';
+// import LocalPizzaIcon from '@mui/icons-material/LocalPizza';
+// import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 // import InventoryIcon from '@mui/icons-material/Inventory';
 // import StarBorderIcon from '@mui/icons-material/StarBorder';
-import StarIcon from '@mui/icons-material/Star';
+// import StarIcon from '@mui/icons-material/Star';
 // import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 import Page from '../../../components/Page';
@@ -268,7 +268,7 @@ const CareerDetailsPartial = () => {
                                             </Grid>
                                         </Box>
                                     )}
-                                    <Box className='box-career'>
+                                    {/* <Box className='box-career'>
                                         <Typography
                                             variant={'h5'}
                                             className='header alternative'
@@ -317,10 +317,10 @@ const CareerDetailsPartial = () => {
                                                 </Box>
                                             </Box>
                                         </Box>
-                                    </Box>
+                                    </Box> */}
                                     <Box className='box-career'>
                                         <Typography className='paragraph'>
-                                            Jeśli jesteś osobą otwartą, komunikatywną, dyspozycyjną i chciałbyś/chciałabyś pracować w prężnie rozwijającej się placówce medycznej, wyślij swoje CV (koniecznie ze zdjęciem) na adres<br/>Paulina Budna: <Typography component='a' href='mailto:info@drninawisniewska.pl' className='link'>info@drninawisniewska.pl</Typography>.
+                                            Jeśli jesteś osobą otwartą, komunikatywną, dyspozycyjną i chciałbyś/chciałabyś pracować w prężnie rozwijającej się placówce medycznej, wyślij swoje CV (koniecznie ze zdjęciem) na adres<br/>Paulina Budna: <Typography component='a' href='mailto:klinika.wyszkow@gmail.com' className='link'>klinika.wyszkow@gmail.com</Typography>.
                                         </Typography>
                                         <Typography className='paragraph'>
                                             Może szukamy właśnie Ciebie. Odezwiemy się do wybranych osób.

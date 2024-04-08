@@ -88,8 +88,8 @@ export const clinic = {
     ],
     statistics: [
         {
-            title: 5,
-            subtitle:'Ponad 5 lat działalności',
+            title: 6,
+            subtitle:'Ponad 6 lat działalności',
             suffix: '+'
         },
         {
