@@ -513,7 +513,7 @@ export const wojciechKaszewski = {
 export const hannaAndrusevich = {
     id: '1a71f4bc-6046-406c-aa6f-2a6a88d8c263',
     specialist: 'hanna-andrushevich',
-    name: 'lek. med. Hanna Andrusevich',
+    name: 'lek. Hanna Andrusevich',
     speciality: 'Lekarz w trakcie specjalizacji z ginekologii i położnictwa',
     summary: 'Obecnie pracuję w poradni przyszpitalnej oraz na Oddziale Ginekologiczno-Położniczym Szpitala w Wyszkowie, gdzie specjalizuję się w zakresie położnictwa oraz ginekologii. W swojej codziennej pracy skupiam się na prowadzeniu ciąży fizjologicznej i patologicznej, diagnostyce ultrasonograficznej oraz diagnostyce i leczeniu w ginekologii. Udzielam porad z zakresu zaburzeń narządu rodnego, antykoncepcji oraz wykonuję badania kontrolne. Poszerzam wiedzę i umiejętności w ginekologii operacyjnej oraz zabiegowej. Opiekuje się także pacjentkami borykającymi się z problemem nietrzymania moczu, z zaburzeniami statyki narządu rodnego. Zawodowo interesuję się kolposkopią, endoskopią i endokrynologią ginekologiczną.',
     education: 'Absolwentka Grodzieńskiego Uniwersytetu Medycznego, Białoruś. W 2019 uzyskałam nostryfikację dyplomu lekarza na Uniwersytecie Medycznym w Łodzi.',
