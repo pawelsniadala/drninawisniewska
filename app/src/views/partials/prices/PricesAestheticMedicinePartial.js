@@ -291,7 +291,7 @@ const Table4 = () => {
         createData('Twarz szyja', 'od 500'),
         createData('Twarz szyja dekolt', 'od 800'),
         createData('Okolice oczu', 'od 300'),
-        createData('Skinbooster', 900)
+        createData('Skinbooster', 1000)
     ];
 
     return (
@@ -578,7 +578,7 @@ const Table11 = () => {
     }
 
     const rows = [
-        createData('NCTF / NCTF HA 3ml', 450),
+        createData('NCTF / NCTF HA 3ml', 550),
         createData('Dermaheal HSR, SR, SB 5ml', 450),
         createData('Stretchcare', 450),
         createData('Jalupro', 450),
