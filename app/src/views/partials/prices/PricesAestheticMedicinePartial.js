@@ -675,11 +675,10 @@ const Table13 = () => {
 
     const rows = [
         createData('Laser frakcyjny cała twarz', 'od 800', false),
-        // createData('Redukcja przebarwień cała twarz', '150 (pojedyncze przebarwienie) do 800 (cała twarz)', false),
+
         createData('Redukcja przebarwień na twarzy (pojedyncze przebarwienie)', 150, false),
         createData('Redukcja przebarwień na twarzy (cała twarz)', 'od 800', false),
 
-        // createData('Likwidacja rumienia na twarzy', 'od 600 (policzki) do 800 (cała twarz)', false),
         createData('Likwidacja rumienia na twarzy (policzki)', 'od 600', false),
         createData('Likwidacja rumienia na twarzy (cała twarz)', 'do 800', false),
 
