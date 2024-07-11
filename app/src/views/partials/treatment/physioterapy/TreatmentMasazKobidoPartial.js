@@ -87,11 +87,11 @@ const TreatmentMasazKobidoPartial = () => {
                                         'poprawa owalu twarzy,',
                                         'odżywienie skóry,',
                                         'eliminacja napięciowych bóli głowy,',
-                                        'poprawa jakości snu',
-                                        'spłycenie zmarszczek',
-                                        'zmniejszenie oznak starzenia się skóry',
-                                        'zniwelowanie obrzęków w okolicy twarzy',
-                                        'redukcja napięć mięśniowo-powięziowych w obrębie twarzy, szyi i karku',
+                                        'poprawa jakości snu,',
+                                        'spłycenie zmarszczek,',
+                                        'zmniejszenie oznak starzenia się skóry,',
+                                        'zniwelowanie obrzęków w okolicy twarzy,',
+                                        'redukcja napięć mięśniowo-powięziowych w obrębie twarzy, szyi i karku,',
                                         'pobudzenie produkcji kolagenu i elastyny.'
                                     ].map((item, index) => (
                                         <ListBulleted
