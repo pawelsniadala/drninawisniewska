@@ -112,6 +112,10 @@ const PageTitle = ({ children }) => {
                 return `Masaż - ${companyName}`;
             case '/treatment/physioterapy/kinesiotaping':
                 return `Kinesiotaping - ${companyName}`;
+            case '/treatment/physioterapy/masaz-kobido':
+                return `Masaż Kobido - ${companyName}`;
+            case '/treatment/physioterapy/masaz-natural-face-lifting':
+                return `Masaż Natural Face Lifting - ${companyName}`;
 
             // chirurgia plastyczna
             case '/treatment/cosmetic-surgery':
@@ -237,6 +241,8 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/physioterapy/milena-juzwiak':
                 return `Milena Juźwiak - ${companyName}`;
+            case '/team/physioterapy/karina-kwiatkowska':
+                return `Karina Kwiatkowska - ${companyName}`;
 
             // chirurgia plastyczna
             case '/team/cosmetic-surgery':

@@ -109,6 +109,11 @@ import masazImage0 from '../assets/treatment/physioterapy/masaz/masaz0.jpg';
 // kinesiotaping
 import kinesiotapingImage0 from '../assets/treatment/physioterapy/kinesiotaping/kinesiotaping0.jpg';
 
+// masaż kobido
+import masazKobidoImage0 from '../assets/treatment/physioterapy/masazKobido/masazKobido0.jpg';
+
+// masaz natural face lifting
+import masazNaturalFaceLiftingImage0 from '../assets/treatment/physioterapy/masazNaturalFaceLifting/masazNaturalFaceLifting0.jpg';
 
 // CHIRURGIA PLASTYCZNA
 // plastyka powiek
@@ -939,6 +944,52 @@ export const kinesiotaping = {
     ]
 };
 
+export const masazKobido = {
+    id: '759e773a-0613-4658-adc5-0e84126b5a01',
+    treatment: 'masaz-kobido',
+    title: 'Masaż Kobido',
+    description: 'Jest to masaż pochodzący z Japonii, inaczej nazywany niechirurgicznym liftingiem twarzy. W masażu tym intensywnej pracy zostają poddane okolice twarzy, szyi i dekoltu. Jego cel to głębokie odżywienie skóry, rozluźnienie mięśni i powięzi, pobudzenie skóry do produkcji kolagenu i elastyny oraz relaks.',
+    info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
+    path: '/treatment/physioterapy/masaz-kobido',
+    images: [
+        {
+            src: masazKobidoImage0,
+            alt: 'Uśmiechnięta kobieta podczas masażu twarzy',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/usmiechnieta-mloda-kobieta-na-zabieg-na-twarz_14091394.htm'
+        }
+    ],
+    specialization: [
+        'physioterapy'
+    ],
+    specialist: [
+        'karina-kwiatkowska'
+    ]
+};
+
+export const masazNaturalFaceLifting = {
+    id: 'e261051b-c641-4961-a4b5-b9d8c9b581e9',
+    treatment: 'masaz-natural-face-lifting',
+    title: 'Masaż Natural Face Lifting',
+    description: 'Jest to masaż bazujący na technikach masażu Kobido, poszerzony o mocniejsze i głębsze techniki masażu twarzy oraz dodatkowo używa się w nim płytki GUA SHA, baniek próżniowych, a na koniec, w celu osiągnięcia jeszcze lepszego efektu, nakładana jest maseczka. Masaż ten został stworzony na potrzeby klientów, których twarz potrzebuje mocniejszego modelowania i liftingu.',
+    info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
+    path: '/treatment/physioterapy/masaz-natural-face-lifting',
+    images: [
+        {
+            src: masazNaturalFaceLiftingImage0,
+            alt: 'Kobieta podczas masażu twarzy',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/piekna-kaukaska-kobieta-dostaje-anti-age-masaz-w-zdroju-salonie_5633721'
+        }
+    ],
+    specialization: [
+        'physioterapy'
+    ],
+    specialist: [
+        'karina-kwiatkowska'
+    ]
+};
+
 // CHIRURGIA PLASTYCZNA
 export const plastykaPowiek = {
     id: 'e7f2520e-2e6e-4a08-bead-72ea02cd3842',
@@ -1173,6 +1224,8 @@ export const treatment = [
     { ...rehabilitacja },
     { ...masaz },
     { ...kinesiotaping },
+    { ...masazKobido },
+    { ...masazNaturalFaceLifting },
 
     // CHIRURGIA PLASTYCZNA
     { ...plastykaPowiek },

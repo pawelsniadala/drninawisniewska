@@ -13,7 +13,6 @@ import CardProposed from '../../../components/CardProposed';
 import Image from '../../../components/Image';
 
 import { services } from '../../../data/services';
-// import { treatment } from '../../../data/treatment';
 
 import {
     ninaWisniewska,
@@ -26,6 +25,7 @@ import {
     justynaKloniecka,
     aldonaMaciag,
     milenaJuzwiak,
+    karinaKwiatkowska,
     paulinaTatara,
     tomaszMatuszewski,
     olgaLenartowiczWarakomska,
@@ -106,6 +106,8 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...aldonaMaciag }];
             case 'milena-juzwiak':
                 return [{ ...milenaJuzwiak }];
+            case 'karina-kwiatkowska':
+                return [{ ...karinaKwiatkowska }];
             case 'paulina-tatara':
                 return [{ ...paulinaTatara }];
             case 'tomasz-matuszewski':

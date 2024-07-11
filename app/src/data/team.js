@@ -8,6 +8,7 @@ import katarzynaMysliwiecCzajkaImage from '../assets/team/katarzynaMysliwiecCzaj
 import klaudiaMalottkiImage from '../assets/team/klaudiaMalottki/klaudiaMalottkiImage.jpg';
 import aldonaMaciagImage from '../assets/team/aldonaMaciag/aldonaMaciagImage.jpg';
 import milenaJuzwiakImage from '../assets/team/milenaJuzwiak/milenaJuzwiakImage.jpg';
+import karinaKwiatkowskaImage from '../assets/team/karinaKwiatkowska/karinaKwiatkowskaImage.jpg';
 import katarzynaZbronskaImage from '../assets/team/katarzynaZbronska/katarzynaZbronskaImage.jpg';
 import tomaszMatuszewskiImage from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImage.jpg';
 import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowskiImage.jpg';
@@ -251,6 +252,26 @@ export const milenaJuzwiak = {
         'rehabilitacja',
         'masaz',
         'kinesiotaping'
+    ]
+};
+
+export const karinaKwiatkowska = {
+    id: '374db991-54bf-4079-ab32-3cff83245431',
+    specialist: 'karina-kwiatkowska',
+    name: 'mgr Karina Kwiatkowska',
+    speciality: 'Fizjoterapeuta',
+    summary: false,
+    education: 'Jestem magistrem fizjoterapii oraz masażystką z zamiłowaniem i pasją do poprawy wyglądu oraz samopoczucia innych. Szczególnym zainteresowaniem darzę pracę z ludzką twarzą oraz szyjnym odcinkiem kręgosłupa. Swoje wykształcenie zawdzięczam studiom na kierunku "Fizjoterapia" w Wyższej Szkole Rehabilitacji w Warszawie, oraz licznym kursom takim jak kurs masażu Kobido Lift, masażu Natural Face Lifting, oraz kursu z Fizjoterapii Estetycznej Twarzy.',
+    experience: 'Swoją pracą dążę do poprawy samopoczucia i samoakceptacji u moich klientów, dlatego stale poszerzam swoją wiedzę z dziedziny masażu i fizjoterapii. Wierzę, że masaż nie tylko potrafi rozluźnić nasze mięśnie i zrelaksować, ale również sprawić, że nasza twarz nabierze promiennego wyglądu, będzie wyglądała młodziej, o czym przekonały się już klientki, które zdecydowały się wykonać u mnie masaże twarzy.',
+    interested: false,
+    image: karinaKwiatkowskaImage,
+    background: null,
+    specialization: [
+        'physioterapy'
+    ],
+    treatment: [
+        'masaz-kobido',
+        'masaz-natural-face-lifting'
     ]
 };
 
@@ -577,6 +598,7 @@ export const team = [
     { ...klaudiaMalottki },
     { ...katarzynaMysliwiecCzajka },
     { ...milenaJuzwiak },
+    { ...karinaKwiatkowska },
     { ...paulinaTatara },
     { ...tomaszMatuszewski },
     { ...olgaLenartowiczWarakomska },

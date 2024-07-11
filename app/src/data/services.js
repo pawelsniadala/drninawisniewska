@@ -53,6 +53,7 @@ import katarzynaMysliwiecCzajkaImageSmall from '../assets/team/katarzynaMysliwie
 import klaudiaMalottkiImageSmall from '../assets/team/klaudiaMalottki/klaudiaMalottkiImageSmall.jpg';
 import aldonaMaciagImageSmall from '../assets/team/aldonaMaciag/aldonaMaciagImageSmall.jpg';
 import milenaJuzwiakImageSmall from '../assets/team/milenaJuzwiak/milenaJuzwiakImageSmall.jpg';
+import karinaKwiatkowskaImageSmall from '../assets/team/karinaKwiatkowska/karinaKwiatkowskaImageSmall.jpg';
 import katarzynaZbronskaImageSmall from '../assets/team/katarzynaZbronska/katarzynaZbronskaImageSmall.jpg';
 import tomaszMatuszewskiImageSmall from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImageSmall.jpg';
 import kamilStepkowskiImageSmall from '../assets/team/kamilStepkowski/kamilStepkowskiImageSmall.jpg';
@@ -201,10 +202,12 @@ export const physioterapy = {
         }
     ],
     specialists: [
-        milenaJuzwiakImageSmall
+        milenaJuzwiakImageSmall,
+        karinaKwiatkowskaImageSmall
     ],
     specialists2: [
-        'milena-juzwiak'
+        'milena-juzwiak',
+        'karina-kwiatkowska',
     ],
     relatedSpecializations: [
         'orthopedics',

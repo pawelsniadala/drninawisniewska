@@ -67,6 +67,8 @@ import TreatmentUltradzwiekiIFalaRadiowaPartial from './partials/treatment/cosme
 import TreatmentRehabilitacjaPartial from './partials/treatment/physioterapy/TreatmentRehabilitacjaPartial';
 import TreatmentMasazPartial from './partials/treatment/physioterapy/TreatmentMasazPartial';
 import TreatmentKinesiotapingPartial from './partials/treatment/physioterapy/TreatmentKinesiotapingPartial';
+import TreatmentMasazKobidoPartial from './partials/treatment/physioterapy/TreatmentMasazKobidoPartial';
+import TreatmentMasazNaturalFaceLiftingPartial from './partials/treatment/physioterapy/TreatmentMasazNaturalFaceLiftingPartial';
 
 // chirurgia plastyczna
 import TreatmentPlastykaPowiekPartial from './partials/treatment/cosmeticSurgery/TreatmentPlastykaPowiekPartial';
@@ -110,9 +112,6 @@ import SpecialOfferView from './SpecialOfferView';
 
 
 // SPECJALIŚCI
-// import TeamView from './TeamView';
-// import TeamSpecializationPartial from './partials/team/TeamSpecializationPartial';
-// import TeamSpecialistPartial from './partials/team/TeamSpecialistPartial';
 import TeamView2 from './TeamView2';
 import SpecialistsListPartial from './partials/team/SpecialistsListPartial';
 import SpecialistsDetailsPartial from './partials/team/SpecialistsDetailsPartial';
@@ -212,6 +211,8 @@ const Root = () => (
                     <Route path='/treatment/physioterapy/rehabilitacja' element={<TreatmentRehabilitacjaPartial />} />
                     <Route path='/treatment/physioterapy/masaz' element={<TreatmentMasazPartial />} />
                     <Route path='/treatment/physioterapy/kinesiotaping' element={<TreatmentKinesiotapingPartial />} />
+                    <Route path='/treatment/physioterapy/masaz-kobido' element={<TreatmentMasazKobidoPartial />} />
+                    <Route path='/treatment/physioterapy/masaz-natural-face-lifting' element={<TreatmentMasazNaturalFaceLiftingPartial />} />
 
                     {/* chirurgia plastyczna */}
                     <Route path='/treatment/cosmetic-surgery/plastyka-powiek' element={<TreatmentPlastykaPowiekPartial />} />
@@ -254,10 +255,6 @@ const Root = () => (
 
                     {/* PROMOCJE */}
                     <Route path='/special-offer' element={<SpecialOfferView />} />
-                    {/* <Route path='/team' element={<TeamView />}>
-                        <Route path=':specialization' element={<TeamSpecializationPartial />} />
-                    </Route>
-                    <Route path='team/:specialization/:specialist' element={<TeamSpecialistPartial />} /> */}
 
 
                     {/* SPECJALIŚCI */}

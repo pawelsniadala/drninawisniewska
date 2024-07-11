@@ -12,7 +12,6 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Page from '../components/Page';
 import Container from '../components/Container';
 
-// import TeamSpecializationPartial from './partials/team/TeamSpecializationPartial';
 import SpecialistsListPartial from './partials/team/SpecialistsListPartial';
 
 const TeamView2 = () => {
