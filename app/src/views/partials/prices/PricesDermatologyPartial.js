@@ -103,7 +103,7 @@ const Table2 = () => {
         createData('Konsultacja trychologiczna', false, 250),
         createData('Ostrzyknięcie sterydem', false, 200),
         createData('Badanie dermatoskopowe zmian skórnych (całe ciało) ', false, 250),
-        createData('Wideodermatoskopia', false, 300),
+        createData('Wideodermatoskopia', false, 350),
         createData('Założenie płatkowych testów kontaktowych, zdjęcie, odczyt i lista alergenów (36 Alergenów)', false, 350),
         createData('Fototerapia lampa UVB 311 nm - 16 zabiegów ', false, 350),
         createData('Fototerapia PUVA (dłonie) - 6 zabiegów', false, 200),

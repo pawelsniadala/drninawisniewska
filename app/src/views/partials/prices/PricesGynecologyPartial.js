@@ -68,6 +68,7 @@ const Table1 = () => {
 
         createData('Cytologia', 50, false),
         createData('Cytologia płynna', 100, false),
+        createData('Cytologia płynna z topowaniem', 250, false),
         createData('USG - dopłata do wizyty', '50/100', 'Dokładną cenę ustala lekarz.')
     ];
 
