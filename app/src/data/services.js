@@ -44,8 +44,7 @@ import servicesRheumatology0 from '../assets/services/rheumatology/servicesRheum
 import servicesPsychiatry0 from '../assets/services/psychiatry/servicesPsychiatry0.jpg';
 
 import ninaWisniewskaImageSmall from '../assets/team/ninaWisniewska/ninaWisniewskaImageSmall.jpg';
-import justynaFilipekImageSmall from '../assets/team/justynaFilipek/justynaFilipekImageSmall.jpg';
-import paulinaBudnaImageSmall from '../assets/team/paulinaBudna/paulinaBudnaImageSmall.jpg';
+import paulinaSotImageSmall from '../assets/team/paulinaSot/paulinaSotImageSmall.jpg';
 import konradKochanImageSmall from '../assets/team/konradKochan/konradKochanImageSmall.jpg';
 import wojciechKaszewskiImageSmall from '../assets/team/wojciechKaszewski/wojciechKaszewskiImageSmall.jpg';
 import justynaKlonieckaImageSmall from '../assets/team/justynaKloniecka/justynaKlonieckaImageSmall.jpg';
@@ -170,11 +169,11 @@ export const cosmetology = {
         }
     ],
     specialists: [
-        paulinaBudnaImageSmall,
+        paulinaSotImageSmall,
         karolinaZegotaSmall
     ],
     specialists2: [
-        'paulina-budna',
+        'paulina-sot',
         'karolina-zegota'
     ],
     relatedSpecializations: [
@@ -289,7 +288,6 @@ export const usg = {
         }
     ],
     specialists: [
-        justynaFilipekImageSmall,
         jadwigaDowgialloSmolarczykImageSmall,
         wojciechKaszewskiImageSmall,
         hannaAndrusevichSmall,
@@ -297,7 +295,6 @@ export const usg = {
         kamilStepkowskiImageSmall,
     ],
     specialists2: [
-        'justyna-filipek',
         'jadwiga-dowgiallo-smolarczyk',
         'wojciech-kaszewski',
         'kamil-stepkowski',
@@ -328,11 +325,9 @@ export const endocrinology = {
         }
     ],
     specialists: [
-        justynaFilipekImageSmall,
         jadwigaDowgialloSmolarczykImageSmall
     ],
     specialists2: [
-        'justyna-filipek',
         'jadwiga-dowgiallo-smolarczyk'
     ],
     relatedSpecializations: [
@@ -359,12 +354,10 @@ export const gynecology = {
         }
     ],
     specialists: [
-        justynaFilipekImageSmall,
         jadwigaDowgialloSmolarczykImageSmall,
         hannaAndrusevichSmall
     ],
     specialists2: [
-        'justyna-filipek',
         'jadwiga-dowgiallo-smolarczyk',
         'hanna-andrushevich'
     ],

@@ -528,7 +528,7 @@ export const laserFrakcyjny = {
         'aesthetic-medicine'
     ],
     specialist: [
-        'paulina-budna',
+        'paulina-sot',
         'klaudia-malottki',
         'paulina-tatara',
         'olga-lenartowicz-warakomska',
@@ -644,7 +644,7 @@ export const zamykanieNaczynekILikwidacjaPrzebarwien = {
         'aesthetic-medicine'
     ],
     specialist: [
-        'paulina-budna',
+        'paulina-sot',
         'klaudia-malottki',
         'paulina-tatara',
         'olga-lenartowicz-warakomska',
@@ -725,7 +725,7 @@ export const peelingMedyczny = {
         'cosmetology'
     ],
     specialist: [
-        'paulina-budna',
+        'paulina-sot',
         'karolina-zegota'
     ],
     career: [
@@ -790,7 +790,7 @@ export const epilacjaLaserowa = {
         'cosmetology'
     ],
     specialist: [
-        'paulina-budna',
+        'paulina-sot',
         'karolina-zegota'
     ],
     career: [
@@ -817,7 +817,7 @@ export const masazProzniowy = {
         'cosmetology'
     ],
     specialist: [
-        'paulina-budna',
+        'paulina-sot',
         'karolina-zegota'
     ],
     career: [
@@ -870,7 +870,7 @@ export const ultradzwiekiIFalaRadiowa = {
         'cosmetology'
     ],
     specialist: [
-        'paulina-budna',
+        'paulina-sot',
         'karolina-zegota'
     ],
     career: [

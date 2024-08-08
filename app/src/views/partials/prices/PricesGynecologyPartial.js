@@ -55,20 +55,17 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja ginekologiczna - dr Justyna Filipek', 300, false),
-        createData('Konsultacja ginekologiczno - endokrynologiczna - dr Justyna Filipek', 350, false),
-
         createData('Konsultacja ginekologiczna (30 min) - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 350, false),
         createData('Konsultacja ginekologiczno - endokrynologiczna (40 min) - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 350, false),
         createData('Konsultacja ginekologiczno - endokrynologiczna + cytologia - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 400, false),
         createData('Konsultacja ginekologiczno - endokrynologiczna + cytologia + USG (50 min) - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 500, false),
 
         createData('Konsultacja ginekologiczna - dr Hanna Andrusevich', 180, false),
-        createData('Konsultacja ginekologiczna + USG - dr Hanna Andrusevich', 200, false),
+        createData('Konsultacja ginekologiczna + USG - dr Hanna Andrusevich', 230, false),
 
         createData('Cytologia', 50, false),
         createData('Cytologia płynna', 100, false),
-        createData('Cytologia płynna z topowaniem', 250, false),
+        createData('Cytologia płynna z HPV', 170, false),
         createData('USG - dopłata do wizyty', '50/100', 'Dokładną cenę ustala lekarz.')
     ];
 

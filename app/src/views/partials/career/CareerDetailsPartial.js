@@ -320,7 +320,7 @@ const CareerDetailsPartial = () => {
                                     </Box> */}
                                     <Box className='box-career'>
                                         <Typography className='paragraph'>
-                                            Jeśli jesteś osobą otwartą, komunikatywną, dyspozycyjną i chciałbyś/chciałabyś pracować w prężnie rozwijającej się placówce medycznej, wyślij swoje CV (koniecznie ze zdjęciem) na adres<br/>Paulina Budna: <Typography component='a' href='mailto:klinika.wyszkow@gmail.com' className='link'>klinika.wyszkow@gmail.com</Typography>.
+                                            Jeśli jesteś osobą otwartą, komunikatywną, dyspozycyjną i chciałbyś/chciałabyś pracować w prężnie rozwijającej się placówce medycznej, wyślij swoje CV (koniecznie ze zdjęciem) na adres<br/>Paulina Sot: <Typography component='a' href='mailto:klinika.wyszkow@gmail.com' className='link'>klinika.wyszkow@gmail.com</Typography>.
                                         </Typography>
                                         <Typography className='paragraph'>
                                             Może szukamy właśnie Ciebie. Odezwiemy się do wybranych osób.

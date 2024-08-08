@@ -126,7 +126,7 @@ const ClinicSection = () => {
                                         effect='blur'
                                     />
                                     <span className="pswp-caption-content">
-                                        Autor: {item.author}
+                                        Fotograf: {item.author}
                                     </span>
                                 </Box>
                             </a>

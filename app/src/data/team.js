@@ -1,6 +1,5 @@
 import ninaWisniewskaImage from '../assets/team/ninaWisniewska/ninaWisniewskaImage.jpg';
-import justynaFilipekImage from '../assets/team/justynaFilipek/justynaFilipekImage.jpg';
-import paulinaBudnaImage from '../assets/team/paulinaBudna/paulinaBudnaImage.jpg';
+import paulinaSotImage from '../assets/team/paulinaSot/paulinaSotImage.jpg';
 import konradKochanImage from '../assets/team/konradKochan/konradKochanImage.jpg';
 import wojciechKaszewskiImage from '../assets/team/wojciechKaszewski/wojciechKaszewskiImage.jpg';
 import justynaKlonieckaImage from '../assets/team/justynaKloniecka/justynaKlonieckaImage.jpg';
@@ -52,35 +51,16 @@ export const ninaWisniewska = {
     ]
 };
 
-export const justynaFilipek = {
-    id: 'bbe4cefe-d33a-467a-aa8e-48fcf9965952',
-    specialist: 'justyna-filipek',
-    name: 'lek. med. Justyna Filipek',
-    speciality: 'Ginekolog, endokrynolog',
-    summary: false,
-    education: 'Pani Doktor jest absolwentką Warszawskiego Uniwersytetu Medycznego. Część studiów realizowała w Mediolanie na Universita degli Studi di Milano. Doświadczenie zawodowe z zakresu ginekologii zdobywała w Szpitalu Specjalistycznym Św. Zofii, a z zakresu endokrynologii w Centrum Onkologii w Klinice Endokrynologii Onkologicznej i Medycyny Nuklearnej.',
-    experience: 'Dr Filipek zajmuje się diagnostyką i leczeniem pacjentek z niepłodnością, zaburzeniami hormonalnymi. Diagnostyką i leczeniem chorób tarczycy, przysadki mózgowej, nadnerczy oraz insulinoopornością.',
-    interested: false,
-    image: justynaFilipekImage,
-    background: null,
-    specialization: [
-        'gynecology',
-        'endocrinology',
-        'usg'
-    ],
-    treatment: ['']
-};
-
-export const paulinaBudna = {
+export const paulinaSot = {
     id: '96ecd64c-5904-4205-b97a-48b7f8b4b4ff',
-    specialist: 'paulina-budna',
-    name: 'mgr Paulina Budna',
+    specialist: 'paulina-sot',
+    name: 'mgr Paulina Sot',
     speciality: 'Kosmetolog',
     summary: false,
     education: 'Absolwentka studiów magisterskich na kierunku kosmetologia. Od początku swojej kariery zawodowej stawia na profesjonalizm oraz indywidualne podejście do pacjenta. Dokłada wszelkich starań, aby każdy kto korzysta z jej usług mógł poczuć się wyjątkowo.',
     experience: 'Specjalizuje się w wykonywaniu zabiegów pielęgnacyjno-leczniczych, w szczególności dla skór wymagających, tj. skóra trądzikowa, z przebarwieniami, bliznami potrądzikowymi, itp. Ponadto wykonuje zabiegi z zakresu ujędrniania i modelowania sylwetki, a także zabiegi epilacji laserowej. Chętnie uczy się nowych rzeczy. Swoją wiedzę pogłębia uczestnicząc w specjalistycznych szkoleniach i kongresach. Bardzo ceni sobie wzajemną współpracę z lekarzami z dziedziny dermatologii i medycyny estetycznej. Z Kliniką dr Niny Wiśniewskiej związana jest od początku jej istnienia.',
     interested: false,
-    image: paulinaBudnaImage,
+    image: paulinaSotImage,
     background: null,
     specialization: [
         'cosmetology'
@@ -589,12 +569,12 @@ export const patrykKrokwinski = {
 
 export const team = [
     { ...ninaWisniewska },
-    { ...justynaFilipek },
-    { ...paulinaBudna },
+    { ...paulinaSot },
     { ...konradKochan },
     { ...agataSkwerekSzewczyk },
     { ...aldonaMaciag },
     { ...justynaKloniecka },
+    { ...joannaOjrzenska },
     { ...klaudiaMalottki },
     { ...katarzynaMysliwiecCzajka },
     { ...milenaJuzwiak },
@@ -603,7 +583,6 @@ export const team = [
     { ...tomaszMatuszewski },
     { ...olgaLenartowiczWarakomska },
     { ...katarzynaZbronska },
-    { ...joannaOjrzenska },
     { ...katarzynaRychlik },
     { ...michalRadzio },
     { ...kajaStrojnowskaLapinska },

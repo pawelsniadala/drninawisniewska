@@ -56,9 +56,7 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja endokrynologiczna - dr Justyna Filipek', 300, false),
         createData('Konsultacja endokrynologiczno - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 350, false)
-        // createData('Konsultacja endokrynologiczna (30 min) - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 350, false)
     ];
 
     return (

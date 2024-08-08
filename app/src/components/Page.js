@@ -231,8 +231,8 @@ const PageTitle = ({ children }) => {
             // kosmetologia
             case '/team/cosmetology':
                 return `Specjaliści - ${companyName}`;
-            case '/team/cosmetology/paulina-budna':
-                return `Paulina Budna - ${companyName}`;
+            case '/team/cosmetology/paulina-sot':
+                return `Paulina Sot - ${companyName}`;
             case '/team/cosmetology/karolina-zegota':
                 return `Karolina Zęgota - ${companyName}`;
 
@@ -259,8 +259,6 @@ const PageTitle = ({ children }) => {
             // usg
             case '/team/usg':
                 return `Specjaliści - ${companyName}`;
-            case '/team/usg/justyna-filipek':
-                return `Justyna Filipek - ${companyName}`;
             case '/team/usg/jadwiga-dowgiallo-smolarczyk':
                 return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
             case '/team/usg/hanna-andrushevich':
@@ -273,16 +271,12 @@ const PageTitle = ({ children }) => {
             // endokrynologia
             case '/team/endocrinology':
                 return `Specjaliści - ${companyName}`;
-            case '/team/endocrinology/justyna-filipek':
-                return `Justyna Filipek - ${companyName}`;
             case '/team/endocrinology/jadwiga-dowgiallo-smolarczyk':
                 return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
 
             // ginekologia
             case '/team/gynecology':
                 return `Specjaliści - ${companyName}`;
-            case '/team/gynecology/justyna-filipek':
-                return `Justyna Filipek - ${companyName}`;
             case '/team/gynecology/jadwiga-dowgiallo-smolarczyk':
                 return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
             case '/team/gynecology/hanna-andrushevich':

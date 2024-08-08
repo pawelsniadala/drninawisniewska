@@ -16,8 +16,7 @@ import { services } from '../../../data/services';
 
 import {
     ninaWisniewska,
-    justynaFilipek,
-    paulinaBudna,
+    paulinaSot,
     konradKochan,
     wojciechKaszewski,
     klaudiaMalottki,
@@ -88,10 +87,8 @@ const SpecialistsDetailsPartial = () => {
         switch(specialist) {
             case 'nina-wisniewska':
                 return [{ ...ninaWisniewska }];
-            case 'justyna-filipek':
-                return [{ ...justynaFilipek }];
-            case 'paulina-budna':
-                return [{ ...paulinaBudna }];
+            case 'paulina-sot':
+                return [{ ...paulinaSot }];
             case 'konrad-kochan':
                 return [{ ...konradKochan }];
             case 'wojciech-kaszewski':
