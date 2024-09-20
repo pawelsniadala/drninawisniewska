@@ -7,6 +7,7 @@ import specialOffer6 from '../assets/specialOffer/specialOffer6.jpg';
 import specialOffer7 from '../assets/specialOffer/specialOffer7.jpg';
 import specialOffer8 from '../assets/specialOffer/specialOffer8.jpg';
 import specialOffer9 from '../assets/specialOffer/specialOffer9.jpg';
+import specialOffer10 from '../assets/specialOffer/specialOffer10.jpg';
 
 export const article1 = {
     image: specialOffer1,
@@ -107,7 +108,19 @@ export const article9 = {
     description5: '',
 };
 
+export const article10 = {
+    image: specialOffer10,
+    title: 'Jesienna oferta',
+    date: '20 Września 2024',
+    description1: '🍂 Laser frakcyjny + Mezoterapia Skinbooster 1500zł zamiast 2000zł (redukcja blizn, redukcja zmarszczek, odżywianie skóry, nawilżanie skóry).',
+    description2: '🌻 Laser frakcyjny, Laser naczyniowy, Laser na przebarwienia -20% za zabieg (cała twarz).',
+    description3: '🍁 Depilacja laserowa - Pakiet całe nogi (4 zabiegi) + Gratis - Pakiet pachy (4 zabiegi) 2000zł zamiast 2700zł.',
+    description4: '🌺 Regulamin❗Oferta ważna do 31.10.2024❗Aby skorzystać z oferty należy dokonać płatności z góry❗Zabiegi wykonywane są w wybrane dni przez wybranych specjalistów.',
+    description5: '',
+};
+
 export const specialOffer = [
+    { ...article10 },
     { ...article9 },
     { ...article8 },
     { ...article7 },

@@ -89,6 +89,46 @@ const Table1 = () => {
     );
 }
 
+const Table12 = () => {
+    function createData(name, price) {
+        return { name, price };
+    }
+
+    const rows = [
+        createData('Pojedynczy zabieg + maska', 150),
+        createData('Rozszerzenie innego zabiegu', 50)
+    ];
+
+    return (
+        <TableContainer className='table-container' component={Paper}>
+            <Table size='small' aria-label='customized table'>
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell>
+                        Fototerapia LED
+                    </StyledTableCell>
+                    <StyledTableCell align='right'>
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component='th' scope='row'>
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align='right' className='nowrap'>
+                                {row.price}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
 const Table2 = () => {
     function createData(name, price, fat) {
         return { name, price, fat, };
@@ -502,6 +542,7 @@ const PricesCosmetologyPartial = () => {
     return (
         <Box display='grid' gap={'15px'}>
             <Table1 />
+            <Table12 />
             <Table2 />
             <Table3 />
             <Table4 />
