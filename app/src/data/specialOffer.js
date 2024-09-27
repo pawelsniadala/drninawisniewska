@@ -103,7 +103,7 @@ export const article9 = {
     date: '2 Października 2023',
     description1: 'Wraz z początkiem października 🍂 przygotowaliśmy dla Was specjalną ofertę na serię zabiegów z użyciem specjalistycznych laserów na twarz.',
     description2: '🍁 Zamykanie naczynek, Redukcja przebarwień: Pierwszy zabieg - 800zł, Drugi zabieg - 700zł, Trzeci zabieg - 600zł.',
-    description3: '🍁 Redukcja blizn, Resurfacing skóry: PIerwszy zabieg - 1000zł, Drugi zabieg - 900zł, Trzeci zabieg - 800zł.',
+    description3: '☔ Redukcja blizn, Resurfacing skóry: PIerwszy zabieg - 1000zł, Drugi zabieg - 900zł, Trzeci zabieg - 800zł.',
     description4: '🌻 Promocja dotyczy serii 3 zabiegów na twarz, wykonywanych w odstępach co 4 tyg.',
     description5: '',
 };
@@ -112,10 +112,10 @@ export const article10 = {
     image: specialOffer10,
     title: 'Jesienna oferta',
     date: '20 Września 2024',
-    description1: '🌻 Laser frakcyjny + Mezoterapia Skinbooster 1500zł zamiast 2000zł (redukcja blizn, redukcja zmarszczek, odżywianie skóry, nawilżanie skóry).',
+    description1: '☔ Laser frakcyjny + Mezoterapia Skinbooster 1500zł zamiast 2000zł (redukcja blizn, redukcja zmarszczek, odżywianie skóry, nawilżanie skóry).',
     description2: '🍂 Laser frakcyjny, Laser naczyniowy, Laser na przebarwienia -20% za zabieg (cała twarz).',
     description3: '🍁 Depilacja laserowa - Pakiet całe nogi (4 zabiegi) + Gratis - Pakiet pachy (4 zabiegi) 2000zł zamiast 2700zł.',
-    description4: '🌺 Regulamin❗Oferta ważna do 31.10.2024❗Aby skorzystać z oferty należy dokonać płatności z góry❗Zabiegi wykonywane są w wybrane dni przez wybranych specjalistów.',
+    description4: 'Regulamin❗Oferta ważna do 31.10.2024❗Aby skorzystać z oferty należy dokonać płatności z góry❗Zabiegi wykonywane są w wybrane dni przez wybranych specjalistów.',
     description5: '',
 };
 

@@ -109,8 +109,10 @@ const Table2 = () => {
         createData('Fototerapia PUVA (dłonie) - 6 zabiegów', false, 200),
         createData('Fototerapia PUVA (stopy) - 6 zabiegów', false, 200),
         createData('Fototerapia PUVA (dłonie + stopy) - 12 zabiegów', false, 400),
-        createData('Wycięcie zmiany barwnikowej (1 zmiana) + badanie histopatologiczne', false, 450),
-        createData('Biopsja skóry + badanie histopatologiczne ', false, 300),
+        // createData('Wycięcie zmiany barwnikowej (1 zmiana) + badanie histopatologiczne', false, 450),
+        createData('Chirurgiczne wycięcie zmiany barwnikowej', false, 400),
+        createData('Badanie histopatologiczne (1 zmiana)', false, 65),
+        createData('Biopsja skóry + badanie histopatologiczne ', false, 320),
         createData('Usunięcie zmian skórnych elektrochirurgicznie ', false, 'od 300'),
         createData('kolejne na tej samej wizycie', 'Powyżej 10 zmian skórnych cenę ustala lekarz.', 50)
     ];

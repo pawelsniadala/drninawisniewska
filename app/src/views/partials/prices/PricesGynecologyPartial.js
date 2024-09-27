@@ -64,8 +64,8 @@ const Table1 = () => {
         createData('Konsultacja ginekologiczna + USG - dr Hanna Andrusevich', 230, false),
 
         createData('Cytologia', 50, false),
-        createData('Cytologia płynna', 100, false),
-        createData('Cytologia płynna z HPV', 170, false),
+        createData('Cytologia płynna', '100 - 150', false),
+        createData('Cytologia płynna z HPV', '170 - 200', false),
         createData('USG - dopłata do wizyty', '50/100', 'Dokładną cenę ustala lekarz.')
     ];
 

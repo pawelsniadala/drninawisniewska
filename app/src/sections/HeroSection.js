@@ -78,7 +78,7 @@ const HeroSection = () => {
                                 className='carousel-image'
                                 width={'100%'}
                                 src={require('../assets/hero/hero1.jpg')}
-                                alt='Zadbaj o zdrową skórę'
+                                alt='Zadbaj o swoje zdrowie'
                                 effect='blur'
                             />
                             <Box className='carousel-caption d-none d-md-block' sx={{ bottom: '1.25rem' }}>
@@ -90,7 +90,7 @@ const HeroSection = () => {
                                         data-aos={'fade-in'}
                                         data-aos-delay={'100'}
                                     >
-                                        Zadbaj o zdrową skórę
+                                        Zadbaj o swoje zdrowie
                                     </Typography>
                                     <Typography
                                         variant='h6'
@@ -299,7 +299,7 @@ const HeroSection = () => {
                                         data-aos={'fade-in'}
                                         data-aos-delay={'100'}
                                     >
-                                        Zadbaj o zdrową skórę
+                                        Zadbaj o swoje zdrowie
                                     </Typography>
                                     <Typography
                                         variant='h6'
