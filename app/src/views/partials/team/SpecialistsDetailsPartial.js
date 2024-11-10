@@ -28,7 +28,6 @@ import {
     paulinaTatara,
     tomaszMatuszewski,
     olgaLenartowiczWarakomska,
-    katarzynaZbronska,
     joannaOjrzenska,
     agataSkwerekSzewczyk,
     kamilStepkowski,
@@ -111,8 +110,6 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...tomaszMatuszewski }];
             case 'olga-lenartowicz-warakomska':
                 return [{ ...olgaLenartowiczWarakomska }];
-            case 'katarzyna-zbronska':
-                return [{ ...katarzynaZbronska }];
             case 'joanna-ojrzenska':
                 return [{ ...joannaOjrzenska }];
             case 'agata-skwerek-szewczyk':

@@ -62,8 +62,8 @@ const Table16 = () => {
     }
 
     const rows = [
-        createData('dr Olga Lenartowicz-Warakomska', 150),
-        createData('dr Klaudia Malottki', 150)
+        createData('dr Olga Lenartowicz-Warakomska', 200),
+        createData('dr Klaudia Malottki', 200)
     ];
 
     return (
@@ -96,55 +96,13 @@ const Table16 = () => {
     );
 }
 
-// const Table15 = () => {
-//     function createData(name, price) {
-//         return { name, price };
-//     }
-
-//     const rows = [
-//         createData('Jedna okolica', 600),
-//         createData('Dwie okolice', 1000),
-//         createData('Trzy okolice', 1200)
-//     ];
-
-//     return (
-//         <TableContainer className='table-container' component={Paper}>
-//             <Table size='small' aria-label='customized table'>
-//                 <TableHead>
-//                     <TableRow>
-//                     <StyledTableCell>
-//                         Płynna toksyna ABO Liquid
-//                         {badge('Nowość')}
-//                     </StyledTableCell>
-//                     <StyledTableCell align='right'>
-//                         Cena
-//                     </StyledTableCell>
-//                     </TableRow>
-//                 </TableHead>
-//                 <TableBody>
-//                     {rows.map((row) => (
-//                         <StyledTableRow key={row.name}>
-//                             <StyledTableCell component='th' scope='row'>
-//                                 {row.name}
-//                             </StyledTableCell>
-//                             <StyledTableCell align='right'>
-//                                 {row.price}
-//                             </StyledTableCell>
-//                         </StyledTableRow>
-//                     ))}
-//                 </TableBody>
-//             </Table>
-//         </TableContainer>
-//     );
-// };
-
 const Table1 = () => {
     function createData(name, tooltip, price) {
         return { name, tooltip, price };
     }
 
     const rows = [
-        createData('Leczenie powikłań po zabiegach z zakresu medycyny estetycznej', 'Powikłania leczone po zabiegach medycyny estetycznej w innych placówkach.', 'Od 550')
+        createData('Leczenie powikłań po zabiegach z zakresu medycyny estetycznej', 'Powikłania leczone po zabiegach medycyny estetycznej wykonywanych w innych placówkach.', 'Od 1000')
     ];
 
     return (
@@ -184,19 +142,20 @@ const Table2 = () => {
     }
 
     const rows = [
-        createData('Jedna okolica',false, 500),
-        createData('Dwie okolice', false, 900),
-        createData('Trzy okolice', false, 1100),
-        createData('Okolica kurzych łapek - 30 j. toksyny botulinowej', 'Okolica to zmarszczki poprzeczne czoła, zmarszczka między brwiami i zmarszczki wokół oczu. Jeśli na wizycie wykonywana jest toksyna botulinowa na 2 okolice, tj. kurze łapki + czoło/lwia zmarszczka, wówczas do zapłaty jest 900 zł.', 500),
-        createData('Okolica kurzych łapek - 60 j. toksyny botulinowej', 'Okolica to zmarszczki poprzeczne czoła, zmarszczka między brwiami i zmarszczki wokół oczu. Jeśli na wizycie wykonywana jest toksyna botulinowa na 2 okolice, tj. kurze łapki + czoło/lwia zmarszczka, wówczas do zapłaty jest 900 zł.', 800),
-        createData('Broda',false, 300),
-        createData('Bruksizm', false, 1300),
+        createData('Zmarszczki poprzeczne czoła', false, 600),
+        createData('Zmarszczki pionowe czoła "lwia zmarszczka"', false, 600),
+        createData('Zmarszczki okolicy oczu "kurze łapki"', false, 600),
+        createData('Dwie okolice', false, 1000),
+        createData('Trzy okolice', false, 1200),
+        createData('Broda', false, 350),
+        createData('Bruksizm', false, 1500),
         createData('Uśmiech dziąsłowy', false, 500),
         createData('Korekta opadającego nosa', false, 300),
-        createData('Szyja', false, 900),
-        createData('Dekolt', false, 900),
-        createData('Leczenie nadpotliwości pach', false, 1500),
-        createData('Leczenie nadpotliwości dłoni', false, 1500)
+        createData('Szyja', false, 1200),
+        createData('Dekolt', false, 1200),
+        createData('Leczenie nadpotliwości pach', false, 1700),
+        createData('Leczenie nadpotliwości dłoni', false, 1700),
+        createData('Leczenie nadpotliwości stóp', false, 1700)
     ];
 
     return (
@@ -206,7 +165,7 @@ const Table2 = () => {
                     <TableRow>
                     <StyledTableCell className='featured'>
                         Korekcja zmarszczek mimicznych
-                        {tooltip('Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych - cena podstawowa + 20% dopłaty.')}
+                        {tooltip('Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych - cena podstawowa + 50% dopłaty.')}
                     </StyledTableCell>
                     <StyledTableCell align='right'>
                         Cena
@@ -241,13 +200,13 @@ const Table3 = () => {
         createData('Zmarszczki między brwiami (lwia zmarszczka)', 'od 1100'),
         createData('Okolica dolnej powieki (dolina łez)', 'od 1100'),
         createData('Usta - korekta konturu, korekta kształtu, powiększenie', 'od 1100'),
-        createData('Nawilżenie ust', 'od 550'),
-        createData('Okolica jarzmowa (kości policzkowe)', 'od 1100'),
-        createData('Okolica skroniowa', 'od 1100'),
-        createData('Korekta nosa', 'od 1100'),
-        createData('Korekta brody', 'od 1100'),
-        createData('Korekta brwi', 'od 1100'),
-        createData('Dłonie', 'od 1100')
+        createData('Nawilżenie ust', 'od 600'),
+        createData('Okolica jarzmowa (kości policzkowe)', 'od 1200'),
+        createData('Okolica skroniowa', 'od 1200'),
+        createData('Korekta nosa', 'od 1200'),
+        createData('Korekta brody', 'od 1200'),
+        createData('Korekta brwi', 'od 1200'),
+        createData('Dłonie', 'od 1200')
     ];
 
     return (
@@ -257,7 +216,7 @@ const Table3 = () => {
                     <TableRow>
                     <StyledTableCell className='featured'>
                         Wypełniacze na bazie kwasu hialuronowego
-                        {tooltip('Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych - cena podstawowa + 20% dopłaty.')}
+                        {tooltip('Cena zabiegu poprawkowego po zabiegach wykonanych w innych klinikach, gabinetach kosmetycznych - cena podstawowa + 50% dopłaty.')}
                     </StyledTableCell>
                     <StyledTableCell align='right'>
                         Cena
@@ -287,11 +246,12 @@ const Table4 = () => {
     }
 
     const rows = [
-        createData('Twarz', 'od 350'),
-        createData('Twarz szyja', 'od 500'),
-        createData('Twarz szyja dekolt', 'od 800'),
-        createData('Okolice oczu', 'od 300'),
-        createData('Skinbooster', 1000)
+        createData('Twarz', 'od 500'),
+        createData('Twarz szyja', 'od 1100'),
+        createData('Twarz szyja dekolt', 'od 1500'),
+        createData('Okolice oczu', 'od 400'),
+        createData('Skinbooster', 1000),
+        createData('Autorski zabieg przeciwstarzeniowy / nawilżający / rewitalizujący', 700)
     ];
 
     return (
@@ -330,13 +290,13 @@ const Table5 = () => {
     }
 
     const rows = [
-        createData('PhilArt', 1100),
-        createData('Pluryal Silk', 1200),
+        createData('PhilArt', 1200),
+        createData('PhilArt Next', 1200),
+        createData('Pluryal Silk', 1400),
         createData('Pluryal Densify', 1200),
-        createData('Pluryal Bioclassic', 1100),
-        createData('Sunekos Performa', 500),
-        createData('Kolagen (4 okolice)', 1200),
-        createData('Kolagen (cała twarz)', 700),
+        createData('Pluryal Bioclassic', 1200),
+        createData('Sunekos Performa', 700),
+        createData('Kolagen (cała twarz)', 900),
         createData('Sculptra', 2000)
     ];
 
@@ -376,8 +336,7 @@ const Table6 = () => {
     }
 
     const rows = [
-        createData('First Lift Barb 3D / 4D z haczykami', 'od 450 za jedną nić'),
-        createData('Nici mono', 'od 75 za jedną nić')
+        createData('Nici', 'od 450 za jedną nić')
     ];
 
     return (
@@ -416,7 +375,7 @@ const Table7 = () => {
     }
 
     const rows = [
-        createData('1 zabieg', 900),
+        createData('1 zabieg', 1000),
         createData('Pełna seria 4 zabiegów', 3200)
     ];
 
@@ -456,11 +415,11 @@ const Table8 = () => {
     }
 
     const rows = [
-        createData('Twarz', 800),
-        createData('Twarz, szyja lub dekolt', 1100),
-        createData('Skóra głowy', 800),
+        createData('Twarz', 1000),
+        createData('Twarz, szyja, dekolt', 1600),
+        createData('Skóra głowy', 1100),
         createData('Plasmoo', 1100),
-        createData('Fibryna', 700)
+        createData('Fibryna', 900)
     ];
 
     return (
@@ -499,8 +458,8 @@ const Table9 = () => {
     }
 
     const rows = [
-        createData('Redensity II', 1100),
-        createData('Mezoterapia (Light Eyes, NCTF, CytoCare)', 'od 300')
+        createData('Redensity II', 1200),
+        createData('Mezoterapia (Light Eyes, NCTF, CytoCare)', 'od 400')
     ];
 
     return (
@@ -510,88 +469,6 @@ const Table9 = () => {
                     <TableRow>
                     <StyledTableCell className='featured'>
                         Korekcja cieni i dołów pod oczami
-                    </StyledTableCell>
-                    <StyledTableCell align='right'>
-                        Cena
-                    </StyledTableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {rows.map((row) => (
-                        <StyledTableRow key={row.name}>
-                            <StyledTableCell component='th' scope='row'>
-                                {row.name}
-                            </StyledTableCell>
-                            <StyledTableCell align='right' className='nowrap'>
-                                {row.price}
-                            </StyledTableCell>
-                        </StyledTableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
-    );
-};
-
-const Table10 = () => {
-    function createData(name, price) {
-        return { name, price };
-    }
-
-    const rows = [
-        createData('Rystylane SkinBooster Vital 1ml', 900)
-    ];
-
-    return (
-        <TableContainer className='table-container' component={Paper} >
-            <Table size='small' aria-label='customized table'>
-                <TableHead>
-                    <TableRow>
-                    <StyledTableCell className='featured'>
-                        Hydrobalans SkinBoosters
-                    </StyledTableCell>
-                    <StyledTableCell align='right'>
-                        Cena
-                    </StyledTableCell>
-                    </TableRow>
-                </TableHead>
-                <TableBody>
-                    {rows.map((row) => (
-                        <StyledTableRow key={row.name}>
-                            <StyledTableCell component='th' scope='row'>
-                                {row.name}
-                            </StyledTableCell>
-                            <StyledTableCell align='right' className='nowrap'>
-                                {row.price}
-                            </StyledTableCell>
-                        </StyledTableRow>
-                    ))}
-                </TableBody>
-            </Table>
-        </TableContainer>
-    );
-};
-
-const Table11 = () => {
-    function createData(name, price) {
-        return { name, price };
-    }
-
-    const rows = [
-        createData('NCTF / NCTF HA 3ml', 550),
-        createData('Dermaheal HSR, SR, SB 5ml', 450),
-        createData('Stretchcare', 450),
-        createData('Jalupro', 450),
-        createData('Jalupro (oczy) + Botoks', 550)
-    ];
-
-    return (
-        <TableContainer className='table-container' component={Paper} >
-            <Table size='small' aria-label='customized table'>
-                <TableHead>
-                    <TableRow>
-                    <StyledTableCell className='featured'>
-                        Mezoterapia Igłowa
                     </StyledTableCell>
                     <StyledTableCell align='right'>
                         Cena
@@ -629,7 +506,6 @@ const Table12 = () => {
         createData('Okolica ust', 2000),
         createData('Cała twarz + okolica oczu', 4200),
         createData('Cała twarz + podbródek', 4200),
-        createData('Podbródek', 1900),
         createData('Piersi', '2800 - 4200'),
         createData('Ramiona', '2800 - 4200'),
         createData('Okolice nad kolanami', 1900),
@@ -674,18 +550,19 @@ const Table13 = () => {
     }
 
     const rows = [
-        createData('Laser frakcyjny cała twarz', 'od 800', false),
+        createData('Laser frakcyjny cała twarz', 'od 1000', false),
 
-        createData('Redukcja przebarwień na twarzy (pojedyncze przebarwienie)', 150, false),
-        createData('Redukcja przebarwień na twarzy (cała twarz)', 'od 800', false),
+        createData('Redukcja przebarwień na twarzy (pojedyncze przebarwienie)', 200, false),
+        createData('Redukcja przebarwień na czole', 600, false),
+        createData('Redukcja przebarwień na twarzy (cała twarz)', 'od 1000', false),
 
         createData('Likwidacja rumienia na twarzy (policzki)', 'od 600', false),
-        createData('Likwidacja rumienia na twarzy (cała twarz)', 'do 800', false),
+        createData('Likwidacja rumienia na twarzy (cała twarz)', 'do 1000', false),
 
-        createData('Zamykanie naczynek - nos', 'od 200', 'Dokładną cenę ustala lekarz.'),
-        createData('Zamykanie naczyń na kończynach dolnych', 'od 200', 'Dokładną cenę ustala lekarz.'),
-        createData('Blizny potrądzikowe', 'od 200', 'Dokładną cenę ustala lekarz.'),
-        createData('Rozstępy, blizny', 'od 200', 'Dokładną cenę ustala lekarz.')
+        createData('Zamykanie naczynek - nos', 'od 350', 'Dokładną cenę ustala lekarz.'),
+        createData('Zamykanie naczyń na kończynach dolnych', 'od 300', 'Dokładną cenę ustala lekarz.'),
+        createData('Blizny potrądzikowe', 'od 400', 'Dokładną cenę ustala lekarz.'),
+        createData('Rozstępy, blizny', 'od 400', 'Dokładną cenę ustala lekarz.')
     ];
 
     return (
@@ -726,16 +603,16 @@ const Table14 = () => {
 
     const rows = [
         createData('Oczy', 600, false),
-        createData('Policzki', 600, false),
-        createData('Cała twarz', 1000, false),
+        createData('Policzki', 800, false),
+        createData('Cała twarz', 1300, false),
         createData('Cała twarz + oczy', 1200, false),
-        createData('Cała twarz + szyja', 1500, false),
-        createData('Cała twarz + szyja + dekolt', 1800, false),
-        createData('Dekolt', 800, false),
+        createData('Cała twarz + szyja', 1800, false),
+        createData('Cała twarz + szyja + dekolt', 2000, false),
+        createData('Dekolt', 1000, false),
         createData('Szyja + dekolt', 1400),
-        createData('Blizny potrądzikowe', 'od 300', 'Dokładną cenę ustala lekarz.'),
+        createData('Blizny potrądzikowe', 'od 500', 'Dokładną cenę ustala lekarz.'),
         createData('Rozstępy', 'od 1000', 'Dokładną cenę ustala lekarz.'),
-        createData('Usuwanie znamion', 'od 300', 'Dokładną cenę ustala lekarz.')
+        createData('Usuwanie znamion', 'od 450', 'Dokładną cenę ustala lekarz.')
     ];
 
     return (
@@ -777,7 +654,6 @@ const PricesAestheticMedicinePartial = () => {
     return (
         <Box display='grid' gap={'15px'}>
             <Table16 />
-            {/* <Table15 /> */}
             <Table1 />
             <Table2 />
             <Table3 />
@@ -787,8 +663,6 @@ const PricesAestheticMedicinePartial = () => {
             <Table7 />
             <Table8 />
             <Table9 />
-            <Table10 />
-            <Table11 />
             <Table12 />
             <Table13 />
             <Table14 />

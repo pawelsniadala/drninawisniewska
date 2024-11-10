@@ -37,11 +37,11 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja dr n. med. Tomasz Matuszewski', 200),
-        createData('Płatkowe testy kontaktowe', 350),
-        createData('Testy skórne', 150),
-        createData('Odczulanie', 60),
-        createData('Konsultacja pediatryczna', 200),
+        createData('Konsultacja dr n. med. Tomasz Matuszewski', 250),
+        createData('Płatkowe testy kontaktowe', 400),
+        createData('Testy skórne', 200),
+        createData('Odczulanie', 80),
+        createData('Konsultacja pediatryczna', 250),
     ];
 
     return (

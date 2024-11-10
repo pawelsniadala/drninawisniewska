@@ -56,7 +56,6 @@ const Table1 = () => {
 
     const rows = [
         createData('dr n. med. Nina Wiśniewska', 300),
-        createData('lek. med. Katarzyna Zbrońska', 250),
         createData('lek. med. Aldona Maciąg', 250),
         createData('lek. med. Paulina Tatara', 200),
         createData('lek. med. Justyna Kłoniecka', 200),
@@ -100,21 +99,20 @@ const Table2 = () => {
     }
 
     const rows = [
-        createData('Konsultacja trychologiczna', false, 250),
-        createData('Ostrzyknięcie sterydem', false, 200),
-        createData('Badanie dermatoskopowe zmian skórnych (całe ciało) ', false, 250),
-        createData('Wideodermatoskopia', false, 350),
-        createData('Założenie płatkowych testów kontaktowych, zdjęcie, odczyt i lista alergenów (36 Alergenów)', false, 350),
-        createData('Fototerapia lampa UVB 311 nm - 16 zabiegów ', false, 350),
-        createData('Fototerapia PUVA (dłonie) - 6 zabiegów', false, 200),
-        createData('Fototerapia PUVA (stopy) - 6 zabiegów', false, 200),
+        createData('Konsultacja trychologiczna', false, 300),
+        createData('Ostrzyknięcie sterydem', false, 350),
+        createData('Badanie dermatoskopowe zmian skórnych (całe ciało) ', false, 300),
+        createData('Wideodermatoskopia', false, 500),
+        createData('Założenie płatkowych testów kontaktowych, zdjęcie, odczyt i lista alergenów (36 Alergenów)', false, 400),
+        createData('Fototerapia lampa UVB 311 nm - 16 zabiegów ', false, 400),
+        createData('Fototerapia PUVA (dłonie) - 6 zabiegów', false, 250),
+        createData('Fototerapia PUVA (stopy) - 6 zabiegów', false, 250),
         createData('Fototerapia PUVA (dłonie + stopy) - 12 zabiegów', false, 400),
-        // createData('Wycięcie zmiany barwnikowej (1 zmiana) + badanie histopatologiczne', false, 450),
-        createData('Chirurgiczne wycięcie zmiany barwnikowej', false, 400),
-        createData('Badanie histopatologiczne (1 zmiana)', false, 65),
-        createData('Biopsja skóry + badanie histopatologiczne ', false, 320),
+        createData('Chirurgiczne wycięcie zmiany barwnikowej', 'Dokładną cenę ustala lekarz.', 'od 600'),
+        createData('Badanie histopatologiczne (1 zmiana)', false, 70),
+        createData('Biopsja skóry + badanie histopatologiczne ', false, 400),
         createData('Usunięcie zmian skórnych elektrochirurgicznie ', false, 'od 300'),
-        createData('kolejne na tej samej wizycie', 'Powyżej 10 zmian skórnych cenę ustala lekarz.', 50)
+        createData('kolejne na tej samej wizycie', 'Powyżej 10 zmian skórnych cenę ustala lekarz.', 100)
     ];
 
     return (

@@ -37,9 +37,9 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja kardiologiczna', 200),
-        createData('ECHO serca', 200),
-        createData('EKG z opisem', 60)
+        createData('Konsultacja kardiologiczna', 250),
+        createData('ECHO serca', 250),
+        createData('Opis badania EKG', 100)
     ];
 
     return (

@@ -209,8 +209,6 @@ const PageTitle = ({ children }) => {
                 return `Aldona Maciąg - ${companyName}`;
             case '/team/dermatology/paulina-tatara':
                 return `Paulina Tatara - ${companyName}`;
-            case '/team/dermatology/katarzyna-zbronska':
-                return `Katarzyna Zbrońska - ${companyName}`;
             case '/team/dermatology/katarzyna-rychlik':
                 return `Katarzyna Rychlik - ${companyName}`;
 

@@ -177,7 +177,6 @@ export const badanieZnamionBarwnikowych = {
         'aldona-maciag',
         'katarzyna-mysliwiec-czajka',
         'paulina-tatara',
-        'katarzyna-zbronska',
         'katarzyna-rychlik'
     ],
     career: [
@@ -208,7 +207,6 @@ export const fototerapiaChorobSkory = {
         'aldona-maciag',
         'katarzyna-mysliwiec-czajka',
         'paulina-tatara',
-        'katarzyna-zbronska',
         'katarzyna-rychlik'
     ],
     career: [
@@ -238,7 +236,6 @@ export const usuniecieZmianSkornychElektrochirurgiczne = {
         'aldona-maciag',
         'katarzyna-mysliwiec-czajka',
         'paulina-tatara',
-        'katarzyna-zbronska'
     ],
     career: [
         'dermatologist'
@@ -363,11 +360,9 @@ export const modelowanieUst = {
         'aesthetic-medicine'
     ],
     specialist: [
-        // 'nina-wisniewska',
         'klaudia-malottki',
         'paulina-tatara',
-        'olga-lenartowicz-warakomska',
-        'katarzyna-zbronska'
+        'olga-lenartowicz-warakomska'
     ]
 };
 
@@ -428,11 +423,9 @@ export const toksynaBotulinowa = {
         'aesthetic-medicine'
     ],
     specialist: [
-        // 'nina-wisniewska',
         'klaudia-malottki',
         'paulina-tatara',
-        'olga-lenartowicz-warakomska',
-        'katarzyna-zbronska'
+        'olga-lenartowicz-warakomska'
     ]
 };
 
@@ -455,8 +448,7 @@ export const stymulatoryTkankowe = {
     specialist: [
         'klaudia-malottki',
         'paulina-tatara',
-        'olga-lenartowicz-warakomska',
-        'katarzyna-zbronska'
+        'olga-lenartowicz-warakomska'
     ]
 };
 
@@ -478,8 +470,7 @@ export const osoczeBogatoplytkowe = {
     specialization: ['aesthetic-medicine'],
     specialist: [
         'klaudia-malottki',
-        'olga-lenartowicz-warakomska',
-        'katarzyna-zbronska'
+        'olga-lenartowicz-warakomska'
     ]
 };
 
@@ -532,7 +523,6 @@ export const laserFrakcyjny = {
         'klaudia-malottki',
         'paulina-tatara',
         'olga-lenartowicz-warakomska',
-        'katarzyna-zbronska',
         'karolina-zegota'
     ]
 };
@@ -579,11 +569,9 @@ export const mezoterapiaIglowa = {
         'aesthetic-medicine'
     ],
     specialist: [
-        // 'nina-wisniewska',
         'klaudia-malottki',
         'paulina-tatara',
-        'olga-lenartowicz-warakomska',
-        'katarzyna-zbronska'
+        'olga-lenartowicz-warakomska'
     ]
 };
 
@@ -648,7 +636,6 @@ export const zamykanieNaczynekILikwidacjaPrzebarwien = {
         'klaudia-malottki',
         'paulina-tatara',
         'olga-lenartowicz-warakomska',
-        'katarzyna-zbronska',
         'karolina-zegota'
     ]
 };
@@ -673,8 +660,7 @@ export const sonoQueenTechnologiaHifu = {
     ],
     specialist: [
         'klaudia-malottki',
-        'olga-lenartowicz-warakomska',
-        'katarzyna-zbronska'
+        'olga-lenartowicz-warakomska'
     ]
 };
 

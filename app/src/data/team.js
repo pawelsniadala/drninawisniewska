@@ -8,7 +8,6 @@ import klaudiaMalottkiImage from '../assets/team/klaudiaMalottki/klaudiaMalottki
 import aldonaMaciagImage from '../assets/team/aldonaMaciag/aldonaMaciagImage.jpg';
 import milenaJuzwiakImage from '../assets/team/milenaJuzwiak/milenaJuzwiakImage.jpg';
 import karinaKwiatkowskaImage from '../assets/team/karinaKwiatkowska/karinaKwiatkowskaImage.jpg';
-import katarzynaZbronskaImage from '../assets/team/katarzynaZbronska/katarzynaZbronskaImage.jpg';
 import tomaszMatuszewskiImage from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImage.jpg';
 import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowskiImage.jpg';
 import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
@@ -333,39 +332,6 @@ export const olgaLenartowiczWarakomska = {
     ]
 };
 
-export const katarzynaZbronska = {
-    id: 'e48dc37a-0c66-4749-986c-f180849dc44c',
-    specialist: 'katarzyna-zbronska',
-    name: 'lek. med. Katarzyna Zbrońska',
-    speciality: 'Dermatolog, trycholog',
-    summary: false,
-    education: 'Absolwentka I Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego. Obecnie pracuje w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie. Jest członkiem Sekcji Dermatologii Onkologicznej Polskiego Towarzystwa Dermatologicznego oraz International Trichoscopy Society.',
-    experience: 'Do jej głównych zainteresowań zawodowych należą choroby skóry owłosionej, diagnostyka trichoskopowa i leczenie różnych typów łysienia przy użyciu odpowiednio dobranych technik medycyny regeneracyjnej. Doświadczenie w zakresie medycyny estetycznej zdobywała pod okiem najlepszych specjalistów, a swoje kwalifikacje stale poszerza biorąc udział w licznych kursach, szkoleniach i kongresach. Podczas planowania leczenia stawia na subtelność i naturalne podkreślenie indywidualnych atutów. Poza zabiegami z użyciem toksyny botulinowej, kwasu hialuronowego i laseroterapii, zajmuje się usuwaniem znamion metodą dermatochirurgiczną. Specjalizuje się również w wykonywaniu zabiegów z użyciem osocza bogatopłytkowego oraz technologii HIFU-SonoQueen.',
-    interested: false,
-    image: katarzynaZbronskaImage,
-    background: null,
-    specialization: [
-        'dermatology',
-        'aesthetic-medicine'
-    ],
-    treatment: [
-        'badanie-znamion-barwnikowych',
-        'fototerapia-chorob-skory',
-        'usuniecie-zmian-skornych-elektrochirurgiczne',
-        'modelowanie-ust',
-        'toksyna-botulinowa',
-        'stymulatory-tkankowe',
-        'osocze-bogatoplytkowe',
-        'mezoterapia-iglowa',
-        'laser-frakcyjny',
-        'zamykanie-naczynek-i-likwidacja-przebarwien',
-        'sonoqueen-technologia-hifu'
-    ],
-    career: [
-        'dermatologist'
-    ]
-};
-
 export const joannaOjrzenska = {
     id: '45cfadf1-1d6c-42be-96e2-b8ddd6469a10',
     specialist: 'joanna-ojrzenska',
@@ -582,7 +548,6 @@ export const team = [
     { ...paulinaTatara },
     { ...tomaszMatuszewski },
     { ...olgaLenartowiczWarakomska },
-    { ...katarzynaZbronska },
     { ...katarzynaRychlik },
     { ...michalRadzio },
     { ...kajaStrojnowskaLapinska },

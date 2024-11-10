@@ -100,7 +100,6 @@ export const dermatology = {
         'justyna-kloniecka',
         'katarzyna-mysliwiec-czajka',
         'paulina-tatara',
-        'katarzyna-zbronska',
         'katarzyna-rychlik'
     ],
     relatedSpecializations: [
@@ -129,7 +128,6 @@ export const aestheticMedicine = {
         }
     ],
     specialists: [
-        // ninaWisniewskaImageSmall,
         konradKochanImageSmall,
         klaudiaMalottkiImageSmall,
         paulinaTataraImageSmall,
@@ -137,12 +135,10 @@ export const aestheticMedicine = {
         katarzynaZbronskaImageSmall
     ],
     specialists2: [
-        // 'nina-wisniewska',
         'konrad-kochan',
         'klaudia-malottki',
         'paulina-tatara',
-        'olga-lenartowicz-warakomska',
-        'katarzyna-zbronska'
+        'olga-lenartowicz-warakomska'
     ],
     relatedSpecializations: [
         'dermatology',
