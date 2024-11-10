@@ -53,7 +53,6 @@ import klaudiaMalottkiImageSmall from '../assets/team/klaudiaMalottki/klaudiaMal
 import aldonaMaciagImageSmall from '../assets/team/aldonaMaciag/aldonaMaciagImageSmall.jpg';
 import milenaJuzwiakImageSmall from '../assets/team/milenaJuzwiak/milenaJuzwiakImageSmall.jpg';
 import karinaKwiatkowskaImageSmall from '../assets/team/karinaKwiatkowska/karinaKwiatkowskaImageSmall.jpg';
-import katarzynaZbronskaImageSmall from '../assets/team/katarzynaZbronska/katarzynaZbronskaImageSmall.jpg';
 import tomaszMatuszewskiImageSmall from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImageSmall.jpg';
 import kamilStepkowskiImageSmall from '../assets/team/kamilStepkowski/kamilStepkowskiImageSmall.jpg';
 import olgaLenartowiczWarakomskaImageSmall from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImageSmall.jpg';
@@ -91,7 +90,6 @@ export const dermatology = {
         justynaKlonieckaImageSmall,
         aldonaMaciagImageSmall,
         paulinaTataraImageSmall,
-        katarzynaZbronskaImageSmall,
         katarzynaRychlikImageSmall
     ],
     specialists2: [
@@ -131,8 +129,7 @@ export const aestheticMedicine = {
         konradKochanImageSmall,
         klaudiaMalottkiImageSmall,
         paulinaTataraImageSmall,
-        olgaLenartowiczWarakomskaImageSmall,
-        katarzynaZbronskaImageSmall
+        olgaLenartowiczWarakomskaImageSmall
     ],
     specialists2: [
         'konrad-kochan',
