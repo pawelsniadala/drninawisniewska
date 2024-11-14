@@ -8,6 +8,7 @@ import specialOffer7 from '../assets/specialOffer/specialOffer7.jpg';
 import specialOffer8 from '../assets/specialOffer/specialOffer8.jpg';
 import specialOffer9 from '../assets/specialOffer/specialOffer9.jpg';
 import specialOffer10 from '../assets/specialOffer/specialOffer10.jpg';
+import specialOffer11 from '../assets/specialOffer/specialOffer11.jpg';
 
 export const article1 = {
     image: specialOffer1,
@@ -119,7 +120,19 @@ export const article10 = {
     description5: '',
 };
 
+export const article11 = {
+    image: specialOffer11,
+    title: 'Black month',
+    date: '14 Listopada 2024',
+    description1: '🖤 Laser frakcyjny -20% (redukcja blizn, redukcja zmarszczek, resurfacing skóry) *Rabat naliczany jest przy zabiegach wykonanych na całą twarz / szyję / dekolt 🔷 Laser naczyniowy / na przebarwienia -20% *Rabat naliczany jest przy zabiegach wykonanych na całą twarz / szyję / dekolt 🔷 Epilacja laserowa -20% 🔷 Zabieg oczyszczająco - biostymulujący na twarz *300zł zamiast 350zł (Najniższa cena z ostatnich 30 dni - 350 zł) 🔷 Peelingi medyczne -20% 🔷 Masaż próżniowy -30% 🔷 Ultradźwięki + Fala radiowa -50%',
+    description2: 'Regulamin❗Oferta ważna od 18.11.2024 do 31.12.2024❗Aby skorzystać z oferty należy dokonać płatności z góry❗Zabiegi wykonywane są w wybrane dni przez wybranych specjalistów.',
+    description3: '',
+    description4: '',
+    description5: '',
+};
+
 export const specialOffer = [
+    { ...article11 },
     { ...article10 },
     { ...article9 },
     { ...article8 },

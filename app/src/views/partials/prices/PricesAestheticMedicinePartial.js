@@ -196,10 +196,10 @@ const Table3 = () => {
     }
 
     const rows = [
-        createData('Bruzdy nosowo-wargowe', 'od 1100'),
-        createData('Zmarszczki między brwiami (lwia zmarszczka)', 'od 1100'),
-        createData('Okolica dolnej powieki (dolina łez)', 'od 1100'),
-        createData('Usta - korekta konturu, korekta kształtu, powiększenie', 'od 1100'),
+        createData('Bruzdy nosowo-wargowe', 'od 1200'),
+        createData('Zmarszczki między brwiami (lwia zmarszczka)', 'od 1200'),
+        createData('Okolica dolnej powieki (dolina łez)', 'od 1200'),
+        createData('Usta - korekta konturu, korekta kształtu, powiększenie', 'od 1200'),
         createData('Nawilżenie ust', 'od 600'),
         createData('Okolica jarzmowa (kości policzkowe)', 'od 1200'),
         createData('Okolica skroniowa', 'od 1200'),
@@ -375,7 +375,7 @@ const Table7 = () => {
     }
 
     const rows = [
-        createData('1 zabieg', 1000),
+        createData('1 zabieg', 1100),
         createData('Pełna seria 4 zabiegów', 3200)
     ];
 
@@ -598,14 +598,13 @@ const Table13 = () => {
 
 const Table14 = () => {
     function createData(name, price, tooltip) {
-        return { name, price, tooltip};
+        return { name, price, tooltip };
     }
 
     const rows = [
         createData('Oczy', 600, false),
         createData('Policzki', 800, false),
         createData('Cała twarz', 1300, false),
-        createData('Cała twarz + oczy', 1200, false),
         createData('Cała twarz + szyja', 1800, false),
         createData('Cała twarz + szyja + dekolt', 2000, false),
         createData('Dekolt', 1000, false),
