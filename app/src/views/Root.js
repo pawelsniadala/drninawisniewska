@@ -32,7 +32,6 @@ import ServicesGynecologyPartial from './partials/services/ServicesGynecologyPar
 import ServicesOrthopedicsPartial from './partials/services/ServicesOrthopedicsPartial';
 import ServicesVascularSurgeryPartial from './partials/services/ServicesVascularSurgeryPartial';
 import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
-import ServicesRheumatologyPartial from './partials/services/ServicesRheumatologyPartial';
 import ServicesCardiologyPartial from './partials/services/ServicesCardiologyPartial';
 import ServicesPsychiatryPartial from './partials/services/ServicesPsychiatryPartial';
 
@@ -67,8 +66,6 @@ import TreatmentUltradzwiekiIFalaRadiowaPartial from './partials/treatment/cosme
 import TreatmentRehabilitacjaPartial from './partials/treatment/physioterapy/TreatmentRehabilitacjaPartial';
 import TreatmentMasazPartial from './partials/treatment/physioterapy/TreatmentMasazPartial';
 import TreatmentKinesiotapingPartial from './partials/treatment/physioterapy/TreatmentKinesiotapingPartial';
-import TreatmentMasazKobidoPartial from './partials/treatment/physioterapy/TreatmentMasazKobidoPartial';
-import TreatmentMasazNaturalFaceLiftingPartial from './partials/treatment/physioterapy/TreatmentMasazNaturalFaceLiftingPartial';
 
 // chirurgia plastyczna
 import TreatmentPlastykaPowiekPartial from './partials/treatment/cosmeticSurgery/TreatmentPlastykaPowiekPartial';
@@ -102,7 +99,6 @@ import PricesGynecologyPartial from './partials/prices/PricesGynecologyPartial';
 import PricesOrthopedicsPartial from './partials/prices/PricesOrthopedicsPartial';
 import PricesVascularSurgeryPartial from './partials/prices/PricesVascularSurgeryPartial';
 import PricesClinicalDietitianPartial from './partials/prices/PricesClinicalDietitianPartial';
-import PricesRheumatologyPartial from './partials/prices/PricesRheumatologyPartial';
 import PricesCardiologyPartial from './partials/prices/PricesCardiologyPartial';
 import PricesPsychiatryPartial from './partials/prices/PricesPsychiatryPartial';
 
@@ -175,7 +171,6 @@ const Root = () => (
                     <Route path='/services/orthopedics' element={<ServicesOrthopedicsPartial />} />
                     <Route path='/services/vascular-surgery' element={<ServicesVascularSurgeryPartial />} />
                     <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial />} />
-                    <Route path='/services/rheumatology' element={<ServicesRheumatologyPartial />} />
                     <Route path='/services/cardiology' element={<ServicesCardiologyPartial />} />
                     <Route path='/services/psychiatry' element={<ServicesPsychiatryPartial />} />
 
@@ -211,8 +206,6 @@ const Root = () => (
                     <Route path='/treatment/physioterapy/rehabilitacja' element={<TreatmentRehabilitacjaPartial />} />
                     <Route path='/treatment/physioterapy/masaz' element={<TreatmentMasazPartial />} />
                     <Route path='/treatment/physioterapy/kinesiotaping' element={<TreatmentKinesiotapingPartial />} />
-                    <Route path='/treatment/physioterapy/masaz-kobido' element={<TreatmentMasazKobidoPartial />} />
-                    <Route path='/treatment/physioterapy/masaz-natural-face-lifting' element={<TreatmentMasazNaturalFaceLiftingPartial />} />
 
                     {/* chirurgia plastyczna */}
                     <Route path='/treatment/cosmetic-surgery/plastyka-powiek' element={<TreatmentPlastykaPowiekPartial />} />
@@ -247,7 +240,6 @@ const Root = () => (
                         <Route path='/prices/orthopedics' element={<PricesOrthopedicsPartial />} />
                         <Route path='/prices/vascular-surgery' element={<PricesVascularSurgeryPartial />} />
                         <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartial />} />
-                        <Route path='/prices/rheumatology' element={<PricesRheumatologyPartial />} />
                         <Route path='/prices/cardiology' element={<PricesCardiologyPartial />} />
                         <Route path='/prices/psychiatry' element={<PricesPsychiatryPartial />} />
                     </Route>

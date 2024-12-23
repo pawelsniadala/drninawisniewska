@@ -7,13 +7,11 @@ import katarzynaMysliwiecCzajkaImage from '../assets/team/katarzynaMysliwiecCzaj
 import klaudiaMalottkiImage from '../assets/team/klaudiaMalottki/klaudiaMalottkiImage.jpg';
 import aldonaMaciagImage from '../assets/team/aldonaMaciag/aldonaMaciagImage.jpg';
 import milenaJuzwiakImage from '../assets/team/milenaJuzwiak/milenaJuzwiakImage.jpg';
-import karinaKwiatkowskaImage from '../assets/team/karinaKwiatkowska/karinaKwiatkowskaImage.jpg';
 import tomaszMatuszewskiImage from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImage.jpg';
 import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowskiImage.jpg';
 import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
 import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
 import joannaOjrzenskaImage from '../assets/team/joannaOjrzenska/joannaOjrzenskaImage.jpg';
-import agataSkwerekSzewczykImage from '../assets/team/agataSkwerekSzewczyk/agataSkwerekSzewczykImage.jpg';
 import katarzynaRychlikImage from  '../assets/team/katarzynaRychlik/katarzynaRychlikImage.jpg';
 import patrykKrokwinskiImage from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImage.jpg';
 import michalRadzioImage from  '../assets/team/michalRadzio/michalRadzioImage.jpg';
@@ -21,6 +19,7 @@ import kajaStrojnowskaLapinskaImage from  '../assets/team/kajaStrojnowskaLapinsk
 import jadwigaDowgialloSmolarczykImage from  '../assets/team/jadwigaDowgialloSmolarczyk/jadwigaDowgialloSmolarczykImage.jpg';
 import karolinaZegotaImage from '../assets/team/karolinaZegota/karolinaZegotaImage.jpg';
 import hannaAndrusevichImage from '../assets/team/hannaAndrusevich/hannaAndrusevichImage.jpg';
+import karolPniewskiImage from  '../assets/team/karolPniewski/karolPniewskiImage.jpg';
 // import teamBackground from '../assets/team/teamBackground.jpg';
 
 export const ninaWisniewska = {
@@ -95,23 +94,6 @@ export const konradKochan = {
     treatment: [
         'plastyka-powiek'
     ]
-};
-
-export const agataSkwerekSzewczyk = {
-    id: '6fb054ca-430a-488d-8c43-31bf5f58911c',
-    specialist: 'agata-skwerek-szewczyk',
-    name: 'lek. med. Agata Skwerek Szewczyk',
-    speciality: 'Reumatolog',
-    summary: false,
-    education: 'Specjalista Chorób Wewnętrznych i Reumatologii. Absolwentka Warszawskiego Uniwersytetu Medycznego i Wydziału Zarządzania Uniwersytetu Warszawskiego. W 2016 roku zdałam egzamin specjalizacyjny w zakresie Chorób Wewnętrznych.',
-    experience: 'Od 2011 pracuję jako lekarz, obecnie starszy asystent w Klinice Chorób Wewnętrznych i Endokrynologii Centralnego Szpitala Klinicznego Warszawskiego Uniwersytetu Medycznego przy ul. Banacha. Jestem współautorem wielu publikacji w zakresie zaburzeń gospodarki wapniowo-fosforanowej. Od 2019 r. jestem również specjalistą Reumatologiem. Specjalizację odbywałam w Klinice Wczesnego Zapalenia Stawów Narodowego Instytutu Reumatologii i Geriatrii w Warszawie. Prywatnie żona i mama 2 wspaniałych chłopców.',
-    interested: false,
-    image: agataSkwerekSzewczykImage,
-    background: null,
-    specialization: [
-        'rheumatology'
-    ],
-    treatment: ['']
 };
 
 export const aldonaMaciag = {
@@ -231,26 +213,6 @@ export const milenaJuzwiak = {
         'rehabilitacja',
         'masaz',
         'kinesiotaping'
-    ]
-};
-
-export const karinaKwiatkowska = {
-    id: '374db991-54bf-4079-ab32-3cff83245431',
-    specialist: 'karina-kwiatkowska',
-    name: 'mgr Karina Kwiatkowska',
-    speciality: 'Fizjoterapeuta',
-    summary: false,
-    education: 'Jestem magistrem fizjoterapii oraz masażystką z zamiłowaniem i pasją do poprawy wyglądu oraz samopoczucia innych. Szczególnym zainteresowaniem darzę pracę z ludzką twarzą oraz szyjnym odcinkiem kręgosłupa. Swoje wykształcenie zawdzięczam studiom na kierunku "Fizjoterapia" w Wyższej Szkole Rehabilitacji w Warszawie, oraz licznym kursom takim jak kurs masażu Kobido Lift, masażu Natural Face Lifting, oraz kursu z Fizjoterapii Estetycznej Twarzy.',
-    experience: 'Swoją pracą dążę do poprawy samopoczucia i samoakceptacji u moich klientów, dlatego stale poszerzam swoją wiedzę z dziedziny masażu i fizjoterapii. Wierzę, że masaż nie tylko potrafi rozluźnić nasze mięśnie i zrelaksować, ale również sprawić, że nasza twarz nabierze promiennego wyglądu, będzie wyglądała młodziej, o czym przekonały się już klientki, które zdecydowały się wykonać u mnie masaże twarzy.',
-    interested: false,
-    image: karinaKwiatkowskaImage,
-    background: null,
-    specialization: [
-        'physioterapy'
-    ],
-    treatment: [
-        'masaz-kobido',
-        'masaz-natural-face-lifting'
     ]
 };
 
@@ -533,18 +495,34 @@ export const patrykKrokwinski = {
     treatment: ['']
 };
 
+export const karolPniewski = {
+    id: 'a323da55-1bfd-4d06-8eb5-d5a1ca3369d9',
+    specialist: 'karol-pniewski',
+    name: 'Lek. med.  Karol Pniewski',
+    speciality: 'Dermatolog, lekarz medycyny estetycznej',
+    summary: false,
+    education: 'Lekarz medycyny estetycznej, w trakcie specjalizacji z dermatologii i wenerologii. Absolwent anglojęzycznego Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego.',
+    experience: 'Doświadczenie kliniczne zdobywał również podczas wymiany naukowej na Uniwersytecie Reya Juana Carlosa w Madrycie. Uczestnik wielu krajowych i międzynarodowych konferencji naukowych z zakresu medycyny estetycznej m.in. Aesthetic & Anti-Aging Medicine World Congress w Monte Carlo czy International Master Course on Aging Science w Paryżu. Uzyskał certyfikację prestiżowej francuskiej organizacji chirurgów plastycznych IUFC. Aktywny wykładowca konferencji naukowych z zakresu dermatologii i medycyny estetycznej. Dr Karol Pniewski stale podnosi swoje umiejętności uczestnicząc w licznych kursach i szkoleniach. Specjalizuje się w niechirurgicznych technikach liftingujących twarzy i poprawie jakości skóry przy użyciu kwasu hialuronowego, biostymulatorów tkankowych, mezoterapii oraz laseroterapii. Znany wśród pacjentek z perfekcyjnych zabiegów z zastosowaniem toksyny botulinowej. Posiada doświadczenie kliniczne w zakresie leczenia chorób skóry, w szczególności dermatoz zapalnych takich jak łuszczyca, AZS, trądzik.',
+    interested: false,
+    image: karolPniewskiImage,
+    background: null,
+    specialization: [
+        'dermatology',
+        'aesthetic-medicine'
+    ],
+    treatment: ['']
+};
+
 export const team = [
     { ...ninaWisniewska },
     { ...paulinaSot },
     { ...konradKochan },
-    { ...agataSkwerekSzewczyk },
     { ...aldonaMaciag },
     { ...justynaKloniecka },
     { ...joannaOjrzenska },
     { ...klaudiaMalottki },
     { ...katarzynaMysliwiecCzajka },
     { ...milenaJuzwiak },
-    { ...karinaKwiatkowska },
     { ...paulinaTatara },
     { ...tomaszMatuszewski },
     { ...olgaLenartowiczWarakomska },
@@ -556,5 +534,6 @@ export const team = [
     { ...wojciechKaszewski },
     { ...hannaAndrusevich },
     { ...kamilStepkowski },
-    { ...patrykKrokwinski }
+    { ...patrykKrokwinski },
+    { ...karolPniewski }
 ];

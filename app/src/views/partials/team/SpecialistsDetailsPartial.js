@@ -24,12 +24,10 @@ import {
     justynaKloniecka,
     aldonaMaciag,
     milenaJuzwiak,
-    karinaKwiatkowska,
     paulinaTatara,
     tomaszMatuszewski,
     olgaLenartowiczWarakomska,
     joannaOjrzenska,
-    agataSkwerekSzewczyk,
     kamilStepkowski,
     katarzynaRychlik,
     patrykKrokwinski,
@@ -37,7 +35,8 @@ import {
     kajaStrojnowskaLapinska,
     jadwigaDowgialloSmolarczyk,
     karolinaZegota,
-    hannaAndrusevich
+    hannaAndrusevich,
+    karolPniewski,
 } from '../../../data/team';
 
 const SpecialistsDetailsPartial = () => {
@@ -72,8 +71,6 @@ const SpecialistsDetailsPartial = () => {
                 return 'Chirurgia naczyniowa';
             case 'clinical-dietitian':
                 return 'Dietetyka Kliniczna';
-            case 'rheumatology':
-                return 'Reumatologia';
             case 'cardiology':
                 return 'Kardiologia';
             case 'psychiatry':
@@ -102,8 +99,6 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...aldonaMaciag }];
             case 'milena-juzwiak':
                 return [{ ...milenaJuzwiak }];
-            case 'karina-kwiatkowska':
-                return [{ ...karinaKwiatkowska }];
             case 'paulina-tatara':
                 return [{ ...paulinaTatara }];
             case 'tomasz-matuszewski':
@@ -112,8 +107,6 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...olgaLenartowiczWarakomska }];
             case 'joanna-ojrzenska':
                 return [{ ...joannaOjrzenska }];
-            case 'agata-skwerek-szewczyk':
-                return [{ ...agataSkwerekSzewczyk }];
             case 'kamil-stepkowski':
                 return [{ ...kamilStepkowski }];
             case 'katarzyna-rychlik':
@@ -130,6 +123,8 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...karolinaZegota }];
             case 'hanna-andrushevich':
                 return [{ ...hannaAndrusevich }];
+            case 'karol-pniewski':
+                return [{ ...karolPniewski }];
             default:
         }
     }

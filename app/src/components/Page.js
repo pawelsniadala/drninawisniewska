@@ -50,8 +50,6 @@ const PageTitle = ({ children }) => {
                 return `Chirurgia naczyniowa - ${companyName}`;
             case '/services/clinical-dietitian':
                 return `Dietetyka Kliniczna - ${companyName}`;
-            case '/services/rheumatology':
-                return `Reumatologia - ${companyName}`;
             case '/services/cardiology':
                 return `Kardiologia - ${companyName}`;
             case '/services/psychiatry':
@@ -112,10 +110,6 @@ const PageTitle = ({ children }) => {
                 return `Masaż - ${companyName}`;
             case '/treatment/physioterapy/kinesiotaping':
                 return `Kinesiotaping - ${companyName}`;
-            case '/treatment/physioterapy/masaz-kobido':
-                return `Masaż Kobido - ${companyName}`;
-            case '/treatment/physioterapy/masaz-natural-face-lifting':
-                return `Masaż Natural Face Lifting - ${companyName}`;
 
             // chirurgia plastyczna
             case '/treatment/cosmetic-surgery':
@@ -211,6 +205,8 @@ const PageTitle = ({ children }) => {
                 return `Paulina Tatara - ${companyName}`;
             case '/team/dermatology/katarzyna-rychlik':
                 return `Katarzyna Rychlik - ${companyName}`;
+            case '/team/dermatology/karol-pniewski':
+                return `Karol Pniewski - ${companyName}`;
 
             // medycyna estetyczna
             case '/team/aesthetic-medicine':
@@ -225,6 +221,8 @@ const PageTitle = ({ children }) => {
                 return `Paulina Tatara - ${companyName}`;
             case '/team/aesthetic-medicine/olga-lenartowicz-warakomska':
                 return `Olga Lenartowicz-Warakomska - ${companyName}`;
+            case '/team/aesthetic-medicine/karol-pniewski':
+                return `Karol Pniewski - ${companyName}`;
 
             // kosmetologia
             case '/team/cosmetology':
@@ -239,8 +237,6 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/physioterapy/milena-juzwiak':
                 return `Milena Juźwiak - ${companyName}`;
-            case '/team/physioterapy/karina-kwiatkowska':
-                return `Karina Kwiatkowska - ${companyName}`;
 
             // chirurgia plastyczna
             case '/team/cosmetic-surgery':
@@ -297,12 +293,6 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/clinical-dietitian/joanna-ojrzenska':
                 return `Joanna Ojrzeńska - ${companyName}`;
-
-            // reumatologia
-            case '/team/rheumatology':
-                return `Specjaliści - ${companyName}`;
-            case '/team/rheumatology/agata-skwerek-szewczyk':
-                return `Agata Skwerek Szewczyk - ${companyName}`;
 
             // kardiologia
             case '/team/cardiology':

@@ -46,8 +46,6 @@ const TeamView2 = () => {
                     return 'team-vascular-surgery';
                 case '/team/clinical-dietitian':
                     return 'team-clinical-dietitian';
-                case '/team/rheumatology':
-                    return 'team-rheumatology';
                 case '/team/cardiology':
                     return 'team-cardiology';
                 case '/team/psychiatry':
@@ -86,8 +84,6 @@ const TeamView2 = () => {
             case 'team-vascular-surgery':
                 return <SpecialistsListPartial specialization={specialization} />;
             case 'team-clinical-dietitian':
-                return <SpecialistsListPartial specialization={specialization} />;
-            case 'team-rheumatology':
                 return <SpecialistsListPartial specialization={specialization} />;
             case 'team-cardiology':
                 return <SpecialistsListPartial specialization={specialization} />;
@@ -239,13 +235,6 @@ const TeamView2 = () => {
                                         to={`/team/clinical-dietitian`}
                                         value={`/team/clinical-dietitian`}
                                         onClick={() => setTab('team-clinical-dietitian')}
-                                    />
-                                    <Tab
-                                        label='Reumatologia'
-                                        component={Link}
-                                        to={`/team/rheumatology`}
-                                        value={`/team/rheumatology`}
-                                        onClick={() => setTab('team-rheumatology')}
                                     />
                                     <Tab
                                         label='Kardiologia'

@@ -63,7 +63,8 @@ const Table16 = () => {
 
     const rows = [
         createData('dr Olga Lenartowicz-Warakomska', 200),
-        createData('dr Klaudia Malottki', 200)
+        createData('dr Klaudia Malottki', 200),
+        createData('lek. med. Karol Pniewski', 200)
     ];
 
     return (
@@ -250,6 +251,7 @@ const Table4 = () => {
         createData('Twarz szyja', 'od 1100'),
         createData('Twarz szyja dekolt', 'od 1500'),
         createData('Okolice oczu', 'od 400'),
+        createData('Dłonie', 600),
         createData('Skinbooster', 1000),
         createData('Autorski zabieg przeciwstarzeniowy / nawilżający / rewitalizujący', 700)
     ];
@@ -415,9 +417,9 @@ const Table8 = () => {
     }
 
     const rows = [
-        createData('Twarz', 1000),
-        createData('Twarz, szyja, dekolt', 1600),
-        createData('Skóra głowy', 1100),
+        createData('Twarz', 800),
+        createData('Twarz, szyja, dekolt', 1200),
+        createData('Skóra głowy', 1000),
         createData('Plasmoo', 1100),
         createData('Fibryna', 900)
     ];
@@ -605,8 +607,8 @@ const Table14 = () => {
         createData('Oczy', 600, false),
         createData('Policzki', 800, false),
         createData('Cała twarz', 1300, false),
-        createData('Cała twarz + szyja', 1800, false),
-        createData('Cała twarz + szyja + dekolt', 2000, false),
+        createData('Cała twarz + szyja', 1500, false),
+        createData('Cała twarz + szyja + dekolt', 1800, false),
         createData('Dekolt', 1000, false),
         createData('Szyja + dekolt', 1400),
         createData('Blizny potrądzikowe', 'od 500', 'Dokładną cenę ustala lekarz.'),

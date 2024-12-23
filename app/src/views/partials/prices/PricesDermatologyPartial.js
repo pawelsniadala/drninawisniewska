@@ -59,8 +59,9 @@ const Table1 = () => {
         createData('lek. med. Aldona Maciąg', 250),
         createData('lek. med. Paulina Tatara', 200),
         createData('lek. med. Justyna Kłoniecka', 200),
-        createData('lek. med. Katarzyna Myśliwiec-Czajka', 200),
-        createData('lek. med. Katarzyna Rychlik', 200)
+        createData('lek. med. Katarzyna Myśliwiec-Czajka', 250),
+        createData('lek. med. Katarzyna Rychlik', 200),
+        createData('lek. med. Karol Pniewski', 250)
     ];
 
     return (

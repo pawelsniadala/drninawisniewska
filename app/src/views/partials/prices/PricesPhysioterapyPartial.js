@@ -46,10 +46,7 @@ const Table1 = () => {
         createData('Masaż klasyczny całego ciała (90min)', 230),
         createData('Masaż relaksacyjny (60min)', 140),
         createData('Ćwiczenia indywidualne (30min)', 80),
-        createData('Rehabilitacja ortopedyczna metoda Cyriax', 150),
-        createData('Masaż Kobido', 250),
-        createData('Masaż Natural Face Lifting (1,5h)', 270),
-        createData('Masaż Natural Face Lifting (2h)', 320),
+        createData('Rehabilitacja ortopedyczna metoda Cyriax', 150)
     ];
 
     return (

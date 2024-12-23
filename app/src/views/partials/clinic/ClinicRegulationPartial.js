@@ -115,7 +115,7 @@ const ClinicRegulationPartial = () => {
                                 >
                                     <Box className='accordion-body'>
                                         <ol style={{ fontWeight: 300 }}>
-                                            <li>Celem podmiotu leczniczego jest udzielanie kompleksowych i specjalistycznych świadczeń zdrowotnych z zakresu dermatologii, medycyny estetycznej, ginekologii, endokrynologii, reumatologii, kardiologii, chirurgii naczyniowej, chirurgii plastycznej, alergologii, ortopedii, radiologii, fizjoterapii, kosmetologii estetycznej.</li>
+                                            <li>Celem podmiotu leczniczego jest udzielanie kompleksowych i specjalistycznych świadczeń zdrowotnych z zakresu dermatologii, medycyny estetycznej, ginekologii, endokrynologii, kardiologii, chirurgii naczyniowej, chirurgii plastycznej, alergologii, ortopedii, radiologii, fizjoterapii, kosmetologii estetycznej.</li>
                                             <li>W zakresie zadań jest w szczególności:
                                                 <ol style={{ fontWeight: 300 }}>
                                                     <li>Udzielanie indywidualnych porad i konsultacji lekarskich;</li>
@@ -339,9 +339,9 @@ const ClinicRegulationPartial = () => {
                                             <li>
                                                 Za udostępnienie dokumentacji medycznej w sposób określony w art. 27 sposoby udostępniania dokumentacji medycznej ust. 1 pkt 2 i 5 oraz ust. 3 w Ustawie o prawach pacjenta i Rzeczniku Praw Pacjenta (Dz. U. 2009 nr 52 poz. 417 z późn. zm.), Dermatologia i Medycyna Estetyczna pobiera opłatę (uwzględniającą podatek od towarów i sług, jeżeli na podstawie odrębnych przepisów usługa jest opodatkowana tym podatkiem) według stawek określonych poniżej:
                                                 <ol style={{ fontWeight: 300 }}>
-                                                    <li>Jedna strona wyciągu albo odpisu dokumentacji medycznej: 13,47 zł</li>
-                                                    <li>Jedna strona kopii albo wydruku dokumentacji medycznej: 0,47 zł</li>
-                                                    <li>Udostępnienie dokumentacji medycznej na informatycznym nośniku danych: 2,69 zł</li>
+                                                    <li>Jedna strona wyciągu albo odpisu dokumentacji medycznej: 16,07 zł</li>
+                                                    <li>Jedna strona kopii albo wydruku dokumentacji medycznej: 0,56 zł</li>
+                                                    <li>Udostępnienie dokumentacji medycznej na informatycznym nośniku danych: 3,21 zł</li>
                                                 </ol>
                                             </li>
                                             <li>

@@ -114,7 +114,7 @@ const TechnologyView = () => {
                         </Box>
                         <Box className='clinic-services-wrapper'>
                             <Typography className='paragraph'>
-                                Możecie Państwo liczyć na profesjonalne usługi z zakresu medycyny estetycznej pod nadzorem lekarza. Dodatkowo oferujemy usługi takich specjalistów jak: ortopeda, reumatolog, chirurg naczyniowy, fizjoterapeuta, dietetyk kliczniczny oraz ginekolog-endokrynolog.
+                                Możecie Państwo liczyć na profesjonalne usługi z zakresu medycyny estetycznej pod nadzorem lekarza. Dodatkowo oferujemy usługi takich specjalistów jak: ortopeda, chirurg naczyniowy, fizjoterapeuta, dietetyk kliczniczny oraz ginekolog-endokrynolog.
                             </Typography>
                             <Typography className='paragraph'>
                                 Aby uzyskać szczegółowe informacje dotyczące sposobu funkcjonowania naszej placówki, polecamy zapoznanie się z <Link className='link' to={'/clinic/regulation'}>Regulaminem organizacyjnym</Link>, który zawiera szereg istotnych informacji odnoszących się do zasad i procedur działania wewnętrznego, mających na celu zapewnienie efektywnej pracy kliniki.
@@ -144,7 +144,6 @@ const TechnologyView = () => {
                                         'Ortopedia',
                                         'Chirurgia naczyniowa',
                                         'Dietetyka Kliniczna',
-                                        'Reumatologia',
                                         'Kardiologia',
                                         'Psychiatria'
                                     ].map((item, index) => (

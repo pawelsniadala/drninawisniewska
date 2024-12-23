@@ -240,13 +240,6 @@ const TreatmentView = () => {
                                         value={`/treatment/clinical-dietitian`}
                                         onClick={() => setTab('treatment-clinical-dietitian')}
                                     /> */}
-                                    {/* <Tab
-                                        label='Reumatologia'
-                                        component={Link}
-                                        to={`/treatment/rheumatology`}
-                                        value={`/treatment/rheumatology`}
-                                        onClick={() => setTab('treatment-rheumatology')}
-                                    /> */}
                                     <Tab
                                         label='Kardiologia'
                                         component={Link}
