@@ -247,10 +247,10 @@ const Table4 = () => {
     }
 
     const rows = [
-        createData('Twarz', 'od 500'),
+        createData('Twarz', 'od 700'),
         createData('Twarz szyja', 'od 1100'),
         createData('Twarz szyja dekolt', 'od 1500'),
-        createData('Okolice oczu', 'od 400'),
+        createData('Okolice oczu', 'od 500'),
         createData('Dłonie', 600),
         createData('Skinbooster', 1000),
         createData('Autorski zabieg przeciwstarzeniowy / nawilżający / rewitalizujący', 700)
@@ -500,7 +500,7 @@ const Table12 = () => {
     }
 
     const rows = [
-        createData('Okolice oczu', 1600),
+        createData('Okolice oczu', 'od 500'),
         createData('Linia żuchwy', 2000),
         createData('Szyja', 2100),
         createData('Dekolt', 2600),
