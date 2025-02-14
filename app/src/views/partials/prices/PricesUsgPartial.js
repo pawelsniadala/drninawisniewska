@@ -45,7 +45,7 @@ const Table1 = () => {
         createData('USG prostaty', 180),
         createData('USG jąder', 180),
         createData('USG układu moczowego', 180),
-        createData('Doppler tętnic szyjnych', 180),
+        createData('Doppler tętnic szyjnych', 250),
         createData('Doppler kończyn dolnych (jedna noga)', 180),
         createData('Doppler kończyn dolnych (dwie nogi)', 250)
     ];

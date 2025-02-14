@@ -57,7 +57,7 @@ const Table1 = () => {
 
     const rows = [
         createData('Konsultacja - dr Kamil Stępkowski', 250, false),
-        createData('USG doppler tętnic szyjnych', 200, false),
+        createData('USG doppler tętnic szyjnych', 250, false),
         createData('USG doppler kończyn dolnych (jedna noga)', 180, false),
         createData('USG doppler kończyn dolnych (dwie nogi)', 250, false),
         createData('Skleroterapia', 1000, false),
