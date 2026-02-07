@@ -164,6 +164,13 @@ const FooterSection = () => {
                         >
                             Psychiatria
                         </Typography>
+                        <Typography
+                            component='a'
+                            href='/services/psychology'
+                            className='footer-text link'
+                        >
+                            Psychologia
+                        </Typography>
                     </Box>
                 </Box>
                 <Box className='treatment'>

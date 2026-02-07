@@ -173,6 +173,8 @@ const PageTitle = ({ children }) => {
                 return `Cennik - ${companyName}`;
             case '/prices/psychiatry':
                 return `Cennik - ${companyName}`;
+            case '/prices/psychology':
+                return `Cennik - ${companyName}`;
 
 
             // PROMOCJE
@@ -287,6 +289,20 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/psychiatry/kaja-strojnowska-lapinska':
                 return `Kaja Strojnowska-Łapińska - ${companyName}`;
+
+            // psychologia
+            case '/team/psychology':
+                return `Specjaliści - ${companyName}`;
+            case '/team/psychology/zaneta-manko':
+                return `Żaneta Mańko - ${companyName}`;
+
+            // rejestracja medyczna
+            case '/team/medical-registration':
+                return `Specjaliści - ${companyName}`;
+            case '/team/medical-registration/paulina-pedzich':
+                return `Paulina Pedzich - ${companyName}`;
+            case '/team/medical-registration/julia-nisio':
+                return `Julia Nisio - ${companyName}`;
 
 
             // TECHNOLOGIA

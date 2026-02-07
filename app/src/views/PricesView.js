@@ -32,6 +32,7 @@ import PricesVascularSurgeryPartial from './partials/prices/PricesVascularSurger
 import PricesClinicalDietitianPartial from './partials/prices/PricesClinicalDietitianPartial';
 import PricesCardiologyPartial from './partials/prices/PricesCardiologyPartial';
 import PricesPsychiatryPartial from './partials/prices/PricesPsychiatryPartial';
+import PricesPsychologyPartial from './partials/prices/PricesPsychologyPartial';
 
 const PricesView = () => {
     const location = useLocation();
@@ -92,6 +93,10 @@ const PricesView = () => {
                 case '/prices/psychiatry':
                     return (
                         'prices-psychiatry'
+                    );
+                case '/prices/psychology':
+                    return (
+                        'prices-psychology'
                     );
                 default:
             }
@@ -154,6 +159,10 @@ const PricesView = () => {
                 return (
                     <PricesPsychiatryPartial />
                 );
+            case 'prices-psychology':
+                return (
+                    <PricesPsychologyPartial />
+                )
             default:
         }
     }
@@ -428,6 +437,22 @@ const PricesView = () => {
                                                 </ListItemIcon>
                                             </ListItemButton>
                                         </ListItem>
+                                        <Divider className='divider' />
+                                        <ListItem className='list-item'>
+                                            <ListItemButton
+                                                component={Link}
+                                                to='/prices/psychology'
+                                                className='list-item-button'
+                                                aria-current='page'
+                                                selected={pricesTab === 'prices-psychology'}
+                                                onClick={() => setTab('prices-psychology')}
+                                            >
+                                                <ListItemText className='list-item-text' primary='Psychologia' />
+                                                <ListItemIcon className='list-item-icon'>
+                                                    <KeyboardArrowRightIcon />
+                                                </ListItemIcon>
+                                            </ListItemButton>
+                                        </ListItem>
                                     </List>
                                 ) : (
                                     <Tabs
@@ -533,6 +558,13 @@ const PricesView = () => {
                                             to={`/prices/psychiatry`}
                                             value={`/prices/psychiatry`}
                                             onClick={() => setTab('prices-psychiatry')}
+                                        />
+                                        <Tab
+                                            label='Psychiatria'
+                                            component={Link}
+                                            to={`/prices/psychology`}
+                                            value={`/prices/psychology`}
+                                            onClick={() => setTab('prices-psychology')}
                                         />
                                     </Tabs>
                                 )}

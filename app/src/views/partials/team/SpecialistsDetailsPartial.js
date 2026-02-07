@@ -34,7 +34,10 @@ import {
     karolinaRakowska,
     karolPniewski,
     karolinaDobrowolska,
-    danielaBorkowska
+    danielaBorkowska,
+    zanetaManko,
+    paulinaPedzich,
+    juliaNisio
 } from '../../../data/team';
 
 const SpecialistsDetailsPartial = () => {
@@ -71,6 +74,10 @@ const SpecialistsDetailsPartial = () => {
                 return 'Kardiologia';
             case 'psychiatry':
                 return 'Psychiatria';
+            case 'psychology':
+                return 'Psychologia';
+            case 'medical-registration':
+                return 'Rejestracja medyczna';
             default:
         }
     }
@@ -117,6 +124,12 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...karolinaDobrowolska }];
             case 'daniela-borkowska':
                 return [{ ...danielaBorkowska }];
+            case 'zaneta-manko':
+                return [{ ...zanetaManko }];
+            case 'paulina-pedzich':
+                return [{ ...paulinaPedzich }];
+            case 'julia-nisio':
+                return [{ ...juliaNisio }];
             default:
         }
     }
@@ -279,7 +292,7 @@ const SpecialistsDetailsPartial = () => {
                                     ))}
                                 </Box>
                             )}
-                            <Box className='box-proposed'>
+                            {/* <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>
                                         Specjalizacje
@@ -299,7 +312,30 @@ const SpecialistsDetailsPartial = () => {
                                         ))
                                     }
                                 </Box>
-                            </Box>
+                            </Box> */}
+                            {services.filter(item => item.specialists2.includes(specialist)).length > 0 && (
+                                <Box className='box-proposed'>
+                                    <Box className='header-wrapper'>
+                                        <Typography className='header'>
+                                            Specjalizacje
+                                        </Typography>
+                                    </Box>
+                                    <Box className='card-wrapper'>
+                                        {services
+                                            .filter(item => item.specialists2.includes(specialist))
+                                            .map((item) => (
+                                                <CardProposed
+                                                    key={item.id}
+                                                    cardTitle={item.title}
+                                                    cardDescription={item.description}
+                                                    cardImage={item.image}
+                                                    cardPath={item.path}
+                                                />
+                                            ))
+                                        }
+                                    </Box>
+                                </Box>
+                            )}
                             {/* <Box className='box-proposed'>
                                 <Box className='header-wrapper'>
                                     <Typography className='header'>

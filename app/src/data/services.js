@@ -37,6 +37,9 @@ import servicesCardiology0 from '../assets/services/cardiology/servicesCardiolog
 // PSYCHIATRIA
 import servicesPsychiatry0 from '../assets/services/psychiatry/servicesPsychiatry0.jpg';
 
+// PSYCHIATRIA
+import servicesPsychology0 from '../assets/services/psychology/servicesPsychology0.jpg';
+
 import ninaWisniewskaImageSmall from '../assets/team/ninaWisniewska/ninaWisniewskaImageSmall.jpg';
 import paulinaSotImageSmall from '../assets/team/paulinaSot/paulinaSotImageSmall.jpg';
 import konradKochanImageSmall from '../assets/team/konradKochan/konradKochanImageSmall.jpg';
@@ -57,6 +60,7 @@ import karolinaRakowskaImageSmall from '../assets/team/karolinaRakowska/karolina
 import karolPniewskiImageSmall from '../assets/team/karolPniewski/karolPniewskiImageSmall.jpg';
 import karolinaDobrowolskaImageSmall from  '../assets/team/karolinaDobrowolska/karolinaDobrowolskaImageSmall.jpg';
 import danielaBorkowskaImageSmall from  '../assets/team/danielaBorkowska/danielaBorkowskaImageSmall.jpg';
+import zanetaMankoImageSmall from  '../assets/team/zanetaManko/zanetaMankoImageSmall.jpg';
 
 export const dermatology = {
     id: '554e27d9-1d9e-4041-9549-29057bb9792f',
@@ -396,7 +400,8 @@ export const clinicalDietitian = {
         'joanna-ojrzenska'
     ],
     relatedSpecializations: [
-        'psychiatry'
+        'psychiatry',
+        'psychology'
     ],
 };
 
@@ -453,9 +458,39 @@ export const psychiatry = {
         'kaja-strojnowska-lapinska'
     ],
     relatedSpecializations: [
-        'clinical-dietitian'
+        'clinical-dietitian',
+        'psychology'
     ],
     career: 'psychiatrist'
+};
+
+export const psychology = {
+    id: 'fd793986-17dc-4f1f-bce1-48ac3916e735',
+    specialization: 'psychology',
+    title: 'Psychologia',
+    description: 'Psychologia to dziedzina nauki zajmująca się badaniem ludzkiego zachowania, emocji, procesów poznawczych oraz relacji międzyludzkich. Skupia się na zrozumieniu mechanizmów funkcjonowania psychiki, wspieraniu zdrowia psychicznego oraz pomocy osobom doświadczającym trudności emocjonalnych, stresu, kryzysów życiowych czy problemów w relacjach. Psychologia obejmuje pracę z takimi obszarami jak lęk, obniżony nastrój, problemy adaptacyjne, trudności wychowawcze, zaburzenia emocjonalne oraz rozwój osobisty, oferując wsparcie dopasowane do indywidualnych potrzeb pacjenta.',
+    path: '/services/psychology',
+    pathSpecialist: '/team/psychology',
+    pathPrices: '/prices/psychology',
+    image: servicesPsychology0,
+    images: [
+        {
+            src: servicesPsychology0,
+            alt: 'Konsultacja psychologiczna w gabinecie',
+            author: 'Freepik',
+            href: 'https://pl.freepik.com/darmowe-zdjecie/widok-z-boku-mloda-dziewczyna-rozmawia-z-terapeuta_37516527.htm'
+        }
+    ],
+    specialists: [
+        zanetaMankoImageSmall
+    ],
+    specialists2: [
+        'zaneta-manko'
+    ],
+    relatedSpecializations: [
+        'clinical-dietitian',
+        'psychiatry'
+    ]
 };
 
 export const services = [
@@ -472,4 +507,5 @@ export const services = [
     { ...clinicalDietitian },
     { ...cardiology },
     { ...psychiatry },
+    { ...psychology },
 ];

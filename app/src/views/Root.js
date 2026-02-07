@@ -33,7 +33,7 @@ import ServicesVascularSurgeryPartial from './partials/services/ServicesVascular
 import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
 import ServicesCardiologyPartial from './partials/services/ServicesCardiologyPartial';
 import ServicesPsychiatryPartial from './partials/services/ServicesPsychiatryPartial';
-
+import ServicesPsychologyPartial from './partials/services/ServicesPsychologyPartial';
 
 // ZABIEGI
 import TreatmentView from './TreatmentView';
@@ -99,6 +99,7 @@ import PricesVascularSurgeryPartial from './partials/prices/PricesVascularSurger
 import PricesClinicalDietitianPartial from './partials/prices/PricesClinicalDietitianPartial';
 import PricesCardiologyPartial from './partials/prices/PricesCardiologyPartial';
 import PricesPsychiatryPartial from './partials/prices/PricesPsychiatryPartial';
+import PricesPsychologyPartial from './partials/prices/PricesPsychologyPartial';
 
 
 // PROMOCJE
@@ -170,6 +171,7 @@ const Root = () => (
                     <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial />} />
                     <Route path='/services/cardiology' element={<ServicesCardiologyPartial />} />
                     <Route path='/services/psychiatry' element={<ServicesPsychiatryPartial />} />
+                    <Route path='/services/psychology' element={<ServicesPsychologyPartial />} />
 
 
                     {/* ZABIEGI */}
@@ -238,6 +240,7 @@ const Root = () => (
                         <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartial />} />
                         <Route path='/prices/cardiology' element={<PricesCardiologyPartial />} />
                         <Route path='/prices/psychiatry' element={<PricesPsychiatryPartial />} />
+                        <Route path='/prices/psychology' element={<PricesPsychologyPartial />} />
                     </Route>
 
 

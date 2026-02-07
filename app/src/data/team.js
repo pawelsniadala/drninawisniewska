@@ -15,9 +15,12 @@ import michalRadzioImage from  '../assets/team/michalRadzio/michalRadzioImage.jp
 import kajaStrojnowskaLapinskaImage from  '../assets/team/kajaStrojnowskaLapinska/kajaStrojnowskaLapinskaImage.jpg';
 import jadwigaDowgialloSmolarczykImage from  '../assets/team/jadwigaDowgialloSmolarczyk/jadwigaDowgialloSmolarczykImage.jpg';
 import karolinaRakowskaImage from '../assets/team/karolinaRakowska/karolinaRakowskaImage.jpg';
-import karolPniewskiImage from  '../assets/team/karolPniewski/karolPniewskiImage.jpg';
-import karolinaDobrowolskaImage from  '../assets/team/karolinaDobrowolska/karolinaDobrowolskaImage.jpg';
-import danielaBorkowskaImage from  '../assets/team/danielaBorkowska/danielaBorkowskaImage.jpg';
+import karolPniewskiImage from '../assets/team/karolPniewski/karolPniewskiImage.jpg';
+import karolinaDobrowolskaImage from '../assets/team/karolinaDobrowolska/karolinaDobrowolskaImage.jpg';
+import danielaBorkowskaImage from '../assets/team/danielaBorkowska/danielaBorkowskaImage.jpg';
+import zanetaMankoImage from '../assets/team/zanetaManko/zanetaMankoImage.jpg';
+import paulinaPedzichImage from '../assets/team/paulinaPedzich/paulinaPedzichImage.jpg';
+import juliaNisioImage from '../assets/team/juliaNisio/juliaNisioImage.jpg';
 // import teamBackground from '../assets/team/teamBackground.jpg';
 
 export const ninaWisniewska = {
@@ -453,13 +456,64 @@ export const danielaBorkowska = {
     name: 'lek. med. Daniela Borkowska',
     speciality: 'Radiolog',
     summary: false,
-    education: 'Dr Daniela Borkowska jest absolwentką Wydziału Wojskowo-Lekarskiego Uniwersytetu Medycznego w Łodzi oraz Akademii Wojsk Lądowych we Wrocławiu. Szkolenie specjalizacyjne z Radiologii i diagnostyki obrazowej odbywa w Zakładzie Radiologii Lekarskiej w Wojskowym Instytucie Medycznym - Państwowym Instytucie Badawczym w Warszawie. Jest członkiem Polskiego Towarzystwa Radiologicznego (PLTR)',
+    education: 'Dr Daniela Borkowska jest absolwentką Wydziału Wojskowo-Lekarskiego Uniwersytetu Medycznego w Łodzi oraz Akademii Wojsk Lądowych we Wrocławiu. Szkolenie specjalizacyjne z Radiologii i diagnostyki obrazowej odbywa w Zakładzie Radiologii Lekarskiej w Wojskowym Instytucie Medycznym - Państwowym Instytucie Badawczym w Warszawie. Jest członkiem Polskiego Towarzystwa Radiologicznego (PLTR).',
     experience: 'Nieustannie poszerza swoją wiedzę i doskonali umiejętności, uczestnicząc w kursach i konferencjach naukowych z zakresu radiologii, w tym międzynarodowych. W praktyce kieruje się nowoczesnymi standardami diagnostycznymi zapewniając precyzyjną ocenę badań obrazowych. Jej ulubione dziedziny diagnostyki obrazowej to: tomografia komputerowa, rezonans magnetyczny i ultrasonografia.',
     interested: false,
     image: danielaBorkowskaImage,
     background: null,
     specialization: [
         'usg'
+    ],
+    treatment: ['']
+};
+
+export const zanetaManko = {
+    id: 'fc8453cf-a4cf-4286-a450-e83e1a9f6b72',
+    specialist: 'zaneta-manko',
+    name: 'mgr Żaneta Mańko',
+    speciality: 'Psycholog kliniczny',
+    summary: 'Żaneta Mańko jest magistrem psychologii ze specjalnością kliniczną. Posiada ponad dwuletnie doświadczenie zdobyte w warunkach szpitalnych oraz w Poradni Zdrowia Psychicznego w SPZZOZ Wyszków.',
+    education: 'Ukończyła szkolenia z zakresu diagnozy dzieci i młodzieży, zaburzeń odżywiania oraz zaburzeń osobowości. Stale poszerza kwalifikacje w obszarze psychotraumatologii i jest członkiem Polskiego Stowarzyszenia Terapeutów TSR. Pracuje w oparciu o indywidualne podejście oraz Terapię Skoncentrowaną na Rozwiązaniach.',
+    experience: 'Prowadzi terapię, poradnictwo i diagnozę w zakresie m.in. kryzysów, depresji, zaburzeń lękowych, traumy i PTSD. Zajmuje się diagnostyką ADHD (DIVA-5) oraz prowadzi TUS dla dzieci i młodzieży. Jej celem jest realne wsparcie pacjentów w poprawie funkcjonowania i dobrostanu psychicznego.',
+    interested: false,
+    image: zanetaMankoImage,
+    background: null,
+    specialization: [
+        'psychology'
+    ],
+    treatment: ['']
+};
+
+export const paulinaPedzich = {
+    id: '4df7c5a7-047f-4841-ad64-c1ac198021bf',
+    specialist: 'paulina-pedzich',
+    name: 'Paulina Pędzich',
+    speciality: 'Rejestratorka medyczna',
+    summary: false,
+    education: false,
+    experience: 'Jestem rejestratorką medyczną w klinice, gdzie na co dzień mam bezpośredni kontakt z pacjentami i dbam o to, aby czuli się mile widziani oraz zaopiekowani od pierwszego momentu wizyty. Równolegle studiuję administrację. Interesuję się tematami  związanymi z urodą i stylem życia. W swojej pracy szczególnie cenię życzliwą atmosferę, uważność oraz sprawną i serdeczną obsługę pacjentów.',
+    interested: false,
+    image: paulinaPedzichImage,
+    background: null,
+    specialization: [
+        'medical-registration'
+    ],
+    treatment: ['']
+};
+
+export const juliaNisio = {
+    id: '7df3e2c1-45f8-40d2-938f-a769778d2ada',
+    specialist: 'julia-nisio',
+    name: 'Julia Nisio',
+    speciality: 'Rejestratorka medyczna',
+    summary: false,
+    education: false,
+    experience: 'Jestem rejestratorką medyczną w Klinice dr Niny i z przyjemnością pomagam Państwu w umawianiu wizyt oraz odpowiadam na wszelkie pytania. Dbam o sprawną organizację rejestracji i miłą, profesjonalną obsługę, aby każda wizyta przebiegała w komfortowej atmosferze. Interesuję się nauką języków obcych oraz modą, co pozwala mi łączyć komunikatywność z dbałością o estetykę i detale.',
+    interested: false,
+    image: juliaNisioImage,
+    background: null,
+    specialization: [
+        'medical-registration'
     ],
     treatment: ['']
 };
@@ -484,5 +538,8 @@ export const team = [
     { ...kamilStepkowski },
     { ...karolPniewski },
     { ...karolinaDobrowolska },
-    { ...danielaBorkowska }
+    { ...danielaBorkowska },
+    { ...zanetaManko },
+    { ...paulinaPedzich },
+    { ...juliaNisio }
 ];

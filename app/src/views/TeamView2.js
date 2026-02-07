@@ -48,6 +48,10 @@ const TeamView2 = () => {
                     return 'team-cardiology';
                 case '/team/psychiatry':
                     return 'team-psychiatry';
+                case '/team/psychology':
+                    return 'team-psychology';
+                case '/team/medical-registration':
+                    return 'team-medical-registration';
                 default:
             }
         }
@@ -84,6 +88,10 @@ const TeamView2 = () => {
             case 'team-cardiology':
                 return <SpecialistsListPartial specialization={specialization} />;
             case 'team-psychiatry':
+                return <SpecialistsListPartial specialization={specialization} />;
+            case 'team-psychology':
+                return <SpecialistsListPartial specialization={specialization} />;
+            case 'team-medical-registration':
                 return <SpecialistsListPartial specialization={specialization} />;
             default:
         }
@@ -238,6 +246,20 @@ const TeamView2 = () => {
                                         to={`/team/psychiatry`}
                                         value={`/team/psychiatry`}
                                         onClick={() => setTab('team-psychiatry')}
+                                    />
+                                    <Tab
+                                        label='Psychologia'
+                                        component={Link}
+                                        to={`/team/psychology`}
+                                        value={`/team/psychology`}
+                                        onClick={() => setTab('team-psychology')}
+                                    />
+                                    <Tab
+                                        label='Rejestracja medyczna'
+                                        component={Link}
+                                        to={`/team/medical-registration`}
+                                        value={`/team/medical-registration`}
+                                        onClick={() => setTab('team-medical-registration')}
                                     />
                                 </Tabs>
                             </Box>
