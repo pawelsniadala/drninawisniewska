@@ -7,9 +7,6 @@ import servicesAestheticMedicine0 from '../assets/services/aestheticMedicine/ser
 // KOSMETOLOGIA
 import servicesCosmetology0 from '../assets/services/cosmetology/servicesCosmetology0.jpg';
 
-// FIZJOTERAPIA
-import servicesPhysioterapy0 from '../assets/services/physioteraphy/servicesPhysioterapy0.jpg';
-
 // CHIRURGIA PLASTYCZNA
 import servicesCosmeticSurgery0 from '../assets/services/cosmeticSurgery/servicesCosmeticSurgery0.jpg';
 
@@ -47,7 +44,6 @@ import justynaKlonieckaImageSmall from '../assets/team/justynaKloniecka/justynaK
 import katarzynaMysliwiecCzajkaImageSmall from '../assets/team/katarzynaMysliwiecCzajka/katarzynaMysliwiecCzajkaImageSmall.jpg';
 import klaudiaMalottkiImageSmall from '../assets/team/klaudiaMalottki/klaudiaMalottkiImageSmall.jpg';
 import aldonaMaciagImageSmall from '../assets/team/aldonaMaciag/aldonaMaciagImageSmall.jpg';
-import milenaJuzwiakImageSmall from '../assets/team/milenaJuzwiak/milenaJuzwiakImageSmall.jpg';
 import tomaszMatuszewskiImageSmall from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImageSmall.jpg';
 import kamilStepkowskiImageSmall from '../assets/team/kamilStepkowski/kamilStepkowskiImageSmall.jpg';
 import olgaLenartowiczWarakomskaImageSmall from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImageSmall.jpg';
@@ -171,34 +167,6 @@ export const cosmetology = {
         'aesthetic-medicine'
     ],
     career: 'cosmetologist'
-};
-
-export const physioterapy = {
-    id: '13076f6e-c4f6-474f-80af-73abe224d7a2',
-    specialization: 'physioterapy',
-    title: 'Fizjoterapia',
-    description: 'Fizjoterapia to dziedzina medycyny zajmująca się leczeniem i rehabilitacją osób z różnymi schorzeniami, urazami lub dysfunkcjami układu mięśniowo-szkieletowego. Jej celem jest przywrócenie pacjentowi pełnej sprawności fizycznej, zmniejszenie bólu, poprawa zakresu ruchu oraz wzmacnianie mięśni.',
-    path: '/services/physioterapy',
-    pathSpecialist: '/team/physioterapy',
-    pathPrices: '/prices/physioterapy',
-    image: servicesPhysioterapy0,
-    images: [
-        {
-            src: servicesPhysioterapy0,
-            alt: 'Fizjoterapeuta nakładający elastyczny bandaż medyczny',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/fizjoterapeutka-nakladajaca-elastyczny-bandaz-medyczny-na-pacjenta-plci-meskiej_21076897.htm'
-        }
-    ],
-    specialists: [
-        milenaJuzwiakImageSmall
-    ],
-    specialists2: [
-        'milena-juzwiak'
-    ],
-    relatedSpecializations: [
-        'orthopedics'
-    ],
 };
 
 export const cosmeticSurgery = {
@@ -497,7 +465,6 @@ export const services = [
     { ...dermatology },
     { ...aestheticMedicine },
     { ...cosmetology },
-    { ...physioterapy },
     { ...cosmeticSurgery },
     { ...allergology },
     { ...usg },

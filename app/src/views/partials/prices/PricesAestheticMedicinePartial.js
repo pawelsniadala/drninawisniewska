@@ -416,11 +416,11 @@ const Table8 = () => {
     }
 
     const rows = [
-        createData('Twarz', 800),
-        createData('Twarz, szyja, dekolt', 1200),
-        createData('Skóra głowy', 1000),
+        createData('Twarz', 1000),
+        createData('Twarz, szyja, dekolt', 1600),
+        createData('Skóra głowy', 1100),
         createData('Plasmoo', 1100),
-        createData('Fibryna', 900)
+        createData('Fibryna', 1000)
     ];
 
     return (
@@ -499,7 +499,7 @@ const Table12 = () => {
     }
 
     const rows = [
-        createData('Okolice oczu', 'od 500'),
+        createData('Okolice oczu', 1600),
         createData('Linia żuchwy', 2000),
         createData('Szyja', 2100),
         createData('Dekolt', 2600),
@@ -606,8 +606,8 @@ const Table14 = () => {
         createData('Oczy', 600, false),
         createData('Policzki', 800, false),
         createData('Cała twarz', 1300, false),
-        createData('Cała twarz + szyja', 1500, false),
-        createData('Cała twarz + szyja + dekolt', 1800, false),
+        createData('Cała twarz + szyja', 1800, false),
+        createData('Cała twarz + szyja + dekolt', 2000, false),
         createData('Dekolt', 1000, false),
         createData('Szyja + dekolt', 1400),
         createData('Blizny potrądzikowe', 'od 500', 'Dokładną cenę ustala lekarz.'),

@@ -22,7 +22,6 @@ import Page from '../components/Page';
 import PricesDermatologyPartial from './partials/prices/PricesDermatologyPartial';
 import PricesAestheticMedicinePartial from './partials/prices/PricesAestheticMedicinePartial';
 import PricesCosmetologyPartial from './partials/prices/PricesCosmetologyPartial';
-import PricesPhysioterapyPartial from './partials/prices/PricesPhysioterapyPartial';
 import PricesCosmeticSurgeryPartial from './partials/prices/PricesCosmeticSurgeryPartial';
 import PricesAllergologyPartial from './partials/prices/PricesAllergologyPartial';
 import PricesUsgPartial from './partials/prices/PricesUsgPartial';
@@ -53,10 +52,6 @@ const PricesView = () => {
                 case '/prices/cosmetology':
                     return (
                         'prices-cosmetology'
-                    );
-                case '/prices/physioterapy':
-                    return (
-                        'prices-physioterapy'
                     );
                 case '/prices/cosmetic-surgery':
                     return (
@@ -118,10 +113,6 @@ const PricesView = () => {
             case 'prices-cosmetology':
                 return (
                     <PricesCosmetologyPartial />
-                );
-            case 'prices-physioterapy':
-                return (
-                    <PricesPhysioterapyPartial />
                 );
             case 'prices-cosmetic-surgery':
                 return (
@@ -272,22 +263,6 @@ const PricesView = () => {
                                                 onClick={() => setTab('prices-cosmetology')}
                                             >
                                                 <ListItemText className='list-item-text' primary='Kosmetologia' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/physioterapy'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-physioterapy'}
-                                                onClick={() => setTab('prices-physioterapy')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Fizjoterapia' />
                                                 <ListItemIcon className='list-item-icon'>
                                                     <KeyboardArrowRightIcon />
                                                 </ListItemIcon>
@@ -488,13 +463,6 @@ const PricesView = () => {
                                             to={`/prices/cosmetology`}
                                             value={`/prices/cosmetology`}
                                             onClick={() => setTab('prices-cosmetology')}
-                                        />
-                                        <Tab
-                                            label='Fizjoterapia'
-                                            component={Link}
-                                            to={`/prices/physioterapy`}
-                                            value={`/prices/physioterapy`}
-                                            onClick={() => setTab('prices-physioterapy')}
                                         />
                                         <Tab
                                             label='Chirurgia plastyczna'

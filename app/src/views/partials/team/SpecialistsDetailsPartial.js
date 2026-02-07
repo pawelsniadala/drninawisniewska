@@ -22,7 +22,6 @@ import {
     katarzynaMysliwiecCzajka,
     justynaKloniecka,
     aldonaMaciag,
-    milenaJuzwiak,
     tomaszMatuszewski,
     olgaLenartowiczWarakomska,
     joannaOjrzenska,
@@ -54,8 +53,6 @@ const SpecialistsDetailsPartial = () => {
                 return 'Medycyna estetyczna';
             case 'cosmetology':
                 return 'Kosmetologia';
-            case 'physioterapy':
-                return 'Fizjoterapia';
             case 'cosmetic-surgery':
                 return 'Chirurgia plastyczna';
             case 'allergology':
@@ -98,8 +95,6 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...justynaKloniecka }];
             case 'aldona-maciag':
                 return [{ ...aldonaMaciag }];
-            case 'milena-juzwiak':
-                return [{ ...milenaJuzwiak }];
             case 'tomasz-matuszewski':
                 return [{ ...tomaszMatuszewski }];
             case 'olga-lenartowicz-warakomska':

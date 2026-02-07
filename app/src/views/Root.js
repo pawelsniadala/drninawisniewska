@@ -23,7 +23,6 @@ import ServicesView from './ServicesView';
 import ServicesDermatologyPartial from './partials/services/ServicesDermatologyPartial';
 import ServicesAestheticMedicinePartial from './partials/services/ServicesAestheticMedicinePartial';
 import ServicesCosmetologyPartial from './partials/services/ServicesCosmetologyPartial';
-import ServicesPhysioterapyPartial from './partials/services/ServicesPhysioterapyPartial';
 import ServicesCosmeticSurgeryPartial from './partials/services/ServicesCosmeticSurgeryPartial';
 import ServicesAllergologyPartial from './partials/services/ServicesAllergologyPartial';
 import ServicesUsgPartial from './partials/services/ServicesUsgPartial';
@@ -61,11 +60,6 @@ import TreatmentEpilacjaLaserowaPartial from './partials/treatment/cosmetology/T
 import TreatmentMasazProzniowyPartial from './partials/treatment/cosmetology/TreatmentMasazProzniowyPartial';
 import TreatmentUltradzwiekiIFalaRadiowaPartial from './partials/treatment/cosmetology/TreatmentUltradzwiekiIFalaRadiowaPartial';
 
-// fizjoterapia
-import TreatmentRehabilitacjaPartial from './partials/treatment/physioterapy/TreatmentRehabilitacjaPartial';
-import TreatmentMasazPartial from './partials/treatment/physioterapy/TreatmentMasazPartial';
-import TreatmentKinesiotapingPartial from './partials/treatment/physioterapy/TreatmentKinesiotapingPartial';
-
 // chirurgia plastyczna
 import TreatmentPlastykaPowiekPartial from './partials/treatment/cosmeticSurgery/TreatmentPlastykaPowiekPartial';
 
@@ -89,7 +83,6 @@ import PricesView from './PricesView';
 import PricesDermatologyPartial from './partials/prices/PricesDermatologyPartial';
 import PricesAestheticMedicinePartial from './partials/prices/PricesAestheticMedicinePartial';
 import PricesCosmetologyPartial from './partials/prices/PricesCosmetologyPartial';
-import PricesPhysioterapyPartial from './partials/prices/PricesPhysioterapyPartial';
 import PricesCosmeticSurgeryPartial from './partials/prices/PricesCosmeticSurgeryPartial';
 import PricesAllergologyPartial from './partials/prices/PricesAllergologyPartial';
 import PricesUsgPartial from './partials/prices/PricesUsgPartial';
@@ -161,7 +154,6 @@ const Root = () => (
                     <Route path='/services/dermatology' element={<ServicesDermatologyPartial />} />
                     <Route path='/services/aesthetic-medicine' element={<ServicesAestheticMedicinePartial />} />
                     <Route path='/services/cosmetology' element={<ServicesCosmetologyPartial />} />
-                    <Route path='/services/physioterapy' element={<ServicesPhysioterapyPartial />} />
                     <Route path='/services/cosmetic-surgery' element={<ServicesCosmeticSurgeryPartial />} />
                     <Route path='/services/allergology' element={<ServicesAllergologyPartial />} />
                     <Route path='/services/usg' element={<ServicesUsgPartial />} />
@@ -201,11 +193,6 @@ const Root = () => (
                     <Route path='/treatment/cosmetology/masaz-prozniowy' element={<TreatmentMasazProzniowyPartial />} />
                     <Route path='/treatment/cosmetology/ultradzwieki-i-fala-radiowa' element={<TreatmentUltradzwiekiIFalaRadiowaPartial />} />
 
-                    {/* fizjoterapia */}
-                    <Route path='/treatment/physioterapy/rehabilitacja' element={<TreatmentRehabilitacjaPartial />} />
-                    <Route path='/treatment/physioterapy/masaz' element={<TreatmentMasazPartial />} />
-                    <Route path='/treatment/physioterapy/kinesiotaping' element={<TreatmentKinesiotapingPartial />} />
-
                     {/* chirurgia plastyczna */}
                     <Route path='/treatment/cosmetic-surgery/plastyka-powiek' element={<TreatmentPlastykaPowiekPartial />} />
 
@@ -230,7 +217,6 @@ const Root = () => (
                         <Route path='/prices' element={<PricesDermatologyPartial />} />
                         <Route path='/prices/aesthetic-medicine' element={<PricesAestheticMedicinePartial />} />
                         <Route path='/prices/cosmetology' element={<PricesCosmetologyPartial />} />
-                        <Route path='/prices/physioterapy' element={<PricesPhysioterapyPartial />} />
                         <Route path='/prices/cosmetic-surgery' element={<PricesCosmeticSurgeryPartial />} />
                         <Route path='/prices/allergology' element={<PricesAllergologyPartial />} />
                         <Route path='/prices/usg' element={<PricesUsgPartial />} />

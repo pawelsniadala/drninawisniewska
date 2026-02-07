@@ -37,14 +37,14 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja - lek. med. Konrad Kochan', 250),
-        createData('Plastyka powiek górnych', 5000),
+        createData('Konsultacja chirurgii plastycznej - lek. med. Konrad Kochan', 250),
+        createData('Plastyka powiek górnych', 6000),
         createData('Usunięcie kępek żółtych jednostronne', 1500),
         createData('Usunięcie kępek żółtych dwustronne', 3000),
         createData('Plastyka blizn', 'od 1500'),
-        createData('Usuwanie dużych zmian nowotworowych z przeszczepem skóry', 700),
+        createData('Usuwanie dużych zmian nowotworowych z przeszczepem skóry', 1500),
         createData('Usunięcie zmian skórnych twarzy', 'od 700'),
-        createData('Usunięcie zmian skórnych z ciała', 'od 500')
+        createData('Usunięcie zmian skórnych z ciała', 700)
     ];
 
     return (

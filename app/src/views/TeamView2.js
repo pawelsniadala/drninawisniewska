@@ -28,8 +28,6 @@ const TeamView2 = () => {
                     return 'team-aesthetic-medicine';
                 case '/team/cosmetology':
                     return 'team-cosmetology';
-                case '/team/physioterapy':
-                    return 'team-physioterapy';
                 case '/team/cosmetic-surgery':
                     return 'team-cosmetic-surgery';
                 case '/team/allergology':
@@ -68,8 +66,6 @@ const TeamView2 = () => {
             case 'team-aesthetic-medicine':
                 return <SpecialistsListPartial specialization={specialization} />;
             case 'team-cosmetology':
-                return <SpecialistsListPartial specialization={specialization} />;
-            case 'team-physioterapy':
                 return <SpecialistsListPartial specialization={specialization} />;
             case 'team-cosmetic-surgery':
                 return <SpecialistsListPartial specialization={specialization} />;
@@ -176,13 +172,6 @@ const TeamView2 = () => {
                                         to={`/team/cosmetology`}
                                         value={`/team/cosmetology`}
                                         onClick={() => setTab('team-cosmetology')}
-                                    />
-                                    <Tab
-                                        label='Fizjoterapia'
-                                        component={Link}
-                                        to={`/team/physioterapy`}
-                                        value={`/team/physioterapy`}
-                                        onClick={() => setTab('team-physioterapy')}
                                     />
                                     <Tab
                                         label='Chirurgia plastyczna'

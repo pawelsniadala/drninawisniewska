@@ -27,8 +27,6 @@ const TreatmentView = () => {
                     return 'treatment-aesthetic-medicine';
                 case '/treatment/cosmetology':
                     return 'treatment-cosmetology';
-                case '/treatment/physioterapy':
-                    return 'treatment-physioterapy';
                 case '/treatment/cosmetic-surgery':
                     return 'treatment-cosmetic-surgery';
                 case '/treatment/allergology':
@@ -64,8 +62,6 @@ const TreatmentView = () => {
             case 'treatment-aesthetic-medicine':
                 return <TreatmentListPartial specialization={specialization} />;
             case 'treatment-cosmetology':
-                return <TreatmentListPartial specialization={specialization} />;
-            case 'treatment-physioterapy':
                 return <TreatmentListPartial specialization={specialization} />;
             case 'treatment-cosmetic-surgery':
                 return <TreatmentListPartial specialization={specialization} />;
@@ -168,13 +164,6 @@ const TreatmentView = () => {
                                         to={`/treatment/cosmetology`}
                                         value={`/treatment/cosmetology`}
                                         onClick={() => setTab('treatment-cosmetology')}
-                                    />
-                                    <Tab
-                                        label='Fizjoterapia'
-                                        component={Link}
-                                        to={`/treatment/physioterapy`}
-                                        value={`/treatment/physioterapy`}
-                                        onClick={() => setTab('treatment-physioterapy')}
                                     />
                                     <Tab
                                         label='Chirurgia plastyczna'

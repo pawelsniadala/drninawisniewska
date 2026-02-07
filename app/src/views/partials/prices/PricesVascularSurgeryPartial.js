@@ -56,13 +56,15 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja - dr Kamil Stępkowski', 250, false),
+        createData('Konsultacja z chirurgii naczyniowej - lek. med. Kamil Stępkowski', 300, false),
+        createData('Konsultacja + USG doppler kończyn dolnych (jedna noga)', 450, false),
+        createData('Konsultacja + USG doppler kończyn dolnych (dwie nogi)', 500, false),
+        createData('USG doppler kończyn dolnych (jedna noga)', 200, false),
+        createData('USG doppler kończyn dolnych (dwie nogi)', 300, false),
         createData('USG doppler tętnic szyjnych', 250, false),
-        createData('USG doppler kończyn dolnych (jedna noga)', 180, false),
-        createData('USG doppler kończyn dolnych (dwie nogi)', 250, false),
-        createData('Skleroterapia', 1000, false),
-        createData('Miniflebektomia', '1500 - 2000', false),
-        createData('Laserowe usuwanie żylaków (ELVeS) - wewnątrzżylne usuwanie żył', 'od 4000', 'Dokładną cenę ustala lekarz.')
+        createData('Skleroterapia', 'od 1000', 'Dokładną cenę ustala lekarz'),
+        createData('Laserowe usuwanie żylaków', 4500, false),
+        createData('Miniflebektomia', '2000 - 3000', false)
     ];
 
     return (

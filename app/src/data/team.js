@@ -5,7 +5,6 @@ import justynaKlonieckaImage from '../assets/team/justynaKloniecka/justynaKlonie
 import katarzynaMysliwiecCzajkaImage from '../assets/team/katarzynaMysliwiecCzajka/katarzynaMysliwiecCzajkaImage.jpg';
 import klaudiaMalottkiImage from '../assets/team/klaudiaMalottki/klaudiaMalottkiImage.jpg';
 import aldonaMaciagImage from '../assets/team/aldonaMaciag/aldonaMaciagImage.jpg';
-import milenaJuzwiakImage from '../assets/team/milenaJuzwiak/milenaJuzwiakImage.jpg';
 import tomaszMatuszewskiImage from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImage.jpg';
 import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowskiImage.jpg';
 import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
@@ -192,27 +191,6 @@ export const katarzynaMysliwiecCzajka = {
     ]
 };
 
-export const milenaJuzwiak = {
-    id: '39323729-937c-403a-b16b-a8e964965288',
-    specialist: 'milena-juzwiak',
-    name: 'mgr Milena Juźwiak',
-    speciality: 'Fizjoterapeuta',
-    summary: false,
-    education: false,
-    experience: 'Fizjoterapeuta z ponad kilkuletnim doświadczeniem zawodowym. Specjalizuje się w rehabilitacji ortopedycznej, neurologicznej, a także masażu. Jej zainteresowania zawodowe skupiają się na diagnostyce fizjoterapeutycznej, terapii pooperacyjnej, terapii poudarowej oraz profilaktyce zdrowotnej. Z wielką przyjemnością łączy w swojej pracy pasję oraz wiedzę zdobytą na specjalistycznych kongresach i szkoleniach.',
-    interested: false,
-    image: milenaJuzwiakImage,
-    background: null,
-    specialization: [
-        'physioterapy'
-    ],
-    treatment: [
-        'rehabilitacja',
-        'masaz',
-        'kinesiotaping'
-    ]
-};
-
 export const tomaszMatuszewski = {
     id: '51afb769-17b6-4f91-815e-46b7a9d2090e',
     specialist: 'tomasz-matuszewski',
@@ -324,9 +302,9 @@ export const kajaStrojnowskaLapinska = {
     specialist: 'kaja-strojnowska-lapinska',
     name: 'lek. Kaja Strojnowska-Łapińska',
     speciality: 'Psychiatra dzieci i młodzieży',
-    summary: 'Jestem lekarzem w trakcie specjalizacji z psychiatrii dzieci i młodzieży w Klinice Psychiatrii Wieku Rozwojowego Dziecięcego Szpitala Klinicznego Warszawskiego Uniwersytetu Medycznego.',
-    education: 'Ukończyłam II Wydział Lekarski Warszawskiego Uniwersytetu Medycznego. Interesuję się również psychoterapią. Uczestniczyłam w szkoleniu podyplomowym "Psychoterapia poznawczo-behawioralna z elementami terapii psychodynamicznej" w Fundacji Rozwoju Psychiatrii i Psychoterapii oraz w szkoleniu w zakresie terapii poznawczo-behawioralnej w Szkole Terapii Poznawczo-Behawioralnej Centrum CBT-EDU. Umiejętności z zakresu psychoterapii dorosłych zdobywałam również w trakcie stażu na Oddziale Dziennym Mazowieckiego Szpitala Bródnowskiego.',
-    experience: false,
+    summary: 'Absolwentka II Wydziału Lekarskiego Warszawskiego Uniwersytetu Medycznego. Tytuł specjalisty psychiatrii dzieci i młodzieży uzyskała w 2025 roku.',
+    education: 'Szkolenie specjalizacyjne realizowała w Klinice Psychiatrii Wieku Rozwojowego Dziecięcego Szpitala Klinicznego UCK Warszawskiego Uniwersytetu Medycznego.',
+    experience: 'Od przeszło 10 lat pracuje z dziećmi i młodzieżą. Uczestniczyła w szkoleniu podyplomowym: "Psychoterapia poznawczo-behawioralna z elementami terapii psychodynamicznej" w Fundacji Rozwoju Psychiatrii i Psychoterapii oraz w szkoleniu w zakresie terapii poznawczo-behawioralnej w Szkole Terapii Poznawczo-Behawioralnej Centrum CBT- EDU. Umiejętności z zakresu psychoterapii dorosłych zdobywała również w trakcie stażu na Oddziale Dziennym Mazowieckiego Szpitala Bródnowskiego.',
     interested: false,
     image: kajaStrojnowskaLapinskaImage,
     background: null,
@@ -527,7 +505,6 @@ export const team = [
     { ...joannaOjrzenska },
     { ...klaudiaMalottki },
     { ...katarzynaMysliwiecCzajka },
-    { ...milenaJuzwiak },
     { ...tomaszMatuszewski },
     { ...olgaLenartowiczWarakomska },
     { ...katarzynaRychlik },

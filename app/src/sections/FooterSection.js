@@ -103,13 +103,6 @@ const FooterSection = () => {
                         </Typography>
                         <Typography
                             component='a'
-                            href='/services/physioterapy'
-                            className='footer-text link'
-                        >
-                            Fizjoterapia
-                        </Typography>
-                        <Typography
-                            component='a'
                             href='/services/cosmetic-surgery'
                             className='footer-text link'
                         >
@@ -229,21 +222,6 @@ const FooterSection = () => {
                             className='footer-text link'
                         >
                             Masaż próżniowy
-                        </Typography>
-                        {/* FIZJOTERAPIA */}
-                        <Typography
-                            component='a'
-                            href='/treatment/physioterapy/rehabilitacja'
-                            className='footer-text link'
-                        >
-                            Rehabilitacja
-                        </Typography>
-                        <Typography
-                            component='a'
-                            href='/treatment/physioterapy/kinesiotaping'
-                            className='footer-text link'
-                        >
-                            Kinesiotaping
                         </Typography>
                         {/* CHIRURGIA PLASTYCZNA */}
                         <Typography

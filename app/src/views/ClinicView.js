@@ -125,7 +125,6 @@ const TechnologyView = () => {
                                         'Dermatologia',
                                         'Medycyna estetyczna',
                                         'Kosmetologia',
-                                        'Fizjoterapia',
                                         'Chirurgia plastyczna',
                                         'Alergologia',
                                         'Ginekologia',
@@ -144,7 +143,8 @@ const TechnologyView = () => {
                                         'Chirurgia naczyniowa',
                                         'Dietetyka Kliniczna',
                                         'Kardiologia',
-                                        'Psychiatria'
+                                        'Psychiatria',
+                                        'Psychologia',
                                     ].map((item, index) => (
                                         <ListBulleted
                                             key={index}

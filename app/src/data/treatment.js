@@ -99,17 +99,6 @@ import effectsUltradzwiekiIFalaRadiowa1Lg from '../assets/treatment/cosmetology/
 import effectsUltradzwiekiIFalaRadiowa1Sm from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa1Sm.png';
 
 
-// FIZJOTERAPIA
-// rehabilitacja
-import rehabilitacjaImage0 from '../assets/treatment/physioterapy/rehabilitacja/rehabilitacja0.jpg';
-
-// masaż
-import masazImage0 from '../assets/treatment/physioterapy/masaz/masaz0.jpg';
-
-// kinesiotaping
-import kinesiotapingImage0 from '../assets/treatment/physioterapy/kinesiotaping/kinesiotaping0.jpg';
-
-
 // CHIRURGIA PLASTYCZNA
 // plastyka powiek
 import plastykaPowiekImage0 from '../assets/treatment/cosmeticSurgery/plastykaPowiek/plastykaPowiek0.jpg';
@@ -854,72 +843,6 @@ export const ultradzwiekiIFalaRadiowa = {
     ]
 };
 
-// FIZJOTERAPIA
-export const rehabilitacja = {
-    id: '05a5105b-d8cc-4198-b2a8-7a89491a691f',
-    treatment: 'rehabilitacja',
-    title: 'Rehabilitacja',
-    description: 'Medycyna ortopedyczna według Cyriaxa jest kompleksowym systemem terapii oraz diagnostyki zaburzeń narządu ruchu. Opiera się na badaniu klinicznym, które za pomocą testów i wywiadu doprowadza fizjoterapeutę do postawienia odpowiedniej diagnozy uszkodzonej tkanki w układzie ruchu.',
-    info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/physioterapy/rehabilitacja',
-    images: [
-        {
-            src: rehabilitacjaImage0,
-            alt: 'Fizjoterapeuta wykonujący rehabilitację nogi',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/masaz-medyczny-na-nodze-w-centrum-fizjoterapii_1492577.htm'
-        },
-    ],
-    specialization: ['physioterapy'],
-    specialist: [
-        'milena-juzwiak'
-    ]
-};
-
-export const masaz = {
-    id: '96b1c738-fb80-4648-bc89-5e4cee1d44dc',
-    treatment: 'masaz',
-    title: 'Masaż',
-    description: 'Zespół technik i chwytów oddziaływujących na cały organizm, zdrowie i kondycję. Polega na wykorzystaniu dotyku w celu wywołania uczucia odprężenia i dobrego samopoczucia. Masaż wykorzystywany jest w celu: rozluźnienia mięśni, złagodzenia sztywności, napięcia i bólu mięśni, zwiększenia elastyczności i wytrzymałości więzadeł, poprawy ruchomości stawów, wzmożenia zasilenia organów w tlen i substancje odżywcze odprężenia i przezwyciężenia stresu.',
-    info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/physioterapy/masaz',
-    images: [
-        {
-            src: masazImage0,
-            alt: 'Odprężający masaż karku',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/kobieta-w-salonie-spa_8871855.htm'
-        },
-    ],
-    specialization: ['physioterapy'],
-    specialist: [
-        'milena-juzwiak'
-    ]
-};
-
-export const kinesiotaping = {
-    id: 'eb42daf1-07f8-4a66-a47b-9613710fbf9e',
-    treatment: 'kinesiotaping',
-    title: 'Kinesiotaping',
-    description: 'Kinesiotaping czyli plastrowanie dynamiczne. Technika fizjoterapeutyczna polegająca na naklejaniu na ciało zgodnie z określonymi zasadami specjalnych taśm. Powodują one regulację napięcia mięśniowego w miejscu aplikacji, zmniejszając ból, ograniczając nadwrażliwość na dotyk, zwiększając zakres ruchu i siłę mięśni oraz zmniejszyć obrzęki w miejscu aplikacji.',
-    info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/physioterapy/kinesiotaping',
-    images: [
-        {
-            src: kinesiotapingImage0,
-            alt: 'Plastrowanie dynamiczne nogi',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/mloda-kobieta-w-stroju-sportowym-cwiczaca-cwiczenie-podczas-sesji-fizjoterapeutycznej_18843285.htm'
-        }
-    ],
-    specialization: [
-        'physioterapy'
-    ],
-    specialist: [
-        'milena-juzwiak'
-    ]
-};
-
 
 // CHIRURGIA PLASTYCZNA
 export const plastykaPowiek = {
@@ -1150,11 +1073,6 @@ export const treatment = [
     { ...epilacjaLaserowa },
     { ...masazProzniowy },
     { ...ultradzwiekiIFalaRadiowa },
-
-    // FIZJOTERAPIA
-    { ...rehabilitacja },
-    { ...masaz },
-    { ...kinesiotaping },
 
     // CHIRURGIA PLASTYCZNA
     { ...plastykaPowiek },

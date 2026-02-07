@@ -32,8 +32,6 @@ const PageTitle = ({ children }) => {
                 return `Medycyna estetyczna - ${companyName}`;
             case '/services/cosmetology':
                 return `Kosmetologia - ${companyName}`;
-            case '/services/physioterapy':
-                return `Fizjoterapia - ${companyName}`;
             case '/services/cosmetic-surgery':
                 return `Chirurgia plastyczna - ${companyName}`;
             case '/services/allergology':
@@ -99,16 +97,6 @@ const PageTitle = ({ children }) => {
             case '/treatment/cosmetology/ultradzwieki-i-fala-radiowa':
                 return `Ultradzwieki i fala radiowa - ${companyName}`;
 
-            // fizjoterapia
-            case '/treatment/physioterapy':
-                return `Zabiegi - ${companyName}`;
-            case '/treatment/physioterapy/rehabilitacja':
-                return `Rehabilitacja - ${companyName}`;
-            case '/treatment/physioterapy/masaz':
-                return `Masaż - ${companyName}`;
-            case '/treatment/physioterapy/kinesiotaping':
-                return `Kinesiotaping - ${companyName}`;
-
             // chirurgia plastyczna
             case '/treatment/cosmetic-surgery':
                 return `Zabiegi - ${companyName}`;
@@ -152,8 +140,6 @@ const PageTitle = ({ children }) => {
             case '/prices/aesthetic-medicine':
                 return `Cennik - ${companyName}`;
             case '/prices/cosmetology':
-                return `Cennik - ${companyName}`;
-            case '/prices/physioterapy':
                 return `Cennik - ${companyName}`;
             case '/prices/cosmetic-surgery':
                 return `Cennik - ${companyName}`;
@@ -225,12 +211,6 @@ const PageTitle = ({ children }) => {
                 return `Paulina Sot - ${companyName}`;
             case '/team/cosmetology/karolina-rakowska':
                 return `Karolina Zęgota - ${companyName}`;
-
-            // fizjoterapia
-            case '/team/physioterapy':
-                return `Specjaliści - ${companyName}`;
-            case '/team/physioterapy/milena-juzwiak':
-                return `Milena Juźwiak - ${companyName}`;
 
             // chirurgia plastyczna
             case '/team/cosmetic-surgery':
