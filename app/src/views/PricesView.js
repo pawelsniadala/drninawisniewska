@@ -28,7 +28,6 @@ import PricesAllergologyPartial from './partials/prices/PricesAllergologyPartial
 import PricesUsgPartial from './partials/prices/PricesUsgPartial';
 import PricesEndocrinologyPartial from './partials/prices/PricesEndocrinologyPartial';
 import PricesGynecologyPartial from './partials/prices/PricesGynecologyPartial';
-import PricesOrthopedicsPartial from './partials/prices/PricesOrthopedicsPartial';
 import PricesVascularSurgeryPartial from './partials/prices/PricesVascularSurgeryPartial';
 import PricesClinicalDietitianPartial from './partials/prices/PricesClinicalDietitianPartial';
 import PricesCardiologyPartial from './partials/prices/PricesCardiologyPartial';
@@ -77,10 +76,6 @@ const PricesView = () => {
                 case '/prices/gynecology':
                     return (
                         'prices-gynecology'
-                    );
-                case '/prices/orthopedics':
-                    return (
-                        'prices-orthopedics'
                     );
                 case '/prices/vascular-surgery':
                     return (
@@ -142,10 +137,6 @@ const PricesView = () => {
             case 'prices-gynecology':
                 return (
                     <PricesGynecologyPartial />
-                );
-            case 'prices-orthopedics':
-                return (
-                    <PricesOrthopedicsPartial />
                 );
             case 'prices-vascular-surgery':
                 return (
@@ -377,22 +368,6 @@ const PricesView = () => {
                                         <ListItem className='list-item'>
                                             <ListItemButton
                                                 component={Link}
-                                                to='/prices/orthopedics'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-orthopedics'}
-                                                onClick={() => setTab('prices-orthopedics')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Ortopedia' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
                                                 to='/prices/vascular-surgery'
                                                 className='list-item-button'
                                                 aria-current='page'
@@ -530,13 +505,6 @@ const PricesView = () => {
                                             to={`/prices/gynecology`}
                                             value={`/prices/gynecology`}
                                             onClick={() => setTab('prices-gynecology')}
-                                        />
-                                        <Tab
-                                            label='Ortopedia'
-                                            component={Link}
-                                            to={`/prices/orthopedics`}
-                                            value={`/prices/orthopedics`}
-                                            onClick={() => setTab('prices-orthopedics')}
                                         />
                                         <Tab
                                             label='Chirurgia naczyniowa'

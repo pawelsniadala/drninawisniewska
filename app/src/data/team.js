@@ -1,7 +1,6 @@
 import ninaWisniewskaImage from '../assets/team/ninaWisniewska/ninaWisniewskaImage.jpg';
 import paulinaSotImage from '../assets/team/paulinaSot/paulinaSotImage.jpg';
 import konradKochanImage from '../assets/team/konradKochan/konradKochanImage.jpg';
-import wojciechKaszewskiImage from '../assets/team/wojciechKaszewski/wojciechKaszewskiImage.jpg';
 import justynaKlonieckaImage from '../assets/team/justynaKloniecka/justynaKlonieckaImage.jpg';
 import katarzynaMysliwiecCzajkaImage from '../assets/team/katarzynaMysliwiecCzajka/katarzynaMysliwiecCzajkaImage.jpg';
 import klaudiaMalottkiImage from '../assets/team/klaudiaMalottki/klaudiaMalottkiImage.jpg';
@@ -10,16 +9,15 @@ import milenaJuzwiakImage from '../assets/team/milenaJuzwiak/milenaJuzwiakImage.
 import tomaszMatuszewskiImage from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImage.jpg';
 import kamilStepkowskiImage from '../assets/team/kamilStepkowski/kamilStepkowskiImage.jpg';
 import olgaLenartowiczWarakomskaImage from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImage.jpg';
-import paulinaTataraImage from '../assets/team/paulinaTatara/paulinaTataraImage.jpg';
 import joannaOjrzenskaImage from '../assets/team/joannaOjrzenska/joannaOjrzenskaImage.jpg';
 import katarzynaRychlikImage from  '../assets/team/katarzynaRychlik/katarzynaRychlikImage.jpg';
-import patrykKrokwinskiImage from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImage.jpg';
 import michalRadzioImage from  '../assets/team/michalRadzio/michalRadzioImage.jpg';
 import kajaStrojnowskaLapinskaImage from  '../assets/team/kajaStrojnowskaLapinska/kajaStrojnowskaLapinskaImage.jpg';
 import jadwigaDowgialloSmolarczykImage from  '../assets/team/jadwigaDowgialloSmolarczyk/jadwigaDowgialloSmolarczykImage.jpg';
-import karolinaZegotaImage from '../assets/team/karolinaZegota/karolinaZegotaImage.jpg';
-import hannaAndrusevichImage from '../assets/team/hannaAndrusevich/hannaAndrusevichImage.jpg';
+import karolinaRakowskaImage from '../assets/team/karolinaRakowska/karolinaRakowskaImage.jpg';
 import karolPniewskiImage from  '../assets/team/karolPniewski/karolPniewskiImage.jpg';
+import karolinaDobrowolskaImage from  '../assets/team/karolinaDobrowolska/karolinaDobrowolskaImage.jpg';
+import danielaBorkowskaImage from  '../assets/team/danielaBorkowska/danielaBorkowskaImage.jpg';
 // import teamBackground from '../assets/team/teamBackground.jpg';
 
 export const ninaWisniewska = {
@@ -34,15 +32,11 @@ export const ninaWisniewska = {
     image: ninaWisniewskaImage,
     background: null,
     specialization: [
-        'dermatology',
-        // 'aesthetic-medicine'
+        'dermatology'
     ],
     treatment: [
         'badanie-znamion-barwnikowych',
-        'fototerapia-chorob-skory',
-        // 'modelowanie-ust',
-        // 'toksyna-botulinowa',
-        // 'mezoterapia-iglowa',
+        'fototerapia-chorob-skory'
     ],
     career: [
         'dermatologist'
@@ -216,37 +210,6 @@ export const milenaJuzwiak = {
     ]
 };
 
-export const paulinaTatara = {
-    id: '3b2ca017-a5cd-4d1d-a8dd-6a4dc84b21a2',
-    specialist: 'paulina-tatara',
-    name: 'lek. med. Paulina Tatara',
-    speciality: 'Dermatolog, lekarz medycyny estetycznej',
-    summary: 'Od zawsze chciałam, by mój zawód polegał na niesieniu pomocy innym. Będąc dermatologiem mogę wspierać pacjentów w dążeniu do samoakceptacji i w budowaniu pewności siebie. Oprócz leczenia, lubię także edukować. Wychodzę z założenia, że dobre zdrowie zaczyna się od wiedzy. Realizuję swoje poczucie estetyki i empatii kształcąc się na kursach i szkoleniach z zakresu medycyny estetycznej. Uważam, że mniej znaczy więcej, a zabiegi z zakresu medycyny estetycznej powinny podkreślać atuty, nie zmieniać. Naturalne piękno po prostu potrzebuje czasami kropki nad i a nie zmiany całego wersu.',
-    education: 'Absolwentka Wydziału Wojskowo-Lekarskiego Uniwersytetu Medycznego w Łodzi. Licencjatka neurobiologii na Uniwersytecie, gdzie uzyskała dyplom ratownika medycznego. Nieustannie poszerza wiedzę, dokształca się i bierze udział w szkoleniach, by sprostać oczekiwaniom pacjentów. Aktualnie jest w trakcie specjalizacji z Dermatologii i Wenerologii w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie. Szerokie, a zarazem bezpośrednio związane z medycyną zainteresowania, pozwoliły jej po ukończeniu studiów medycznych uzyskać tytuł Lidera Lekarskiego Egzaminu Końcowego. W swojej pracy zawodowej obejmowała również etat lekarza polskiego kontyngentu wojskowego PKW Orlik w Estonii.',
-    experience: false,
-    interested: 'Jestem miłośniczką kryminałów i wyzwań, przede wszystkim sportowych. Sport uczy mnie konsekwencji w dążeniu do celu. Na swoim koncie mam ukończenie zawodów triathlonowych na dystansie pełnego Ironmana.',
-    image: paulinaTataraImage,
-    background: null,
-    specialization: [
-        'dermatology',
-        'aesthetic-medicine'
-    ],
-    treatment: [
-        'badanie-znamion-barwnikowych',
-        'fototerapia-chorob-skory',
-        'usuniecie-zmian-skornych-elektrochirurgiczne',
-        'modelowanie-ust',
-        'toksyna-botulinowa',
-        'stymulatory-tkankowe',
-        'mezoterapia-iglowa',
-        'laser-frakcyjny',
-        'zamykanie-naczynek-i-likwidacja-przebarwien'
-    ],
-    career: [
-        'dermatologist'
-    ]
-};
-
 export const tomaszMatuszewski = {
     id: '51afb769-17b6-4f91-815e-46b7a9d2090e',
     specialist: 'tomasz-matuszewski',
@@ -394,16 +357,16 @@ export const jadwigaDowgialloSmolarczyk = {
     treatment: ['']
 };
 
-export const karolinaZegota = {
+export const karolinaRakowska = {
     id: '8d18264e-742e-4aa6-9d19-ee70f40aef69',
-    specialist: 'karolina-zegota',
-    name: 'Karolina Zęgota',
+    specialist: 'karolina-rakowska',
+    name: 'Karolina Rakowska',
     speciality: 'Kosmetolog',
     summary: false,
     education: 'Ukończyła studia licencjackie na kierunku kosmetologia i dalej podąża tą ścieżką edukacji. W swoim zawodzie zdecydowanie kładzie nacisk na samopoczucie pacjenta oraz pomoc mu poprzez holistyczne podejście współpracując z lekarzami. Posiada świetne zdolności komunikacyjne i empatię, które pozwalają jej na zrozumienie i spełnienie potrzeb pacjentów.',
     experience: 'Specjalizuje się w pracy ze skórą trądzikową oraz profilaktyce przeciwstarzeniowej. Ponadto wykonuje zabiegi z zakresu modelowania sylwetki i depilacji laserowej. Na każdej płaszczyźnie w swoim zawodzie stara się być profesjonalistką ,która kieruje się indywidualnymi potrzebami pacjentów i dostarcza im kompleksową opiekę. Jej głównym celem jest poprawa wyglądu i zdrowia skóry, przy jednoczesnym zapewnieniu komfortu i zaufania pacjenta.',
     interested: false,
-    image: karolinaZegotaImage,
+    image: karolinaRakowskaImage,
     background: null,
     specialization: [
         'cosmetology'
@@ -419,42 +382,6 @@ export const karolinaZegota = {
     career: [
         'cosmetologist'
     ]
-};
-
-export const wojciechKaszewski = {
-    id: 'ac4ca38b-526a-49ee-adad-5f81e0347623',
-    specialist: 'wojciech-kaszewski',
-    name: 'dr n. med. Wojciech Kaszewski',
-    speciality: 'Ortopeda',
-    summary: false,
-    education: 'Ukończył studia na Wydziale Lekarskim Collegium Medicum w Bydgoszczy, Uniwersytetu Mikołaja Kopernika w Toruniu, na kierunku lekarskim. Uzyskał tytuł doktora nauk medycznych na Wydziale Lekarskim Collegium Medicum w Bydgoszczy, UMK w Toruniu w 2016 roku. Ukończył liczne kursy doszkalające z zakresu urazów narządu ruchu ze szczególnym uwzględnieniem chirurgii ręki.',
-    experience: 'Aktualnie pracuje w Wojewódzkim Szpitalu Specjalistycznym we Włocławku, gdzie pełni funkcje ordynatora oddziału. Dodatkowo pracuje jako adiunkt w Wydziale Nauk o Zdrowiu Mazowieckiej Uczelni Publicznej w Płocku. Aktywnie uczestniczy w szkoleniach z zakresu traumatologii i ortopedii narządu ruchu oraz ultrasonografii narządu ruchu. Jest członkiem PTOiTr.',
-    interested: false,
-    image: wojciechKaszewskiImage,
-    background: null,
-    specialization: [
-        'orthopedics',
-        'usg'
-    ],
-    treatment: ['']
-};
-
-export const hannaAndrusevich = {
-    id: '1a71f4bc-6046-406c-aa6f-2a6a88d8c263',
-    specialist: 'hanna-andrushevich',
-    name: 'lek. Hanna Andrusevich',
-    speciality: 'Lekarz w trakcie specjalizacji z ginekologii i położnictwa',
-    summary: 'Obecnie pracuję w poradni przyszpitalnej oraz na Oddziale Ginekologiczno-Położniczym Szpitala w Wyszkowie, gdzie specjalizuję się w zakresie położnictwa oraz ginekologii. W swojej codziennej pracy skupiam się na prowadzeniu ciąży fizjologicznej i patologicznej, diagnostyce ultrasonograficznej oraz diagnostyce i leczeniu w ginekologii. Udzielam porad z zakresu zaburzeń narządu rodnego, antykoncepcji oraz wykonuję badania kontrolne. Poszerzam wiedzę i umiejętności w ginekologii operacyjnej oraz zabiegowej. Opiekuje się także pacjentkami borykającymi się z problemem nietrzymania moczu, z zaburzeniami statyki narządu rodnego. Zawodowo interesuję się kolposkopią, endoskopią i endokrynologią ginekologiczną.',
-    education: 'Absolwentka Grodzieńskiego Uniwersytetu Medycznego, Białoruś. W 2019 uzyskałam nostryfikację dyplomu lekarza na Uniwersytecie Medycznym w Łodzi.',
-    experience: 'Obszary działalności: choroby ginekologiczne, bolesne miesiączkowanie, zaburzenia miesiączkowania, menopauza, endometrioza, mięśniaki macicy, diagnostyka przesiewowa patologii szyjki macicy, ciąże fizjologiczne. Wykonywane zabiegi i badania: USG transvaginalne, USG doraźne ciąży, cytologia szyjki, zakładanie wkładek wewnątrzmacicznych Mirena, Kyleena, Levosert.',
-    interested: false,
-    image: hannaAndrusevichImage,
-    background: null,
-    specialization: [
-        'gynecology',
-        'usg'
-    ],
-    treatment: ['']
 };
 
 export const kamilStepkowski = {
@@ -478,23 +405,6 @@ export const kamilStepkowski = {
     ]
 };
 
-export const patrykKrokwinski = {
-    id: '0316f09f-7c5f-46df-a1cb-48289205050e',
-    specialist: 'patryk-krokwinski',
-    name: 'lek. med. Patryk Krokwiński',
-    speciality: 'Radiolog',
-    summary: false,
-    education: false,
-    experience: false,
-    interested: false,
-    image: patrykKrokwinskiImage,
-    background: null,
-    specialization: [
-        'usg'
-    ],
-    treatment: ['']
-};
-
 export const karolPniewski = {
     id: 'a323da55-1bfd-4d06-8eb5-d5a1ca3369d9',
     specialist: 'karol-pniewski',
@@ -513,6 +423,47 @@ export const karolPniewski = {
     treatment: ['']
 };
 
+export const karolinaDobrowolska = {
+    id: '7d6dcb5c-7349-4aa8-80c7-17cb72e390ae',
+    specialist: 'karolina-dobrowolska',
+    name: 'lek. med. Karolina Dobrowolska',
+    speciality: 'Dermatolog',
+    summary: 'Jestem absolwentką Uniwersytetu Medycznego w Łodzi. Studia ukończyłam z wynikiem bardzo dobrym. Za uzyskanie jednego z najwyższych wyników z Lekarskiego Egzaminu Końcowego zostałam wyróżniona listem gratulacyjnym przez Dyrektora Wojskowego Instytutu Medycznego w 2022 roku.',
+    education: 'Szkolenie specjalizacyjne z Dermatologii i Wenerologii odbywam w Klinice Dermatologicznej Wojskowego Instytutu Medycznego w Warszawie. W swojej codziennej pracy zajmuję się diagnostyką oraz leczeniem chorób skóry, włosów i paznokci. Szczególnym zainteresowaniem darzę dermatoskopię i dermatochirurgię.',
+    experience: 'Nieustannie poszerzam swoją wiedzę i umiejętności na ogólnopolskich konferencjach, szkoleniach oraz kursach.',
+    interested: false,
+    image: karolinaDobrowolskaImage,
+    background: null,
+    specialization: [
+        'dermatology'
+    ],
+    treatment: [
+        'badanie-znamion-barwnikowych',
+        'fototerapia-chorob-skory',
+        'usuniecie-zmian-skornych-elektrochirurgiczne'
+    ],
+    career: [
+        'dermatologist'
+    ]
+};
+
+export const danielaBorkowska = {
+    id: 'd98fcdbe-1cb1-4d26-a2e2-254d3a5ef131',
+    specialist: 'daniela-borkowska',
+    name: 'lek. med. Daniela Borkowska',
+    speciality: 'Radiolog',
+    summary: false,
+    education: 'Dr Daniela Borkowska jest absolwentką Wydziału Wojskowo-Lekarskiego Uniwersytetu Medycznego w Łodzi oraz Akademii Wojsk Lądowych we Wrocławiu. Szkolenie specjalizacyjne z Radiologii i diagnostyki obrazowej odbywa w Zakładzie Radiologii Lekarskiej w Wojskowym Instytucie Medycznym - Państwowym Instytucie Badawczym w Warszawie. Jest członkiem Polskiego Towarzystwa Radiologicznego (PLTR)',
+    experience: 'Nieustannie poszerza swoją wiedzę i doskonali umiejętności, uczestnicząc w kursach i konferencjach naukowych z zakresu radiologii, w tym międzynarodowych. W praktyce kieruje się nowoczesnymi standardami diagnostycznymi zapewniając precyzyjną ocenę badań obrazowych. Jej ulubione dziedziny diagnostyki obrazowej to: tomografia komputerowa, rezonans magnetyczny i ultrasonografia.',
+    interested: false,
+    image: danielaBorkowskaImage,
+    background: null,
+    specialization: [
+        'usg'
+    ],
+    treatment: ['']
+};
+
 export const team = [
     { ...ninaWisniewska },
     { ...paulinaSot },
@@ -523,17 +474,15 @@ export const team = [
     { ...klaudiaMalottki },
     { ...katarzynaMysliwiecCzajka },
     { ...milenaJuzwiak },
-    { ...paulinaTatara },
     { ...tomaszMatuszewski },
     { ...olgaLenartowiczWarakomska },
     { ...katarzynaRychlik },
     { ...michalRadzio },
     { ...kajaStrojnowskaLapinska },
     { ...jadwigaDowgialloSmolarczyk },
-    { ...karolinaZegota },
-    { ...wojciechKaszewski },
-    { ...hannaAndrusevich },
+    { ...karolinaRakowska },
     { ...kamilStepkowski },
-    { ...patrykKrokwinski },
-    { ...karolPniewski }
+    { ...karolPniewski },
+    { ...karolinaDobrowolska },
+    { ...danielaBorkowska }
 ];

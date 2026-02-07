@@ -18,25 +18,23 @@ import {
     ninaWisniewska,
     paulinaSot,
     konradKochan,
-    wojciechKaszewski,
     klaudiaMalottki,
     katarzynaMysliwiecCzajka,
     justynaKloniecka,
     aldonaMaciag,
     milenaJuzwiak,
-    paulinaTatara,
     tomaszMatuszewski,
     olgaLenartowiczWarakomska,
     joannaOjrzenska,
     kamilStepkowski,
     katarzynaRychlik,
-    patrykKrokwinski,
     michalRadzio,
     kajaStrojnowskaLapinska,
     jadwigaDowgialloSmolarczyk,
-    karolinaZegota,
-    hannaAndrusevich,
+    karolinaRakowska,
     karolPniewski,
+    karolinaDobrowolska,
+    danielaBorkowska
 } from '../../../data/team';
 
 const SpecialistsDetailsPartial = () => {
@@ -65,8 +63,6 @@ const SpecialistsDetailsPartial = () => {
                 return 'Endokrynologia';
             case 'gynecology':
                 return 'Ginekologia';
-            case 'orthopedics':
-                return 'Ortopedia';
             case 'vascular-surgery':
                 return 'Chirurgia naczyniowa';
             case 'clinical-dietitian':
@@ -87,8 +83,6 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...paulinaSot }];
             case 'konrad-kochan':
                 return [{ ...konradKochan }];
-            case 'wojciech-kaszewski':
-                return [{ ...wojciechKaszewski }];
             case 'klaudia-malottki':
                 return [{ ...klaudiaMalottki }];
             case 'katarzyna-mysliwiec-czajka':
@@ -99,8 +93,6 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...aldonaMaciag }];
             case 'milena-juzwiak':
                 return [{ ...milenaJuzwiak }];
-            case 'paulina-tatara':
-                return [{ ...paulinaTatara }];
             case 'tomasz-matuszewski':
                 return [{ ...tomaszMatuszewski }];
             case 'olga-lenartowicz-warakomska':
@@ -111,20 +103,20 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...kamilStepkowski }];
             case 'katarzyna-rychlik':
                 return [{ ...katarzynaRychlik }];
-            case 'patryk-krokwinski':
-                return [{ ...patrykKrokwinski }];
             case 'michal-radzio':
                 return [{ ...michalRadzio }];
             case 'kaja-strojnowska-lapinska':
                 return [{ ...kajaStrojnowskaLapinska }];
             case 'jadwiga-dowgiallo-smolarczyk':
                 return [{ ...jadwigaDowgialloSmolarczyk }];
-            case 'karolina-zegota':
-                return [{ ...karolinaZegota }];
-            case 'hanna-andrushevich':
-                return [{ ...hannaAndrusevich }];
+            case 'karolina-rakowska':
+                return [{ ...karolinaRakowska }];
             case 'karol-pniewski':
                 return [{ ...karolPniewski }];
+            case 'karolina-dobrowolska':
+                return [{ ...karolinaDobrowolska }];
+            case 'daniela-borkowska':
+                return [{ ...danielaBorkowska }];
             default:
         }
     }

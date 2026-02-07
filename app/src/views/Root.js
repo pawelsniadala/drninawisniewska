@@ -29,7 +29,6 @@ import ServicesAllergologyPartial from './partials/services/ServicesAllergologyP
 import ServicesUsgPartial from './partials/services/ServicesUsgPartial';
 import ServicesEndocrinologyPartial from './partials/services/ServicesEndocrinologyPartial';
 import ServicesGynecologyPartial from './partials/services/ServicesGynecologyPartial';
-import ServicesOrthopedicsPartial from './partials/services/ServicesOrthopedicsPartial';
 import ServicesVascularSurgeryPartial from './partials/services/ServicesVascularSurgeryPartial';
 import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
 import ServicesCardiologyPartial from './partials/services/ServicesCardiologyPartial';
@@ -96,7 +95,6 @@ import PricesAllergologyPartial from './partials/prices/PricesAllergologyPartial
 import PricesUsgPartial from './partials/prices/PricesUsgPartial';
 import PricesEndocrinologyPartial from './partials/prices/PricesEndocrinologyPartial';
 import PricesGynecologyPartial from './partials/prices/PricesGynecologyPartial';
-import PricesOrthopedicsPartial from './partials/prices/PricesOrthopedicsPartial';
 import PricesVascularSurgeryPartial from './partials/prices/PricesVascularSurgeryPartial';
 import PricesClinicalDietitianPartial from './partials/prices/PricesClinicalDietitianPartial';
 import PricesCardiologyPartial from './partials/prices/PricesCardiologyPartial';
@@ -168,7 +166,6 @@ const Root = () => (
                     <Route path='/services/usg' element={<ServicesUsgPartial />} />
                     <Route path='/services/endocrinology' element={<ServicesEndocrinologyPartial />} />
                     <Route path='/services/gynecology' element={<ServicesGynecologyPartial />} />
-                    <Route path='/services/orthopedics' element={<ServicesOrthopedicsPartial />} />
                     <Route path='/services/vascular-surgery' element={<ServicesVascularSurgeryPartial />} />
                     <Route path='/services/clinical-dietitian' element={<ServicesClinicalDietitianPartial />} />
                     <Route path='/services/cardiology' element={<ServicesCardiologyPartial />} />
@@ -237,7 +234,6 @@ const Root = () => (
                         <Route path='/prices/usg' element={<PricesUsgPartial />} />
                         <Route path='/prices/endocrinology' element={<PricesEndocrinologyPartial />} />
                         <Route path='/prices/gynecology' element={<PricesGynecologyPartial />} />
-                        <Route path='/prices/orthopedics' element={<PricesOrthopedicsPartial />} />
                         <Route path='/prices/vascular-surgery' element={<PricesVascularSurgeryPartial />} />
                         <Route path='/prices/clinical-dietitian' element={<PricesClinicalDietitianPartial />} />
                         <Route path='/prices/cardiology' element={<PricesCardiologyPartial />} />

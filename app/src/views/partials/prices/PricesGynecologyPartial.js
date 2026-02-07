@@ -60,9 +60,6 @@ const Table1 = () => {
         createData('Konsultacja ginekologiczno - endokrynologiczna + cytologia - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 400, false),
         createData('Konsultacja ginekologiczno - endokrynologiczna + cytologia + USG (50 min) - dr n. med. Jadwiga Dowgiałło-Smolarczyk', 500, false),
 
-        createData('Konsultacja ginekologiczna - dr Hanna Andrusevich', 180, false),
-        createData('Konsultacja ginekologiczna + USG - dr Hanna Andrusevich', 230, false),
-
         createData('Cytologia', 50, false),
         createData('Cytologia płynna', '100 - 150', false),
         createData('Cytologia płynna z HPV', '170 - 200', false),

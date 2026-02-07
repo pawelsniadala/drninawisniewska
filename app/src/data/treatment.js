@@ -171,8 +171,8 @@ export const badanieZnamionBarwnikowych = {
         'nina-wisniewska',
         'aldona-maciag',
         'katarzyna-mysliwiec-czajka',
-        'paulina-tatara',
-        'katarzyna-rychlik'
+        'katarzyna-rychlik',
+        'karolina-dobrowolska'
     ],
     career: [
         'dermatologist'
@@ -201,8 +201,8 @@ export const fototerapiaChorobSkory = {
         'nina-wisniewska',
         'aldona-maciag',
         'katarzyna-mysliwiec-czajka',
-        'paulina-tatara',
-        'katarzyna-rychlik'
+        'katarzyna-rychlik',
+        'karolina-dobrowolska'
     ],
     career: [
         'dermatologist'
@@ -229,8 +229,9 @@ export const usuniecieZmianSkornychElektrochirurgiczne = {
     ],
     specialist: [
         'aldona-maciag',
+        'justyna-kloniecka',
         'katarzyna-mysliwiec-czajka',
-        'paulina-tatara',
+        'karolina-dobrowolska'
     ],
     career: [
         'dermatologist'
@@ -356,7 +357,6 @@ export const modelowanieUst = {
     ],
     specialist: [
         'klaudia-malottki',
-        'paulina-tatara',
         'olga-lenartowicz-warakomska'
     ]
 };
@@ -419,7 +419,6 @@ export const toksynaBotulinowa = {
     ],
     specialist: [
         'klaudia-malottki',
-        'paulina-tatara',
         'olga-lenartowicz-warakomska'
     ]
 };
@@ -442,7 +441,6 @@ export const stymulatoryTkankowe = {
     specialization: ['aesthetic-medicine'],
     specialist: [
         'klaudia-malottki',
-        'paulina-tatara',
         'olga-lenartowicz-warakomska'
     ]
 };
@@ -516,9 +514,8 @@ export const laserFrakcyjny = {
     specialist: [
         'paulina-sot',
         'klaudia-malottki',
-        'paulina-tatara',
         'olga-lenartowicz-warakomska',
-        'karolina-zegota'
+        'karolina-rakowska'
     ]
 };
 
@@ -565,7 +562,6 @@ export const mezoterapiaIglowa = {
     ],
     specialist: [
         'klaudia-malottki',
-        'paulina-tatara',
         'olga-lenartowicz-warakomska'
     ]
 };
@@ -629,9 +625,8 @@ export const zamykanieNaczynekILikwidacjaPrzebarwien = {
     specialist: [
         'paulina-sot',
         'klaudia-malottki',
-        'paulina-tatara',
         'olga-lenartowicz-warakomska',
-        'karolina-zegota'
+        'karolina-rakowska'
     ]
 };
 
@@ -707,7 +702,7 @@ export const peelingMedyczny = {
     ],
     specialist: [
         'paulina-sot',
-        'karolina-zegota'
+        'karolina-rakowska'
     ],
     career: [
         'cosmetologist'
@@ -772,7 +767,7 @@ export const epilacjaLaserowa = {
     ],
     specialist: [
         'paulina-sot',
-        'karolina-zegota'
+        'karolina-rakowska'
     ],
     career: [
         'cosmetologist'
@@ -799,7 +794,7 @@ export const masazProzniowy = {
     ],
     specialist: [
         'paulina-sot',
-        'karolina-zegota'
+        'karolina-rakowska'
     ],
     career: [
         'cosmetologist'
@@ -852,7 +847,7 @@ export const ultradzwiekiIFalaRadiowa = {
     ],
     specialist: [
         'paulina-sot',
-        'karolina-zegota'
+        'karolina-rakowska'
     ],
     career: [
         'cosmetologist'

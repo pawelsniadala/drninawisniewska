@@ -62,9 +62,9 @@ const Table16 = () => {
     }
 
     const rows = [
-        createData('dr Olga Lenartowicz-Warakomska', 200),
-        createData('dr Klaudia Malottki', 200),
-        createData('lek. med. Karol Pniewski', 200)
+        createData('lek. dent. Klaudia Malottki', 250),
+        createData('lek. dent. Olga Lenartowicz-Warakomska', 250),
+        createData('lek. med. Karol Pniewski', 250)
     ];
 
     return (
@@ -292,8 +292,7 @@ const Table5 = () => {
     }
 
     const rows = [
-        createData('PhilArt', 1200),
-        createData('PhilArt Next', 1200),
+        createData('PolyPhil Next', 1200),
         createData('Pluryal Silk', 1400),
         createData('Pluryal Densify', 1200),
         createData('Pluryal Bioclassic', 1200),

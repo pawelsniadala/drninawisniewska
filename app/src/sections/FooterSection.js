@@ -138,13 +138,6 @@ const FooterSection = () => {
                         </Typography>
                         <Typography
                             component='a'
-                            href='/services/orthopedics'
-                            className='footer-text link'
-                        >
-                            Ortopedia
-                        </Typography>
-                        <Typography
-                            component='a'
                             href='/services/vascular-surgery'
                             className='footer-text link'
                         >

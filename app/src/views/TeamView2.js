@@ -40,8 +40,6 @@ const TeamView2 = () => {
                     return 'team-endocrinology';
                 case '/team/gynecology':
                     return 'team-gynecology';
-                case '/team/orthopedics':
-                    return 'team-orthopedics';
                 case '/team/vascular-surgery':
                     return 'team-vascular-surgery';
                 case '/team/clinical-dietitian':
@@ -78,8 +76,6 @@ const TeamView2 = () => {
             case 'team-endocrinology':
                 return <SpecialistsListPartial specialization={specialization} />;
             case 'team-gynecology':
-                return <SpecialistsListPartial specialization={specialization} />;
-            case 'team-orthopedics':
                 return <SpecialistsListPartial specialization={specialization} />;
             case 'team-vascular-surgery':
                 return <SpecialistsListPartial specialization={specialization} />;
@@ -214,13 +210,6 @@ const TeamView2 = () => {
                                         to={`/team/gynecology`}
                                         value={`/team/gynecology`}
                                         onClick={() => setTab('team-gynecology')}
-                                    />
-                                    <Tab
-                                        label='Ortopedia'
-                                        component={Link}
-                                        to={`/team/orthopedics`}
-                                        value={`/team/orthopedics`}
-                                        onClick={() => setTab('team-orthopedics')}
                                     />
                                     <Tab
                                         label='Chirurgia naczyniowa'

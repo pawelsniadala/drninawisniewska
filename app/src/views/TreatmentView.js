@@ -39,14 +39,10 @@ const TreatmentView = () => {
                 //     return 'treatment-endocrinology';
                 // case '/treatment/gynecology':
                 //     return 'treatment-gynecology';
-                // case '/treatment/orthopedics':
-                //     return 'treatment-orthopedics';
                 case '/treatment/vascular-surgery':
                     return 'treatment-vascular-surgery';
                 // case '/treatment/clinical-dietitian':
                 //     return 'treatment-clinical-dietitian';
-                // case '/treatment/rheumatology':
-                //     return 'treatment-rheumatology';
                 case '/treatment/cardiology':
                     return 'treatment-cardiology';
                 case '/treatment/psychiatry':
@@ -81,13 +77,9 @@ const TreatmentView = () => {
             //     return <TreatmentListPartial specialization={specialization} />;
             // case 'treatment-gynecology':
             //     return <TreatmentListPartial specialization={specialization} />;
-            // case 'treatment-orthopedics':
-            //     return <TreatmentListPartial specialization={specialization} />;
             case 'treatment-vascular-surgery':
                 return <TreatmentListPartial specialization={specialization} />;
             // case 'treatment-clinical-dietitian':
-            //     return <TreatmentListPartial specialization={specialization} />;
-            // case 'treatment-rheumatology':
             //     return <TreatmentListPartial specialization={specialization} />;
             case 'treatment-cardiology':
                 return <TreatmentListPartial specialization={specialization} />;
@@ -218,13 +210,6 @@ const TreatmentView = () => {
                                         to={`/treatment/gynecology`}
                                         value={`/treatment/gynecology`}
                                         onClick={() => setTab('treatment-gynecology')}
-                                    /> */}
-                                    {/* <Tab
-                                        label='Ortopedia'
-                                        component={Link}
-                                        to={`/treatment/orthopedics`}
-                                        value={`/treatment/orthopedics`}
-                                        onClick={() => setTab('treatment-orthopedics')}
                                     /> */}
                                     <Tab
                                         label='Chirurgia naczyniowa'

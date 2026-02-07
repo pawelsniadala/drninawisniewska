@@ -141,7 +141,6 @@ const TechnologyView = () => {
                                 <Grid container spacing={1} sx={{ marginTop: 0 }}>
                                     {[
                                         'USG',
-                                        'Ortopedia',
                                         'Chirurgia naczyniowa',
                                         'Dietetyka Kliniczna',
                                         'Kardiologia',

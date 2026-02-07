@@ -56,12 +56,12 @@ const Table1 = () => {
 
     const rows = [
         createData('dr n. med. Nina Wiśniewska', 300),
-        createData('lek. med. Aldona Maciąg', 250),
-        createData('lek. med. Paulina Tatara', 200),
+        createData('lek. med. Aldona Maciąg', 280),
         createData('lek. med. Justyna Kłoniecka', 200),
         createData('lek. med. Katarzyna Myśliwiec-Czajka', 250),
         createData('lek. med. Katarzyna Rychlik', 200),
-        createData('lek. med. Karol Pniewski', 250)
+        createData('lek. med. Karol Pniewski', 250),
+        createData('lek. med. Karolina Dobrowolska', 250),
     ];
 
     return (

@@ -44,8 +44,6 @@ const PageTitle = ({ children }) => {
                 return `Endokrynologia - ${companyName}`;
             case '/services/gynecology':
                 return `Ginekologia - ${companyName}`;
-            case '/services/orthopedics':
-                return `Ortopedia - ${companyName}`;
             case '/services/vascular-surgery':
                 return `Chirurgia naczyniowa - ${companyName}`;
             case '/services/clinical-dietitian':
@@ -167,13 +165,9 @@ const PageTitle = ({ children }) => {
                 return `Cennik - ${companyName}`;
             case '/prices/gynecology':
                 return `Cennik - ${companyName}`;
-            case '/prices/orthopedics':
-                return `Cennik - ${companyName}`;
             case '/prices/vascular-surgery':
                 return `Cennik - ${companyName}`;
             case '/prices/clinical-dietitian':
-                return `Cennik - ${companyName}`;
-            case '/prices/rheumatology':
                 return `Cennik - ${companyName}`;
             case '/prices/cardiology':
                 return `Cennik - ${companyName}`;
@@ -201,12 +195,12 @@ const PageTitle = ({ children }) => {
                 return `Justyna Kłoniecka - ${companyName}`;
             case '/team/dermatology/aldona-maciag':
                 return `Aldona Maciąg - ${companyName}`;
-            case '/team/dermatology/paulina-tatara':
-                return `Paulina Tatara - ${companyName}`;
             case '/team/dermatology/katarzyna-rychlik':
                 return `Katarzyna Rychlik - ${companyName}`;
             case '/team/dermatology/karol-pniewski':
                 return `Karol Pniewski - ${companyName}`;
+            case '/team/dermatology/karolina-dobrowolska':
+                return `Karolina Dobrowolska - ${companyName}`;
 
             // medycyna estetyczna
             case '/team/aesthetic-medicine':
@@ -217,8 +211,6 @@ const PageTitle = ({ children }) => {
                 return `Konrad Kochan - ${companyName}`;
             case '/team/aesthetic-medicine/klaudia-malottki':
                 return `Klaudia Malottki - ${companyName}`;
-            case '/team/aesthetic-medicine/paulina-tatara':
-                return `Paulina Tatara - ${companyName}`;
             case '/team/aesthetic-medicine/olga-lenartowicz-warakomska':
                 return `Olga Lenartowicz-Warakomska - ${companyName}`;
             case '/team/aesthetic-medicine/karol-pniewski':
@@ -229,7 +221,7 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/cosmetology/paulina-sot':
                 return `Paulina Sot - ${companyName}`;
-            case '/team/cosmetology/karolina-zegota':
+            case '/team/cosmetology/karolina-rakowska':
                 return `Karolina Zęgota - ${companyName}`;
 
             // fizjoterapia
@@ -255,12 +247,10 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/usg/jadwiga-dowgiallo-smolarczyk':
                 return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
-            case '/team/usg/hanna-andrushevich':
-                return `Hanna Andrusevich - ${companyName}`;
             case '/team/usg/kamil-stepkowski':
                 return `Kamil Stępkowski - ${companyName}`;
-            case '/team/usg/patryk-krokwinski':
-                return `Patryk Krokwiński - ${companyName}`;
+           case '/team/usg/daniela-borkowska':
+                return `Daniela Borkowska - ${companyName}`;
 
             // endokrynologia
             case '/team/endocrinology':
@@ -273,14 +263,6 @@ const PageTitle = ({ children }) => {
                 return `Specjaliści - ${companyName}`;
             case '/team/gynecology/jadwiga-dowgiallo-smolarczyk':
                 return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
-            case '/team/gynecology/hanna-andrushevich':
-                return `Hanna Andrusevich - ${companyName}`;
-
-            // ortopedia
-            case '/team/orthopedics':
-                return `Specjaliści - ${companyName}`;
-            case '/team/orthopedics/wojciech-kaszewski':
-                return `Wojciech Kaszewski - ${companyName}`;
 
             // chirurgia naczyniowa
             case '/team/vascular-surgery':

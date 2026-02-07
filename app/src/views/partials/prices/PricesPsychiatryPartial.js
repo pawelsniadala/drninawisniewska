@@ -55,8 +55,8 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja (50 min) - lek. Kaja Strojnowska-Łapińska', 400, false),
-        createData('Kontrolna konsultacja psychiatryczna (30 min)', 300, false)
+        createData('Konsultacja (50 min) - lek. Kaja Strojnowska-Łapińska', 430, false),
+        createData('Kontrolna konsultacja psychiatryczna (30 min)', 330, false)
     ];
 
     return (

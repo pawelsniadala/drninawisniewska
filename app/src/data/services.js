@@ -25,9 +25,6 @@ import servicesEndocrinology0 from '../assets/services/endocrinology/servicesEnd
 // GINEKOLOGIA
 import servicesGynecology0 from '../assets/services/gynecology/servicesGynecology0.jpg';
 
-// ORTOPEDIA
-import servicesOrthopedics0 from '../assets/services/orthopedics/servicesOrthopedics0.jpg';
-
 // CHIRURGIA NACZYNIOWA
 import servicesVascularSurgery0 from '../assets/services/vascularSurgery/servicesVascularSurgery0.jpg';
 
@@ -37,16 +34,12 @@ import servicesClinicalDietitian0 from '../assets/services/clinicalDietitian/ser
 // KARDIOLOGIA
 import servicesCardiology0 from '../assets/services/cardiology/servicesCardiology0.jpg';
 
-// REUMATOLOGIA
-// import servicesRheumatology0 from '../assets/services/rheumatology/servicesRheumatology0.jpg';
-
 // PSYCHIATRIA
 import servicesPsychiatry0 from '../assets/services/psychiatry/servicesPsychiatry0.jpg';
 
 import ninaWisniewskaImageSmall from '../assets/team/ninaWisniewska/ninaWisniewskaImageSmall.jpg';
 import paulinaSotImageSmall from '../assets/team/paulinaSot/paulinaSotImageSmall.jpg';
 import konradKochanImageSmall from '../assets/team/konradKochan/konradKochanImageSmall.jpg';
-import wojciechKaszewskiImageSmall from '../assets/team/wojciechKaszewski/wojciechKaszewskiImageSmall.jpg';
 import justynaKlonieckaImageSmall from '../assets/team/justynaKloniecka/justynaKlonieckaImageSmall.jpg';
 import katarzynaMysliwiecCzajkaImageSmall from '../assets/team/katarzynaMysliwiecCzajka/katarzynaMysliwiecCzajkaImageSmall.jpg';
 import klaudiaMalottkiImageSmall from '../assets/team/klaudiaMalottki/klaudiaMalottkiImageSmall.jpg';
@@ -55,16 +48,15 @@ import milenaJuzwiakImageSmall from '../assets/team/milenaJuzwiak/milenaJuzwiakI
 import tomaszMatuszewskiImageSmall from '../assets/team/tomaszMatuszewski/tomaszMatuszewskiImageSmall.jpg';
 import kamilStepkowskiImageSmall from '../assets/team/kamilStepkowski/kamilStepkowskiImageSmall.jpg';
 import olgaLenartowiczWarakomskaImageSmall from '../assets/team/olgaLenartowiczWarakomska/olgaLenartowiczWarakomskaImageSmall.jpg';
-import paulinaTataraImageSmall from '../assets/team/paulinaTatara/paulinaTataraImageSmall.jpg';
 import joannaOjrzenskaImageSmall from '../assets/team/joannaOjrzenska/joannaOjrzenskaImageSmall.jpg';
 import katarzynaRychlikImageSmall from  '../assets/team/katarzynaRychlik/katarzynaRychlikImageSmall.jpg';
-import patrykKrokwinskiImageSmall from  '../assets/team/patrykKrokwinski/patrykKrokwinskiImageSmall.jpg';
 import michalRadzioImageSmall from  '../assets/team/michalRadzio/michalRadzioImageSmall.jpg';
 import kajaStrojnowskaLapinskaImageSmall from  '../assets/team/kajaStrojnowskaLapinska/kajaStrojnowskaLapinskaImageSmall.jpg';
 import jadwigaDowgialloSmolarczykImageSmall from '../assets/team/jadwigaDowgialloSmolarczyk/jadwigaDowgialloSmolarczykImageSmall.jpg'
-import karolinaZegotaSmall from '../assets/team/karolinaZegota/karolinaZegotaSmall.jpg';
-import hannaAndrusevichSmall from '../assets/team/hannaAndrusevich/hannaAndrusevichSmall.jpg';
+import karolinaRakowskaImageSmall from '../assets/team/karolinaRakowska/karolinaRakowskaImageSmall.jpg';
 import karolPniewskiImageSmall from '../assets/team/karolPniewski/karolPniewskiImageSmall.jpg';
+import karolinaDobrowolskaImageSmall from  '../assets/team/karolinaDobrowolska/karolinaDobrowolskaImageSmall.jpg';
+import danielaBorkowskaImageSmall from  '../assets/team/danielaBorkowska/danielaBorkowskaImageSmall.jpg';
 
 export const dermatology = {
     id: '554e27d9-1d9e-4041-9549-29057bb9792f',
@@ -88,18 +80,18 @@ export const dermatology = {
         katarzynaMysliwiecCzajkaImageSmall,
         justynaKlonieckaImageSmall,
         aldonaMaciagImageSmall,
-        paulinaTataraImageSmall,
         katarzynaRychlikImageSmall,
-        karolPniewskiImageSmall
+        karolPniewskiImageSmall,
+        karolinaDobrowolskaImageSmall
     ],
     specialists2: [
         'nina-wisniewska',
         'aldona-maciag',
         'justyna-kloniecka',
         'katarzyna-mysliwiec-czajka',
-        'paulina-tatara',
         'katarzyna-rychlik',
-        'karol-pniewski'
+        'karol-pniewski',
+        'karolina-dobrowolska',
     ],
     relatedSpecializations: [
         'aesthetic-medicine',
@@ -129,14 +121,12 @@ export const aestheticMedicine = {
     specialists: [
         konradKochanImageSmall,
         klaudiaMalottkiImageSmall,
-        paulinaTataraImageSmall,
         olgaLenartowiczWarakomskaImageSmall,
         karolPniewskiImageSmall
     ],
     specialists2: [
         'konrad-kochan',
         'klaudia-malottki',
-        'paulina-tatara',
         'olga-lenartowicz-warakomska',
         'karol-pniewski'
     ],
@@ -166,11 +156,11 @@ export const cosmetology = {
     ],
     specialists: [
         paulinaSotImageSmall,
-        karolinaZegotaSmall
+        karolinaRakowskaImageSmall
     ],
     specialists2: [
         'paulina-sot',
-        'karolina-zegota'
+        'karolina-rakowska'
     ],
     relatedSpecializations: [
         'dermatology',
@@ -203,8 +193,7 @@ export const physioterapy = {
         'milena-juzwiak'
     ],
     relatedSpecializations: [
-        'orthopedics',
-        'rheumatology'
+        'orthopedics'
     ],
 };
 
@@ -283,17 +272,13 @@ export const usg = {
     ],
     specialists: [
         jadwigaDowgialloSmolarczykImageSmall,
-        wojciechKaszewskiImageSmall,
-        hannaAndrusevichSmall,
-        patrykKrokwinskiImageSmall,
         kamilStepkowskiImageSmall,
+        danielaBorkowskaImageSmall
     ],
     specialists2: [
         'jadwiga-dowgiallo-smolarczyk',
-        'wojciech-kaszewski',
         'kamil-stepkowski',
-        'patryk-krokwinski',
-        'hanna-andrushevich'
+        'daniela-borkowska'
     ],
     relatedSpecializations: [
         'endocrinology',
@@ -348,45 +333,14 @@ export const gynecology = {
         }
     ],
     specialists: [
-        jadwigaDowgialloSmolarczykImageSmall,
-        hannaAndrusevichSmall
+        jadwigaDowgialloSmolarczykImageSmall
     ],
     specialists2: [
-        'jadwiga-dowgiallo-smolarczyk',
-        'hanna-andrushevich'
+        'jadwiga-dowgiallo-smolarczyk'
     ],
     relatedSpecializations: [
         'usg',
         'endocrinology'
-    ],
-};
-
-export const orthopedics = {
-    id: '5f41b5eb-0997-4e75-82a4-6efc3aa9a05f',
-    specialization: 'orthopedics',
-    title: 'Ortopedia',
-    description: 'Ortopedia to dziedzina medycyny zajmująca się diagnozowaniem, leczeniem i rehabilitacją schorzeń, urazów i zaburzeń układu mięśniowo-szkieletowego. Układ mięśniowo-szkieletowy obejmuje kości, stawy, mięśnie, więzadła i ścięgna, a ortopedia skupia się na ich funkcjonowaniu, ruchomości i zdrowiu.',
-    path: '/services/orthopedics',
-    pathSpecialist: '/team/orthopedics',
-    pathPrices: '/prices/orthopedics',
-    image: servicesOrthopedics0,
-    images: [
-        {
-            src: servicesOrthopedics0,
-            alt: 'Ortopeda trzymający model kręgosłupa',
-            author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/fizjoterapeuta-kregow-trzymajacy-sztuczny-kregoslup_13376886.htm'
-        }
-    ],
-    specialists: [
-        wojciechKaszewskiImageSmall
-    ],
-    specialists2: [
-        'wojciech-kaszewski'
-    ],
-    relatedSpecializations: [
-        'physioterapy',
-        'rheumatology'
     ],
 };
 
@@ -442,39 +396,9 @@ export const clinicalDietitian = {
         'joanna-ojrzenska'
     ],
     relatedSpecializations: [
-        'rheumatology',
         'psychiatry'
     ],
 };
-
-// export const rheumatology = {
-//     id: '5e727446-cd71-4238-b7dd-fc6abd853f73',
-//     specialization: 'rheumatology',
-//     title: 'Reumatologia',
-//     description: 'Dziedzina medycyny zajmująca się różnego typu schorzeniami związanymi ze stanami zwyrodnieniowymi i zapalnymi tkanki łącznej, kości i stawów.',
-//     path: '/services/rheumatology',
-//     pathSpecialist: '/team/rheumatology',
-//     pathPrices: '/prices/rheumatology',
-//     image: servicesRheumatology0,
-//     images: [
-//         {
-//             src: servicesRheumatology0,
-//             alt: 'Lekarz pomagający pacjentowi z problemami pleców',
-//             author: 'Freepik',
-//             href: 'https://pl.freepik.com/darmowe-zdjecie/mlody-fizjoterapeuta-pomagajacy-pacjentowi-z-problemami-z-plecami_18843354.htm'
-//         }
-//     ],
-//     specialists: [
-//         agataSkwerekSzewczykImageSmall
-//     ],
-//     specialists2: [
-//         'agata-skwerek-szewczyk'
-//     ],
-//     relatedSpecializations: [
-//         'physioterapy',
-//         'orthopedics'
-//     ],
-// };
 
 export const cardiology = {
     id: '0eb413c4-fe60-426b-8df4-32c706b24f37',
@@ -544,10 +468,8 @@ export const services = [
     { ...usg },
     { ...endocrinology },
     { ...gynecology },
-    { ...orthopedics },
     { ...vascularSurgery },
     { ...clinicalDietitian },
-    // { ...rheumatology },
     { ...cardiology },
     { ...psychiatry },
 ];
