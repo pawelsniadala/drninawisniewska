@@ -50,6 +50,8 @@ const PageTitle = ({ children }) => {
                 return `Kardiologia - ${companyName}`;
             case '/services/psychiatry':
                 return `Psychiatria - ${companyName}`;
+            case '/services/psychology':
+                return `Psychologia - ${companyName}`;
 
 
             // ZABIEGI

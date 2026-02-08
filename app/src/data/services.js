@@ -446,7 +446,7 @@ export const psychology = {
             src: servicesPsychology0,
             alt: 'Konsultacja psychologiczna w gabinecie',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/widok-z-boku-mloda-dziewczyna-rozmawia-z-terapeuta_37516527.htm'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/widok-z-przodu-mloda-dziewczyna-rozmawia-z-terapeuta_37516532.htm'
         }
     ],
     specialists: [

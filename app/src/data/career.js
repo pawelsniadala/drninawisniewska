@@ -363,9 +363,9 @@ export const psychiatrist = {
     images: [
         {
             src: careerPsychiatrist0,
-            alt: 'Dziewczyna rozmawia z terapeutą',
+            alt: 'Kobieta rozmawia z terapeutą',
             author: 'Freepik',
-            href: 'https://pl.freepik.com/darmowe-zdjecie/widok-z-przodu-mloda-dziewczyna-rozmawia-z-terapeuta_37516532.htm'
+            href: 'https://pl.freepik.com/darmowe-zdjecie/polowa-strzalu-kobieta-rozmawia-z-terapeuta-mezczyzna_11241669.htm'
         }
     ],
     duties: [
