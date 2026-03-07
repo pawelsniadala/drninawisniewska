@@ -37,11 +37,12 @@ const Table1 = () => {
     }
 
     const rows = [
-        createData('Konsultacja dr n. med. Tomasz Matuszewski', 250),
-        createData('Płatkowe testy kontaktowe', 400),
-        createData('Testy skórne', 200),
-        createData('Odczulanie', 80),
-        createData('Konsultacja pediatryczna', 250),
+        createData('Konsultacja alergologiczna - dr n. med. Tomasz Matuszewski', 280),
+        createData('Konsultacja pediatryczna - dr n. med. Tomasz Matuszewski', 280),
+        createData('Testy skórne', 250),
+        createData('Konsultacja + Testy skórne', 500),
+        createData('Odczulanie', 90),
+        createData('Założenie płatkowych testów kontaktowych, zdjęcie, odczyt i lista alergenów', 450)
     ];
 
     return (

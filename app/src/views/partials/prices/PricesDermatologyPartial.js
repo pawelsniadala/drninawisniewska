@@ -104,7 +104,7 @@ const Table2 = () => {
         createData('Ostrzyknięcie sterydem', false, 350),
         createData('Badanie dermatoskopowe zmian skórnych (całe ciało) ', false, 300),
         createData('Wideodermatoskopia', false, 500),
-        createData('Założenie płatkowych testów kontaktowych, zdjęcie, odczyt i lista alergenów (36 Alergenów)', false, 400),
+        createData('Założenie płatkowych testów kontaktowych, zdjęcie, odczyt i lista alergenów (36 Alergenów)', false, 450),
         createData('Fototerapia lampa UVB 311 nm - 16 zabiegów ', false, 400),
         createData('Fototerapia PUVA (dłonie) - 6 zabiegów', false, 250),
         createData('Fototerapia PUVA (stopy) - 6 zabiegów', false, 250),
@@ -113,7 +113,8 @@ const Table2 = () => {
         createData('Badanie histopatologiczne (1 zmiana)', false, 70),
         createData('Biopsja skóry', false, 400),
         createData('Usunięcie zmian skórnych elektrochirurgicznie ', false, 'od 300'),
-        createData('kolejne na tej samej wizycie', 'Powyżej 10 zmian skórnych cenę ustala lekarz.', 100)
+        createData('kolejne na tej samej wizycie', 'Powyżej 10 zmian skórnych cenę ustala lekarz.', 100),
+        createData('Recepta', false, 'od 70 - 100')
     ];
 
     return (
