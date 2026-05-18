@@ -36,7 +36,8 @@ import {
     danielaBorkowska,
     zanetaManko,
     paulinaPedzich,
-    juliaNisio
+    juliaNisio,
+    adaSzepelska
 } from '../../../data/team';
 
 const SpecialistsDetailsPartial = () => {
@@ -125,6 +126,8 @@ const SpecialistsDetailsPartial = () => {
                 return [{ ...paulinaPedzich }];
             case 'julia-nisio':
                 return [{ ...juliaNisio }];
+            case 'ada-szepelska':
+                return [{ ...adaSzepelska }];
             default:
         }
     }

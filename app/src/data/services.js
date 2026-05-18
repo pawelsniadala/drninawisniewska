@@ -57,6 +57,7 @@ import karolPniewskiImageSmall from '../assets/team/karolPniewski/karolPniewskiI
 import karolinaDobrowolskaImageSmall from  '../assets/team/karolinaDobrowolska/karolinaDobrowolskaImageSmall.jpg';
 import danielaBorkowskaImageSmall from  '../assets/team/danielaBorkowska/danielaBorkowskaImageSmall.jpg';
 import zanetaMankoImageSmall from  '../assets/team/zanetaManko/zanetaMankoImageSmall.jpg';
+import adaSzepelskaImageSmall from  '../assets/team/adaSzepelska/adaSzepelskaImageSmall.jpg';
 
 export const dermatology = {
     id: '554e27d9-1d9e-4041-9549-29057bb9792f',
@@ -82,7 +83,8 @@ export const dermatology = {
         aldonaMaciagImageSmall,
         katarzynaRychlikImageSmall,
         karolPniewskiImageSmall,
-        karolinaDobrowolskaImageSmall
+        karolinaDobrowolskaImageSmall,
+        adaSzepelskaImageSmall
     ],
     specialists2: [
         'nina-wisniewska',
@@ -92,6 +94,7 @@ export const dermatology = {
         'katarzyna-rychlik',
         'karol-pniewski',
         'karolina-dobrowolska',
+        'ada-szepelska'
     ],
     relatedSpecializations: [
         'aesthetic-medicine',

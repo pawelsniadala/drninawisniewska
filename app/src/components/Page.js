@@ -98,6 +98,8 @@ const PageTitle = ({ children }) => {
                 return `Masaż próżniowy - ${companyName}`;
             case '/treatment/cosmetology/ultradzwieki-i-fala-radiowa':
                 return `Ultradzwieki i fala radiowa - ${companyName}`;
+            case '/treatment/cosmetology/mezoterapia-mikroiglowa':
+                return `Mezoterapia mikroigłowa - ${companyName}`;
 
             // chirurgia plastyczna
             case '/treatment/cosmetic-surgery':
@@ -191,6 +193,8 @@ const PageTitle = ({ children }) => {
                 return `Karol Pniewski - ${companyName}`;
             case '/team/dermatology/karolina-dobrowolska':
                 return `Karolina Dobrowolska - ${companyName}`;
+            case '/team/dermatology/ada-szepelska':
+                return `Ada Szepelska - ${companyName}`;
 
             // medycyna estetyczna
             case '/team/aesthetic-medicine':

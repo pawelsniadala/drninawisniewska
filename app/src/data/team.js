@@ -20,6 +20,7 @@ import danielaBorkowskaImage from '../assets/team/danielaBorkowska/danielaBorkow
 import zanetaMankoImage from '../assets/team/zanetaManko/zanetaMankoImage.jpg';
 import paulinaPedzichImage from '../assets/team/paulinaPedzich/paulinaPedzichImage.jpg';
 import juliaNisioImage from '../assets/team/juliaNisio/juliaNisioImage.jpg';
+import adaSzepelskaImage from '../assets/team/adaSzepelska/adaSzepelskaImage.jpg';
 // import teamBackground from '../assets/team/teamBackground.jpg';
 
 export const ninaWisniewska = {
@@ -496,6 +497,29 @@ export const juliaNisio = {
     treatment: ['']
 };
 
+export const adaSzepelska = {
+    id: '3f89e425-4cee-42ca-96c7-08022b62c9a1',
+    specialist: 'ada-szepelska',
+    name: 'Lek. med. Ada Szepelska',
+    speciality: 'Dermatolog',
+    summary: false,
+    education: 'Wykształcenie zdobywałam na Wydziale Lekarskim Warszawskiego Uniwersytetu Medycznego oraz trzyletniej Podyplomowej Szkole Medycyny Estetycznej Polskiego Towarzystwa Lekarskiego w Warszawie. Obecnie jestem w trakcie specjalizacji z dermatologii i wenerologii w Klinice Dermatologii Wojskowego Instytutu Medycznego w Warszawie.',
+    experience: 'Stale poszerzam swoją wiedzę, uczestnicząc w kolejnych szkoleniach i konferencjach - również w roli wykładowcy. Na co dzień zajmuję się leczeniem chorób skóry, ze szczególnym uwzględnieniem łuszczycy, atopowego zapalenia skóry, trądziku zwykłego i różowatego oraz profilaktyką nowotworów skóry. Kolejnym obszarem moich zainteresowań zawodowych jest dermatologia estetyczna, obejmująca działania przeciwstarzeniowe i regeneracyjne z użyciem mało inwazyjnych zabiegów, takich jak mezoterapia, laseroterapia, osocze bogatopłytkowe, czy toksyna botulinowa.',
+    interested: false,
+    image: adaSzepelskaImage,
+    background: null,
+    specialization: [
+        'dermatology'
+    ],
+    treatment: [
+        'badanie-znamion-barwnikowych',
+        'fototerapia-chorob-skory'
+    ],
+    career: [
+        'dermatologist'
+    ]
+};
+
 export const team = [
     { ...ninaWisniewska },
     { ...paulinaSot },
@@ -518,5 +542,6 @@ export const team = [
     { ...danielaBorkowska },
     { ...zanetaManko },
     { ...paulinaPedzich },
-    { ...juliaNisio }
+    { ...juliaNisio },
+    { ...adaSzepelska },
 ];

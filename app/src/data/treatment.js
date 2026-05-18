@@ -98,6 +98,15 @@ import effectsUltradzwiekiIFalaRadiowa0Sm from '../assets/treatment/cosmetology/
 import effectsUltradzwiekiIFalaRadiowa1Lg from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa1Lg.png';
 import effectsUltradzwiekiIFalaRadiowa1Sm from '../assets/treatment/cosmetology/ultradzwiekiIFalaRadiowa/effects/effectsUltradzwiekiIFalaRadiowa1Sm.png';
 
+// mezoterapia mikroigłowa
+import mezoterapiaMikroiglowa0Image0 from '../assets/treatment/cosmetology/mezoterapiaMikroiglowa/mezoterapiaMikroiglowa0.jpg';
+import effectsMezoterapiaMikroiglowa0Lg from '../assets/treatment/cosmetology/mezoterapiaMikroiglowa/effects/effectsMezoterapiaMikroiglowa0Lg.jpg';
+import effectsMezoterapiaMikroiglowa0Sm from '../assets/treatment/cosmetology/mezoterapiaMikroiglowa/effects/effectsMezoterapiaMikroiglowa0Sm.jpg';
+import effectsMezoterapiaMikroiglowa1Lg from '../assets/treatment/cosmetology/mezoterapiaMikroiglowa/effects/effectsMezoterapiaMikroiglowa1Lg.jpg';
+import effectsMezoterapiaMikroiglowa1Sm from '../assets/treatment/cosmetology/mezoterapiaMikroiglowa/effects/effectsMezoterapiaMikroiglowa1Sm.jpg';
+import effectsMezoterapiaMikroiglowa2Lg from '../assets/treatment/cosmetology/mezoterapiaMikroiglowa/effects/effectsMezoterapiaMikroiglowa2Lg.jpg';
+import effectsMezoterapiaMikroiglowa2Sm from '../assets/treatment/cosmetology/mezoterapiaMikroiglowa/effects/effectsMezoterapiaMikroiglowa2Sm.jpg';
+
 
 // CHIRURGIA PLASTYCZNA
 // plastyka powiek
@@ -843,6 +852,71 @@ export const ultradzwiekiIFalaRadiowa = {
     ]
 };
 
+export const mezoterapiaMikroiglowa = {
+    id: 'd3a05df4-57af-4003-bfa3-61dd9ca1a33a',
+    treatment: 'mezoterapia-mikroiglowa',
+    title: 'Mezoterapia mikroigłowa',
+    description: 'Mezoterapia mikroigłowa to zabieg polegający na wykonywaniu kontrolowanych mikronakłuć skóry. Stymuluje naturalne procesy regeneracyjne, wspiera produkcję kolagenu i elastyny oraz ułatwia wprowadzanie składników aktywnych w głąb skóry. Najnowszy Dermapen™ jest w pełni cyfrowym oryginalnym urządzeniem do mikronakłuwania frakcyjnego skóry. Dermapen™ to zabieg wspierający regenerację skóry oraz umożliwiający uzyskanie przyspieszonych efektów stosowanych podczas procedury z zastosowaniem preparatów. Mikroskopijne nakłucia wspomagają penetracje składników aktywnych w głębsze warstwy skóry, dzięki czemu ich działanie jest znacznie intensywniejsze niż w przypadku powierzchownej aplikacji na naskórek. W zależności od doboru preparatów Dermapen™ pomaga redukować rozmaite problemy skórne.',
+    info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
+    path: '/treatment/cosmetology/mezoterapia-mikroiglowa',
+    images: [
+        {
+            src: mezoterapiaMikroiglowa0Image0,
+            alt: 'Zabieg wspierający regenerację skóry',
+            author: 'DermapenWorld',
+            href: 'https://www.dermapenworld.com'
+        }
+    ],
+    effects: [
+        {
+            alt: 'Rozszerzone pory',
+            description: 'Rozszerzone pory',
+            original: {
+                src: effectsMezoterapiaMikroiglowa0Lg,
+                width: 1080,
+                height: 1080
+            },
+            thumbnail: {
+                src: effectsMezoterapiaMikroiglowa0Sm
+            }
+        },
+        {
+            alt: 'Przebarwienia',
+            description: 'Przebarwienia',
+            original: {
+                src: effectsMezoterapiaMikroiglowa1Lg,
+                width: 1080,
+                height: 1080
+            },
+            thumbnail: {
+                src: effectsMezoterapiaMikroiglowa1Sm
+            }
+        },
+        {
+            alt: 'Zmarszczki',
+            description: 'Zmarszczki',
+            original: {
+                src: effectsMezoterapiaMikroiglowa2Lg,
+                width: 1080,
+                height: 1080
+            },
+            thumbnail: {
+                src: effectsMezoterapiaMikroiglowa2Sm
+            }
+        },
+    ],
+    specialization: [
+        'cosmetology'
+    ],
+    specialist: [
+        'paulina-sot',
+        'karolina-rakowska'
+    ],
+    career: [
+        'cosmetologist'
+    ]
+};
+
 
 // CHIRURGIA PLASTYCZNA
 export const plastykaPowiek = {
@@ -1073,6 +1147,7 @@ export const treatment = [
     { ...epilacjaLaserowa },
     { ...masazProzniowy },
     { ...ultradzwiekiIFalaRadiowa },
+    { ...mezoterapiaMikroiglowa },
 
     // CHIRURGIA PLASTYCZNA
     { ...plastykaPowiek },

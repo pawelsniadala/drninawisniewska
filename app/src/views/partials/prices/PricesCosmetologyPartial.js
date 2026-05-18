@@ -534,6 +534,66 @@ const Table11 = () => {
     );
 }
 
+const Table13 = () => {
+    function createData(name, price, fat) {
+        return { name, price, fat, };
+    }
+
+const rows = [
+    createData('Dermapen 4 + Booster z substancjami aktywnymi + maska pozabiegowa - twarz', 600, 1440),
+    createData('Dermapen 4 + Booster z substancjami aktywnymi + maska pozabiegowa - twarz + szyja', 800, 1920),
+    createData('Dermapen 4 + Booster z substancjami aktywnymi + maska pozabiegowa - twarz + szyja + dekolt', 1000, 2400),
+    createData('Dermapen 4 + kwas PRX-T33/BioRePeel/ + maska pozabiegowa - twarz', 900, 2160),
+    createData('Dermapen 4 + kwas PRX-T33/BioRePeel/ + maska pozabiegowa - twarz + szyja', 1100, 2640),
+    createData('Dermapen 4 + kwas PRX-T33/BioRePeel/ + maska pozabiegowa - twarz + szyja + dekolt', 1300, 3120),
+    createData('Dermapen 4 - blizny/rozstępy', 'Od 350 zł', '-'),
+];
+
+    return (
+        <TableContainer className='table-container' component={Paper}>
+            <Table size='small' aria-label='customized table'>
+                <TableHead>
+                    <TableRow>
+                    <StyledTableCell className='featured'>
+                        Mezoterapia mikroigłowa - Dermapen 4
+                        {tooltip('Podane ceny dotyczą zabiegów wykonywanych na oryginalnych kosmetykach Dp Dermaceuticals razem z maską łagodzącą Uber Pro. Obszar całej twarzy obejmuje: powiekę górną i okolicę pod oczami oraz kąty oka, nos, policzki, czoło, rynienkę podnosową, brodę.')}
+                    </StyledTableCell>
+                    <StyledTableCell colSpan={2} align='right'>
+                        Cena
+                    </StyledTableCell>
+                    </TableRow>
+                    <TableRow>
+                    <StyledTableCell>
+                        Okolica
+                    </StyledTableCell>
+                    <StyledTableCell align='right' className='nowrap'>
+                        1 zabieg
+                    </StyledTableCell>
+                    <StyledTableCell align='right' className='nowrap'>
+                        3 zabiegi
+                    </StyledTableCell>
+                    </TableRow>
+                </TableHead>
+                <TableBody>
+                    {rows.map((row) => (
+                        <StyledTableRow key={row.name}>
+                            <StyledTableCell component='th' scope='row'>
+                                {row.name}
+                            </StyledTableCell>
+                            <StyledTableCell align='right' className='nowrap'>
+                                {row.price}
+                            </StyledTableCell>
+                            <StyledTableCell align='right' className='nowrap'>
+                                {row.fat}
+                            </StyledTableCell>
+                        </StyledTableRow>
+                    ))}
+                </TableBody>
+            </Table>
+        </TableContainer>
+    );
+}
+
 const PricesCosmetologyPartial = () => {
     useEffect(() => {
         window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
@@ -551,6 +611,7 @@ const PricesCosmetologyPartial = () => {
             <Table9 />
             <Table10 />
             <Table11 />
+            <Table13 />
         </Box>
     );
 };

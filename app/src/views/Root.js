@@ -59,6 +59,7 @@ import TreatmentPeelingMedycznyPartial from './partials/treatment/cosmetology/Tr
 import TreatmentEpilacjaLaserowaPartial from './partials/treatment/cosmetology/TreatmentEpilacjaLaserowaPartial';
 import TreatmentMasazProzniowyPartial from './partials/treatment/cosmetology/TreatmentMasazProzniowyPartial';
 import TreatmentUltradzwiekiIFalaRadiowaPartial from './partials/treatment/cosmetology/TreatmentUltradzwiekiIFalaRadiowaPartial';
+import TreatmentMezoterapiaMikroiglowaPartial from './partials/treatment/cosmetology/TreatmentMezoterapiaMikroiglowaPartial';
 
 // chirurgia plastyczna
 import TreatmentPlastykaPowiekPartial from './partials/treatment/cosmeticSurgery/TreatmentPlastykaPowiekPartial';
@@ -192,6 +193,7 @@ const Root = () => (
                     <Route path='/treatment/cosmetology/epilacja-laserowa' element={<TreatmentEpilacjaLaserowaPartial />} />
                     <Route path='/treatment/cosmetology/masaz-prozniowy' element={<TreatmentMasazProzniowyPartial />} />
                     <Route path='/treatment/cosmetology/ultradzwieki-i-fala-radiowa' element={<TreatmentUltradzwiekiIFalaRadiowaPartial />} />
+                    <Route path='/treatment/cosmetology/mezoterapia-mikroiglowa' element={<TreatmentMezoterapiaMikroiglowaPartial />} />
 
                     {/* chirurgia plastyczna */}
                     <Route path='/treatment/cosmetic-surgery/plastyka-powiek' element={<TreatmentPlastykaPowiekPartial />} />
