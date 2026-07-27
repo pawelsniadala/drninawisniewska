@@ -1,251 +1,224 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useParams } from 'react-router-dom';
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
-import Tabs, { tabsClasses } from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Tabs, { tabsClasses } from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
 
-import Page from '../components/Page';
-import Container from '../components/Container';
-import TreatmentListPartial from './partials/treatment/TreatmentListPartial';
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+
+import Container from "../components/Container";
+import Seo from "../components/Seo";
+
+import TreatmentListPartial from "./partials/treatment/TreatmentListPartial";
+
+const treatmentPages = [
+  {
+    path: "/zabiegi",
+    tabId: "treatment-dermatology",
+    label: "Dermatologia",
+    specialization: "dermatology",
+    title: "Zabiegi: dermatologia",
+    description:
+      "Oferta zabiegów dermatologicznych w Klinice dr Niny Wiśniewskiej w Wyszkowie, obejmująca procedury stosowane w leczeniu i poprawie kondycji skóry.",
+  },
+  {
+    path: "/zabiegi/medycyna-estetyczna",
+    tabId: "treatment-aesthetic-medicine",
+    label: "Medycyna estetyczna",
+    specialization: "aesthetic-medicine",
+    title: "Zabiegi: medycyna estetyczna",
+    description:
+      "Procedury z zakresu medycyny estetycznej dostępne w Klinice dr Niny Wiśniewskiej w Wyszkowie. Zakres zabiegów oraz wskazania do ich wykonania.",
+  },
+  {
+    path: "/zabiegi/kosmetologia",
+    tabId: "treatment-cosmetology",
+    label: "Kosmetologia",
+    specialization: "cosmetology",
+    title: "Zabiegi: kosmetologia",
+    description:
+      "Pielęgnacja i zabiegi kosmetologiczne dostępne w Klinice dr Niny Wiśniewskiej w Wyszkowie, dobierane do potrzeb i kondycji skóry.",
+  },
+  {
+    path: "/zabiegi/chirurgia-plastyczna",
+    tabId: "treatment-cosmetic-surgery",
+    label: "Chirurgia plastyczna",
+    specialization: "cosmetic-surgery",
+    title: "Zabiegi: chirurgia plastyczna",
+    description:
+      "Zabiegi z zakresu chirurgii plastycznej w Klinice dr Niny Wiśniewskiej w Wyszkowie. Informacje o dostępnych procedurach i wskazaniach.",
+  },
+  {
+    path: "/zabiegi/alergologia",
+    tabId: "treatment-allergology",
+    label: "Alergologia",
+    specialization: "allergology",
+    title: "Zabiegi: alergologia",
+    description:
+      "Diagnostyka i leczenie alergii oraz konsultacje alergologiczne w Klinice dr Niny Wiśniewskiej w Wyszkowie. Zakres dostępnych świadczeń.",
+  },
+  {
+    path: "/zabiegi/chirurgia-naczyniowa",
+    tabId: "treatment-vascular-surgery",
+    label: "Chirurgia naczyniowa",
+    specialization: "vascular-surgery",
+    title: "Zabiegi: chirurgia naczyniowa",
+    description:
+      "Zabiegi z zakresu chirurgii naczyniowej w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+  },
+  {
+    path: "/zabiegi/kardiologia",
+    tabId: "treatment-cardiology",
+    label: "Kardiologia",
+    specialization: "cardiology",
+    title: "Zabiegi: kardiologia",
+    description:
+      "Badania i konsultacje kardiologiczne w Klinice dr Niny Wiśniewskiej w Wyszkowie. Informacje o dostępnej diagnostyce i zakresie świadczeń.",
+  },
+  {
+    path: "/zabiegi/psychiatria",
+    tabId: "treatment-psychiatry",
+    label: "Psychiatria",
+    specialization: "psychiatry",
+    title: "Zabiegi: psychiatria",
+    description:
+      "Konsultacje psychiatryczne i diagnostyka w Klinice dr Niny Wiśniewskiej w Wyszkowie, w tym badanie ADOS-2 dla dzieci, młodzieży i dorosłych.",
+  },
+];
 
 const TreatmentView = () => {
-    const location = useLocation();
+  const location = useLocation();
 
-    const [ treatmentTab, setTab ] = useState(() => {
-        const pathname = window.location.pathname;
+  const currentPage =
+    treatmentPages.find((page) => page.path === location.pathname) ||
+    treatmentPages[0];
 
-        const selectTab = (pathname) => {
-            switch(pathname) {
-                case '/treatment':
-                    return 'treatment-dermatology';
-                case '/treatment/aesthetic-medicine':
-                    return 'treatment-aesthetic-medicine';
-                case '/treatment/cosmetology':
-                    return 'treatment-cosmetology';
-                case '/treatment/cosmetic-surgery':
-                    return 'treatment-cosmetic-surgery';
-                case '/treatment/allergology':
-                    return 'treatment-allergology';
-                // case '/treatment/usg':
-                //     return 'treatment-usg';
-                // case '/treatment/endocrinology':
-                //     return 'treatment-endocrinology';
-                // case '/treatment/gynecology':
-                //     return 'treatment-gynecology';
-                case '/treatment/vascular-surgery':
-                    return 'treatment-vascular-surgery';
-                // case '/treatment/clinical-dietitian':
-                //     return 'treatment-clinical-dietitian';
-                case '/treatment/cardiology':
-                    return 'treatment-cardiology';
-                case '/treatment/psychiatry':
-                    return 'treatment-psychiatry';
-                default:
-            }
-        }
-
-        return selectTab(pathname);
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
     });
+  }, [location.pathname]);
 
-    const { specialization } = useParams();
+  return (
+    <>
+      <Seo
+        title={currentPage.title}
+        description={currentPage.description}
+        path={currentPage.path}
+      />
 
-    const renderTabContent = (treatmentTab) => {
+      <Box className="treatment-view">
+        <Box className="view-wrapper">
+          <Box className="view-header">
+            <Container className="header-wrapper">
+              <Box className="nav-wrapper">
+                <Breadcrumbs
+                  className="breadcrumb back"
+                  aria-label="Nawigacja powrotna"
+                >
+                  <Link to="/">
+                    <ArrowBackIcon aria-hidden="true" focusable="false" />
 
-        switch(treatmentTab) {
-            case 'treatment-dermatology':
-                return <TreatmentListPartial specialization='dermatology' />;
-            case 'treatment-aesthetic-medicine':
-                return <TreatmentListPartial specialization={specialization} />;
-            case 'treatment-cosmetology':
-                return <TreatmentListPartial specialization={specialization} />;
-            case 'treatment-cosmetic-surgery':
-                return <TreatmentListPartial specialization={specialization} />;
-            case 'treatment-allergology':
-                return <TreatmentListPartial specialization={specialization} />;
-            // case 'treatment-usg':
-            //     return <TreatmentListPartial specialization={specialization} />;
-            // case 'treatment-endocrinology':
-            //     return <TreatmentListPartial specialization={specialization} />;
-            // case 'treatment-gynecology':
-            //     return <TreatmentListPartial specialization={specialization} />;
-            case 'treatment-vascular-surgery':
-                return <TreatmentListPartial specialization={specialization} />;
-            // case 'treatment-clinical-dietitian':
-            //     return <TreatmentListPartial specialization={specialization} />;
-            case 'treatment-cardiology':
-                return <TreatmentListPartial specialization={specialization} />;
-            case 'treatment-psychiatry':
-                return <TreatmentListPartial specialization={specialization} />;
-            default:
-        }
-    }
+                    <Box component="span">Strona główna</Box>
+                  </Link>
+                </Breadcrumbs>
 
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'instant'
-        });
-    }, []);
+                <Breadcrumbs
+                  className="breadcrumb nav"
+                  separator={
+                    <NavigateNextIcon
+                      fontSize="small"
+                      aria-hidden="true"
+                      focusable="false"
+                    />
+                  }
+                  aria-label="Ścieżka nawigacyjna"
+                >
+                  <Link to="/">Strona główna</Link>
 
-    return (
-        <Box className='treatment-view'>
-            <Box className='view-wrapper'>
-                <Box className='view-header'>
-                    <Container className='header-wrapper'>
-                        <Box className='nav-wrapper'>
-                            <Breadcrumbs className='breadcrumb back' aria-label='breadcrumb'>
-                                <Link to='/' aria-current='page'>
-                                    <ArrowBackIcon />
-                                    <Box>Home</Box>
-                                </Link>
-                            </Breadcrumbs>
-                            <Breadcrumbs
-                                className='breadcrumb nav'
-                                separator={<NavigateNextIcon fontSize='smform' />}
-                                aria-label='breadcrumb'
-                            >
-                                <Link
-                                    to='/'
-                                    aria-current='page'
-                                >
-                                    Home
-                                </Link>
-                                <Typography color='text.primary'>
-                                    Zabiegi
-                                </Typography>
-                            </Breadcrumbs>
-                        </Box>
-                        <Box className='heading-wrapper'>
-                            <Typography variant='h4' className='heading-view'>
-                                Zabiegi
-                            </Typography>
-                        </Box>
-                    </Container>
+                  <Typography
+                    component="span"
+                    color="text.primary"
+                    aria-current="page"
+                  >
+                    Zabiegi
+                  </Typography>
+                </Breadcrumbs>
+              </Box>
+
+              <Box className="heading-wrapper">
+                <Typography
+                  component="h1"
+                  variant="h4"
+                  className="heading-view"
+                >
+                  Zabiegi
+                </Typography>
+              </Box>
+            </Container>
+          </Box>
+
+          <Box className="view-body">
+            <Container className="body-wrapper treatment">
+              <Box className="treatment-navigation">
+                <Box className="navigation-wrapper">
+                  <Tabs
+                    value={currentPage.path}
+                    variant="scrollable"
+                    scrollButtons="auto"
+                    aria-label="Kategorie zabiegów"
+                    TabIndicatorProps={{
+                      style: {
+                        background: "transparent",
+                      },
+                    }}
+                    sx={{
+                      [`& .${tabsClasses.scrollButtons}`]: {
+                        "&.Mui-disabled": {
+                          opacity: 0.3,
+                        },
+                      },
+                    }}
+                  >
+                    {treatmentPages.map((page) => (
+                      <Tab
+                        key={page.path}
+                        id={`${page.tabId}-tab`}
+                        label={page.label}
+                        component={Link}
+                        to={page.path}
+                        value={page.path}
+                        aria-controls={`${page.tabId}-panel`}
+                      />
+                    ))}
+                  </Tabs>
                 </Box>
-                <Box className='view-body'>
-                    <Container className='body-wrapper treatment'>
-                        <Box className='treatment-navigation'>
-                            <Box className='navigation-wrapper'>
-                                <Tabs
-                                    value={location.pathname}
-                                    variant='scrollable'
-                                    scrollButtons='auto'
-                                    aria-label='scrollable auto tabs example'
-                                    TabIndicatorProps={{ style: { background: 'transparent' }}}
-                                    sx={{
-                                        [`& .${tabsClasses.scrollButtons}`]: {
-                                            '&.Mui-disabled': { opacity: 0.3 },
-                                        },
-                                    }}
-                                >
-                                    <Tab
-                                        label='Dermatologia'
-                                        component={Link}
-                                        to={`/treatment`}
-                                        value={`/treatment`}
-                                        onClick={() => setTab('treatment-dermatology')}
-                                    />
-                                    <Tab
-                                        label='Medycyna estetyczna'
-                                        component={Link}
-                                        to={`/treatment/aesthetic-medicine`}
-                                        value={`/treatment/aesthetic-medicine`}
-                                        onClick={() => setTab('treatment-aesthetic-medicine')}
-                                    />
-                                    <Tab
-                                        label='Kosmetologia'
-                                        component={Link}
-                                        to={`/treatment/cosmetology`}
-                                        value={`/treatment/cosmetology`}
-                                        onClick={() => setTab('treatment-cosmetology')}
-                                    />
-                                    <Tab
-                                        label='Chirurgia plastyczna'
-                                        component={Link}
-                                        to={`/treatment/cosmetic-surgery`}
-                                        value={`/treatment/cosmetic-surgery`}
-                                        onClick={() => setTab('treatment-cosmetic-surgery')}
-                                    />
-                                    <Tab
-                                        label='Alergologia'
-                                        component={Link}
-                                        to={`/treatment/allergology`}
-                                        value={`/treatment/allergology`}
-                                        onClick={() => setTab('treatment-allergology')}
-                                    />
-                                    {/* <Tab
-                                        label='USG'
-                                        component={Link}
-                                        to={`/treatment/usg`}
-                                        value={`/treatment/usg`}
-                                        onClick={() => setTab('treatment-usg')}
-                                    /> */}
-                                    {/* <Tab
-                                        label='Endokrynologia'
-                                        component={Link}
-                                        to={`/treatment/endocrinology`}
-                                        value={`/treatment/endocrinology`}
-                                        onClick={() => setTab('treatment-endocrinology')}
-                                    /> */}
-                                    {/* <Tab
-                                        label='Ginekologia'
-                                        component={Link}
-                                        to={`/treatment/gynecology`}
-                                        value={`/treatment/gynecology`}
-                                        onClick={() => setTab('treatment-gynecology')}
-                                    /> */}
-                                    <Tab
-                                        label='Chirurgia naczyniowa'
-                                        component={Link}
-                                        to={`/treatment/vascular-surgery`}
-                                        value={`/treatment/vascular-surgery`}
-                                        onClick={() => setTab('treatment-vascular-surgery')}
-                                    />
-                                    {/* <Tab
-                                        label='Dietetyka Kliniczna'
-                                        component={Link}
-                                        to={`/treatment/clinical-dietitian`}
-                                        value={`/treatment/clinical-dietitian`}
-                                        onClick={() => setTab('treatment-clinical-dietitian')}
-                                    /> */}
-                                    <Tab
-                                        label='Kardiologia'
-                                        component={Link}
-                                        to={`/treatment/cardiology`}
-                                        value={`/treatment/cardiology`}
-                                        onClick={() => setTab('treatment-cardiology')}
-                                    />
-                                    <Tab
-                                        label='Psychiatria'
-                                        component={Link}
-                                        to={`/treatment/psychiatry`}
-                                        value={`/treatment/psychiatry`}
-                                        onClick={() => setTab('treatment-psychiatry')}
-                                    />
-                                </Tabs>
-                            </Box>
-                        </Box>
-                        <Box className='treatment-tabels'>
-                            <Box
-                                className='tab-pane fade show active'
-                                id={`pills-${treatmentTab}`}
-                                role='tabpanel'
-                                aria-labelledby={`pills-${treatmentTab}-tab`}
-                            >
-                                {renderTabContent(treatmentTab)}
-                            </Box>
-                        </Box>
-                    </Container>
+              </Box>
+
+              <Box className="treatment-tabels">
+                <Box
+                  className="tab-pane fade show active"
+                  id={`${currentPage.tabId}-panel`}
+                  role="tabpanel"
+                  aria-labelledby={`${currentPage.tabId}-tab`}
+                >
+                  <TreatmentListPartial
+                    specialization={currentPage.specialization}
+                  />
                 </Box>
-            </Box>
+              </Box>
+            </Container>
+          </Box>
         </Box>
-    );
-}
+      </Box>
+    </>
+  );
+};
 
-export default Page(TreatmentView);
+export default TreatmentView;

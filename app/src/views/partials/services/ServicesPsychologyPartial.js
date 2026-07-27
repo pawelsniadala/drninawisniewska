@@ -1,172 +1,256 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Breadcrumbs from '@mui/material/Breadcrumbs';
-// import Grid from '@mui/material/Grid';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import Breadcrumbs from "@mui/material/Breadcrumbs";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
 
-import Page from '../../../components/Page';
-import Container from '../../../components/Container';
-import CardTeamProposed from '../../../components/CardTeamProposed';
-import CardCareerProposed from '../../../components/CardCareerProposed';
-import CardProposed from '../../../components/CardProposed';
-// import ListBulleted from '../../../components/ListBulleted';
-import Image from '../../../components/Image';
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
-import { services, psychology } from '../../../data/services';
-import { team } from '../../../data/team';
-// import { treatment } from '../../../data/treatment';
-import { career } from '../../../data/career';
+import Page from "../../../components/Page";
+import Seo from "../../../components/Seo";
+import Container from "../../../components/Container";
+import CardTeamProposed from "../../../components/CardTeamProposed";
+import CardCareerProposed from "../../../components/CardCareerProposed";
+import CardProposed from "../../../components/CardProposed";
+import Image from "../../../components/Image";
+
+import { services, psychology } from "../../../data/services";
+
+import { team } from "../../../data/team";
+import { career } from "../../../data/career";
 
 const ServicesPsychologyPartial = () => {
-    return (
-        <Box className='contact-view'>
-            <Box className='view-wrapper'>
-                <Box className='view-header services-psychology'>
-                    <Container className='header-wrapper'>
-                        <Box className='nav-wrapper'>
-                            <Breadcrumbs className='breadcrumb back' aria-label='breadcrumb'>
-                                <Link to='/services' aria-current='page'>
-                                    <ArrowBackIcon />
-                                    <Box>Specjalizacje</Box>
-                                </Link>
-                            </Breadcrumbs>
-                            <Breadcrumbs
-                                className='breadcrumb nav'
-                                separator={<NavigateNextIcon fontSize='smform' />}
-                                aria-label='breadcrumb'
-                            >
-                                <Link to='/' aria-current='page'>
-                                    Home
-                                </Link>
-                                <Link to='/services' aria-current='page'>
-                                    Specjalizacje
-                                </Link>
-                                <Typography color='text.primary'>
-                                    Psychologia
-                                </Typography>
-                            </Breadcrumbs>
-                        </Box>
-                        <Box className='heading-wrapper'>
-                            <Typography variant='h4' className='heading-view'>
-                            Psychologia
-                            </Typography>
-                        </Box>
-                    </Container>
-                </Box>
-                <Box className='view-body'>
-                    <Container className='body-wrapper services'>
-                        <Box className='service-description'>
+  const psychologySpecialists = team.filter((item) =>
+    item.specialization.includes("psychology"),
+  );
 
-                            <Box className='box-service'>
-                                <Typography className='paragraph'>
-                                    <strong>Psychologia</strong> to dziedzina nauki zajmująca się badaniem ludzkiego zachowania, emocji, procesów poznawczych oraz relacji międzyludzkich. Skupia się na zrozumieniu mechanizmów funkcjonowania psychiki, wspieraniu zdrowia psychicznego oraz pomocy osobom doświadczającym trudności emocjonalnych, stresu, kryzysów życiowych czy problemów w relacjach. Psychologia obejmuje pracę z takimi obszarami jak lęk, obniżony nastrój, problemy adaptacyjne, trudności wychowawcze, zaburzenia emocjonalne oraz rozwój osobisty, oferując wsparcie dopasowane do indywidualnych potrzeb pacjenta.
-                                </Typography>
-                                <Box className='box-image'>
-                                    <Image
-                                        imageSrc={psychology.images[0].src}
-                                        imageAlt={psychology.images[0].alt}
-                                        imageAuthor={psychology.images[0].author}
-                                        imageHref={psychology.images[0].href}
-                                    />
-                                </Box>
-                                <Typography className='paragraph'>
-                                    Psycholog pracuje z pacjentami w oparciu o rozmowę, diagnozę psychologiczną oraz sprawdzone metody terapeutyczne, pomagając w lepszym zrozumieniu własnych emocji, myśli i zachowań. Celem pracy psychologicznej jest wzmacnianie zasobów wewnętrznych, poprawa jakości życia, rozwijanie umiejętności radzenia sobie z trudnościami oraz wspieranie pacjenta w procesie zmiany i budowania trwałej równowagi psychicznej.
-                                </Typography>
-                            </Box>
-                        </Box>
+  const relatedServices = services.filter((item) =>
+    item.relatedSpecializations.includes("psychology"),
+  );
 
-                        <Box className='proposed-wrapper'>
-                            <Box className='box-proposed'>
-                                <Box className='header-wrapper'>
-                                    <Typography className='header'>
-                                        Specjaliści
-                                    </Typography>
-                                </Box>
-                                <Box className='card-wrapper'>
-                                    {team.filter(item => item.specialization.includes('psychology')).map((item) => (
-                                        <CardTeamProposed
-                                            key={item.id}
-                                            cardTitle={item.name}
-                                            cardSpeciality={item.speciality}
-                                            cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></> }
-                                            cardImage={item.image}
-                                            cardPath={`/team/psychology/${item.specialist}`}
-                                        />
-                                    ))}
-                                </Box>
-                            </Box>
-                            {/* <Box className='box-proposed'>
-                                <Box className='header-wrapper'>
-                                    <Typography className='header'>
-                                        Zabiegi
-                                    </Typography>
-                                </Box>
-                                <Box className='card-wrapper'>
-                                    {treatment.filter(item => item.specialization.includes('psychology')).map((item) => (
-                                        <CardProposed
-                                            key={item.id}
-                                            cardTitle={item.title}
-                                            cardDescription={item.description}
-                                            cardImage={item.images[0].src}
-                                            cardPath={item.path}
-                                        />
-                                    ))}
-                                </Box>
-                            </Box> */}
-                            <Box className='box-proposed'>
-                                <Box className='header-wrapper'>
-                                    <Typography className='header'>
-                                        Powiązane specjalizacje
-                                    </Typography>
-                                </Box>
-                                <Box className='card-wrapper'>
-                                    {services.filter(item => item.relatedSpecializations.includes('psychology')).map((item) => (
-                                        <CardProposed
-                                            key={item.id}
-                                            cardTitle={item.title}
-                                            cardDescription={item.description}
-                                            cardImage={item.image}
-                                            cardPath={item.path}
-                                        />
-                                    ))}
-                                </Box>
-                            </Box>
-                            {career.filter(item => item.specialization?.includes('psychology')).length > 0 && (
-                                <Box className='box-proposed'>
-                                    <Box className='header-wrapper'>
-                                        <Typography className='header'>
-                                            Oferty pracy
-                                        </Typography>
-                                    </Box>
-                                    <Box className='card-wrapper'>
-                                        {career.filter(item => item.specialization?.includes('psychology')).map((item) => (
-                                            <CardCareerProposed
-                                                key={item.id}
-                                                cardTitle={item.title}
-                                                cardLocation={item.location}
-                                                cardDate={item.date}
-                                                cardAgreement={item.agreement}
-                                                cardPosition={item.position}
-                                                cardType={item.type}
-                                                cardPlace={item.place}
-                                                cardPath={item.path}
-                                                cardImage={item.image}
-                                                cardStatus={item.status}
-                                            />
-                                        ))}
-                                    </Box>
-                                </Box>
-                            )}
-                        </Box>
-                    </Container>
+  const psychologyCareerOffers = career.filter((item) =>
+    item.specialization?.includes("psychology"),
+  );
+
+  return (
+    <>
+      <Seo
+        title="Psychologia"
+        description="Psychologia w Klinice dr Niny Wiśniewskiej w Wyszkowie obejmuje konsultacje, terapię i diagnostykę psychologiczną dzieci, młodzieży i dorosłych."
+        path="/specjalizacje/psychologia"
+        image={psychology.images[0]?.src}
+        imageAlt={psychology.images[0]?.alt}
+      />
+
+      <Box className="contact-view">
+        <Box className="view-wrapper">
+          <Box className="view-header services-psychology">
+            <Container className="header-wrapper">
+              <Box className="nav-wrapper">
+                <Breadcrumbs
+                  className="breadcrumb back"
+                  aria-label="Nawigacja powrotna"
+                >
+                  <Link to="/specjalizacje">
+                    <ArrowBackIcon aria-hidden="true" focusable="false" />
+
+                    <Box component="span">Specjalizacje</Box>
+                  </Link>
+                </Breadcrumbs>
+
+                <Breadcrumbs
+                  className="breadcrumb nav"
+                  separator={
+                    <NavigateNextIcon
+                      fontSize="small"
+                      aria-hidden="true"
+                      focusable="false"
+                    />
+                  }
+                  aria-label="Ścieżka nawigacyjna"
+                >
+                  <Link to="/">Strona główna</Link>
+
+                  <Link to="/specjalizacje">Specjalizacje</Link>
+
+                  <Typography
+                    component="span"
+                    color="text.primary"
+                    aria-current="page"
+                  >
+                    Psychologia
+                  </Typography>
+                </Breadcrumbs>
+              </Box>
+
+              <Box className="heading-wrapper">
+                <Typography
+                  component="h1"
+                  variant="h4"
+                  className="heading-view"
+                >
+                  Psychologia
+                </Typography>
+              </Box>
+            </Container>
+          </Box>
+
+          <Box className="view-body">
+            <Container className="body-wrapper services">
+              <Box className="service-description">
+                <Box className="box-service">
+                  <Typography className="paragraph">
+                    <strong>Psychologia</strong> jest dziedziną zajmującą się
+                    funkcjonowaniem człowieka, jego emocjami, zachowaniem,
+                    procesami poznawczymi oraz relacjami z innymi osobami. Pomoc
+                    psychologiczna może wspierać osoby doświadczające trudności
+                    emocjonalnych, stresu, kryzysów życiowych lub problemów w
+                    codziennym funkcjonowaniu.
+                  </Typography>
+
+                  <Box className="box-image">
+                    <Image
+                      imageSrc={psychology.images[0].src}
+                      imageAlt={psychology.images[0].alt}
+                      imageAuthor={psychology.images[0].author}
+                      imageHref={psychology.images[0].href}
+                    />
+                  </Box>
+
+                  <Typography className="paragraph">
+                    Konsultacja psychologiczna umożliwia omówienie zgłaszanych
+                    trudności, poznanie sytuacji pacjenta oraz określenie
+                    odpowiedniej formy dalszego wsparcia. Zakres pomocy jest
+                    dobierany indywidualnie do wieku, potrzeb i aktualnej
+                    sytuacji pacjenta.
+                  </Typography>
+
+                  <Typography
+                    component="h2"
+                    variant="h5"
+                    className="paragraph heading"
+                  >
+                    Pomoc psychologiczna
+                  </Typography>
+
+                  <Typography className="paragraph">
+                    Praca z psychologiem może obejmować konsultacje, terapię,
+                    poradnictwo oraz diagnostykę psychologiczną. Jej celem może
+                    być lepsze rozumienie własnych emocji i zachowań, rozwijanie
+                    sposobów radzenia sobie z trudnościami oraz poprawa
+                    codziennego funkcjonowania.
+                  </Typography>
+
+                  <Typography className="paragraph">
+                    Pomoc psychologiczna może dotyczyć między innymi obniżonego
+                    nastroju, lęku, trudności adaptacyjnych, problemów w
+                    relacjach, kryzysów życiowych, trudności wychowawczych oraz
+                    zaburzeń emocjonalnych.
+                  </Typography>
+
+                  <Typography
+                    component="h2"
+                    variant="h5"
+                    className="paragraph heading"
+                  >
+                    Diagnostyka psychologiczna
+                  </Typography>
+
+                  <Typography className="paragraph">
+                    Diagnostyka psychologiczna służy określeniu sposobu
+                    funkcjonowania pacjenta i możliwych przyczyn zgłaszanych
+                    trudności. W zależności od wskazań może obejmować rozmowę,
+                    obserwację oraz odpowiednio dobrane narzędzia diagnostyczne.
+                  </Typography>
                 </Box>
-            </Box>
+              </Box>
+
+              <Box className="proposed-wrapper">
+                <Box className="box-proposed">
+                  <Box className="header-wrapper">
+                    <Typography component="h2" className="header">
+                      Specjaliści
+                    </Typography>
+                  </Box>
+
+                  <Box className="card-wrapper">
+                    {psychologySpecialists.map((item) => (
+                      <CardTeamProposed
+                        key={item.id}
+                        cardTitle={item.name}
+                        cardSpeciality={item.speciality}
+                        cardExperience={
+                          item.experience ||
+                          item.education || (
+                            <>
+                              <br />
+                              <br />
+                            </>
+                          )
+                        }
+                        cardImage={item.image}
+                        cardPath={`/specjalisci/psychologia/${item.specialist}`}
+                      />
+                    ))}
+                  </Box>
+                </Box>
+
+                <Box className="box-proposed">
+                  <Box className="header-wrapper">
+                    <Typography component="h2" className="header">
+                      Powiązane specjalizacje
+                    </Typography>
+                  </Box>
+
+                  <Box className="card-wrapper">
+                    {relatedServices.map((item) => (
+                      <CardProposed
+                        key={item.id}
+                        cardTitle={item.title}
+                        cardDescription={item.description}
+                        cardImage={item.image}
+                        cardPath={item.path}
+                      />
+                    ))}
+                  </Box>
+                </Box>
+
+                {psychologyCareerOffers.length > 0 && (
+                  <Box className="box-proposed">
+                    <Box className="header-wrapper">
+                      <Typography component="h2" className="header">
+                        Oferty pracy
+                      </Typography>
+                    </Box>
+
+                    <Box className="card-wrapper">
+                      {psychologyCareerOffers.map((item) => (
+                        <CardCareerProposed
+                          key={item.id}
+                          cardTitle={item.title}
+                          cardLocation={item.location}
+                          cardDate={item.date}
+                          cardAgreement={item.agreement}
+                          cardPosition={item.position}
+                          cardType={item.type}
+                          cardPlace={item.place}
+                          cardPath={item.path}
+                          cardImage={item.image}
+                          cardStatus={item.status}
+                        />
+                      ))}
+                    </Box>
+                  </Box>
+                )}
+              </Box>
+            </Container>
+          </Box>
         </Box>
-    );
-}
+      </Box>
+    </>
+  );
+};
 
 export default Page(ServicesPsychologyPartial);

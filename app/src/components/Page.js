@@ -1,380 +1,380 @@
-import { useEffect, useCallback } from 'react';
-import { useLocation  } from 'react-router-dom';
+// import { useEffect, useCallback } from 'react';
+// import { useLocation  } from 'react-router-dom';
 
-const PageTitle = ({ children }) => {
-    const { pathname } = useLocation();
-    const companyName = 'Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska';
+// const PageTitle = ({ children }) => {
+//     const { pathname } = useLocation();
+//     const companyName = 'Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska';
 
-    const setTitle = useCallback(() => {
-        switch(pathname) {
-            // HOME
-            case '/':
-                return companyName;
-            // gh-pages
-            case '/drninawisniewska/':
-                return companyName;
-            case '/localhost:3001/':
-                return companyName;
+//     const setTitle = useCallback(() => {
+//         switch(pathname) {
+//             // HOME
+//             case '/':
+//                 return companyName;
+//             // gh-pages
+//             case '/drninawisniewska/':
+//                 return companyName;
+//             case '/localhost:3001/':
+//                 return companyName;
 
-            // KLINIKA
-            case '/clinic':
-                return `Klinika - ${companyName}`;
-            case '/clinic/regulation':
-                return `Regulamin organizacyjny - ${companyName}`;
-
-
-            // SPECJALIZACJE
-            case '/services':
-                return `Specjalizacje - ${companyName}`;
-            case '/services/dermatology':
-                return `Dermatologia - ${companyName}`;
-            case '/services/aesthetic-medicine':
-                return `Medycyna estetyczna - ${companyName}`;
-            case '/services/cosmetology':
-                return `Kosmetologia - ${companyName}`;
-            case '/services/cosmetic-surgery':
-                return `Chirurgia plastyczna - ${companyName}`;
-            case '/services/allergology':
-                return `Alergologia - ${companyName}`;
-            case '/services/usg':
-                return `USG - ${companyName}`;
-            case '/services/endocrinology':
-                return `Endokrynologia - ${companyName}`;
-            case '/services/gynecology':
-                return `Ginekologia - ${companyName}`;
-            case '/services/vascular-surgery':
-                return `Chirurgia naczyniowa - ${companyName}`;
-            case '/services/clinical-dietitian':
-                return `Dietetyka Kliniczna - ${companyName}`;
-            case '/services/cardiology':
-                return `Kardiologia - ${companyName}`;
-            case '/services/psychiatry':
-                return `Psychiatria - ${companyName}`;
-            case '/services/psychology':
-                return `Psychologia - ${companyName}`;
+//             // KLINIKA
+//             case '/clinic':
+//                 return `Klinika - ${companyName}`;
+//             case '/clinic/regulation':
+//                 return `Regulamin organizacyjny - ${companyName}`;
 
 
-            // ZABIEGI
-            // dermatologia
-            case '/treatment':
-                return `Zabiegi - ${companyName}`;
-            case '/treatment/dermatology/badanie-znamion-barwnikowych':
-                return `Badanie znamion barwnikowych - ${companyName}`;
-            case '/treatment/dermatology/fototerapia-chorob-skory':
-                return `Fototerapia chorób skóry - ${companyName}`;
-            case '/treatment/dermatology/usuniecie-zmian-skornych-elektrochirurgiczne':
-                return `Usunięcie zmian skórnych elektrochirurgiczne - ${companyName}`;
-
-            // medycyna estetyczna
-            case '/treatment/aesthetic-medicine':
-                return `Zabiegi - ${companyName}`;
-            case '/treatment/aesthetic-medicine/modelowanie-ust':
-                return `Modelowanie ust - ${companyName}`;
-            case '/treatment/aesthetic-medicine/toksyna-botulinowa':
-                return `Toksyna botulinowa - ${companyName}`;
-            case '/treatment/aesthetic-medicine/stymulatory-tkankowe':
-                return `Stymulatory tkankowe - ${companyName}`;
-            case '/treatment/aesthetic-medicine/osocze-bogatoplytkowe':
-                return `Osocze bogatopłytkowe - ${companyName}`;
-            case '/treatment/aesthetic-medicine/laser-frakcyjny':
-                return `Laser frakcyjny - ${companyName}`;
-            case '/treatment/aesthetic-medicine/nici-rewitalizujace-i-liftingujace':
-                return `Nici rewitalizujące i liftingujące - ${companyName}`;
-            case '/treatment/aesthetic-medicine/mezoterapia-iglowa':
-                return `Mezoterapia igłowa - ${companyName}`;
-            case '/treatment/aesthetic-medicine/zamykanie-naczynek-i-likwidacja-przebarwien':
-                return `Zamykanie naczynek i likwidacja przebarwień - ${companyName}`;
-            case '/treatment/aesthetic-medicine/sonoqueen-technologia-hifu':
-                return `SonoQueen technologia HIFU - ${companyName}`;
-
-            // kosmetologia
-            case '/treatment/cosmetology':
-                return `Zabiegi - ${companyName}`;
-            case '/treatment/cosmetology/peeling-medyczny':
-                return `Peeling medyczny - ${companyName}`;
-            case '/treatment/cosmetology/epilacja-laserowa':
-                return `Epilacja laserowa - ${companyName}`;
-            case '/treatment/cosmetology/masaz-prozniowy':
-                return `Masaż próżniowy - ${companyName}`;
-            case '/treatment/cosmetology/ultradzwieki-i-fala-radiowa':
-                return `Ultradzwieki i fala radiowa - ${companyName}`;
-            case '/treatment/cosmetology/mezoterapia-mikroiglowa':
-                return `Mezoterapia mikroigłowa - ${companyName}`;
-
-            // chirurgia plastyczna
-            case '/treatment/cosmetic-surgery':
-                return `Zabiegi - ${companyName}`;
-            case '/treatment/cosmetic-surgery/plastyka-powiek':
-                return `Plastyka powiek - ${companyName}`;
-
-            // alergologia
-            case '/treatment/allergology':
-                return `Zabiegi - ${companyName}`;
-            case '/treatment/allergology/testy-skorne':
-                return `Testy skórne - ${companyName}`;
-            case '/treatment/allergology/platkowe-testy-kontaktowe':
-                return `Płatkowe testy kontaktowe - ${companyName}`;
-            case '/treatment/allergology/odczulanie':
-                return `Odczulanie - ${companyName}`;
-
-            // chirurgia naczyniowa
-            case '/treatment/vascular-surgery':
-                return `Zabiegi - ${companyName}`;
-            case '/treatment/vascular-surgery/skleroterapia':
-                return `Skleroterapia - ${companyName}`;
-            case '/treatment/vascular-surgery/laserowe-usuwanie-zylakow':
-                return `Laserowe usuwanie żylaków - ${companyName}`;
-
-            // kardiologia
-            case '/treatment/cardiology':
-                return `Zabiegi - ${companyName}`;
-            case '/treatment/cardiology/echo-serca':
-                return `Echo serca - ${companyName}`;
-
-            // kardiologia
-            case '/treatment/psychiatry':
-                return `Zabiegi - ${companyName}`;
-            case '/treatment/psychiatry/badanie-ados-2':
-                return `Badanie Ados-2 - ${companyName}`;
+//             // SPECJALIZACJE
+//             case '/services':
+//                 return `Specjalizacje - ${companyName}`;
+//             case '/services/dermatology':
+//                 return `Dermatologia - ${companyName}`;
+//             case '/services/aesthetic-medicine':
+//                 return `Medycyna estetyczna - ${companyName}`;
+//             case '/services/cosmetology':
+//                 return `Kosmetologia - ${companyName}`;
+//             case '/services/cosmetic-surgery':
+//                 return `Chirurgia plastyczna - ${companyName}`;
+//             case '/services/allergology':
+//                 return `Alergologia - ${companyName}`;
+//             case '/services/usg':
+//                 return `USG - ${companyName}`;
+//             case '/services/endocrinology':
+//                 return `Endokrynologia - ${companyName}`;
+//             case '/services/gynecology':
+//                 return `Ginekologia - ${companyName}`;
+//             case '/services/vascular-surgery':
+//                 return `Chirurgia naczyniowa - ${companyName}`;
+//             case '/services/clinical-dietitian':
+//                 return `Dietetyka Kliniczna - ${companyName}`;
+//             case '/services/cardiology':
+//                 return `Kardiologia - ${companyName}`;
+//             case '/services/psychiatry':
+//                 return `Psychiatria - ${companyName}`;
+//             case '/services/psychology':
+//                 return `Psychologia - ${companyName}`;
 
 
-            // CENNIK
-            case '/prices':
-                return `Cennik - ${companyName}`;
-            case '/prices/aesthetic-medicine':
-                return `Cennik - ${companyName}`;
-            case '/prices/cosmetology':
-                return `Cennik - ${companyName}`;
-            case '/prices/cosmetic-surgery':
-                return `Cennik - ${companyName}`;
-            case '/prices/allergology':
-                return `Cennik - ${companyName}`;
-            case '/prices/usg':
-                return `Cennik - ${companyName}`;
-            case '/prices/endocrinology':
-                return `Cennik - ${companyName}`;
-            case '/prices/gynecology':
-                return `Cennik - ${companyName}`;
-            case '/prices/vascular-surgery':
-                return `Cennik - ${companyName}`;
-            case '/prices/clinical-dietitian':
-                return `Cennik - ${companyName}`;
-            case '/prices/cardiology':
-                return `Cennik - ${companyName}`;
-            case '/prices/psychiatry':
-                return `Cennik - ${companyName}`;
-            case '/prices/psychology':
-                return `Cennik - ${companyName}`;
+//             // ZABIEGI
+//             // dermatologia
+//             case '/treatment':
+//                 return `Zabiegi - ${companyName}`;
+//             case '/treatment/dermatology/badanie-znamion-barwnikowych':
+//                 return `Badanie znamion barwnikowych - ${companyName}`;
+//             case '/treatment/dermatology/fototerapia-chorob-skory':
+//                 return `Fototerapia chorób skóry - ${companyName}`;
+//             case '/treatment/dermatology/usuniecie-zmian-skornych-elektrochirurgiczne':
+//                 return `Usunięcie zmian skórnych elektrochirurgiczne - ${companyName}`;
+
+//             // medycyna estetyczna
+//             case '/treatment/aesthetic-medicine':
+//                 return `Zabiegi - ${companyName}`;
+//             case '/treatment/aesthetic-medicine/modelowanie-ust':
+//                 return `Modelowanie ust - ${companyName}`;
+//             case '/treatment/aesthetic-medicine/toksyna-botulinowa':
+//                 return `Toksyna botulinowa - ${companyName}`;
+//             case '/treatment/aesthetic-medicine/stymulatory-tkankowe':
+//                 return `Stymulatory tkankowe - ${companyName}`;
+//             case '/treatment/aesthetic-medicine/osocze-bogatoplytkowe':
+//                 return `Osocze bogatopłytkowe - ${companyName}`;
+//             case '/treatment/aesthetic-medicine/laser-frakcyjny':
+//                 return `Laser frakcyjny - ${companyName}`;
+//             case '/treatment/aesthetic-medicine/nici-rewitalizujace-i-liftingujace':
+//                 return `Nici rewitalizujące i liftingujące - ${companyName}`;
+//             case '/treatment/aesthetic-medicine/mezoterapia-iglowa':
+//                 return `Mezoterapia igłowa - ${companyName}`;
+//             case '/treatment/aesthetic-medicine/zamykanie-naczynek-i-likwidacja-przebarwien':
+//                 return `Zamykanie naczynek i likwidacja przebarwień - ${companyName}`;
+//             case '/treatment/aesthetic-medicine/sonoqueen-technologia-hifu':
+//                 return `SonoQueen technologia HIFU - ${companyName}`;
+
+//             // kosmetologia
+//             case '/treatment/cosmetology':
+//                 return `Zabiegi - ${companyName}`;
+//             case '/treatment/cosmetology/peeling-medyczny':
+//                 return `Peeling medyczny - ${companyName}`;
+//             case '/treatment/cosmetology/epilacja-laserowa':
+//                 return `Epilacja laserowa - ${companyName}`;
+//             case '/treatment/cosmetology/masaz-prozniowy':
+//                 return `Masaż próżniowy - ${companyName}`;
+//             case '/treatment/cosmetology/ultradzwieki-i-fala-radiowa':
+//                 return `Ultradzwieki i fala radiowa - ${companyName}`;
+//             case '/treatment/cosmetology/mezoterapia-mikroiglowa':
+//                 return `Mezoterapia mikroigłowa - ${companyName}`;
+
+//             // chirurgia plastyczna
+//             case '/treatment/cosmetic-surgery':
+//                 return `Zabiegi - ${companyName}`;
+//             case '/treatment/cosmetic-surgery/plastyka-powiek':
+//                 return `Plastyka powiek - ${companyName}`;
+
+//             // alergologia
+//             case '/treatment/allergology':
+//                 return `Zabiegi - ${companyName}`;
+//             case '/treatment/allergology/testy-skorne':
+//                 return `Testy skórne - ${companyName}`;
+//             case '/treatment/allergology/platkowe-testy-kontaktowe':
+//                 return `Płatkowe testy kontaktowe - ${companyName}`;
+//             case '/treatment/allergology/odczulanie':
+//                 return `Odczulanie - ${companyName}`;
+
+//             // chirurgia naczyniowa
+//             case '/treatment/vascular-surgery':
+//                 return `Zabiegi - ${companyName}`;
+//             case '/treatment/vascular-surgery/skleroterapia':
+//                 return `Skleroterapia - ${companyName}`;
+//             case '/treatment/vascular-surgery/laserowe-usuwanie-zylakow':
+//                 return `Laserowe usuwanie żylaków - ${companyName}`;
+
+//             // kardiologia
+//             case '/treatment/cardiology':
+//                 return `Zabiegi - ${companyName}`;
+//             case '/treatment/cardiology/echo-serca':
+//                 return `Echo serca - ${companyName}`;
+
+//             // kardiologia
+//             case '/treatment/psychiatry':
+//                 return `Zabiegi - ${companyName}`;
+//             case '/treatment/psychiatry/badanie-ados-2':
+//                 return `Badanie Ados-2 - ${companyName}`;
 
 
-            // PROMOCJE
-            case '/special-offer':
-                return `Promocje - ${companyName}`;
+//             // CENNIK
+//             case '/prices':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/aesthetic-medicine':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/cosmetology':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/cosmetic-surgery':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/allergology':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/usg':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/endocrinology':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/gynecology':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/vascular-surgery':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/clinical-dietitian':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/cardiology':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/psychiatry':
+//                 return `Cennik - ${companyName}`;
+//             case '/prices/psychology':
+//                 return `Cennik - ${companyName}`;
 
 
-            // ZESPÓŁ
-            case '/team':
-                return `Specjaliści - ${companyName}`;
-
-            // dermatologia
-            case '/team/dermatology':
-                return `Specjaliści - ${companyName}`;
-            case '/team/dermatology/nina-wisniewska':
-                return `Nina Wiśniewska - ${companyName}`;
-            case '/team/dermatology/katarzyna-mysliwiec-czajka':
-                return `Katarzyna Myśliwiec-Czajka - ${companyName}`;
-            case '/team/dermatology/justyna-kloniecka':
-                return `Justyna Kłoniecka - ${companyName}`;
-            case '/team/dermatology/aldona-maciag':
-                return `Aldona Maciąg - ${companyName}`;
-            case '/team/dermatology/katarzyna-rychlik':
-                return `Katarzyna Rychlik - ${companyName}`;
-            case '/team/dermatology/karol-pniewski':
-                return `Karol Pniewski - ${companyName}`;
-            case '/team/dermatology/karolina-dobrowolska':
-                return `Karolina Dobrowolska - ${companyName}`;
-            case '/team/dermatology/ada-szepelska':
-                return `Ada Szepelska - ${companyName}`;
-
-            // medycyna estetyczna
-            case '/team/aesthetic-medicine':
-                return `Specjaliści - ${companyName}`;
-            case '/team/aesthetic-medicine/nina-wisniewska':
-                return `Nina Wiśniewska - ${companyName}`;
-            case '/team/aesthetic-medicine/konrad-kochan':
-                return `Konrad Kochan - ${companyName}`;
-            case '/team/aesthetic-medicine/klaudia-malottki':
-                return `Klaudia Malottki - ${companyName}`;
-            case '/team/aesthetic-medicine/olga-lenartowicz-warakomska':
-                return `Olga Lenartowicz-Warakomska - ${companyName}`;
-            case '/team/aesthetic-medicine/karol-pniewski':
-                return `Karol Pniewski - ${companyName}`;
-
-            // kosmetologia
-            case '/team/cosmetology':
-                return `Specjaliści - ${companyName}`;
-            case '/team/cosmetology/paulina-sot':
-                return `Paulina Sot - ${companyName}`;
-            case '/team/cosmetology/karolina-rakowska':
-                return `Karolina Zęgota - ${companyName}`;
-
-            // chirurgia plastyczna
-            case '/team/cosmetic-surgery':
-                return `Specjaliści - ${companyName}`;
-            case '/team/cosmetic-surgery/konrad-kochan':
-                return `Konrad Kochan - ${companyName}`;
-
-            // alergologia
-            case '/team/allergology':
-                return `Specjaliści - ${companyName}`;
-            case '/team/allergology/tomasz-matuszewski':
-                return `Tomasz Matuszewski - ${companyName}`;
-
-            // usg
-            case '/team/usg':
-                return `Specjaliści - ${companyName}`;
-            case '/team/usg/jadwiga-dowgiallo-smolarczyk':
-                return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
-            case '/team/usg/kamil-stepkowski':
-                return `Kamil Stępkowski - ${companyName}`;
-           case '/team/usg/daniela-borkowska':
-                return `Daniela Borkowska - ${companyName}`;
-
-            // endokrynologia
-            case '/team/endocrinology':
-                return `Specjaliści - ${companyName}`;
-            case '/team/endocrinology/jadwiga-dowgiallo-smolarczyk':
-                return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
-
-            // ginekologia
-            case '/team/gynecology':
-                return `Specjaliści - ${companyName}`;
-            case '/team/gynecology/jadwiga-dowgiallo-smolarczyk':
-                return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
-
-            // chirurgia naczyniowa
-            case '/team/vascular-surgery':
-                return `Specjaliści - ${companyName}`;
-            case '/team/vascular-surgery/kamil-stepkowski':
-                return `Kamil Stępkowski - ${companyName}`;
-
-            // dietetyka kliniczna
-            case '/team/clinical-dietitian':
-                return `Specjaliści - ${companyName}`;
-            case '/team/clinical-dietitian/joanna-ojrzenska':
-                return `Joanna Ojrzeńska - ${companyName}`;
-
-            // kardiologia
-            case '/team/cardiology':
-                return `Specjaliści - ${companyName}`;
-            case '/team/cardiology/michal-radzio':
-                return `Michał Radzio - ${companyName}`;
-
-            // psychiatria
-            case '/team/psychiatry':
-                return `Specjaliści - ${companyName}`;
-            case '/team/psychiatry/kaja-strojnowska-lapinska':
-                return `Kaja Strojnowska-Łapińska - ${companyName}`;
-
-            // psychologia
-            case '/team/psychology':
-                return `Specjaliści - ${companyName}`;
-            case '/team/psychology/zaneta-manko':
-                return `Żaneta Mańko - ${companyName}`;
-
-            // rejestracja medyczna
-            case '/team/medical-registration':
-                return `Specjaliści - ${companyName}`;
-            case '/team/medical-registration/paulina-pedzich':
-                return `Paulina Pedzich - ${companyName}`;
-            case '/team/medical-registration/julia-nisio':
-                return `Julia Nisio - ${companyName}`;
+//             // PROMOCJE
+//             case '/special-offer':
+//                 return `Promocje - ${companyName}`;
 
 
-            // TECHNOLOGIA
-            case '/technology':
-                return `Technologia - ${companyName}`;
-            case '/technology/vectus':
-                return `Vectus - ${companyName}`;
-            case '/technology/alma-harmony-xl-pro':
-                return `Alma Harmony XL Pro - ${companyName}`;
-            case '/technology/icoone-laser-med2':
-                return `Icoone Laser Med 2 - ${companyName}`;
-            case '/technology/fons-svr-fraction-laser-co2':
-                return `Fons SVR Laser Frakcyjny CO2 - ${companyName}`;
-            case '/technology/alma-accent-ultra-v-shape':
-                return `Alma Accent Ultra V Shape - ${companyName}`;
-            case '/technology/biolitec-leonardo-mini':
-                return `Biolitec Leonardo Mini - ${companyName}`;
-            case '/technology/hettich-arthrex-acp':
-                return `Hettich Arthrex ACP - ${companyName}`;
-            case '/technology/foto-finder-dermoscope-vexia':
-                return `FotoFinder Dermoscope Vexia - ${companyName}`;
-            case '/technology/philips-ultrasonograf-affiniti-50':
-                return `Philips Ultrasonograf Affiniti 50 - ${companyName}`;
-            case '/technology/sono-queen':
-                return `SonoQueen - ${companyName}`;
-            case '/technology/dermalight-500':
-                return `Dermalight 500 - ${companyName}`;
-            case '/technology/dermalight-1000-uva-uvb-311nm':
-                return `Dermalight 1000 UVA UVB 311nm - ${companyName}`;
+//             // ZESPÓŁ
+//             case '/team':
+//                 return `Specjaliści - ${companyName}`;
+
+//             // dermatologia
+//             case '/team/dermatology':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/dermatology/nina-wisniewska':
+//                 return `Nina Wiśniewska - ${companyName}`;
+//             case '/team/dermatology/katarzyna-mysliwiec-czajka':
+//                 return `Katarzyna Myśliwiec-Czajka - ${companyName}`;
+//             case '/team/dermatology/justyna-kloniecka':
+//                 return `Justyna Kłoniecka - ${companyName}`;
+//             case '/team/dermatology/aldona-maciag':
+//                 return `Aldona Maciąg - ${companyName}`;
+//             case '/team/dermatology/katarzyna-rychlik':
+//                 return `Katarzyna Rychlik - ${companyName}`;
+//             case '/team/dermatology/karol-pniewski':
+//                 return `Karol Pniewski - ${companyName}`;
+//             case '/team/dermatology/karolina-dobrowolska':
+//                 return `Karolina Dobrowolska - ${companyName}`;
+//             case '/team/dermatology/ada-szepelska':
+//                 return `Ada Szepelska - ${companyName}`;
+
+//             // medycyna estetyczna
+//             case '/team/aesthetic-medicine':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/aesthetic-medicine/nina-wisniewska':
+//                 return `Nina Wiśniewska - ${companyName}`;
+//             case '/team/aesthetic-medicine/konrad-kochan':
+//                 return `Konrad Kochan - ${companyName}`;
+//             case '/team/aesthetic-medicine/klaudia-malottki':
+//                 return `Klaudia Malottki - ${companyName}`;
+//             case '/team/aesthetic-medicine/olga-lenartowicz-warakomska':
+//                 return `Olga Lenartowicz-Warakomska - ${companyName}`;
+//             case '/team/aesthetic-medicine/karol-pniewski':
+//                 return `Karol Pniewski - ${companyName}`;
+
+//             // kosmetologia
+//             case '/team/cosmetology':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/cosmetology/paulina-sot':
+//                 return `Paulina Sot - ${companyName}`;
+//             case '/team/cosmetology/karolina-rakowska':
+//                 return `Karolina Zęgota - ${companyName}`;
+
+//             // chirurgia plastyczna
+//             case '/team/cosmetic-surgery':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/cosmetic-surgery/konrad-kochan':
+//                 return `Konrad Kochan - ${companyName}`;
+
+//             // alergologia
+//             case '/team/allergology':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/allergology/tomasz-matuszewski':
+//                 return `Tomasz Matuszewski - ${companyName}`;
+
+//             // usg
+//             case '/team/usg':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/usg/jadwiga-dowgiallo-smolarczyk':
+//                 return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
+//             case '/team/usg/kamil-stepkowski':
+//                 return `Kamil Stępkowski - ${companyName}`;
+//            case '/team/usg/daniela-borkowska':
+//                 return `Daniela Borkowska - ${companyName}`;
+
+//             // endokrynologia
+//             case '/team/endocrinology':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/endocrinology/jadwiga-dowgiallo-smolarczyk':
+//                 return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
+
+//             // ginekologia
+//             case '/team/gynecology':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/gynecology/jadwiga-dowgiallo-smolarczyk':
+//                 return `Jadwiga Dowgiałło-Smolarczyk - ${companyName}`;
+
+//             // chirurgia naczyniowa
+//             case '/team/vascular-surgery':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/vascular-surgery/kamil-stepkowski':
+//                 return `Kamil Stępkowski - ${companyName}`;
+
+//             // dietetyka kliniczna
+//             case '/team/clinical-dietitian':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/clinical-dietitian/joanna-ojrzenska':
+//                 return `Joanna Ojrzeńska - ${companyName}`;
+
+//             // kardiologia
+//             case '/team/cardiology':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/cardiology/michal-radzio':
+//                 return `Michał Radzio - ${companyName}`;
+
+//             // psychiatria
+//             case '/team/psychiatry':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/psychiatry/kaja-strojnowska-lapinska':
+//                 return `Kaja Strojnowska-Łapińska - ${companyName}`;
+
+//             // psychologia
+//             case '/team/psychology':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/psychology/zaneta-manko':
+//                 return `Żaneta Mańko - ${companyName}`;
+
+//             // rejestracja medyczna
+//             case '/team/medical-registration':
+//                 return `Specjaliści - ${companyName}`;
+//             case '/team/medical-registration/paulina-pedzich':
+//                 return `Paulina Pedzich - ${companyName}`;
+//             case '/team/medical-registration/julia-nisio':
+//                 return `Julia Nisio - ${companyName}`;
 
 
-            // KARIERA
-            case '/career':
-                return `Kariera - ${companyName}`;
-
-            // recepcjonistka
-            case '/career/receptionist':
-                return `Recepcjonistka - ${companyName}`;
-            case '/career/receptionist/application':
-                return `Aplikacja - ${companyName}`;
-
-            // hematolog
-            case '/career/hematologist':
-                return `Hematolog - ${companyName}`;
-            case '/career/hematologist/application':
-                return `Aplikacja - ${companyName}`;
-
-            // dermatolog
-            case '/career/dermatologist':
-                return `Dermatolog - ${companyName}`;
-            case '/career/dermatologist/application':
-                return `Aplikacja - ${companyName}`;
-
-            // urolog
-            case '/career/urologist':
-                return `Urolog - ${companyName}`;
-            case '/career/urologist/application':
-                return `Aplikacja - ${companyName}`;
-
-            // psychiatra
-            case '/career/psychiatrist':
-                return `Psychiatra - ${companyName}`;
-            case '/career/psychiatrist/application':
-                return `Aplikacja - ${companyName}`;
-
-            // kosmetolog
-            case '/career/cosmetologist':
-                return `Kosmetolog - ${companyName}`;
-            case '/career/cosmetologist/application':
-                return `Aplikacja - ${companyName}`;
+//             // TECHNOLOGIA
+//             case '/technology':
+//                 return `Technologia - ${companyName}`;
+//             case '/technology/vectus':
+//                 return `Vectus - ${companyName}`;
+//             case '/technology/alma-harmony-xl-pro':
+//                 return `Alma Harmony XL Pro - ${companyName}`;
+//             case '/technology/icoone-laser-med2':
+//                 return `Icoone Laser Med 2 - ${companyName}`;
+//             case '/technology/fons-svr-fraction-laser-co2':
+//                 return `Fons SVR Laser Frakcyjny CO2 - ${companyName}`;
+//             case '/technology/alma-accent-ultra-v-shape':
+//                 return `Alma Accent Ultra V Shape - ${companyName}`;
+//             case '/technology/biolitec-leonardo-mini':
+//                 return `Biolitec Leonardo Mini - ${companyName}`;
+//             case '/technology/hettich-arthrex-acp':
+//                 return `Hettich Arthrex ACP - ${companyName}`;
+//             case '/technology/foto-finder-dermoscope-vexia':
+//                 return `FotoFinder Dermoscope Vexia - ${companyName}`;
+//             case '/technology/philips-ultrasonograf-affiniti-50':
+//                 return `Philips Ultrasonograf Affiniti 50 - ${companyName}`;
+//             case '/technology/sono-queen':
+//                 return `SonoQueen - ${companyName}`;
+//             case '/technology/dermalight-500':
+//                 return `Dermalight 500 - ${companyName}`;
+//             case '/technology/dermalight-1000-uva-uvb-311nm':
+//                 return `Dermalight 1000 UVA UVB 311nm - ${companyName}`;
 
 
-             // KONTAKT
-            case '/contact':
-                return `Kontakt - ${companyName}`;
+//             // KARIERA
+//             case '/career':
+//                 return `Kariera - ${companyName}`;
 
-            default:
-        }
-    }, [pathname]);
+//             // recepcjonistka
+//             case '/career/receptionist':
+//                 return `Recepcjonistka - ${companyName}`;
+//             case '/career/receptionist/application':
+//                 return `Aplikacja - ${companyName}`;
 
-    useEffect(() => {
-        document.title = setTitle();
-    }, [setTitle]);
+//             // hematolog
+//             case '/career/hematologist':
+//                 return `Hematolog - ${companyName}`;
+//             case '/career/hematologist/application':
+//                 return `Aplikacja - ${companyName}`;
 
-    return children;
-};
+//             // dermatolog
+//             case '/career/dermatologist':
+//                 return `Dermatolog - ${companyName}`;
+//             case '/career/dermatologist/application':
+//                 return `Aplikacja - ${companyName}`;
+
+//             // urolog
+//             case '/career/urologist':
+//                 return `Urolog - ${companyName}`;
+//             case '/career/urologist/application':
+//                 return `Aplikacja - ${companyName}`;
+
+//             // psychiatra
+//             case '/career/psychiatrist':
+//                 return `Psychiatra - ${companyName}`;
+//             case '/career/psychiatrist/application':
+//                 return `Aplikacja - ${companyName}`;
+
+//             // kosmetolog
+//             case '/career/cosmetologist':
+//                 return `Kosmetolog - ${companyName}`;
+//             case '/career/cosmetologist/application':
+//                 return `Aplikacja - ${companyName}`;
+
+
+//              // KONTAKT
+//             case '/contact':
+//                 return `Kontakt - ${companyName}`;
+
+//             default:
+//         }
+//     }, [pathname]);
+
+//     useEffect(() => {
+//         document.title = setTitle();
+//     }, [setTitle]);
+
+//     return children;
+// };
 
 const Page = (Component) => {
     return (props) => {
@@ -385,9 +385,9 @@ const Page = (Component) => {
         });
 
         return (
-            <PageTitle {...props}>
+            // <PageTitle {...props}>
                 <Component />
-            </PageTitle>
+            // </PageTitle>
         );
     }
 }

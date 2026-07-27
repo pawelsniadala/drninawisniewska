@@ -1,558 +1,334 @@
+import React, { useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Tabs, { tabsClasses } from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import Divider from "@mui/material/Divider";
 
-import Tabs, { tabsClasses } from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Breadcrumbs from '@mui/material/Breadcrumbs';
-import Box from '@mui/material/Box';
-import Container from '../components/Container';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import Divider from '@mui/material/Divider';
-import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
-import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import NavigateNextIcon from "@mui/icons-material/NavigateNext";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
-import Page from '../components/Page';
-import PricesDermatologyPartial from './partials/prices/PricesDermatologyPartial';
-import PricesAestheticMedicinePartial from './partials/prices/PricesAestheticMedicinePartial';
-import PricesCosmetologyPartial from './partials/prices/PricesCosmetologyPartial';
-import PricesCosmeticSurgeryPartial from './partials/prices/PricesCosmeticSurgeryPartial';
-import PricesAllergologyPartial from './partials/prices/PricesAllergologyPartial';
-import PricesUsgPartial from './partials/prices/PricesUsgPartial';
-import PricesEndocrinologyPartial from './partials/prices/PricesEndocrinologyPartial';
-import PricesGynecologyPartial from './partials/prices/PricesGynecologyPartial';
-import PricesVascularSurgeryPartial from './partials/prices/PricesVascularSurgeryPartial';
-import PricesClinicalDietitianPartial from './partials/prices/PricesClinicalDietitianPartial';
-import PricesCardiologyPartial from './partials/prices/PricesCardiologyPartial';
-import PricesPsychiatryPartial from './partials/prices/PricesPsychiatryPartial';
-import PricesPsychologyPartial from './partials/prices/PricesPsychologyPartial';
+import Seo from "../components/Seo";
+import Container from "../components/Container";
+
+import PricesDermatologyPartial from "./partials/prices/PricesDermatologyPartial";
+import PricesAestheticMedicinePartial from "./partials/prices/PricesAestheticMedicinePartial";
+import PricesCosmetologyPartial from "./partials/prices/PricesCosmetologyPartial";
+import PricesCosmeticSurgeryPartial from "./partials/prices/PricesCosmeticSurgeryPartial";
+import PricesAllergologyPartial from "./partials/prices/PricesAllergologyPartial";
+import PricesUsgPartial from "./partials/prices/PricesUsgPartial";
+import PricesEndocrinologyPartial from "./partials/prices/PricesEndocrinologyPartial";
+import PricesGynecologyPartial from "./partials/prices/PricesGynecologyPartial";
+import PricesVascularSurgeryPartial from "./partials/prices/PricesVascularSurgeryPartial";
+import PricesClinicalDietitianPartial from "./partials/prices/PricesClinicalDietitianPartial";
+import PricesCardiologyPartial from "./partials/prices/PricesCardiologyPartial";
+import PricesPsychiatryPartial from "./partials/prices/PricesPsychiatryPartial";
+import PricesPsychologyPartial from "./partials/prices/PricesPsychologyPartial";
+
+const pricePages = [
+  {
+    path: "/cennik",
+    tabId: "prices-dermatology",
+    label: "Dermatologia",
+    title: "Cennik: dermatologia",
+    description:
+      "Ceny konsultacji dermatologicznych, badań i zabiegów dostępnych w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesDermatologyPartial,
+  },
+  {
+    path: "/cennik/medycyna-estetyczna",
+    tabId: "prices-aesthetic-medicine",
+    label: "Medycyna estetyczna",
+    title: "Cennik: medycyna estetyczna",
+    description:
+      "Ceny konsultacji i zabiegów z zakresu medycyny estetycznej dostępnych w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesAestheticMedicinePartial,
+  },
+  {
+    path: "/cennik/kosmetologia",
+    tabId: "prices-cosmetology",
+    label: "Kosmetologia",
+    title: "Cennik: kosmetologia",
+    description:
+      "Ceny zabiegów kosmetologicznych i pielęgnacyjnych dostępnych w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesCosmetologyPartial,
+  },
+  {
+    path: "/cennik/chirurgia-plastyczna",
+    tabId: "prices-cosmetic-surgery",
+    label: "Chirurgia plastyczna",
+    title: "Cennik: chirurgia plastyczna",
+    description:
+      "Ceny konsultacji i zabiegów z zakresu chirurgii plastycznej dostępnych w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesCosmeticSurgeryPartial,
+  },
+  {
+    path: "/cennik/alergologia",
+    tabId: "prices-allergology",
+    label: "Alergologia",
+    title: "Cennik: alergologia",
+    description:
+      "Ceny konsultacji, diagnostyki i świadczeń alergologicznych dostępnych w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesAllergologyPartial,
+  },
+  {
+    path: "/cennik/usg",
+    tabId: "prices-usg",
+    label: "USG",
+    title: "Cennik: USG",
+    description:
+      "Ceny badań USG wykonywanych w Klinice dr Niny Wiśniewskiej w Wyszkowie, z podziałem na dostępne rodzaje diagnostyki.",
+    component: PricesUsgPartial,
+  },
+  {
+    path: "/cennik/endokrynologia",
+    tabId: "prices-endocrinology",
+    label: "Endokrynologia",
+    title: "Cennik: endokrynologia",
+    description:
+      "Ceny konsultacji i diagnostyki endokrynologicznej dostępnych w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesEndocrinologyPartial,
+  },
+  {
+    path: "/cennik/ginekologia",
+    tabId: "prices-gynecology",
+    label: "Ginekologia",
+    title: "Cennik: ginekologia",
+    description:
+      "Ceny konsultacji, badań i diagnostyki ginekologicznej dostępnych w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesGynecologyPartial,
+  },
+  {
+    path: "/cennik/chirurgia-naczyniowa",
+    tabId: "prices-vascular-surgery",
+    label: "Chirurgia naczyniowa",
+    title: "Cennik: chirurgia naczyniowa",
+    description:
+      "Ceny konsultacji, diagnostyki i zabiegów z zakresu chirurgii naczyniowej w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesVascularSurgeryPartial,
+  },
+  {
+    path: "/cennik/dietetyka-kliniczna",
+    tabId: "prices-clinical-dietitian",
+    label: "Dietetyka kliniczna",
+    title: "Cennik: dietetyka kliniczna",
+    description:
+      "Ceny konsultacji z zakresu dietetyki klinicznej dostępnych w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesClinicalDietitianPartial,
+  },
+  {
+    path: "/cennik/kardiologia",
+    tabId: "prices-cardiology",
+    label: "Kardiologia",
+    title: "Cennik: kardiologia",
+    description:
+      "Ceny konsultacji i badań kardiologicznych dostępnych w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesCardiologyPartial,
+  },
+  {
+    path: "/cennik/psychiatria",
+    tabId: "prices-psychiatry",
+    label: "Psychiatria",
+    title: "Cennik: psychiatria",
+    description:
+      "Ceny konsultacji i diagnostyki psychiatrycznej dostępnych w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesPsychiatryPartial,
+  },
+  {
+    path: "/cennik/psychologia",
+    tabId: "prices-psychology",
+    label: "Psychologia",
+    title: "Cennik: psychologia",
+    description:
+      "Ceny konsultacji, terapii i diagnostyki psychologicznej dostępnych w Klinice dr Niny Wiśniewskiej w Wyszkowie.",
+    component: PricesPsychologyPartial,
+  },
+];
 
 const PricesView = () => {
-    const location = useLocation();
+  const location = useLocation();
 
-    const [ pricesTab, setTab ] = useState(() => {
-        const pathname = window.location.pathname;
+  const isDesktop = useMediaQuery("(min-width: 991.98px)", {
+    defaultMatches: true,
+  });
 
-        const selectTab = (pathname) => {
-            switch(pathname) {
-                case '/prices':
-                    return (
-                        'prices-dermatology'
-                    );
-                case '/prices/aesthetic-medicine':
-                    return (
-                        'prices-aesthetic-medicine'
-                    );
-                case '/prices/cosmetology':
-                    return (
-                        'prices-cosmetology'
-                    );
-                case '/prices/cosmetic-surgery':
-                    return (
-                        'prices-cosmetic-surgery'
-                    );
-                case '/prices/allergology':
-                    return (
-                        'prices-allergology'
-                    );
-                case '/prices/usg':
-                    return (
-                        'prices-usg'
-                    );
-                case '/prices/endocrinology':
-                    return (
-                        'prices-endocrinology'
-                    );
-                case '/prices/gynecology':
-                    return (
-                        'prices-gynecology'
-                    );
-                case '/prices/vascular-surgery':
-                    return (
-                        'prices-vascular-surgery'
-                    );
-                case '/prices/clinical-dietitian':
-                    return (
-                        'prices-clinical-dietitian'
-                    );
-                case '/prices/cardiology':
-                    return (
-                        'prices-cardiology'
-                    );
-                case '/prices/psychiatry':
-                    return (
-                        'prices-psychiatry'
-                    );
-                case '/prices/psychology':
-                    return (
-                        'prices-psychology'
-                    );
-                default:
-            }
-        }
+  const currentPage =
+    pricePages.find((page) => page.path === location.pathname) || pricePages[0];
 
-        return selectTab(pathname);
+  const CurrentPrices = currentPage.component;
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
     });
+  }, [location.pathname]);
 
-    const renderTabContent = (photoTab) => {
-        switch(photoTab) {
-            case 'prices-dermatology':
-                return (
-                    <PricesDermatologyPartial />
-                );
-            case 'prices-aesthetic-medicine':
-                return (
-                    <PricesAestheticMedicinePartial />
-                );
-            case 'prices-cosmetology':
-                return (
-                    <PricesCosmetologyPartial />
-                );
-            case 'prices-cosmetic-surgery':
-                return (
-                    <PricesCosmeticSurgeryPartial />
-                );
-            case 'prices-allergology':
-                return (
-                    <PricesAllergologyPartial />
-                );
-            case 'prices-usg':
-                return (
-                    <PricesUsgPartial />
-                );
-            case 'prices-endocrinology':
-                return (
-                    <PricesEndocrinologyPartial />
-                );
-            case 'prices-gynecology':
-                return (
-                    <PricesGynecologyPartial />
-                );
-            case 'prices-vascular-surgery':
-                return (
-                    <PricesVascularSurgeryPartial />
-                );
-            case 'prices-clinical-dietitian':
-                return (
-                    <PricesClinicalDietitianPartial />
-                );
-            case 'prices-cardiology':
-                return (
-                    <PricesCardiologyPartial />
-                );
-            case 'prices-psychiatry':
-                return (
-                    <PricesPsychiatryPartial />
-                );
-            case 'prices-psychology':
-                return (
-                    <PricesPsychologyPartial />
-                )
-            default:
-        }
-    }
+  return (
+    <>
+      <Seo
+        title={currentPage.title}
+        description={currentPage.description}
+        path={currentPage.path}
+      />
 
-    function getWindowDimensions() {
-        const { innerWidth: width } = window;
-        return { width };
-    }
+      <Box className="contact-view">
+        <Box className="view-wrapper">
+          <Box className="view-header prices">
+            <Container className="header-wrapper">
+              <Box className="nav-wrapper">
+                <Breadcrumbs
+                  className="breadcrumb back"
+                  aria-label="Nawigacja powrotna"
+                >
+                  <Link to="/">
+                    <ArrowBackIcon aria-hidden="true" focusable="false" />
 
-    function useWindowDimensions() {
-        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
+                    <Box component="span">Strona główna</Box>
+                  </Link>
+                </Breadcrumbs>
 
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
+                <Breadcrumbs
+                  className="breadcrumb nav"
+                  separator={
+                    <NavigateNextIcon
+                      fontSize="small"
+                      aria-hidden="true"
+                      focusable="false"
+                    />
+                  }
+                  aria-label="Ścieżka nawigacyjna"
+                >
+                  <Link to="/">Strona główna</Link>
 
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
+                  <Typography
+                    component="span"
+                    color="text.primary"
+                    aria-current="page"
+                  >
+                    Cennik
+                  </Typography>
+                </Breadcrumbs>
+              </Box>
 
-        return windowDimensions;
-    }
+              <Box className="heading-wrapper">
+                <Typography
+                  component="h1"
+                  variant="h4"
+                  className="heading-view"
+                >
+                  Cennik
+                </Typography>
+              </Box>
+            </Container>
+          </Box>
 
-    const { width } = useWindowDimensions();
+          <Box className="view-body">
+            <Container className="body-wrapper prices">
+              <Box className="prices-navigation">
+                <Box className="navigation-wrapper">
+                  {isDesktop ? (
+                    <List className="list" aria-label="Kategorie cennika">
+                      {pricePages.map((page, index) => {
+                        const isCurrentPage = currentPage.path === page.path;
 
-    return (
-        <Box className='contact-view'>
-            <Box className='view-wrapper'>
-                <Box className='view-header prices'>
-                    <Container className='header-wrapper'>
-                        <Box className='nav-wrapper'>
-                            <Breadcrumbs className='breadcrumb back' aria-label='breadcrumb'>
-                                <Link to='/' aria-current='page'>
-                                    <ArrowBackIcon />
-                                    <Box>Home</Box>
-                                </Link>
-                            </Breadcrumbs>
-                            <Breadcrumbs
-                                className='breadcrumb nav'
-                                separator={<NavigateNextIcon fontSize='smform' />}
-                                aria-label='breadcrumb'
-                            >
-                                <Link
-                                    to='/'
-                                    aria-current='page'
-                                >
-                                    Home
-                                </Link>
-                                <Typography color='text.primary'>
-                                    Cennik
-                                </Typography>
-                            </Breadcrumbs>
-                        </Box>
-                        <Box className='heading-wrapper'>
-                            <Typography variant='h4' className='heading-view'>
-                                Cennik
-                            </Typography>
-                        </Box>
-                    </Container>
+                        return (
+                          <React.Fragment key={page.path}>
+                            <ListItem className="list-item" disablePadding>
+                              <ListItemButton
+                                id={`${page.tabId}-tab`}
+                                component={Link}
+                                to={page.path}
+                                className="list-item-button"
+                                selected={isCurrentPage}
+                                aria-current={
+                                  isCurrentPage ? "page" : undefined
+                                }
+                                aria-controls={`${page.tabId}-panel`}
+                              >
+                                <ListItemText
+                                  className="list-item-text"
+                                  primary={page.label}
+                                />
+
+                                <ListItemIcon className="list-item-icon">
+                                  <KeyboardArrowRightIcon
+                                    aria-hidden="true"
+                                    focusable="false"
+                                  />
+                                </ListItemIcon>
+                              </ListItemButton>
+                            </ListItem>
+
+                            {index < pricePages.length - 1 && (
+                              <Divider className="divider" />
+                            )}
+                          </React.Fragment>
+                        );
+                      })}
+                    </List>
+                  ) : (
+                    <Tabs
+                      value={currentPage.path}
+                      variant="scrollable"
+                      scrollButtons="auto"
+                      aria-label="Kategorie cennika"
+                      TabIndicatorProps={{
+                        style: {
+                          background: "transparent",
+                        },
+                      }}
+                      sx={{
+                        [`& .${tabsClasses.scrollButtons}`]: {
+                          "&.Mui-disabled": {
+                            opacity: 0.3,
+                          },
+                        },
+                      }}
+                    >
+                      {pricePages.map((page) => (
+                        <Tab
+                          key={page.path}
+                          id={`${page.tabId}-tab`}
+                          label={page.label}
+                          component={Link}
+                          to={page.path}
+                          value={page.path}
+                          aria-controls={`${page.tabId}-panel`}
+                        />
+                      ))}
+                    </Tabs>
+                  )}
                 </Box>
-                <Box className='view-body'>
-                    <Container className='body-wrapper prices'>
-                        <Box className='prices-navigation'>
-                            <Box className='navigation-wrapper'>
-                                {width >= 991.98 ? (
-                                    <List className='list'>
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-dermatology'}
-                                                onClick={() => setTab('prices-dermatology')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Dermatologia' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/aesthetic-medicine'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-aesthetic-medicine'}
-                                                onClick={() => setTab('prices-aesthetic-medicine')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Medycyna estetyczna' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/cosmetology'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-cosmetology'}
-                                                onClick={() => setTab('prices-cosmetology')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Kosmetologia' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/cosmetic-surgery'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-cosmetic-surgery'}
-                                                onClick={() => setTab('prices-cosmetic-surgery')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Chirurgia plastyczna' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/allergology'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-allergology'}
-                                                onClick={() => setTab('prices-allergology')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Alergologia' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/usg'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-usg'}
-                                                onClick={() => setTab('prices-usg')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='USG' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/endocrinology'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-endocrinology'}
-                                                onClick={() => setTab('prices-endocrinology')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Endokrynologia' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/gynecology'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-gynecology'}
-                                                onClick={() => setTab('prices-gynecology')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Ginekologia' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/vascular-surgery'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-vascular-surgery'}
-                                                onClick={() => setTab('prices-vascular-surgery')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Chirurgia naczyniowa' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/clinical-dietitian'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-clinical-dietitian'}
-                                                onClick={() => setTab('prices-clinical-dietitian')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Dietetyka Kliniczna' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/cardiology'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-cardiology'}
-                                                onClick={() => setTab('prices-cardiology')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Kardiologia' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/psychiatry'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-psychiatry'}
-                                                onClick={() => setTab('prices-psychiatry')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Psychiatria' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                        <Divider className='divider' />
-                                        <ListItem className='list-item'>
-                                            <ListItemButton
-                                                component={Link}
-                                                to='/prices/psychology'
-                                                className='list-item-button'
-                                                aria-current='page'
-                                                selected={pricesTab === 'prices-psychology'}
-                                                onClick={() => setTab('prices-psychology')}
-                                            >
-                                                <ListItemText className='list-item-text' primary='Psychologia' />
-                                                <ListItemIcon className='list-item-icon'>
-                                                    <KeyboardArrowRightIcon />
-                                                </ListItemIcon>
-                                            </ListItemButton>
-                                        </ListItem>
-                                    </List>
-                                ) : (
-                                    <Tabs
-                                        value={location.pathname}
-                                        variant='scrollable'
-                                        scrollButtons='auto'
-                                        aria-label='scrollable auto tabs example'
-                                        TabIndicatorProps={{ style: { background: 'transparent' }}}
-                                        sx={{
-                                            [`& .${tabsClasses.scrollButtons}`]: {
-                                                '&.Mui-disabled': { opacity: 0.3 },
-                                            },
-                                        }}
-                                    >
-                                        <Tab
-                                            label='Dermatologia'
-                                            component={Link}
-                                            to={`/prices`}
-                                            value={`/prices`}
-                                            selected={pricesTab === 'prices-clinical-dietitian'}
-                                            onClick={() => setTab('prices-dermatology')}
-                                        />
-                                        <Tab
-                                            label='Medycyna estetyczna'
-                                            component={Link}
-                                            to={`/prices/aesthetic-medicine`}
-                                            value={`/prices/aesthetic-medicine`}
-                                            onClick={() => setTab('prices-aesthetic-medicine')}
-                                        />
-                                        <Tab
-                                            label='Kosmetologia'
-                                            component={Link}
-                                            to={`/prices/cosmetology`}
-                                            value={`/prices/cosmetology`}
-                                            onClick={() => setTab('prices-cosmetology')}
-                                        />
-                                        <Tab
-                                            label='Chirurgia plastyczna'
-                                            component={Link}
-                                            to={`/prices/cosmetic-surgery`}
-                                            value={`/prices/cosmetic-surgery`}
-                                            onClick={() => setTab('prices-cosmetic-surgery')}
-                                        />
-                                        <Tab
-                                            label='Alergologia'
-                                            component={Link}
-                                            to={`/prices/allergology`}
-                                            value={`/prices/allergology`}
-                                            onClick={() => setTab('prices-allergology')}
-                                        />
-                                        <Tab
-                                            label='USG'
-                                            component={Link}
-                                            to={`/prices/usg`}
-                                            value={`/prices/usg`}
-                                            onClick={() => setTab('prices-usg')}
-                                        />
-                                        <Tab
-                                            label='Endokrynologia'
-                                            component={Link}
-                                            to={`/prices/endocrinology`}
-                                            value={`/prices/endocrinology`}
-                                            onClick={() => setTab('prices-endocrinology')}
-                                        />
-                                        <Tab
-                                            label='Ginekologia'
-                                            component={Link}
-                                            to={`/prices/gynecology`}
-                                            value={`/prices/gynecology`}
-                                            onClick={() => setTab('prices-gynecology')}
-                                        />
-                                        <Tab
-                                            label='Chirurgia naczyniowa'
-                                            component={Link}
-                                            to={`/prices/vascular-surgery`}
-                                            value={`/prices/vascular-surgery`}
-                                            onClick={() => setTab('prices-vascular-surgery')}
-                                        />
-                                        <Tab
-                                            label='Dietetyka Kliniczna'
-                                            component={Link}
-                                            to={`/prices/clinical-dietitian`}
-                                            value={`/prices/clinical-dietitian`}
-                                            onClick={() => setTab('prices-clinical-dietitian')}
-                                        />
-                                        <Tab
-                                            label='Kardiologia'
-                                            component={Link}
-                                            to={`/prices/cardiology`}
-                                            value={`/prices/cardiology`}
-                                            onClick={() => setTab('prices-cardiology')}
-                                        />
-                                        <Tab
-                                            label='Psychiatria'
-                                            component={Link}
-                                            to={`/prices/psychiatry`}
-                                            value={`/prices/psychiatry`}
-                                            onClick={() => setTab('prices-psychiatry')}
-                                        />
-                                        <Tab
-                                            label='Psychiatria'
-                                            component={Link}
-                                            to={`/prices/psychology`}
-                                            value={`/prices/psychology`}
-                                            onClick={() => setTab('prices-psychology')}
-                                        />
-                                    </Tabs>
-                                )}
-                            </Box>
-                        </Box>
-                        <Box className='prices-tabels'>
-                            <Box
-                                className='tab-pane fade show active'
-                                id={`pills-${pricesTab}`}
-                                role='tabpanel'
-                                aria-labelledby={`pills-${pricesTab}-tab`}
-                            >
-                                {renderTabContent(pricesTab)}
-                            </Box>
-                        </Box>
-                    </Container>
+              </Box>
+
+              <Box className="prices-tabels">
+                <Box
+                  className="tab-pane fade show active"
+                  id={`${currentPage.tabId}-panel`}
+                  role="tabpanel"
+                  aria-labelledby={`${currentPage.tabId}-tab`}
+                >
+                  <CurrentPrices />
                 </Box>
-            </Box>
+              </Box>
+            </Container>
+          </Box>
         </Box>
-    );
-}
+      </Box>
+    </>
+  );
+};
 
-export default Page(PricesView);
+export default PricesView;

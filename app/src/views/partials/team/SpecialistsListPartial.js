@@ -1,82 +1,84 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import Box from '@mui/material/Box';
+import useMediaQuery from "@mui/material/useMediaQuery";
+import Box from "@mui/material/Box";
 
-import CardTeam from '../../../components/CardTeam';
-import CardTeamProposed from '../../../components/CardTeamProposed';
+import CardTeam from "../../../components/CardTeam";
+import CardTeamProposed from "../../../components/CardTeamProposed";
 
-import { team } from '../../../data/team';
+import { team } from "../../../data/team";
+
+const specializationSlugs = {
+  dermatology: "dermatologia",
+  "aesthetic-medicine": "medycyna-estetyczna",
+  cosmetology: "kosmetologia",
+  "cosmetic-surgery": "chirurgia-plastyczna",
+  allergology: "alergologia",
+  usg: "usg",
+  endocrinology: "endokrynologia",
+  gynecology: "ginekologia",
+  "vascular-surgery": "chirurgia-naczyniowa",
+  "clinical-dietitian": "dietetyka-kliniczna",
+  cardiology: "kardiologia",
+  psychiatry: "psychiatria",
+  psychology: "psychologia",
+  "medical-registration": "rejestracja-medyczna",
+};
 
 const SpecialistsListPartial = ({ specialization }) => {
-    const [ data, setData ] = useState([]);
+  const isDesktop = useMediaQuery("(min-width: 991.98px)");
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const filtered = team.filter(item => item.specialization.includes(specialization));
-            setData(filtered);
-        };
-        fetchData();
-    }, [specialization]);
+  const specialists = team.filter((item) =>
+    item.specialization.includes(specialization),
+  );
 
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'instant'
-        });
-    }, [specialization]);
+  const specializationSlug = specializationSlugs[specialization];
 
-    function getWindowDimensions() {
-        const { innerWidth: width } = window;
-        return { width };
-    }
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, [specialization]);
 
-    function useWindowDimensions() {
-        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
+  return (
+    <Box className="card-wrapper team view">
+      {specialists.map((item) => {
+        const specialistPath = `/specjalisci/${specializationSlug}/${item.specialist}`;
 
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
+        return isDesktop ? (
+          <CardTeam
+            key={item.id}
+            cardImage={item.image}
+            cardBackground={item.background}
+            cardTitle={item.name}
+            cardName={item.name}
+            cardSpeciality={item.speciality}
+            cardDescription={item.experience || item.education}
+            cardPath={specialistPath}
+          />
+        ) : (
+          <CardTeamProposed
+            key={item.id}
+            cardTitle={item.name}
+            cardSpeciality={item.speciality}
+            cardExperience={
+              item.experience ||
+              item.education || (
+                <>
+                  <br />
+                  <br />
+                </>
+              )
             }
-
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-
-        return windowDimensions;
-    }
-
-    const { width } = useWindowDimensions();
-
-    return (
-        <Box className='card-wrapper team view'>
-            {width >= 991.98 ? (
-                data.map((item) => (
-                    <CardTeam
-                        key={item.id}
-                        cardImage={item.image}
-                        cardBackground={item.background}
-                        cardTitle={item.title}
-                        cardName={item.name}
-                        cardSpeciality={item.speciality}
-                        cardDescription={item.experience ? item.experience : item.education}
-                        cardPath={`${specialization}/${item.specialist}`}
-                    />
-                ))
-            ) : (
-                data.map((item) => (
-                    <CardTeamProposed
-                        key={item.id}
-                        cardTitle={item.name}
-                        cardSpeciality={item.speciality}
-                        cardExperience={item.experience ? item.experience : item.education ? item.education : <><br/><br/></>}
-                        cardImage={item.image}
-                        cardPath={`${specialization}/${item.specialist}`}
-                    />
-                ))
-            )}
-        </Box>
-    );
-}
+            cardImage={item.image}
+            cardPath={specialistPath}
+          />
+        );
+      })}
+    </Box>
+  );
+};
 
 export default SpecialistsListPartial;
