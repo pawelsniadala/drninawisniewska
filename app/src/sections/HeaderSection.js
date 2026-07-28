@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import Typography from "@mui/material/Typography";
@@ -11,6 +11,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import Container from "../components/Container";
 
@@ -24,77 +25,97 @@ import TreatmentSvg from "../assets/svg/TreatmentSvg";
 import PricesSvg from "../assets/svg/PricesSvg";
 import SpecialOfferSvg from "../assets/svg/SpecialOfferSvg";
 import TeamSvg from "../assets/svg/TeamSvg";
-// import TechnologySvg from '../assets/svg/TechnologySvg';
 import CareerSvg from "../assets/svg/CareerSvg";
 import ContactSvg from "../assets/svg/ContactSvg";
 
+import logoPng from "../assets/header/logo.png";
+
+const navigationItems = [
+  {
+    label: "Klinika",
+    path: "/klinika",
+    Icon: ClinicSvg,
+    iconSize: "17px",
+  },
+  {
+    label: "Specjalizacje",
+    path: "/specjalizacje",
+    Icon: ServicesSvg,
+    iconSize: "17px",
+  },
+  {
+    label: "Zabiegi",
+    path: "/zabiegi",
+    Icon: TreatmentSvg,
+    iconSize: "17px",
+  },
+  {
+    label: "Cennik",
+    path: "/cennik",
+    Icon: PricesSvg,
+    iconSize: "16px",
+  },
+  {
+    label: "Promocje",
+    path: "/promocje",
+    Icon: SpecialOfferSvg,
+    iconSize: "16px",
+  },
+  {
+    label: "Specjaliści",
+    path: "/specjalisci",
+    Icon: TeamSvg,
+    iconSize: "17px",
+  },
+  {
+    label: "Kariera",
+    path: "/kariera",
+    Icon: CareerSvg,
+    iconSize: "17px",
+  },
+  {
+    label: "Kontakt",
+    path: "/kontakt",
+    Icon: ContactSvg,
+    iconSize: "17px",
+  },
+];
+
 const HeaderSection = () => {
-  const [state, setState] = useState({ left: false });
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
+  const isMobile = useMediaQuery("(max-width: 991.98px)");
+
+  useEffect(() => {
+    if (!isMobile) {
+      setIsDrawerOpen(false);
     }
+  }, [isMobile]);
 
-    setState({
-      ...state,
-      [anchor]: open,
-    });
+  const openDrawer = () => {
+    setIsDrawerOpen(true);
   };
 
-  function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
+  const closeDrawer = () => {
+    setIsDrawerOpen(false);
+  };
 
-    return {
-      width,
-      height,
-    };
-  }
+  const getNavLinkClassName = ({ isActive }) =>
+    `nav-link${isActive ? " active" : ""}`;
 
-  function useWindowDimensions() {
-    const [windowDimensions, setWindowDimensions] = useState(
-      getWindowDimensions(),
-    );
-
-    useEffect(() => {
-      function handleResize() {
-        setWindowDimensions(getWindowDimensions());
-      }
-
-      window.addEventListener("resize", handleResize);
-
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }, []);
-
-    return windowDimensions;
-  }
-
-  const { width } = useWindowDimensions();
-
-  const drawerList = (anchor) => (
-    <Box
-      sx={{ width: 250 }}
-      role="presentation"
-      onClick={toggleDrawer(anchor, false)}
-      onKeyDown={toggleDrawer(anchor, false)}
-    >
+  const drawerList = (
+    <Box id="mobile-navigation" sx={{ width: 250 }} role="presentation">
+      {/* LOGO */}
       <List className="logo">
         <ListItem className="list-item">
           <NavLink
             className="navbar-brand text-uppercase"
-            activeclassname="active"
             to="/"
+            end
+            aria-label="Strona główna Kliniki dr Niny Wiśniewskiej"
+            onClick={closeDrawer}
           >
-            <img
-              alt="Dermatologia i Medycyna estetyczna dr Nina Wiśniewska"
-              height="51"
-              src={require("../assets/header/logo.png")}
-            />
+            <img src={logoPng} alt="" height="51" />
 
             <Typography className="brand-text">
               Dermatologia
@@ -107,223 +128,35 @@ const HeaderSection = () => {
         </ListItem>
       </List>
 
+      {/* MENU GŁÓWNE */}
       <List className="menu">
-        <ListItem className="list-item">
-          <NavLink
-            className="nav-link"
-            activeclassname="active"
-            aria-current="page"
-            to="/klinika"
-            onClick={(event) => {
-              if (window.location.pathname.includes("/klinika")) {
-                event.preventDefault();
-              }
-            }}
-          >
-            <ListItemButton className="list-item-button">
-              <ListItemIcon className="list-item-icon">
-                <ClinicSvg width="17px" height="17px" />
-              </ListItemIcon>
+        {navigationItems.map(({ label, path, Icon, iconSize }) => (
+          <ListItem className="list-item" key={path}>
+            <NavLink
+              className={getNavLinkClassName}
+              to={path}
+              onClick={closeDrawer}
+            >
+              <ListItemButton className="list-item-button">
+                <ListItemIcon className="list-item-icon">
+                  <Icon
+                    width={iconSize}
+                    height={iconSize}
+                    aria-hidden="true"
+                    focusable="false"
+                  />
+                </ListItemIcon>
 
-              <ListItemText className="list-item-text" primary="Klinika" />
-            </ListItemButton>
-          </NavLink>
-        </ListItem>
-
-        <ListItem className="list-item">
-          <NavLink
-            className="nav-link"
-            activeclassname="active"
-            aria-current="page"
-            to="/specjalizacje"
-            onClick={(event) => {
-              if (window.location.pathname.includes("/specjalizacje")) {
-                event.preventDefault();
-              }
-            }}
-          >
-            <ListItemButton className="list-item-button">
-              <ListItemIcon className="list-item-icon">
-                <ServicesSvg width="17px" height="17px" />
-              </ListItemIcon>
-
-              <ListItemText
-                className="list-item-text"
-                primary="Specjalizacje"
-              />
-            </ListItemButton>
-          </NavLink>
-        </ListItem>
-
-        <ListItem className="list-item">
-          <NavLink
-            className="nav-link"
-            activeclassname="active"
-            aria-current="page"
-            to="/zabiegi"
-            onClick={(event) => {
-              if (window.location.pathname.includes("/zabiegi")) {
-                event.preventDefault();
-              }
-            }}
-          >
-            <ListItemButton className="list-item-button">
-              <ListItemIcon className="list-item-icon">
-                <TreatmentSvg width="17px" height="17px" />
-              </ListItemIcon>
-
-              <ListItemText className="list-item-text" primary="Zabiegi" />
-            </ListItemButton>
-          </NavLink>
-        </ListItem>
-
-        <ListItem className="list-item">
-          <NavLink
-            className="nav-link"
-            activeclassname="active"
-            aria-current="page"
-            to="/cennik"
-            onClick={(event) => {
-              if (window.location.pathname.includes("/cennik")) {
-                event.preventDefault();
-              }
-            }}
-          >
-            <ListItemButton className="list-item-button">
-              <ListItemIcon className="list-item-icon">
-                <PricesSvg width="16px" height="16px" />
-              </ListItemIcon>
-
-              <ListItemText className="list-item-text" primary="Cennik" />
-            </ListItemButton>
-          </NavLink>
-        </ListItem>
-
-        <ListItem className="list-item">
-          <NavLink
-            className="nav-link"
-            activeclassname="active"
-            aria-current="page"
-            to="/promocje"
-            onClick={(event) => {
-              if (window.location.pathname.includes("/promocje")) {
-                event.preventDefault();
-              }
-            }}
-          >
-            <ListItemButton className="list-item-button">
-              <ListItemIcon className="list-item-icon">
-                <SpecialOfferSvg width="16px" height="16px" />
-              </ListItemIcon>
-
-              <ListItemText className="list-item-text" primary="Promocje" />
-            </ListItemButton>
-          </NavLink>
-        </ListItem>
-
-        <ListItem className="list-item">
-          <NavLink
-            className="nav-link"
-            activeclassname="active"
-            aria-current="page"
-            to="/specjalisci"
-            onClick={(event) => {
-              if (window.location.pathname.includes("/specjalisci")) {
-                event.preventDefault();
-              }
-            }}
-          >
-            <ListItemButton className="list-item-button">
-              <ListItemIcon className="list-item-icon">
-                <TeamSvg width="17px" height="17px" />
-              </ListItemIcon>
-
-              <ListItemText className="list-item-text" primary="Specjaliści" />
-            </ListItemButton>
-          </NavLink>
-        </ListItem>
-
-        {/*
-                <ListItem className='list-item'>
-                    <NavLink
-                        className='nav-link'
-                        activeclassname='active'
-                        aria-current='page'
-                        to='/technologia'
-                        onClick={(event) => {
-                            if (
-                                window.location.pathname.includes(
-                                    '/technologia'
-                                )
-                            ) {
-                                event.preventDefault();
-                            }
-                        }}
-                    >
-                        <ListItemButton className='list-item-button'>
-                            <ListItemIcon className='list-item-icon'>
-                                <TechnologySvg
-                                    width='17px'
-                                    height='17px'
-                                />
-                            </ListItemIcon>
-
-                            <ListItemText
-                                className='list-item-text'
-                                primary='Technologia'
-                            />
-                        </ListItemButton>
-                    </NavLink>
-                </ListItem>
-                */}
-
-        <ListItem className="list-item">
-          <NavLink
-            className="nav-link"
-            activeclassname="active"
-            aria-current="page"
-            to="/kariera"
-            onClick={(event) => {
-              if (window.location.pathname.includes("/kariera")) {
-                event.preventDefault();
-              }
-            }}
-          >
-            <ListItemButton className="list-item-button">
-              <ListItemIcon className="list-item-icon">
-                <CareerSvg width="17px" height="17px" />
-              </ListItemIcon>
-
-              <ListItemText className="list-item-text" primary="Kariera" />
-            </ListItemButton>
-          </NavLink>
-        </ListItem>
-
-        <ListItem className="list-item">
-          <NavLink
-            className="nav-link"
-            activeclassname="active"
-            aria-current="page"
-            to="/kontakt"
-            onClick={(event) => {
-              if (window.location.pathname.includes("/kontakt")) {
-                event.preventDefault();
-              }
-            }}
-          >
-            <ListItemButton className="list-item-button">
-              <ListItemIcon className="list-item-icon">
-                <ContactSvg width="17px" height="17px" />
-              </ListItemIcon>
-
-              <ListItemText className="list-item-text" primary="Kontakt" />
-            </ListItemButton>
-          </NavLink>
-        </ListItem>
+                <ListItemText className="list-item-text" primary={label} />
+              </ListItemButton>
+            </NavLink>
+          </ListItem>
+        ))}
       </List>
 
       <Divider />
 
+      {/* MEDIA SPOŁECZNOŚCIOWE */}
       <List className="media">
         <ListItem className="list-item">
           <a
@@ -331,10 +164,16 @@ const HeaderSection = () => {
             className="link"
             target="_blank"
             rel="noreferrer"
+            onClick={closeDrawer}
           >
             <ListItemButton className="list-item-button">
               <ListItemIcon className="list-item-icon">
-                <FacebookSvg width="16px" height="16px" />
+                <FacebookSvg
+                  width="16px"
+                  height="16px"
+                  aria-hidden="true"
+                  focusable="false"
+                />
               </ListItemIcon>
 
               <ListItemText className="list-item-text" primary="Facebook" />
@@ -348,10 +187,16 @@ const HeaderSection = () => {
             className="link"
             target="_blank"
             rel="noreferrer"
+            onClick={closeDrawer}
           >
             <ListItemButton className="list-item-button">
               <ListItemIcon className="list-item-icon">
-                <InstagramSvg width="16px" height="16px" />
+                <InstagramSvg
+                  width="16px"
+                  height="16px"
+                  aria-hidden="true"
+                  focusable="false"
+                />
               </ListItemIcon>
 
               <ListItemText className="list-item-text" primary="Instagram" />
@@ -364,19 +209,21 @@ const HeaderSection = () => {
 
   return (
     <Box component="header" className="header-section">
+      {/* GÓRNY PASEK KONTAKTOWY */}
       <Box className="top-nav">
         <Container className="nav-wrapper">
           <Box className="content-wrapper">
             <Box className="contact-wrapper">
               <Tooltip title="Zadzwoń">
-                <a
-                  className="link"
-                  href="tel:+48450001550"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a className="link" href="tel:+48450001550">
                   <Box className="link-wrapper">
-                    <PhoneSvg width="14px" height="14px" color="#fff" />
+                    <PhoneSvg
+                      width="14px"
+                      height="14px"
+                      color="#ffffff"
+                      aria-hidden="true"
+                      focusable="false"
+                    />
 
                     <Typography className="link-text">450 001 550</Typography>
                   </Box>
@@ -384,14 +231,15 @@ const HeaderSection = () => {
               </Tooltip>
 
               <Tooltip title="Zadzwoń">
-                <a
-                  className="link"
-                  href="tel:+48539968541"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a className="link" href="tel:+48539968541">
                   <Box className="link-wrapper">
-                    <PhoneSvg width="14px" height="14px" color="#fff" />
+                    <PhoneSvg
+                      width="14px"
+                      height="14px"
+                      color="#ffffff"
+                      aria-hidden="true"
+                      focusable="false"
+                    />
 
                     <Typography className="link-text">539 968 541</Typography>
                   </Box>
@@ -399,14 +247,15 @@ const HeaderSection = () => {
               </Tooltip>
 
               <Tooltip title="Napisz wiadomość">
-                <a
-                  className="link"
-                  href="mailto:info@drninawisniewska.pl"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a className="link" href="mailto:info@drninawisniewska.pl">
                   <Box className="link-wrapper">
-                    <EmailSvg width="14px" height="14px" color="#fff" />
+                    <EmailSvg
+                      width="14px"
+                      height="14px"
+                      color="#ffffff"
+                      aria-hidden="true"
+                      focusable="false"
+                    />
 
                     <Typography className="link-text">
                       info@drninawisniewska.pl
@@ -416,15 +265,26 @@ const HeaderSection = () => {
               </Tooltip>
             </Box>
 
-            <Box className="media-wrapper">
+            <Box
+              component="nav"
+              className="media-wrapper"
+              aria-label="Media społecznościowe"
+            >
               <Tooltip title="Facebook">
                 <a
                   className="link"
                   href="https://www.facebook.com/profile.php?id=100063736802328"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Facebook Kliniki dr Niny Wiśniewskiej"
                 >
-                  <FacebookSvg width="14px" height="14px" color="#fff" />
+                  <FacebookSvg
+                    width="14px"
+                    height="14px"
+                    color="#ffffff"
+                    aria-hidden="true"
+                    focusable="false"
+                  />
                 </a>
               </Tooltip>
 
@@ -434,8 +294,15 @@ const HeaderSection = () => {
                   href="https://www.instagram.com/klinikawyszkow/"
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Instagram Kliniki dr Niny Wiśniewskiej"
                 >
-                  <InstagramSvg width="14px" height="14px" color="#fff" />
+                  <InstagramSvg
+                    width="14px"
+                    height="14px"
+                    color="#ffffff"
+                    aria-hidden="true"
+                    focusable="false"
+                  />
                 </a>
               </Tooltip>
             </Box>
@@ -443,26 +310,20 @@ const HeaderSection = () => {
         </Container>
       </Box>
 
-      <Box component="nav" className="navbar navbar-light navbar-expand-lg">
+      {/* GŁÓWNA NAWIGACJA */}
+      <Box
+        component="nav"
+        className="navbar navbar-light navbar-expand-lg"
+        aria-label="Główna nawigacja"
+      >
         <Container className="container container-fluid">
           <NavLink
             className="navbar-brand text-uppercase"
-            activeclassname="active"
             to="/"
+            end
+            aria-label="Strona główna Kliniki dr Niny Wiśniewskiej"
           >
-            {width <= 991.98 ? (
-              <img
-                alt="Dermatologia i Medycyna estetyczna dr Nina Wiśniewska"
-                height="51"
-                src={require("../assets/header/logo.png")}
-              />
-            ) : (
-              <img
-                alt="Dermatologia i Medycyna estetyczna dr Nina Wiśniewska"
-                height="60"
-                src={require("../assets/header/logo.png")}
-              />
-            )}
+            <img src={logoPng} alt="" height={isMobile ? 51 : 60} />
 
             <Typography className="brand-text">
               Dermatologia
@@ -473,188 +334,44 @@ const HeaderSection = () => {
             </Typography>
           </NavLink>
 
-          <Box>
-            {["left"].map((anchor) => (
-              <Box key={anchor}>
-                <button
-                  className="navbar-toggler"
-                  onClick={toggleDrawer(anchor, true)}
-                  size="large"
-                >
-                  <span className="navbar-toggler-icon" />
-                </button>
+          {/* MENU MOBILNE */}
+          {isMobile && (
+            <>
+              <button
+                type="button"
+                className="navbar-toggler"
+                onClick={openDrawer}
+                aria-label="Otwórz menu główne"
+                aria-controls="mobile-navigation"
+                aria-expanded={isDrawerOpen}
+              >
+                <span className="navbar-toggler-icon" aria-hidden="true" />
+              </button>
 
-                <Drawer
-                  anchor={anchor}
-                  open={state[anchor]}
-                  onClose={toggleDrawer(anchor, false)}
-                >
-                  {drawerList(anchor)}
-                </Drawer>
-              </Box>
-            ))}
-          </Box>
+              <Drawer anchor="left" open={isDrawerOpen} onClose={closeDrawer}>
+                {drawerList}
+              </Drawer>
+            </>
+          )}
 
+          {/* MENU DESKTOPOWE */}
           <Box
             className="offcanvas offcanvas-start"
-            tabIndex="-1"
+            tabIndex={-1}
             id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel"
           >
             <Box
               className="offcanvas-body navbar-light"
               id="navbarSupportedContent"
             >
               <ul className="navbar-nav">
-                <li className="nav-item">
-                  <NavLink
-                    className="nav-link"
-                    activeclassname="active"
-                    aria-current="page"
-                    to="/klinika"
-                    onClick={(event) => {
-                      if (window.location.pathname.includes("/klinika")) {
-                        event.preventDefault();
-                      }
-                    }}
-                  >
-                    Klinika
-                  </NavLink>
-                </li>
-
-                <li className="nav-item">
-                  <NavLink
-                    className="nav-link"
-                    activeclassname="active"
-                    aria-current="page"
-                    to="/specjalizacje"
-                    onClick={(event) => {
-                      if (window.location.pathname.includes("/specjalizacje")) {
-                        event.preventDefault();
-                      }
-                    }}
-                  >
-                    Specjalizacje
-                  </NavLink>
-                </li>
-
-                <li className="nav-item">
-                  <NavLink
-                    className="nav-link"
-                    activeclassname="active"
-                    aria-current="page"
-                    to="/zabiegi"
-                    onClick={(event) => {
-                      if (window.location.pathname.includes("/zabiegi")) {
-                        event.preventDefault();
-                      }
-                    }}
-                  >
-                    Zabiegi
-                  </NavLink>
-                </li>
-
-                <li className="nav-item">
-                  <NavLink
-                    className="nav-link"
-                    activeclassname="active"
-                    aria-current="page"
-                    to="/cennik"
-                    onClick={(event) => {
-                      if (window.location.pathname.includes("/cennik")) {
-                        event.preventDefault();
-                      }
-                    }}
-                  >
-                    Cennik
-                  </NavLink>
-                </li>
-
-                <li className="nav-item">
-                  <NavLink
-                    className="nav-link"
-                    activeclassname="active"
-                    aria-current="page"
-                    to="/promocje"
-                    onClick={(event) => {
-                      if (window.location.pathname.includes("/promocje")) {
-                        event.preventDefault();
-                      }
-                    }}
-                  >
-                    Promocje
-                  </NavLink>
-                </li>
-
-                <li className="nav-item">
-                  <NavLink
-                    className="nav-link"
-                    activeclassname="active"
-                    aria-current="page"
-                    to="/specjalisci"
-                    onClick={(event) => {
-                      if (window.location.pathname.includes("/specjalisci")) {
-                        event.preventDefault();
-                      }
-                    }}
-                  >
-                    Specjaliści
-                  </NavLink>
-                </li>
-
-                {/*
-                                <li className='nav-item'>
-                                    <NavLink
-                                        className='nav-link'
-                                        activeclassname='active'
-                                        aria-current='page'
-                                        to='/technologia'
-                                        onClick={(event) => {
-                                            if (
-                                                window.location.pathname.includes(
-                                                    '/technologia'
-                                                )
-                                            ) {
-                                                event.preventDefault();
-                                            }
-                                        }}
-                                    >
-                                        Technologia
-                                    </NavLink>
-                                </li>
-                                */}
-
-                <li className="nav-item">
-                  <NavLink
-                    className="nav-link"
-                    activeclassname="active"
-                    aria-current="page"
-                    to="/kariera"
-                    onClick={(event) => {
-                      if (window.location.pathname.includes("/kariera")) {
-                        event.preventDefault();
-                      }
-                    }}
-                  >
-                    Kariera
-                  </NavLink>
-                </li>
-
-                <li className="nav-item">
-                  <NavLink
-                    className="nav-link"
-                    activeclassname="active"
-                    aria-current="page"
-                    to="/kontakt"
-                    onClick={(event) => {
-                      if (window.location.pathname.includes("/kontakt")) {
-                        event.preventDefault();
-                      }
-                    }}
-                  >
-                    Kontakt
-                  </NavLink>
-                </li>
+                {navigationItems.map(({ label, path }) => (
+                  <li className="nav-item" key={path}>
+                    <NavLink className={getNavLinkClassName} to={path}>
+                      {label}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
             </Box>
           </Box>

@@ -1,106 +1,115 @@
-import React, { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 
-import Box from '@mui/material/Box';
+import Box from "@mui/material/Box";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
-import Container from '../components/Container';
-import SectionHeader from '../components/SectionHeader';
-import CardServices from '../components/CardServices';
-import CardProposed from '../components/CardProposed';
+import Container from "../components/Container";
+import SectionHeader from "../components/SectionHeader";
+import CardServices from "../components/CardServices";
+import CardProposed from "../components/CardProposed";
 
-import { services } from '../data/services';
+import { services } from "../data/services";
+
+const swiperModules = [Autoplay, Pagination];
 
 const ServicesSection = () => {
-    function getWindowDimensions() {
-        const { innerWidth: width } = window;
-        return { width };
-    }
+  const isDesktop = useMediaQuery("(min-width: 991.98px)");
 
-    function useWindowDimensions() {
-        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
+  const isSmallMobile = useMediaQuery("(max-width: 539.98px)");
 
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
+  const prefersReducedMotion = useMediaQuery(
+    "(prefers-reduced-motion: reduce)",
+  );
 
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
+  const desktopServices = services?.slice(0, 6) ?? [];
 
-        return windowDimensions;
-    }
+  const mobileServices = desktopServices.slice(0, isSmallMobile ? 4 : 6);
 
-    const { width } = useWindowDimensions();
+  return (
+    <Box
+      component="section"
+      className="services-section"
+      aria-label="Specjalizacje dostępne w klinice"
+    >
+      <Container className="services-container">
+        <SectionHeader
+          sectionTitle="Specjalizacje"
+          sectionHeader="Specjalizacje dostępne w naszej klinice"
+          sectionSubheader="Zapoznaj się z treścią naszych specjalizacji"
+          sectionLinkText="Zobacz wszystkie specjalizacje"
+          sectionLinkPath="/specjalizacje"
+        />
 
-    return (
-        <Box
-            component='section'
-            className='services-section'
-        >
-            <Container className='services-container'>
-                <SectionHeader
-                    sectionTitle='Specjalizacje'
-                    sectionHeader='Specjalizacje dostępne w naszej klinice'
-                    sectionSubheader='Zapoznaj się z treścią naszych specjalizacji'
-                    sectionLinkText='Zobacz wszystkie Specjalizacje'
-                    sectionLinkPath='/services'
-                />
-                <Box className='section-body'>
-                    {width >= 991.98 ? (
-                        <Swiper
-                            className="mySwiper"
-                            slidesPerView={3}
-                            spaceBetween={20}
-                            speed={500}
-                            pagination={{
-                                clickable: true
-                            }}
-                            autoplay={{
-                                delay: 4000,
-                                disableOnInteraction: false,
-                                pauseOnMouseEnter: true,
-                            }}
-                            modules={[
-                                Autoplay,
-                                Pagination
-                            ]}
-                        >
-                            {services.slice(0, 6).map((item) => (
-                                <SwiperSlide
-                                    key={item.id}
-                                >
-                                    <CardServices
-                                        cardTitle={item.title}
-                                        cardDescription={item.description}
-                                        cardPath={item.path}
-                                        cardPathSpecialist={item.pathSpecialist}
-                                        cardPathPrices={item.pathPrices}
-                                        cardSpecialist={item.specialists}
-                                        cardImage={item.image}
-                                        // cardImageVisible={true}
-                                    />
-                                </SwiperSlide>
-                            ))}
-                        </Swiper>
-                    ) : (
-                        <Box className='card-wrapper services'>
-                            {services.slice(0, width <= 539.98 ? 4 : 6).map((item) => (
-                                <CardProposed
-                                    key={item.id}
-                                    cardTitle={item.title}
-                                    cardDescription={item.description}
-                                    cardImage={item.image}
-                                    cardPath={item.path}
-                                />
-                            ))}
-                        </Box>
-                    )}
-                </Box>
-            </Container>
+        <Box className="section-body">
+          {isDesktop ? (
+            <Swiper
+              className="mySwiper"
+              slidesPerView={3}
+              spaceBetween={20}
+              speed={prefersReducedMotion ? 0 : 500}
+              loop={desktopServices.length > 3}
+              watchOverflow
+              pagination={{
+                clickable: true,
+              }}
+              autoplay={
+                prefersReducedMotion
+                  ? false
+                  : {
+                      delay: 4000,
+                      disableOnInteraction: false,
+                      pauseOnMouseEnter: true,
+                    }
+              }
+              modules={swiperModules}
+              aria-label="Wybrane specjalizacje"
+            >
+              {desktopServices.map((item, index) => {
+                const serviceKey = item.id ?? `${item.path}-${item.title}`;
+
+                return (
+                  <SwiperSlide
+                    key={serviceKey}
+                    aria-label={`${index + 1} z ${
+                      desktopServices.length
+                    }: ${item.title}`}
+                  >
+                    <CardServices
+                      cardTitle={item.title}
+                      cardDescription={item.description}
+                      cardPath={item.path}
+                      cardPathSpecialist={item.pathSpecialist}
+                      cardPathPrices={item.pathPrices}
+                      cardSpecialist={item.specialists}
+                      cardImage={item.image}
+                    />
+                  </SwiperSlide>
+                );
+              })}
+            </Swiper>
+          ) : (
+            <Box className="card-wrapper services">
+              {mobileServices.map((item) => {
+                const serviceKey = item.id ?? `${item.path}-${item.title}`;
+
+                return (
+                  <CardProposed
+                    key={serviceKey}
+                    cardTitle={item.title}
+                    cardDescription={item.description}
+                    cardImage={item.image}
+                    cardPath={item.path}
+                  />
+                );
+              })}
+            </Box>
+          )}
         </Box>
-    );
-}
+      </Container>
+    </Box>
+  );
+};
 
 export default ServicesSection;
