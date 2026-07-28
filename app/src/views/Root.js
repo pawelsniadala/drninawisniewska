@@ -1,86 +1,79 @@
-import {
-    BrowserRouter as Router,
-    Routes,
-    Route
-} from 'react-router-dom';
-import MainTemplate from '../templates/MainTemplate';
-import ScrollArrow from '../components/ScrollArrow';
-import HeaderSection from '../sections/HeaderSection';
-import FooterSection from '../sections/FooterSection';
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import MainTemplate from "../templates/MainTemplate";
+import ScrollArrow from "../components/ScrollArrow";
+import HeaderSection from "../sections/HeaderSection";
+import FooterSection from "../sections/FooterSection";
 
 // HOME
-import HomeView from './HomeView';
-
+import HomeView from "./HomeView";
 
 // KLINIKA
-import ClinicView from './ClinicView';
-import ClinicRegulationPartial from './partials/clinic/ClinicRegulationPartial';
-
+import ClinicView from "./ClinicView";
+import ClinicRegulationPartial from "./partials/clinic/ClinicRegulationPartial";
 
 // SPECJALIZACJE
-import ServicesView from './ServicesView';
-import ServicesDermatologyPartial from './partials/services/ServicesDermatologyPartial';
-import ServicesAestheticMedicinePartial from './partials/services/ServicesAestheticMedicinePartial';
-import ServicesCosmetologyPartial from './partials/services/ServicesCosmetologyPartial';
-import ServicesCosmeticSurgeryPartial from './partials/services/ServicesCosmeticSurgeryPartial';
-import ServicesAllergologyPartial from './partials/services/ServicesAllergologyPartial';
-import ServicesUsgPartial from './partials/services/ServicesUsgPartial';
+import ServicesView from "./ServicesView";
+import ServicesDermatologyPartial from "./partials/services/ServicesDermatologyPartial";
+import ServicesAestheticMedicinePartial from "./partials/services/ServicesAestheticMedicinePartial";
+import ServicesCosmetologyPartial from "./partials/services/ServicesCosmetologyPartial";
+import ServicesCosmeticSurgeryPartial from "./partials/services/ServicesCosmeticSurgeryPartial";
+import ServicesAllergologyPartial from "./partials/services/ServicesAllergologyPartial";
+import ServicesUsgPartial from "./partials/services/ServicesUsgPartial";
 // import ServicesEndocrinologyPartial from './partials/services/ServicesEndocrinologyPartial';
-import ServicesGynecologyPartial from './partials/services/ServicesGynecologyPartial';
-import ServicesVascularSurgeryPartial from './partials/services/ServicesVascularSurgeryPartial';
-import ServicesClinicalDietitianPartial from './partials/services/ServicesClinicalDietitianPartial';
-import ServicesCardiologyPartial from './partials/services/ServicesCardiologyPartial';
-import ServicesPsychiatryPartial from './partials/services/ServicesPsychiatryPartial';
-import ServicesPsychologyPartial from './partials/services/ServicesPsychologyPartial';
+import ServicesGynecologyPartial from "./partials/services/ServicesGynecologyPartial";
+import ServicesVascularSurgeryPartial from "./partials/services/ServicesVascularSurgeryPartial";
+import ServicesClinicalDietitianPartial from "./partials/services/ServicesClinicalDietitianPartial";
+import ServicesCardiologyPartial from "./partials/services/ServicesCardiologyPartial";
+import ServicesPsychiatryPartial from "./partials/services/ServicesPsychiatryPartial";
+import ServicesPsychologyPartial from "./partials/services/ServicesPsychologyPartial";
 
 // ZABIEGI
-import TreatmentView from './TreatmentView';
+import TreatmentView from "./TreatmentView";
 // import TreatmentListPartial from './partials/treatment/TreatmentListPartial';
 
 // dermatologia
-import TreatmentBadanieZnamionBarwnikowychPartial from './partials/treatment/dermatology/TreatmentBadanieZnamionBarwnikowychPartial';
-import TreatmentFototerapiaChorobSkoryPartial from './partials/treatment/dermatology/TreatmentFototerapiaChorobSkoryPartial';
-import TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial from './partials/treatment/dermatology/TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial';
+import TreatmentBadanieZnamionBarwnikowychPartial from "./partials/treatment/dermatology/TreatmentBadanieZnamionBarwnikowychPartial";
+import TreatmentFototerapiaChorobSkoryPartial from "./partials/treatment/dermatology/TreatmentFototerapiaChorobSkoryPartial";
+import TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial from "./partials/treatment/dermatology/TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial";
 
 // medycyna estetyczna
-import TreatmentModelowanieUstPartial from './partials/treatment/aestheticMedicine/TreatmentModelowanieUstPartial';
-import TreatmentToksynaBotulinowaPartial from './partials/treatment/aestheticMedicine/TreatmentToksynaBotulinowaPartial';
-import TreatmentStymulatoryTkankowePartial from './partials/treatment/aestheticMedicine/TreatmentStymulatoryTkankowePartial';
-import TreatmentOsoczeBogatoplytkowePartial from './partials/treatment/aestheticMedicine/TreatmentOsoczeBogatoplytkowePartial';
-import TreatmentLaserFrakcyjnyPartial from './partials/treatment/aestheticMedicine/TreatmentLaserFrakcyjnyPartial';
-import TreatmentNiciRewitalizujaceILiftingujacePartial from './partials/treatment/aestheticMedicine/TreatmentNiciRewitalizujaceILiftingujacePartial';
-import TreatmentMezoterapiaIglowaPartial from './partials/treatment/aestheticMedicine/TreatmentMezoterapiaIglowaPartial';
-import TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial from './partials/treatment/aestheticMedicine/TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial';
-import TreatmentSonoQueenTechnologiaHifuPartial from './partials/treatment/aestheticMedicine/TreatmentSonoQueenTechnologiaHifuPartial';
+import TreatmentModelowanieUstPartial from "./partials/treatment/aestheticMedicine/TreatmentModelowanieUstPartial";
+import TreatmentToksynaBotulinowaPartial from "./partials/treatment/aestheticMedicine/TreatmentToksynaBotulinowaPartial";
+import TreatmentStymulatoryTkankowePartial from "./partials/treatment/aestheticMedicine/TreatmentStymulatoryTkankowePartial";
+import TreatmentOsoczeBogatoplytkowePartial from "./partials/treatment/aestheticMedicine/TreatmentOsoczeBogatoplytkowePartial";
+import TreatmentLaserFrakcyjnyPartial from "./partials/treatment/aestheticMedicine/TreatmentLaserFrakcyjnyPartial";
+import TreatmentNiciRewitalizujaceILiftingujacePartial from "./partials/treatment/aestheticMedicine/TreatmentNiciRewitalizujaceILiftingujacePartial";
+import TreatmentMezoterapiaIglowaPartial from "./partials/treatment/aestheticMedicine/TreatmentMezoterapiaIglowaPartial";
+import TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial from "./partials/treatment/aestheticMedicine/TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial";
+import TreatmentSonoQueenTechnologiaHifuPartial from "./partials/treatment/aestheticMedicine/TreatmentSonoQueenTechnologiaHifuPartial";
 
 // kosmetologia
-import TreatmentPeelingMedycznyPartial from './partials/treatment/cosmetology/TreatmentPeelingMedycznyPartial';
-import TreatmentEpilacjaLaserowaPartial from './partials/treatment/cosmetology/TreatmentEpilacjaLaserowaPartial';
-import TreatmentMasazProzniowyPartial from './partials/treatment/cosmetology/TreatmentMasazProzniowyPartial';
-import TreatmentUltradzwiekiIFalaRadiowaPartial from './partials/treatment/cosmetology/TreatmentUltradzwiekiIFalaRadiowaPartial';
-import TreatmentMezoterapiaMikroiglowaPartial from './partials/treatment/cosmetology/TreatmentMezoterapiaMikroiglowaPartial';
+import TreatmentPeelingMedycznyPartial from "./partials/treatment/cosmetology/TreatmentPeelingMedycznyPartial";
+import TreatmentEpilacjaLaserowaPartial from "./partials/treatment/cosmetology/TreatmentEpilacjaLaserowaPartial";
+import TreatmentMasazProzniowyPartial from "./partials/treatment/cosmetology/TreatmentMasazProzniowyPartial";
+import TreatmentUltradzwiekiIFalaRadiowaPartial from "./partials/treatment/cosmetology/TreatmentUltradzwiekiIFalaRadiowaPartial";
+import TreatmentMezoterapiaMikroiglowaPartial from "./partials/treatment/cosmetology/TreatmentMezoterapiaMikroiglowaPartial";
 
 // chirurgia plastyczna
-import TreatmentPlastykaPowiekPartial from './partials/treatment/cosmeticSurgery/TreatmentPlastykaPowiekPartial';
+import TreatmentPlastykaPowiekPartial from "./partials/treatment/cosmeticSurgery/TreatmentPlastykaPowiekPartial";
 
 // alergologia
-import TreatmentTestySkornePartial from './partials/treatment/allergology/TreatmentTestySkornePartial';
-import TreatmentPlatkoweTestyKontaktowePartial from './partials/treatment/allergology/TreatmentPlatkoweTestyKontaktowePartial';
-import TreatmentOdczulaniePartial from './partials/treatment/allergology/TreatmentOdczulaniePartial';
+import TreatmentTestySkornePartial from "./partials/treatment/allergology/TreatmentTestySkornePartial";
+import TreatmentPlatkoweTestyKontaktowePartial from "./partials/treatment/allergology/TreatmentPlatkoweTestyKontaktowePartial";
+import TreatmentOdczulaniePartial from "./partials/treatment/allergology/TreatmentOdczulaniePartial";
 
 // chirurgia naczyniowa
-import TreatmentSkleroterapiaPartial from './partials/treatment/vascularSurgery/TreatmentSkleroterapiaPartial';
-import TreatmentLaseroweUsuwanieZylakowPartial from './partials/treatment/vascularSurgery/TreatmentLaseroweUsuwanieZylakowPartial';
+import TreatmentSkleroterapiaPartial from "./partials/treatment/vascularSurgery/TreatmentSkleroterapiaPartial";
+import TreatmentLaseroweUsuwanieZylakowPartial from "./partials/treatment/vascularSurgery/TreatmentLaseroweUsuwanieZylakowPartial";
 
 // kardiologia
-import TreatmentEchoSercaPartial from './partials/treatment/cardiology/TreatmentEchoSercaPartial';
+import TreatmentEchoSercaPartial from "./partials/treatment/cardiology/TreatmentEchoSercaPartial";
 
 // psychiatria
-import TreatmentBadanieAdos2Partial from './partials/treatment/psychiatry/TreatmentBadanieAdos2Partial';
+import TreatmentBadanieAdos2Partial from "./partials/treatment/psychiatry/TreatmentBadanieAdos2Partial";
 
 // CENNIK
-import PricesView from './PricesView';
+import PricesView from "./PricesView";
 // import PricesDermatologyPartial from './partials/prices/PricesDermatologyPartial';
 // import PricesAestheticMedicinePartial from './partials/prices/PricesAestheticMedicinePartial';
 // import PricesCosmetologyPartial from './partials/prices/PricesCosmetologyPartial';
@@ -95,16 +88,13 @@ import PricesView from './PricesView';
 // import PricesPsychiatryPartial from './partials/prices/PricesPsychiatryPartial';
 // import PricesPsychologyPartial from './partials/prices/PricesPsychologyPartial';
 
-
 // PROMOCJE
-import SpecialOfferView from './SpecialOfferView';
-
+import SpecialOfferView from "./SpecialOfferView";
 
 // SPECJALIŚCI
-import TeamView from './TeamView';
+import TeamView from "./TeamView";
 // import SpecialistsListPartial from './partials/team/SpecialistsListPartial';
-import SpecialistsDetailsPartial from './partials/team/SpecialistsDetailsPartial';
-
+import SpecialistsDetailsPartial from "./partials/team/SpecialistsDetailsPartial";
 
 // TECHNOLOGIA
 // import TechnologyView from './TechnologyView';
@@ -122,350 +112,308 @@ import SpecialistsDetailsPartial from './partials/team/SpecialistsDetailsPartial
 // import TechnologyDermalight1000UvaUvb311nmPartial from './partials/technology/TechnologyDermalight1000UvaUvb311nmPartial';
 
 // KARIERA
-import CareerView from './CareerView';
-import CareerDetailsPartial from './partials/career/CareerDetailsPartial';
-import CareerApplicationPartial from './partials/career/CareerApplicationPartial';
+import CareerView from "./CareerView";
+import CareerDetailsPartial from "./partials/career/CareerDetailsPartial";
+import CareerApplicationPartial from "./partials/career/CareerApplicationPartial";
 
 // KONTAKT
-import ContactView from './ContactView';
+import ContactView from "./ContactView";
 
-
-import Modal from '../components/Modal';
-import Toast from '../components/Toast';
+import Modal from "../components/Modal";
+import Toast from "../components/Toast";
 
 const Root = () => (
-    <MainTemplate>
-        <Router>
-            <HeaderSection />
-            <main>
-                <Routes>
-                    {/* HOME */}
-                    <Route exact path='/' element={<HomeView />} />
-                    <Route exact path='/drninawisniewska/' element={<HomeView main />} />
-                    <Route exact path='https://drninawisniewska.pl' element={<HomeView />} />
+  <MainTemplate>
+    <Router>
+      <HeaderSection />
+      <main>
+        <Routes>
+          {/* HOME */}
+          <Route exact path="/" element={<HomeView />} />
+          <Route exact path="/drninawisniewska/" element={<HomeView main />} />
+          <Route
+            exact
+            path="https://drninawisniewska.pl"
+            element={<HomeView />}
+          />
 
+          {/* KLINIKA */}
+          <Route path="/klinika" element={<ClinicView />} />
+          <Route
+            path="/klinika/regulamin-organizacyjny"
+            element={<ClinicRegulationPartial />}
+          />
 
-                    {/* KLINIKA */}
-                    <Route path='/klinika' element={<ClinicView />} />
-                    <Route path='/klinika/regulamin-organizacyjny' element={<ClinicRegulationPartial />} />
+          {/* SPECJALIZACJE */}
+          <Route exact path="/specjalizacje" element={<ServicesView />} />
+          <Route
+            path="/specjalizacje/dermatologia"
+            element={<ServicesDermatologyPartial />}
+          />
+          <Route
+            path="/specjalizacje/medycyna-estetyczna"
+            element={<ServicesAestheticMedicinePartial />}
+          />
+          <Route
+            path="/specjalizacje/kosmetologia"
+            element={<ServicesCosmetologyPartial />}
+          />
+          <Route
+            path="/specjalizacje/chirurgia-plastyczna"
+            element={<ServicesCosmeticSurgeryPartial />}
+          />
+          <Route
+            path="/specjalizacje/alergologia"
+            element={<ServicesAllergologyPartial />}
+          />
+          <Route path="/specjalizacje/usg" element={<ServicesUsgPartial />} />
+          {/* <Route path='/specjalizacje/endokrynologia' element={<ServicesEndocrinologyPartial />} /> */}
+          <Route
+            path="/specjalizacje/ginekologia"
+            element={<ServicesGynecologyPartial />}
+          />
+          <Route
+            path="/specjalizacje/chirurgia-naczyniowa"
+            element={<ServicesVascularSurgeryPartial />}
+          />
+          <Route
+            path="/specjalizacje/dietetyka-kliniczna"
+            element={<ServicesClinicalDietitianPartial />}
+          />
+          <Route
+            path="/specjalizacje/kardiologia"
+            element={<ServicesCardiologyPartial />}
+          />
+          <Route
+            path="/specjalizacje/psychiatria"
+            element={<ServicesPsychiatryPartial />}
+          />
+          <Route
+            path="/specjalizacje/psychologia"
+            element={<ServicesPsychologyPartial />}
+          />
 
+          {/* ZABIEGI */}
+          <Route path="/zabiegi" element={<TreatmentView />} />
+          <Route
+            path="/zabiegi/medycyna-estetyczna"
+            element={<TreatmentView />}
+          />
+          <Route path="/zabiegi/kosmetologia" element={<TreatmentView />} />
+          <Route
+            path="/zabiegi/chirurgia-plastyczna"
+            element={<TreatmentView />}
+          />
+          <Route path="/zabiegi/alergologia" element={<TreatmentView />} />
+          <Route
+            path="/zabiegi/chirurgia-naczyniowa"
+            element={<TreatmentView />}
+          />
+          <Route path="/zabiegi/kardiologia" element={<TreatmentView />} />
+          <Route path="/zabiegi/psychiatria" element={<TreatmentView />} />
 
-                    {/* SPECJALIZACJE */}
-                    <Route exact path='/specjalizacje' element={<ServicesView />} />
-                    <Route path="/specjalizacje/dermatologia" element={<ServicesDermatologyPartial />} />
-                    <Route path="/specjalizacje/medycyna-estetyczna" element={<ServicesAestheticMedicinePartial />} />
-                    <Route path='/specjalizacje/kosmetologia' element={<ServicesCosmetologyPartial />} />
-                    <Route path='/specjalizacje/chirurgia-plastyczna' element={<ServicesCosmeticSurgeryPartial />} />
-                    <Route path='/specjalizacje/alergologia' element={<ServicesAllergologyPartial />} />
-                    <Route path='/specjalizacje/usg' element={<ServicesUsgPartial />} />
-                    {/* <Route path='/specjalizacje/endokrynologia' element={<ServicesEndocrinologyPartial />} /> */}
-                    <Route path='/specjalizacje/ginekologia' element={<ServicesGynecologyPartial />} />
-                    <Route path='/specjalizacje/chirurgia-naczyniowa' element={<ServicesVascularSurgeryPartial />} />
-                    <Route path='/specjalizacje/dietetyka-kliniczna' element={<ServicesClinicalDietitianPartial />} />
-                    <Route path='/specjalizacje/kardiologia' element={<ServicesCardiologyPartial />} />
-                    <Route path='/specjalizacje/psychiatria' element={<ServicesPsychiatryPartial />} />
-                    <Route path='/specjalizacje/psychologia' element={<ServicesPsychologyPartial />} />
+          {/* dermatologia */}
+          <Route
+            path="/zabiegi/dermatologia/badanie-znamion-barwnikowych"
+            element={<TreatmentBadanieZnamionBarwnikowychPartial />}
+          />
+          <Route
+            path="/zabiegi/dermatologia/fototerapia-chorob-skory"
+            element={<TreatmentFototerapiaChorobSkoryPartial />}
+          />
+          <Route
+            path="/zabiegi/dermatologia/usuniecie-zmian-skornych-elektrochirurgiczne"
+            element={
+              <TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial />
+            }
+          />
 
+          {/* medycyna estetyczna */}
+          <Route
+            path="/zabiegi/medycyna-estetyczna/modelowanie-ust"
+            element={<TreatmentModelowanieUstPartial />}
+          />
+          <Route
+            path="/zabiegi/medycyna-estetyczna/toksyna-botulinowa"
+            element={<TreatmentToksynaBotulinowaPartial />}
+          />
+          <Route
+            path="/zabiegi/medycyna-estetyczna/stymulatory-tkankowe"
+            element={<TreatmentStymulatoryTkankowePartial />}
+          />
+          <Route
+            path="/zabiegi/medycyna-estetyczna/osocze-bogatoplytkowe"
+            element={<TreatmentOsoczeBogatoplytkowePartial />}
+          />
+          <Route
+            path="/zabiegi/medycyna-estetyczna/laser-frakcyjny"
+            element={<TreatmentLaserFrakcyjnyPartial />}
+          />
+          <Route
+            path="/zabiegi/medycyna-estetyczna/nici-rewitalizujace-i-liftingujace"
+            element={<TreatmentNiciRewitalizujaceILiftingujacePartial />}
+          />
+          <Route
+            path="/zabiegi/medycyna-estetyczna/mezoterapia-iglowa"
+            element={<TreatmentMezoterapiaIglowaPartial />}
+          />
+          <Route
+            path="/zabiegi/medycyna-estetyczna/zamykanie-naczynek-i-likwidacja-przebarwien"
+            element={
+              <TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial />
+            }
+          />
+          <Route
+            path="/zabiegi/medycyna-estetyczna/sonoqueen-technologia-hifu"
+            element={<TreatmentSonoQueenTechnologiaHifuPartial />}
+          />
 
-{/* ZABIEGI */}
-<Route path="/zabiegi" element={<TreatmentView />} />
-<Route
-  path="/zabiegi/medycyna-estetyczna"
-  element={<TreatmentView />}
-/>
-<Route
-  path="/zabiegi/kosmetologia"
-  element={<TreatmentView />}
-/>
-<Route
-  path="/zabiegi/chirurgia-plastyczna"
-  element={<TreatmentView />}
-/>
-<Route
-  path="/zabiegi/alergologia"
-  element={<TreatmentView />}
-/>
-<Route
-  path="/zabiegi/chirurgia-naczyniowa"
-  element={<TreatmentView />}
-/>
-<Route
-  path="/zabiegi/kardiologia"
-  element={<TreatmentView />}
-/>
-<Route
-  path="/zabiegi/psychiatria"
-  element={<TreatmentView />}
-/>
+          {/* kosmetologia */}
+          <Route
+            path="/zabiegi/kosmetologia/peeling-medyczny"
+            element={<TreatmentPeelingMedycznyPartial />}
+          />
+          <Route
+            path="/zabiegi/kosmetologia/epilacja-laserowa"
+            element={<TreatmentEpilacjaLaserowaPartial />}
+          />
+          <Route
+            path="/zabiegi/kosmetologia/masaz-prozniowy"
+            element={<TreatmentMasazProzniowyPartial />}
+          />
+          <Route
+            path="/zabiegi/kosmetologia/ultradzwieki-i-fala-radiowa"
+            element={<TreatmentUltradzwiekiIFalaRadiowaPartial />}
+          />
+          <Route
+            path="/zabiegi/kosmetologia/mezoterapia-mikroiglowa"
+            element={<TreatmentMezoterapiaMikroiglowaPartial />}
+          />
 
-{/* dermatologia */}
-<Route
-  path="/zabiegi/dermatologia/badanie-znamion-barwnikowych"
-  element={<TreatmentBadanieZnamionBarwnikowychPartial />}
-/>
-<Route
-  path="/zabiegi/dermatologia/fototerapia-chorob-skory"
-  element={<TreatmentFototerapiaChorobSkoryPartial />}
-/>
-<Route
-  path="/zabiegi/dermatologia/usuniecie-zmian-skornych-elektrochirurgiczne"
-  element={<TreatmentUsuniecieZmianSkornychElektrochirurgicznePartial />}
-/>
+          {/* chirurgia plastyczna */}
+          <Route
+            path="/zabiegi/chirurgia-plastyczna/plastyka-powiek"
+            element={<TreatmentPlastykaPowiekPartial />}
+          />
 
-{/* medycyna estetyczna */}
-<Route
-  path="/zabiegi/medycyna-estetyczna/modelowanie-ust"
-  element={<TreatmentModelowanieUstPartial />}
-/>
-<Route
-  path="/zabiegi/medycyna-estetyczna/toksyna-botulinowa"
-  element={<TreatmentToksynaBotulinowaPartial />}
-/>
-<Route
-  path="/zabiegi/medycyna-estetyczna/stymulatory-tkankowe"
-  element={<TreatmentStymulatoryTkankowePartial />}
-/>
-<Route
-  path="/zabiegi/medycyna-estetyczna/osocze-bogatoplytkowe"
-  element={<TreatmentOsoczeBogatoplytkowePartial />}
-/>
-<Route
-  path="/zabiegi/medycyna-estetyczna/laser-frakcyjny"
-  element={<TreatmentLaserFrakcyjnyPartial />}
-/>
-<Route
-  path="/zabiegi/medycyna-estetyczna/nici-rewitalizujace-i-liftingujace"
-  element={<TreatmentNiciRewitalizujaceILiftingujacePartial />}
-/>
-<Route
-  path="/zabiegi/medycyna-estetyczna/mezoterapia-iglowa"
-  element={<TreatmentMezoterapiaIglowaPartial />}
-/>
-<Route
-  path="/zabiegi/medycyna-estetyczna/zamykanie-naczynek-i-likwidacja-przebarwien"
-  element={<TreatmentZamykanieNaczynekILikwidacjaPrzebarwienPartial />}
-/>
-<Route
-  path="/zabiegi/medycyna-estetyczna/sonoqueen-technologia-hifu"
-  element={<TreatmentSonoQueenTechnologiaHifuPartial />}
-/>
+          {/* alergologia */}
+          <Route
+            path="/zabiegi/alergologia/testy-skorne"
+            element={<TreatmentTestySkornePartial />}
+          />
+          <Route
+            path="/zabiegi/alergologia/platkowe-testy-kontaktowe"
+            element={<TreatmentPlatkoweTestyKontaktowePartial />}
+          />
+          <Route
+            path="/zabiegi/alergologia/odczulanie"
+            element={<TreatmentOdczulaniePartial />}
+          />
 
-{/* kosmetologia */}
-<Route
-  path="/zabiegi/kosmetologia/peeling-medyczny"
-  element={<TreatmentPeelingMedycznyPartial />}
-/>
-<Route
-  path="/zabiegi/kosmetologia/epilacja-laserowa"
-  element={<TreatmentEpilacjaLaserowaPartial />}
-/>
-<Route
-  path="/zabiegi/kosmetologia/masaz-prozniowy"
-  element={<TreatmentMasazProzniowyPartial />}
-/>
-<Route
-  path="/zabiegi/kosmetologia/ultradzwieki-i-fala-radiowa"
-  element={<TreatmentUltradzwiekiIFalaRadiowaPartial />}
-/>
-<Route
-  path="/zabiegi/kosmetologia/mezoterapia-mikroiglowa"
-  element={<TreatmentMezoterapiaMikroiglowaPartial />}
-/>
+          {/* chirurgia naczyniowa */}
+          <Route
+            path="/zabiegi/chirurgia-naczyniowa/skleroterapia"
+            element={<TreatmentSkleroterapiaPartial />}
+          />
+          <Route
+            path="/zabiegi/chirurgia-naczyniowa/laserowe-usuwanie-zylakow"
+            element={<TreatmentLaseroweUsuwanieZylakowPartial />}
+          />
 
-{/* chirurgia plastyczna */}
-<Route
-  path="/zabiegi/chirurgia-plastyczna/plastyka-powiek"
-  element={<TreatmentPlastykaPowiekPartial />}
-/>
+          {/* kardiologia */}
+          <Route
+            path="/zabiegi/kardiologia/echo-serca"
+            element={<TreatmentEchoSercaPartial />}
+          />
 
-{/* alergologia */}
-<Route
-  path="/zabiegi/alergologia/testy-skorne"
-  element={<TreatmentTestySkornePartial />}
-/>
-<Route
-  path="/zabiegi/alergologia/platkowe-testy-kontaktowe"
-  element={<TreatmentPlatkoweTestyKontaktowePartial />}
-/>
-<Route
-  path="/zabiegi/alergologia/odczulanie"
-  element={<TreatmentOdczulaniePartial />}
-/>
+          {/* psychiatria */}
+          <Route
+            path="/zabiegi/psychiatria/badanie-ados-2"
+            element={<TreatmentBadanieAdos2Partial />}
+          />
 
-{/* chirurgia naczyniowa */}
-<Route
-  path="/zabiegi/chirurgia-naczyniowa/skleroterapia"
-  element={<TreatmentSkleroterapiaPartial />}
-/>
-<Route
-  path="/zabiegi/chirurgia-naczyniowa/laserowe-usuwanie-zylakow"
-  element={<TreatmentLaseroweUsuwanieZylakowPartial />}
-/>
+          {/* CENNIK */}
+          <Route path="/cennik" element={<PricesView />} />
 
-{/* kardiologia */}
-<Route
-  path="/zabiegi/kardiologia/echo-serca"
-  element={<TreatmentEchoSercaPartial />}
-/>
+          <Route path="/cennik/medycyna-estetyczna" element={<PricesView />} />
 
-{/* psychiatria */}
-<Route
-  path="/zabiegi/psychiatria/badanie-ados-2"
-  element={<TreatmentBadanieAdos2Partial />}
-/>
+          <Route path="/cennik/kosmetologia" element={<PricesView />} />
 
+          <Route path="/cennik/chirurgia-plastyczna" element={<PricesView />} />
 
-{/* CENNIK */}
-<Route
-  path="/cennik"
-  element={<PricesView />}
-/>
+          <Route path="/cennik/alergologia" element={<PricesView />} />
 
-<Route
-  path="/cennik/medycyna-estetyczna"
-  element={<PricesView />}
-/>
+          <Route path="/cennik/usg" element={<PricesView />} />
 
-<Route
-  path="/cennik/kosmetologia"
-  element={<PricesView />}
-/>
+          <Route path="/cennik/endokrynologia" element={<PricesView />} />
 
-<Route
-  path="/cennik/chirurgia-plastyczna"
-  element={<PricesView />}
-/>
+          <Route path="/cennik/ginekologia" element={<PricesView />} />
 
-<Route
-  path="/cennik/alergologia"
-  element={<PricesView />}
-/>
+          <Route path="/cennik/chirurgia-naczyniowa" element={<PricesView />} />
 
-<Route
-  path="/cennik/usg"
-  element={<PricesView />}
-/>
+          <Route path="/cennik/dietetyka-kliniczna" element={<PricesView />} />
 
-<Route
-  path="/cennik/endokrynologia"
-  element={<PricesView />}
-/>
+          <Route path="/cennik/kardiologia" element={<PricesView />} />
 
-<Route
-  path="/cennik/ginekologia"
-  element={<PricesView />}
-/>
+          <Route path="/cennik/psychiatria" element={<PricesView />} />
 
-<Route
-  path="/cennik/chirurgia-naczyniowa"
-  element={<PricesView />}
-/>
+          <Route path="/cennik/psychologia" element={<PricesView />} />
 
-<Route
-  path="/cennik/dietetyka-kliniczna"
-  element={<PricesView />}
-/>
+          {/* PROMOCJE */}
+          <Route path="/promocje" element={<SpecialOfferView />} />
 
-<Route
-  path="/cennik/kardiologia"
-  element={<PricesView />}
-/>
+          {/* SPECJALIŚCI */}
+          <Route path="/specjalisci" element={<TeamView />} />
 
-<Route
-  path="/cennik/psychiatria"
-  element={<PricesView />}
-/>
+          <Route
+            path="/specjalisci/medycyna-estetyczna"
+            element={<TeamView />}
+          />
 
-<Route
-  path="/cennik/psychologia"
-  element={<PricesView />}
-/>
+          <Route path="/specjalisci/kosmetologia" element={<TeamView />} />
 
+          <Route
+            path="/specjalisci/chirurgia-plastyczna"
+            element={<TeamView />}
+          />
 
-                    {/* PROMOCJE */}
-                    <Route path='/special-offer' element={<SpecialOfferView />} />
+          <Route path="/specjalisci/alergologia" element={<TeamView />} />
 
+          <Route path="/specjalisci/usg" element={<TeamView />} />
 
-{/* SPECJALIŚCI */}
-<Route
-  path="/specjalisci"
-  element={<TeamView />}
-/>
+          <Route path="/specjalisci/endokrynologia" element={<TeamView />} />
 
-<Route
-  path="/specjalisci/medycyna-estetyczna"
-  element={<TeamView />}
-/>
+          <Route path="/specjalisci/ginekologia" element={<TeamView />} />
 
-<Route
-  path="/specjalisci/kosmetologia"
-  element={<TeamView />}
-/>
+          <Route
+            path="/specjalisci/chirurgia-naczyniowa"
+            element={<TeamView />}
+          />
 
-<Route
-  path="/specjalisci/chirurgia-plastyczna"
-  element={<TeamView />}
-/>
+          <Route
+            path="/specjalisci/dietetyka-kliniczna"
+            element={<TeamView />}
+          />
 
-<Route
-  path="/specjalisci/alergologia"
-  element={<TeamView />}
-/>
+          <Route path="/specjalisci/kardiologia" element={<TeamView />} />
 
-<Route
-  path="/specjalisci/usg"
-  element={<TeamView />}
-/>
+          <Route path="/specjalisci/psychiatria" element={<TeamView />} />
 
-<Route
-  path="/specjalisci/endokrynologia"
-  element={<TeamView />}
-/>
+          <Route path="/specjalisci/psychologia" element={<TeamView />} />
 
-<Route
-  path="/specjalisci/ginekologia"
-  element={<TeamView />}
-/>
+          <Route
+            path="/specjalisci/rejestracja-medyczna"
+            element={<TeamView />}
+          />
 
-<Route
-  path="/specjalisci/chirurgia-naczyniowa"
-  element={<TeamView />}
-/>
+          {/* SZCZEGÓŁY SPECJALISTY */}
+          <Route
+            path="/specjalisci/:specialization/:specialist"
+            element={<SpecialistsDetailsPartial />}
+          />
 
-<Route
-  path="/specjalisci/dietetyka-kliniczna"
-  element={<TeamView />}
-/>
-
-<Route
-  path="/specjalisci/kardiologia"
-  element={<TeamView />}
-/>
-
-<Route
-  path="/specjalisci/psychiatria"
-  element={<TeamView />}
-/>
-
-<Route
-  path="/specjalisci/psychologia"
-  element={<TeamView />}
-/>
-
-<Route
-  path="/specjalisci/rejestracja-medyczna"
-  element={<TeamView />}
-/>
-
-{/* SZCZEGÓŁY SPECJALISTY */}
-<Route
-  path="/specjalisci/:specialization/:specialist"
-  element={<SpecialistsDetailsPartial />}
-/>
-
-
-                    {/* TECHNOLOGIA */}
-                    {/* <Route path='/technology' element={<TechnologyView />} />
+          {/* TECHNOLOGIA */}
+          {/* <Route path='/technology' element={<TechnologyView />} />
                     <Route path='/technology/vectus' element={<TechnologyVectusPartial />} />
                     <Route path='/technology/alma-harmony-xl-pro' element={<TechnologyAlmaHarmonyXlProPartial />} />
                     <Route path='/technology/icoone-laser-med2' element={<TechnologyIcooneLaserMed2Partial />} />
@@ -479,21 +427,32 @@ const Root = () => (
                     <Route path='/technology/dermalight-500' element={<TechnologyDermalight500Partial />} />
                     <Route path='/technology/dermalight-1000-uva-uvb-311nm' element={<TechnologyDermalight1000UvaUvb311nmPartial />} /> */}
 
-                    {/* KARIERA */}
-                    <Route path='/career' element={<CareerView />} />
-                    <Route path='career/:profession' element={<CareerDetailsPartial />} />
-                    <Route path='career/:profession/application' element={<CareerApplicationPartial />} />
+  {/* KARIERA */}
+  <Route
+    path="/kariera"
+    element={<CareerView />}
+  />
 
-                    {/* KONTAKT */}
-                    <Route path='/contact' element={<ContactView />} />
-                </Routes>
-            </main>
-            <Modal />
-            <Toast />
-            <FooterSection />
-            <ScrollArrow />
-        </Router>
-    </MainTemplate>
+  <Route
+    path="/kariera/:stanowisko"
+    element={<CareerDetailsPartial />}
+  />
+
+  <Route
+    path="/kariera/:stanowisko/aplikacja"
+    element={<CareerApplicationPartial />}
+  />
+
+          {/* KONTAKT */}
+          <Route path="/kontakt" element={<ContactView />} />
+        </Routes>
+      </main>
+      <Modal />
+      <Toast />
+      <FooterSection />
+      <ScrollArrow />
+    </Router>
+  </MainTemplate>
 );
 
 export default Root;

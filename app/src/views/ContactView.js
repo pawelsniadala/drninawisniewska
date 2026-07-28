@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
+import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Link } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import * as bootstrap from "bootstrap";
 
@@ -31,63 +31,99 @@ import EmailSvg from "../assets/svg/EmailSvg";
 import { contact } from "../data/contact";
 import { contactSchema } from "../models/schema/contactSchema";
 import { contactModel } from "../models/contactModel";
+
 import { emailService, emailTemplate, emailPublicKey } from "../config";
 
 const ContactView = () => {
+  const formRef = useRef(null);
+
   const theme = useTheme();
-  const isSm = useMediaQuery(theme.breakpoints.up("sm"), {
-    defaultMatches: true,
-  });
+
+  const isSm = useMediaQuery(theme.breakpoints.up("sm"));
 
   const {
     reset,
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm({
     resolver: yupResolver(contactSchema),
     defaultValues: contactModel,
   });
 
+  const showToast = (mode, text) => {
+    const toastElement = document.getElementById("dynamicToast");
+
+    if (!toastElement) {
+      return;
+    }
+
+    toastElement.classList.remove("success", "danger");
+
+    toastElement.classList.add(mode);
+
+    const toastText = toastElement.querySelector(".toast-text");
+
+    if (toastText) {
+      toastText.textContent = text;
+    }
+
+    const toast = new bootstrap.Toast(toastElement);
+
+    toast.show();
+  };
+
   const sendEmail = async () => {
+    if (!formRef.current) {
+      return;
+    }
+
     try {
-      const form = document.getElementById("contact-form");
       const result = await emailjs.sendForm(
         emailService,
         emailTemplate,
-        form,
+        formRef.current,
         emailPublicKey,
       );
+
       console.log(result.text);
+
       showToast("success", "Twoja wiadomość została wysłana");
-      setTimeout(reset, 1000);
+
+      setTimeout(() => {
+        reset();
+      }, 1000);
     } catch (error) {
-      console.log(error.text);
+      console.error(error);
+
       showToast("danger", "Błąd wysyłania wiadomości");
     }
   };
 
-  const showToast = (mode, text) => {
-    const toast = new bootstrap.Toast(document.getElementById("dynamicToast"));
-    const toastElement = document.getElementById("dynamicToast");
-    toastElement.classList.remove("success", "danger");
-    toastElement.classList.add(mode);
-    document.querySelector(".toast-text").innerText = text;
-    toast.show();
-  };
-
   const renderIcon = (designation) => {
-    const iconProps = { width: "20px", height: "20px", color: "#fff" };
+    const iconProps = {
+      width: 20,
+      height: 20,
+      color: "#ffffff",
+      "aria-hidden": true,
+      focusable: false,
+    };
+
     switch (designation) {
       case "phone":
         return <PhoneSvg {...iconProps} />;
+
       case "email":
         return <EmailSvg {...iconProps} />;
+
       case "address":
-        return <FmdGoodIcon />;
+        return <FmdGoodIcon {...iconProps} />;
+
       case "hours":
-        return <AccessTimeIcon />;
+        return <AccessTimeIcon {...iconProps} />;
+
       default:
+        return null;
     }
   };
 
@@ -98,6 +134,7 @@ const ContactView = () => {
         description="Dane kontaktowe Kliniki dr Niny Wiśniewskiej w Wyszkowie: numery telefonów, adres e-mail, godziny otwarcia, lokalizacja oraz formularz kontaktowy."
         path="/kontakt"
       />
+
       <Box className="contact-view">
         <Box className="view-wrapper">
           <Box className="view-header">
@@ -105,10 +142,11 @@ const ContactView = () => {
               <Box className="nav-wrapper">
                 <Breadcrumbs
                   className="breadcrumb back"
-                  aria-label="Powrót do strony głównej"
+                  aria-label="Nawigacja powrotna"
                 >
                   <Link to="/">
                     <ArrowBackIcon aria-hidden="true" focusable="false" />
+
                     <Box component="span">Strona główna</Box>
                   </Link>
                 </Breadcrumbs>
@@ -135,83 +173,148 @@ const ContactView = () => {
                   </Typography>
                 </Breadcrumbs>
               </Box>
+
               <Box className="heading-wrapper">
-                <Typography variant="h4" className="heading-view">
+                <Typography
+                  component="h1"
+                  variant="h4"
+                  className="heading-view"
+                >
                   Kontakt
                 </Typography>
               </Box>
             </Container>
           </Box>
+
           <Box className="view-body">
             <Container className="body-wrapper contact">
               <Box className="contact-form-wrapper">
                 <form
+                  ref={formRef}
                   id="contact-form"
                   noValidate
+                  aria-label="Formularz kontaktowy"
                   onSubmit={handleSubmit(sendEmail)}
                 >
                   <Box className="mb-3">
                     <label htmlFor="name" className="form-label">
                       Imię i nazwisko
-                      <span className="required">&nbsp;*</span>
+                      <span className="required" aria-hidden="true">
+                        &nbsp;*
+                      </span>
                     </label>
+
                     <input
+                      id="name"
                       type="text"
                       className="form-control"
+                      autoComplete="name"
+                      aria-required="true"
+                      aria-invalid={Boolean(errors.name)}
+                      aria-describedby={errors.name ? "name-error" : undefined}
                       {...register("name")}
                     />
+
                     {errors.name && (
-                      <span className="error">{errors.name.message}</span>
+                      <span id="name-error" className="error" role="alert">
+                        {errors.name.message}
+                      </span>
                     )}
                   </Box>
+
                   <Box className="row">
                     <Box className="col-sm-12 col-md-6 mb-3">
                       <label htmlFor="email" className="form-label">
                         Adres e-mail
-                        <span className="required">&nbsp;*</span>
+                        <span className="required" aria-hidden="true">
+                          &nbsp;*
+                        </span>
                       </label>
+
                       <input
-                        type="text"
+                        id="email"
+                        type="email"
                         className="form-control"
+                        autoComplete="email"
+                        aria-required="true"
+                        aria-invalid={Boolean(errors.email)}
+                        aria-describedby={
+                          errors.email ? "email-error" : undefined
+                        }
                         {...register("email")}
                       />
+
                       {errors.email && (
-                        <span className="error">{errors.email.message}</span>
+                        <span id="email-error" className="error" role="alert">
+                          {errors.email.message}
+                        </span>
                       )}
                     </Box>
+
                     <Box className="col-sm-12 col-md-6 mb-3">
                       <label htmlFor="phone" className="form-label">
                         Numer telefonu
-                        <span className="required">&nbsp;*</span>
+                        <span className="required" aria-hidden="true">
+                          &nbsp;*
+                        </span>
                       </label>
+
                       <input
+                        id="phone"
                         type="tel"
                         className="form-control"
+                        autoComplete="tel"
+                        aria-required="true"
+                        aria-invalid={Boolean(errors.phone)}
+                        aria-describedby={
+                          errors.phone ? "phone-error" : undefined
+                        }
                         {...register("phone")}
                       />
+
                       {errors.phone && (
-                        <span className="error">{errors.phone.message}</span>
+                        <span id="phone-error" className="error" role="alert">
+                          {errors.phone.message}
+                        </span>
                       )}
                     </Box>
                   </Box>
+
                   <Box>
                     <label htmlFor="message" className="form-label">
                       Wiadomość
-                      <span className="required">&nbsp;*</span>
+                      <span className="required" aria-hidden="true">
+                        &nbsp;*
+                      </span>
                     </label>
+
                     <textarea
+                      id="message"
                       className="form-control"
+                      rows={isSm ? 6 : 4}
+                      aria-required="true"
+                      aria-invalid={Boolean(errors.message)}
+                      aria-describedby={
+                        errors.message ? "message-error" : undefined
+                      }
                       {...register("message")}
-                      rows={isSm ? "6" : "4"}
                     />
+
                     {errors.message && (
-                      <span className="error">{errors.message.message}</span>
+                      <span id="message-error" className="error" role="alert">
+                        {errors.message.message}
+                      </span>
                     )}
                   </Box>
+
                   <span className="form-info">
-                    Pola oznaczone<span className="required">&nbsp;*</span>
+                    Pola oznaczone
+                    <span className="required" aria-hidden="true">
+                      &nbsp;*
+                    </span>
                     &nbsp;są wymagane.
                   </span>
+
                   <Box className="link-contained-submit" width="auto">
                     <Button
                       variant="contained"
@@ -219,72 +322,118 @@ const ContactView = () => {
                       size="large"
                       type="submit"
                       id="liveToastBtn"
-                      endIcon={<SendIcon />}
+                      disabled={isSubmitting}
+                      endIcon={
+                        <SendIcon aria-hidden="true" focusable="false" />
+                      }
                     >
-                      Wyślij wiadomość
+                      {isSubmitting ? "Wysyłanie..." : "Wyślij wiadomość"}
                     </Button>
                   </Box>
                 </form>
               </Box>
+
               <Box className="contact-details-wrapper">
                 <Box
-                  display={"flex"}
-                  flexDirection={"column"}
-                  justifyContent={"space-between"}
+                  component="ul"
+                  display="flex"
+                  flexDirection="column"
+                  justifyContent="space-between"
                   marginBottom={2}
+                  sx={{
+                    listStyle: "none",
+                    padding: 0,
+                  }}
                 >
-                  {contact.map((item, index) => (
-                    <Box
-                      key={index}
-                      component="a"
-                      href={item.href}
-                      target="_blank"
-                      className="link"
-                    >
-                      <Box
-                        component={ListItem}
+                  {contact.map((item) => {
+                    const isExternalLink = item.href?.startsWith("http");
+
+                    const contactContent = (
+                      <ListItem
+                        component="div"
                         disableGutters
-                        width={"auto"}
-                        padding={0}
+                        sx={{
+                          width: "auto",
+                          padding: 0,
+                        }}
                       >
-                        <Box
-                          component={ListItemAvatar}
-                          minWidth={"auto !important"}
-                          marginRight={2}
+                        <ListItemAvatar
+                          sx={{
+                            minWidth: "auto !important",
+                            marginRight: 2,
+                          }}
                         >
-                          <Box
-                            component={Avatar}
-                            width={40}
-                            height={40}
+                          <Avatar
                             sx={{
+                              width: 40,
+                              height: 40,
                               backgroundImage:
                                 "linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)",
                             }}
                           >
                             {renderIcon(item.designation)}
-                          </Box>
-                        </Box>
+                          </Avatar>
+                        </ListItemAvatar>
+
                         <ListItemText
                           className="list-item-text"
                           primary={item.label}
+                          primaryTypographyProps={{
+                            component: "div",
+                          }}
+                          secondaryTypographyProps={{
+                            component: "div",
+                          }}
                           secondary={
                             <>
-                              <Box>{item.value}</Box>
-                              <Box>{item.value2}</Box>
+                              <Box component="span" display="block">
+                                {item.value}
+                              </Box>
+
+                              {item.value2 && (
+                                <Box component="span" display="block">
+                                  {item.value2}
+                                </Box>
+                              )}
                             </>
                           }
                         />
+                      </ListItem>
+                    );
+
+                    return (
+                      <Box
+                        component="li"
+                        key={`${item.designation}-${item.label}`}
+                      >
+                        {item.href ? (
+                          <Box
+                            component="a"
+                            href={item.href}
+                            className="link"
+                            {...(isExternalLink && {
+                              target: "_blank",
+                              rel: "noreferrer",
+                            })}
+                          >
+                            {contactContent}
+                          </Box>
+                        ) : (
+                          <Box className="link">{contactContent}</Box>
+                        )}
                       </Box>
-                    </Box>
-                  ))}
+                    );
+                  })}
                 </Box>
               </Box>
             </Container>
+
             <iframe
               width="100%"
               height="100%"
               title="Mapa dojazdu do Kliniki dr Niny Wiśniewskiej w Wyszkowie"
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9694.856415856955!2d21.453784!3d52.592862!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ee5a5adb9d581%3A0x2835d4bb585fbf47!2sFryderyka%20Chopina%2013%2C%2007-200%20Wyszk%C3%B3w!5e0!3m2!1spl!2spl!4v1660443766192!5m2!1spl!2spl"
+              loading="lazy"
               style={{
                 minHeight: 500,
                 marginBottom: -6,

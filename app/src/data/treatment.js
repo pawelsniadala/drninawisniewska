@@ -153,7 +153,7 @@ export const badanieZnamionBarwnikowych = {
     title: 'Badanie znamion barwnikowych',
     description: 'Badanie znamion barwnikowych polega na poddaniu zmian skórnych analizie przez dermatologa. W naszej Klinice badanie można przeprowadzić za pomocą dermatoskopu lub wideodermatoskopu. Wideodermatoskopia to nowoczesna cyfrowa technologia służąca do analizy znamion barwnikowych skóry. Urządzenie służy także diagnozowaniu zmian chorobowych skóry, włosów i paznokci. Jest to zaawansowany system łączący optyczny układ wideokamery dermatoskopu z komputerową analizą obrazu za pomocą algebraicznych algorytmów.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/dermatology/badanie-znamion-barwnikowych',
+    path: '/zabiegi/dermatologia/badanie-znamion-barwnikowych',
     images: [
         {
             src: badanieZnamionBarwnikowychImage0,
@@ -183,7 +183,7 @@ export const fototerapiaChorobSkory = {
     title: 'Fototerapia chorób skóry',
     description: 'Fototerapia UV jest skuteczną i wygodną metodą leczenia chorób skórnych promieniowaniem ultrafioletowym o określonej terapeutycznej długości fali. W naszej klinice przeprowadzamy światłoterapię UVB 311nm oraz PUVA-bath, po uprzedniej konsultacji dermatologicznej w naszej Klinice. Lekarz ustala plan fototerapii i dawki naświetlań według aktualnych wytycznych Polskiego Towarzystwa Dermatologicznego.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/dermatology/fototerapia-chorob-skory',
+    path: '/zabiegi/dermatologia/fototerapia-chorob-skory',
     images: [
         {
             src: fototerapiaChorobSkoryImage0,
@@ -210,10 +210,10 @@ export const fototerapiaChorobSkory = {
 export const usuniecieZmianSkornychElektrochirurgiczne = {
     id: 'a5201e49-2a7b-4c4f-a383-f53fb26bd461',
     treatment: 'usuniecie-zmian-skornych-elektrochirurgiczne',
-    title: 'Usunięcie zmian skórnych elektrochirurgiczne',
+    title: 'Elektrochirurgiczne usuwanie zmian skórnych',
     description: 'Elektrochirurgia, inaczej elektrokoagulacja, to metoda chirurgiczna polegająca na wykorzystaniu przepływu prądu elektrycznego o różnej częstotliwości do usuwania, wycinania lub wypalania, wszelkich niepożądanych zmian skórnych. Zabiegi można podzielić na elektrokoagulację i cięcie, które wykonuje się w znieczuleniu miejscowym. Zabieg elektrokoagulacji wykonuje się za pomocą elektrod o różnym kształcie, odpowiednio dobranych w zależności od rodzaju zmiany.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/dermatology/usuniecie-zmian-skornych-elektrochirurgiczne',
+    path: '/zabiegi/dermatologia/usuniecie-zmian-skornych-elektrochirurgiczne',
     images: [
         {
             src: usuniecieZmianSkornychElektrochirurgiczneImage0,
@@ -243,7 +243,7 @@ export const modelowanieUst = {
     title: 'Modelowanie ust',
     description: 'Modelowanie i powiększanie czerwieni wargowej z wykorzystaniem kwasu hialuronowego to wciąż jeden z bardziej popularnych zabiegów medycyny estetycznej. Podając preparat z kwasem hialuronowym w strategiczne miejsca jesteśmy w stanie nie tylko uwydatnić i wypełnić usta, ale także zniwelować asymetrię, zredukować dysproporcję między wargą górną a dolną oraz nawilżyć przesuszoną czerwień wargową. Kwas hialuronowy wykazuje bowiem właściwości higroskopijne, czyli wiążące wodę. Dzięki czemu usta natychmiast stają się pełniejsze, mocniej nawilżone i bardziej sprężyste.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/aesthetic-medicine/modelowanie-ust',
+    path: '/zabiegi/medycyna-estetyczna/modelowanie-ust',
     images: [
         {
             src: modelowanieUstImage0,
@@ -365,7 +365,7 @@ export const toksynaBotulinowa = {
     title: 'Toksyna botulinowa',
     description: 'Toksyna botulinowa to jedna z najbardziej popularnych metod redukcji zmarszczek mimicznych, które pojawiają się w związku z powtarzającymi się skurczami mięśni twarzy. Zabieg pozwala szybko spłycić zmarszczki mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w wybrane mięśnie twarzy likwiduje problemy wywoływane przez kurczenie się mięśni takie jak zmarszczki mimiczne czy nadmierna kurczliwość.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/aesthetic-medicine/toksyna-botulinowa',
+    path: '/zabiegi/medycyna-estetyczna/toksyna-botulinowa',
     images: [
         {
             src: toksynaBotulinowaImage0,
@@ -427,7 +427,7 @@ export const stymulatoryTkankowe = {
     title: 'Stymulatory tkankowe',
     description: 'Stymulatory tkankowe to substancje lub techniki stosowane w medycynie w celu pobudzenia wzrostu, regeneracji lub funkcjonowania tkanek. Mają one na celu wspomaganie procesów naprawczych organizmu i stymulowanie go do regeneracji uszkodzonych tkanek.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/aesthetic-medicine/stymulatory-tkankowe',
+    path: '/zabiegi/medycyna-estetyczna/stymulatory-tkankowe',
     images: [
         {
             src: stymulatoryTkankoweImage0,
@@ -449,7 +449,7 @@ export const osoczeBogatoplytkowe = {
     title: 'Osocze bogatopłytkowe',
     description: 'Osocze bogatopłytkowe uzyskuje się z krwi własnej pacjenta poprzez podwójne odwirowanie substancji, które stanowią elementy morfotyczne krwi. Podczas odwirowywania krwi pobranej bezpośrednio przed zabiegiem zostają oddzielone krwinki czerwone oraz białe od płytek krwi. Osocze bogatopłytkowe uzyskuje się z standardowego poboru krwi. Po odwirowaniu zyskuje się płynny składnik krwi o niezwykłych i pożądanych przez nas właściwościach. Aby wprowadzić go pod skórę pacjenta wykorzystuje się mezoterapię, czyli ostrzykiwanie za pomocą bardzo cienkich igieł. Najczęściej ostrzykiwaniu osoczem poddawane są policzki, linia żuchwy, czoło, powieki oraz okolice oczu. Jednak osocze bogatopłytkowe przynosi również świetne rezultaty w poprawie wyglądu skóry szyi i dekoltu, ramion i dłoni oraz owłosionej skóry głowy.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/aesthetic-medicine/osocze-bogatoplytkowe',
+    path: '/zabiegi/medycyna-estetyczna/osocze-bogatoplytkowe',
     images: [
         {
             src: osoczeBogatoplytkoweImage0,
@@ -471,7 +471,7 @@ export const laserFrakcyjny = {
     title: 'Laser frakcyjny',
     description: 'Laser frakcyjny jest idealnym i sprawdzonym rozwiązaniem znajdującym zastosowanie w wielu dziedzinach medycyny. Laser pozwala na osiągnięcie bardzo dobrych efektów zabiegowych w postaci likwidacji blizn potrądzikowych, poprawy jakości skóry i wytworzenia nowych struktur kolagenu.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/aesthetic-medicine/laser-frakcyjny',
+    path: '/zabiegi/medycyna-estetyczna/laser-frakcyjny',
     images: [
         {
             src: laserFrakcyjnyImage0,
@@ -523,7 +523,7 @@ export const niciRewitalizujaceILiftingujace = {
     title: 'Nici rewitalizujące i liftingujące',
     description: 'Nici liftingujące służą do usuwania skutków starzenia grawitacyjnego. Zmiany na skórze spowodowane są utratą sprężystości, zmniejszeniem napięcia mięśni i przemieszczaniem się podskórnej tkanki tłuszczowej. Nici liftingujące są mniej kłopotliwą i inwazyjną alternatywą dla chirurgicznego liftingu.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/aesthetic-medicine/nici-rewitalizujace-i-liftingujace',
+    path: '/zabiegi/medycyna-estetyczna/nici-rewitalizujace-i-liftingujace',
     images: [
         {
             src: niciRewitalizujaceILiftingujaceImage0,
@@ -546,7 +546,7 @@ export const mezoterapiaIglowa = {
     title: 'Mezoterapia igłowa',
     description: 'Mezoterapia igłowa to przede wszystkim głębokie nawilżenie skóry. Zabieg polega na bezpośrednim podaniu małych dawek substancji biologicznie czynnej śródskórnie lub podskórnie w miejsca, które chcemy poddać zabiegowi. Mezoterapia igłowa pobudza również mikrokrążenie, co stymuluje komórki do produkcji nowych włókien kolagenowych. W efekcie uzyskujemy odświeżoną, napiętą skórę.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/aesthetic-medicine/mezoterapia-iglowa',
+    path: '/zabiegi/medycyna-estetyczna/mezoterapia-iglowa',
     images: [
         {
             src: mezoterapiaIglowaImage0,
@@ -570,7 +570,7 @@ export const zamykanieNaczynekILikwidacjaPrzebarwien = {
     title: 'Zamykanie naczynek i likwidacja przebarwień',
     description: 'Platforma laserowa, którą posiadamy w naszej Klinice, to  produkt izraelskiej firmy Alma Lasers. Obsługuje różne typy zaawansowanych technologii laserowych i innych źródeł światła. Oferuje rozwiązanie na większość problemów estetycznych i dermatologicznych',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/aesthetic-medicine/zamykanie-naczynek-i-likwidacja-przebarwien',
+    path: '/zabiegi/medycyna-estetyczna/zamykanie-naczynek-i-likwidacja-przebarwien',
     images: [
         {
             src: zamykanieNaczynekILikwidacjaPrzebarwienImage0,
@@ -634,7 +634,7 @@ export const sonoQueenTechnologiaHifu = {
     title: 'SonoQueen technologia HIFU',
     description: 'SonoQueen to nowoczesna technologia wykorzystująca moc HIFU. Najnowsza generacja technologii HIFU (High Intensity Focused Ultrasound) to sfokusowane ultradźwięki o wysokiej częstotliwości do bezinwazyjnego, niechirurgicznego liftingu twarzy i ciała.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/aesthetic-medicine/sonoqueen-technologia-hifu',
+    path: '/zabiegi/medycyna-estetyczna/sonoqueen-technologia-hifu',
     images: [
         {
             src: sonoQueenTechnologiaHifuImage0,
@@ -660,7 +660,7 @@ export const peelingMedyczny = {
     title: 'Peeling medyczny',
     description: 'Peelingi chemiczne to kondycjonujące i rewitalizujące skórę zabiegi dermokosmetyczne. W zależności od zastosowanego preparatu zabiegi oferują różne efekty terapeutyczne; tj. oczyszczające i przeciwtrądzikowe, regenerujące i przeciwzmarszczkowe, rozjaśniające i redukujące przebarwienia.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/cosmetology/peeling-medyczny',
+    path: '/zabiegi/kosmetologia/peeling-medyczny',
     images: [
         {
             src: peelingMedycznyImage0,
@@ -713,7 +713,7 @@ export const epilacjaLaserowa = {
     title: 'Epilacja laserowa',
     description: 'Laser diodowy to produkt amerykańskiej firmy, która stworzyła pierwszą na świecie technologię laserowego usuwania owłosienia, do dziś chronioną patentem. Urządzenie jest owocem trwających kilkanaście lat doświadczeń i badań nad udoskonaleniem systemu lasera diodowego. Wykorzystano w nim wiele nowatorskich rozwiązań decydujących o wyjątkowej skuteczności, bezpieczeństwie i komforcie pacjenta.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/cosmetology/epilacja-laserowa',
+    path: '/zabiegi/kosmetologia/epilacja-laserowa',
     images: [
         {
             src: epilacjaLaserowaImage0,
@@ -778,7 +778,7 @@ export const masazProzniowy = {
     title: 'Masaż próżniowy',
     description: 'Masaż próżniowy inspirowany jest intuicją profesora Jean-Claude\'a Guimberteau, specjalisty w dziedzinie chirurgii rekonstrukcyjnej, który poświęcił wiele lat na obserwację skóry w zakresie struktury tkanki łącznej. Guimberteau wykazał, że skóra musi być pojmowana jako żywa, ciągła materia, a tkanka podskórna składa się z sieci mikrowakuoli, które tworzą funkcjonalną jednostkę struktury tkanki. Ta nowa wizja całkowicie zastępuje tradycyjną koncepcję tkanki warstwowej, a tym samym narzuca potrzebę nowego sposobu leczenia skóry.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/cosmetology/masaz-prozniowy',
+    path: '/zabiegi/kosmetologia/masaz-prozniowy',
     images: [
         {
             src: masazProzniowyImage0,
@@ -805,7 +805,7 @@ export const ultradzwiekiIFalaRadiowa = {
     title: 'Ultradzwieki i fala radiowa',
     description: 'Ultradźwięki połączone z falą radiową to zabieg, który w bezpieczny sposób redukuje cellulit i tkankę tłuszczową, niweluje wiotkość skóry oraz modeluje twarz. Dzięki połączeniu dwóch technologii intensyfikujemy efekty terapeutyczne. Ultradźwięki selektywnie niszczą błony komórkowe adipocytów, czyli komórek tłuszczowych. Następnie fala radiowa przyśpiesza metabolizm usprawniając działanie układu limfatycznego oraz usuwanie uwolnionego tłuszczu z organizmu. Radiofrekwencja pobudza również fibroblasty co skutkuje ujędrnieniem skóry w okolicy zabiegowej.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/cosmetology/ultradzwieki-i-fala-radiowa',
+    path: '/zabiegi/kosmetologia/ultradzwieki-i-fala-radiowa',
     images: [
         {
             src: ultradzwiekiIFalaRadiowaImage0,
@@ -858,7 +858,7 @@ export const mezoterapiaMikroiglowa = {
     title: 'Mezoterapia mikroigłowa',
     description: 'Mezoterapia mikroigłowa to zabieg polegający na wykonywaniu kontrolowanych mikronakłuć skóry. Stymuluje naturalne procesy regeneracyjne, wspiera produkcję kolagenu i elastyny oraz ułatwia wprowadzanie składników aktywnych w głąb skóry. Najnowszy Dermapen™ jest w pełni cyfrowym oryginalnym urządzeniem do mikronakłuwania frakcyjnego skóry. Dermapen™ to zabieg wspierający regenerację skóry oraz umożliwiający uzyskanie przyspieszonych efektów stosowanych podczas procedury z zastosowaniem preparatów. Mikroskopijne nakłucia wspomagają penetracje składników aktywnych w głębsze warstwy skóry, dzięki czemu ich działanie jest znacznie intensywniejsze niż w przypadku powierzchownej aplikacji na naskórek. W zależności od doboru preparatów Dermapen™ pomaga redukować rozmaite problemy skórne.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/cosmetology/mezoterapia-mikroiglowa',
+    path: '/zabiegi/kosmetologia/mezoterapia-mikroiglowa',
     images: [
         {
             src: mezoterapiaMikroiglowa0Image0,
@@ -925,7 +925,7 @@ export const plastykaPowiek = {
     title: 'Plastyka powiek',
     description: 'Plastyka powiek, inaczej blefaroplastyka, to zabieg mający na celu usunięcie nadmiaru skóry wokół oczu. W zakres blefaroplastyki wchodzi zarówno korekta powieki górnej jak i dolnej. Plastyka powiek jest najskuteczniejszą metodą walki z twz. opadającą powieką. Wskazaniami do zabiegu prócz defektu estetycznego są również asymetria oczu, problemy z widocznością, przepukliny tłuszczowe a także wiotkość tkanki wokół oczu.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/cosmetic-surgery/plastyka-powiek',
+    path: '/zabiegi/chirurgia-plastyczna/plastyka-powiek',
     images: [
         {
             src: plastykaPowiekImage0,
@@ -964,7 +964,7 @@ export const testySkorne = {
     title: 'Testy skórne',
     description: 'Testy skórne są jedną z popularniejszej oraz prostszej metody diagnostycznej alergii. Największą zaletą testów skórnych jest ich krótki czas oczekiwania na wyniki. Badanie przeprowadza się na wewnętrznej części przedramienia lub skórze pleców. Przebieg testów polega na naniesieniu kropli różnych zawiesin z alergenami z zestawu przesiewowego zawierającego takie substancje uczulające jak rośliny wiatropylne, trawy, pleśnie, sierść zwierząt, jad owadów czy roztocza kurzu domowego.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/allergology/testy-skorne',
+    path: '/zabiegi/alergologia/testy-skorne',
     images: [
         {
             src: testySkorneImage0,
@@ -987,7 +987,7 @@ export const platkoweTestyKontaktowe = {
     title: 'Płatkowe testy kontaktowe',
     description: 'Płatkowe testy kontaktowe, znane również jako testy skórne płatkowe lub testy płatkowe na alergeny, są diagnostycznym narzędziem stosowanym w medycynie w celu identyfikacji alergii kontaktowych. Są one wykorzystywane do wykrywania uczuleń skórnych, które mogą powodować reakcje alergiczne, takie jak swędzenie, zaczerwienienie, wysypka, pokrzywka czy łuszczenie się skóry.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/allergology/platkowe-testy-kontaktowe',
+    path: '/zabiegi/alergologia/platkowe-testy-kontaktowe',
     images: [
         {
             src: platkoweTestyKontaktoweImage0,
@@ -1010,7 +1010,7 @@ export const odczulanie = {
     title: 'Odczulanie',
     description: 'Immunoterapia swoista, czyli odczulanie, to jedyna przyczynowa metoda leczenia alergii. Odczulanie ma na celu zmniejszyć wrażliwość organizmu na dany czynnik alergizujący, co w następstwie redukuje uciążliwe objawy alergii. Polega ono na podawaniu coraz to większych stężeń alergenu w szczepionce co stopniowo zmniejsza wrażliwość organizmu na hapteny uczulające. Dawka wyciągu alergennego wynosi od 5 do 20 μg podanego w iniekcji podskórnej.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/allergology/odczulanie',
+    path: '/zabiegi/alergologia/odczulanie',
     images: [
         {
             src: odczulanieImage0,
@@ -1034,7 +1034,7 @@ export const skleroterapia = {
     title: 'Skleroterapia',
     description: 'Skleroterapia to nieinwazyjny zabieg zamykania rozszerzonych naczyń krwionośnych. Procedura polega na podaniu do problematycznej żyły substancji obliterującej, która powoduje jej zamknięcie. W porównaniu z leczeniem operacyjnym jest to metoda bezpieczną i zdecydowanie mniej bolesną. Zabieg skleroterapii poprzedzony jest dokładną oceną układu żył głównych oraz powierzchniowych przy pomocy badania ultrasonograficznego z dopplerem, które jest wykonywane w naszej Klinice.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/vascular-surgery/skleroterapia',
+    path: '/zabiegi/chirurgia-naczyniowa/skleroterapia',
     images: [
         {
             src: skleroterapiaImage0,
@@ -1057,7 +1057,7 @@ export const laseroweUsuwanieZylakow = {
     title: 'Laserowe usuwanie żylaków',
     description: 'Żylaki kończyn dolnych są dziś jedną z najbardziej powszechnych chorób. Około 40% kobiet i 20% mężczyzn ma objawy w postaci: zmęczonych, ciężkich nóg oraz obrzęków nóg i żył widocznych przez skórę. Jej główne przyczyny to: wrodzona słabość tkanki łącznej, zmiany hormonalne, a także długotrwałe przebywanie w pozycji siedzącej lub stojącej.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/vascular-surgery/laserowe-usuwanie-zylakow',
+    path: '/zabiegi/chirurgia-naczyniowa/laserowe-usuwanie-zylakow',
     images: [
         {
             src: laseroweUsuwanieZylakowImage0,
@@ -1081,7 +1081,7 @@ export const echoSerca = {
     title: 'Echo serca',
     description: 'Echo serca, czyli echokardiografia, to bezpieczne i nieinwazyjne badanie obrazowe serca, które wykorzystuje fale dźwiękowe o wysokiej częstotliwości do tworzenia obrazów struktur serca. Zabieg ten przeprowadza się za pomocą urządzenia zwanych echokardiografami, które emitują fale dźwiękowe przez specjalną sondę umieszczoną na klatce piersiowej pacjenta.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/cardiology/echo-serca',
+    path: '/zabiegi/kardiologia/echo-serca',
     images: [
         {
             src: echoSercaImage0,
@@ -1105,7 +1105,7 @@ export const badanieAdos2 = {
     title: 'Badanie Ados-2',
     description: 'Badanie Ados-2 dla dzieci, młodzieży i osób dorosłych. Pomaga wykryć  spektrum autyzmu (Zespół Aspergera,  spektrum autyzmu) u dzieci od 12 miesiąca życia, ale także u młodzieży i u dorosłych.',
     info: 'Zdjęcie ukazuje efekt zabiegu u konkretnego pacjenta. Efekt zabiegu może się różnić w zależności od indywidualnych cech pacjneta, liczby powtórzeń zabiegu, stosowania się pacjenta do zaleceń pozabiegowych oraz umiejętności i doświadczenia osoby przeprowadzającej zabieg.',
-    path: '/treatment/psychiatry/badanie-ados-2',
+    path: '/zabiegi/psychiatria/badanie-ados-2',
     images: [
         {
             src: badanieAdos20,

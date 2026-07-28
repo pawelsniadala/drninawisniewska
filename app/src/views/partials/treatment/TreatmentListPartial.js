@@ -1,79 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useMemo } from "react";
 
-import Box from '@mui/material/Box';
+import Box from "@mui/material/Box";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
-import CardProposed from '../../../components/CardProposed';
-import CardTreatment from '../../../components/CardTreatment';
+import CardProposed from "../../../components/CardProposed";
+import CardTreatment from "../../../components/CardTreatment";
 
-import { treatment } from '../../../data/treatment';
+import { treatment } from "../../../data/treatment";
 
 const TreatmentListPartial = ({ specialization }) => {
-    const [ data, setData ] = useState([]);
+  const isDesktop = useMediaQuery("(min-width: 992px)");
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const filtered = treatment.filter(item => item.specialization.includes(specialization));
-            setData(filtered);
-        };
-        fetchData();
-    }, [specialization]);
+  const filteredTreatments = useMemo(
+    () =>
+      treatment.filter((item) => item.specialization?.includes(specialization)),
+    [specialization],
+  );
 
-    useEffect(() => {
-        window.scrollTo({
-            top: 0,
-            left: 0,
-            behavior: 'instant'
-        });
-    }, [specialization]);
+  const CardComponent = isDesktop ? CardTreatment : CardProposed;
 
-    function getWindowDimensions() {
-        const { innerWidth: width } = window;
-        return { width };
-    }
-
-    function useWindowDimensions() {
-        const [ windowDimensions, setWindowDimensions ] = useState(getWindowDimensions());
-
-        useEffect(() => {
-            function handleResize() {
-                setWindowDimensions(getWindowDimensions());
-            }
-
-            window.addEventListener('resize', handleResize);
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-
-        return windowDimensions;
-    }
-
-    const { width } = useWindowDimensions();
-
-    return (
-        <Box className='card-wrapper treatment view'>
-
-            {width >= 991.98 ? (
-                data.map((item) => (
-                    <CardTreatment
-                        key={item.id}
-                        cardImage={item.images[0].src}
-                        cardTitle={item.title}
-                        cardDescription={item.description}
-                        cardPath={`${specialization}/${item.treatment}`}
-                    />
-                ))
-            ) : (
-                data.map((item) => (
-                    <CardProposed
-                        key={item.id}
-                        cardImage={item.images[0].src}
-                        cardTitle={item.title}
-                        cardDescription={item.description}
-                        cardPath={`${specialization}/${item.treatment}`}
-                    />
-                ))
-            )}
-        </Box>
-    );
-}
+  return (
+    <Box className="card-wrapper treatment view">
+      {filteredTreatments.map((item) => (
+        <CardComponent
+          key={item.id}
+          cardImage={item.images?.[0]?.src}
+          cardTitle={item.title}
+          cardDescription={item.description}
+          cardPath={item.path}
+        />
+      ))}
+    </Box>
+  );
+};
 
 export default TreatmentListPartial;

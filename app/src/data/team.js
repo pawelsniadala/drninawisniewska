@@ -62,6 +62,7 @@ export const paulinaSot = {
     ],
     treatment: [
         'peeling-medyczny',
+        'mezoterapia-mikroiglowa',
         'epilacja-laserowa',
         'masaz-prozniowy',
         'ultradzwieki-i-fala-radiowa',
@@ -313,7 +314,7 @@ export const kajaStrojnowskaLapinska = {
         'psychiatry'
     ],
     treatment: [
-        'badanieAdos2'
+        'badanie-ados-2'
     ],
     career: [
         'psychiatrist'
@@ -355,6 +356,7 @@ export const karolinaRakowska = {
     ],
     treatment: [
         'peeling-medyczny',
+        'mezoterapia-mikroiglowa',
         'epilacja-laserowa',
         'masaz-prozniowy',
         'ultradzwieki-i-fala-radiowa',

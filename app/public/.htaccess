@@ -1,4 +1,337 @@
 Options -MultiViews
+
 RewriteEngine On
+
+
+# ============================================================
+# PRZEKIEROWANIA TESTOWE
+# ============================================================
+# Po sprawdzeniu wszystkich adresów zamień R=302 na R=301.
+# Reguły przekierowań muszą znajdować się przed obsługą React Routera.
+
+
+# ============================================================
+# KLINIKA
+# ============================================================
+
+RewriteRule ^clinic/regulation/?$ /klinika/regulamin-organizacyjny [R=302,L]
+RewriteRule ^clinic/?$ /klinika [R=302,L]
+
+
+# ============================================================
+# SPECJALIZACJE
+# ============================================================
+
+RewriteRule ^services/dermatology/?$ /specjalizacje/dermatologia [R=302,L]
+RewriteRule ^services/aesthetic-medicine/?$ /specjalizacje/medycyna-estetyczna [R=302,L]
+RewriteRule ^services/cosmetology/?$ /specjalizacje/kosmetologia [R=302,L]
+RewriteRule ^services/cosmetic-surgery/?$ /specjalizacje/chirurgia-plastyczna [R=302,L]
+RewriteRule ^services/allergology/?$ /specjalizacje/alergologia [R=302,L]
+RewriteRule ^services/usg/?$ /specjalizacje/usg [R=302,L]
+RewriteRule ^services/gynecology/?$ /specjalizacje/ginekologia [R=302,L]
+RewriteRule ^services/vascular-surgery/?$ /specjalizacje/chirurgia-naczyniowa [R=302,L]
+RewriteRule ^services/clinical-dietitian/?$ /specjalizacje/dietetyka-kliniczna [R=302,L]
+RewriteRule ^services/cardiology/?$ /specjalizacje/kardiologia [R=302,L]
+RewriteRule ^services/psychiatry/?$ /specjalizacje/psychiatria [R=302,L]
+RewriteRule ^services/psychology/?$ /specjalizacje/psychologia [R=302,L]
+
+RewriteRule ^services/?$ /specjalizacje [R=302,L]
+
+# W aktualnym Root.js nie ma aktywnej strony:
+# /specjalizacje/endokrynologia
+#
+# Dlatego poniższa reguła pozostaje wyłączona.
+# Można ją włączyć po przywróceniu widoku endokrynologii.
+#
+# RewriteRule ^services/endocrinology/?$ /specjalizacje/endokrynologia [R=302,L]
+
+
+# ============================================================
+# ZABIEGI – DERMATOLOGIA
+# ============================================================
+# Pierwsza reguła obsługuje podstrony konkretnych zabiegów.
+# Druga reguła obsługuje główny widok dermatologii.
+
+RewriteRule ^treatment/dermatology/([^/]+)/?$ /zabiegi/dermatologia/$1 [R=302,L]
+RewriteRule ^treatment/dermatology/?$ /zabiegi [R=302,L]
+
+
+# ============================================================
+# ZABIEGI – MEDYCYNA ESTETYCZNA
+# ============================================================
+
+RewriteRule ^treatment/aesthetic-medicine/([^/]+)/?$ /zabiegi/medycyna-estetyczna/$1 [R=302,L]
+RewriteRule ^treatment/aesthetic-medicine/?$ /zabiegi/medycyna-estetyczna [R=302,L]
+
+
+# ============================================================
+# ZABIEGI – KOSMETOLOGIA
+# ============================================================
+
+RewriteRule ^treatment/cosmetology/([^/]+)/?$ /zabiegi/kosmetologia/$1 [R=302,L]
+RewriteRule ^treatment/cosmetology/?$ /zabiegi/kosmetologia [R=302,L]
+
+
+# ============================================================
+# ZABIEGI – CHIRURGIA PLASTYCZNA
+# ============================================================
+
+RewriteRule ^treatment/cosmetic-surgery/([^/]+)/?$ /zabiegi/chirurgia-plastyczna/$1 [R=302,L]
+RewriteRule ^treatment/cosmetic-surgery/?$ /zabiegi/chirurgia-plastyczna [R=302,L]
+
+
+# ============================================================
+# ZABIEGI – ALERGOLOGIA
+# ============================================================
+
+RewriteRule ^treatment/allergology/([^/]+)/?$ /zabiegi/alergologia/$1 [R=302,L]
+RewriteRule ^treatment/allergology/?$ /zabiegi/alergologia [R=302,L]
+
+
+# ============================================================
+# ZABIEGI – CHIRURGIA NACZYNIOWA
+# ============================================================
+
+RewriteRule ^treatment/vascular-surgery/([^/]+)/?$ /zabiegi/chirurgia-naczyniowa/$1 [R=302,L]
+RewriteRule ^treatment/vascular-surgery/?$ /zabiegi/chirurgia-naczyniowa [R=302,L]
+
+
+# ============================================================
+# ZABIEGI – KARDIOLOGIA
+# ============================================================
+
+RewriteRule ^treatment/cardiology/([^/]+)/?$ /zabiegi/kardiologia/$1 [R=302,L]
+RewriteRule ^treatment/cardiology/?$ /zabiegi/kardiologia [R=302,L]
+
+
+# ============================================================
+# ZABIEGI – PSYCHIATRIA
+# ============================================================
+
+RewriteRule ^treatment/psychiatry/([^/]+)/?$ /zabiegi/psychiatria/$1 [R=302,L]
+RewriteRule ^treatment/psychiatry/?$ /zabiegi/psychiatria [R=302,L]
+
+
+# ============================================================
+# ZABIEGI – GŁÓWNY WIDOK
+# ============================================================
+
+RewriteRule ^treatment/?$ /zabiegi [R=302,L]
+
+
+# ============================================================
+# CENNIK
+# ============================================================
+
+RewriteRule ^prices/aesthetic-medicine/?$ /cennik/medycyna-estetyczna [R=302,L]
+RewriteRule ^prices/cosmetology/?$ /cennik/kosmetologia [R=302,L]
+RewriteRule ^prices/cosmetic-surgery/?$ /cennik/chirurgia-plastyczna [R=302,L]
+RewriteRule ^prices/allergology/?$ /cennik/alergologia [R=302,L]
+RewriteRule ^prices/usg/?$ /cennik/usg [R=302,L]
+RewriteRule ^prices/endocrinology/?$ /cennik/endokrynologia [R=302,L]
+RewriteRule ^prices/gynecology/?$ /cennik/ginekologia [R=302,L]
+RewriteRule ^prices/vascular-surgery/?$ /cennik/chirurgia-naczyniowa [R=302,L]
+RewriteRule ^prices/clinical-dietitian/?$ /cennik/dietetyka-kliniczna [R=302,L]
+RewriteRule ^prices/cardiology/?$ /cennik/kardiologia [R=302,L]
+RewriteRule ^prices/psychiatry/?$ /cennik/psychiatria [R=302,L]
+RewriteRule ^prices/psychology/?$ /cennik/psychologia [R=302,L]
+
+RewriteRule ^prices/?$ /cennik [R=302,L]
+
+
+# ============================================================
+# PROMOCJE
+# ============================================================
+
+RewriteRule ^special-offer/?$ /promocje [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – DERMATOLOGIA
+# ============================================================
+# Główny widok dermatologii znajduje się pod /specjalisci.
+# Szczegóły lekarzy zachowują segment /dermatologia/.
+
+RewriteRule ^team/dermatology/([^/]+)/?$ /specjalisci/dermatologia/$1 [R=302,L]
+RewriteRule ^team/dermatology/?$ /specjalisci [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – MEDYCYNA ESTETYCZNA
+# ============================================================
+
+RewriteRule ^team/aesthetic-medicine/([^/]+)/?$ /specjalisci/medycyna-estetyczna/$1 [R=302,L]
+RewriteRule ^team/aesthetic-medicine/?$ /specjalisci/medycyna-estetyczna [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – KOSMETOLOGIA
+# ============================================================
+
+RewriteRule ^team/cosmetology/([^/]+)/?$ /specjalisci/kosmetologia/$1 [R=302,L]
+RewriteRule ^team/cosmetology/?$ /specjalisci/kosmetologia [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – CHIRURGIA PLASTYCZNA
+# ============================================================
+
+RewriteRule ^team/cosmetic-surgery/([^/]+)/?$ /specjalisci/chirurgia-plastyczna/$1 [R=302,L]
+RewriteRule ^team/cosmetic-surgery/?$ /specjalisci/chirurgia-plastyczna [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – ALERGOLOGIA
+# ============================================================
+
+RewriteRule ^team/allergology/([^/]+)/?$ /specjalisci/alergologia/$1 [R=302,L]
+RewriteRule ^team/allergology/?$ /specjalisci/alergologia [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – USG
+# ============================================================
+
+RewriteRule ^team/usg/([^/]+)/?$ /specjalisci/usg/$1 [R=302,L]
+RewriteRule ^team/usg/?$ /specjalisci/usg [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – ENDOKRYNOLOGIA
+# ============================================================
+
+RewriteRule ^team/endocrinology/([^/]+)/?$ /specjalisci/endokrynologia/$1 [R=302,L]
+RewriteRule ^team/endocrinology/?$ /specjalisci/endokrynologia [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – GINEKOLOGIA
+# ============================================================
+
+RewriteRule ^team/gynecology/([^/]+)/?$ /specjalisci/ginekologia/$1 [R=302,L]
+RewriteRule ^team/gynecology/?$ /specjalisci/ginekologia [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – CHIRURGIA NACZYNIOWA
+# ============================================================
+
+RewriteRule ^team/vascular-surgery/([^/]+)/?$ /specjalisci/chirurgia-naczyniowa/$1 [R=302,L]
+RewriteRule ^team/vascular-surgery/?$ /specjalisci/chirurgia-naczyniowa [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – DIETETYKA KLINICZNA
+# ============================================================
+
+RewriteRule ^team/clinical-dietitian/([^/]+)/?$ /specjalisci/dietetyka-kliniczna/$1 [R=302,L]
+RewriteRule ^team/clinical-dietitian/?$ /specjalisci/dietetyka-kliniczna [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – KARDIOLOGIA
+# ============================================================
+
+RewriteRule ^team/cardiology/([^/]+)/?$ /specjalisci/kardiologia/$1 [R=302,L]
+RewriteRule ^team/cardiology/?$ /specjalisci/kardiologia [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – PSYCHIATRIA
+# ============================================================
+
+RewriteRule ^team/psychiatry/([^/]+)/?$ /specjalisci/psychiatria/$1 [R=302,L]
+RewriteRule ^team/psychiatry/?$ /specjalisci/psychiatria [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – PSYCHOLOGIA
+# ============================================================
+
+RewriteRule ^team/psychology/([^/]+)/?$ /specjalisci/psychologia/$1 [R=302,L]
+RewriteRule ^team/psychology/?$ /specjalisci/psychologia [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – REJESTRACJA MEDYCZNA
+# ============================================================
+
+RewriteRule ^team/medical-registration/([^/]+)/?$ /specjalisci/rejestracja-medyczna/$1 [R=302,L]
+RewriteRule ^team/medical-registration/?$ /specjalisci/rejestracja-medyczna [R=302,L]
+
+
+# ============================================================
+# SPECJALIŚCI – GŁÓWNY WIDOK
+# ============================================================
+
+RewriteRule ^team/?$ /specjalisci [R=302,L]
+
+
+# ============================================================
+# KARIERA – STARE ADRESY /career/...
+# ============================================================
+# Formularze aplikacyjne znajdują się przed stronami ofert,
+# aby każda ścieżka została dopasowana jednoznacznie.
+
+RewriteRule ^career/receptionist/application/?$ /kariera/recepcjonistka/aplikacja [R=302,L]
+RewriteRule ^career/hematologist/application/?$ /kariera/hematolog/aplikacja [R=302,L]
+RewriteRule ^career/dermatologist/application/?$ /kariera/dermatolog/aplikacja [R=302,L]
+RewriteRule ^career/urologist/application/?$ /kariera/urolog/aplikacja [R=302,L]
+RewriteRule ^career/psychiatrist/application/?$ /kariera/psychiatra/aplikacja [R=302,L]
+RewriteRule ^career/cosmetologist/application/?$ /kariera/kosmetolog/aplikacja [R=302,L]
+
+RewriteRule ^career/receptionist/?$ /kariera/recepcjonistka [R=302,L]
+RewriteRule ^career/hematologist/?$ /kariera/hematolog [R=302,L]
+RewriteRule ^career/dermatologist/?$ /kariera/dermatolog [R=302,L]
+RewriteRule ^career/urologist/?$ /kariera/urolog [R=302,L]
+RewriteRule ^career/psychiatrist/?$ /kariera/psychiatra [R=302,L]
+RewriteRule ^career/cosmetologist/?$ /kariera/kosmetolog [R=302,L]
+
+RewriteRule ^career/?$ /kariera [R=302,L]
+
+
+# ============================================================
+# KARIERA – PRZEJŚCIOWE POLSKO-ANGIELSKIE ADRESY
+# ============================================================
+# Reguły obsługują adresy utworzone podczas etapowej zmiany,
+# np. /kariera/psychiatrist lub /kariera/psychiatrist/aplikacja.
+
+RewriteRule ^kariera/receptionist/(application|aplikacja)/?$ /kariera/recepcjonistka/aplikacja [R=302,L]
+RewriteRule ^kariera/hematologist/(application|aplikacja)/?$ /kariera/hematolog/aplikacja [R=302,L]
+RewriteRule ^kariera/dermatologist/(application|aplikacja)/?$ /kariera/dermatolog/aplikacja [R=302,L]
+RewriteRule ^kariera/urologist/(application|aplikacja)/?$ /kariera/urolog/aplikacja [R=302,L]
+RewriteRule ^kariera/psychiatrist/(application|aplikacja)/?$ /kariera/psychiatra/aplikacja [R=302,L]
+RewriteRule ^kariera/cosmetologist/(application|aplikacja)/?$ /kariera/kosmetolog/aplikacja [R=302,L]
+
+RewriteRule ^kariera/receptionist/?$ /kariera/recepcjonistka [R=302,L]
+RewriteRule ^kariera/hematologist/?$ /kariera/hematolog [R=302,L]
+RewriteRule ^kariera/dermatologist/?$ /kariera/dermatolog [R=302,L]
+RewriteRule ^kariera/urologist/?$ /kariera/urolog [R=302,L]
+RewriteRule ^kariera/psychiatrist/?$ /kariera/psychiatra [R=302,L]
+RewriteRule ^kariera/cosmetologist/?$ /kariera/kosmetolog [R=302,L]
+
+
+# ============================================================
+# KONTAKT
+# ============================================================
+
+RewriteRule ^contact/?$ /kontakt [R=302,L]
+
+
+# ============================================================
+# TECHNOLOGIA
+# ============================================================
+# Stare adresy /technology nie zostały przekierowane,
+# ponieważ w aktualnym Root.js widoki technologii są wyłączone.
+# Nie mają obecnie jednoznacznych polskich odpowiedników.
+
+
+# ============================================================
+# REACT ROUTER – OBSŁUGA APLIKACJI SPA
+# ============================================================
+# Istniejące pliki i katalogi są obsługiwane przez Apache.
+# Pozostałe adresy trafiają do index.html i React Routera.
+
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.html [QSA,L]
