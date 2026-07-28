@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- STRONA GŁÓWNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/</loc>
+  </url>
+
+  <!-- KLINIKA -->
+  <url>
+    <loc>https://drninawisniewska.pl/klinika</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/klinika/regulamin-organizacyjny</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – WIDOK GŁÓWNY -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – DERMATOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/dermatologia</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – MEDYCYNA ESTETYCZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/medycyna-estetyczna</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – KOSMETOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/kosmetologia</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – CHIRURGIA PLASTYCZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/chirurgia-plastyczna</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – ALERGOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/alergologia</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – USG -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/usg</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – GINEKOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/ginekologia</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – CHIRURGIA NACZYNIOWA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/chirurgia-naczyniowa</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – DIETETYKA KLINICZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/dietetyka-kliniczna</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – KARDIOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/kardiologia</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – PSYCHIATRIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/psychiatria</loc>
+  </url>
+
+  <!-- SPECJALIZACJE – PSYCHOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalizacje/psychologia</loc>
+  </url>
+
+  <!-- ZABIEGI – DERMATOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/dermatologia/badanie-znamion-barwnikowych</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/dermatologia/fototerapia-chorob-skory</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/dermatologia/usuniecie-zmian-skornych-elektrochirurgiczne</loc>
+  </url>
+
+  <!-- ZABIEGI – MEDYCYNA ESTETYCZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/medycyna-estetyczna</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/medycyna-estetyczna/modelowanie-ust</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/medycyna-estetyczna/toksyna-botulinowa</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/medycyna-estetyczna/stymulatory-tkankowe</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/medycyna-estetyczna/osocze-bogatoplytkowe</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/medycyna-estetyczna/laser-frakcyjny</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/medycyna-estetyczna/nici-rewitalizujace-i-liftingujace</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/medycyna-estetyczna/mezoterapia-iglowa</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/medycyna-estetyczna/zamykanie-naczynek-i-likwidacja-przebarwien</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/medycyna-estetyczna/sonoqueen-technologia-hifu</loc>
+  </url>
+
+  <!-- ZABIEGI – KOSMETOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/kosmetologia</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/kosmetologia/peeling-medyczny</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/kosmetologia/epilacja-laserowa</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/kosmetologia/masaz-prozniowy</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/kosmetologia/ultradzwieki-i-fala-radiowa</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/kosmetologia/mezoterapia-mikroiglowa</loc>
+  </url>
+
+  <!-- ZABIEGI – CHIRURGIA PLASTYCZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/chirurgia-plastyczna</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/chirurgia-plastyczna/plastyka-powiek</loc>
+  </url>
+
+  <!-- ZABIEGI – ALERGOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/alergologia</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/alergologia/testy-skorne</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/alergologia/platkowe-testy-kontaktowe</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/alergologia/odczulanie</loc>
+  </url>
+
+  <!-- ZABIEGI – CHIRURGIA NACZYNIOWA -->
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/chirurgia-naczyniowa</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/chirurgia-naczyniowa/skleroterapia</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/chirurgia-naczyniowa/laserowe-usuwanie-zylakow</loc>
+  </url>
+
+  <!-- ZABIEGI – KARDIOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/kardiologia</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/kardiologia/echo-serca</loc>
+  </url>
+
+  <!-- ZABIEGI – PSYCHIATRIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/psychiatria</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/zabiegi/psychiatria/badanie-ados-2</loc>
+  </url>
+
+  <!-- CENNIK – DERMATOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik</loc>
+  </url>
+
+  <!-- CENNIK – MEDYCYNA ESTETYCZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/medycyna-estetyczna</loc>
+  </url>
+
+  <!-- CENNIK – KOSMETOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/kosmetologia</loc>
+  </url>
+
+  <!-- CENNIK – CHIRURGIA PLASTYCZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/chirurgia-plastyczna</loc>
+  </url>
+
+  <!-- CENNIK – ALERGOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/alergologia</loc>
+  </url>
+
+  <!-- CENNIK – USG -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/usg</loc>
+  </url>
+
+  <!-- CENNIK – ENDOKRYNOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/endokrynologia</loc>
+  </url>
+
+  <!-- CENNIK – GINEKOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/ginekologia</loc>
+  </url>
+
+  <!-- CENNIK – CHIRURGIA NACZYNIOWA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/chirurgia-naczyniowa</loc>
+  </url>
+
+  <!-- CENNIK – DIETETYKA KLINICZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/dietetyka-kliniczna</loc>
+  </url>
+
+  <!-- CENNIK – KARDIOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/kardiologia</loc>
+  </url>
+
+  <!-- CENNIK – PSYCHIATRIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/psychiatria</loc>
+  </url>
+
+  <!-- CENNIK – PSYCHOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/cennik/psychologia</loc>
+  </url>
+
+  <!-- PROMOCJE -->
+  <url>
+    <loc>https://drninawisniewska.pl/promocje</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – DERMATOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/dermatologia/nina-wisniewska</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/dermatologia/katarzyna-mysliwiec-czajka</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/dermatologia/justyna-kloniecka</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/dermatologia/aldona-maciag</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/dermatologia/katarzyna-rychlik</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/dermatologia/karol-pniewski</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/dermatologia/karolina-dobrowolska</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/dermatologia/ada-szepelska</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – MEDYCYNA ESTETYCZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/medycyna-estetyczna</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/medycyna-estetyczna/nina-wisniewska</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/medycyna-estetyczna/konrad-kochan</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/medycyna-estetyczna/klaudia-malottki</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/medycyna-estetyczna/olga-lenartowicz-warakomska</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/medycyna-estetyczna/karol-pniewski</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – KOSMETOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/kosmetologia</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/kosmetologia/paulina-sot</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/kosmetologia/karolina-rakowska</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – CHIRURGIA PLASTYCZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/chirurgia-plastyczna</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/chirurgia-plastyczna/konrad-kochan</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – ALERGOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/alergologia</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/alergologia/tomasz-matuszewski</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – USG -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/usg</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/usg/jadwiga-dowgiallo-smolarczyk</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/usg/kamil-stepkowski</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/usg/daniela-borkowska</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – ENDOKRYNOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/endokrynologia</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/endokrynologia/jadwiga-dowgiallo-smolarczyk</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – GINEKOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/ginekologia</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/ginekologia/jadwiga-dowgiallo-smolarczyk</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – CHIRURGIA NACZYNIOWA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/chirurgia-naczyniowa</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/chirurgia-naczyniowa/kamil-stepkowski</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – DIETETYKA KLINICZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/dietetyka-kliniczna</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/dietetyka-kliniczna/joanna-ojrzenska</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – KARDIOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/kardiologia</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/kardiologia/michal-radzio</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – PSYCHIATRIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/psychiatria</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/psychiatria/kaja-strojnowska-lapinska</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – PSYCHOLOGIA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/psychologia</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/psychologia/zaneta-manko</loc>
+  </url>
+
+  <!-- SPECJALIŚCI – REJESTRACJA MEDYCZNA -->
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/rejestracja-medyczna</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/rejestracja-medyczna/paulina-pedzich</loc>
+  </url>
+  <url>
+    <loc>https://drninawisniewska.pl/specjalisci/rejestracja-medyczna/julia-nisio</loc>
+  </url>
+
+  <!-- KARIERA – WIDOK GŁÓWNY -->
+  <url>
+    <loc>https://drninawisniewska.pl/kariera</loc>
+  </url>
+
+  <!-- KARIERA – HEMATOLOG -->
+  <url>
+    <loc>https://drninawisniewska.pl/kariera/hematolog</loc>
+  </url>
+
+  <!-- KARIERA – DERMATOLOG -->
+  <url>
+    <loc>https://drninawisniewska.pl/kariera/dermatolog</loc>
+  </url>
+
+  <!-- KARIERA – UROLOG -->
+  <url>
+    <loc>https://drninawisniewska.pl/kariera/urolog</loc>
+  </url>
+
+  <!-- KARIERA – PSYCHIATRA -->
+  <url>
+    <loc>https://drninawisniewska.pl/kariera/psychiatra</loc>
+  </url>
+
+  <!-- KONTAKT -->
+  <url>
+    <loc>https://drninawisniewska.pl/kontakt</loc>
+  </url>
+</urlset>
