@@ -7,7 +7,6 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
-import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 
@@ -112,4 +111,4 @@ const TechnologyPhilipsUltrasonografAffiniti50Partial = () => {
     );
 }
 
-export default Page(TechnologyPhilipsUltrasonografAffiniti50Partial);
+export default TechnologyPhilipsUltrasonografAffiniti50Partial;

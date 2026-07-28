@@ -7,7 +7,6 @@ import Breadcrumbs from "@mui/material/Breadcrumbs";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
-import Page from "../../../components/Page";
 import Container from "../../../components/Container";
 import Seo from "../../../components/Seo";
 
@@ -807,4 +806,4 @@ const ClinicRegulationPartial = () => {
   );
 };
 
-export default Page(ClinicRegulationPartial);
+export default ClinicRegulationPartial;

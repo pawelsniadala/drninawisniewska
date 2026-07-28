@@ -8,7 +8,6 @@ import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
@@ -178,4 +177,4 @@ const TechnologyAlmaHarmonyXlProPartial = () => {
     );
 }
 
-export default Page(TechnologyAlmaHarmonyXlProPartial);
+export default TechnologyAlmaHarmonyXlProPartial;

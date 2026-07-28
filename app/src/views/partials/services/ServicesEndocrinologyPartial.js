@@ -9,7 +9,6 @@ import Box from "@mui/material/Box";
 import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
-import Page from "../../../components/Page";
 import Seo from "../../../components/Seo";
 import Container from "../../../components/Container";
 import CardTeamProposed from "../../../components/CardTeamProposed";
@@ -222,4 +221,4 @@ const ServicesEndocrinologyPartial = () => {
   );
 };
 
-export default Page(ServicesEndocrinologyPartial);
+export default ServicesEndocrinologyPartial;

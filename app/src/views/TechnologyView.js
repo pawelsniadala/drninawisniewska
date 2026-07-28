@@ -7,7 +7,6 @@ import Breadcrumbs from '@mui/material/Breadcrumbs';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-import Page from '../components/Page';
 import Container from '../components/Container';
 import CardTechnology from '../components/CardTechnology';
 import CardProposed from '../components/CardProposed';
@@ -105,4 +104,4 @@ const TechnologyView = () => {
     );
 }
 
-export default Page(TechnologyView);
+export default TechnologyView;

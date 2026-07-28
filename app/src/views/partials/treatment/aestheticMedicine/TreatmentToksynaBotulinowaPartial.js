@@ -17,7 +17,6 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-import Page from "../../../../components/Page";
 import Seo from "../../../../components/Seo";
 import Container from "../../../../components/Container";
 import CardTeamProposed from "../../../../components/CardTeamProposed";
@@ -25,10 +24,7 @@ import CardProposed from "../../../../components/CardProposed";
 import ListBulleted from "../../../../components/ListBulleted";
 import Image from "../../../../components/Image";
 
-import {
-  treatment,
-  toksynaBotulinowa,
-} from "../../../../data/treatment";
+import { treatment, toksynaBotulinowa } from "../../../../data/treatment";
 
 import { team } from "../../../../data/team";
 import { services } from "../../../../data/services";
@@ -139,14 +135,9 @@ const TreatmentToksynaBotulinowaPartial = () => {
                   aria-label="Nawigacja powrotna"
                 >
                   <Link to="/zabiegi/medycyna-estetyczna">
-                    <ArrowBackIcon
-                      aria-hidden="true"
-                      focusable="false"
-                    />
+                    <ArrowBackIcon aria-hidden="true" focusable="false" />
 
-                    <Box component="span">
-                      Medycyna estetyczna
-                    </Box>
+                    <Box component="span">Medycyna estetyczna</Box>
                   </Link>
                 </Breadcrumbs>
 
@@ -161,13 +152,9 @@ const TreatmentToksynaBotulinowaPartial = () => {
                   }
                   aria-label="Ścieżka nawigacyjna"
                 >
-                  <Link to="/">
-                    Strona główna
-                  </Link>
+                  <Link to="/">Strona główna</Link>
 
-                  <Link to="/zabiegi">
-                    Zabiegi
-                  </Link>
+                  <Link to="/zabiegi">Zabiegi</Link>
 
                   <Link to="/zabiegi/medycyna-estetyczna">
                     Medycyna estetyczna
@@ -200,28 +187,23 @@ const TreatmentToksynaBotulinowaPartial = () => {
               <Box className="treatment-description">
                 <Box className="box-treatment">
                   <Typography className="paragraph">
-                    <strong>Toksyna botulinowa</strong> to jedna
-                    z najbardziej popularnych metod{" "}
-                    <strong>redukcji zmarszczek mimicznych</strong>,
-                    które pojawiają się w związku z powtarzającymi
-                    się skurczami mięśni twarzy. Zabieg pozwala
-                    szybko spłycić zmarszczki mimiczne i wygładzić
-                    skórę. Wstrzyknięcie małej dawki leku w wybrane
-                    mięśnie twarzy likwiduje problemy wywoływane
-                    przez kurczenie się mięśni, takie jak zmarszczki
-                    mimiczne czy nadmierna kurczliwość.
+                    <strong>Toksyna botulinowa</strong> to jedna z najbardziej
+                    popularnych metod{" "}
+                    <strong>redukcji zmarszczek mimicznych</strong>, które
+                    pojawiają się w związku z powtarzającymi się skurczami
+                    mięśni twarzy. Zabieg pozwala szybko spłycić zmarszczki
+                    mimiczne i wygładzić skórę. Wstrzyknięcie małej dawki leku w
+                    wybrane mięśnie twarzy likwiduje problemy wywoływane przez
+                    kurczenie się mięśni, takie jak zmarszczki mimiczne czy
+                    nadmierna kurczliwość.
                   </Typography>
 
                   <Box className="box-image">
                     <Image
                       imageSrc={toksynaBotulinowa.images[0].src}
                       imageAlt={toksynaBotulinowa.images[0].alt}
-                      imageAuthor={
-                        toksynaBotulinowa.images[0].author
-                      }
-                      imageHref={
-                        toksynaBotulinowa.images[0].href
-                      }
+                      imageAuthor={toksynaBotulinowa.images[0].author}
+                      imageHref={toksynaBotulinowa.images[0].href}
                     />
                   </Box>
 
@@ -233,46 +215,36 @@ const TreatmentToksynaBotulinowaPartial = () => {
                     Toksynę botulinową warto wykorzystać w celu:
                   </Typography>
 
-                  <Grid
-                    container
-                    spacing={0.5}
-                    marginBottom={2}
-                  >
-                    {botulinumToxinApplications.map(
-                      (item, index) => (
-                        <ListBulleted
-                          key={`${item}-${index}`}
-                          ListBulletedItem={item}
-                          ListBulletedStyle={{
-                            backgroundImage:
-                              "linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)",
-                          }}
-                        />
-                      ),
-                    )}
+                  <Grid container spacing={0.5} marginBottom={2}>
+                    {botulinumToxinApplications.map((item, index) => (
+                      <ListBulleted
+                        key={`${item}-${index}`}
+                        ListBulletedItem={item}
+                        ListBulletedStyle={{
+                          backgroundImage:
+                            "linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)",
+                        }}
+                      />
+                    ))}
                   </Grid>
 
                   <Typography className="paragraph">
-                    Toksyna botulinowa powoduje zahamowanie
-                    uwalniania acetylocholiny - neuroprzekaźnika
-                    odpowiedzialnego za przekaźnictwo impulsów
-                    między nerwami a mięśniami. Blokuje więc tzw.
-                    synapsy nerwowo-mięśniowe, uniemożliwiając
-                    skurcz porażonego mięśnia.
+                    Toksyna botulinowa powoduje zahamowanie uwalniania
+                    acetylocholiny - neuroprzekaźnika odpowiedzialnego za
+                    przekaźnictwo impulsów między nerwami a mięśniami. Blokuje
+                    więc tzw. synapsy nerwowo-mięśniowe, uniemożliwiając skurcz
+                    porażonego mięśnia.
                   </Typography>
 
                   <Typography className="paragraph">
-                    Pierwsze efekty jej działania pojawiają się już
-                    po kilku dniach od podania, a{" "}
-                    <strong>
-                      pełen efekt jest widoczny do 2 tygodni
-                    </strong>
-                    . Należy pamiętać że efekt działania może
-                    pojawiać się niesymetrycznie - dlatego ważne
-                    jest aby poczekać na efekt końcowy. Efekt
-                    przeciwzmarszczkowy utrzymuje się średnio przez
-                    3 do 7 miesięcy i jest uzależniony od
-                    indywidualnych cech organizmu.
+                    Pierwsze efekty jej działania pojawiają się już po kilku
+                    dniach od podania, a{" "}
+                    <strong>pełen efekt jest widoczny do 2 tygodni</strong>.
+                    Należy pamiętać że efekt działania może pojawiać się
+                    niesymetrycznie - dlatego ważne jest aby poczekać na efekt
+                    końcowy. Efekt przeciwzmarszczkowy utrzymuje się średnio
+                    przez 3 do 7 miesięcy i jest uzależniony od indywidualnych
+                    cech organizmu.
                   </Typography>
 
                   <Typography
@@ -283,23 +255,17 @@ const TreatmentToksynaBotulinowaPartial = () => {
                     Zalecenia pozabiegowe:
                   </Typography>
 
-                  <Grid
-                    container
-                    spacing={0.5}
-                    marginBottom={2}
-                  >
-                    {postTreatmentRecommendations.map(
-                      (item, index) => (
-                        <ListBulleted
-                          key={`${item}-${index}`}
-                          ListBulletedItem={item}
-                          ListBulletedStyle={{
-                            backgroundImage:
-                              "linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)",
-                          }}
-                        />
-                      ),
-                    )}
+                  <Grid container spacing={0.5} marginBottom={2}>
+                    {postTreatmentRecommendations.map((item, index) => (
+                      <ListBulleted
+                        key={`${item}-${index}`}
+                        ListBulletedItem={item}
+                        ListBulletedStyle={{
+                          backgroundImage:
+                            "linear-gradient(45deg, #D29A3E 0%, #DBAF62 51%, #DDBD83 100%)",
+                        }}
+                      />
+                    ))}
                   </Grid>
                 </Box>
 
@@ -376,22 +342,19 @@ const TreatmentToksynaBotulinowaPartial = () => {
                               )
                             }
                           >
-                            {showMoreEffects
-                              ? "Pokaż mniej"
-                              : "Pokaż więcej"}
+                            {showMoreEffects ? "Pokaż mniej" : "Pokaż więcej"}
                           </Button>
                         </Fade>
                       )}
                     </Box>
 
                     <Typography className="paragraph">
-                      Zdjęcia ukazują efekt zabiegu u konkretnego
-                      pacjenta. Efekt zabiegu może się różnić
-                      w zależności od indywidualnych cech pacjenta,
-                      liczby powtórzeń zabiegu, stosowania się
-                      pacjenta do zaleceń pozabiegowych oraz
-                      umiejętności i doświadczenia osoby
-                      przeprowadzającej zabieg.
+                      Zdjęcia ukazują efekt zabiegu u konkretnego pacjenta.
+                      Efekt zabiegu może się różnić w zależności od
+                      indywidualnych cech pacjenta, liczby powtórzeń zabiegu,
+                      stosowania się pacjenta do zaleceń pozabiegowych oraz
+                      umiejętności i doświadczenia osoby przeprowadzającej
+                      zabieg.
                     </Typography>
                   </Box>
                 )}
@@ -400,10 +363,7 @@ const TreatmentToksynaBotulinowaPartial = () => {
               <Box className="proposed-wrapper">
                 <Box className="box-proposed">
                   <Box className="header-wrapper">
-                    <Typography
-                      component="h2"
-                      className="header"
-                    >
+                    <Typography component="h2" className="header">
                       Specjaliści
                     </Typography>
                   </Box>
@@ -452,9 +412,7 @@ const TreatmentToksynaBotulinowaPartial = () => {
                             )
                           }
                         >
-                          {showMoreSpecialists
-                            ? "Pokaż mniej"
-                            : "Pokaż więcej"}
+                          {showMoreSpecialists ? "Pokaż mniej" : "Pokaż więcej"}
                         </Button>
                       </Fade>
                     )}
@@ -463,26 +421,21 @@ const TreatmentToksynaBotulinowaPartial = () => {
 
                 <Box className="box-proposed">
                   <Box className="header-wrapper">
-                    <Typography
-                      component="h2"
-                      className="header"
-                    >
+                    <Typography component="h2" className="header">
                       Specjalizacja
                     </Typography>
                   </Box>
 
                   <Box className="card-wrapper">
-                    {aestheticMedicineSpecialization.map(
-                      (item) => (
-                        <CardProposed
-                          key={item.id}
-                          cardTitle={item.title}
-                          cardDescription={item.description}
-                          cardImage={item.image}
-                          cardPath={item.path}
-                        />
-                      ),
-                    )}
+                    {aestheticMedicineSpecialization.map((item) => (
+                      <CardProposed
+                        key={item.id}
+                        cardTitle={item.title}
+                        cardDescription={item.description}
+                        cardImage={item.image}
+                        cardPath={item.path}
+                      />
+                    ))}
                   </Box>
                 </Box>
 
@@ -511,8 +464,7 @@ const TreatmentToksynaBotulinowaPartial = () => {
                       />
                     ))}
 
-                    {otherAestheticMedicineTreatments.length >
-                      3 && (
+                    {otherAestheticMedicineTreatments.length > 3 && (
                       <Fade in>
                         <Button
                           className="show-more-cards"
@@ -533,9 +485,7 @@ const TreatmentToksynaBotulinowaPartial = () => {
                             )
                           }
                         >
-                          {showMoreTreatments
-                            ? "Pokaż mniej"
-                            : "Pokaż więcej"}
+                          {showMoreTreatments ? "Pokaż mniej" : "Pokaż więcej"}
                         </Button>
                       </Fade>
                     )}
@@ -550,4 +500,4 @@ const TreatmentToksynaBotulinowaPartial = () => {
   );
 };
 
-export default Page(TreatmentToksynaBotulinowaPartial);
+export default TreatmentToksynaBotulinowaPartial;

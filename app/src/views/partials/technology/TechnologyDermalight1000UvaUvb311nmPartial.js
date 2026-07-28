@@ -8,7 +8,6 @@ import Box from '@mui/material/Box';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-import Page from '../../../components/Page';
 import Container from '../../../components/Container';
 import CardProposed from '../../../components/CardProposed';
 import ListBulleted from '../../../components/ListBulleted';
@@ -198,4 +197,4 @@ const TechnologyDermalight1000UvaUvb311nmPartial = () => {
     );
 }
 
-export default Page(TechnologyDermalight1000UvaUvb311nmPartial);
+export default TechnologyDermalight1000UvaUvb311nmPartial;

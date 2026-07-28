@@ -13,7 +13,6 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-import Page from "../../../components/Page";
 import Seo from "../../../components/Seo";
 import Container from "../../../components/Container";
 import CardTeamProposed from "../../../components/CardTeamProposed";
@@ -323,4 +322,4 @@ const ServicesDermatologyPartial = () => {
   );
 };
 
-export default Page(ServicesDermatologyPartial);
+export default ServicesDermatologyPartial;

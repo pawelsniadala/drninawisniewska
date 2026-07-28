@@ -12,7 +12,6 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 
-import Page from "../../../../components/Page";
 import Seo from "../../../../components/Seo";
 import Container from "../../../../components/Container";
 import CardTeamProposed from "../../../../components/CardTeamProposed";
@@ -72,14 +71,9 @@ const TreatmentBadanieZnamionBarwnikowychPartial = () => {
                   aria-label="Nawigacja powrotna"
                 >
                   <Link to="/zabiegi">
-                    <ArrowBackIcon
-                      aria-hidden="true"
-                      focusable="false"
-                    />
+                    <ArrowBackIcon aria-hidden="true" focusable="false" />
 
-                    <Box component="span">
-                      Dermatologia
-                    </Box>
+                    <Box component="span">Dermatologia</Box>
                   </Link>
                 </Breadcrumbs>
 
@@ -94,13 +88,9 @@ const TreatmentBadanieZnamionBarwnikowychPartial = () => {
                   }
                   aria-label="Ścieżka nawigacyjna"
                 >
-                  <Link to="/">
-                    Strona główna
-                  </Link>
+                  <Link to="/">Strona główna</Link>
 
-                  <Link to="/zabiegi">
-                    Zabiegi dermatologiczne
-                  </Link>
+                  <Link to="/zabiegi">Zabiegi dermatologiczne</Link>
 
                   <Typography
                     component="span"
@@ -129,114 +119,86 @@ const TreatmentBadanieZnamionBarwnikowychPartial = () => {
               <Box className="treatment-description">
                 <Box className="box-treatment">
                   <Typography className="paragraph">
-                    Badanie znamion barwnikowych polega na poddaniu
-                    zmian skórnych analizie przez dermatologa.
-                    W naszej Klinice badanie można przeprowadzić za
-                    pomocą <strong>dermatoskopu</strong> lub{" "}
+                    Badanie znamion barwnikowych polega na poddaniu zmian
+                    skórnych analizie przez dermatologa. W naszej Klinice
+                    badanie można przeprowadzić za pomocą{" "}
+                    <strong>dermatoskopu</strong> lub{" "}
                     <strong>wideodermatoskopu</strong>.
                   </Typography>
 
                   <Box className="box-image">
                     <Image
-                      imageSrc={
-                        badanieZnamionBarwnikowych.images[0].src
-                      }
-                      imageAlt={
-                        badanieZnamionBarwnikowych.images[0].alt
-                      }
-                      imageAuthor={
-                        badanieZnamionBarwnikowych.images[0].author
-                      }
-                      imageHref={
-                        badanieZnamionBarwnikowych.images[0].href
-                      }
+                      imageSrc={badanieZnamionBarwnikowych.images[0].src}
+                      imageAlt={badanieZnamionBarwnikowych.images[0].alt}
+                      imageAuthor={badanieZnamionBarwnikowych.images[0].author}
+                      imageHref={badanieZnamionBarwnikowych.images[0].href}
                     />
                   </Box>
                 </Box>
 
                 <Box className="box-treatment">
-                  <Typography
-                    component="h2"
-                    variant="h5"
-                    className="header"
-                  >
+                  <Typography component="h2" variant="h5" className="header">
                     Wideodermatoskopia
                   </Typography>
 
                   <Typography className="paragraph">
                     Wideodermatoskopia to{" "}
-                    <strong>nowoczesna cyfrowa technologia</strong>{" "}
-                    służąca do analizy znamion barwnikowych skóry.
-                    Urządzenie służy także diagnozowaniu zmian
-                    chorobowych skóry, włosów i paznokci. Jest to
-                    zaawansowany system łączący{" "}
-                    <strong>
-                      optyczny układ wideokamery
-                    </strong>{" "}
-                    dermatoskopu z{" "}
-                    <strong>komputerową analizą obrazu</strong> za
-                    pomocą algebraicznych algorytmów.
+                    <strong>nowoczesna cyfrowa technologia</strong> służąca do
+                    analizy znamion barwnikowych skóry. Urządzenie służy także
+                    diagnozowaniu zmian chorobowych skóry, włosów i paznokci.
+                    Jest to zaawansowany system łączący{" "}
+                    <strong>optyczny układ wideokamery</strong> dermatoskopu z{" "}
+                    <strong>komputerową analizą obrazu</strong> za pomocą
+                    algebraicznych algorytmów.
                   </Typography>
 
                   <Typography className="paragraph">
-                    Badanie polega na oglądaniu znamion
-                    specjalistyczną kamerą w bardzo dużym
-                    powiększeniu pozwalając na dokładniejsze
-                    zbadanie zmian. W ciągu kilku minut mapuje całe
-                    ciało, a dane zostają zapisane w pamięci
-                    komputera.
+                    Badanie polega na oglądaniu znamion specjalistyczną kamerą w
+                    bardzo dużym powiększeniu pozwalając na dokładniejsze
+                    zbadanie zmian. W ciągu kilku minut mapuje całe ciało, a
+                    dane zostają zapisane w pamięci komputera.
                   </Typography>
 
                   <Typography className="paragraph">
-                    <strong>Znamiona skórne</strong> często uznawane
-                    są za cechę charakterystyczną danej osoby.
-                    Należy jednak pamiętać, że niektóre znamiona{" "}
-                    <strong>
-                      mogą ewoluować w nowotwory skóry
-                    </strong>
-                    , w tym bardzo niebezpiecznego{" "}
-                    <strong>czerniaka</strong>. Z tego powodu
-                    niesamowicie istotna jest regularna profilaktyka
+                    <strong>Znamiona skórne</strong> często uznawane są za cechę
+                    charakterystyczną danej osoby. Należy jednak pamiętać, że
+                    niektóre znamiona{" "}
+                    <strong>mogą ewoluować w nowotwory skóry</strong>, w tym
+                    bardzo niebezpiecznego <strong>czerniaka</strong>. Z tego
+                    powodu niesamowicie istotna jest regularna profilaktyka
                     zmian skórnych.
                   </Typography>
 
                   <Typography className="paragraph">
-                    Wideodermatoskopia pozwala wykryć raka skóry na
-                    bardzo wczesnym etapie, co diametralnie
-                    zwiększa nasze rokowania na{" "}
+                    Wideodermatoskopia pozwala wykryć raka skóry na bardzo
+                    wczesnym etapie, co diametralnie zwiększa nasze rokowania na{" "}
                     <strong>całkowite wyleczenie</strong>.
                   </Typography>
 
                   <Typography className="paragraph">
-                    Komponent jakim jest kamera, dostarcza doskonałą
-                    jakość zdjęć zmian skórnych w rozdzielczości
-                    Full HD (1920x1080px), dostępnej zarówno
-                    w podglądzie na żywo, jak i na wykonanych
-                    zdjęciach. Opatentowany, precyzyjny obiektyw
-                    zapewnia krystalicznie czysty obraz niezależnie
-                    od powiększenia, w świetle spolaryzowanym lub
-                    z użyciem immersji. Oświetlenie diodami LED
-                    gwarantuje nieskazitelną widoczność.
+                    Komponent jakim jest kamera, dostarcza doskonałą jakość
+                    zdjęć zmian skórnych w rozdzielczości Full HD (1920x1080px),
+                    dostępnej zarówno w podglądzie na żywo, jak i na wykonanych
+                    zdjęciach. Opatentowany, precyzyjny obiektyw zapewnia
+                    krystalicznie czysty obraz niezależnie od powiększenia, w
+                    świetle spolaryzowanym lub z użyciem immersji. Oświetlenie
+                    diodami LED gwarantuje nieskazitelną widoczność.
                   </Typography>
 
                   <Typography className="paragraph">
-                    System wideodermatoskopii łączy w sobie
-                    najwyższą jakość wykonania zdjęć, kompleksową
-                    platformę diagnozy skóry oraz wysoki poziom
-                    opieki nad pacjentem. Obrazy dermoskopowe są
-                    przypisane do pacjenta, a także do konkretnej
-                    lokalizacji, dzięki temu znacznie łatwiej
-                    śledzić zmiany i obserwować postępy leczenia.
-                    Zastosowanie funkcji Follow up w trybie Mikro
-                    i Overview, pozwala na identyczne ustawienie
-                    kamery i wykonanie zdjęć „przed i po” w celu ich
-                    rzetelnego porównania. Natomiast dostępny moduł
-                    Measure automatycznie kalibruje zdjęcia
-                    i pozwala na wykonanie ręcznych pomiarów np.
-                    grubości włosa. System umożliwia tworzenie
-                    i rozbudowę wirtualnej karty pacjenta
-                    zawierającej niezbędne dane z każdej wizyty,
-                    które można wydrukować w postaci raportu.
+                    System wideodermatoskopii łączy w sobie najwyższą jakość
+                    wykonania zdjęć, kompleksową platformę diagnozy skóry oraz
+                    wysoki poziom opieki nad pacjentem. Obrazy dermoskopowe są
+                    przypisane do pacjenta, a także do konkretnej lokalizacji,
+                    dzięki temu znacznie łatwiej śledzić zmiany i obserwować
+                    postępy leczenia. Zastosowanie funkcji Follow up w trybie
+                    Mikro i Overview, pozwala na identyczne ustawienie kamery i
+                    wykonanie zdjęć „przed i po” w celu ich rzetelnego
+                    porównania. Natomiast dostępny moduł Measure automatycznie
+                    kalibruje zdjęcia i pozwala na wykonanie ręcznych pomiarów
+                    np. grubości włosa. System umożliwia tworzenie i rozbudowę
+                    wirtualnej karty pacjenta zawierającej niezbędne dane z
+                    każdej wizyty, które można wydrukować w postaci raportu.
                   </Typography>
                 </Box>
               </Box>
@@ -244,10 +206,7 @@ const TreatmentBadanieZnamionBarwnikowychPartial = () => {
               <Box className="proposed-wrapper">
                 <Box className="box-proposed">
                   <Box className="header-wrapper">
-                    <Typography
-                      component="h2"
-                      className="header"
-                    >
+                    <Typography component="h2" className="header">
                       Specjaliści
                     </Typography>
                   </Box>
@@ -296,9 +255,7 @@ const TreatmentBadanieZnamionBarwnikowychPartial = () => {
                             )
                           }
                         >
-                          {showMoreSpecialists
-                            ? "Pokaż mniej"
-                            : "Pokaż więcej"}
+                          {showMoreSpecialists ? "Pokaż mniej" : "Pokaż więcej"}
                         </Button>
                       </Fade>
                     )}
@@ -307,10 +264,7 @@ const TreatmentBadanieZnamionBarwnikowychPartial = () => {
 
                 <Box className="box-proposed">
                   <Box className="header-wrapper">
-                    <Typography
-                      component="h2"
-                      className="header"
-                    >
+                    <Typography component="h2" className="header">
                       Specjalizacja
                     </Typography>
                   </Box>
@@ -360,6 +314,4 @@ const TreatmentBadanieZnamionBarwnikowychPartial = () => {
   );
 };
 
-export default Page(
-  TreatmentBadanieZnamionBarwnikowychPartial,
-);
+export default TreatmentBadanieZnamionBarwnikowychPartial;
