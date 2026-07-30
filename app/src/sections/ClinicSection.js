@@ -121,12 +121,12 @@ const ClinicSection = () => {
                   data-pswp-width={item.original?.width}
                   data-pswp-height={item.original?.height}
                   data-cropped="true"
-                  aria-label={`Powiększ zdjęcie: ${item.designation}`}
+                  aria-label={`Powiększ zdjęcie: ${item.alt}`}
                 >
                   <Box className="box">
                     <LazyLoadImage
                       src={item.thumbnail?.src}
-                      alt={item.designation}
+                      alt={item.alt}
                       height="100%"
                       width="100%"
                       effect="blur"

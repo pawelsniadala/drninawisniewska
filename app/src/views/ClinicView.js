@@ -46,7 +46,7 @@ const ClinicView = () => {
         title="Klinika"
         description="Informacje o Klinice dr Niny Wiśniewskiej w Wyszkowie, jej działalności, wnętrzach oraz zakresie świadczonej opieki medycznej."
         path="/klinika"
-        image={clinic.pictures[3]?.original.src}
+        image={clinic.pictures[3]?.thumbnail.src}
         imageAlt={clinic.pictures[3]?.alt}
       />
 
@@ -127,7 +127,7 @@ const ClinicView = () => {
                       <Box className="box">
                         <LazyLoadImage
                           src={item.thumbnail.src}
-                          alt={item.designation}
+                          alt={item.alt}
                           height="100%"
                           width="100%"
                           effect="blur"

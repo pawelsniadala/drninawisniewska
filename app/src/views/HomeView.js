@@ -11,6 +11,8 @@ import PriceSection from "../sections/PriceSection";
 import TeamSection from "../sections/TeamSection";
 // import TechnologySection from '../sections/TechnologySection';
 
+import { clinic } from "../data/clinic";
+
 const HomeView = () => {
   return (
     <Box className="home-view">
@@ -18,6 +20,8 @@ const HomeView = () => {
         title="Dermatologia i Medycyna Estetyczna dr Nina Wiśniewska"
         description="Klinika dr Niny Wiśniewskiej w Wyszkowie oferuje dermatologię, medycynę estetyczną, kosmetologię, diagnostykę oraz konsultacje specjalistyczne."
         path="/"
+        image={clinic.pictures[0]?.thumbnail.src}
+        imageAlt={clinic.pictures[0]?.alt}
         appendBrand={false}
       />
 

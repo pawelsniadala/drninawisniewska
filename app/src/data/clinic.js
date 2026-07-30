@@ -16,7 +16,7 @@ export const clinic = {
     {
       designation: "clinic1",
       author: "Karol Dądera",
-      alt: "",
+      alt: "Poczekalnia w Klinice dr Niny Wiśniewskiej w Wyszkowie",
       original: {
         src: clinic1Original,
         width: 2560,
@@ -29,7 +29,7 @@ export const clinic = {
     {
       designation: "clinic2",
       author: "Karol Dądera",
-      alt: "",
+      alt: "Korytarz w Klinice dr Niny Wiśniewskiej w Wyszkowie",
       original: {
         src: clinic2Original,
         width: 2560,
@@ -42,7 +42,7 @@ export const clinic = {
     {
       designation: "clinic3",
       author: "Karol Dądera",
-      alt: "",
+      alt: "Poczekalnia w Klinice dr Niny Wiśniewskiej w Wyszkowie",
       original: {
         src: clinic3Original,
         width: 2560,
@@ -68,7 +68,7 @@ export const clinic = {
     {
       designation: "clinic5",
       author: "Karol Dądera",
-      alt: "",
+      alt: "Wnętrze gabinetu w Klinice dr Niny Wiśniewskiej w Wyszkowie",
       original: {
         src: clinic5Original,
         width: 2560,
@@ -81,7 +81,7 @@ export const clinic = {
     {
       designation: "clinic6",
       author: "Karol Dądera",
-      alt: "",
+      alt: "Korytarz w Klinice dr Niny Wiśniewskiej w Wyszkowie",
       original: {
         src: clinic6Original,
         width: 2560,
