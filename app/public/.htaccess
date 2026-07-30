@@ -11,6 +11,16 @@ RewriteEngine On
 
 
 # ============================================================
+# STARE ADRESY POPRZEDNIEJ WITRYNY
+# ============================================================
+# Historyczne adresy pochodzące ze starej wersji strony.
+# Każdy adres należy przekierować do najbardziej zbliżonej
+# tematycznie strony w aktualnej witrynie.
+
+RewriteRule ^estetyczna\.html$ https://drninawisniewska.pl/specjalizacje/medycyna-estetyczna [R=301,L]
+
+
+# ============================================================
 # KLINIKA
 # ============================================================
 
